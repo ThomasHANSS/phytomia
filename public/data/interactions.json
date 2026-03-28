@@ -1,1 +1,1075 @@
-[]
+[
+ {
+  "pI": "p1",
+  "iI": "i1",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 87,
+    "geo": [
+     "FR",
+     "DE",
+     "SE",
+     "CH"
+    ],
+    "yr": "2006-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p1",
+  "iI": "i2",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 42,
+    "geo": [
+     "FR",
+     "DE",
+     "IT"
+    ],
+    "yr": "2008-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p1",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 203,
+    "geo": [
+     "FR",
+     "DE",
+     "IT",
+     "ES",
+     "SE"
+    ],
+    "yr": "2004-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p1",
+  "iI": "i10",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 65,
+    "geo": [
+     "FR",
+     "DE",
+     "NL",
+     "BE"
+    ],
+    "yr": "2007-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p2",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 156,
+    "geo": [
+     "FR",
+     "IT",
+     "ES"
+    ],
+    "yr": "2008-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p2",
+  "iI": "i10",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 28,
+    "geo": [
+     "FR",
+     "IT"
+    ],
+    "yr": "2012-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p2",
+  "iI": "i17",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "GloBI",
+    "n": 11,
+    "geo": [
+     "FR",
+     "ES"
+    ],
+    "yr": "2015-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p2",
+  "iI": "i11",
+  "tp": "suceur_seve",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "IT",
+     "ES",
+     "GR"
+    ],
+    "yr": "2003-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p3",
+  "iI": "i5",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   },
+   {
+    "db": "DBIF",
+    "n": 8,
+    "geo": [
+     "UK"
+    ],
+    "yr": "1988-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p3",
+  "iI": "i6",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p3",
+  "iI": "i21",
+  "tp": "gallicole",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   },
+   {
+    "db": "DBIF",
+    "n": 15,
+    "geo": [
+     "UK"
+    ],
+    "yr": "1990-2018"
+   }
+  ]
+ },
+ {
+  "pI": "p3",
+  "iI": "i18",
+  "tp": "xylophage",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p3",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "GloBI",
+    "n": 6,
+    "geo": [
+     "DE",
+     "UK"
+    ],
+    "yr": "2014-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p3",
+  "iI": "i25",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p3",
+  "iI": "i28",
+  "tp": "suceur_seve",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DBIF",
+    "n": 4,
+    "geo": [
+     "UK"
+    ],
+    "yr": "1995-2015"
+   }
+  ]
+ },
+ {
+  "pI": "p4",
+  "iI": "i4",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DoPI",
+    "n": 23,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2005-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p4",
+  "iI": "i8",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DoPI",
+    "n": 19,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2006-2018"
+   }
+  ]
+ },
+ {
+  "pI": "p4",
+  "iI": "i10",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DoPI",
+    "n": 15,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2008-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p4",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DoPI",
+    "n": 31,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2004-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p5",
+  "iI": "i1",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 112,
+    "geo": [
+     "FR",
+     "DE",
+     "SE"
+    ],
+    "yr": "2005-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p5",
+  "iI": "i10",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 78,
+    "geo": [
+     "FR",
+     "DE",
+     "NL"
+    ],
+    "yr": "2006-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p5",
+  "iI": "i14",
+  "tp": "predateur",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "UK"
+    ],
+    "yr": "2000-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p6",
+  "iI": "i12",
+  "tp": "suceur_seve",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "UK",
+     "IT"
+    ],
+    "yr": "1990-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p6",
+  "iI": "i7",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 16,
+    "geo": [
+     "DE",
+     "FR"
+    ],
+    "yr": "2009-2016"
+   }
+  ]
+ },
+ {
+  "pI": "p7",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 45,
+    "geo": [
+     "DE",
+     "FR",
+     "CH"
+    ],
+    "yr": "2007-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p7",
+  "iI": "i15",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 29,
+    "geo": [
+     "DE",
+     "CH"
+    ],
+    "yr": "2010-2018"
+   }
+  ]
+ },
+ {
+  "pI": "p8",
+  "iI": "i2",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DoPI",
+    "n": 35,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2005-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p8",
+  "iI": "i4",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DoPI",
+    "n": 11,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2008-2018"
+   }
+  ]
+ },
+ {
+  "pI": "p9",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 89,
+    "geo": [
+     "FR",
+     "DE",
+     "IT",
+     "CH"
+    ],
+    "yr": "2006-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p9",
+  "iI": "i15",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 41,
+    "geo": [
+     "DE",
+     "CH",
+     "FR"
+    ],
+    "yr": "2008-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p9",
+  "iI": "i13",
+  "tp": "frugivore",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "IT",
+     "ES",
+     "UK"
+    ],
+    "yr": "1950-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p9",
+  "iI": "i24",
+  "tp": "florivore",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "UK",
+     "PL"
+    ],
+    "yr": "1970-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p9",
+  "iI": "i11",
+  "tp": "suceur_seve",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "IT",
+     "ES"
+    ],
+    "yr": "2000-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p9",
+  "iI": "i26",
+  "tp": "parasitoide",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "NL"
+    ],
+    "yr": "2005-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p10",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 178,
+    "geo": [
+     "FR",
+     "DE",
+     "SE",
+     "UK"
+    ],
+    "yr": "2004-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p10",
+  "iI": "i9",
+  "tp": "florivore",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "UK",
+     "SE",
+     "DK"
+    ],
+    "yr": "1980-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p10",
+  "iI": "i10",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 95,
+    "geo": [
+     "FR",
+     "DE",
+     "SE",
+     "UK"
+    ],
+    "yr": "2005-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p10",
+  "iI": "i16",
+  "tp": "hote_larvaire",
+  "st": "eco",
+  "src": [
+   {
+    "db": "HOSTS",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p10",
+  "iI": "i14",
+  "tp": "predateur",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "UK",
+     "SE"
+    ],
+    "yr": "2000-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p11",
+  "iI": "i1",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 67,
+    "geo": [
+     "FR",
+     "DE",
+     "UK"
+    ],
+    "yr": "2005-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p11",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 134,
+    "geo": [
+     "FR",
+     "DE",
+     "IT",
+     "UK"
+    ],
+    "yr": "2004-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p12",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 54,
+    "geo": [
+     "DE",
+     "SE",
+     "FR"
+    ],
+    "yr": "2006-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p12",
+  "iI": "i5",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p13",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 221,
+    "geo": [
+     "FR",
+     "DE",
+     "IT",
+     "SE",
+     "UK"
+    ],
+    "yr": "2004-2021"
+   }
+  ]
+ },
+ {
+  "pI": "p13",
+  "iI": "i7",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 38,
+    "geo": [
+     "DE",
+     "UK",
+     "FR"
+    ],
+    "yr": "2008-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p13",
+  "iI": "i15",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 27,
+    "geo": [
+     "DE",
+     "CH"
+    ],
+    "yr": "2009-2018"
+   }
+  ]
+ },
+ {
+  "pI": "p14",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuPPollNet",
+    "n": 33,
+    "geo": [
+     "DE",
+     "PL",
+     "SE"
+    ],
+    "yr": "2009-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p14",
+  "iI": "i5",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p14",
+  "iI": "i20",
+  "tp": "mineuse",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DBIF",
+    "n": 11,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2002-2018"
+   }
+  ]
+ },
+ {
+  "pI": "p15",
+  "iI": "i23",
+  "tp": "frugivore",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "IT",
+     "ES",
+     "GR",
+     "PT"
+    ],
+    "yr": "1960-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p16",
+  "iI": "i22",
+  "tp": "frugivore",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "IT",
+     "ES",
+     "GR",
+     "PT"
+    ],
+    "yr": "1970-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p16",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "GloBI",
+    "n": 5,
+    "geo": [
+     "IT",
+     "GR"
+    ],
+    "yr": "2014-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p17",
+  "iI": "i5",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p17",
+  "iI": "i25",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p18",
+  "iI": "i19",
+  "tp": "xylophage",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "AT",
+     "CZ",
+     "SE"
+    ],
+    "yr": "1980-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p18",
+  "iI": "i5",
+  "tp": "folivorie",
+  "st": "eco",
+  "src": [
+   {
+    "db": "EuropeanHostData",
+    "n": null,
+    "geo": [
+     "EU"
+    ],
+    "yr": "lit."
+   }
+  ]
+ },
+ {
+  "pI": "p19",
+  "iI": "i2",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "DoPI",
+    "n": 13,
+    "geo": [
+     "UK"
+    ],
+    "yr": "2008-2019"
+   }
+  ]
+ },
+ {
+  "pI": "p20",
+  "iI": "i3",
+  "tp": "pollination",
+  "st": "eco",
+  "src": [
+   {
+    "db": "GloBI",
+    "n": 8,
+    "geo": [
+     "DE",
+     "FR"
+    ],
+    "yr": "2014-2020"
+   }
+  ]
+ },
+ {
+  "pI": "p20",
+  "iI": "i11",
+  "tp": "suceur_seve",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "NL"
+    ],
+    "yr": "2000-2024"
+   }
+  ]
+ },
+ {
+  "pI": "p20",
+  "iI": "i27",
+  "tp": "rhizophage",
+  "st": "phy",
+  "src": [
+   {
+    "db": "EPPO",
+    "n": null,
+    "geo": [
+     "FR",
+     "DE",
+     "UK",
+     "NL"
+    ],
+    "yr": "1990-2024"
+   }
+  ]
+ }
+]

@@ -1,1 +1,222 @@
-[]
+[
+ {
+  "id": "p1",
+  "sci": "Centaurea jacea",
+  "common": {
+   "fr": "Centaurée jacée",
+   "en": "Brown knapweed"
+  },
+  "family": "Asteraceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p2",
+  "sci": "Lavandula angustifolia",
+  "common": {
+   "fr": "Lavande vraie",
+   "en": "English lavender"
+  },
+  "family": "Lamiaceae",
+  "status": "horticultural",
+  "threat": ""
+ },
+ {
+  "id": "p3",
+  "sci": "Quercus robur",
+  "common": {
+   "fr": "Chêne pédonculé",
+   "en": "Pedunculate oak"
+  },
+  "family": "Fagaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p4",
+  "sci": "Buddleja davidii",
+  "common": {
+   "fr": "Buddleia",
+   "en": "Butterfly bush"
+  },
+  "family": "Scrophulariaceae",
+  "status": "neophyte",
+  "threat": ""
+ },
+ {
+  "id": "p5",
+  "sci": "Trifolium pratense",
+  "common": {
+   "fr": "Trèfle des prés",
+   "en": "Red clover"
+  },
+  "family": "Fabaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p6",
+  "sci": "Rosa canina",
+  "common": {
+   "fr": "Églantier",
+   "en": "Dog rose"
+  },
+  "family": "Rosaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p7",
+  "sci": "Prunus avium",
+  "common": {
+   "fr": "Merisier",
+   "en": "Wild cherry"
+  },
+  "family": "Rosaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p8",
+  "sci": "Hedera helix",
+  "common": {
+   "fr": "Lierre",
+   "en": "Common ivy"
+  },
+  "family": "Araliaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p9",
+  "sci": "Malus domestica",
+  "common": {
+   "fr": "Pommier",
+   "en": "Apple tree"
+  },
+  "family": "Rosaceae",
+  "status": "cultivated",
+  "threat": ""
+ },
+ {
+  "id": "p10",
+  "sci": "Brassica napus",
+  "common": {
+   "fr": "Colza",
+   "en": "Oilseed rape"
+  },
+  "family": "Brassicaceae",
+  "status": "cultivated",
+  "threat": ""
+ },
+ {
+  "id": "p11",
+  "sci": "Rubus fruticosus",
+  "common": {
+   "fr": "Ronce",
+   "en": "Blackberry"
+  },
+  "family": "Rosaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p12",
+  "sci": "Salix caprea",
+  "common": {
+   "fr": "Saule marsault",
+   "en": "Goat willow"
+  },
+  "family": "Salicaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p13",
+  "sci": "Taraxacum officinale",
+  "common": {
+   "fr": "Pissenlit",
+   "en": "Dandelion"
+  },
+  "family": "Asteraceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p14",
+  "sci": "Tilia cordata",
+  "common": {
+   "fr": "Tilleul",
+   "en": "Small-leaved lime"
+  },
+  "family": "Malvaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p15",
+  "sci": "Vitis vinifera",
+  "common": {
+   "fr": "Vigne",
+   "en": "Grapevine"
+  },
+  "family": "Vitaceae",
+  "status": "cultivated",
+  "threat": ""
+ },
+ {
+  "id": "p16",
+  "sci": "Olea europaea",
+  "common": {
+   "fr": "Olivier",
+   "en": "Olive tree"
+  },
+  "family": "Oleaceae",
+  "status": "cultivated",
+  "threat": ""
+ },
+ {
+  "id": "p17",
+  "sci": "Betula pendula",
+  "common": {
+   "fr": "Bouleau",
+   "en": "Silver birch"
+  },
+  "family": "Betulaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p18",
+  "sci": "Picea abies",
+  "common": {
+   "fr": "Épicéa",
+   "en": "Norway spruce"
+  },
+  "family": "Pinaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p19",
+  "sci": "Sambucus nigra",
+  "common": {
+   "fr": "Sureau noir",
+   "en": "Elder"
+  },
+  "family": "Adoxaceae",
+  "status": "native",
+  "threat": "LC"
+ },
+ {
+  "id": "p20",
+  "sci": "Dahlia × hortensis",
+  "common": {
+   "fr": "Dahlia",
+   "en": "Dahlia"
+  },
+  "family": "Asteraceae",
+  "status": "horticultural",
+  "threat": ""
+ }
+]
