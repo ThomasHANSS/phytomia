@@ -1,0 +1,17 @@
+node_modules/
+dist/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/raw/
+data/parsed/
+data/merged/
+data/taxonomy/gbif_cache.json
+data/taxonomy/iucn_cache.json
+output/
+!data/snapshots/
+!data/snapshots/**
+!data/taxonomy/threat_status.csv
+!data/taxonomy/species_map.csv
+!public/data/
