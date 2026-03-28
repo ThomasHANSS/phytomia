@@ -1,0 +1,155 @@
+import { useState, useMemo } from 'react';
+import Thumb from './Thumb';
+import ThreatBadge from './ThreatBadge';
+import { TYPES, FAMILIES, STATUS_COLORS, THREATENED_CATS } from '../utils/types';
+
+var L = {
+  fr: { plants: 'Plantes', insects: 'Insectes', all: 'Toutes', allM: 'Tous', seeMore: 'Voir plus',
+    note: 'Ce classement reflète les données publiées, pas la réalité écologique complète.',
+    native: 'Indigène', archaeophyte: 'Archéophyte', neophyte: 'Néophyte', horticultural: 'Horticole', cultivated: 'Cultivée',
+    threatened: 'Menacées', nearThreatened: 'Quasi menacées' },
+  en: { plants: 'Plants', insects: 'Insects', all: 'All', allM: 'All', seeMore: 'See more',
+    note: 'This ranking reflects published data, not complete ecological reality.',
+    native: 'Native', archaeophyte: 'Archaeophyte', neophyte: 'Neophyte', horticultural: 'Horticultural', cultivated: 'Cultivated',
+    threatened: 'Threatened', nearThreatened: 'Near Threatened' },
+};
+
+function dominantFam(id, isPlant, interactions) {
+  var ixs = interactions.filter(function (x) { return isPlant ? x.pI === id : x.iI === id; });
+  var counts = {};
+  ixs.forEach(function (x) { var tp = TYPES[x.tp]; if (tp) counts[tp.fam] = (counts[tp.fam] || 0) + 1; });
+  var best = null, max = 0;
+  Object.keys(counts).forEach(function (k) { if (counts[k] > max) { max = counts[k]; best = k; } });
+  return best;
+}
+
+function isThreatened(cat) { return THREATENED_CATS.indexOf(cat) !== -1; }
+
+export default function Ranking(props) {
+  var plants = props.plants, insects = props.insects, interactions = props.interactions, lang = props.lang, onSelect = props.onSelect;
+  var t = L[lang] || L.fr;
+  var _fp = useState('all'), filtPl = _fp[0], sFiltPl = _fp[1];
+  var _fi = useState('all'), filtIn = _fi[0], sFiltIn = _fi[1];
+  var _sp = useState(20), showPl = _sp[0], sShowPl = _sp[1];
+  var _si = useState(20), showIn = _si[0], sShowIn = _si[1];
+
+  var allP = useMemo(function () {
+    return plants.map(function (p) { return Object.assign({}, p, { count: interactions.filter(function (x) { return x.pI === p.id; }).length }); }).filter(function (p) { return p.count > 0; }).sort(function (a, b) { return b.count - a.count; });
+  }, [plants, interactions]);
+
+  var allI = useMemo(function () {
+    return insects.map(function (ins) { return Object.assign({}, ins, { count: interactions.filter(function (x) { return x.iI === ins.id; }).length, domFam: dominantFam(ins.id, false, interactions) }); }).filter(function (i) { return i.count > 0; }).sort(function (a, b) { return b.count - a.count; });
+  }, [insects, interactions]);
+
+  var pRanks = useMemo(function () {
+    if (filtPl === 'all') return allP;
+    if (filtPl === 'threatened') return allP.filter(function (p) { return isThreatened(p.threat); });
+    if (filtPl === 'NT') return allP.filter(function (p) { return p.threat === 'NT'; });
+    return allP.filter(function (p) { return p.status === filtPl; });
+  }, [filtPl, allP]);
+
+  var iRanks = useMemo(function () {
+    if (filtIn === 'all') return allI;
+    if (filtIn === 'threatened') return allI.filter(function (ins) { return isThreatened(ins.threat); });
+    if (filtIn === 'NT') return allI.filter(function (ins) { return ins.threat === 'NT'; });
+    return allI.filter(function (ins) { return ins.domFam === filtIn; });
+  }, [filtIn, allI]);
+
+  var maxPC = (allP[0] && allP[0].count) || 1;
+  var maxIC = (allI[0] && allI[0].count) || 1;
+
+  // Build filter options dynamically
+  var plantFilters = useMemo(function () {
+    var s = {}; allP.forEach(function (p) { s[p.status] = (s[p.status] || 0) + 1; });
+    var opts = Object.keys(s).map(function (k) { return { key: k, label: t[k] || k, count: s[k], color: STATUS_COLORS[k] }; });
+    // Add threat filters
+    var nThreat = allP.filter(function (p) { return isThreatened(p.threat); }).length;
+    var nNT = allP.filter(function (p) { return p.threat === 'NT'; }).length;
+    if (nThreat > 0) opts.push({ key: 'threatened', label: t.threatened, count: nThreat, color: '#cc3333' });
+    if (nNT > 0) opts.push({ key: 'NT', label: t.nearThreatened, count: nNT, color: '#6b8e23' });
+    return opts;
+  }, [allP, t]);
+
+  var insectFilters = useMemo(function () {
+    var s = {}; allI.forEach(function (ins) { if (ins.domFam) s[ins.domFam] = (s[ins.domFam] || 0) + 1; });
+    var opts = Object.keys(s).map(function (k) { var fam = FAMILIES[k]; return { key: k, label: fam ? fam[lang] : k, count: s[k], color: fam ? fam.color : '#888' }; });
+    var nThreat = allI.filter(function (ins) { return isThreatened(ins.threat); }).length;
+    var nNT = allI.filter(function (ins) { return ins.threat === 'NT'; }).length;
+    if (nThreat > 0) opts.push({ key: 'threatened', label: t.threatened, count: nThreat, color: '#cc3333' });
+    if (nNT > 0) opts.push({ key: 'NT', label: t.nearThreatened, count: nNT, color: '#6b8e23' });
+    return opts;
+  }, [allI, lang, t]);
+
+  var name = function (item) { return item.common ? item.common[lang] || item.common.fr || '' : ''; };
+
+  function FilterChips(p2) {
+    var current = p2.current, set = p2.set, options = p2.options, allLabel = p2.allLabel;
+    return (
+      <div className="chips">
+        <button className={'chip' + (current === 'all' ? ' active' : '')} style={current === 'all' ? { borderColor: 'var(--text3)', background: 'var(--bg)', color: 'var(--text)' } : {}} onClick={function (e) { e.stopPropagation(); set('all'); }}>{allLabel}</button>
+        {options.map(function (o) {
+          var active = current === o.key; var col = o.color || '#666';
+          return (<button key={o.key} className={'chip' + (active ? ' active' : '')} style={active ? { borderColor: col, background: col + '14', color: col } : {}} onClick={function (e) { e.stopPropagation(); set(active ? 'all' : o.key); }}>{o.label} <span style={{ fontSize: 8, opacity: 0.7 }}>{o.count}</span></button>);
+        })}
+      </div>
+    );
+  }
+
+  function RankItem(p2) {
+    var item = p2.item, i = p2.i, col = p2.col, mx = p2.mx, isP = p2.isP, showRole = p2.showRole;
+    var dfam = item.domFam ? FAMILIES[item.domFam] : null;
+    return (
+      <div className="rank-item" onClick={function () { onSelect(item.id); }}>
+        <span className="rank-num">{i + 1}</span>
+        <Thumb name={item.sci} sz={30} />
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: 4, flexWrap: 'wrap' }}>
+            <span style={{ fontSize: 12, fontWeight: 500, fontStyle: 'italic', color: 'var(--text)' }}>{item.sci}</span>
+            <span style={{ fontSize: 10, color: 'var(--text2)' }}>{name(item)}</span>
+          </div>
+          <div style={{ marginTop: 2, display: 'flex', alignItems: 'center', gap: 6 }}>
+            <div className="rank-bar" style={{ background: col + '22' }}><div className="rank-bar-fill" style={{ background: col, width: Math.max(8, item.count / mx * 100) + '%' }} /></div>
+            <span className="rank-count">{item.count}</span>
+          </div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 2, flexShrink: 0 }}>
+          {item.threat && <ThreatBadge cat={item.threat} lang={lang} size="sm" />}
+          {isP && item.status && (<span className="badge" style={{ background: STATUS_COLORS[item.status] + '18', color: STATUS_COLORS[item.status] }}>{t[item.status]}</span>)}
+          {isP && (<span style={{ fontSize: 8, color: 'var(--text3)' }}>{item.family}</span>)}
+          {!isP && showRole && dfam && (<span className="badge" style={{ background: dfam.color + '18', color: dfam.color }}>{dfam[lang]}</span>)}
+          {!isP && (<span style={{ fontSize: 8, color: 'var(--text3)' }}>{item.order}</span>)}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <div className="ranking-grid">
+        <div className="ranking-col">
+          <div className="ranking-header" style={{ background: '#2d7d4610' }}>
+            <h3 style={{ color: '#2d7d46' }}>{t.plants}</h3>
+          </div>
+          <FilterChips current={filtPl} set={sFiltPl} allLabel={t.all} options={plantFilters} />
+          <div style={{ padding: '4px 0' }}>
+            {pRanks.slice(0, showPl).map(function (item, i) { return (<RankItem key={item.id} item={item} i={i} col="#2d7d46" mx={maxPC} isP={true} />); })}
+            {pRanks.length === 0 && (<div style={{ padding: 16, fontSize: 13, color: 'var(--text2)', textAlign: 'center' }}>{lang === 'fr' ? 'Aucune espèce dans cette catégorie' : 'No species in this category'}</div>)}
+          </div>
+          {pRanks.length > showPl && (<div style={{ padding: '6px 14px', borderTop: '1px solid var(--border)', textAlign: 'center' }}><button onClick={function () { sShowPl(showPl + 20); }} style={{ fontSize: 12, fontWeight: 500, color: '#2d7d46', background: 'none', border: 'none', cursor: 'pointer' }}>{t.seeMore} ({showPl}/{pRanks.length}) ↓</button></div>)}
+        </div>
+        <div className="ranking-col">
+          <div className="ranking-header" style={{ background: '#b8860b10' }}>
+            <h3 style={{ color: '#b8860b' }}>{t.insects}</h3>
+          </div>
+          <FilterChips current={filtIn} set={sFiltIn} allLabel={t.allM} options={insectFilters} />
+          <div style={{ padding: '4px 0' }}>
+            {iRanks.slice(0, showIn).map(function (item, i) { return (<RankItem key={item.id} item={item} i={i} col="#b8860b" mx={maxIC} isP={false} showRole={filtIn !== 'all' && filtIn !== 'threatened' && filtIn !== 'NT'} />); })}
+            {iRanks.length === 0 && (<div style={{ padding: 16, fontSize: 13, color: 'var(--text2)', textAlign: 'center' }}>{lang === 'fr' ? 'Aucune espèce dans cette catégorie' : 'No species in this category'}</div>)}
+          </div>
+          {iRanks.length > showIn && (<div style={{ padding: '6px 14px', borderTop: '1px solid var(--border)', textAlign: 'center' }}><button onClick={function () { sShowIn(showIn + 20); }} style={{ fontSize: 12, fontWeight: 500, color: '#b8860b', background: 'none', border: 'none', cursor: 'pointer' }}>{t.seeMore} ({showIn}/{iRanks.length}) ↓</button></div>)}
+        </div>
+      </div>
+      <p style={{ fontSize: 11, color: 'var(--text3)', textAlign: 'center', marginTop: 12, fontStyle: 'italic' }}>{t.note}</p>
+    </div>
+  );
+}
