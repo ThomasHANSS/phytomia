@@ -1,77 +1,29 @@
-name: Refresh Data & Deploy
+name: Deploy
 
 on:
-  schedule:
-    - cron: '0 4 * * 1'
-  workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'scripts/**'
-      - 'config/**'
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 jobs:
-  refresh-data:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run data pipeline (with snapshot fallback)
-        run: python scripts/run_pipeline.py
-        env:
-          PYTHONUNBUFFERED: '1'
-          IUCN_API_KEY: ${{ secrets.IUCN_API_KEY }}
-
-      - name: Copy data to app
-        run: |
-          mkdir -p public/data
-          cp output/plants.json public/data/plants.json
-          cp output/insects.json public/data/insects.json
-          cp output/interactions.json public/data/interactions.json
-          echo "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > public/data/last_updated.txt
-
-      - name: Commit updated data + snapshots + taxonomy
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/
-          git add data/snapshots/
-          git add -f data/taxonomy/threat_status.csv data/taxonomy/species_map.csv 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "data: refresh $(date +%Y-%m-%d)"
-          git push
-
   build-deploy:
-    needs: refresh-data
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - run: npm ci
+      - run: npm install
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
