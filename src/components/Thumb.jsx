@@ -1,20 +1,5 @@
 import { TYPES, FAMILIES } from '../utils/types';
 
-var ICONS = {
-  tree: { path: "M20 2Q15 2 13 8Q12 12 16 14L20 14Q20 8 20 2zM20 2Q25 2 27 8Q28 12 24 14L20 14Q20 8 20 2zM17 14L17 18L23 18L23 14zM20 18Q13 18 11 26Q10 38 14 46Q18 50 20 50L20 18zM20 18Q27 18 29 26Q30 38 26 46Q22 50 20 50L20 18z", viewBox: "10 0 20 50", color: "#2d7d46" },
-  shrub: { path: "M16 30L20 42M20 30L20 42M24 30L20 42M20 22Q10 22 6 28Q4 34 10 36Q14 38 20 38Q26 38 30 36Q36 34 34 28Q30 22 20 22z", viewBox: "4 20 32 24", color: "#4a8c3f" },
-  climber: { path: "M20 4L20 38M20 10Q14 8 12 12Q10 16 14 16M20 10Q26 8 28 12Q30 16 26 16M20 20Q14 18 12 22Q10 26 14 26M20 20Q26 18 28 22Q30 26 26 26M20 30Q14 28 12 32Q10 36 14 36M20 30Q26 28 28 32Q30 36 26 36", viewBox: "8 2 24 38", color: "#3a7d44" },
-  herb: { path: "M20 16L20 38M20 28Q14 26 12 30Q14 32 20 28zM20 28Q26 26 28 30Q26 32 20 28zM20 22Q14 20 12 24Q14 26 20 22zM20 22Q26 20 28 24Q26 26 20 22zM20 12A4 4 0 100 8A4 4 0 100-8M20 6A2.5 4 0 010-8M14 10A4 2.5 0 01-5-5M26 10A4 2.5 0 015-5M15 16A4 2.5 0 01-6 3M25 16A4 2.5 0 016 3", viewBox: "6 0 28 40", color: "#6b8e23" },
-  grass: { path: "M20 38Q20 20 20 5M16 38Q14 22 10 8M24 38Q26 22 30 8M12 38Q8 26 4 14M28 38Q32 26 36 14", viewBox: "2 3 36 37", color: "#8fae5e" },
-  default_plant: { path: "M20 38L20 18M20 18Q10 18 8 12Q6 6 12 4Q16 2 20 6Q24 2 28 4Q34 6 32 12Q30 18 20 18z", viewBox: "5 1 30 39", color: "#2d7d46" },
-  Hymenoptera: { path: "M20 2Q17 0 15 3M24 2Q27 0 29 3M22 8A5 5 0 100 0A5 5 0 100 0M22 17A6.5 5.5 0 100 0A6.5 5.5 0 100 0M16 15Q6 10 3 16Q1 22 8 22Q13 22 16 19M28 15Q38 10 41 16Q43 22 36 22Q31 22 28 19M22 23A4 2.5 0 100 0A4 2.5 0 100 0M22 34A7 10 0 100 0A7 10 0 100 0M15 28L10 24M15 34L10 36M15 40L11 44M29 28L34 24M29 34L34 36M29 40L33 44", viewBox: "0 -1 44 50", color: "#b8860b" },
-  Lepidoptera: { path: "M22 16Q16 6 6 4Q1 4 1 10Q1 18 10 22Q16 24 20 22M26 16Q32 6 42 4Q47 4 47 10Q47 18 38 22Q32 24 28 22M21 24Q14 28 10 36Q8 42 14 40Q18 38 21 30M27 24Q34 28 38 36Q40 42 34 40Q30 38 27 30M22 12L24 12L24 42L22 42zM21 14Q18 6 16 2M27 14Q30 6 32 2", viewBox: "0 0 48 44", color: "#e67e22" },
-  Coleoptera: { path: "M18 4Q14 0 10 2M26 4Q30 0 34 2M22 2Q15 2 13 8Q12 12 16 14L22 14M22 2Q29 2 31 8Q32 12 28 14L22 14M13 14L31 14L31 18L13 18zM22 18Q13 18 11 26Q10 38 14 46Q18 50 22 50M22 18Q31 18 33 26Q34 38 30 46Q26 50 22 50M22 18L22 50M13 22L7 18M31 22L37 18M11 30L5 30M33 30L39 30M13 38L7 42M31 38L37 42", viewBox: "3 -1 38 53", color: "#c0392b" },
-  Diptera: { path: "M19 4Q15 0 11 2M25 4Q29 0 33 2M22 10A7 7 0 100 0A7 7 0 100 0M22 20A6 5 0 100 0A6 5 0 100 0M16 18Q4 10 1 18Q-1 26 8 24Q14 22 16 20M28 18Q40 10 43 18Q45 26 36 24Q30 22 28 20M22 34A5.5 12 0 100 0A5.5 12 0 100 0M17 26L11 22M17 32L11 34M17 40L13 46M27 26L33 22M27 32L33 34M27 40L31 46", viewBox: "-2 -1 48 50", color: "#7d3c98" },
-  Hemiptera: { path: "M18 4Q14 0 10 2M26 4Q30 0 34 2M22 8A5 4.5 0 100 0A5 4.5 0 100 0M12 14L22 14L32 14L32 22L22 28L12 22zM12 14L12 34Q12 46 22 48Q32 46 32 34L32 14M22 28L22 48M12 20L6 16M32 20L38 16M12 28L6 30M32 28L38 30M14 38L8 42M30 38L36 42", viewBox: "4 -1 36 52", color: "#6b4c80" },
-  default_insect: { path: "M20 4Q16 0 12 2M24 4Q28 0 32 2M22 8A5 5 0 100 0A5 5 0 100 0M22 17A6 5 0 100 0A6 5 0 100 0M22 30A6 10 0 100 0A6 10 0 100 0M16 22L10 18M28 22L34 18M16 30L10 32M28 30L34 32", viewBox: "8 -1 28 44", color: "#b8860b" },
-};
-
 var TREE_GENERA = ["Quercus","Fagus","Betula","Picea","Pinus","Abies","Larix","Acer","Fraxinus","Tilia","Ulmus","Alnus","Carpinus","Castanea","Populus","Salix","Platanus","Juglans","Cedrus","Taxus","Cupressus","Eucalyptus","Prunus","Malus","Pyrus","Sorbus","Olea","Robinia","Gleditsia","Magnolia","Morus","Ilex"];
 var SHRUB_GENERA = ["Rosa","Rubus","Buddleja","Sambucus","Cornus","Viburnum","Ligustrum","Lonicera","Ribes","Berberis","Cotoneaster","Crataegus","Rhamnus","Euonymus","Buxus","Lavandula","Rosmarinus","Cistus","Erica","Calluna","Rhododendron","Syringa","Philadelphus","Hydrangea","Spiraea","Deutzia"];
 var CLIMBER_GENERA = ["Hedera","Clematis","Wisteria","Vitis","Humulus","Parthenocissus","Passiflora","Jasminum"];
@@ -35,27 +20,63 @@ function getLifeForm(item) {
   return "herb";
 }
 
-function getIcon(item, isPlant) {
-  if (!isPlant) { var order = (item && item.order) || ""; return ICONS[order] || ICONS.default_insect; }
-  return ICONS[getLifeForm(item)] || ICONS.default_plant;
+function wikiUrl(name) { return "https://en.wikipedia.org/wiki/" + encodeURIComponent(name.replace(/ /g, "_")); }
+
+function TreeIcon(p) {
+  return (<g><rect x="17" y="26" width="6" height="22" rx="2" fill={p.c} opacity="0.55"/><ellipse cx="20" cy="16" rx="17" ry="14" fill={p.c} opacity="0.7"/></g>);
+}
+function ShrubIcon(p) {
+  return (<g><line x1="14" y1="42" x2="20" y2="34" stroke={p.c} strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/><line x1="20" y1="42" x2="20" y2="32" stroke={p.c} strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/><line x1="26" y1="42" x2="20" y2="34" stroke={p.c} strokeWidth="2.5" opacity="0.5" strokeLinecap="round"/><ellipse cx="20" cy="24" rx="16" ry="12" fill={p.c} opacity="0.65"/></g>);
+}
+function ClimberIcon(p) {
+  return (<g><line x1="20" y1="4" x2="20" y2="40" stroke={p.c} strokeWidth="1.8" opacity="0.45" strokeLinecap="round"/><path d="M20 12Q14 10 12 14Q10 18 14 18" fill={p.c} opacity="0.5"/><path d="M20 12Q26 10 28 14Q30 18 26 18" fill={p.c} opacity="0.5"/><path d="M20 22Q14 20 12 24Q10 28 14 28" fill={p.c} opacity="0.5"/><path d="M20 22Q26 20 28 24Q30 28 26 28" fill={p.c} opacity="0.5"/><path d="M20 32Q14 30 12 34Q10 38 14 38" fill={p.c} opacity="0.5"/><path d="M20 32Q26 30 28 34Q30 38 26 38" fill={p.c} opacity="0.5"/></g>);
+}
+function HerbIcon(p) {
+  return (<g><line x1="20" y1="18" x2="20" y2="40" stroke={p.c} strokeWidth="1.8" opacity="0.5" strokeLinecap="round"/><path d="M20 30Q14 28 12 32Q14 34 20 30z" fill={p.c} opacity="0.45"/><path d="M20 30Q26 28 28 32Q26 34 20 30z" fill={p.c} opacity="0.45"/><path d="M20 24Q14 22 12 26Q14 28 20 24z" fill={p.c} opacity="0.45"/><path d="M20 24Q26 22 28 26Q26 28 20 24z" fill={p.c} opacity="0.45"/><circle cx="20" cy="13" r="4" fill="#d4a843" opacity="0.55"/><ellipse cx="20" cy="7" rx="2.5" ry="4" fill="#d4a843" opacity="0.35"/><ellipse cx="14.5" cy="11" rx="3.5" ry="2.2" fill="#d4a843" opacity="0.35" transform="rotate(-30 14.5 11)"/><ellipse cx="25.5" cy="11" rx="3.5" ry="2.2" fill="#d4a843" opacity="0.35" transform="rotate(30 25.5 11)"/><ellipse cx="15.5" cy="17" rx="3.5" ry="2.2" fill="#d4a843" opacity="0.35" transform="rotate(-70 15.5 17)"/><ellipse cx="24.5" cy="17" rx="3.5" ry="2.2" fill="#d4a843" opacity="0.35" transform="rotate(70 24.5 17)"/></g>);
+}
+function GrassIcon(p) {
+  return (<g><path d="M20 40Q20 22 20 6" fill="none" stroke={p.c} strokeWidth="2.5" opacity="0.75" strokeLinecap="round"/><path d="M16 40Q14 24 10 10" fill="none" stroke={p.c} strokeWidth="2" opacity="0.6" strokeLinecap="round"/><path d="M24 40Q26 24 30 10" fill="none" stroke={p.c} strokeWidth="2" opacity="0.6" strokeLinecap="round"/><path d="M12 40Q8 28 4 16" fill="none" stroke={p.c} strokeWidth="1.5" opacity="0.4" strokeLinecap="round"/><path d="M28 40Q32 28 36 16" fill="none" stroke={p.c} strokeWidth="1.5" opacity="0.4" strokeLinecap="round"/></g>);
+}
+function HymenopteraIcon(p) {
+  return (<g><path d="M18 4Q15 1 13 3" fill="none" stroke={p.c} strokeWidth="1" opacity="0.5" strokeLinecap="round"/><path d="M22 4Q25 1 27 3" fill="none" stroke={p.c} strokeWidth="1" opacity="0.5" strokeLinecap="round"/><ellipse cx="20" cy="9" rx="5" ry="4.5" fill={p.c} opacity="0.8"/><ellipse cx="20" cy="17" rx="6" ry="5" fill={p.c} opacity="0.75"/><path d="M14 15Q5 10 3 16Q1 22 8 21Q13 20 14 18" fill={p.c} opacity="0.18"/><path d="M26 15Q35 10 37 16Q39 22 32 21Q27 20 26 18" fill={p.c} opacity="0.18"/><ellipse cx="20" cy="23" rx="4" ry="2.5" fill={p.c} opacity="0.6"/><ellipse cx="20" cy="34" rx="7" ry="10" fill={p.c} opacity="0.7"/><path d="M13 28L9 25M13 34L9 36M14 40L10 44" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/><path d="M27 28L31 25M27 34L31 36M26 40L30 44" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/></g>);
+}
+function LepidopteraIcon(p) {
+  return (<g><path d="M20 16Q14 6 5 5Q1 5 1 11Q1 19 10 22Q15 24 19 22" fill={p.c} opacity="0.5"/><path d="M20 16Q26 6 35 5Q39 5 39 11Q39 19 30 22Q25 24 21 22" fill={p.c} opacity="0.5"/><path d="M19 24Q13 28 10 35Q8 40 13 39Q17 37 19 30" fill={p.c} opacity="0.35"/><path d="M21 24Q27 28 30 35Q32 40 27 39Q23 37 21 30" fill={p.c} opacity="0.35"/><rect x="18.5" y="14" width="3" height="28" rx="1.5" fill={p.c} opacity="0.75"/><path d="M19 15Q16 7 14 3" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.4" strokeLinecap="round"/><path d="M21 15Q24 7 26 3" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.4" strokeLinecap="round"/></g>);
+}
+function ColeopteraIcon(p) {
+  return (<g><path d="M17 5Q13 1 9 3" fill="none" stroke={p.c} strokeWidth="0.9" opacity="0.4" strokeLinecap="round"/><path d="M23 5Q27 1 31 3" fill="none" stroke={p.c} strokeWidth="0.9" opacity="0.4" strokeLinecap="round"/><path d="M20 3Q14 3 12 9Q11 13 15 15L20 15Q20 9 20 3" fill={p.c} opacity="0.8"/><path d="M20 3Q26 3 28 9Q29 13 25 15L20 15Q20 9 20 3" fill={p.c} opacity="0.75"/><rect x="12" y="15" width="16" height="4" rx="1" fill={p.c} opacity="0.6"/><path d="M20 19Q12 19 10 27Q9 39 13 47Q17 51 20 51" fill={p.c} opacity="0.7"/><path d="M20 19Q28 19 30 27Q31 39 27 47Q23 51 20 51" fill={p.c} opacity="0.65"/><line x1="20" y1="19" x2="20" y2="51" stroke="#000" strokeWidth="0.5" opacity="0.15"/><path d="M12 23L7 19M10 31L4 31M12 39L7 43" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/><path d="M28 23L33 19M30 31L36 31M28 39L33 43" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/></g>);
+}
+function DipteraIcon(p) {
+  return (<g><path d="M18 5Q14 1 10 3" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.35" strokeLinecap="round"/><path d="M22 5Q26 1 30 3" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.35" strokeLinecap="round"/><ellipse cx="20" cy="11" rx="7" ry="7" fill={p.c} opacity="0.75"/><ellipse cx="20" cy="21" rx="5.5" ry="4.5" fill={p.c} opacity="0.7"/><path d="M15 19Q3 11 1 19Q-1 27 8 25Q14 23 15 21" fill={p.c} opacity="0.15"/><path d="M25 19Q37 11 39 19Q41 27 32 25Q26 23 25 21" fill={p.c} opacity="0.15"/><ellipse cx="20" cy="35" rx="5.5" ry="12" fill={p.c} opacity="0.6"/><path d="M15 28L10 24M15 34L10 36M16 42L12 48" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/><path d="M25 28L30 24M25 34L30 36M24 42L28 48" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/></g>);
+}
+function HemipteraIcon(p) {
+  return (<g><path d="M17 5Q13 1 9 3" fill="none" stroke={p.c} strokeWidth="0.9" opacity="0.4" strokeLinecap="round"/><path d="M23 5Q27 1 31 3" fill="none" stroke={p.c} strokeWidth="0.9" opacity="0.4" strokeLinecap="round"/><ellipse cx="20" cy="9" rx="5" ry="4.5" fill={p.c} opacity="0.7"/><path d="M10 15L20 15L30 15L30 23L20 29L10 23z" fill={p.c} opacity="0.55"/><path d="M10 15L10 35Q10 47 20 49Q30 47 30 35L30 15" fill={p.c} opacity="0.5"/><line x1="20" y1="29" x2="20" y2="49" stroke="#000" strokeWidth="0.5" opacity="0.12"/><path d="M10 21L5 17M10 29L5 31M12 39L7 43" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/><path d="M30 21L35 17M30 29L35 31M28 39L33 43" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/></g>);
+}
+function DefaultInsectIcon(p) {
+  return (<g><ellipse cx="20" cy="10" rx="5" ry="5" fill={p.c} opacity="0.75"/><ellipse cx="20" cy="20" rx="6" ry="5" fill={p.c} opacity="0.7"/><ellipse cx="20" cy="32" rx="6" ry="10" fill={p.c} opacity="0.65"/><path d="M14 22L8 18M14 30L8 32" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/><path d="M26 22L32 18M26 30L32 32" fill="none" stroke={p.c} strokeWidth="0.8" opacity="0.3" strokeLinecap="round"/></g>);
+}
+function DefaultPlantIcon(p) {
+  return (<g><line x1="20" y1="18" x2="20" y2="40" stroke={p.c} strokeWidth="1.8" opacity="0.5" strokeLinecap="round"/><path d="M20 18Q10 18 8 12Q6 6 12 4Q16 2 20 6Q24 2 28 4Q34 6 32 12Q30 18 20 18z" fill={p.c} opacity="0.6"/></g>);
 }
 
-function wikiUrl(name) { return "https://en.wikipedia.org/wiki/" + encodeURIComponent(name.replace(/ /g, "_")); }
+var COLORS = { tree: "#2d7d46", shrub: "#4a8c3f", climber: "#3a7d44", herb: "#6b8e23", grass: "#8fae5e", default_plant: "#2d7d46", Hymenoptera: "#b8860b", Lepidoptera: "#e67e22", Coleoptera: "#c0392b", Diptera: "#7d3c98", Hemiptera: "#6b4c80", default_insect: "#b8860b" };
+
+var ICON_COMPONENTS = { tree: TreeIcon, shrub: ShrubIcon, climber: ClimberIcon, herb: HerbIcon, grass: GrassIcon, default_plant: DefaultPlantIcon, Hymenoptera: HymenopteraIcon, Lepidoptera: LepidopteraIcon, Coleoptera: ColeopteraIcon, Diptera: DipteraIcon, Hemiptera: HemipteraIcon, default_insect: DefaultInsectIcon };
+
+function getKey(item, isPlant) {
+  if (!isPlant) { var order = (item && item.order) || ""; return ICON_COMPONENTS[order] ? order : "default_insect"; }
+  return getLifeForm(item);
+}
 
 export default function Thumb(props) {
   var sz = props.sz || 40, item = props.item, name = props.name, isPlant = props.isPlant;
-  var icon = getIcon(item, isPlant);
-  var col = icon.color;
-  var icoSz = Math.max(12, sz * 0.65);
-  var vb = icon.viewBox || "0 0 40 40";
+  var key = getKey(item, isPlant);
+  var col = COLORS[key] || "#888";
+  var IconComp = ICON_COMPONENTS[key] || DefaultPlantIcon;
+  var icoSz = Math.max(14, sz * 0.7);
   return (
-    <div style={{ width: sz, height: sz, borderRadius: sz > 48 ? 10 : 6,
-      background: col + "12", border: "1px solid " + col + "25",
-      display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}
-      title={name || (item ? item.sci : "")}>
-      <svg width={icoSz} height={icoSz} viewBox={vb} fill="none" stroke={col} strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" opacity="0.75">
-        <path d={icon.path} fill={col} fillOpacity="0.7" stroke={col} strokeWidth="0.8"/>
-      </svg>
+    <div style={{ width: sz, height: sz, borderRadius: sz > 48 ? 10 : 6, background: col + "12", border: "1px solid " + col + "25", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }} title={name || (item ? item.sci : "")}>
+      <svg width={icoSz} height={icoSz} viewBox="0 0 40 48"><IconComp c={col} /></svg>
     </div>
   );
 }
@@ -63,16 +84,8 @@ export default function Thumb(props) {
 export function SpeciesLink(props) {
   var name = props.name, lang = props.lang;
   return (
-    <a href={wikiUrl(name)} target="_blank" rel="noopener noreferrer"
-      onClick={function (e) { e.stopPropagation(); }}
-      title={lang === "fr" ? "Voir sur Wikipedia" : "View on Wikipedia"}
-      style={{ display: "inline-flex", alignItems: "center", gap: 3,
-        fontSize: 10, color: "var(--text3)", textDecoration: "none",
-        padding: "1px 6px", borderRadius: 4, border: "1px solid var(--border)",
-        background: "var(--bg2)", flexShrink: 0 }}>
-      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
-      </svg>
+    <a href={wikiUrl(name)} target="_blank" rel="noopener noreferrer" onClick={function (e) { e.stopPropagation(); }} title={lang === "fr" ? "Voir sur Wikipedia" : "View on Wikipedia"} style={{ display: "inline-flex", alignItems: "center", gap: 3, fontSize: 10, color: "var(--text3)", textDecoration: "none", padding: "1px 6px", borderRadius: 4, border: "1px solid var(--border)", background: "var(--bg2)", flexShrink: 0 }}>
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
       Wiki
     </a>
   );
@@ -85,6 +98,5 @@ export function LifeFormLabel(props) {
   var labels = { tree: {fr:"Arbre",en:"Tree"}, shrub: {fr:"Arbuste",en:"Shrub"}, climber: {fr:"Grimpante",en:"Climber"}, herb: {fr:"Herbac\u00e9e",en:"Herb"}, grass: {fr:"Gramin\u00e9e",en:"Grass"} };
   var lb = labels[lf];
   if (!lb) return null;
-  var icon = ICONS[lf];
-  return (<span style={{ fontSize: 9, color: icon.color, fontWeight: 500 }}>{lb[lang] || lb.fr}</span>);
+  return (<span style={{ fontSize: 9, color: COLORS[lf], fontWeight: 500 }}>{lb[lang] || lb.fr}</span>);
 }
