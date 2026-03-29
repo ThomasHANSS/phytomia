@@ -47,6 +47,7 @@ export default function Ranking(props) {
     if (filtPl === 'all') return allP;
     if (filtPl === 'threatened') return allP.filter(function (p) { return isThreatened(p.threat); });
     if (filtPl === 'NT') return allP.filter(function (p) { return p.threat === 'NT'; });
+    if (filtPl.indexOf('gf_') === 0) { var gfKey = filtPl.slice(3); return allP.filter(function (p) { return (p.growthForm || 'herb') === gfKey; }); }
     return allP.filter(function (p) { return p.status === filtPl; });
   }, [filtPl, allP]);
 
@@ -62,15 +63,21 @@ export default function Ranking(props) {
 
   // Build filter options dynamically
   var plantFilters = useMemo(function () {
-    var s = {}; allP.forEach(function (p) { s[p.status] = (s[p.status] || 0) + 1; });
-    var opts = Object.keys(s).map(function (k) { return { key: k, label: t[k] || k, count: s[k], color: STATUS_COLORS[k] }; });
-    // Add threat filters
+    var opts = [];
+    // Growth form filters
+    var GF_LABELS = { tree: { fr: "Arbres", en: "Trees" }, shrub: { fr: "Arbustes", en: "Shrubs" }, climber: { fr: "Grimpantes", en: "Climbers" }, herb: { fr: "Herbac\u00e9es", en: "Herbs" }, grass: { fr: "Gramin\u00e9es", en: "Grasses" } };
+    var GF_COLORS = { tree: "#2d7d46", shrub: "#4a8c3f", climber: "#3a7d44", herb: "#6b8e23", grass: "#8fae5e" };
+    var gf = {}; allP.forEach(function (p) { var g = p.growthForm || "herb"; gf[g] = (gf[g] || 0) + 1; });
+    ["tree","shrub","climber","herb","grass"].forEach(function (k) {
+      if (gf[k]) opts.push({ key: "gf_" + k, label: (GF_LABELS[k] || {})[lang] || k, count: gf[k], color: GF_COLORS[k] || "#888" });
+    });
+    // Threat filters
     var nThreat = allP.filter(function (p) { return isThreatened(p.threat); }).length;
-    var nNT = allP.filter(function (p) { return p.threat === 'NT'; }).length;
-    if (nThreat > 0) opts.push({ key: 'threatened', label: t.threatened, count: nThreat, color: '#cc3333' });
-    if (nNT > 0) opts.push({ key: 'NT', label: t.nearThreatened, count: nNT, color: '#6b8e23' });
+    var nNT = allP.filter(function (p) { return p.threat === "NT"; }).length;
+    if (nThreat > 0) opts.push({ key: "threatened", label: t.threatened, count: nThreat, color: "#cc3333" });
+    if (nNT > 0) opts.push({ key: "NT", label: t.nearThreatened, count: nNT, color: "#6b8e23" });
     return opts;
-  }, [allP, t]);
+  }, [allP, t, lang]);
 
   var insectFilters = useMemo(function () {
     var s = {}; allI.forEach(function (ins) { if (ins.domFam) s[ins.domFam] = (s[ins.domFam] || 0) + 1; });
