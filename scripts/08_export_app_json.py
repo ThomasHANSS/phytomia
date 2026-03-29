@@ -42,6 +42,30 @@ def load_taxonomy():
     return tax
 
 
+
+TREE_GENERA = {"Quercus","Fagus","Betula","Picea","Pinus","Abies","Larix","Acer","Fraxinus","Tilia","Ulmus","Alnus","Carpinus","Castanea","Populus","Salix","Platanus","Juglans","Cedrus","Taxus","Cupressus","Eucalyptus","Prunus","Malus","Pyrus","Sorbus","Olea","Robinia","Gleditsia","Magnolia","Morus","Ilex","Aesculus","Ailanthus","Catalpa","Liriodendron","Paulownia","Corylus","Celtis","Cercis","Citrus","Liquidambar","Ginkgo","Thuja","Juniperus","Arbutus","Zelkova","Carya","Diospyros","Koelreuteria","Sapindus","Ficus","Ceratonia","Amelanchier","Eriobotrya","Mespilus"}
+SHRUB_GENERA = {"Rosa","Rubus","Buddleja","Sambucus","Cornus","Viburnum","Ligustrum","Lonicera","Ribes","Berberis","Cotoneaster","Crataegus","Rhamnus","Euonymus","Buxus","Lavandula","Rosmarinus","Cistus","Erica","Calluna","Rhododendron","Syringa","Philadelphus","Hydrangea","Spiraea","Deutzia","Potentilla","Hippophae","Myrica","Ceanothus","Daphne","Genista","Cytisus","Ulex","Elaeagnus","Tamarix","Myrtus","Laurus","Nerium","Colutea","Paliurus","Pistacia"}
+CLIMBER_GENERA = {"Hedera","Clematis","Wisteria","Vitis","Humulus","Parthenocissus","Passiflora","Jasminum","Lonicera","Campsis","Fallopia","Calystegia","Convolvulus","Ipomoea","Bryonia"}
+GRASS_FAMILIES = {"Poaceae","Cyperaceae","Juncaceae"}
+TREE_FAMILIES = {"Fagaceae","Betulaceae","Pinaceae","Cupressaceae","Taxaceae","Juglandaceae","Ulmaceae","Platanaceae","Oleaceae","Sapindaceae","Hippocastanaceae","Altingiaceae","Ginkgoaceae","Moraceae","Aquifoliaceae","Araucariaceae","Lauraceae","Myrtaceae","Rutaceae","Meliaceae","Anacardiaceae","Combretaceae","Arecaceae"}
+SHRUB_FAMILIES = {"Ericaceae","Caprifoliaceae","Grossulariaceae","Berberidaceae","Buxaceae","Cistaceae","Thymelaeaceae","Elaeagnaceae","Myricaceae","Rhamnaceae"}
+
+def detect_growth_form(name, family):
+    genus = name.split()[0] if name else ""
+    if genus in CLIMBER_GENERA:
+        return "climber"
+    if genus in TREE_GENERA:
+        return "tree"
+    if genus in SHRUB_GENERA:
+        return "shrub"
+    if family in GRASS_FAMILIES:
+        return "grass"
+    if family in TREE_FAMILIES:
+        return "tree"
+    if family in SHRUB_FAMILIES:
+        return "shrub"
+    return "herb"
+
 def detect_plant_status(name, family):
     """Heuristique pour le statut des plantes. Retourne vide si incertain."""
     # Sans base de reference fiable (Euro+Med PlantBase, EPPO),
@@ -139,6 +163,7 @@ def export():
             "order": t.get("order", ""),
             "genus": t.get("genus", name.split()[0] if name else ""),
             "status": detect_plant_status(name, t.get("family", "")),
+            "growthForm": detect_growth_form(name, t.get("family", "")),
             "threat": threat.get(name, {}).get("cat", ""),
             "n_interactions": 0,
         }
