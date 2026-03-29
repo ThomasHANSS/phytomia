@@ -14,6 +14,7 @@ export default function App() {
   var _l = useState('fr'), lang = _l[0], setLang = _l[1];
   var _v = useState('ranking'), viewMode = _v[0], setViewMode = _v[1];
   var _s = useState(null), selectedId = _s[0], setSelectedId = _s[1];
+  var _h = useState([]), history = _h[0], setHistory = _h[1];
   var _g = useState([]), garden = _g[0], setGarden = _g[1];
 
   var selected = useMemo(function () {
@@ -27,8 +28,16 @@ export default function App() {
     return !!data.plants.find(function (p) { return p.id === selectedId; });
   }, [selectedId, data.plants]);
 
-  function go(id) { setSelectedId(id); }
-  function back() { setSelectedId(null); }
+  function go(id) { if (selectedId) { setHistory(function(h) { return h.concat([selectedId]); }); } setSelectedId(id); }
+  function back() {
+    if (history.length > 0) {
+      var prev = history[history.length - 1];
+      setHistory(function(h) { return h.slice(0, -1); });
+      setSelectedId(prev);
+    } else {
+      setSelectedId(null);
+    }
+  }
 
   if (data.loading) {
     return (
@@ -97,6 +106,18 @@ export default function App() {
       )}
 
       {selected && (
+        {selected && (
+          <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8, fontSize: 12, color: "var(--text2)", flexWrap: "wrap" }}>
+            <span onClick={function() { setHistory([]); setSelectedId(null); }} style={{ cursor: "pointer", color: "var(--text3)" }}>{lang === "fr" ? "Accueil" : "Home"}</span>
+            {history.map(function(hid, idx) {
+              var sp = data.plants.find(function(p){return p.id===hid;}) || data.insects.find(function(i){return i.id===hid;});
+              if (!sp) return null;
+              return (<span key={idx}><span style={{ margin: "0 4px", color: "var(--text3)" }}> › </span><span onClick={function() { setHistory(function(h){return h.slice(0,idx);}); setSelectedId(hid); }} style={{ cursor: "pointer", fontStyle: "italic" }}>{sp.sci}</span></span>);
+            })}
+            <span style={{ margin: "0 4px", color: "var(--text3)" }}> › </span>
+            <span style={{ fontWeight: 500, fontStyle: "italic", color: "var(--text)" }}>{selected.sci}</span>
+          </div>
+        )}
         <SpeciesDetail
           species={selected}
           isPlant={isPlant}

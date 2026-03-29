@@ -202,11 +202,7 @@ def export():
         sources = []
         for db in dbs:
             if db:
-                sources.append({
-                    "db": db,
-                    "geo": countries,
-                    "yr": ix.get("year_range", ""),
-                })
+                sources.append({"db": db})
         
         n_obs = int(ix["total_obs"]) if ix.get("total_obs") and ix["total_obs"].isdigit() else None
         
