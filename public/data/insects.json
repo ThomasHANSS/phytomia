@@ -6,7 +6,7 @@
   "family": "Apidae",
   "genus": "Apis",
   "threat": "",
-  "n_interactions": 1528,
+  "n_interactions": 1527,
   "common": {
    "fr": "Abeille domestique",
    "en": "Honey bee"
@@ -19,7 +19,7 @@
   "family": "Halictidae",
   "genus": "Lasioglossum",
   "threat": "",
-  "n_interactions": 1418,
+  "n_interactions": 1417,
   "common": {
    "fr": "",
    "en": "Small Shiny Furrow Bee"
@@ -45,7 +45,7 @@
   "family": "Nymphalidae",
   "genus": "Vanessa",
   "threat": "",
-  "n_interactions": 1175,
+  "n_interactions": 1174,
   "common": {
    "fr": "Belle Dame",
    "en": "Painted Lady"
@@ -58,7 +58,7 @@
   "family": "Megachilidae",
   "genus": "Osmia",
   "threat": "",
-  "n_interactions": 1149,
+  "n_interactions": 1148,
   "common": {
    "fr": "",
    "en": ""
@@ -71,7 +71,7 @@
   "family": "Halictidae",
   "genus": "Lasioglossum",
   "threat": "",
-  "n_interactions": 1121,
+  "n_interactions": 1120,
   "common": {
    "fr": "",
    "en": ""
@@ -84,7 +84,7 @@
   "family": "Halictidae",
   "genus": "Halictus",
   "threat": "",
-  "n_interactions": 1100,
+  "n_interactions": 1099,
   "common": {
    "fr": "",
    "en": ""
@@ -97,7 +97,7 @@
   "family": "Colletidae",
   "genus": "Hylaeus",
   "threat": "",
-  "n_interactions": 1024,
+  "n_interactions": 1023,
   "common": {
    "fr": "",
    "en": ""
@@ -110,7 +110,7 @@
   "family": "Colletidae",
   "genus": "Hylaeus",
   "threat": "",
-  "n_interactions": 1018,
+  "n_interactions": 1017,
   "common": {
    "fr": "",
    "en": "White-lipped Yellow-face Bee"
@@ -123,7 +123,7 @@
   "family": "Syrphidae",
   "genus": "Episyrphus",
   "threat": "",
-  "n_interactions": 987,
+  "n_interactions": 986,
   "common": {
    "fr": "Syrphe ceinturé",
    "en": "Marmalade Hoverfly"
@@ -136,7 +136,7 @@
   "family": "Syrphidae",
   "genus": "Eristalis",
   "threat": "",
-  "n_interactions": 929,
+  "n_interactions": 928,
   "common": {
    "fr": "Eristale gluante, Mouche pourceau",
    "en": "Drone Fly"
@@ -149,7 +149,7 @@
   "family": "Colletidae",
   "genus": "Hylaeus",
   "threat": "",
-  "n_interactions": 675,
+  "n_interactions": 674,
   "common": {
    "fr": "",
    "en": ""
@@ -162,7 +162,7 @@
   "family": "Apidae",
   "genus": "Bombus",
   "threat": "",
-  "n_interactions": 671,
+  "n_interactions": 670,
   "common": {
    "fr": "Bourdon des pierres",
    "en": "Large Red Tailed Bumble Bee"
@@ -175,7 +175,7 @@
   "family": "Coccinellidae",
   "genus": "Harmonia",
   "threat": "",
-  "n_interactions": 646,
+  "n_interactions": 630,
   "common": {
    "fr": "Coccinelle asiatique",
    "en": "Harlequin Ladybird"
@@ -188,7 +188,7 @@
   "family": "Pieridae",
   "genus": "Pieris",
   "threat": "",
-  "n_interactions": 625,
+  "n_interactions": 624,
   "common": {
    "fr": "Piéride du chou",
    "en": "Large white"
@@ -214,7 +214,7 @@
   "family": "Nymphalidae",
   "genus": "Vanessa",
   "threat": "",
-  "n_interactions": 572,
+  "n_interactions": 571,
   "common": {
    "fr": "Vulcain",
    "en": "Red admiral"
@@ -227,7 +227,7 @@
   "family": "Halictidae",
   "genus": "Halictus",
   "threat": "",
-  "n_interactions": 569,
+  "n_interactions": 568,
   "common": {
    "fr": "",
    "en": "Great Banded Furrow Bee"
@@ -240,7 +240,7 @@
   "family": "Chrysopidae",
   "genus": "Chrysoperla",
   "threat": "",
-  "n_interactions": 556,
+  "n_interactions": 555,
   "common": {
    "fr": "",
    "en": "Common green lacewing"
@@ -279,7 +279,7 @@
   "family": "Nymphalidae",
   "genus": "Aglais",
   "threat": "",
-  "n_interactions": 492,
+  "n_interactions": 491,
   "common": {
    "fr": "Paon du jour",
    "en": "Peacock butterfly"
@@ -305,7 +305,7 @@
   "family": "Eumenidae",
   "genus": "Polistes",
   "threat": "",
-  "n_interactions": 458,
+  "n_interactions": 457,
   "common": {
    "fr": "Guêpe poliste",
    "en": "Paper Wasp"
@@ -422,7 +422,7 @@
   "family": "Hesperiidae",
   "genus": "Thymelicus",
   "threat": "",
-  "n_interactions": 398,
+  "n_interactions": 397,
   "common": {
    "fr": "Hespérie du Dactyle, Hespérie europénne (au Canada), Ligné, Hespérie orangée",
    "en": "Essex Skipper"
@@ -435,7 +435,7 @@
   "family": "Colletidae",
   "genus": "Colletes",
   "threat": "",
-  "n_interactions": 396,
+  "n_interactions": 395,
   "common": {
    "fr": "",
    "en": "Bare-saddled Colletes"
@@ -461,23 +461,10 @@
   "family": "Colletidae",
   "genus": "Colletes",
   "threat": "",
-  "n_interactions": 392,
+  "n_interactions": 391,
   "common": {
    "fr": "",
    "en": "Davies' Colletes"
-  }
- },
- {
-  "id": "iab58ea",
-  "sci": "Colletes fodiens",
-  "order": "Hymenoptera",
-  "family": "Colletidae",
-  "genus": "Colletes",
-  "threat": "",
-  "n_interactions": 383,
-  "common": {
-   "fr": "",
-   "en": "Hairy-saddled Colletes"
   }
  },
  {
@@ -491,6 +478,19 @@
   "common": {
    "fr": "Syrphe du groseillier",
    "en": "Common Flower Fly"
+  }
+ },
+ {
+  "id": "iab58ea",
+  "sci": "Colletes fodiens",
+  "order": "Hymenoptera",
+  "family": "Colletidae",
+  "genus": "Colletes",
+  "threat": "",
+  "n_interactions": 382,
+  "common": {
+   "fr": "",
+   "en": "Hairy-saddled Colletes"
   }
  },
  {
@@ -533,19 +533,6 @@
   }
  },
  {
-  "id": "iddefbb",
-  "sci": "Osmia labialis",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Osmia",
-  "threat": "",
-  "n_interactions": 376,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i98b825",
   "sci": "Nomada facilis",
   "order": "Hymenoptera",
@@ -556,6 +543,19 @@
   "common": {
    "fr": "",
    "en": "Hawk's-beard Nomad Bee"
+  }
+ },
+ {
+  "id": "iddefbb",
+  "sci": "Osmia labialis",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Osmia",
+  "threat": "",
+  "n_interactions": 375,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -585,19 +585,6 @@
   }
  },
  {
-  "id": "ia5c98c",
-  "sci": "Andrena polita",
-  "order": "Hymenoptera",
-  "family": "Andrenidae",
-  "genus": "Andrena",
-  "threat": "",
-  "n_interactions": 369,
-  "common": {
-   "fr": "",
-   "en": "Maidstone Mining Bee"
-  }
- },
- {
   "id": "if0a469",
   "sci": "Aphantopus hyperantus",
   "order": "Lepidoptera",
@@ -611,13 +598,26 @@
   }
  },
  {
+  "id": "ia5c98c",
+  "sci": "Andrena polita",
+  "order": "Hymenoptera",
+  "family": "Andrenidae",
+  "genus": "Andrena",
+  "threat": "",
+  "n_interactions": 368,
+  "common": {
+   "fr": "",
+   "en": "Maidstone Mining Bee"
+  }
+ },
+ {
   "id": "if5cf3b",
   "sci": "Colletes mlokossewiczi",
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Colletes",
   "threat": "",
-  "n_interactions": 368,
+  "n_interactions": 367,
   "common": {
    "fr": "",
    "en": ""
@@ -630,23 +630,10 @@
   "family": "Megachilidae",
   "genus": "Megachile",
   "threat": "",
-  "n_interactions": 362,
+  "n_interactions": 361,
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i890e25",
-  "sci": "Coccinella septempunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 356,
-  "common": {
-   "fr": "Coccinelle à sept points",
-   "en": "Seven-spot ladybird"
   }
  },
  {
@@ -676,13 +663,26 @@
   }
  },
  {
+  "id": "i890e25",
+  "sci": "Coccinella septempunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 347,
+  "common": {
+   "fr": "Coccinelle à sept points",
+   "en": "Seven-spot ladybird"
+  }
+ },
+ {
   "id": "i225f99",
   "sci": "Megachile genalis",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
   "threat": "",
-  "n_interactions": 346,
+  "n_interactions": 345,
   "common": {
    "fr": "",
    "en": ""
@@ -812,7 +812,7 @@
   "family": "Syrphidae",
   "genus": "Eristalis",
   "threat": "",
-  "n_interactions": 261,
+  "n_interactions": 260,
   "common": {
    "fr": "",
    "en": ""
@@ -988,13 +988,26 @@
   }
  },
  {
+  "id": "i70b607",
+  "sci": "Bombus lucorum",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Bombus",
+  "threat": "",
+  "n_interactions": 222,
+  "common": {
+   "fr": "Bourdon des forêts, Bourdon des saussaies, Petit bourdon terrestre",
+   "en": "Small Earth Humble-bee"
+  }
+ },
+ {
   "id": "i90541e",
   "sci": "Loweia tityrus",
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Loweia",
   "threat": "",
-  "n_interactions": 223,
+  "n_interactions": 222,
   "common": {
    "fr": "",
    "en": ""
@@ -1007,23 +1020,10 @@
   "family": "Vespidae",
   "genus": "Vespula",
   "threat": "",
-  "n_interactions": 223,
+  "n_interactions": 222,
   "common": {
    "fr": "Guêpe germanique",
    "en": "German wasp"
-  }
- },
- {
-  "id": "i70b607",
-  "sci": "Bombus lucorum",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Bombus",
-  "threat": "",
-  "n_interactions": 222,
-  "common": {
-   "fr": "Bourdon des forêts, Bourdon des saussaies, Petit bourdon terrestre",
-   "en": "Small Earth Humble-bee"
   }
  },
  {
@@ -1735,7 +1735,7 @@
   "family": "Lycaenidae",
   "genus": "Lysandra",
   "threat": "",
-  "n_interactions": 134,
+  "n_interactions": 133,
   "common": {
    "fr": "Argus bleu céleste",
    "en": "Adonis Blue"
@@ -1748,7 +1748,7 @@
   "family": "Vespidae",
   "genus": "Vespula",
   "threat": "",
-  "n_interactions": 133,
+  "n_interactions": 132,
   "common": {
    "fr": "Guêpe commune",
    "en": "Common European Wasp"
@@ -1950,19 +1950,6 @@
   }
  },
  {
-  "id": "ia8833f",
-  "sci": "Vespa velutina",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 116,
-  "common": {
-   "fr": "Frelon asiatique",
-   "en": "Asian Hornet"
-  }
- },
- {
   "id": "i0eba33",
   "sci": "Ceratina dupla",
   "order": "Hymenoptera",
@@ -2093,6 +2080,19 @@
   }
  },
  {
+  "id": "ia8833f",
+  "sci": "Vespa velutina",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 106,
+  "common": {
+   "fr": "Frelon asiatique",
+   "en": "Asian Hornet"
+  }
+ },
+ {
   "id": "i28c636",
   "sci": "Apis cerana",
   "order": "Hymenoptera",
@@ -2138,7 +2138,7 @@
   "family": "Vespidae",
   "genus": "Vespa",
   "threat": "",
-  "n_interactions": 101,
+  "n_interactions": 100,
   "common": {
    "fr": "Frelon européen",
    "en": "European hornet"
@@ -2379,19 +2379,6 @@
   }
  },
  {
-  "id": "ief1331",
-  "sci": "Anthaxia salicis",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
-  "threat": "",
-  "n_interactions": 88,
-  "common": {
-   "fr": "Anthaxie du Saule",
-   "en": ""
-  }
- },
- {
   "id": "i861445",
   "sci": "Chelostoma rapunculi",
   "order": "Hymenoptera",
@@ -2427,6 +2414,19 @@
   "n_interactions": 88,
   "common": {
    "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "ief1331",
+  "sci": "Anthaxia salicis",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Anthaxia",
+  "threat": "",
+  "n_interactions": 87,
+  "common": {
+   "fr": "Anthaxie du Saule",
    "en": ""
   }
  },
@@ -3471,19 +3471,6 @@
   }
  },
  {
-  "id": "i0580ff",
-  "sci": "Bombus quadricolor",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Bombus",
-  "threat": "",
-  "n_interactions": 60,
-  "common": {
-   "fr": "Psithyre quadricolore",
-   "en": ""
-  }
- },
- {
   "id": "ie6844f",
   "sci": "Papilio helenus",
   "order": "Lepidoptera",
@@ -3494,6 +3481,19 @@
   "common": {
    "fr": "",
    "en": "Red Helen"
+  }
+ },
+ {
+  "id": "i0580ff",
+  "sci": "Bombus quadricolor",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Bombus",
+  "threat": "",
+  "n_interactions": 59,
+  "common": {
+   "fr": "Psithyre quadricolore",
+   "en": ""
   }
  },
  {
@@ -5395,19 +5395,6 @@
   }
  },
  {
-  "id": "id9a44a",
-  "sci": "Bombus flavidus",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Bombus",
-  "threat": "",
-  "n_interactions": 37,
-  "common": {
-   "fr": "Bourdon doré",
-   "en": "Fernald Cuckoo Bumble Bee"
-  }
- },
- {
   "id": "iec9bcb",
   "sci": "Bombus melanopygus",
   "order": "Hymenoptera",
@@ -5499,19 +5486,6 @@
   }
  },
  {
-  "id": "i88f965",
-  "sci": "Adalia bipunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Adalia",
-  "threat": "",
-  "n_interactions": 36,
-  "common": {
-   "fr": "Coccinelle rouge à deux points noirs",
-   "en": "2-spot Ladybird"
-  }
- },
- {
   "id": "ifd94c0",
   "sci": "Agrilus delphinensis",
   "order": "Coleoptera",
@@ -5535,6 +5509,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "id9a44a",
+  "sci": "Bombus flavidus",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Bombus",
+  "threat": "",
+  "n_interactions": 36,
+  "common": {
+   "fr": "Bourdon doré",
+   "en": "Fernald Cuckoo Bumble Bee"
   }
  },
  {
@@ -5902,19 +5889,6 @@
   }
  },
  {
-  "id": "i12a607",
-  "sci": "Polistes aurifer",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 34,
-  "common": {
-   "fr": "",
-   "en": "Gold-bearing Paper Wasp"
-  }
- },
- {
   "id": "i164ec7",
   "sci": "Sphaerophoria rueppellii",
   "order": "Diptera",
@@ -6237,6 +6211,19 @@
   "common": {
    "fr": "",
    "en": "Weevil"
+  }
+ },
+ {
+  "id": "i12a607",
+  "sci": "Polistes aurifer",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 32,
+  "common": {
+   "fr": "",
+   "en": "Gold-bearing Paper Wasp"
   }
  },
  {
@@ -6575,6 +6562,19 @@
   "common": {
    "fr": "Sphécode brun",
    "en": "Dark-winged Blood Bee"
+  }
+ },
+ {
+  "id": "i88f965",
+  "sci": "Adalia bipunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Adalia",
+  "threat": "",
+  "n_interactions": 29,
+  "common": {
+   "fr": "Coccinelle rouge à deux points noirs",
+   "en": "2-spot Ladybird"
   }
  },
  {
@@ -7709,19 +7709,6 @@
   }
  },
  {
-  "id": "i0c4ba4",
-  "sci": "Coccinella trifasciata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 24,
-  "common": {
-   "fr": "",
-   "en": "Three-banded Lady Beetle"
-  }
- },
- {
   "id": "i293a80",
   "sci": "Ematurga atomaria",
   "order": "Lepidoptera",
@@ -8307,19 +8294,6 @@
   }
  },
  {
-  "id": "ie5ac62",
-  "sci": "Harmonia quadripunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Harmonia",
-  "threat": "",
-  "n_interactions": 22,
-  "common": {
-   "fr": "Coccinelle à quatre points",
-   "en": "Cream-Streaked Ladybird"
-  }
- },
- {
   "id": "i478c24",
   "sci": "Hylaeus annularis",
   "order": "Hymenoptera",
@@ -8512,19 +8486,6 @@
   "common": {
    "fr": "Zygène de la Gesse, Zygène des Vesces",
    "en": "Reticent Burnet"
-  }
- },
- {
-  "id": "iae5213",
-  "sci": "Adalia decempunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Adalia",
-  "threat": "",
-  "n_interactions": 21,
-  "common": {
-   "fr": "Coccinelle à dix points",
-   "en": "10-spot Ladybird"
   }
  },
  {
@@ -8798,6 +8759,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "iae5213",
+  "sci": "Adalia decempunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Adalia",
+  "threat": "",
+  "n_interactions": 20,
+  "common": {
+   "fr": "Coccinelle à dix points",
+   "en": "10-spot Ladybird"
   }
  },
  {
@@ -10140,6 +10114,19 @@
   }
  },
  {
+  "id": "i0c4ba4",
+  "sci": "Coccinella trifasciata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 17,
+  "common": {
+   "fr": "",
+   "en": "Three-banded Lady Beetle"
+  }
+ },
+ {
   "id": "i7d5651",
   "sci": "Cydia strobilella",
   "order": "Lepidoptera",
@@ -11138,6 +11125,19 @@
   "common": {
    "fr": "Eupithécie de l'Aubépine",
    "en": "Mottled Pug"
+  }
+ },
+ {
+  "id": "ie5ac62",
+  "sci": "Harmonia quadripunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Harmonia",
+  "threat": "",
+  "n_interactions": 15,
+  "common": {
+   "fr": "Coccinelle à quatre points",
+   "en": "Cream-Streaked Ladybird"
   }
  },
  {
@@ -12974,19 +12974,6 @@
   }
  },
  {
-  "id": "i3dd951",
-  "sci": "Sphyrna lewini",
-  "order": "Carcharhiniformes",
-  "family": "Sphyrnidae",
-  "genus": "Sphyrna",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "Requin marteau à festons",
-   "en": "Bronze hammerhead shark"
-  }
- },
- {
   "id": "icb3f51",
   "sci": "Stenurella melanura",
   "order": "Coleoptera",
@@ -13010,19 +12997,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ibe9924",
-  "sci": "Tinca tinca",
-  "order": "Cypriniformes",
-  "family": "Cyprinidae",
-  "genus": "Tinca",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "Aiguillons",
-   "en": "Doctor Fish"
   }
  },
  {
@@ -14053,19 +14027,6 @@
   }
  },
  {
-  "id": "i8b9204",
-  "sci": "Scathophaga furcata",
-  "order": "Diptera",
-  "family": "Scathophagidae",
-  "genus": "Scathophaga",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i1a4cb3",
   "sci": "Scopula marginepunctata",
   "order": "Lepidoptera",
@@ -14583,19 +14544,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i59a404",
-  "sci": "Coccinella magnifica",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "Coccinelle éclatante",
-   "en": "Scarce 7-spot Ladybird"
   }
  },
  {
@@ -15298,6 +15246,19 @@
   "common": {
    "fr": "",
    "en": "Fan-Bearing Wood-Borer"
+  }
+ },
+ {
+  "id": "i8b9204",
+  "sci": "Scathophaga furcata",
+  "order": "Diptera",
+  "family": "Scathophagidae",
+  "genus": "Scathophaga",
+  "threat": "",
+  "n_interactions": 11,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -19305,19 +19266,6 @@
   }
  },
  {
-  "id": "i53b207",
-  "sci": "Cryptothelea gloverii",
-  "order": "Lepidoptera",
-  "family": "Psychidae",
-  "genus": "Cryptothelea",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ie3e3d8",
   "sci": "Cupido minimus",
   "order": "Lepidoptera",
@@ -20527,19 +20475,6 @@
   }
  },
  {
-  "id": "i907fe2",
-  "sci": "Pteroma plagiophleps",
-  "order": "Lepidoptera",
-  "family": "Psychidae",
-  "genus": "Pteroma",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i13f635",
   "sci": "Reptalus panzeri",
   "order": "Hemiptera",
@@ -21728,6 +21663,19 @@
   "order": "Coleoptera",
   "family": "Curculionidae",
   "genus": "Cryphalus",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i53b207",
+  "sci": "Cryptothelea gloverii",
+  "order": "Lepidoptera",
+  "family": "Psychidae",
+  "genus": "Cryptothelea",
   "threat": "",
   "n_interactions": 7,
   "common": {
@@ -23392,6 +23340,19 @@
   "order": "Hemiptera",
   "family": "Aphididae",
   "genus": "Pterocomma",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i907fe2",
+  "sci": "Pteroma plagiophleps",
+  "order": "Lepidoptera",
+  "family": "Psychidae",
+  "genus": "Pteroma",
   "threat": "",
   "n_interactions": 7,
   "common": {
@@ -26972,19 +26933,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "if07547",
-  "sci": "Pieris japonica",
-  "order": "Ericales",
-  "family": "Ericaceae",
-  "genus": "Pieris",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "Piéris du Japon, Andromède du Japon",
-   "en": "Heath"
   }
  },
  {
@@ -31720,6 +31668,19 @@
   }
  },
  {
+  "id": "if07547",
+  "sci": "Pieris japonica",
+  "order": "Ericales",
+  "family": "Ericaceae",
+  "genus": "Pieris",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "Piéris du Japon, Andromède du Japon",
+   "en": "Heath"
+  }
+ },
+ {
   "id": "iaf4118",
   "sci": "Piezodorus lituratus",
   "order": "Hemiptera",
@@ -32783,19 +32744,6 @@
   "common": {
    "fr": "",
    "en": "Fruit Fly"
-  }
- },
- {
-  "id": "i83ac3b",
-  "sci": "Vespa sexmaculata",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -35019,6 +34967,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i59a404",
+  "sci": "Coccinella magnifica",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 4,
+  "common": {
+   "fr": "Coccinelle éclatante",
+   "en": "Scarce 7-spot Ladybird"
   }
  },
  {
@@ -38155,19 +38116,6 @@
   }
  },
  {
-  "id": "ia7b196",
-  "sci": "Myrrha octodecimguttata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Myrrha",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "Coccinelle des pins",
-   "en": "18-Spot Ladybird"
-  }
- },
- {
   "id": "i452772",
   "sci": "Mythimna pallens",
   "order": "Lepidoptera",
@@ -40154,6 +40102,19 @@
   "common": {
    "fr": "",
    "en": "Lesser Banded Hornet"
+  }
+ },
+ {
+  "id": "i83ac3b",
+  "sci": "Vespa sexmaculata",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 4,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -42195,19 +42156,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ie3f937",
-  "sci": "Balanus crenatus",
-  "order": "Sessilia",
-  "family": "Balanidae",
-  "genus": "Balanus",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "Balane crénelée",
-   "en": "an acorn barnacle"
   }
  },
  {
@@ -46969,32 +46917,6 @@
   }
  },
  {
-  "id": "i6557cb",
-  "sci": "Lasius brunneus",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Brown Ant"
-  }
- },
- {
-  "id": "ia0b7c2",
-  "sci": "Lasius fuliginosus",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "Fourmi fuligineuse",
-   "en": "Jet Ant"
-  }
- },
- {
   "id": "i6ad9c7",
   "sci": "Lasius psammophilus",
   "order": "Hymenoptera",
@@ -48409,19 +48331,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i3d1f87",
-  "sci": "Nomada marshamella",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Marsham's Nomad Bee"
   }
  },
  {
@@ -68471,6 +68380,19 @@
   }
  },
  {
+  "id": "ia7b196",
+  "sci": "Myrrha octodecimguttata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Myrrha",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "Coccinelle des pins",
+   "en": "18-Spot Ladybird"
+  }
+ },
+ {
   "id": "i6e73c0",
   "sci": "Mythimna ferrago",
   "order": "Lepidoptera",
@@ -68988,6 +68910,19 @@
   "common": {
    "fr": "",
    "en": "Lathbury's Nomad Bee"
+  }
+ },
+ {
+  "id": "i3d1f87",
+  "sci": "Nomada marshamella",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": "Marsham's Nomad Bee"
   }
  },
  {
@@ -75452,6 +75387,19 @@
   }
  },
  {
+  "id": "ibe9924",
+  "sci": "Tinca tinca",
+  "order": "Cypriniformes",
+  "family": "Cyprinidae",
+  "genus": "Tinca",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "Aiguillons",
+   "en": "Doctor Fish"
+  }
+ },
+ {
   "id": "i2d29e8",
   "sci": "Tipula abdominalis",
   "order": "",
@@ -77789,19 +77737,6 @@
   "common": {
    "fr": "Petite fausse teigne",
    "en": "Lesser Wax Moth"
-  }
- },
- {
-  "id": "i06ebd5",
-  "sci": "Achroia innotata",
-  "order": "Lepidoptera",
-  "family": "Pyralidae",
-  "genus": "Achroia",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -85719,6 +85654,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "ie3f937",
+  "sci": "Balanus crenatus",
+  "order": "Sessilia",
+  "family": "Balanidae",
+  "genus": "Balanus",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Balane crénelée",
+   "en": "an acorn barnacle"
   }
  },
  {
@@ -100191,19 +100139,6 @@
   }
  },
  {
-  "id": "i4e8d54",
-  "sci": "Formica lasioides",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ia64520",
   "sci": "Formica lemani",
   "order": "Hymenoptera",
@@ -104192,6 +104127,32 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i6557cb",
+  "sci": "Lasius brunneus",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Lasius",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Brown Ant"
+  }
+ },
+ {
+  "id": "ia0b7c2",
+  "sci": "Lasius fuliginosus",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Lasius",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Fourmi fuligineuse",
+   "en": "Jet Ant"
   }
  },
  {
@@ -121235,6 +121196,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i3dd951",
+  "sci": "Sphyrna lewini",
+  "order": "Carcharhiniformes",
+  "family": "Sphyrnidae",
+  "genus": "Sphyrna",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Requin marteau à festons",
+   "en": "Bronze hammerhead shark"
   }
  },
  {
