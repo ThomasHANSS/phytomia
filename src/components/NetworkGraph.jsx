@@ -6,7 +6,7 @@ function getName(item, lang) { return item.common ? item.common[lang] || item.sc
 function obsCount(ix) { return ix.src.reduce(function (s, sr) { return s + (sr.n || 1); }, 0); }
 
 function OverviewPanel(props) {
-  var groups = props.groups, lang = props.lang, onSelect = props.onSelect, onSelSpecies = props.onSelSpecies;
+  var groups = props.groups, lang = props.lang, onSelect = props.onSelect, onSelSpecies = props.onSelSpecies, isP = props.isP;
   var total = groups.reduce(function (s, g) { return s + g.count; }, 0);
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
@@ -252,7 +252,7 @@ export default function NetworkGraph(props) {
   return (
     <div>
       <OverviewPanel groups={groups} lang={lang}
-        onSelect={setSelectedFamily} onSelSpecies={onSel} />
+        onSelect={setSelectedFamily} onSelSpecies={onSel} isP={isP} />
       <p style={{ fontSize: 9, color: "var(--text3)", textAlign: "center", marginTop: 8 }}>
         {lang === "fr" ? "Cliquez une cat\u00e9gorie pour explorer \u00b7 Cliquez une esp\u00e8ce pour voir sa fiche" : "Click a category to explore \u00b7 Click a species for details"}
       </p>
