@@ -505,8 +505,8 @@
   "threat": "",
   "n_interactions": 213,
   "common": {
-   "fr": "",
-   "en": "Blowball"
+   "fr": "Pissenlit",
+   "en": "Dandelion"
   }
  },
  {
@@ -7915,7 +7915,7 @@
   "threat": "",
   "n_interactions": 45,
   "common": {
-   "fr": "Iota (Le)",
+   "fr": "Iota",
    "en": "Plain Golden Y"
   }
  },
@@ -7960,7 +7960,7 @@
   "threat": "",
   "n_interactions": 45,
   "common": {
-   "fr": "Le Sphinx gazé, le Sphinx du Chèvrefeuille",
+   "fr": "Sphinx gazé, le Sphinx du Chèvrefeuille",
    "en": "Broad-Bordered Bee Hawk"
   }
  },
@@ -7990,7 +7990,7 @@
   "threat": "",
   "n_interactions": 45,
   "common": {
-   "fr": "Ceinture jaune (La)",
+   "fr": "Ceinture jaune",
    "en": "Large Ranunculus"
   }
  },
@@ -10705,7 +10705,7 @@
   "threat": "",
   "n_interactions": 37,
   "common": {
-   "fr": "La Larentie rubescente",
+   "fr": "Larentie rubescente",
    "en": "Ruddy Highflyer"
   }
  },
@@ -11080,8 +11080,8 @@
   "threat": "",
   "n_interactions": 37,
   "common": {
-   "fr": "Frelon d'Europe, Frelon, Guichard",
-   "en": "European Hornet"
+   "fr": "Frelon européen",
+   "en": "European hornet"
   }
  },
  {
@@ -26021,7 +26021,7 @@
   "n_interactions": 15,
   "common": {
    "fr": "Abeille domestique",
-   "en": "Africanized honey bee"
+   "en": "Honey bee"
   }
  },
  {
@@ -43105,8 +43105,8 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
-   "en": "European Wasp"
+   "fr": "Guêpe germanique",
+   "en": "German wasp"
   }
  },
  {
@@ -46555,8 +46555,8 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
-   "en": "Red Admiral"
+   "fr": "Vulcain",
+   "en": "Red admiral"
   }
  },
  {
@@ -55525,7 +55525,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "Bourdon terrestre (Le)",
+   "fr": "Bourdon terrestre",
    "en": "Buff Tailed Bumblebee"
   }
  },
@@ -56245,8 +56245,8 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "Coccinelle à 7 points, Coccinelle, Bête à bon Dieu",
-   "en": "7-spot Ladybird"
+   "fr": "Coccinelle à sept points",
+   "en": "Seven-spot ladybird"
   }
  },
  {
@@ -62965,7 +62965,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "Doryphore (Le)",
+   "fr": "Doryphore",
    "en": "Colorado Beetle"
   }
  },
@@ -70450,7 +70450,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "Montagnarde (La)",
+   "fr": "Montagnarde",
    "en": "firecracker-flower"
   }
  },
@@ -74710,7 +74710,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "Hibou (Le)",
+   "fr": "Hibou",
    "en": "European Yellow Underwing Moth"
   }
  },
@@ -75505,8 +75505,8 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
-   "en": "Cabbage White"
+   "fr": "Piéride du chou",
+   "en": "Large white"
   }
  },
  {
@@ -75520,8 +75520,8 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
-   "en": "Cabbage Butterfly"
+   "fr": "Piéride de la rave",
+   "en": "Small white"
   }
  },
  {
@@ -75731,7 +75731,7 @@
   "n_interactions": 3,
   "common": {
    "fr": "Azuré commun",
-   "en": "Common Blue"
+   "en": "Common blue"
   }
  },
  {
@@ -78730,7 +78730,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "La Zérène de l'Orme",
+   "fr": "Zérène de l'Orme",
    "en": "Clouded Magpie"
   }
  },
@@ -79316,7 +79316,7 @@
   "n_interactions": 2,
   "common": {
    "fr": "Paon du jour",
-   "en": "Peacock"
+   "en": "Peacock butterfly"
   }
  },
  {
@@ -79330,8 +79330,8 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Petite Tortue",
-   "en": "Small Tortoiseshell"
+   "fr": "Petite tortue",
+   "en": "Small tortoiseshell"
   }
  },
  {
@@ -81685,7 +81685,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Cabère pustulée (La)",
+   "fr": "Cabère pustulée",
    "en": "Common Wave"
   }
  },
@@ -85135,7 +85135,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Hibernie défeuillante (L')",
+   "fr": "Hibernie défeuillante",
    "en": "Mottled Umber"
   }
  },
@@ -85720,7 +85720,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Cul-brun (Le)",
+   "fr": "Cul-brun",
    "en": "Brown-tail"
   }
  },
@@ -87655,7 +87655,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Ecaille fileuse (L')",
+   "fr": "Ecaille fileuse",
    "en": "American White Moth"
   }
  },
@@ -88330,7 +88330,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "La Noctuelle des Potagers",
+   "fr": "Noctuelle des Potagers",
    "en": "Bright-line Brown-eye"
   }
  },
@@ -88405,7 +88405,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Bombyx du Chêne (Le), Minime à bandes jaunes (Le)",
+   "fr": "Bombyx du Chêne, Minime à bandes jaunes",
    "en": "Oak Eggar"
   }
  },
@@ -90295,8 +90295,8 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Le Moro-Sphinx, Le Sphinx du Caille-Lait",
-   "en": "Humming-Bird Hawk-Moth"
+   "fr": "Moro-sphinx",
+   "en": "Hummingbird hawk-moth"
   }
  },
  {
@@ -90505,8 +90505,8 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
-   "en": "Meadow Brown"
+   "fr": "Myrtil",
+   "en": "Meadow brown"
   }
  },
  {
@@ -91000,7 +91000,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Le Sphinx du Tilleul",
+   "fr": "Sphinx du Tilleul",
    "en": "Lime Hawk-Moth"
   }
  },
@@ -91300,7 +91300,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "La Leucanie orbicole",
+   "fr": "Leucanie orbicole",
    "en": "American Wainscot"
   }
  },
@@ -91645,7 +91645,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Ennomos dentelé (L')",
+   "fr": "Ennomos dentelé",
    "en": "Scalloped Hazel"
   }
  },
@@ -91735,7 +91735,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Etoilée (L'), Bombyx antique (Le)",
+   "fr": "Etoilée, Bombyx antique",
    "en": "Moth"
   }
  },
@@ -91795,7 +91795,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "L'Orthosie du Cerisier",
+   "fr": "Orthosie du Cerisier",
    "en": "Common Quaker"
   }
  },
@@ -92260,8 +92260,8 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Le Grand Porte-queue",
-   "en": "Artemisia Swallowtail"
+   "fr": "Machaon",
+   "en": "Swallowtail"
   }
  },
  {
@@ -95530,7 +95530,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie de Kretschmar (L')",
+   "fr": "Acidalie de Kretschmar",
    "en": ""
   }
  },
@@ -95545,7 +95545,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie décorée (L'), Cendrée (La)",
+   "fr": "Acidalie décorée, Cendrée",
    "en": "Middle Lace Border"
   }
  },
@@ -95560,7 +95560,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie des sables (L')",
+   "fr": "Acidalie des sables",
    "en": "Rosy Wave"
   }
  },
@@ -95575,7 +95575,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie laiteuse (L')",
+   "fr": "Acidalie laiteuse",
    "en": "Cream Wave"
   }
  },
@@ -95590,7 +95590,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie fausse-Timandre (L')",
+   "fr": "Acidalie fausse-Timandre",
    "en": "Small Blood-Vein"
   }
  },
@@ -95605,7 +95605,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie hardie (L')",
+   "fr": "Acidalie hardie",
    "en": "Lewes Wave"
   }
  },
@@ -95620,7 +95620,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie des pâturages (L')",
+   "fr": "Acidalie des pâturages",
    "en": "Lesser Cream Wave"
   }
  },
@@ -95635,7 +95635,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie grisonnante (L')",
+   "fr": "Acidalie grisonnante",
    "en": ""
   }
  },
@@ -95665,7 +95665,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Frange picotée (La), Acidalie picotée (L')",
+   "fr": "Frange picotée, Acidalie picotée",
    "en": "Mullein Wave"
   }
  },
@@ -95680,7 +95680,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie en soie brodée (L')",
+   "fr": "Acidalie en soie brodée",
    "en": ""
   }
  },
@@ -95695,7 +95695,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie étrille (L')",
+   "fr": "Acidalie étrille",
    "en": "Sub-Angled Wave"
   }
  },
@@ -95710,7 +95710,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie ornée (L')",
+   "fr": "Acidalie ornée",
    "en": "Lace Border"
   }
  },
@@ -95725,7 +95725,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "La Phalène rougeâtre, l'Acidalie rougie",
+   "fr": "Phalène rougeâtre, l'Acidalie rougie",
    "en": "Tawny Wave"
   }
  },
@@ -95740,7 +95740,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie embrouillée (L')",
+   "fr": "Acidalie embrouillée",
    "en": ""
   }
  },
@@ -95755,7 +95755,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie virginale (L'), l'Acidalie ponctuée (L')",
+   "fr": "Acidalie virginale, l'Acidalie ponctuée",
    "en": ""
   }
  },
@@ -95770,7 +95770,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie à trois raies (L')",
+   "fr": "Acidalie à trois raies",
    "en": "Smoky Wave"
   }
  },
@@ -95785,7 +95785,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie des ombelles (L')",
+   "fr": "Acidalie des ombelles",
    "en": ""
   }
  },
@@ -95815,7 +95815,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Acidalie striée (L'), Acidalie sillonnée.(L')",
+   "fr": "Acidalie striée, Acidalie sillonnée.(L')",
    "en": "Streaked Wave"
   }
  },
@@ -97180,7 +97180,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Couleuvre rayée (La), Serpent jarretière",
+   "fr": "Couleuvre rayée, Serpent jarretière",
    "en": "Common Garter Snake"
   }
  },
@@ -98665,7 +98665,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "La Zygaena lonicerae, Zygène du chèvrefeuille, La Zygène des bois",
+   "fr": "Zygaena lonicerae, Zygène du chèvrefeuille, La Zygène des bois",
    "en": "Narrow-Bordered Five-Spot Burnet"
   }
  },
@@ -98680,7 +98680,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Zygène des prés (La), Zygène des Cornettes (La)",
+   "fr": "Zygène des prés, Zygène des Cornettes",
    "en": "Five-spot Burnet"
   }
  },
@@ -98785,7 +98785,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Zérène du Groseillier",
+   "fr": "Zérène du Groseillier",
    "en": "Magpie"
   }
  },
@@ -99175,7 +99175,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Lobophore de l'Actée (La)",
+   "fr": "Lobophore de l'Actée",
    "en": ""
   }
  },
@@ -99190,7 +99190,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Lobophore verdâtre",
+   "fr": "Lobophore verdâtre",
    "en": "Yellow-Barred Brindle"
   }
  },
@@ -99490,7 +99490,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Aunette (L')",
+   "fr": "Aunette",
    "en": "Alder Moth"
   }
  },
@@ -99505,7 +99505,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Noctuelle de la Patience",
+   "fr": "Noctuelle de la Patience",
    "en": "Knot Grass"
   }
  },
@@ -99700,7 +99700,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie souillée (La)",
+   "fr": "Boarmie souillée",
    "en": "Brindled three-lined moth"
   }
  },
@@ -100075,7 +100075,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie ponctuée (La), Boarmie corticole (La)",
+   "fr": "Boarmie ponctuée, Boarmie corticole",
    "en": "Grey Birch"
   }
  },
@@ -100840,7 +100840,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Hibernie orangée",
+   "fr": "Hibernie orangée",
    "en": "Scarce Umber"
   }
  },
@@ -100855,7 +100855,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Hibernie messagère",
+   "fr": "Hibernie messagère",
    "en": ""
   }
  },
@@ -100870,7 +100870,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hibernie grisâtre (L')",
+   "fr": "Hibernie grisâtre",
    "en": "Spring Usher"
   }
  },
@@ -100885,7 +100885,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Hibernie hâtive",
+   "fr": "Hibernie hâtive",
    "en": "Dotted Border"
   }
  },
@@ -100900,7 +100900,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Xanthie liturée",
+   "fr": "Xanthie liturée",
    "en": "Brown-spot Pinion"
   }
  },
@@ -100930,7 +100930,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Point d'Exclamation",
+   "fr": "Point d'Exclamation",
    "en": "Heart & Dart"
   }
  },
@@ -100945,7 +100945,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Noctuelle baignée",
+   "fr": "Noctuelle baignée",
    "en": "Black Cutworm"
   }
  },
@@ -101170,7 +101170,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie crêtée (La)",
+   "fr": "Boarmie crêtée",
    "en": "Dotted Carpet"
   }
  },
@@ -101185,7 +101185,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie recourbée (La)",
+   "fr": "Boarmie recourbée",
    "en": "Mottled Beauty"
   }
  },
@@ -101215,7 +101215,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène distincte, Le Lomographe précoce",
+   "fr": "Phalène distincte, Le Lomographe précoce",
    "en": "Sloe Carpet"
   }
  },
@@ -101665,7 +101665,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène de l'Erable, l'Alsophile automnale",
+   "fr": "Phalène de l'Erable, l'Alsophile automnale",
    "en": ""
   }
  },
@@ -101680,7 +101680,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Marronnier, l'Alsophile printanière",
+   "fr": "Phalène du Marronnier, l'Alsophile printanière",
    "en": "March Moth"
   }
  },
@@ -102355,7 +102355,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Pyramide",
+   "fr": "Pyramide",
    "en": "Copper Underwing"
   }
  },
@@ -103405,7 +103405,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Angéronie du Prunier (L'), Phalène du Noisetier (La)",
+   "fr": "Angéronie du Prunier, Phalène du Noisetier",
    "en": "Orange Moth"
   }
  },
@@ -104170,7 +104170,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Violette, la Cidarie dérivée",
+   "fr": "Violette, la Cidarie dérivée",
    "en": "Streamer"
   }
  },
@@ -104185,7 +104185,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Larentie mouchetée",
+   "fr": "Larentie mouchetée",
    "en": "Dentated Pug"
   }
  },
@@ -104245,7 +104245,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Campagnarde (La)",
+   "fr": "Campagnarde",
    "en": "Clouded-Bordered Brindle"
   }
  },
@@ -104290,7 +104290,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos du Lilas (L')",
+   "fr": "Ennomos du Lilas",
    "en": "Lilac Beauty"
   }
  },
@@ -104545,7 +104545,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène de l'Arrête-Boeuf",
+   "fr": "Phalène de l'Arrête-Boeuf",
    "en": "Rest Harrow"
   }
  },
@@ -104590,7 +104590,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La petite Rayure",
+   "fr": "Petite Rayure",
    "en": "Lesser Treble-Bar"
   }
  },
@@ -104605,7 +104605,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Triple Raie, La Rayure commune",
+   "fr": "Triple Raie, La Rayure commune",
    "en": "Treble Bar"
   }
  },
@@ -104620,7 +104620,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Rayure montagnarde",
+   "fr": "Rayure montagnarde",
    "en": "Purple Treble-Bar"
   }
  },
@@ -104635,7 +104635,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Nyssie hispide",
+   "fr": "Nyssie hispide",
    "en": "Small Brindled Beauty"
   }
  },
@@ -104995,7 +104995,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Intruse (L')",
+   "fr": "Intruse",
    "en": "Orange Underwing"
   }
  },
@@ -105055,7 +105055,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ecaille Martre (L'), Hérissonne (La)",
+   "fr": "Ecaille Martre, Hérissonne",
    "en": "Garden Tiger"
   }
  },
@@ -105820,7 +105820,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie tigrée (La)",
+   "fr": "Boarmie tigrée",
    "en": ""
   }
  },
@@ -107215,7 +107215,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie lunulée (La)",
+   "fr": "Boarmie lunulée",
    "en": ""
   }
  },
@@ -107365,7 +107365,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Aspilate jaunâtre (L')",
+   "fr": "Aspilate jaunâtre",
    "en": "Straw Belle"
   }
  },
@@ -107530,7 +107530,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène candide",
+   "fr": "Phalène candide",
    "en": "Small White Wave"
   }
  },
@@ -107545,7 +107545,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie du Cornouiller (La)",
+   "fr": "Cidarie du Cornouiller",
    "en": ""
   }
  },
@@ -108085,7 +108085,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Écrevisse des torrents (L'), Écrevisse des pierres (L')",
+   "fr": "Écrevisse des torrents, Écrevisse des pierres",
    "en": "stone crayfish"
   }
  },
@@ -108100,7 +108100,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gamma (Le)",
+   "fr": "Gamma",
    "en": "Silver Y"
   }
  },
@@ -108700,7 +108700,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eubolie de l'Actée (L')",
+   "fr": "Eubolie de l'Actée",
    "en": ""
   }
  },
@@ -109450,7 +109450,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Bouleau, le Biston du Bouleau",
+   "fr": "Phalène du Bouleau, le Biston du Bouleau",
    "en": "Pepper And Salt Geometer"
   }
  },
@@ -109465,7 +109465,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Biston marbré (Le)",
+   "fr": "Biston marbré",
    "en": "Oak Beauty"
   }
  },
@@ -110575,7 +110575,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fidonie du Pin (La)",
+   "fr": "Fidonie du Pin",
    "en": "Bordered White"
   }
  },
@@ -110695,7 +110695,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cabère virginale (La), Délicate (La)",
+   "fr": "Cabère virginale, Délicate",
    "en": "Common White Wave"
   }
  },
@@ -111415,7 +111415,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Céladon (Le)",
+   "fr": "Céladon",
    "en": "Light Emerald"
   }
  },
@@ -111595,7 +111595,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Brocatelle d'or (La)",
+   "fr": "Brocatelle d'or",
    "en": "Yellow Shell"
   }
  },
@@ -112975,7 +112975,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Veinée",
+   "fr": "Veinée",
    "en": ""
   }
  },
@@ -113020,7 +113020,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eubolie sinuée (L')",
+   "fr": "Eubolie sinuée",
    "en": "Royal Mantle"
   }
  },
@@ -113035,7 +113035,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène putride (La)",
+   "fr": "Phalène putride",
    "en": ""
   }
  },
@@ -113050,7 +113050,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eubolie roussâtre (L')",
+   "fr": "Eubolie roussâtre",
    "en": "Ruddy Carpet"
   }
  },
@@ -113695,7 +113695,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Epione étrangère (L')",
+   "fr": "Epione étrangère",
    "en": "Little Thorn"
   }
  },
@@ -114280,7 +114280,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos ambiguë (La), Gnophos incertaine (La)",
+   "fr": "Gnophos ambiguë, Gnophos incertaine",
    "en": ""
   }
  },
@@ -114295,7 +114295,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos crénelée (La)",
+   "fr": "Gnophos crénelée",
    "en": ""
   }
  },
@@ -114325,7 +114325,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos glauque (La)",
+   "fr": "Gnophos glauque",
    "en": ""
   }
  },
@@ -114355,7 +114355,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos helvète (La)",
+   "fr": "Gnophos helvète",
    "en": ""
   }
  },
@@ -114370,7 +114370,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos obscure (La)",
+   "fr": "Gnophos obscure",
    "en": "Annulet"
   }
  },
@@ -114400,7 +114400,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos tannée (La)",
+   "fr": "Gnophos tannée",
    "en": "Limestone Annulet"
   }
  },
@@ -114415,7 +114415,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos bigarrée (La)",
+   "fr": "Gnophos bigarrée",
    "en": ""
   }
  },
@@ -114595,7 +114595,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Chésias du Genêt (La)",
+   "fr": "Chésias du Genêt",
    "en": "Streak"
   }
  },
@@ -114610,7 +114610,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Rousse, la Chesias oblique",
+   "fr": "Rousse, la Chesias oblique",
    "en": "Broom-Tip"
   }
  },
@@ -114655,7 +114655,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Réseau, La Géomètre à barreaux",
+   "fr": "Réseau, La Géomètre à barreaux",
    "en": "Latticed Heath"
   }
  },
@@ -114805,7 +114805,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Crabe des neiges (Le)",
+   "fr": "Crabe des neiges",
    "en": "Atlantic snow crab"
   }
  },
@@ -114925,7 +114925,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Chlorée (La)",
+   "fr": "Chlorée",
    "en": "Southern Grass Emerald"
   }
  },
@@ -114955,7 +114955,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Herbacée (L'), Phalène verte des Callunes (La)",
+   "fr": "Herbacée, Phalène verte des Callunes",
    "en": "Small Grass Emerald"
   }
  },
@@ -114970,7 +114970,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie fasciée (La)",
+   "fr": "Cidarie fasciée",
    "en": "Autumn Green Carpet"
   }
  },
@@ -114985,7 +114985,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie à bandes vertes (La)",
+   "fr": "Cidarie à bandes vertes",
    "en": "Red-Green Carpet"
   }
  },
@@ -115000,7 +115000,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie couronnée (L')",
+   "fr": "Eupithécie couronnée",
    "en": "V-Pug"
   }
  },
@@ -115150,7 +115150,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Criquet méridional",
+   "fr": "Criquet méridional",
    "en": "Eisentraut's Bow-winged Grasshopper"
   }
  },
@@ -116245,7 +116245,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie ceinte (La)",
+   "fr": "Boarmie ceinte",
    "en": "Ringed Carpet"
   }
  },
@@ -116260,7 +116260,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie des Lichens (La)",
+   "fr": "Boarmie des Lichens",
    "en": "Brussels Lace"
   }
  },
@@ -116935,7 +116935,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène lapidée (La)",
+   "fr": "Phalène lapidée",
    "en": "Slender-Striped Rufous"
   }
  },
@@ -117610,7 +117610,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie glauque (La)",
+   "fr": "Cidarie glauque",
    "en": ""
   }
  },
@@ -117640,7 +117640,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie brun-vert (La)",
+   "fr": "Cidarie brun-vert",
    "en": ""
   }
  },
@@ -117655,7 +117655,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie joyeuse (La)",
+   "fr": "Cidarie joyeuse",
    "en": ""
   }
  },
@@ -117670,7 +117670,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie pointillée (La)",
+   "fr": "Cidarie pointillée",
    "en": "Mottled Grey"
   }
  },
@@ -117685,7 +117685,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie olive (La)",
+   "fr": "Cidarie olive",
    "en": "Beech-Green Carpet"
   }
  },
@@ -117700,7 +117700,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie verdâtre (La)",
+   "fr": "Cidarie verdâtre",
    "en": "Green Carpet"
   }
  },
@@ -117730,7 +117730,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie dérangée (La)",
+   "fr": "Cidarie dérangée",
    "en": ""
   }
  },
@@ -117745,7 +117745,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Himère-plume (L'), Phalène emplumée (La)",
+   "fr": "Himère-plume, Phalène emplumée",
    "en": "Feathered Thorn"
   }
  },
@@ -117895,7 +117895,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Verdelet",
+   "fr": "Verdelet",
    "en": "Blotched Emerald"
   }
  },
@@ -118660,7 +118660,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Trapèze",
+   "fr": "Trapèze",
    "en": "Dun-bar"
   }
  },
@@ -118675,7 +118675,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Lynx",
+   "fr": "Lynx",
    "en": "Purple Bar"
   }
  },
@@ -118735,7 +118735,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène convexe",
+   "fr": "Phalène convexe",
    "en": "Many-Lined"
   }
  },
@@ -119125,7 +119125,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène de la Mancienne, la Crocalle commune",
+   "fr": "Phalène de la Mancienne, la Crocalle commune",
    "en": "Scalloped Oak"
   }
  },
@@ -119140,7 +119140,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Crocalle du Prunellier (La), Crocalle brune (La)",
+   "fr": "Crocalle du Prunellier, Crocalle brune",
    "en": ""
   }
  },
@@ -119215,7 +119215,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fidonie lutée (La)",
+   "fr": "Fidonie lutée",
    "en": ""
   }
  },
@@ -120190,7 +120190,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre suspendue (L')",
+   "fr": "Ephyre suspendue",
    "en": "Birch Mocha"
   }
  },
@@ -120205,7 +120205,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre omicron (L'), Phalène mariée (La)",
+   "fr": "Ephyre omicron, Phalène mariée",
    "en": "Mocha"
   }
  },
@@ -120220,7 +120220,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre trilignée (L')",
+   "fr": "Ephyre trilignée",
    "en": "Clay Triple-Lines"
   }
  },
@@ -120235,7 +120235,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre orbiculaire (L'), Ephyre lichénée (L')",
+   "fr": "Ephyre orbiculaire, Ephyre lichénée",
    "en": "Dingy Mocha"
   }
  },
@@ -120250,7 +120250,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre trouée (L'), Ephyre ocellée (L')",
+   "fr": "Ephyre trouée, Ephyre ocellée",
    "en": "False Mocha"
   }
  },
@@ -120265,7 +120265,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre ponctuée (L'), Soutenue (La)",
+   "fr": "Ephyre ponctuée, Soutenue",
    "en": "Maiden's Blush"
   }
  },
@@ -120280,7 +120280,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre pupillée (L')",
+   "fr": "Ephyre pupillée",
    "en": "Blair's Mocha"
   }
  },
@@ -120295,7 +120295,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre de Bastelberger (L')",
+   "fr": "Ephyre de Bastelberger",
    "en": ""
   }
  },
@@ -120310,7 +120310,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre Trois-Cerceaux (L')",
+   "fr": "Ephyre Trois-Cerceaux",
    "en": "Jersey Mocha"
   }
  },
@@ -120325,7 +120325,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ephyre blond-roux (L')",
+   "fr": "Ephyre blond-roux",
    "en": ""
   }
  },
@@ -121495,7 +121495,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie du Sapin (La)",
+   "fr": "Boarmie du Sapin",
    "en": "Satin Beauty"
   }
  },
@@ -121615,7 +121615,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Bombyx du Pin (Le)",
+   "fr": "Bombyx du Pin",
    "en": "Pine Tree Lappet"
   }
  },
@@ -123670,7 +123670,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie de la Myrtille (La)",
+   "fr": "Cidarie de la Myrtille",
    "en": "Dark Marbled Carpet"
   }
  },
@@ -124060,7 +124060,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie de la Balsamine (La), Cidarie à tête jaune (La)",
+   "fr": "Cidarie de la Balsamine, Cidarie à tête jaune",
    "en": "Yellow-headed Phoenix"
   }
  },
@@ -124075,7 +124075,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie ochracée (La)",
+   "fr": "Cidarie ochracée",
    "en": "Small Phoenix"
   }
  },
@@ -124240,7 +124240,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Boarmie crépusculaire",
+   "fr": "Boarmie crépusculaire",
    "en": "Engrailed"
   }
  },
@@ -124435,7 +124435,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie rompue (La)",
+   "fr": "Cidarie rompue",
    "en": "Broken-Barred Carpet"
   }
  },
@@ -124600,7 +124600,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos valaisanne (La)",
+   "fr": "Gnophos valaisanne",
    "en": ""
   }
  },
@@ -124615,7 +124615,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos esseulée (La)",
+   "fr": "Gnophos esseulée",
    "en": ""
   }
  },
@@ -124750,7 +124750,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène picotée (La)",
+   "fr": "Phalène picotée",
    "en": "Common Heath"
   }
  },
@@ -124840,7 +124840,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène pygmée (La)",
+   "fr": "Phalène pygmée",
    "en": ""
   }
  },
@@ -125005,7 +125005,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos du Tilleul (L')",
+   "fr": "Ennomos du Tilleul",
    "en": "Canary-shouldered Thorn"
   }
  },
@@ -125020,7 +125020,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos moucheté (L')",
+   "fr": "Ennomos moucheté",
    "en": "Large Thorn"
   }
  },
@@ -125035,7 +125035,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos rongée (L')",
+   "fr": "Ennomos rongée",
    "en": "September Thorn"
   }
  },
@@ -125050,7 +125050,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos du Frêne (L'), Ennomos bicolore (L')",
+   "fr": "Ennomos du Frêne, Ennomos bicolore",
    "en": "Dusky Thorn"
   }
  },
@@ -125065,7 +125065,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos de l'Yeuse (L'), l'Ennomos pâle (L')",
+   "fr": "Ennomos de l'Yeuse, l'Ennomos pâle",
    "en": "Clouded August Thorn"
   }
  },
@@ -125080,7 +125080,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos du Chêne (L')",
+   "fr": "Ennomos du Chêne",
    "en": "August Thorn"
   }
  },
@@ -125140,7 +125140,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Entéphrie commune (L'), Larentie bleuâtre (La)",
+   "fr": "Entéphrie commune, Larentie bleuâtre",
    "en": "Grey Mountain Carpet"
   }
  },
@@ -125155,7 +125155,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Entéphrie reconnue (L')",
+   "fr": "Entéphrie reconnue",
    "en": ""
   }
  },
@@ -125170,7 +125170,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Entéphrie de l'Arabette (L')",
+   "fr": "Entéphrie de l'Arabette",
    "en": ""
   }
  },
@@ -125200,7 +125200,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Entéphrie ceinture-jaune (L')",
+   "fr": "Entéphrie ceinture-jaune",
    "en": "Yellow-Ringed Carpet"
   }
  },
@@ -125215,7 +125215,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Entéphrie étranglée (L'), Infidèle (L')",
+   "fr": "Entéphrie étranglée, Infidèle",
    "en": ""
   }
  },
@@ -125230,7 +125230,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Entéphrie du Saxifrage (L')",
+   "fr": "Entéphrie du Saxifrage",
    "en": ""
   }
  },
@@ -125455,7 +125455,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Lobophore du Genévrier (La)",
+   "fr": "Lobophore du Genévrier",
    "en": ""
   }
  },
@@ -125470,7 +125470,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Epione marginée (L'), Epione des Saules (L')",
+   "fr": "Epione marginée, Epione des Saules",
    "en": "Bordered Beauty"
   }
  },
@@ -125485,7 +125485,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Epione vespérale (L') , Epione parallèle (L')",
+   "fr": "Epione vespérale , Epione parallèle",
    "en": "Dark Bordered Beauty"
   }
  },
@@ -125545,7 +125545,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Numérie dissembable, la Fidelle",
+   "fr": "Numérie dissembable, la Fidelle",
    "en": ""
   }
  },
@@ -125560,7 +125560,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Alternée (L')",
+   "fr": "Alternée",
    "en": "Common Carpet"
   }
  },
@@ -125575,7 +125575,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mélanthie du Caille-Lait",
+   "fr": "Mélanthie du Caille-Lait",
    "en": "Galium Carpet"
   }
  },
@@ -125590,7 +125590,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Lancette",
+   "fr": "Lancette",
    "en": ""
   }
  },
@@ -125605,7 +125605,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Mélanippe pupillée (La)",
+   "fr": "Mélanippe pupillée",
    "en": ""
   }
  },
@@ -125620,7 +125620,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mélanippe claire",
+   "fr": "Mélanippe claire",
    "en": "Wood Carpet"
   }
  },
@@ -125635,7 +125635,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mélanippe triste",
+   "fr": "Mélanippe triste",
    "en": "Small Argent & Sable"
   }
  },
@@ -125650,7 +125650,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Epirrite automnale (L')",
+   "fr": "Epirrite automnale",
    "en": "Autumnal Moth"
   }
  },
@@ -125665,7 +125665,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Epirrite de Christy (L')",
+   "fr": "Epirrite de Christy",
    "en": "Pale November Moth"
   }
  },
@@ -125680,7 +125680,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Epirrite diluée (L')",
+   "fr": "Epirrite diluée",
    "en": "November Moth"
   }
  },
@@ -126040,7 +126040,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Laineuse du Cerisier",
+   "fr": "Laineuse du Cerisier",
    "en": "Small Eggar"
   }
  },
@@ -126715,7 +126715,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Naïade aux yeux rouges (La)",
+   "fr": "Naïade aux yeux rouges",
    "en": "Large Redeye"
   }
  },
@@ -127120,7 +127120,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie de l'Aulne (La)",
+   "fr": "Cidarie de l'Aulne",
    "en": "Dingy Shell"
   }
  },
@@ -127450,7 +127450,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie marbrée (La)",
+   "fr": "Cidarie marbrée",
    "en": "Cankerworm"
   }
  },
@@ -127465,7 +127465,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie du Peuplier (La)",
+   "fr": "Cidarie du Peuplier",
    "en": "Northern Spinach"
   }
  },
@@ -127480,7 +127480,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie du Prunier (La)",
+   "fr": "Cidarie du Prunier",
    "en": "Phoenix"
   }
  },
@@ -127510,7 +127510,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie agate (La)",
+   "fr": "Cidarie agate",
    "en": "Chevron"
   }
  },
@@ -127975,7 +127975,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie-Pivert (La)",
+   "fr": "Cidarie-Pivert",
    "en": "Cloaked Carpet"
   }
  },
@@ -127990,7 +127990,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Larentie fruste",
+   "fr": "Larentie fruste",
    "en": ""
   }
  },
@@ -128050,7 +128050,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie à bec (La)",
+   "fr": "Cidarie à bec",
    "en": "Sharp-Angled Carpet"
   }
  },
@@ -128065,7 +128065,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie printanière (L')",
+   "fr": "Eupithécie printanière",
    "en": "Brindled Pug"
   }
  },
@@ -128080,7 +128080,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Sapin (L')",
+   "fr": "Eupithécie du Sapin",
    "en": "Cloaked Pug"
   }
  },
@@ -128095,7 +128095,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de l'Absinthe (L')",
+   "fr": "Eupithécie de l'Absinthe",
    "en": "Ling Pug"
   }
  },
@@ -128110,7 +128110,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de l'Actée (L')",
+   "fr": "Eupithécie de l'Actée",
    "en": ""
   }
  },
@@ -128125,7 +128125,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de l'Ail (L')",
+   "fr": "Eupithécie de l'Ail",
    "en": ""
   }
  },
@@ -128140,7 +128140,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des galles (L'), Petite Eupithécie du Sapin (L')",
+   "fr": "Eupithécie des galles, Petite Eupithécie du Sapin",
    "en": ""
   }
  },
@@ -128155,7 +128155,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Groseillier (L')",
+   "fr": "Eupithécie du Groseillier",
    "en": "Currant Pug"
   }
  },
@@ -128170,7 +128170,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie rouillée (L')",
+   "fr": "Eupithécie rouillée",
    "en": "Rusty-shouldered Pug"
   }
  },
@@ -128185,7 +128185,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie carpophage (L')",
+   "fr": "Eupithécie carpophage",
    "en": ""
   }
  },
@@ -128215,7 +128215,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de Cauchy (L')",
+   "fr": "Eupithécie de Cauchy",
    "en": "Doubleday's Pug"
   }
  },
@@ -128230,7 +128230,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des Centaurées (L'), Eupithécie oblongue (L')",
+   "fr": "Eupithécie des Centaurées, Eupithécie oblongue",
    "en": "Lime-Speck Pug"
   }
  },
@@ -128260,7 +128260,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie crayeuse (L')",
+   "fr": "Eupithécie crayeuse",
    "en": ""
   }
  },
@@ -128275,7 +128275,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des Campanules (L')",
+   "fr": "Eupithécie des Campanules",
    "en": "Campanula Pug"
   }
  },
@@ -128290,7 +128290,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie denticulée (L')",
+   "fr": "Eupithécie denticulée",
    "en": ""
   }
  },
@@ -128305,7 +128305,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie discutée (L')",
+   "fr": "Eupithécie discutée",
    "en": ""
   }
  },
@@ -128320,7 +128320,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Thym (L')",
+   "fr": "Eupithécie du Thym",
    "en": "Thyme Pug"
   }
  },
@@ -128335,7 +128335,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie sagittée (L')",
+   "fr": "Eupithécie sagittée",
    "en": "Oak-Tree Pug"
   }
  },
@@ -128350,7 +128350,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Tilleul (L')",
+   "fr": "Eupithécie du Tilleul",
    "en": "Fletcher's Pug"
   }
  },
@@ -128365,7 +128365,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de l'Aubépine (L')",
+   "fr": "Eupithécie de l'Aubépine",
    "en": "Mottled Pug"
   }
  },
@@ -128380,7 +128380,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie délavée (L')",
+   "fr": "Eupithécie délavée",
    "en": "Bleached Pug"
   }
  },
@@ -128395,7 +128395,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie à tirets (L')",
+   "fr": "Eupithécie à tirets",
    "en": ""
   }
  },
@@ -128410,7 +128410,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Tunique (L')",
+   "fr": "Eupithécie de la Tunique",
    "en": ""
   }
  },
@@ -128425,7 +128425,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des Spergulaires (L')",
+   "fr": "Eupithécie des Spergulaires",
    "en": ""
   }
  },
@@ -128440,7 +128440,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de Guenée (L')",
+   "fr": "Eupithécie de Guenée",
    "en": ""
   }
  },
@@ -128455,7 +128455,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Clématite (L')",
+   "fr": "Eupithécie de la Clématite",
    "en": "Haworth's Pug"
   }
  },
@@ -128470,7 +128470,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie frappée (L')",
+   "fr": "Eupithécie frappée",
    "en": "Tawny Speckled Pug"
   }
  },
@@ -128485,7 +128485,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des baies d'Actée (L'), Eupithecie argillacée (L')",
+   "fr": "Eupithécie des baies d'Actée, Eupithecie argillacée",
    "en": ""
   }
  },
@@ -128515,7 +128515,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie dénuée (L')",
+   "fr": "Eupithécie dénuée",
    "en": "Ochreous Pug"
   }
  },
@@ -128530,7 +128530,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie réputée (L')",
+   "fr": "Eupithécie réputée",
    "en": "Angle-Barred Pug"
   }
  },
@@ -128545,7 +128545,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie distinguée (L')",
+   "fr": "Eupithécie distinguée",
    "en": "Pinion-Spotted Pug"
   }
  },
@@ -128560,7 +128560,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie embrouillée (L')",
+   "fr": "Eupithécie embrouillée",
    "en": "Freyer's Pug"
   }
  },
@@ -128575,7 +128575,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de l'Erable (L'), Eupithécie paisible (L')",
+   "fr": "Eupithécie de l'Erable, Eupithécie paisible",
    "en": "Maple Pug"
   }
  },
@@ -128590,7 +128590,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie arrosée (L')",
+   "fr": "Eupithécie arrosée",
    "en": "Marbled Pug"
   }
  },
@@ -128605,7 +128605,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de l'Epicéa (L')",
+   "fr": "Eupithécie de l'Epicéa",
    "en": ""
   }
  },
@@ -128620,7 +128620,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie lambrissée (L')",
+   "fr": "Eupithécie lambrissée",
    "en": ""
   }
  },
@@ -128635,7 +128635,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Mélèze (L')",
+   "fr": "Eupithécie du Mélèze",
    "en": "Larch Pug"
   }
  },
@@ -128650,7 +128650,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Linaire (L')",
+   "fr": "Eupithécie de la Linaire",
    "en": "Toadflax Pug"
   }
  },
@@ -128665,7 +128665,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Millefeuille (L')",
+   "fr": "Eupithécie de la Millefeuille",
    "en": "Yarrow Pug"
   }
  },
@@ -128680,7 +128680,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie naine (L')",
+   "fr": "Eupithécie naine",
    "en": "Narrow-Winged Pug"
   }
  },
@@ -128695,7 +128695,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de Macédoine (L')",
+   "fr": "Eupithécie de Macédoine",
    "en": ""
   }
  },
@@ -128710,7 +128710,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie subtile (L')",
+   "fr": "Eupithécie subtile",
    "en": ""
   }
  },
@@ -128725,7 +128725,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie parcimonieuse (L')",
+   "fr": "Eupithécie parcimonieuse",
    "en": ""
   }
  },
@@ -128740,7 +128740,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie illustre (L')",
+   "fr": "Eupithécie illustre",
    "en": ""
   }
  },
@@ -128755,7 +128755,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Boucage (L')",
+   "fr": "Eupithécie du Boucage",
    "en": "Pimpinel Pug"
   }
  },
@@ -128770,7 +128770,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Mélampyre (L')",
+   "fr": "Eupithécie du Mélampyre",
    "en": "Lead-Coloured Pug"
   }
  },
@@ -128785,7 +128785,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Digitale pourpre (L')",
+   "fr": "Eupithécie de la Digitale pourpre",
    "en": "Foxglove Pug"
   }
  },
@@ -128800,7 +128800,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie chétive (L')",
+   "fr": "Eupithécie chétive",
    "en": "Juniper Pug"
   }
  },
@@ -128815,7 +128815,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie Pygmée (L')",
+   "fr": "Eupithécie Pygmée",
    "en": "Marsh Pug"
   }
  },
@@ -128830,7 +128830,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Digitale jaune (L')",
+   "fr": "Eupithécie de la Digitale jaune",
    "en": ""
   }
  },
@@ -128845,7 +128845,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie satyre (L')",
+   "fr": "Eupithécie satyre",
    "en": "Satyr Pug"
   }
  },
@@ -128860,7 +128860,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de Schieferer (L')",
+   "fr": "Eupithécie de Schieferer",
    "en": ""
   }
  },
@@ -128875,7 +128875,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Persil (L')",
+   "fr": "Eupithécie du Persil",
    "en": ""
   }
  },
@@ -128890,7 +128890,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des Labiées (L')",
+   "fr": "Eupithécie des Labiées",
    "en": ""
   }
  },
@@ -128905,7 +128905,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Silène (L')",
+   "fr": "Eupithécie du Silène",
    "en": ""
   }
  },
@@ -128920,7 +128920,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie silénicole (L')",
+   "fr": "Eupithécie silénicole",
    "en": ""
   }
  },
@@ -128935,7 +128935,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Chénopode (L')",
+   "fr": "Eupithécie du Chénopode",
    "en": "Plain Pug"
   }
  },
@@ -128965,7 +128965,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie noirâtre (L')",
+   "fr": "Eupithécie noirâtre",
    "en": "Gray Pug"
   }
  },
@@ -128980,7 +128980,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des friches (L')",
+   "fr": "Eupithécie des friches",
    "en": "Shaded Pug"
   }
  },
@@ -128995,7 +128995,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie substituée (L')",
+   "fr": "Eupithécie substituée",
    "en": "Bordered Pug"
   }
  },
@@ -129010,7 +129010,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des Résineux (L')",
+   "fr": "Eupithécie des Résineux",
    "en": "Dwarf Pug"
   }
  },
@@ -129025,7 +129025,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie des Saules (L')",
+   "fr": "Eupithécie des Saules",
    "en": "Slender Pug"
   }
  },
@@ -129040,7 +129040,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie du Pigamon (L')",
+   "fr": "Eupithécie du Pigamon",
    "en": ""
   }
  },
@@ -129055,7 +129055,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie triponctuée (L')",
+   "fr": "Eupithécie triponctuée",
    "en": "White-Spotted Pug"
   }
  },
@@ -129070,7 +129070,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie trisignée (L')",
+   "fr": "Eupithécie trisignée",
    "en": "Triple-Spotted Pug"
   }
  },
@@ -129085,7 +129085,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie onduleuse (L')",
+   "fr": "Eupithécie onduleuse",
    "en": ""
   }
  },
@@ -129100,7 +129100,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de l'Arbousier (L')",
+   "fr": "Eupithécie de l'Arbousier",
    "en": ""
   }
  },
@@ -129115,7 +129115,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Valériane (L')",
+   "fr": "Eupithécie de la Valériane",
    "en": "Valerian Pug"
   }
  },
@@ -129130,7 +129130,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie veinée (L')",
+   "fr": "Eupithécie veinée",
    "en": "Netted Pug"
   }
  },
@@ -129145,7 +129145,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Vérâtre (L')",
+   "fr": "Eupithécie de la Vérâtre",
    "en": ""
   }
  },
@@ -129160,7 +129160,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Verge d'Or (L')",
+   "fr": "Eupithécie de la Verge d'Or",
    "en": "Golden-Rod Pug"
   }
  },
@@ -129175,7 +129175,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie austère (L')",
+   "fr": "Eupithécie austère",
    "en": "Common Pug"
   }
  },
@@ -129280,7 +129280,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fidonie plumeuse (La), Plumet provençal (Le)",
+   "fr": "Fidonie plumeuse, Plumet provençal",
    "en": ""
   }
  },
@@ -129400,7 +129400,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie réticulée (La)",
+   "fr": "Cidarie réticulée",
    "en": "Netted Carpet"
   }
  },
@@ -129580,7 +129580,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie veuve (La)",
+   "fr": "Boarmie veuve",
    "en": "Speckled Beauty"
   }
  },
@@ -130570,8 +130570,8 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fourmi rousse des bois",
-   "en": "Red Wood Ant"
+   "fr": "Fourmi rousse",
+   "en": "Red wood ant"
   }
  },
  {
@@ -131890,7 +131890,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Grande Naïade (La), Papillonaire (La)",
+   "fr": "Grande Naïade, Papillonaire",
    "en": "Large Emerald"
   }
  },
@@ -132475,7 +132475,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos ténébreuse (La), Phalène de la Viorne (La)",
+   "fr": "Gnophos ténébreuse, Phalène de la Viorne",
    "en": ""
   }
  },
@@ -132490,7 +132490,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos trompée (La), Gnophos assombrie (La)",
+   "fr": "Gnophos trompée, Gnophos assombrie",
    "en": "Scotch Annulet"
   }
  },
@@ -133240,7 +133240,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fausse-Eupithécie (La)",
+   "fr": "Fausse-Eupithécie",
    "en": "Cankerworm"
   }
  },
@@ -134350,7 +134350,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Armigère (L')",
+   "fr": "Armigère",
    "en": "Old World Bollworm"
   }
  },
@@ -134845,7 +134845,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Philobie alpestre (La), Graveleuse (La)",
+   "fr": "Philobie alpestre, Graveleuse",
    "en": ""
   }
  },
@@ -135115,7 +135115,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hémithée printanière (L')",
+   "fr": "Hémithée printanière",
    "en": "Small Emerald"
   }
  },
@@ -135130,7 +135130,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène sillonnée",
+   "fr": "Phalène sillonnée",
    "en": "Common Emerald"
   }
  },
@@ -136015,7 +136015,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Homard américain (Le), Homard canadien (Le)",
+   "fr": "Homard américain, Homard canadien",
    "en": "American Lobster"
   }
  },
@@ -136240,7 +136240,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Horisme mimétique (L')",
+   "fr": "Horisme mimétique",
    "en": ""
   }
  },
@@ -136255,7 +136255,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Horisme des Pulsatilles (L'), Phalène aqueuse (La)",
+   "fr": "Horisme des Pulsatilles, Phalène aqueuse",
    "en": "Cumbrian Umber"
   }
  },
@@ -136270,7 +136270,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Horisme calligraphié (L')",
+   "fr": "Horisme calligraphié",
    "en": ""
   }
  },
@@ -136300,7 +136300,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Horisme jumeau (L')",
+   "fr": "Horisme jumeau",
    "en": "Cryptic Fern"
   }
  },
@@ -136315,7 +136315,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Horisme élégant (L'), Essuyée (L')",
+   "fr": "Horisme élégant, Essuyée",
    "en": "Fern"
   }
  },
@@ -136330,7 +136330,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Horisme rayé (L')",
+   "fr": "Horisme rayé",
    "en": "Small Waved Umber"
   }
  },
@@ -136585,7 +136585,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Acidalie jaunâtre, La Flammèche (La)",
+   "fr": "Acidalie jaunâtre, La Flammèche",
    "en": "Small Yellow Wave"
   }
  },
@@ -136600,7 +136600,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie sylvestre (La)",
+   "fr": "Cidarie sylvestre",
    "en": "Waved Carpet"
   }
  },
@@ -136630,7 +136630,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Larentie lavée",
+   "fr": "Larentie lavée",
    "en": "July Highflyer"
   }
  },
@@ -136645,7 +136645,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Larentie arrosée",
+   "fr": "Larentie arrosée",
    "en": "May Highflyer"
   }
  },
@@ -137725,7 +137725,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Métrocampe verte, la Bilieuse",
+   "fr": "Métrocampe verte, la Bilieuse",
    "en": "Barred Red"
   }
  },
@@ -137965,7 +137965,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Noctuelle épaissie",
+   "fr": "Noctuelle épaissie",
    "en": "Beautiful Snout"
   }
  },
@@ -137980,7 +137980,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hypène livide (L')",
+   "fr": "Hypène livide",
    "en": "Chevron Snout"
   }
  },
@@ -138010,7 +138010,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hypène des Lamiers (L'), Hypène grasse (L')",
+   "fr": "Hypène des Lamiers, Hypène grasse",
    "en": "Paignton Snout"
   }
  },
@@ -138025,7 +138025,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hypène des ponts (L')",
+   "fr": "Hypène des ponts",
    "en": "Bloxworth Snout"
   }
  },
@@ -138040,7 +138040,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Noctuelle à museau",
+   "fr": "Noctuelle à museau",
    "en": "Snout"
   }
  },
@@ -138055,7 +138055,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Toupet",
+   "fr": "Toupet",
    "en": "Buttoned Snout"
   }
  },
@@ -138250,7 +138250,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie pointillée (La)",
+   "fr": "Boarmie pointillée",
    "en": "Pale Oak Beauty"
   }
  },
@@ -138265,7 +138265,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie du Chêne (La)",
+   "fr": "Boarmie du Chêne",
    "en": "Great Oak Beauty"
   }
  },
@@ -138325,7 +138325,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Epione pluvieuse (L')",
+   "fr": "Epione pluvieuse",
    "en": ""
   }
  },
@@ -139495,7 +139495,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fidonie du Genêt (La)",
+   "fr": "Fidonie du Genêt",
    "en": ""
   }
  },
@@ -139510,7 +139510,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène bordée, l'Entourée",
+   "fr": "Phalène bordée, l'Entourée",
    "en": "Frosted Yellow"
   }
  },
@@ -139765,7 +139765,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hémithée éruginée (L')",
+   "fr": "Hémithée éruginée",
    "en": "Little Emerald"
   }
  },
@@ -139780,7 +139780,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène perlée",
+   "fr": "Phalène perlée",
    "en": ""
   }
  },
@@ -140740,7 +140740,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie enfumée (La)",
+   "fr": "Cidarie enfumée",
    "en": "Water Carpet"
   }
  },
@@ -140830,7 +140830,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Larentie cloutée",
+   "fr": "Larentie cloutée",
    "en": "Mallow"
   }
  },
@@ -140905,7 +140905,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Bombyx du Trèfle",
+   "fr": "Bombyx du Trèfle",
    "en": "Grass Eggar"
   }
  },
@@ -141985,7 +141985,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Bombyx du Saule (Le), Apparent (L')",
+   "fr": "Bombyx du Saule, Apparent",
    "en": "Satin Moth"
   }
  },
@@ -142750,7 +142750,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Fusain",
+   "fr": "Phalène du Fusain",
    "en": "Scorched Carpet"
   }
  },
@@ -143365,7 +143365,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Grenouille taureau (La)",
+   "fr": "Grenouille taureau",
    "en": "American Bull Frog"
   }
  },
@@ -143440,7 +143440,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Lithosie quadrille",
+   "fr": "Lithosie quadrille",
    "en": "Four-Spotted Footman"
   }
  },
@@ -143500,7 +143500,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène neigeuse (La)",
+   "fr": "Phalène neigeuse",
    "en": ""
   }
  },
@@ -143515,7 +143515,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène argentée, la Phalène grisette.",
+   "fr": "Phalène argentée, la Phalène grisette.",
    "en": "Grey Carpet"
   }
  },
@@ -143695,7 +143695,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Haltère (La), Phalène hexaptérate (La)",
+   "fr": "Haltère, Phalène hexaptérate",
    "en": "Seraphim"
   }
  },
@@ -143755,7 +143755,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Bordure entrecoupée (La), Marginée (La)",
+   "fr": "Bordure entrecoupée, Marginée",
    "en": "Clouded Border"
   }
  },
@@ -143845,7 +143845,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène à deux taches",
+   "fr": "Phalène à deux taches",
    "en": "White-Pinion Spotted"
   }
  },
@@ -143860,7 +143860,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène satinée",
+   "fr": "Phalène satinée",
    "en": "Clouded Silver"
   }
  },
@@ -144580,7 +144580,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Nyssie alpine (La)",
+   "fr": "Nyssie alpine",
    "en": ""
   }
  },
@@ -144610,7 +144610,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène hérissée",
+   "fr": "Phalène hérissée",
    "en": "Brindled Beauty"
   }
  },
@@ -144625,7 +144625,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Nyssie isabelle (La)",
+   "fr": "Nyssie isabelle",
    "en": ""
   }
  },
@@ -144670,7 +144670,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène zonée",
+   "fr": "Phalène zonée",
    "en": "Belted Beauty"
   }
  },
@@ -145015,7 +145015,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ensanglantée de l'Oseille (L')",
+   "fr": "Ensanglantée de l'Oseille",
    "en": "purple-barred yellow"
   }
  },
@@ -145030,7 +145030,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ensanglantée alpine (L')",
+   "fr": "Ensanglantée alpine",
    "en": ""
   }
  },
@@ -145045,7 +145045,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ensanglantée des Renouées (La)",
+   "fr": "Ensanglantée des Renouées",
    "en": "Purple-Barred Yellow"
   }
  },
@@ -145105,7 +145105,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Philobie alternée",
+   "fr": "Philobie alternée",
    "en": "Sharp-Angled Peacock"
   }
  },
@@ -145120,7 +145120,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Philobie des Saules (La)",
+   "fr": "Philobie des Saules",
    "en": ""
   }
  },
@@ -145135,7 +145135,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fidonie à cinq raies (La)",
+   "fr": "Fidonie à cinq raies",
    "en": "Rannoch Looper"
   }
  },
@@ -145150,7 +145150,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Philobie enfumée (La)",
+   "fr": "Philobie enfumée",
    "en": "Netted Mountain Moth"
   }
  },
@@ -145165,7 +145165,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Philobie effacée",
+   "fr": "Philobie effacée",
    "en": "Tawny-Barred Angle"
   }
  },
@@ -145180,7 +145180,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Philobie tachetée",
+   "fr": "Philobie tachetée",
    "en": "Peacock"
   }
  },
@@ -145195,7 +145195,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Philobie des Pins",
+   "fr": "Philobie des Pins",
    "en": "Dusky Peacock"
   }
  },
@@ -145210,7 +145210,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Damas cendré (Le)",
+   "fr": "Damas cendré",
    "en": "V-Moth"
   }
  },
@@ -145360,7 +145360,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Bombyx de la Ronce (Le), Polyphage (La)",
+   "fr": "Bombyx de la Ronce, Polyphage",
    "en": "Fox Moth"
   }
  },
@@ -145645,7 +145645,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Bombyx à livrée",
+   "fr": "Bombyx à livrée",
    "en": "Lackey"
   }
  },
@@ -146065,7 +146065,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Méconème fragile",
+   "fr": "Méconème fragile",
    "en": "Southern Oak Bush-cricket"
   }
  },
@@ -146545,8 +146545,8 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Demi-Deuil",
-   "en": "Marbled White"
+   "fr": "Demi-deuil",
+   "en": "Marbled white"
   }
  },
  {
@@ -146575,7 +146575,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Echiquier ibérique (L'), Échiquier d'Ibérie (L')",
+   "fr": "Echiquier ibérique, Échiquier d'Ibérie",
    "en": "Iberian Marbled White"
   }
  },
@@ -146680,7 +146680,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Mélanthie alouette (La)",
+   "fr": "Mélanthie alouette",
    "en": ""
   }
  },
@@ -146695,7 +146695,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mélanthie pie",
+   "fr": "Mélanthie pie",
    "en": "Pretty Chalk Carpet"
   }
  },
@@ -147040,7 +147040,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Mélitée du Plantain (La), Déesse à ceinturons (La), Damier du Plantain (Le), Damier pointillé (Le), Damier (Le), Mélitée de la Piloselle (La)",
+   "fr": "Mélitée du Plantain, Déesse à ceinturons, Damier du Plantain, Damier pointillé, Damier, Mélitée de la Piloselle",
    "en": "Glanville Fritillary"
   }
  },
@@ -147280,7 +147280,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie pétrifiée (La)",
+   "fr": "Boarmie pétrifiée",
    "en": "Waved Umber"
   }
  },
@@ -147295,7 +147295,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie noctambule (La)",
+   "fr": "Boarmie noctambule",
    "en": ""
   }
  },
@@ -147475,7 +147475,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène de la Ronce, la Blanchâtre",
+   "fr": "Phalène de la Ronce, la Blanchâtre",
    "en": "Beautiful Carpet"
   }
  },
@@ -148300,7 +148300,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Souris, la Phalène de l'Euphorbe",
+   "fr": "Souris, la Phalène de l'Euphorbe",
    "en": "Drab Looper"
   }
  },
@@ -149665,7 +149665,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Nébuleuse achromatique (La)",
+   "fr": "Nébuleuse achromatique",
    "en": ""
   }
  },
@@ -149680,7 +149680,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Nébuleuse grise (La)",
+   "fr": "Nébuleuse grise",
    "en": ""
   }
  },
@@ -150805,7 +150805,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hulotte (La)",
+   "fr": "Hulotte",
    "en": "Lesser Yellow Underwing"
   }
  },
@@ -150820,7 +150820,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Frangée (La)",
+   "fr": "Frangée",
    "en": "Broad-Bordered Yellow Underwing"
   }
  },
@@ -150835,7 +150835,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Faux Casque (Le)",
+   "fr": "Faux Casque",
    "en": "Least Yellow Underwing"
   }
  },
@@ -150865,7 +150865,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Collier soufré (Le)",
+   "fr": "Collier soufré",
    "en": "Lesser Broad Bordered Yellow Underwing"
   }
  },
@@ -150880,7 +150880,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Casque (Le)",
+   "fr": "Casque",
    "en": "Langmaid's Yellow Underwing"
   }
  },
@@ -150895,7 +150895,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Suivante",
+   "fr": "Suivante",
    "en": "Lunar Yellow Underwing"
   }
  },
@@ -150910,7 +150910,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Frangée méditerranéenne (La)",
+   "fr": "Frangée méditerranéenne",
    "en": ""
   }
  },
@@ -151030,7 +151030,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Lobophore de l'Erable",
+   "fr": "Lobophore de l'Erable",
    "en": ""
   }
  },
@@ -151120,7 +151120,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie obscure (La), Anthracite commun (L')",
+   "fr": "Boarmie obscure, Anthracite commun",
    "en": ""
   }
  },
@@ -151345,7 +151345,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Ramoneur, le Tanagre du Cerfeuil",
+   "fr": "Ramoneur, le Tanagre du Cerfeuil",
    "en": "Chimney Sweep"
   }
  },
@@ -151420,7 +151420,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gnophos des buissons (La)",
+   "fr": "Gnophos des buissons",
    "en": "Irish Annulet"
   }
  },
@@ -152155,8 +152155,8 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cheimatobie hiémale (La), Phalène brumeuse (La)",
-   "en": "Winter Moth"
+   "fr": "Phalène brumeuse",
+   "en": "Winter moth"
   }
  },
  {
@@ -152170,7 +152170,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cheimatobie du Hêtre (La)",
+   "fr": "Cheimatobie du Hêtre",
    "en": "Northern Winter Moth"
   }
  },
@@ -152305,7 +152305,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Citronnelle rouillée (La)",
+   "fr": "Citronnelle rouillée",
    "en": "Brimstone Moth"
   }
  },
@@ -152785,7 +152785,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Escortée, la Phalène dimorphe",
+   "fr": "Escortée, la Phalène dimorphe",
    "en": "Gem"
   }
  },
@@ -152800,7 +152800,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Gaillet palustre, l'Orthonome ligneuse",
+   "fr": "Phalène du Gaillet palustre, l'Orthonome ligneuse",
    "en": "Oblique Carpet"
   }
  },
@@ -153520,7 +153520,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Sureau",
+   "fr": "Phalène du Sureau",
    "en": "Swallow-Tailed Moth"
   }
  },
@@ -153925,7 +153925,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Callunaire (La), Pachycnémie des Callunes (La)",
+   "fr": "Callunaire, Pachycnémie des Callunes",
    "en": "Horse Chestnut"
   }
  },
@@ -154435,7 +154435,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie de Bohatsch (La)",
+   "fr": "Boarmie de Bohatsch",
    "en": ""
   }
  },
@@ -154450,7 +154450,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie du Tilleul (La), Boarmie convenable (La)",
+   "fr": "Boarmie du Tilleul, Boarmie convenable",
    "en": "Square Spot"
   }
  },
@@ -154735,7 +154735,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie frottée (La), Boarmie sylvatique (La)",
+   "fr": "Boarmie frottée, Boarmie sylvatique",
    "en": "Brindled White-Spot"
   }
  },
@@ -154750,7 +154750,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène de l'Epine-Vinette",
+   "fr": "Phalène de l'Epine-Vinette",
    "en": "Barberry Carpet"
   }
  },
@@ -154900,7 +154900,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie de la Myrtille (L')",
+   "fr": "Eupithécie de la Myrtille",
    "en": "Bilberry Pug"
   }
  },
@@ -154915,7 +154915,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Eupithécie rectangulaire (L')",
+   "fr": "Eupithécie rectangulaire",
    "en": "Green Pug"
   }
  },
@@ -155395,7 +155395,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie accompagnée (La), Phalène de la Patte-d'Oie (La)",
+   "fr": "Cidarie accompagnée, Phalène de la Patte-d'Oie",
    "en": "Dark Spinach"
   }
  },
@@ -155485,7 +155485,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Corythée pectinée (La)",
+   "fr": "Corythée pectinée",
    "en": "Pine Carpet"
   }
  },
@@ -155785,7 +155785,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Etrille (L'), Phalène des landes (La)",
+   "fr": "Etrille, Phalène des landes",
    "en": "Grass Wave"
   }
  },
@@ -155830,7 +155830,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie confondue (La)",
+   "fr": "Boarmie confondue",
    "en": ""
   }
  },
@@ -155845,7 +155845,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie rhomboïdale (La), Boarmie commune (La)",
+   "fr": "Boarmie rhomboïdale, Boarmie commune",
    "en": "Willow Beauty"
   }
  },
@@ -155860,7 +155860,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Boarmie des Résineux, la Boarmie seconde",
+   "fr": "Boarmie des Résineux, la Boarmie seconde",
    "en": "Feathered Beauty"
   }
  },
@@ -155875,7 +155875,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie ombrée (La)",
+   "fr": "Boarmie ombrée",
    "en": "Olive-tree Beauty"
   }
  },
@@ -156010,7 +156010,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Périzome contrastée",
+   "fr": "Périzome contrastée",
    "en": "Rivulet"
   }
  },
@@ -156025,7 +156025,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Périzome du Rhinanthe",
+   "fr": "Périzome du Rhinanthe",
    "en": "Grass Rivulet"
   }
  },
@@ -156040,7 +156040,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Périzome coupée",
+   "fr": "Périzome coupée",
    "en": "Looper"
   }
  },
@@ -156055,7 +156055,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Périzome soulignée",
+   "fr": "Périzome soulignée",
    "en": "Barred Rivulet"
   }
  },
@@ -156070,7 +156070,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Périzome agréable",
+   "fr": "Périzome agréable",
    "en": "Pretty Pinion"
   }
  },
@@ -156100,7 +156100,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Périzome décolorée, la Périzome à fascies jaunes",
+   "fr": "Périzome décolorée, la Périzome à fascies jaunes",
    "en": "Sandy Carpet"
   }
  },
@@ -156115,7 +156115,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Périzome du Silène penché, la Périzome terne",
+   "fr": "Périzome du Silène penché, la Périzome terne",
    "en": ""
   }
  },
@@ -156130,7 +156130,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Périzome des sommets (La)",
+   "fr": "Périzome des sommets",
    "en": ""
   }
  },
@@ -156145,7 +156145,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène du Cucubale (La)",
+   "fr": "Phalène du Cucubale",
    "en": ""
   }
  },
@@ -156160,7 +156160,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Périzome de l'Euphraise (La), Périzome grisâtre (La)",
+   "fr": "Périzome de l'Euphraise, Périzome grisâtre",
    "en": "Heath Rivulet"
   }
  },
@@ -156175,7 +156175,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Périzome frottée (La)",
+   "fr": "Périzome frottée",
    "en": ""
   }
  },
@@ -156475,7 +156475,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène de l'Aquiline, la Pétrophore de la Fougère",
+   "fr": "Phalène de l'Aquiline, la Pétrophore de la Fougère",
    "en": "Brown Silver-Line"
   }
  },
@@ -156745,7 +156745,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Phanéroptère commun",
+   "fr": "Phanéroptère commun",
    "en": ""
   }
  },
@@ -156760,7 +156760,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Le Phanéroptère méridional",
+   "fr": "Phanéroptère méridional",
    "en": "Mediterranean Katydid"
   }
  },
@@ -156940,7 +156940,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie rayée (La)",
+   "fr": "Cidarie rayée",
    "en": "Oblique Striped"
   }
  },
@@ -156955,7 +156955,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène velue, la Phigalie velue",
+   "fr": "Phalène velue, la Phigalie velue",
    "en": "Pale Brindled Beauty"
   }
  },
@@ -157000,7 +157000,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Nerprun",
+   "fr": "Phalène du Nerprun",
    "en": "Dark Umber"
   }
  },
@@ -157015,7 +157015,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Petite Phalène du Nerprun, La Vieillote",
+   "fr": "Petite Phalène du Nerprun, La Vieillote",
    "en": "Brown Scallop"
   }
  },
@@ -159010,7 +159010,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène linéolée, la Numérie ligneuse",
+   "fr": "Phalène linéolée, la Numérie ligneuse",
    "en": "Scorched Wing"
   }
  },
@@ -159025,7 +159025,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Numérie poudrée",
+   "fr": "Numérie poudrée",
    "en": "American Barred Umber"
   }
  },
@@ -159325,7 +159325,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mignonne, la Cidarie bicolore",
+   "fr": "Mignonne, la Cidarie bicolore",
    "en": "Blue-Bordered Carpet"
   }
  },
@@ -160225,7 +160225,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Rieuse, La Tête rouge",
+   "fr": "Rieuse, La Tête rouge",
    "en": "Frosted Green"
   }
  },
@@ -161680,7 +161680,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Panthère",
+   "fr": "Panthère",
    "en": "Speckled Yellow"
   }
  },
@@ -161755,7 +161755,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hémithée du Genêt (L')",
+   "fr": "Hémithée du Genêt",
    "en": "Grass Emerald"
   }
  },
@@ -161830,7 +161830,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ruban fauve (Le), Psodos équestre (La)",
+   "fr": "Ruban fauve, Psodos équestre",
    "en": ""
   }
  },
@@ -161995,7 +161995,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène à six ailes",
+   "fr": "Phalène à six ailes",
    "en": "Small Seraphim"
   }
  },
@@ -162175,7 +162175,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Crête-de-Coq (La)",
+   "fr": "Crête-de-Coq",
    "en": "Coxcomb Prominent"
   }
  },
@@ -162280,7 +162280,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Sapin",
+   "fr": "Phalène du Sapin",
    "en": "Banded Pine Carpet"
   }
  },
@@ -162475,7 +162475,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ocellé rubané (Le), Tityre (Le), Titire (Le)",
+   "fr": "Ocellé rubané, Tityre, Titire",
    "en": "Spanish Gatekeeper"
   }
  },
@@ -163300,7 +163300,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène couleur de cerf (La)",
+   "fr": "Phalène couleur de cerf",
    "en": "Scarce Tissue"
   }
  },
@@ -163315,7 +163315,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hachée (La), Mélanippe hastée (La)",
+   "fr": "Hachée, Mélanippe hastée",
    "en": "Argent & Sable"
   }
  },
@@ -163330,7 +163330,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Rheumaptère alpine (La)",
+   "fr": "Rheumaptère alpine",
    "en": ""
   }
  },
@@ -163345,7 +163345,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mélanippe du Myrtillier",
+   "fr": "Mélanippe du Myrtillier",
    "en": "White-Banded Black"
   }
  },
@@ -163360,7 +163360,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène ondulée (La)",
+   "fr": "Phalène ondulée",
    "en": "Scallop Shell"
   }
  },
@@ -163915,7 +163915,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène sacrée",
+   "fr": "Phalène sacrée",
    "en": "Vestal"
   }
  },
@@ -163945,7 +163945,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène calabraise (La)",
+   "fr": "Phalène calabraise",
    "en": ""
   }
  },
@@ -163975,7 +163975,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Bande rouge (La)",
+   "fr": "Bande rouge",
    "en": ""
   }
  },
@@ -164020,7 +164020,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Fidonie du Ciste (La)",
+   "fr": "Fidonie du Ciste",
    "en": ""
   }
  },
@@ -167530,7 +167530,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Sciadie menaçante (La), Sciadie savoyarde (La)",
+   "fr": "Sciadie menaçante, Sciadie savoyarde",
    "en": ""
   }
  },
@@ -167755,7 +167755,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Ortholite biponctuée",
+   "fr": "Ortholite biponctuée",
    "en": "Chalk Carpet"
   }
  },
@@ -167770,7 +167770,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène de l'Ansérine, la Chénopodie",
+   "fr": "Phalène de l'Ansérine, la Chénopodie",
    "en": "Shaded Broad-Bar"
   }
  },
@@ -167785,7 +167785,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ortholite rétrécie (L')",
+   "fr": "Ortholite rétrécie",
    "en": ""
   }
  },
@@ -167800,7 +167800,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Ortholite plombée",
+   "fr": "Ortholite plombée",
    "en": "July Belle"
   }
  },
@@ -167815,7 +167815,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ortholite fortifiée (L')",
+   "fr": "Ortholite fortifiée",
    "en": "Fortified Carpet"
   }
  },
@@ -167830,7 +167830,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Ortholite acuminée",
+   "fr": "Ortholite acuminée",
    "en": "Lead Belle"
   }
  },
@@ -167845,7 +167845,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ortholite gémellée (L')",
+   "fr": "Ortholite gémellée",
    "en": ""
   }
  },
@@ -167860,7 +167860,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ortholite entourée (L'), Korrigan (Le)",
+   "fr": "Ortholite entourée, Korrigan",
    "en": "Spanish Carpet"
   }
  },
@@ -168310,7 +168310,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos illunaire (L')",
+   "fr": "Ennomos illunaire",
    "en": "Early Thorn"
   }
  },
@@ -168325,7 +168325,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos lunaire (L') , Croissant (Le)",
+   "fr": "Ennomos lunaire , Croissant",
    "en": "Lunar Thorn"
   }
  },
@@ -168340,7 +168340,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Ennomos illustre (L')",
+   "fr": "Ennomos illustre",
    "en": "Purple Thorn"
   }
  },
@@ -168400,7 +168400,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie brune (La)",
+   "fr": "Boarmie brune",
    "en": "Bordered Grey"
   }
  },
@@ -168415,7 +168415,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie plumeuse (La)",
+   "fr": "Boarmie plumeuse",
    "en": ""
   }
  },
@@ -168430,7 +168430,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie à bandes (La), Boarmie des steppes (La)",
+   "fr": "Boarmie à bandes, Boarmie des steppes",
    "en": ""
   }
  },
@@ -169555,7 +169555,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Divisée (La), Phalène blanche (La), Surlignée (La)",
+   "fr": "Divisée, Phalène blanche, Surlignée",
    "en": "Black-Veined Moth"
   }
  },
@@ -170470,7 +170470,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mélanippe affligée",
+   "fr": "Mélanippe affligée",
    "en": "White-Banded Carpet"
   }
  },
@@ -171220,7 +171220,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Noctuelle exiguë",
+   "fr": "Noctuelle exiguë",
    "en": "Beet Armyworm"
   }
  },
@@ -171535,7 +171535,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Stéganie convoitée",
+   "fr": "Stéganie convoitée",
    "en": "Ringed Border"
   }
  },
@@ -171550,7 +171550,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Stéganie du peuplier",
+   "fr": "Stéganie du peuplier",
    "en": "Dorset Cream Wave"
   }
  },
@@ -172450,7 +172450,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Boarmie compagne (La)",
+   "fr": "Boarmie compagne",
    "en": ""
   }
  },
@@ -173005,7 +173005,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Gymnospile commune (La), Gymnospile crème (La)",
+   "fr": "Gymnospile commune, Gymnospile crème",
    "en": "Dusky Carpet"
   }
  },
@@ -173320,7 +173320,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Buplèvre, la Phalène du Thym",
+   "fr": "Phalène du Buplèvre, la Phalène du Thym",
    "en": "Sussex Emerald"
   }
  },
@@ -173515,7 +173515,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Corythée montagnarde (La)",
+   "fr": "Corythée montagnarde",
    "en": "Chestnut-Coloured Carpet"
   }
  },
@@ -173530,7 +173530,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Corythée du Cyprès (La)",
+   "fr": "Corythée du Cyprès",
    "en": "Cypress Carpet"
   }
  },
@@ -173545,7 +173545,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Corythée du Genévrier (La)",
+   "fr": "Corythée du Genévrier",
    "en": "Juniper Carpet"
   }
  },
@@ -173560,7 +173560,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Corythée sobre (La)",
+   "fr": "Corythée sobre",
    "en": "Grey Pine Carpet"
   }
  },
@@ -173575,7 +173575,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Corythée variée (La)",
+   "fr": "Corythée variée",
    "en": ""
   }
  },
@@ -173590,7 +173590,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Corythée étranglée (La)",
+   "fr": "Corythée étranglée",
    "en": "Fir Carpet"
   }
  },
@@ -173605,7 +173605,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène précoce",
+   "fr": "Phalène précoce",
    "en": "Early Moth"
   }
  },
@@ -173620,7 +173620,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène chamoisée",
+   "fr": "Phalène chamoisée",
    "en": ""
   }
  },
@@ -173710,7 +173710,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Emeraude (L')",
+   "fr": "Emeraude",
    "en": "Essex Emerald"
   }
  },
@@ -173905,7 +173905,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hespérie du Chiendent (L'), Hespérie Actéon (L'), Actéon (L')",
+   "fr": "Hespérie du Chiendent, Hespérie Actéon, Actéon",
    "en": "Lulworth Skipper"
   }
  },
@@ -173920,7 +173920,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hespérie du Dactyle (L'), Hespérie europénne (au Canada) (L'), Ligné (Le), Hespérie orangée (L')",
+   "fr": "Hespérie du Dactyle, Hespérie europénne (au Canada), Ligné, Hespérie orangée",
    "en": "Essex Skipper"
   }
  },
@@ -173935,7 +173935,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Hespérie de la Houque (L'), Thaumas (Le), Bande noire (La)",
+   "fr": "Hespérie de la Houque, Thaumas, Bande noire",
    "en": "Hesperiid moth"
   }
  },
@@ -174040,7 +174040,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Timandre aimée",
+   "fr": "Timandre aimée",
    "en": "Blood-Vein"
   }
  },
@@ -174670,7 +174670,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Lobée, La Phalène du Charme",
+   "fr": "Lobée, La Phalène du Charme",
    "en": "Early Tooth-Striped"
   }
  },
@@ -174685,7 +174685,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Phalène du Troène, la Lobée des haies",
+   "fr": "Phalène du Troène, la Lobée des haies",
    "en": "Barred Tooth-Striped"
   }
  },
@@ -175030,7 +175030,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Incertaine (L'), Dent-de-Scie (La), Douteuse (La)",
+   "fr": "Incertaine, Dent-de-Scie, Douteuse",
    "en": "Tissue"
   }
  },
@@ -175045,7 +175045,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cavernicole blafarde (La), Incertaine savoyarde (L')",
+   "fr": "Cavernicole blafarde, Incertaine savoyarde",
    "en": ""
   }
  },
@@ -176320,7 +176320,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie de l'Orme (La)",
+   "fr": "Cidarie de l'Orme",
    "en": "Blomer's Rivulet"
   }
  },
@@ -177385,7 +177385,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Larentie des Impatientes",
+   "fr": "Larentie des Impatientes",
    "en": "Balsam Carpet"
   }
  },
@@ -177400,7 +177400,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Larentie décolorée (La)",
+   "fr": "Larentie décolorée",
    "en": "Red Carpet"
   }
  },
@@ -177415,7 +177415,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Désignée (La)",
+   "fr": "Désignée",
    "en": "Flame Carpet"
   }
  },
@@ -177430,7 +177430,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Rouillée",
+   "fr": "Rouillée",
    "en": "Dark-Barred Twin-Spot Carpet"
   }
  },
@@ -177445,7 +177445,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Incertaine (L'), Phalène ondée (La)",
+   "fr": "Incertaine, Phalène ondée",
    "en": "Garden Carpet"
   }
  },
@@ -177460,7 +177460,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Cidarie montagnarde (La)",
+   "fr": "Cidarie montagnarde",
    "en": ""
   }
  },
@@ -177475,7 +177475,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "La Mélanthie montagnarde",
+   "fr": "Mélanthie montagnarde",
    "en": "Silver-Ground Carpet"
   }
  },
@@ -177490,7 +177490,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Phalène quadrifasciée (La)",
+   "fr": "Phalène quadrifasciée",
    "en": "Large Twin-Spot Carpet"
   }
  },
@@ -177505,7 +177505,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "L'Oxydée",
+   "fr": "Oxydée",
    "en": "Red Twin-Spot Carpet"
   }
  },
@@ -178075,7 +178075,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Zygène de la Petite coronille (La)",
+   "fr": "Zygène de la Petite coronille",
    "en": "Chalk Burnet"
   }
  },
