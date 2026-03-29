@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 108 245 interactions entre 11 569 espèces végétales et 9 800 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 101 655 interactions entre 8 320 espèces végétales et 9 686 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
@@ -15,14 +15,14 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 | Indicateur | Volume |
 |---|---|
-| Interactions documentées | **108 245** paires plante × insecte |
-| Espèces végétales | **11 569** (arbres, arbustes, herbacées, graminées, grimpantes) |
-| Espèces d'insectes | **9 800** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
+| Interactions documentées | **101 655** paires plante × insecte |
+| Espèces végétales | **8 320** (arbres, arbustes, herbacées, graminées, grimpantes) |
+| Espèces d'insectes | **9 686** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
 | Bases de données intégrées | **6** sources scientifiques open-access |
-| Interactions multi-sources | **7 161** paires confirmées par au moins 2 bases indépendantes |
-| Types d'interactions | **12** catégories écologiques |
+| Interactions multi-sources | **7 494** paires confirmées par au moins 2 bases indépendantes |
+| Types d'interactions | **8** catégories écologiques actives (12 définies) |
 | Pays couverts | **23+** pays européens |
-| Harmonisation taxonomique | **99,5 %** des espèces alignées via GBIF |
+| Harmonisation taxonomique | **96 %** des espèces alignées via GBIF |
 
 ## Fonctionnalités
 
@@ -40,7 +40,11 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 **Icônes par forme de croissance** — Silhouettes botaniques (arbre, arbuste, grimpante, herbacée, graminée) et entomologiques (hyménoptère, lépidoptère, coléoptère, diptère, hémiptère) pour une identification visuelle immédiate.
 
+**Noms vernaculaires** — 5 324 plantes et 1 807 insectes avec nom commun en français, 10 223 en anglais (source : GBIF).
+
 **Bilingue** — Interface français / anglais, commutable en un clic.
+
+**Fil d'Ariane** — Navigation hiérarchique avec historique : revenez à n'importe quelle espèce visitée en un clic.
 
 **Responsive** — Mobile, tablette, desktop.
 
@@ -82,14 +86,14 @@ Base compilée à partir de la littérature couvrant les interactions entre arbr
 
 | Attribut | Valeur |
 |---|---|
-| **Interactions chargées** | 100 200 paires (pollinisation + folivorie) |
+| **Interactions chargées** | 98 025 paires (pollinisation, folivorie, prédation, parasitisme) |
 | **Couverture** | Mondial, filtré pour les taxons européens |
 | **Type** | Pollinisation (majoritaire), folivorie |
 | **Licence** | CC0 |
 | **URL** | [globalbioticinteractions.org](https://www.globalbioticinteractions.org) |
 | **Citation** | Poelen, Simons & Mungall (2014). Global Biotic Interactions. |
 
-Méta-agrégateur mondial indexant les interactions biotiques depuis des centaines de bases et publications. Interrogé via API REST pour les types `pollinates`, `eats`, et `flowersVisitedBy`, avec requêtes ciblées par genre pour les pollinisateurs clés (Apis, Bombus, Andrena, Osmia, Pieris, Vanessa, Coccinella, etc.).
+Méta-agrégateur mondial indexant les interactions biotiques depuis des centaines de bases et publications. Interrogé via API REST pour les types `pollinates`, `eats`, `flowersVisitedBy`, `preysOn`, `parasiteOf` et `parasitoidOf`, avec requêtes ciblées par genre pour les pollinisateurs clés (Apis, Bombus, Andrena, Osmia, Pieris, Vanessa, Coccinella, etc.).
 
 ### DBIF v2 — Database of Insects and their Food Plants
 
@@ -145,7 +149,7 @@ Chaque source est parsée selon son format propre (CSV virgule, CSV point-virgul
 
 **Étape 6 — Harmonisation taxonomique** (`06_harmonize_taxonomy.py`)
 Chaque nom d'espèce est soumis à l'API [GBIF Species Match](https://www.gbif.org/developer/species) qui retourne le nom accepté, la famille, l'ordre, le phylum et un score de confiance. Résultats :
-- **95,4 %** de matchs exacts (nom reconnu directement)
+- **96 %** de matchs exacts (nom reconnu directement)
 - **2,3 %** de matchs de rang supérieur (genre reconnu, espèce non)
 - **1,8 %** de matchs approximatifs (correction orthographique automatique)
 - **0,5 %** de noms non reconnus (noms incomplets, morpho-espèces)
@@ -157,6 +161,15 @@ Toutes les sources parsées sont fusionnées. Les paires plante×insecte identiq
 
 **Étape 8 — Export JSON** (`08_export_app_json.py`)
 Génération de trois fichiers JSON optimisés pour le chargement par l'application React : `plants.json`, `insects.json`, `interactions.json`. Chaque espèce porte son identifiant unique, sa taxonomie complète (famille, ordre), et son statut de menace UICN quand disponible.
+
+
+### Nettoyage des données
+
+Le pipeline applique plusieurs contrôles de qualité :
+
+- **Filtrage par règne GBIF** — Les espèces animales faussement classées comme plantes (ex : pucerons en position de plante dans les interactions prédateur-proie) sont détectées via le champ `kingdom` de GBIF et retirées.
+- **Dédoublonnage** — Les paires plante×insecte identiques entre sources sont fusionnées, les observations sommées.
+- **Noms binomiaux** — Seuls les noms au format *Genre espèce* sont conservés (sous-espèces, morpho-espèces et noms incomplets sont exclus).
 
 ### Mapping des types d'interactions
 
@@ -174,8 +187,8 @@ Les différentes bases utilisent des vocabulaires hétérogènes pour décrire l
 | `frugivore` | GloBI | fruit feeder |
 | `florivore` | GloBI | flower feeder |
 | `rhizophage` | GloBI | root feeder |
-| `predateur` | GloBI | preys on |
-| `parasitoide` | GloBI | parasitoid of |
+| `predateur` | GloBI | preys on | **2 746 paires** |
+| `parasitoide` | GloBI | parasitoid of, parasite of | **2 912 paires** |
 
 ### Classification des formes de croissance végétales
 
@@ -211,9 +224,9 @@ phytomia/
 │   └── refresh-deploy.yml        ← GitHub Actions : build + deploy
 ├── public/
 │   └── data/                     ← JSON générés par le pipeline
-│       ├── plants.json           (11 569 espèces, ~1,1 MB)
-│       ├── insects.json          (9 800 espèces, ~700 KB)
-│       ├── interactions.json     (108 245 paires, ~7,5 MB)
+│       ├── plants.json           (8 320 espèces, ~2,2 MB)
+│       ├── insects.json          (9 686 espèces, ~2,1 MB)
+│       ├── interactions.json     (101 655 paires, ~14 MB)
 │       └── last_updated.txt
 ├── src/
 │   ├── components/               ← 11 composants React
