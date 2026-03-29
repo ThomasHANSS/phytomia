@@ -10,7 +10,7 @@
   "threat": "",
   "n_interactions": 552,
   "common": {
-   "fr": "",
+   "fr": "Saule marsault",
    "en": "Goat Willow"
   }
  },
@@ -70,7 +70,7 @@
   "threat": "",
   "n_interactions": 410,
   "common": {
-   "fr": "",
+   "fr": "Peuplier tremble",
    "en": "Aspen"
   }
  },
@@ -160,7 +160,7 @@
   "threat": "",
   "n_interactions": 339,
   "common": {
-   "fr": "",
+   "fr": "Saule blanc",
    "en": ""
   }
  },
@@ -220,7 +220,7 @@
   "threat": "",
   "n_interactions": 297,
   "common": {
-   "fr": "",
+   "fr": "Marguerite",
    "en": "Dog Daisy"
   }
  },
@@ -235,7 +235,7 @@
   "threat": "",
   "n_interactions": 285,
   "common": {
-   "fr": "",
+   "fr": "Trèfle blanc",
    "en": "Dutch Clover"
   }
  },
@@ -250,7 +250,7 @@
   "threat": "",
   "n_interactions": 280,
   "common": {
-   "fr": "",
+   "fr": "Cirse des champs",
    "en": "Boar Thistle"
   }
  },
@@ -265,7 +265,7 @@
   "threat": "",
   "n_interactions": 279,
   "common": {
-   "fr": "",
+   "fr": "Lotier corniculé",
    "en": "Bird's-foot Trefoil"
   }
  },
@@ -295,7 +295,7 @@
   "threat": "",
   "n_interactions": 278,
   "common": {
-   "fr": "",
+   "fr": "Trèfle des prés",
    "en": "Chilean Clover"
   }
  },
@@ -415,7 +415,7 @@
   "threat": "",
   "n_interactions": 231,
   "common": {
-   "fr": "",
+   "fr": "Knautie des champs",
    "en": "Bluebuttons"
   }
  },
@@ -445,7 +445,7 @@
   "threat": "",
   "n_interactions": 218,
   "common": {
-   "fr": "",
+   "fr": "Sorbier des oiseleurs",
    "en": ""
   }
  },
@@ -730,7 +730,7 @@
   "threat": "",
   "n_interactions": 177,
   "common": {
-   "fr": "",
+   "fr": "Pâquerette",
    "en": "Common Daisy"
   }
  },
@@ -805,7 +805,7 @@
   "threat": "",
   "n_interactions": 162,
   "common": {
-   "fr": "",
+   "fr": "Vesce cracca",
    "en": "Bird Vetch"
   }
  },
@@ -820,7 +820,7 @@
   "threat": "",
   "n_interactions": 161,
   "common": {
-   "fr": "",
+   "fr": "Potentille rampante",
    "en": "Creeping Cinquefoil"
   }
  },
@@ -850,7 +850,7 @@
   "threat": "",
   "n_interactions": 160,
   "common": {
-   "fr": "",
+   "fr": "Millepertuis perforé",
    "en": "Common St. John's Wort"
   }
  },
@@ -895,7 +895,7 @@
   "threat": "",
   "n_interactions": 157,
   "common": {
-   "fr": "",
+   "fr": "Tilleul à petites feuilles",
    "en": "Linden"
   }
  },
@@ -970,7 +970,7 @@
   "threat": "",
   "n_interactions": 149,
   "common": {
-   "fr": "",
+   "fr": "Renoncule rampante",
    "en": "Creeping Buttercup"
   }
  },
@@ -1075,7 +1075,7 @@
   "threat": "",
   "n_interactions": 143,
   "common": {
-   "fr": "",
+   "fr": "Minette",
    "en": "Black Medic"
   }
  },
@@ -1090,7 +1090,7 @@
   "threat": "",
   "n_interactions": 143,
   "common": {
-   "fr": "",
+   "fr": "Plantain lancéolé",
    "en": "Buckhorn"
   }
  },
@@ -1165,7 +1165,7 @@
   "threat": "",
   "n_interactions": 137,
   "common": {
-   "fr": "",
+   "fr": "Vipérine commune",
    "en": "Blue Echium"
   }
  },
@@ -1195,7 +1195,7 @@
   "threat": "",
   "n_interactions": 136,
   "common": {
-   "fr": "",
+   "fr": "Liseron des champs",
    "en": "Bindweed"
   }
  },
@@ -1360,7 +1360,7 @@
   "threat": "",
   "n_interactions": 128,
   "common": {
-   "fr": "",
+   "fr": "Véronique petit-chêne",
    "en": "Bird's-eye"
   }
  },
@@ -1390,7 +1390,7 @@
   "threat": "",
   "n_interactions": 125,
   "common": {
-   "fr": "",
+   "fr": "Renoncule bulbeuse",
    "en": "Blister Flower"
   }
  },
@@ -1570,7 +1570,7 @@
   "threat": "",
   "n_interactions": 115,
   "common": {
-   "fr": "",
+   "fr": "Herbe aux goutteux",
    "en": "Ashweed"
   }
  },
@@ -1675,7 +1675,7 @@
   "threat": "",
   "n_interactions": 108,
   "common": {
-   "fr": "",
+   "fr": "Reine-des-prés",
    "en": ""
   }
  },
@@ -1780,7 +1780,7 @@
   "threat": "",
   "n_interactions": 104,
   "common": {
-   "fr": "",
+   "fr": "Trèfle des champs",
    "en": "Big Hop Clover"
   }
  },
@@ -1975,7 +1975,7 @@
   "threat": "",
   "n_interactions": 100,
   "common": {
-   "fr": "",
+   "fr": "Orme champêtre",
    "en": "European Field Elm"
   }
  },
@@ -2050,7 +2050,7 @@
   "threat": "",
   "n_interactions": 98,
   "common": {
-   "fr": "",
+   "fr": "Lierre",
    "en": "English Ivy"
   }
  },
@@ -2200,7 +2200,7 @@
   "threat": "",
   "n_interactions": 95,
   "common": {
-   "fr": "",
+   "fr": "Séneçon commun",
    "en": "Common Fireweed"
   }
  },
@@ -2215,7 +2215,7 @@
   "threat": "",
   "n_interactions": 95,
   "common": {
-   "fr": "",
+   "fr": "Grande ortie",
    "en": "California Nettle"
   }
  },
@@ -2320,7 +2320,7 @@
   "threat": "",
   "n_interactions": 92,
   "common": {
-   "fr": "",
+   "fr": "Troène",
    "en": "Common Privet"
   }
  },
@@ -2380,7 +2380,7 @@
   "threat": "",
   "n_interactions": 92,
   "common": {
-   "fr": "",
+   "fr": "Trèfle hybride",
    "en": "Alsike Clover"
   }
  },
@@ -2455,7 +2455,7 @@
   "threat": "",
   "n_interactions": 91,
   "common": {
-   "fr": "",
+   "fr": "Succise des prés",
    "en": "Devil's-Bit Scabious"
   }
  },
@@ -2665,7 +2665,7 @@
   "threat": "",
   "n_interactions": 85,
   "common": {
-   "fr": "",
+   "fr": "Ronce bleuâtre",
    "en": "Dewberry"
   }
  },
@@ -2755,7 +2755,7 @@
   "threat": "",
   "n_interactions": 82,
   "common": {
-   "fr": "",
+   "fr": "Plantain moyen",
    "en": "Hoary Plantain"
   }
  },
@@ -2935,7 +2935,7 @@
   "threat": "",
   "n_interactions": 79,
   "common": {
-   "fr": "",
+   "fr": "Mouron des oiseaux",
    "en": "Chickweed"
   }
  },
@@ -3115,7 +3115,7 @@
   "threat": "",
   "n_interactions": 74,
   "common": {
-   "fr": "",
+   "fr": "Petit trèfle jaune",
    "en": "Irish Shamrock, Small Hop Clover, Cow Hop Clover, Yellow Hop Clover, Shamrock"
   }
  },
@@ -3430,7 +3430,7 @@
   "threat": "",
   "n_interactions": 70,
   "common": {
-   "fr": "",
+   "fr": "Tilleul à grandes feuilles",
    "en": "Big-leaf Linden"
   }
  },
@@ -3445,7 +3445,7 @@
   "threat": "",
   "n_interactions": 70,
   "common": {
-   "fr": "",
+   "fr": "Trèfle pied-de-lièvre",
    "en": "Hare's Foot Clover"
   }
  },
@@ -3550,7 +3550,7 @@
   "threat": "",
   "n_interactions": 69,
   "common": {
-   "fr": "",
+   "fr": "Trèfle doré",
    "en": "Golden Clover"
   }
  },
@@ -4585,7 +4585,7 @@
   "threat": "",
   "n_interactions": 61,
   "common": {
-   "fr": "",
+   "fr": "Silène enflé",
    "en": "Bladder Campion"
   }
  },
@@ -4870,7 +4870,7 @@
   "threat": "",
   "n_interactions": 59,
   "common": {
-   "fr": "",
+   "fr": "Trèfle de Perse",
    "en": "Annual Strawberry Clover"
   }
  },
@@ -5215,7 +5215,7 @@
   "threat": "",
   "n_interactions": 57,
   "common": {
-   "fr": "",
+   "fr": "Trèfle incarnat",
    "en": "Carnation Clover"
   }
  },
@@ -5395,7 +5395,7 @@
   "threat": "",
   "n_interactions": 56,
   "common": {
-   "fr": "",
+   "fr": "Pissenlit à fruits rouges",
    "en": ""
   }
  },
@@ -5545,7 +5545,7 @@
   "threat": "",
   "n_interactions": 55,
   "common": {
-   "fr": "",
+   "fr": "Sureau noir",
    "en": "Black Elder"
   }
  },
@@ -6010,7 +6010,7 @@
   "threat": "",
   "n_interactions": 53,
   "common": {
-   "fr": "",
+   "fr": "Grand plantain",
    "en": "Broadleaf Plantain"
   }
  },
@@ -6280,7 +6280,7 @@
   "threat": "",
   "n_interactions": 52,
   "common": {
-   "fr": "",
+   "fr": "Linaire commune",
    "en": "Butter And Eggs"
   }
  },
@@ -7765,7 +7765,7 @@
   "threat": "",
   "n_interactions": 44,
   "common": {
-   "fr": "",
+   "fr": "Ficaire",
    "en": ""
   }
  },
@@ -8020,7 +8020,7 @@
   "threat": "",
   "n_interactions": 43,
   "common": {
-   "fr": "",
+   "fr": "Primevère officinale",
    "en": "Cowslip"
   }
  },
@@ -8050,7 +8050,7 @@
   "threat": "",
   "n_interactions": 43,
   "common": {
-   "fr": "",
+   "fr": "Renoncule aquatique",
    "en": "Common Water-crowfoot"
   }
  },
@@ -8305,7 +8305,7 @@
   "threat": "",
   "n_interactions": 42,
   "common": {
-   "fr": "",
+   "fr": "Petite douve",
    "en": "Greater Creeping Spearwort"
   }
  },
@@ -8980,7 +8980,7 @@
   "threat": "",
   "n_interactions": 41,
   "common": {
-   "fr": "",
+   "fr": "Nerprun purgatif",
    "en": "Buckthorn"
   }
  },
@@ -10285,7 +10285,7 @@
   "threat": "",
   "n_interactions": 37,
   "common": {
-   "fr": "",
+   "fr": "Renoncule des champs",
    "en": "Corn Buttercup"
   }
  },
@@ -10720,7 +10720,7 @@
   "threat": "",
   "n_interactions": 36,
   "common": {
-   "fr": "",
+   "fr": "Myosotis des champs",
    "en": "Common Forget-me-not"
   }
  },
@@ -10765,7 +10765,7 @@
   "threat": "",
   "n_interactions": 36,
   "common": {
-   "fr": "",
+   "fr": "Renoncule scélérate",
    "en": "Blister Buttercup"
   }
  },
@@ -12145,7 +12145,7 @@
   "threat": "",
   "n_interactions": 33,
   "common": {
-   "fr": "",
+   "fr": "Bourrache",
    "en": "Beebread"
   }
  },
@@ -13390,7 +13390,7 @@
   "threat": "",
   "n_interactions": 30,
   "common": {
-   "fr": "",
+   "fr": "Gaillet gratteron",
    "en": "Bedstraw"
   }
  },
@@ -17380,7 +17380,7 @@
   "threat": "",
   "n_interactions": 24,
   "common": {
-   "fr": "",
+   "fr": "Pensée sauvage",
    "en": "European Wild Pansy"
   }
  },
@@ -18355,7 +18355,7 @@
   "threat": "",
   "n_interactions": 23,
   "common": {
-   "fr": "",
+   "fr": "Violette odorante",
    "en": "Common Violet"
   }
  },
@@ -23860,7 +23860,7 @@
   "threat": "",
   "n_interactions": 17,
   "common": {
-   "fr": "",
+   "fr": "Sureau yèble",
    "en": "Danewort"
   }
  },
@@ -24910,7 +24910,7 @@
   "threat": "",
   "n_interactions": 16,
   "common": {
-   "fr": "",
+   "fr": "Ortie brûlante",
    "en": "Annual Nettle"
   }
  },
@@ -44335,7 +44335,7 @@
   "threat": "",
   "n_interactions": 6,
   "common": {
-   "fr": "",
+   "fr": "Sureau rouge",
    "en": "European Red Elder"
   }
  },
@@ -120370,7 +120370,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Pissenlit commun",
    "en": "Common dandelion"
   }
  },
