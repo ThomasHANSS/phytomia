@@ -106,7 +106,7 @@ export default function App() {
       )}
 
       {selected && (<div>
-          <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8, fontSize: 12, color: "var(--text2)", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 4, padding: "8px 12px", fontSize: 12, color: "var(--text2)", flexWrap: "wrap", position: "sticky", top: 0, background: "var(--bg)", zIndex: 10, borderBottom: "1px solid var(--border)" }}>
             <span onClick={function() { setHistory([]); setSelectedId(null); }} style={{ cursor: "pointer", color: "var(--text3)" }}>{lang === "fr" ? "Accueil" : "Home"}</span>
             {history.map(function(hid, idx) {
               var sp = data.plants.find(function(p){return p.id===hid;}) || data.insects.find(function(i){return i.id===hid;});
