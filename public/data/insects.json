@@ -1251,6 +1251,15 @@
   "n_interactions": 33
  },
  {
+  "id": "ifc7b02",
+  "sci": "Oberea oculata",
+  "order": "Coleoptera",
+  "family": "Cerambycidae",
+  "genus": "Oberea",
+  "threat": "",
+  "n_interactions": 33
+ },
+ {
   "id": "i3c4b3d",
   "sci": "Eurema blanda",
   "order": "Lepidoptera",
@@ -1265,15 +1274,6 @@
   "order": "",
   "family": "",
   "genus": "Megachile",
-  "threat": "",
-  "n_interactions": 32
- },
- {
-  "id": "ifc7b02",
-  "sci": "Oberea oculata",
-  "order": "Coleoptera",
-  "family": "Cerambycidae",
-  "genus": "Oberea",
   "threat": "",
   "n_interactions": 32
  },
@@ -1485,6 +1485,15 @@
   "n_interactions": 27
  },
  {
+  "id": "i2ce2c2",
+  "sci": "Tetrops starkii",
+  "order": "Coleoptera",
+  "family": "Cerambycidae",
+  "genus": "Tetrops",
+  "threat": "",
+  "n_interactions": 27
+ },
+ {
   "id": "i2297f6",
   "sci": "Xylocopa virginica",
   "order": "",
@@ -1508,15 +1517,6 @@
   "order": "Lepidoptera",
   "family": "Geometridae",
   "genus": "Ennomos",
-  "threat": "",
-  "n_interactions": 26
- },
- {
-  "id": "i2ce2c2",
-  "sci": "Tetrops starkii",
-  "order": "Coleoptera",
-  "family": "Cerambycidae",
-  "genus": "Tetrops",
   "threat": "",
   "n_interactions": 26
  },
@@ -2916,6 +2916,15 @@
   "n_interactions": 13
  },
  {
+  "id": "i5ae565",
+  "sci": "Pteleobius vittatus",
+  "order": "Coleoptera",
+  "family": "Curculionidae",
+  "genus": "Pteleobius",
+  "threat": "",
+  "n_interactions": 13
+ },
+ {
   "id": "i731b1f",
   "sci": "Ptilodon capucina",
   "order": "Lepidoptera",
@@ -3137,6 +3146,15 @@
   "order": "",
   "family": "",
   "genus": "Syrphus",
+  "threat": "",
+  "n_interactions": 12
+ },
+ {
+  "id": "i58c6db",
+  "sci": "Tetropium gabrieli",
+  "order": "Coleoptera",
+  "family": "Cerambycidae",
+  "genus": "Tetropium",
   "threat": "",
   "n_interactions": 12
  },
@@ -3497,15 +3515,6 @@
   "order": "Lepidoptera",
   "family": "Notodontidae",
   "genus": "Stauropus",
-  "threat": "",
-  "n_interactions": 11
- },
- {
-  "id": "i58c6db",
-  "sci": "Tetropium gabrieli",
-  "order": "Coleoptera",
-  "family": "Cerambycidae",
-  "genus": "Tetropium",
   "threat": "",
   "n_interactions": 11
  },
@@ -4334,15 +4343,6 @@
   "order": "Lepidoptera",
   "family": "Psychidae",
   "genus": "Psyche",
-  "threat": "",
-  "n_interactions": 9
- },
- {
-  "id": "i5ae565",
-  "sci": "Pteleobius vittatus",
-  "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Pteleobius",
   "threat": "",
   "n_interactions": 9
  },
@@ -6390,6 +6390,15 @@
   "n_interactions": 6
  },
  {
+  "id": "i5fecab",
+  "sci": "Orthotomicus suturalis",
+  "order": "Coleoptera",
+  "family": "Curculionidae",
+  "genus": "Orthotomicus",
+  "threat": "",
+  "n_interactions": 6
+ },
+ {
   "id": "i044e6b",
   "sci": "Otiorhynchus singularis",
   "order": "Coleoptera",
@@ -7904,15 +7913,6 @@
  {
   "id": "ie72b0d",
   "sci": "Orthotomicus erosus",
-  "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Orthotomicus",
-  "threat": "",
-  "n_interactions": 5
- },
- {
-  "id": "i5fecab",
-  "sci": "Orthotomicus suturalis",
   "order": "Coleoptera",
   "family": "Curculionidae",
   "genus": "Orthotomicus",
@@ -13694,6 +13694,15 @@
   "order": "",
   "family": "",
   "genus": "Osmia",
+  "threat": "",
+  "n_interactions": 3
+ },
+ {
+  "id": "ifbea14",
+  "sci": "Pachypappa marsupialis",
+  "order": "Hemiptera",
+  "family": "Aphididae",
+  "genus": "Pachypappa",
   "threat": "",
   "n_interactions": 3
  },
@@ -20700,15 +20709,6 @@
   "n_interactions": 2
  },
  {
-  "id": "ifbea14",
-  "sci": "Pachypappa marsupialis",
-  "order": "Hemiptera",
-  "family": "Aphididae",
-  "genus": "Pachypappa",
-  "threat": "",
-  "n_interactions": 2
- },
- {
   "id": "i03e16d",
   "sci": "Pachypappa warshavensis",
   "order": "Hemiptera",
@@ -21791,6 +21791,15 @@
  {
   "id": "id6d400",
   "sci": "Psallus falleni",
+  "order": "Hemiptera",
+  "family": "Miridae",
+  "genus": "Psallus",
+  "threat": "",
+  "n_interactions": 2
+ },
+ {
+  "id": "iad9111",
+  "sci": "Psallus lepidus",
   "order": "Hemiptera",
   "family": "Miridae",
   "genus": "Psallus",
@@ -35651,15 +35660,6 @@
  {
   "id": "i669d8d",
   "sci": "Psallus henschii",
-  "order": "Hemiptera",
-  "family": "Miridae",
-  "genus": "Psallus",
-  "threat": "",
-  "n_interactions": 1
- },
- {
-  "id": "iad9111",
-  "sci": "Psallus lepidus",
   "order": "Hemiptera",
   "family": "Miridae",
   "genus": "Psallus",

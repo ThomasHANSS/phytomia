@@ -17,7 +17,7 @@
   "genus": "Salix",
   "status": "native",
   "threat": "",
-  "n_interactions": 430
+  "n_interactions": 431
  },
  {
   "id": "pd983df",
@@ -67,7 +67,7 @@
   "genus": "Pinus",
   "status": "native",
   "threat": "",
-  "n_interactions": 290
+  "n_interactions": 291
  },
  {
   "id": "p8fa557",
@@ -137,7 +137,7 @@
   "genus": "Populus",
   "status": "native",
   "threat": "",
-  "n_interactions": 186
+  "n_interactions": 187
  },
  {
   "id": "p3ec520",
@@ -167,7 +167,7 @@
   "genus": "Fraxinus",
   "status": "native",
   "threat": "",
-  "n_interactions": 157
+  "n_interactions": 160
  },
  {
   "id": "p63d637",
@@ -297,7 +297,7 @@
   "genus": "Ulmus",
   "status": "native",
   "threat": "",
-  "n_interactions": 106
+  "n_interactions": 107
  },
  {
   "id": "p856d0e",
@@ -310,21 +310,21 @@
   "n_interactions": 100
  },
  {
-  "id": "pd21e68",
-  "sci": "Abies alba",
-  "family": "Pinaceae",
-  "order": "Pinales",
-  "genus": "Abies",
-  "status": "native",
-  "threat": "",
-  "n_interactions": 98
- },
- {
   "id": "pcb024d",
   "sci": "Larix decidua",
   "family": "Pinaceae",
   "order": "Pinales",
   "genus": "Larix",
+  "status": "native",
+  "threat": "",
+  "n_interactions": 99
+ },
+ {
+  "id": "pd21e68",
+  "sci": "Abies alba",
+  "family": "Pinaceae",
+  "order": "Pinales",
+  "genus": "Abies",
   "status": "native",
   "threat": "",
   "n_interactions": 98
@@ -420,6 +420,16 @@
   "n_interactions": 69
  },
  {
+  "id": "pd9c934",
+  "sci": "Ulmus minor",
+  "family": "Ulmaceae",
+  "order": "Rosales",
+  "genus": "Ulmus",
+  "status": "native",
+  "threat": "",
+  "n_interactions": 69
+ },
+ {
   "id": "p67c13a",
   "sci": "Leucanthemum vulgare",
   "family": "Asteraceae",
@@ -435,16 +445,6 @@
   "family": "Pinaceae",
   "order": "Pinales",
   "genus": "Pinus",
-  "status": "native",
-  "threat": "",
-  "n_interactions": 68
- },
- {
-  "id": "pd9c934",
-  "sci": "Ulmus minor",
-  "family": "Ulmaceae",
-  "order": "Rosales",
-  "genus": "Ulmus",
   "status": "native",
   "threat": "",
   "n_interactions": 68
@@ -690,6 +690,16 @@
   "n_interactions": 45
  },
  {
+  "id": "p96c886",
+  "sci": "Ulmus laevis",
+  "family": "Ulmaceae",
+  "order": "Rosales",
+  "genus": "Ulmus",
+  "status": "native",
+  "threat": "",
+  "n_interactions": 45
+ },
+ {
   "id": "pebd637",
   "sci": "Camellia sinensis",
   "family": "Theaceae",
@@ -705,16 +715,6 @@
   "family": "Caprifoliaceae",
   "order": "Dipsacales",
   "genus": "Knautia",
-  "status": "native",
-  "threat": "",
-  "n_interactions": 44
- },
- {
-  "id": "p96c886",
-  "sci": "Ulmus laevis",
-  "family": "Ulmaceae",
-  "order": "Rosales",
-  "genus": "Ulmus",
   "status": "native",
   "threat": "",
   "n_interactions": 44
