@@ -43,6 +43,15 @@ def load_taxonomy():
 
 
 
+def load_vernacular_names():
+    vern_file = ROOT / "data" / "taxonomy" / "vernacular_cache.json"
+    if vern_file.exists():
+        import json
+        with open(vern_file) as f:
+            return json.load(f)
+    return {}
+
+
 TREE_GENERA = {"Quercus","Fagus","Betula","Picea","Pinus","Abies","Larix","Acer","Fraxinus","Tilia","Ulmus","Alnus","Carpinus","Castanea","Populus","Salix","Platanus","Juglans","Cedrus","Taxus","Cupressus","Eucalyptus","Prunus","Malus","Pyrus","Sorbus","Olea","Robinia","Gleditsia","Magnolia","Morus","Ilex","Aesculus","Ailanthus","Catalpa","Liriodendron","Paulownia","Corylus","Celtis","Cercis","Citrus","Liquidambar","Ginkgo","Thuja","Juniperus","Arbutus","Zelkova","Carya","Diospyros","Koelreuteria","Sapindus","Ficus","Ceratonia","Amelanchier","Eriobotrya","Mespilus"}
 SHRUB_GENERA = {"Rosa","Rubus","Buddleja","Sambucus","Cornus","Viburnum","Ligustrum","Lonicera","Ribes","Berberis","Cotoneaster","Crataegus","Rhamnus","Euonymus","Buxus","Lavandula","Rosmarinus","Cistus","Erica","Calluna","Rhododendron","Syringa","Philadelphus","Hydrangea","Spiraea","Deutzia","Potentilla","Hippophae","Myrica","Ceanothus","Daphne","Genista","Cytisus","Ulex","Elaeagnus","Tamarix","Myrtus","Laurus","Nerium","Colutea","Paliurus","Pistacia"}
 CLIMBER_GENERA = {"Hedera","Clematis","Wisteria","Vitis","Humulus","Parthenocissus","Passiflora","Jasminum","Lonicera","Campsis","Fallopia","Calystegia","Convolvulus","Ipomoea","Bryonia"}
@@ -135,6 +144,8 @@ def export():
     
     tax = load_taxonomy()
     threat = load_threat_status()
+    vern = load_vernacular_names()
+    print(f"  {len(vern):,} noms vernaculaires chargés")
     
     # Lire les interactions fusionnées
     interactions_raw = []
@@ -166,6 +177,7 @@ def export():
             "growthForm": detect_growth_form(name, t.get("family", "")),
             "threat": threat.get(name, {}).get("cat", ""),
             "n_interactions": 0,
+            "common": {"fr": vern.get(name, {}).get("fr", ""), "en": vern.get(name, {}).get("en", "")},
         }
     
     # Construire les entités insectes
