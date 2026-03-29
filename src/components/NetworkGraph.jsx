@@ -98,7 +98,7 @@ function FamilyDetail(props) {
         <button onClick={onBack}
           style={{ padding: "6px 14px", fontSize: 12, border: "1px solid var(--border)", borderRadius: 8,
             background: "var(--bg2)", cursor: "pointer", color: "var(--text2)" }}>
-          \u2190 {lang === "fr" ? "Retour" : "Back"}
+          {lang === "fr" ? "\u2190 Vue d'ensemble" : "\u2190 Overview"}
         </button>
         <div style={{ flex: 1 }}>
           <span style={{ fontSize: 15, fontWeight: 700, color: col }}>{fam ? fam[lang] : familyKey}</span>
