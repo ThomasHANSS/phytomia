@@ -1,164 +1,174 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useCallback } from 'react';
 import { NodeImg } from './Thumb';
 import { TYPES, FAMILIES } from '../utils/types';
 
 export default function NetworkGraph(props) {
   var center = props.center, partners = props.partners, ixs = props.ixs, lang = props.lang, onSel = props.onSel, plants = props.plants;
   var isP = !!plants.find(function (p) { return p.id === center.id; });
-
-  // Sort interactions by observation count (most documented first)
-  var sortedIxs = useMemo(function () {
-    return ixs.slice().sort(function (a, b) {
-      var na = a.src.reduce(function (s, sr) { return s + (sr.n || 0); }, 0);
-      var nb = b.src.reduce(function (s, sr) { return s + (sr.n || 0); }, 0);
-      return nb - na;
-    });
-  }, [ixs]);
-
-  // Determine max visible (slider)
-  var total = partners.length;
-  var defaultShow = Math.min(total, 30);
-  var _v = useState(defaultShow), maxShow = _v[0], setMaxShow = _v[1];
-
-  // Reset when species changes
-  useMemo(function () { setMaxShow(Math.min(total, 30)); }, [center.id, total]);
-
-  // Get visible partners based on sorted interactions
-  var visibleData = useMemo(function () {
-    var shown = sortedIxs.slice(0, maxShow);
-    var partnerIds = new Set();
-    shown.forEach(function (ix) {
-      partnerIds.add(isP ? ix.iI : ix.pI);
-    });
-    var vPartners = partners.filter(function (p) { return partnerIds.has(p.id); });
-    return { partners: vPartners, ixs: shown };
-  }, [sortedIxs, maxShow, partners, isP]);
-
-  var vPartners = visibleData.partners;
-  var vIxs = visibleData.ixs;
-  var n = vPartners.length;
-
+  var svgRef = useRef(null);
+  var _pan = useState({ x: 0, y: 0 }), pan = _pan[0], setPan = _pan[1];
+  var _zoom = useState(1), zoom = _zoom[0], setZoom = _zoom[1];
+  var _drag = useState(null), drag = _drag[0], setDrag = _drag[1];
+  var n = partners.length;
   if (n === 0) return null;
 
-  // Dynamic sizing based on number of nodes
-  var R = n <= 10 ? 140 : n <= 20 ? 160 : n <= 30 ? 180 : 200;
-  var cx = 340, cy = R + 60;
-  var W = 680, H = cy + R + 80;
-  var nodeR = n <= 10 ? 22 : n <= 20 ? 18 : n <= 30 ? 15 : 12;
-  var fontSize = n <= 15 ? 9.5 : n <= 25 ? 8 : 7;
+  // Layout: distance from center = inverse of observation strength
+  var nodes = useMemo(function () {
+    var maxObs = 0;
+    var ixMap = {};
+    ixs.forEach(function (ix) {
+      var pid = isP ? ix.iI : ix.pI;
+      var nObs = ix.src.reduce(function (s, sr) { return s + (sr.n || 1); }, 0);
+      ixMap[pid] = (ixMap[pid] || 0) + nObs;
+      if (ixMap[pid] > maxObs) maxObs = ixMap[pid];
+    });
 
-  var nodes = vPartners.map(function (p, i) {
-    var a = (2 * Math.PI * i) / n - Math.PI / 2;
-    return Object.assign({}, p, { x: cx + R * Math.cos(a), y: cy + R * Math.sin(a) });
-  });
+    // Sort by strength for angular distribution (strongest near top)
+    var sorted = partners.slice().sort(function (a, b) {
+      return (ixMap[b.id] || 0) - (ixMap[a.id] || 0);
+    });
 
+    return sorted.map(function (p, i) {
+      var strength = ixMap[p.id] || 1;
+      var ratio = Math.log(strength + 1) / Math.log(maxObs + 1);
+      // Strong links = close (minR), weak = far (maxR)
+      var minR = 80, maxR = n <= 20 ? 200 : n <= 50 ? 260 : 320;
+      var dist = maxR - ratio * (maxR - minR);
+      var a = (2 * Math.PI * i) / n - Math.PI / 2;
+      // Add slight jitter to avoid overlap
+      var jitter = (i % 3 - 1) * 8;
+      return Object.assign({}, p, {
+        x: 350 + (dist + jitter) * Math.cos(a),
+        y: 350 + (dist + jitter) * Math.sin(a),
+        strength: strength,
+        rank: i,
+      });
+    });
+  }, [partners, ixs, isP, n]);
+
+  var cx = 350, cy = 350;
+  var W = 700, H = 700;
   var name = function (item) { return item.common ? item.common[lang] || item.sci : item.sci; };
-  var shortSci = function (s) {
-    if (s.length > 16) return s.split(' ')[0][0] + '. ' + s.split(' ').slice(1).join(' ');
-    return s;
-  };
+  var shortSci = function (s) { return s.length > 16 ? s.split(' ')[0][0] + '. ' + s.split(' ').slice(1).join(' ') : s; };
+
+  // Dynamic node size based on count
+  var nodeR = n <= 15 ? 20 : n <= 30 ? 16 : n <= 60 ? 13 : 10;
+  var showLabels = zoom > 0.6;
+  var showIcons = n <= 50 || zoom > 1.2;
+
+  // Mouse/touch handlers for pan
+  var onMouseDown = useCallback(function (e) {
+    if (e.target.closest('[data-node]')) return;
+    e.preventDefault();
+    var pt = e.touches ? e.touches[0] : e;
+    setDrag({ startX: pt.clientX - pan.x, startY: pt.clientY - pan.y });
+  }, [pan]);
+
+  var onMouseMove = useCallback(function (e) {
+    if (!drag) return;
+    var pt = e.touches ? e.touches[0] : e;
+    setPan({ x: pt.clientX - drag.startX, y: pt.clientY - drag.startY });
+  }, [drag]);
+
+  var onMouseUp = useCallback(function () { setDrag(null); }, []);
+
+  var onWheel = useCallback(function (e) {
+    e.preventDefault();
+    var delta = e.deltaY > 0 ? 0.9 : 1.1;
+    setZoom(function (z) { return Math.max(0.3, Math.min(4, z * delta)); });
+  }, []);
+
+  // Reset view
+  var resetView = function () { setPan({ x: 0, y: 0 }); setZoom(1); };
+
+  var transform = 'translate(' + pan.x + ',' + pan.y + ') scale(' + zoom + ')';
 
   return (
     <div style={{ margin: '8px 0' }}>
       {/* Controls */}
-      {total > 10 && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, marginBottom: 8, flexWrap: 'wrap' }}>
-          <span style={{ fontSize: 11, color: 'var(--text2)' }}>
-            {lang === 'fr' ? 'Affichées' : 'Showing'}: <strong>{n}</strong> / {total}
-          </span>
-          <input type="range" min={Math.min(5, total)} max={total} value={maxShow}
-            onChange={function (e) { setMaxShow(parseInt(e.target.value)); }}
-            style={{ width: 140, accentColor: isP ? '#2d7d46' : '#b8860b' }} />
-          <div style={{ display: 'flex', gap: 4 }}>
-            <button onClick={function () { setMaxShow(Math.max(5, maxShow - 5)); }}
-              style={{ width: 28, height: 28, border: '1px solid var(--border)', borderRadius: 6, background: 'var(--bg2)', cursor: 'pointer', fontSize: 14, color: 'var(--text2)' }}>−</button>
-            <button onClick={function () { setMaxShow(Math.min(total, maxShow + 5)); }}
-              style={{ width: 28, height: 28, border: '1px solid var(--border)', borderRadius: 6, background: 'var(--bg2)', cursor: 'pointer', fontSize: 14, color: 'var(--text2)' }}>+</button>
-            {maxShow < total && (
-              <button onClick={function () { setMaxShow(total); }}
-                style={{ height: 28, padding: '0 8px', border: '1px solid var(--border)', borderRadius: 6, background: 'var(--bg2)', cursor: 'pointer', fontSize: 10, color: 'var(--text2)' }}>
-                {lang === 'fr' ? 'Tout' : 'All'}
-              </button>
-            )}
-          </div>
-        </div>
-      )}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 6, flexWrap: 'wrap' }}>
+        <span style={{ fontSize: 11, color: 'var(--text2)' }}>
+          {n} {lang === 'fr' ? 'interactions' : 'interactions'}
+        </span>
+        <button onClick={function () { setZoom(function (z) { return Math.min(4, z * 1.3); }); }}
+          style={{ width: 28, height: 28, border: '1px solid var(--border)', borderRadius: 6, background: 'var(--bg2)', cursor: 'pointer', fontSize: 16, color: 'var(--text2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>+</button>
+        <button onClick={function () { setZoom(function (z) { return Math.max(0.3, z * 0.7); }); }}
+          style={{ width: 28, height: 28, border: '1px solid var(--border)', borderRadius: 6, background: 'var(--bg2)', cursor: 'pointer', fontSize: 16, color: 'var(--text2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>−</button>
+        <button onClick={resetView}
+          style={{ height: 28, padding: '0 10px', border: '1px solid var(--border)', borderRadius: 6, background: 'var(--bg2)', cursor: 'pointer', fontSize: 10, color: 'var(--text2)' }}>
+          {lang === 'fr' ? 'Recentrer' : 'Reset'}
+        </button>
+      </div>
 
-      {/* SVG Graph */}
-      <svg viewBox={'0 0 ' + W + ' ' + H} width="100%" style={{ display: 'block' }}>
-        {vIxs.map(function (ix, idx) {
-          var nd = nodes.find(function (n2) { return isP ? n2.id === ix.iI : n2.id === ix.pI; });
-          if (!nd) return null;
-          var tp = TYPES[ix.tp] || TYPES.folivorie;
-          var fam = FAMILIES[tp.fam];
-          var col = fam.color;
-          var nObs = ix.src.reduce(function (s, sr) { return s + (sr.n || 0); }, 0);
-          var op = nObs > 50 ? 0.85 : nObs > 10 ? 0.6 : 0.35;
-          var mx2 = (cx + nd.x) / 2, my2 = (cy + nd.y) / 2;
-          var dx = nd.x - cx, dy = nd.y - cy, len = Math.sqrt(dx * dx + dy * dy) || 1;
-          var off = 16 * (idx % 2 === 0 ? 1 : -1);
-          var cpx = mx2 + (-dy / len) * off, cpy = my2 + (dx / len) * off;
-          var tmx = 0.25 * cx + 0.5 * cpx + 0.25 * nd.x, tmy = 0.25 * cy + 0.5 * cpy + 0.25 * nd.y;
-          return (
-            <g key={idx}>
-              <path d={'M' + cx + ',' + cy + ' Q' + cpx + ',' + cpy + ' ' + nd.x + ',' + nd.y}
-                fill="none" stroke={col} strokeWidth={tp.w} strokeDasharray={tp.dash}
-                opacity={op} strokeLinecap="round" />
-              {n <= 40 && (
-                <g transform={'translate(' + tmx + ',' + tmy + ')'}>
-                  <circle r={5} fill="var(--bg)" opacity={0.85} />
-                  <path d={tp.icon} fill="none" stroke={col} strokeWidth={1.1} strokeLinecap="round" opacity={Math.min(1, op + 0.2)} />
+      {/* SVG */}
+      <div style={{ border: '1px solid var(--border)', borderRadius: 10, overflow: 'hidden', cursor: drag ? 'grabbing' : 'grab', touchAction: 'none' }}
+        onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseUp={onMouseUp} onMouseLeave={onMouseUp}
+        onTouchStart={onMouseDown} onTouchMove={onMouseMove} onTouchEnd={onMouseUp}
+        onWheel={onWheel}>
+        <svg ref={svgRef} viewBox={'0 0 ' + W + ' ' + H} width="100%" style={{ display: 'block' }}>
+          <g transform={transform}>
+            {/* Links */}
+            {ixs.map(function (ix, idx) {
+              var nd = nodes.find(function (n2) { return isP ? n2.id === ix.iI : n2.id === ix.pI; });
+              if (!nd) return null;
+              var tp = TYPES[ix.tp] || TYPES.folivorie;
+              var fam = FAMILIES[tp.fam]; var col = fam.color;
+              var nObs = ix.src.reduce(function (s, sr) { return s + (sr.n || 0); }, 0);
+              var op = nObs > 50 ? 0.8 : nObs > 10 ? 0.5 : 0.2;
+              var sw = nObs > 100 ? 3 : nObs > 20 ? 2 : 1.2;
+              return (
+                <line key={idx} x1={cx} y1={cy} x2={nd.x} y2={nd.y}
+                  stroke={col} strokeWidth={sw} strokeDasharray={tp.dash}
+                  opacity={op} strokeLinecap="round" />
+              );
+            })}
+
+            {/* Partner nodes */}
+            {nodes.map(function (nd) {
+              var col2 = plants.find(function (p) { return p.id === nd.id; }) ? '#2d7d46' : '#b8860b';
+              var cid = 'c-' + nd.id;
+              var r = nodeR + (nd.rank < 5 ? 3 : 0);
+              return (
+                <g key={nd.id} data-node="1" style={{ cursor: 'pointer' }} onClick={function (e) { e.stopPropagation(); onSel(nd.id); }}>
+                  <circle cx={nd.x} cy={nd.y} r={r + 2} fill={col2} opacity={0.08} />
+                  <circle cx={nd.x} cy={nd.y} r={r} fill="var(--bg)" stroke={col2} strokeWidth={1.2} />
+                  <clipPath id={cid}><circle cx={nd.x} cy={nd.y} r={r - 2} /></clipPath>
+                  <NodeImg name={nd.sci} x={nd.x} y={nd.y} r={r - 2} clipId={cid} />
+                  {showLabels && (
+                    <text x={nd.x} y={nd.y + r + 10} textAnchor="middle"
+                      style={{ fontSize: 8, fontWeight: 500, fontStyle: 'italic', fill: 'var(--text)', pointerEvents: 'none' }}>
+                      {shortSci(nd.sci)}
+                    </text>
+                  )}
                 </g>
-              )}
+              );
+            })}
+
+            {/* Center node */}
+            <g>
+              <circle cx={cx} cy={cy} r={36} fill={isP ? '#2d7d46' : '#b8860b'} opacity={0.1} />
+              <circle cx={cx} cy={cy} r={32} fill="var(--bg)" stroke={isP ? '#2d7d46' : '#b8860b'} strokeWidth={2.5} />
+              <clipPath id="cc"><circle cx={cx} cy={cy} r={29} /></clipPath>
+              <NodeImg name={center.sci} x={cx} y={cy} r={29} clipId="cc" />
             </g>
-          );
-        })}
-        {nodes.map(function (nd) {
-          var col2 = plants.find(function (p) { return p.id === nd.id; }) ? '#2d7d46' : '#b8860b';
-          var cid = 'c-' + nd.id;
-          return (
-            <g key={nd.id} style={{ cursor: 'pointer' }} onClick={function () { onSel(nd.id); }}>
-              <circle cx={nd.x} cy={nd.y} r={nodeR + 3} fill={col2} opacity={0.08} />
-              <circle cx={nd.x} cy={nd.y} r={nodeR} fill="var(--bg)" stroke={col2} strokeWidth={1.3} />
-              <clipPath id={cid}><circle cx={nd.x} cy={nd.y} r={nodeR - 2} /></clipPath>
-              <NodeImg name={nd.sci} x={nd.x} y={nd.y} r={nodeR - 2} clipId={cid} />
-              {n <= 50 && (
-                <text x={nd.x} y={nd.y + nodeR + 11} textAnchor="middle"
-                  style={{ fontSize: fontSize, fontWeight: 500, fontStyle: 'italic', fill: 'var(--text)' }}>
-                  {shortSci(nd.sci)}
-                </text>
-              )}
-              {n <= 30 && (
-                <text x={nd.x} y={nd.y + nodeR + 11 + fontSize + 1} textAnchor="middle"
-                  style={{ fontSize: fontSize - 1, fill: 'var(--text2)' }}>
-                  {name(nd)}
-                </text>
-              )}
-            </g>
-          );
-        })}
-        <g>
-          <circle cx={cx} cy={cy} r={36} fill={isP ? '#2d7d46' : '#b8860b'} opacity={0.1} />
-          <circle cx={cx} cy={cy} r={32} fill="var(--bg)" stroke={isP ? '#2d7d46' : '#b8860b'} strokeWidth={2.5} />
-          <clipPath id="cc"><circle cx={cx} cy={cy} r={29} /></clipPath>
-          <NodeImg name={center.sci} x={cx} y={cy} r={29} clipId="cc" />
-        </g>
-      </svg>
+          </g>
+        </svg>
+      </div>
 
       {/* Legend */}
-      <div className="graph-legend">
-        {Object.entries(TYPES).filter(function (e) { return vIxs.some(function (ix) { return ix.tp === e[0]; }); }).map(function (e) {
+      <div className="graph-legend" style={{ marginTop: 6 }}>
+        {Object.entries(TYPES).filter(function (e) { return ixs.some(function (ix) { return ix.tp === e[0]; }); }).map(function (e) {
           var tp = e[1]; var fam = FAMILIES[tp.fam];
           return (
             <div key={e[0]} style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
-              <svg width="22" height="10"><line x1="0" y1="5" x2="15" y2="5" stroke={fam.color} strokeWidth={tp.w} strokeDasharray={tp.dash} strokeLinecap="round" /><g transform="translate(19,5) scale(0.45)"><path d={tp.icon} fill="none" stroke={fam.color} strokeWidth={1.5} strokeLinecap="round" /></g></svg>
+              <svg width="22" height="10"><line x1="0" y1="5" x2="15" y2="5" stroke={fam.color} strokeWidth={tp.w} strokeDasharray={tp.dash} strokeLinecap="round" /></svg>
               <span style={{ fontSize: 9, color: fam.color, fontWeight: 500 }}>{tp[lang]}</span>
             </div>
           );
         })}
       </div>
       <p style={{ fontSize: 9, color: 'var(--text3)', textAlign: 'center', margin: 2 }}>
-        {lang === 'fr' ? 'Épaisseur = volume d\'observations · Curseur = nombre d\'interactions affichées · Cliquez un nœud pour naviguer' : 'Thickness = observation volume · Slider = interactions shown · Click a node to navigate'}
+        {lang === 'fr' ? 'Proximité = force du lien · Molette = zoom · Glisser = déplacer · Cliquez un nœud pour naviguer' : 'Proximity = link strength · Scroll = zoom · Drag = pan · Click a node to navigate'}
       </p>
     </div>
   );
