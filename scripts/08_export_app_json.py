@@ -193,6 +193,7 @@ def export():
             "genus": t.get("genus", name.split()[0] if name else ""),
             "threat": threat.get(name, {}).get("cat", ""),
             "n_interactions": 0,
+            "common": {"fr": vern.get(name, {}).get("fr", ""), "en": vern.get(name, {}).get("en", "")},
         }
     
     # Construire les interactions
