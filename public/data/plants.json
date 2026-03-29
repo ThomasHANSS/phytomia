@@ -1,20 +1,5 @@
 [
  {
-  "id": "p65efe4",
-  "sci": "Rhagonycha lignosa",
-  "family": "Cantharidae",
-  "order": "Coleoptera",
-  "genus": "Rhagonycha",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2051,
-  "common": {
-   "fr": "Téléphore mobile",
-   "en": ""
-  }
- },
- {
   "id": "pd9c855",
   "sci": "Salix caprea",
   "family": "Salicaceae",
@@ -222,21 +207,6 @@
   "common": {
    "fr": "Epicea",
    "en": "Common Spruce"
-  }
- },
- {
-  "id": "p85903a",
-  "sci": "Geostiba circellaris",
-  "family": "",
-  "order": "",
-  "genus": "Geostiba",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 297,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -735,21 +705,6 @@
   }
  },
  {
-  "id": "p5ea882",
-  "sci": "Meloe violaceus",
-  "family": "",
-  "order": "",
-  "genus": "Meloe",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 180,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd73b86",
   "sci": "Quercus ilex",
   "family": "Fagaceae",
@@ -792,21 +747,6 @@
   "common": {
    "fr": "Centauree scabieuse",
    "en": "Greater Centaury"
-  }
- },
- {
-  "id": "pc628a6",
-  "sci": "Cirrospilus vittatus",
-  "family": "",
-  "order": "",
-  "genus": "Cirrospilus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 176,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -1377,21 +1317,6 @@
   "common": {
    "fr": "Aulne blanchatre",
    "en": "Gray Alder"
-  }
- },
- {
-  "id": "p5af90b",
-  "sci": "Ephedrus plagiator",
-  "family": "",
-  "order": "",
-  "genus": "Ephedrus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 130,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -2022,21 +1947,6 @@
   "common": {
    "fr": "",
    "en": "Sitka Spruce"
-  }
- },
- {
-  "id": "pde0dfb",
-  "sci": "Chrysocharis viridis",
-  "family": "",
-  "order": "",
-  "genus": "Chrysocharis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 100,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -2805,21 +2715,6 @@
   }
  },
  {
-  "id": "p76ea55",
-  "sci": "Brachymeria tibialis",
-  "family": "",
-  "order": "",
-  "genus": "Brachymeria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 82,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pa6c00e",
   "sci": "Coronilla varia",
   "family": "Fabaceae",
@@ -3000,21 +2895,6 @@
   }
  },
  {
-  "id": "p4f0641",
-  "sci": "Ceromya bicolor",
-  "family": "",
-  "order": "",
-  "genus": "Ceromya",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 79,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pff14a5",
   "sci": "Cirsium oleraceum",
   "family": "Asteraceae",
@@ -3072,21 +2952,6 @@
   "common": {
    "fr": "Biscutelle",
    "en": "Buckler-mustard"
-  }
- },
- {
-  "id": "p9bf529",
-  "sci": "Lydina aenea",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Lydina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 77,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -3330,21 +3195,6 @@
   }
  },
  {
-  "id": "p066825",
-  "sci": "Praon abjectum",
-  "family": "",
-  "order": "",
-  "genus": "Praon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 73,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd33e49",
   "sci": "Silene dioica",
   "family": "Caryophyllaceae",
@@ -3417,21 +3267,6 @@
   "common": {
    "fr": "Ajonc d'Europe",
    "en": "Common gorse"
-  }
- },
- {
-  "id": "p0704df",
-  "sci": "Chrysocharis pubicornis",
-  "family": "",
-  "order": "",
-  "genus": "Chrysocharis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 71,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -3942,21 +3777,6 @@
   "common": {
    "fr": "",
    "en": "Calendula"
-  }
- },
- {
-  "id": "pf64e1e",
-  "sci": "Chrysocharis pentheus",
-  "family": "",
-  "order": "",
-  "genus": "Chrysocharis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 65,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -4695,21 +4515,6 @@
   }
  },
  {
-  "id": "p92b0e1",
-  "sci": "Aleochara curtula",
-  "family": "",
-  "order": "",
-  "genus": "Aleochara",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 61,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p3ad2fc",
   "sci": "Galium saxatile",
   "family": "Rubiaceae",
@@ -4886,21 +4691,6 @@
   "n_interactions": 60,
   "common": {
    "fr": "Crepide orangee",
-   "en": ""
-  }
- },
- {
-  "id": "p6230da",
-  "sci": "Eupelmus vesicularis",
-  "family": "",
-  "order": "",
-  "genus": "Eupelmus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 60,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -5370,36 +5160,6 @@
   }
  },
  {
-  "id": "p8847bf",
-  "sci": "Nemorilla floralis",
-  "family": "",
-  "order": "",
-  "genus": "Nemorilla",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 57,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pcf1ed3",
-  "sci": "Pales pavida",
-  "family": "",
-  "order": "",
-  "genus": "Pales",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 57,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd922c1",
   "sci": "Parnassia palustris",
   "family": "Parnassiaceae",
@@ -5475,21 +5235,6 @@
   }
  },
  {
-  "id": "pd6ee59",
-  "sci": "Zodion cinereum",
-  "family": "Conopidae",
-  "order": "Diptera",
-  "genus": "Zodion",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 57,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pff1439",
   "sci": "Centaurea montana",
   "family": "Asteraceae",
@@ -5562,21 +5307,6 @@
   "common": {
    "fr": "Chicorée des jardins",
    "en": "Garden Lettuce"
-  }
- },
- {
-  "id": "pee1435",
-  "sci": "Phryxe vulgaris",
-  "family": "",
-  "order": "",
-  "genus": "Phryxe",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 56,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -5921,21 +5651,6 @@
   "n_interactions": 54,
   "common": {
    "fr": "Alysson maritime",
-   "en": ""
-  }
- },
- {
-  "id": "p0a3c9e",
-  "sci": "Phryxe nemea",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Phryxe",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 54,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -6762,21 +6477,6 @@
   "common": {
    "fr": "Cirse cendre",
    "en": "Queen Anne's Thistle"
-  }
- },
- {
-  "id": "p881b73",
-  "sci": "Eulophus larvarum",
-  "family": "",
-  "order": "",
-  "genus": "Eulophus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 51,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -7680,21 +7380,6 @@
   }
  },
  {
-  "id": "p08faef",
-  "sci": "Compsilura concinnata",
-  "family": "",
-  "order": "",
-  "genus": "Compsilura",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 46,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p020fc0",
   "sci": "Crepis setosa",
   "family": "Asteraceae",
@@ -7905,21 +7590,6 @@
   }
  },
  {
-  "id": "pe0e546",
-  "sci": "Autographa jota",
-  "family": "Noctuidae",
-  "order": "Lepidoptera",
-  "genus": "Autographa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 45,
-  "common": {
-   "fr": "Iota",
-   "en": "Plain Golden Y"
-  }
- },
- {
   "id": "pbadff6",
   "sci": "Carduus pycnocephalus",
   "family": "Asteraceae",
@@ -7947,51 +7617,6 @@
   "common": {
    "fr": "Cigue tachee",
    "en": "Carrot-fern"
-  }
- },
- {
-  "id": "p93d732",
-  "sci": "Hemaris fuciformis",
-  "family": "Sphingidae",
-  "order": "Lepidoptera",
-  "genus": "Hemaris",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 45,
-  "common": {
-   "fr": "Sphinx gazé, le Sphinx du Chèvrefeuille",
-   "en": "Broad-Bordered Bee Hawk"
-  }
- },
- {
-  "id": "pdc4f68",
-  "sci": "Limenitis reducta",
-  "family": "Nymphalidae",
-  "order": "Lepidoptera",
-  "genus": "Limenitis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 45,
-  "common": {
-   "fr": "Sylvain azuré",
-   "en": "Southern White Admiral"
-  }
- },
- {
-  "id": "p2c748d",
-  "sci": "Polymixis flavicincta",
-  "family": "Noctuidae",
-  "order": "Lepidoptera",
-  "genus": "Polymixis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 45,
-  "common": {
-   "fr": "Ceinture jaune",
-   "en": "Large Ranunculus"
   }
  },
  {
@@ -8555,21 +8180,6 @@
   "family": "Asteraceae",
   "order": "Asterales",
   "genus": "Crepis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 42,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pf281ab",
-  "sci": "Ephedrus persicae",
-  "family": "",
-  "order": "",
-  "genus": "Ephedrus",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -9240,36 +8850,6 @@
   }
  },
  {
-  "id": "p9b6b93",
-  "sci": "Aphomia sociella",
-  "family": "",
-  "order": "",
-  "genus": "Aphomia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 41,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p650a6c",
-  "sci": "Brachicoma devia",
-  "family": "",
-  "order": "",
-  "genus": "Brachicoma",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 41,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p6f1fb4",
   "sci": "Carlina acanthifolia",
   "family": "Asteraceae",
@@ -9281,21 +8861,6 @@
   "n_interactions": 41,
   "common": {
    "fr": "Carline à feuilles d'acanthe, Chardousse, Cardabelle",
-   "en": ""
-  }
- },
- {
-  "id": "p5a8cc0",
-  "sci": "Chrysocharis orbicularis",
-  "family": "",
-  "order": "",
-  "genus": "Chrysocharis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 41,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -9372,21 +8937,6 @@
   "common": {
    "fr": "",
    "en": "California Privet"
-  }
- },
- {
-  "id": "pe15819",
-  "sci": "Myopa buccata",
-  "family": "Conopidae",
-  "order": "Diptera",
-  "genus": "Myopa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 41,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -10590,21 +10140,6 @@
   }
  },
  {
-  "id": "p05ce13",
-  "sci": "Trichogramma brassicae",
-  "family": "",
-  "order": "",
-  "genus": "Trichogramma",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 38,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd780db",
   "sci": "Astragalus monspessulanus",
   "family": "Fabaceae",
@@ -10692,21 +10227,6 @@
   "common": {
    "fr": "Eperviere poilue",
    "en": ""
-  }
- },
- {
-  "id": "pf9871a",
-  "sci": "Hydriomena ruberata",
-  "family": "Geometridae",
-  "order": "Lepidoptera",
-  "genus": "Hydriomena",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 37,
-  "common": {
-   "fr": "Larentie rubescente",
-   "en": "Ruddy Highflyer"
   }
  },
  {
@@ -11070,21 +10590,6 @@
   }
  },
  {
-  "id": "p9b1294",
-  "sci": "Vespa crabro",
-  "family": "Vespidae",
-  "order": "Hymenoptera",
-  "genus": "Vespa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 37,
-  "common": {
-   "fr": "Frelon européen",
-   "en": "European hornet"
-  }
- },
- {
   "id": "pb877c8",
   "sci": "Vitis vinifera",
   "family": "Vitaceae",
@@ -11172,21 +10677,6 @@
   "common": {
    "fr": "Euphorbe maritime, Euphorbe des dunes, Euphorbe du littoral, Euphorbe des sables, Euphorbe paralias",
    "en": "Sea Spurge"
-  }
- },
- {
-  "id": "pe93e82",
-  "sci": "Exorista rustica",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Exorista",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 36,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -12990,21 +12480,6 @@
   }
  },
  {
-  "id": "p42ef15",
-  "sci": "Pteromalus phycidis",
-  "family": "",
-  "order": "",
-  "genus": "Pteromalus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 33,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pf8018c",
   "sci": "Scolymus hispanicus",
   "family": "Asteraceae",
@@ -14250,21 +13725,6 @@
   }
  },
  {
-  "id": "p7ad9f6",
-  "sci": "Conops flavipes",
-  "family": "Conopidae",
-  "order": "Diptera",
-  "genus": "Conops",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 29,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p1b6d67",
   "sci": "Cotoneaster franchetii",
   "family": "Rosaceae",
@@ -15236,21 +14696,6 @@
   "n_interactions": 28,
   "common": {
    "fr": "Xéranthème cylindracé, Xéranthème fétide, Xéranthème cylindrique",
-   "en": ""
-  }
- },
- {
-  "id": "p59ca49",
-  "sci": "Actia crassicornis",
-  "family": "",
-  "order": "",
-  "genus": "Actia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 27,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -17535,21 +16980,6 @@
   }
  },
  {
-  "id": "pbd2516",
-  "sci": "Diglyphus minoeus",
-  "family": "",
-  "order": "",
-  "genus": "Diglyphus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 24,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p9fa47f",
   "sci": "Dittrichia graveolens",
   "family": "Asteraceae",
@@ -17610,21 +17040,6 @@
   }
  },
  {
-  "id": "p81e640",
-  "sci": "Euphranta toxoneura",
-  "family": "Tephritidae",
-  "order": "Diptera",
-  "genus": "Euphranta",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 24,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p1a6649",
   "sci": "Filago arvensis",
   "family": "Asteraceae",
@@ -17667,21 +17082,6 @@
   "common": {
    "fr": "Eperviere de Schmidt",
    "en": "Schmidt's Hawkweed"
-  }
- },
- {
-  "id": "p3642f9",
-  "sci": "Holopyga fastuosa",
-  "family": "Chrysididae",
-  "order": "Hymenoptera",
-  "genus": "Holopyga",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 24,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -18387,21 +17787,6 @@
   "common": {
    "fr": "Cynoglosse officinal",
    "en": "Common Houndstongue"
-  }
- },
- {
-  "id": "pe50d17",
-  "sci": "Dinotiscus aponius",
-  "family": "",
-  "order": "",
-  "genus": "Dinotiscus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 23,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -19605,21 +18990,6 @@
   }
  },
  {
-  "id": "pdd04b7",
-  "sci": "Nilea hortulana",
-  "family": "",
-  "order": "",
-  "genus": "Nilea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 22,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pfa12c9",
   "sci": "Omalotheca supina",
   "family": "Asteraceae",
@@ -19812,21 +19182,6 @@
   "common": {
    "fr": "Épiaire de Crète",
    "en": "Cretan Hedgenettle"
-  }
- },
- {
-  "id": "p6eb1d1",
-  "sci": "Stomorhina lunata",
-  "family": "Calliphoridae",
-  "order": "Diptera",
-  "genus": "Stomorhina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 22,
-  "common": {
-   "fr": "",
-   "en": "Locust Blowfly"
   }
  },
  {
@@ -21015,21 +20370,6 @@
   }
  },
  {
-  "id": "pabf0e0",
-  "sci": "Winthemia quadripustulata",
-  "family": "",
-  "order": "",
-  "genus": "Winthemia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 21,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p53dfee",
   "sci": "Wisteria sinensis",
   "family": "Fabaceae",
@@ -21510,21 +20850,6 @@
   }
  },
  {
-  "id": "pdff69e",
-  "sci": "Lypha dubia",
-  "family": "",
-  "order": "",
-  "genus": "Lypha",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 20,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p41d2f3",
   "sci": "Nepeta racemosa",
   "family": "Lamiaceae",
@@ -21635,21 +20960,6 @@
   "family": "Asteraceae",
   "order": "Asterales",
   "genus": "Pentanema",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 20,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p248465",
-  "sci": "Ramonda spathulata",
-  "family": "",
-  "order": "",
-  "genus": "Ramonda",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -22905,21 +22215,6 @@
   }
  },
  {
-  "id": "paabdf1",
-  "sci": "Cerocephala cornigera",
-  "family": "",
-  "order": "",
-  "genus": "Cerocephala",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p92cc87",
   "sci": "Chamaecytisus hirsutus",
   "family": "Fabaceae",
@@ -23022,21 +22317,6 @@
   "common": {
    "fr": "Eucalyptus commun",
    "en": "Southern Blue-Gum"
-  }
- },
- {
-  "id": "pbaa3ed",
-  "sci": "Eurytoma arctica",
-  "family": "",
-  "order": "",
-  "genus": "Eurytoma",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -23472,21 +22752,6 @@
   "common": {
    "fr": "Viorne tin, Fatamot, Laurier tin, Laurentin",
    "en": "Laurestine"
-  }
- },
- {
-  "id": "p8f6534",
-  "sci": "Actia pilipennis",
-  "family": "",
-  "order": "",
-  "genus": "Actia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 17,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -23936,21 +23201,6 @@
   "n_interactions": 17,
   "common": {
    "fr": "Mauve musquee",
-   "en": ""
-  }
- },
- {
-  "id": "paa97c7",
-  "sci": "Microsoma exiguum",
-  "family": "",
-  "order": "",
-  "genus": "Microsoma",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 17,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -24447,21 +23697,6 @@
   "common": {
    "fr": "Potentille de Thuringe",
    "en": "European Cinquefoil"
-  }
- },
- {
-  "id": "pe65ddb",
-  "sci": "Pseudoperichaeta nigrolineata",
-  "family": "",
-  "order": "",
-  "genus": "Pseudoperichaeta",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 17,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -25110,21 +24345,6 @@
   }
  },
  {
-  "id": "p3cdee5",
-  "sci": "Eurithia caesia",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Eurithia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 16,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pe1c991",
   "sci": "Frangula californica",
   "family": "Rhamnaceae",
@@ -25740,36 +24960,6 @@
   }
  },
  {
-  "id": "pb3e765",
-  "sci": "Acompocoris pygmaeus",
-  "family": "Anthocoridae",
-  "order": "Hemiptera",
-  "genus": "Acompocoris",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 15,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pef3aac",
-  "sci": "Actia lamia",
-  "family": "",
-  "order": "",
-  "genus": "Actia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 15,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pe339cd",
   "sci": "Aetheorhiza bulbosa",
   "family": "Asteraceae",
@@ -26217,21 +25407,6 @@
   "common": {
    "fr": "isopyre faux-pigamon",
    "en": "eastern false rue anemone"
-  }
- },
- {
-  "id": "pfe9ab5",
-  "sci": "Ephedrus cerasicola",
-  "family": "",
-  "order": "",
-  "genus": "Ephedrus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 15,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -27270,21 +26445,6 @@
   }
  },
  {
-  "id": "p480f97",
-  "sci": "Linnaemya comta",
-  "family": "",
-  "order": "",
-  "genus": "Linnaemya",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 14,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p29f442",
   "sci": "Linum usitatissimum",
   "family": "Linaceae",
@@ -27735,21 +26895,6 @@
   }
  },
  {
-  "id": "p728420",
-  "sci": "Bactromyia aurulenta",
-  "family": "",
-  "order": "",
-  "genus": "Bactromyia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p917901",
   "sci": "Bidens alba",
   "family": "Asteraceae",
@@ -28035,21 +27180,6 @@
   }
  },
  {
-  "id": "p102400",
-  "sci": "Dufouria chalybeata",
-  "family": "",
-  "order": "",
-  "genus": "Dufouria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p76aee2",
   "sci": "Epilobium alpestre",
   "family": "Onagraceae",
@@ -28212,21 +27342,6 @@
   "common": {
    "fr": "géranium maculé",
    "en": "Spotted Crane's-bill"
-  }
- },
- {
-  "id": "p53df08",
-  "sci": "Gonia capitata",
-  "family": "",
-  "order": "",
-  "genus": "Gonia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -28410,21 +27525,6 @@
   }
  },
  {
-  "id": "p4ee29f",
-  "sci": "Macquartia pubiceps",
-  "family": "",
-  "order": "",
-  "genus": "Macquartia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p2109de",
   "sci": "Mahonia aquifolium",
   "family": "Berberidaceae",
@@ -28452,21 +27552,6 @@
   "common": {
    "fr": "Mangue",
    "en": "Am"
-  }
- },
- {
-  "id": "p9e397b",
-  "sci": "Meigenia majuscula",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Meigenia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -28545,21 +27630,6 @@
   }
  },
  {
-  "id": "p0ccc27",
-  "sci": "Periscepsia carbonaria",
-  "family": "",
-  "order": "",
-  "genus": "Periscepsia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p33eccb",
   "sci": "Petrocallis pyrenaica",
   "family": "Brassicaceae",
@@ -28587,21 +27657,6 @@
   "common": {
    "fr": "Apiacées",
    "en": "Carrot Family"
-  }
- },
- {
-  "id": "pab1908",
-  "sci": "Phryxe magnicornis",
-  "family": "",
-  "order": "",
-  "genus": "Phryxe",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 13,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -29370,21 +28425,6 @@
   }
  },
  {
-  "id": "p65751f",
-  "sci": "Elodia morio",
-  "family": "",
-  "order": "",
-  "genus": "Elodia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4167aa",
   "sci": "Empetrum nigrum",
   "family": "Ericaceae",
@@ -29442,21 +28482,6 @@
   "common": {
    "fr": "Fusain de Chine",
    "en": "Climbing Euonymus"
-  }
- },
- {
-  "id": "p41af48",
-  "sci": "Exorista fasciata",
-  "family": "",
-  "order": "",
-  "genus": "Exorista",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -29697,21 +28722,6 @@
   "common": {
    "fr": "",
    "en": "Hairy Wood-Rush"
-  }
- },
- {
-  "id": "p96eab8",
-  "sci": "Lydella stabulans",
-  "family": "",
-  "order": "",
-  "genus": "Lydella",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -30525,21 +29535,6 @@
   }
  },
  {
-  "id": "p742f13",
-  "sci": "Bessa parallela",
-  "family": "",
-  "order": "",
-  "genus": "Bessa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p8dde85",
   "sci": "Bidens pilosa",
   "family": "Asteraceae",
@@ -31167,21 +30162,6 @@
   "common": {
    "fr": "",
    "en": "Joint-leaf Rush"
-  }
- },
- {
-  "id": "p72658d",
-  "sci": "Leucospis gigas",
-  "family": "Leucospidae",
-  "order": "Hymenoptera",
-  "genus": "Leucospis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -33765,21 +32745,6 @@
   }
  },
  {
-  "id": "p22a07d",
-  "sci": "Aphidius avenae",
-  "family": "",
-  "order": "",
-  "genus": "Aphidius",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 10,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4e790a",
   "sci": "Aphis aurantii",
   "family": "Aphididae",
@@ -34110,21 +33075,6 @@
   }
  },
  {
-  "id": "pae42e3",
-  "sci": "Cotesia congregata",
-  "family": "",
-  "order": "",
-  "genus": "Cotesia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 10,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pbef199",
   "sci": "Cymbalaria muralis",
   "family": "Plantaginaceae",
@@ -34167,21 +33117,6 @@
   "common": {
    "fr": "Oeillet superbe",
    "en": "Fringed Pink"
-  }
- },
- {
-  "id": "p2adb91",
-  "sci": "Elodia ambulatoria",
-  "family": "",
-  "order": "",
-  "genus": "Elodia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 10,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -35420,21 +34355,6 @@
   "family": "Aphididae",
   "order": "Hemiptera",
   "genus": "Acaudinum",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pe2c346",
-  "sci": "Acrocormus semifasciatus",
-  "family": "",
-  "order": "",
-  "genus": "Acrocormus",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -38010,21 +36930,6 @@
   }
  },
  {
-  "id": "pe6131f",
-  "sci": "Chrysura refulgens",
-  "family": "Chrysididae",
-  "order": "Hymenoptera",
-  "genus": "Chrysura",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p170919",
   "sci": "Cicer arietinum",
   "family": "Fabaceae",
@@ -39090,21 +37995,6 @@
   }
  },
  {
-  "id": "p700d3a",
-  "sci": "Oobius zahaikevitshi",
-  "family": "",
-  "order": "",
-  "genus": "Oobius",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p864bf9",
   "sci": "Ostrya virginiana",
   "family": "Betulaceae",
@@ -39582,21 +38472,6 @@
   "common": {
    "fr": "Saxifrage a feuilles rondes",
    "en": "Round-Leaved Saxifrage"
-  }
- },
- {
-  "id": "p8b9204",
-  "sci": "Scathophaga furcata",
-  "family": "Scathophagidae",
-  "order": "Diptera",
-  "genus": "Scathophaga",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -41205,21 +40080,6 @@
   }
  },
  {
-  "id": "pa6f380",
-  "sci": "Billaea irrorata",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Billaea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pc71f9c",
   "sci": "Bryonia dioica",
   "family": "Cucurbitaceae",
@@ -41862,21 +40722,6 @@
   "common": {
    "fr": "Euphorbe effilee",
    "en": "Leafy Spurge"
-  }
- },
- {
-  "id": "pd4f012",
-  "sci": "Eurysthaea scutellaris",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Eurysthaea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -42885,36 +41730,6 @@
   }
  },
  {
-  "id": "p4e0e94",
-  "sci": "Tachina grossa",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Tachina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p749851",
-  "sci": "Theocolax formiciformis",
-  "family": "",
-  "order": "",
-  "genus": "Theocolax",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p5982ff",
   "sci": "Thymus mastichina",
   "family": "Lamiaceae",
@@ -43452,21 +42267,6 @@
   "common": {
    "fr": "Bergenia",
    "en": "Elephant-ears"
-  }
- },
- {
-  "id": "pf0cd8c",
-  "sci": "Blepharomyia piliceps",
-  "family": "",
-  "order": "",
-  "genus": "Blepharomyia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -44655,21 +43455,6 @@
   }
  },
  {
-  "id": "p18cece",
-  "sci": "Exorista larvarum",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Exorista",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": "Parasitic fly"
-  }
- },
- {
   "id": "p4be60b",
   "sci": "Ferulago galbanifera",
   "family": "Apiaceae",
@@ -45060,21 +43845,6 @@
   }
  },
  {
-  "id": "p3d9a70",
-  "sci": "Leiophora innoxia",
-  "family": "",
-  "order": "",
-  "genus": "Leiophora",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p148da4",
   "sci": "Leptospermum scoparium",
   "family": "Myrtaceae",
@@ -45357,21 +44127,6 @@
   "common": {
    "fr": "Mauve fluette",
    "en": "Dwarf Mallow"
-  }
- },
- {
-  "id": "p7a61ce",
-  "sci": "Meigenia mutabilis",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Meigenia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": "Tachinid fly"
   }
  },
  {
@@ -46050,21 +44805,6 @@
   }
  },
  {
-  "id": "pf7c907",
-  "sci": "Siphona cristata",
-  "family": "",
-  "order": "",
-  "genus": "Siphona",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p893202",
   "sci": "Sison amomum",
   "family": "Apiaceae",
@@ -46455,21 +45195,6 @@
   }
  },
  {
-  "id": "pba1a92",
-  "sci": "Trioxys curvicaudus",
-  "family": "",
-  "order": "",
-  "genus": "Trioxys",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p7adc73",
   "sci": "Tsuga heterophylla",
   "family": "Pinaceae",
@@ -46635,21 +45360,6 @@
   }
  },
  {
-  "id": "pead489",
-  "sci": "Wagneria gagatea",
-  "family": "",
-  "order": "",
-  "genus": "Wagneria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p9e625d",
   "sci": "Zanthoxylum ovalifolium",
   "family": "Rutaceae",
@@ -46730,21 +45440,6 @@
   "family": "Boraginaceae",
   "order": "Boraginales",
   "genus": "Adelinia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pec73df",
-  "sci": "Aeneolamia varia",
-  "family": "",
-  "order": "",
-  "genus": "Aeneolamia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -46932,21 +45627,6 @@
   "common": {
    "fr": "Amsinckie",
    "en": "Scarce Fiddleneck"
-  }
- },
- {
-  "id": "p9d500c",
-  "sci": "Andrena regularis",
-  "family": "",
-  "order": "",
-  "genus": "Andrena",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -47355,21 +46035,6 @@
   }
  },
  {
-  "id": "p385057",
-  "sci": "Blepharomyia pagana",
-  "family": "",
-  "order": "",
-  "genus": "Blepharomyia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p560fcc",
   "sci": "Boechera stricta",
   "family": "Brassicaceae",
@@ -47720,21 +46385,6 @@
   "family": "Capparaceae",
   "order": "Brassicales",
   "genus": "Capparis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p009689",
-  "sci": "Carcelia gnava",
-  "family": "",
-  "order": "",
-  "genus": "Carcelia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -49635,21 +48285,6 @@
   }
  },
  {
-  "id": "pb0dfd4",
-  "sci": "Eumea linearicornis",
-  "family": "",
-  "order": "",
-  "genus": "Eumea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4d7164",
   "sci": "Euphorbia characias",
   "family": "Euphorbiaceae",
@@ -50115,21 +48750,6 @@
   }
  },
  {
-  "id": "p0bfc87",
-  "sci": "Gonia picea",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Gonia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "paece6c",
   "sci": "Grona setigera",
   "family": "Fabaceae",
@@ -50390,21 +49010,6 @@
   "family": "Aphididae",
   "order": "Hemiptera",
   "genus": "Hyperomyzus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p3381b8",
-  "sci": "Hystrichopsylla dippiei",
-  "family": "",
-  "order": "",
-  "genus": "Hystrichopsylla",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -52260,21 +50865,6 @@
   }
  },
  {
-  "id": "pad98f8",
-  "sci": "Phasia obesa",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Phasia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4a23f3",
   "sci": "Phlomis purpurea",
   "family": "Lamiaceae",
@@ -53565,21 +52155,6 @@
   }
  },
  {
-  "id": "pc4b320",
-  "sci": "Tachina lurida",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Tachina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pbae021",
   "sci": "Tagetes lemmonii",
   "family": "Asteraceae",
@@ -53817,21 +52392,6 @@
   "common": {
    "fr": "",
    "en": "vinegar-weed"
-  }
- },
- {
-  "id": "p75bfb4",
-  "sci": "Trioxys tenuicaudus",
-  "family": "",
-  "order": "",
-  "genus": "Trioxys",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -54447,21 +53007,6 @@
   "common": {
    "fr": "",
    "en": "New York Ironweed"
-  }
- },
- {
-  "id": "pafea1f",
-  "sci": "Vespa tropica",
-  "family": "Vespidae",
-  "order": "Hymenoptera",
-  "genus": "Vespa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": "Greater Banded Hornet"
   }
  },
  {
@@ -55125,21 +53670,6 @@
   }
  },
  {
-  "id": "pcd2b18",
-  "sci": "Apocephalus borealis",
-  "family": "",
-  "order": "",
-  "genus": "Apocephalus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p63293f",
   "sci": "Arabidopsis lyrata",
   "family": "Brassicaceae",
@@ -55470,21 +54000,6 @@
   }
  },
  {
-  "id": "p0580ff",
-  "sci": "Bombus quadricolor",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Bombus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "Psithyre quadricolore",
-   "en": ""
-  }
- },
- {
   "id": "p9c6add",
   "sci": "Bombus ruderarius",
   "family": "Apidae",
@@ -55632,21 +54147,6 @@
   "common": {
    "fr": "Callistémon jaune, Rince-bouteille jaune",
    "en": "Crimson bottlebrush"
-  }
- },
- {
-  "id": "p7307bf",
-  "sci": "Campylocheta inepta",
-  "family": "",
-  "order": "",
-  "genus": "Campylocheta",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -55992,21 +54492,6 @@
   "common": {
    "fr": "Mélinet mineur, Petit Mélinet, Cérinthe mineure, Petite Cérinthe",
    "en": "Lesser Honeywort"
-  }
- },
- {
-  "id": "p844d24",
-  "sci": "Cheiloneurus noxius",
-  "family": "",
-  "order": "",
-  "genus": "Cheiloneurus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -56460,21 +54945,6 @@
   }
  },
  {
-  "id": "pfd4466",
-  "sci": "Cyzenis albicans",
-  "family": "",
-  "order": "",
-  "genus": "Cyzenis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd7036f",
   "sci": "Delphinium dubium",
   "family": "Ranunculaceae",
@@ -56550,21 +55020,6 @@
   }
  },
  {
-  "id": "p2df6c7",
-  "sci": "Dicranotropis hamata",
-  "family": "Delphacidae",
-  "order": "Hemiptera",
-  "genus": "Dicranotropis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p078461",
   "sci": "Dimocarpus longan",
   "family": "Sapindaceae",
@@ -56577,21 +55032,6 @@
   "common": {
    "fr": "Dimocarpe longane, Longani, Longanier, Œil-de-dragon, Litchi ponceau",
    "en": "Longan"
-  }
- },
- {
-  "id": "p41b7ab",
-  "sci": "Dinocampus coccinellae",
-  "family": "",
-  "order": "",
-  "genus": "Dinocampus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -56855,21 +55295,6 @@
   "family": "Eupteleaceae",
   "order": "Ranunculales",
   "genus": "Euptelea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "paa5782",
-  "sci": "Eurithia anthophila",
-  "family": "",
-  "order": "",
-  "genus": "Eurithia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -57765,21 +56190,6 @@
   }
  },
  {
-  "id": "p849d5e",
-  "sci": "Medina luctuosa",
-  "family": "",
-  "order": "",
-  "genus": "Medina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pf4ce6a",
   "sci": "Mentha canadensis",
   "family": "Lamiaceae",
@@ -58185,21 +56595,6 @@
   }
  },
  {
-  "id": "p9f2b01",
-  "sci": "Phryno vetula",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Phryno",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p2966bb",
   "sci": "Picea pungens",
   "family": "Pinaceae",
@@ -58287,21 +56682,6 @@
   "common": {
    "fr": "",
    "en": "Canada Bluegrass"
-  }
- },
- {
-  "id": "pf63691",
-  "sci": "Polistes semenowi",
-  "family": "Eumenidae",
-  "order": "Hymenoptera",
-  "genus": "Polistes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -58905,21 +57285,6 @@
   }
  },
  {
-  "id": "pba16dd",
-  "sci": "Siphona pauciseta",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Siphona",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pcb0d40",
   "sci": "Sisymbrella aspera",
   "family": "Brassicaceae",
@@ -59475,21 +57840,6 @@
   }
  },
  {
-  "id": "p34709f",
-  "sci": "Voria ruralis",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Voria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": "Parasitic fly"
-  }
- },
- {
   "id": "p69b5cb",
   "sci": "Weigela florida",
   "family": "Caprifoliaceae",
@@ -59562,21 +57912,6 @@
   "common": {
    "fr": "",
    "en": "Hercules' club"
-  }
- },
- {
-  "id": "ped4fe8",
-  "sci": "Zenillia libatrix",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Zenillia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -60045,41 +58380,11 @@
   }
  },
  {
-  "id": "pe62ae9",
-  "sci": "Aphidius aquilus",
-  "family": "",
-  "order": "",
-  "genus": "Aphidius",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p728d1b",
   "sci": "Aphyllon uniflorum",
   "family": "Orobanchaceae",
   "order": "Lamiales",
   "genus": "Aphyllon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p63b400",
-  "sci": "Aprostocetus alveatus",
-  "family": "",
-  "order": "",
-  "genus": "Aprostocetus",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -61050,21 +59355,6 @@
   }
  },
  {
-  "id": "p62fc37",
-  "sci": "Carcelia lucorum",
-  "family": "",
-  "order": "",
-  "genus": "Carcelia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4eb141",
   "sci": "Cardamine angustata",
   "family": "Brassicaceae",
@@ -61515,21 +59805,6 @@
   }
  },
  {
-  "id": "p83263c",
-  "sci": "Cotesia glomerata",
-  "family": "Braconidae",
-  "order": "Hymenoptera",
-  "genus": "Cotesia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": "Parasitoid wasp"
-  }
- },
- {
   "id": "pd8ce96",
   "sci": "Crassula ovata",
   "family": "Crassulaceae",
@@ -61890,21 +60165,6 @@
   }
  },
  {
-  "id": "p356c2e",
-  "sci": "Drino lota",
-  "family": "",
-  "order": "",
-  "genus": "Drino",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pe60305",
   "sci": "Echium italicum",
   "family": "Boraginaceae",
@@ -62145,21 +60405,6 @@
   }
  },
  {
-  "id": "pff9adf",
-  "sci": "Eurithia consobrina",
-  "family": "",
-  "order": "",
-  "genus": "Eurithia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p5b73a5",
   "sci": "Euthamia occidentalis",
   "family": "Asteraceae",
@@ -62172,21 +60417,6 @@
   "common": {
    "fr": "verge d'or de l'Ouest",
    "en": "western fragrant goldenrod"
-  }
- },
- {
-  "id": "pb19141",
-  "sci": "Exorista grandis",
-  "family": "",
-  "order": "",
-  "genus": "Exorista",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -62310,36 +60540,6 @@
   }
  },
  {
-  "id": "p276f40",
-  "sci": "Gonia ornata",
-  "family": "",
-  "order": "",
-  "genus": "Gonia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p3b30a4",
-  "sci": "Gymnocheta viridis",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Gymnocheta",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p8cf818",
   "sci": "Hackelia deflexa",
   "family": "Boraginaceae",
@@ -62355,21 +60555,6 @@
   }
  },
  {
-  "id": "p6e9a19",
-  "sci": "Hadrophallus bubalus",
-  "family": "",
-  "order": "",
-  "genus": "Hadrophallus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4ec2c8",
   "sci": "Harmonia axyridis",
   "family": "Coccinellidae",
@@ -62382,21 +60567,6 @@
   "common": {
    "fr": "Coccinelle asiatique",
    "en": "Harlequin Ladybird"
-  }
- },
- {
-  "id": "pdbdc7c",
-  "sci": "Hebata vitis",
-  "family": "Cicadellidae",
-  "order": "Hemiptera",
-  "genus": "Hebata",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -62835,21 +61005,6 @@
   }
  },
  {
-  "id": "padfa3e",
-  "sci": "Lariophagus distinguendus",
-  "family": "",
-  "order": "",
-  "genus": "Lariophagus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p244dd6",
   "sci": "Larix occidentalis",
   "family": "Pinaceae",
@@ -62937,21 +61092,6 @@
   "common": {
    "fr": "",
    "en": "Common Duckweed"
-  }
- },
- {
-  "id": "p871da5",
-  "sci": "Leopoldius brevirostris",
-  "family": "",
-  "order": "",
-  "genus": "Leopoldius",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -63255,21 +61395,6 @@
   }
  },
  {
-  "id": "p735cfb",
-  "sci": "Lypha ruficauda",
-  "family": "",
-  "order": "",
-  "genus": "Lypha",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p9a29ef",
   "sci": "Lysimachia punctata",
   "family": "Primulaceae",
@@ -63435,21 +61560,6 @@
   }
  },
  {
-  "id": "p725964",
-  "sci": "Meigenia dorsalis",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Meigenia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p72e559",
   "sci": "Mertensia ciliata",
   "family": "Boraginaceae",
@@ -63462,21 +61572,6 @@
   "common": {
    "fr": "",
    "en": "mountain bluebells"
-  }
- },
- {
-  "id": "pb21f24",
-  "sci": "Microterys sylvius",
-  "family": "",
-  "order": "",
-  "genus": "Microterys",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -63657,21 +61752,6 @@
   "common": {
    "fr": "",
    "en": "Aztec Tobacco"
-  }
- },
- {
-  "id": "p5d1cc3",
-  "sci": "Nomada furva",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Nomada",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -64125,21 +62205,6 @@
   }
  },
  {
-  "id": "pa460f0",
-  "sci": "Phebellia glauca",
-  "family": "",
-  "order": "",
-  "genus": "Phebellia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd5638a",
   "sci": "Phleum alpinum",
   "family": "Poaceae",
@@ -64272,21 +62337,6 @@
   "common": {
    "fr": "Phyla à fleurs nodales, Verveine à fleurs nodales",
    "en": "Capeweed"
-  }
- },
- {
-  "id": "pd54083",
-  "sci": "Physocephala texana",
-  "family": "",
-  "order": "",
-  "genus": "Physocephala",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -64647,21 +62697,6 @@
   "common": {
    "fr": "Paturin couche",
    "en": "Bluegrass"
-  }
- },
- {
-  "id": "p27d66b",
-  "sci": "Polistes biglumis",
-  "family": "Eumenidae",
-  "order": "Hymenoptera",
-  "genus": "Polistes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "Guêpe à anneaux bordés de jaune, & deux taches jaunes",
-   "en": ""
   }
  },
  {
@@ -65502,21 +63537,6 @@
   "common": {
    "fr": "silphe à feuilles entières",
    "en": "rosinweed"
-  }
- },
- {
-  "id": "pf84fa8",
-  "sci": "Smidtia conspersa",
-  "family": "",
-  "order": "",
-  "genus": "Smidtia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -66485,21 +64505,6 @@
   "family": "Fabaceae",
   "order": "Fabales",
   "genus": "Adesmia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pac5236",
-  "sci": "Aeneolamia flavilatera",
-  "family": "",
-  "order": "",
-  "genus": "Aeneolamia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -68055,6 +66060,21 @@
   }
  },
  {
+  "id": "p0580ff",
+  "sci": "Bombus quadricolor",
+  "family": "Apidae",
+  "order": "Hymenoptera",
+  "genus": "Bombus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "Psithyre quadricolore",
+   "en": ""
+  }
+ },
+ {
   "id": "p11836d",
   "sci": "Bombus ruderatus",
   "family": "Apidae",
@@ -68382,21 +66402,6 @@
   "common": {
    "fr": "",
    "en": "billabong-tree"
-  }
- },
- {
-  "id": "p0fc75b",
-  "sci": "Carcelia tibialis",
-  "family": "",
-  "order": "",
-  "genus": "Carcelia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -69795,21 +67800,6 @@
   }
  },
  {
-  "id": "pf522f1",
-  "sci": "Cercobelus jugaeus",
-  "family": "",
-  "order": "",
-  "genus": "Cercobelus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pc78ed5",
   "sci": "Cestrum diurnum",
   "family": "Solanaceae",
@@ -70050,21 +68040,6 @@
   }
  },
  {
-  "id": "pcb7b02",
-  "sci": "Cinochira atra",
-  "family": "",
-  "order": "",
-  "genus": "Cinochira",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd279ca",
   "sci": "Circaea alpina",
   "family": "Onagraceae",
@@ -70190,21 +68165,6 @@
   "family": "Cleomaceae",
   "order": "Brassicales",
   "genus": "Cleomella",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pf5fdc3",
-  "sci": "Cleonice callida",
-  "family": "",
-  "order": "",
-  "genus": "Cleonice",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -70687,21 +68647,6 @@
   "genus": "Deutzia",
   "status": "",
   "growthForm": "shrub",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p384760",
-  "sci": "Dexia vacua",
-  "family": "",
-  "order": "",
-  "genus": "Dexia",
-  "status": "",
-  "growthForm": "herb",
   "threat": "",
   "n_interactions": 3,
   "common": {
@@ -72045,21 +69990,6 @@
   }
  },
  {
-  "id": "p9c1b5a",
-  "sci": "Frontina laeta",
-  "family": "",
-  "order": "",
-  "genus": "Frontina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p75d211",
   "sci": "Fumaria capreolata",
   "family": "Papaveraceae",
@@ -72402,36 +70332,6 @@
   "common": {
    "fr": "Citron",
    "en": "Brimstone"
-  }
- },
- {
-  "id": "p9bdd55",
-  "sci": "Goniocera versicolor",
-  "family": "",
-  "order": "",
-  "genus": "Goniocera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pc7d988",
-  "sci": "Graphogaster brunnescens",
-  "family": "",
-  "order": "",
-  "genus": "Graphogaster",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -73545,21 +71445,6 @@
   }
  },
  {
-  "id": "p02b86b",
-  "sci": "Ligeria angusticornis",
-  "family": "",
-  "order": "",
-  "genus": "Ligeria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pf87cbf",
   "sci": "Ligularia japonica",
   "family": "Asteraceae",
@@ -74175,21 +72060,6 @@
   }
  },
  {
-  "id": "p588c54",
-  "sci": "Lyctocoris campestris",
-  "family": "",
-  "order": "",
-  "genus": "Lyctocoris",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p64e6e4",
   "sci": "Lysimachia maritima",
   "family": "Primulaceae",
@@ -74712,21 +72582,6 @@
   "common": {
    "fr": "Hibou",
    "en": "European Yellow Underwing Moth"
-  }
- },
- {
-  "id": "p8423df",
-  "sci": "Nomada stigma",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Nomada",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -75390,21 +73245,6 @@
   }
  },
  {
-  "id": "pc43723",
-  "sci": "Phorocera obscura",
-  "family": "",
-  "order": "",
-  "genus": "Phorocera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pcaa58e",
   "sci": "Photinia fraseri",
   "family": "Rosaceae",
@@ -75417,21 +73257,6 @@
   "common": {
    "fr": "",
    "en": "Fraser's photinia"
-  }
- },
- {
-  "id": "p0108ca",
-  "sci": "Phryxe heraclei",
-  "family": "",
-  "order": "",
-  "genus": "Phryxe",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -75462,36 +73287,6 @@
   "common": {
    "fr": "Coqueret du Perou",
    "en": "Cape-Goosberry"
-  }
- },
- {
-  "id": "p5e7b07",
-  "sci": "Physocephala rufipes",
-  "family": "Conopidae",
-  "order": "Diptera",
-  "genus": "Physocephala",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p7eab1b",
-  "sci": "Phytomyptera nigrina",
-  "family": "",
-  "order": "",
-  "genus": "Phytomyptera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -76242,21 +74037,6 @@
   "common": {
    "fr": "",
    "en": "Chinese gall"
-  }
- },
- {
-  "id": "p433f0c",
-  "sci": "Rhynocoris erythropus",
-  "family": "Reduviidae",
-  "order": "Hemiptera",
-  "genus": "Rhynocoris",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "Rèduve à pattes rouges",
-   "en": "Red-legged assassin bug"
   }
  },
  {
@@ -77415,36 +75195,6 @@
   }
  },
  {
-  "id": "p39fdb2",
-  "sci": "Sphecodes schenckii",
-  "family": "Halictidae",
-  "order": "Hymenoptera",
-  "genus": "Sphecodes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p5904ea",
-  "sci": "Sphex funerarius",
-  "family": "Sphecidae",
-  "order": "Hymenoptera",
-  "genus": "Sphex",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p6cce69",
   "sci": "Spiranthes spiralis",
   "family": "Orchidaceae",
@@ -77670,21 +75420,6 @@
   }
  },
  {
-  "id": "pad3276",
-  "sci": "Tachina fera",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Tachina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p42885d",
   "sci": "Talipariti tiliaceum",
   "family": "Malvaceae",
@@ -77892,21 +75627,6 @@
   "common": {
    "fr": "panais à noeuds velus",
    "en": "bearded meadow-parsnip"
-  }
- },
- {
-  "id": "paec604",
-  "sci": "Thelymorpha marmorata",
-  "family": "",
-  "order": "",
-  "genus": "Thelymorpha",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -78142,21 +75862,6 @@
   "genus": "Triticum",
   "status": "cultivated",
   "growthForm": "grass",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pd4d01a",
-  "sci": "Trogus pennator",
-  "family": "",
-  "order": "",
-  "genus": "Trogus",
-  "status": "",
-  "growthForm": "herb",
   "threat": "",
   "n_interactions": 3,
   "common": {
@@ -80175,21 +77880,6 @@
   }
  },
  {
-  "id": "p82b688",
-  "sci": "Apanteles galleriae",
-  "family": "",
-  "order": "",
-  "genus": "Apanteles",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pfea9b5",
   "sci": "Aphis glycines",
   "family": "Aphididae",
@@ -80202,51 +77892,6 @@
   "common": {
    "fr": "Puceron du Soja",
    "en": "Soybean Aphid"
-  }
- },
- {
-  "id": "p82f7f7",
-  "sci": "Aphria longirostris",
-  "family": "",
-  "order": "",
-  "genus": "Aphria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pc3d046",
-  "sci": "Aprostocetus aethiops",
-  "family": "",
-  "order": "",
-  "genus": "Aprostocetus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pe04d46",
-  "sci": "Aprostocetus balasi",
-  "family": "",
-  "order": "",
-  "genus": "Aprostocetus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -80925,36 +78570,6 @@
   }
  },
  {
-  "id": "pc674fa",
-  "sci": "Athrycia impressa",
-  "family": "",
-  "order": "",
-  "genus": "Athrycia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p3acd7e",
-  "sci": "Athrycia trepida",
-  "family": "",
-  "order": "",
-  "genus": "Athrycia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pef8ead",
   "sci": "Athysanus pusillus",
   "family": "Brassicaceae",
@@ -81117,21 +78732,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "pd9e874",
-  "sci": "Bactrocera dorsalis",
-  "family": "Tephritidae",
-  "order": "Diptera",
-  "genus": "Bactrocera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Oriental fruit fly"
   }
  },
  {
@@ -82575,21 +80175,6 @@
   }
  },
  {
-  "id": "p9cf301",
-  "sci": "Cecidostiba fungosa",
-  "family": "",
-  "order": "",
-  "genus": "Cecidostiba",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p795523",
   "sci": "Celastrus scandens",
   "family": "Celastraceae",
@@ -82725,21 +80310,6 @@
   }
  },
  {
-  "id": "p0ee6f0",
-  "sci": "Ceratophyllus vison",
-  "family": "",
-  "order": "",
-  "genus": "Ceratophyllus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p35f737",
   "sci": "Ceratostigma willmottianum",
   "family": "Plumbaginaceae",
@@ -82767,21 +80337,6 @@
   "common": {
    "fr": "",
    "en": "Madagascar ordeal-bean"
-  }
- },
- {
-  "id": "p1d3205",
-  "sci": "Cerceris rubida",
-  "family": "Crabronidae",
-  "order": "Hymenoptera",
-  "genus": "Cerceris",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -82925,21 +80480,6 @@
   "family": "Rubiaceae",
   "order": "Gentianales",
   "genus": "Chassalia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p8f01d1",
-  "sci": "Cheiloneurus inimicus",
-  "family": "",
-  "order": "",
-  "genus": "Cheiloneurus",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -83235,21 +80775,6 @@
   }
  },
  {
-  "id": "pda0df6",
-  "sci": "Cistogaster globosa",
-  "family": "",
-  "order": "",
-  "genus": "Cistogaster",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p8c81a2",
   "sci": "Clarkia concinna",
   "family": "Onagraceae",
@@ -83472,21 +80997,6 @@
   "common": {
    "fr": "Coccinelle à 11 points",
    "en": "11-Spot Ladybird"
-  }
- },
- {
-  "id": "pd207a1",
-  "sci": "Coelioxys aurolimbatus",
-  "family": "Megachilidae",
-  "order": "Hymenoptera",
-  "genus": "Coelioxys",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -84165,36 +81675,6 @@
   }
  },
  {
-  "id": "p3eac78",
-  "sci": "Cydia succedana",
-  "family": "",
-  "order": "",
-  "genus": "Cydia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p87d077",
-  "sci": "Cylindromyia brassicaria",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Cylindromyia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pfca350",
   "sci": "Cynanchum acutum",
   "family": "Apocynaceae",
@@ -84581,21 +82061,6 @@
   "n_interactions": 2,
   "common": {
    "fr": "Bois d'ébène",
-   "en": ""
-  }
- },
- {
-  "id": "p477541",
-  "sci": "Diplazon laetatorius",
-  "family": "",
-  "order": "",
-  "genus": "Diplazon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -85065,21 +82530,6 @@
   }
  },
  {
-  "id": "pf718aa",
-  "sci": "Entomophaga nigrohalterata",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Entomophaga",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pf71bd9",
   "sci": "Epilobium brachycarpum",
   "family": "Onagraceae",
@@ -85265,36 +82715,6 @@
   "family": "Fabaceae",
   "order": "Fabales",
   "genus": "Eriosema",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p3251c2",
-  "sci": "Eriothrix prolixa",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Eriothrix",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pf12db0",
-  "sci": "Eriothrix rufomaculatus",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Eriothrix",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -85725,36 +83145,6 @@
   }
  },
  {
-  "id": "p3096ae",
-  "sci": "Eurithia connivens",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Eurithia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pb5776d",
-  "sci": "Eurithia vivida",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Eurithia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p43169a",
   "sci": "Eurya japonica",
   "family": "Pentaphylacaceae",
@@ -86180,21 +83570,6 @@
   "family": "Malvaceae",
   "order": "Malvales",
   "genus": "Fremontodendron",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p696352",
-  "sci": "Freraea gagatea",
-  "family": "",
-  "order": "",
-  "genus": "Freraea",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -86850,21 +84225,6 @@
   }
  },
  {
-  "id": "p07c1b2",
-  "sci": "Gymnosoma rotundatum",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Gymnosoma",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p79ffca",
   "sci": "Gypsophila paniculata",
   "family": "Caryophyllaceae",
@@ -86955,21 +84315,6 @@
   }
  },
  {
-  "id": "pca1b0c",
-  "sci": "Halticoptera laevigata",
-  "family": "",
-  "order": "",
-  "genus": "Halticoptera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pb67e88",
   "sci": "Halyzia sedecimguttata",
   "family": "Coccinellidae",
@@ -87027,21 +84372,6 @@
   "common": {
    "fr": "",
    "en": "haujillo"
-  }
- },
- {
-  "id": "pfccc8e",
-  "sci": "Hebia flavipes",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Hebia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -87200,21 +84530,6 @@
   "family": "Asteraceae",
   "order": "Asterales",
   "genus": "Saussurea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p3d573c",
-  "sci": "Hemyda vittata",
-  "family": "",
-  "order": "",
-  "genus": "Hemyda",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -87417,21 +84732,6 @@
   "common": {
    "fr": "Homme de Cro-Magnon",
    "en": "Human"
-  }
- },
- {
-  "id": "pd130f9",
-  "sci": "Hoplismenus morulus",
-  "family": "",
-  "order": "",
-  "genus": "Hoplismenus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -88302,21 +85602,6 @@
   "common": {
    "fr": "Krigie à deux fleurs",
    "en": "Two-flowered dwarf-dandelion"
-  }
- },
- {
-  "id": "pb30478",
-  "sci": "Labigastera forcipata",
-  "family": "",
-  "order": "",
-  "genus": "Labigastera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -89340,21 +86625,6 @@
   }
  },
  {
-  "id": "pb822a2",
-  "sci": "Lasius meridionalis",
-  "family": "Formicidae",
-  "order": "Hymenoptera",
-  "genus": "Lasius",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p494895",
   "sci": "Lasius niger",
   "family": "Formicidae",
@@ -89510,21 +86780,6 @@
   "family": "Brassicaceae",
   "order": "Brassicales",
   "genus": "Lepidium",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p76d047",
-  "sci": "Leptopsylla segnis",
-  "family": "",
-  "order": "",
-  "genus": "Leptopsylla",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -90150,21 +87405,6 @@
   }
  },
  {
-  "id": "pf9ff30",
-  "sci": "Lydella grisescens",
-  "family": "",
-  "order": "",
-  "genus": "Lydella",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p1fbdbe",
   "sci": "Lysiloma latisiliquum",
   "family": "Fabaceae",
@@ -90267,21 +87507,6 @@
   "common": {
    "fr": "Macleaya microcarpa",
    "en": "plume-poppy"
-  }
- },
- {
-  "id": "pad25d1",
-  "sci": "Macquartia dispar",
-  "family": "",
-  "order": "",
-  "genus": "Macquartia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -90530,36 +87755,6 @@
   "family": "Nyssaceae",
   "order": "Cornales",
   "genus": "Mastixia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p988082",
-  "sci": "Medina collaris",
-  "family": "",
-  "order": "",
-  "genus": "Medina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pd81310",
-  "sci": "Medina separata",
-  "family": "",
-  "order": "",
-  "genus": "Medina",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -91380,36 +88575,6 @@
   }
  },
  {
-  "id": "p3e865a",
-  "sci": "Nemoraea pellucida",
-  "family": "",
-  "order": "",
-  "genus": "Nemoraea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p4786e9",
-  "sci": "Neochalcis fertoni",
-  "family": "Chalcididae",
-  "order": "Hymenoptera",
-  "genus": "Neochalcis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4e9d09",
   "sci": "Neotibicen canicularis",
   "family": "Cicadidae",
@@ -91920,81 +89085,6 @@
   }
  },
  {
-  "id": "p128890",
-  "sci": "Otiorhynchus ligustici",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Otiorhynchus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Charançon gris à étuis réunis & chagrinés",
-   "en": "Weevil"
-  }
- },
- {
-  "id": "pa27623",
-  "sci": "Otiorhynchus ovatus",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Otiorhynchus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Strawberry Root Weevil"
-  }
- },
- {
-  "id": "pf78657",
-  "sci": "Otiorhynchus raucus",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Otiorhynchus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Otiorhynque à crête",
-   "en": "Weevil"
-  }
- },
- {
-  "id": "p044e6b",
-  "sci": "Otiorhynchus singularis",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Otiorhynchus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Raspberry Weevil"
-  }
- },
- {
-  "id": "pd25738",
-  "sci": "Otiorhynchus sulcatus",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Otiorhynchus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Charançon à corselet sillonné",
-   "en": "Black Vine Weevil"
-  }
- },
- {
   "id": "p6f9371",
   "sci": "Oxalis conorrhiza",
   "family": "Oxalidaceae",
@@ -92160,21 +89250,6 @@
   }
  },
  {
-  "id": "p6f91c0",
-  "sci": "Palaeopsylla soricis",
-  "family": "",
-  "order": "",
-  "genus": "Palaeopsylla",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p2ed3d0",
   "sci": "Paliurus spina-christi",
   "family": "Rhamnaceae",
@@ -92295,21 +89370,6 @@
   }
  },
  {
-  "id": "pb4e65b",
-  "sci": "Parasetigena silvestris",
-  "family": "",
-  "order": "",
-  "genus": "Parasetigena",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pa81ce9",
   "sci": "Parietaria floridana",
   "family": "Urticaceae",
@@ -92370,21 +89430,6 @@
   }
  },
  {
-  "id": "pf4e637",
-  "sci": "Pauesia picta",
-  "family": "",
-  "order": "",
-  "genus": "Pauesia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pe6acec",
   "sci": "Pedicularis parryi",
   "family": "Orobanchaceae",
@@ -92427,21 +89472,6 @@
   "common": {
    "fr": "",
    "en": "Rose Scented Geranium"
-  }
- },
- {
-  "id": "p956a1c",
-  "sci": "Pelatachina tibialis",
-  "family": "",
-  "order": "",
-  "genus": "Pelatachina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -92655,36 +89685,6 @@
   }
  },
  {
-  "id": "p43573b",
-  "sci": "Phasia hemiptera",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Phasia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p970fe7",
-  "sci": "Phasia pusilla",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Phasia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p55b15b",
   "sci": "Phedimus hybridus",
   "family": "Crassulaceae",
@@ -92825,21 +89825,6 @@
   "family": "Viscaceae",
   "order": "Santalales",
   "genus": "Phoradendron",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pe832fa",
-  "sci": "Phorocera assimilis",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Phorocera",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -93360,21 +90345,6 @@
   }
  },
  {
-  "id": "p70970e",
-  "sci": "Pogonomyrmex desertorum",
-  "family": "",
-  "order": "",
-  "genus": "Pogonomyrmex",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pcf84e6",
   "sci": "Polistes associus",
   "family": "Eumenidae",
@@ -93420,6 +90390,21 @@
   }
  },
  {
+  "id": "p27d66b",
+  "sci": "Polistes biglumis",
+  "family": "Eumenidae",
+  "order": "Hymenoptera",
+  "genus": "Polistes",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "Guêpe à anneaux bordés de jaune, & deux taches jaunes",
+   "en": ""
+  }
+ },
+ {
   "id": "pc37727",
   "sci": "Polistes bischoffi",
   "family": "Eumenidae",
@@ -93432,21 +90417,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "pefe9b2",
-  "sci": "Polistes dorsalis",
-  "family": "Eumenidae",
-  "order": "Hymenoptera",
-  "genus": "Polistes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Hunter's Little Paper Wasp"
   }
  },
  {
@@ -93465,11 +90435,11 @@
   }
  },
  {
-  "id": "p61e052",
-  "sci": "Polycentropus flavomaculatus",
-  "family": "Polycentropodidae",
-  "order": "Trichoptera",
-  "genus": "Polycentropus",
+  "id": "pf63691",
+  "sci": "Polistes semenowi",
+  "family": "Eumenidae",
+  "order": "Hymenoptera",
+  "genus": "Polistes",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -93735,21 +90705,6 @@
   }
  },
  {
-  "id": "p9b7631",
-  "sci": "Praon bicolor",
-  "family": "",
-  "order": "",
-  "genus": "Praon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p9023e5",
   "sci": "Procambarus clarkii",
   "family": "Cambaridae",
@@ -93762,21 +90717,6 @@
   "common": {
    "fr": "",
    "en": "Louisiana red crayfish"
-  }
- },
- {
-  "id": "pe902e8",
-  "sci": "Prosena siberita",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Prosena",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Parasitic fly"
   }
  },
  {
@@ -94497,21 +91437,6 @@
   "common": {
    "fr": "",
    "en": "Japanese buckthorn"
-  }
- },
- {
-  "id": "pa9f41e",
-  "sci": "Rhaphitelus maculatus",
-  "family": "",
-  "order": "",
-  "genus": "Rhaphitelus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -96135,21 +93060,6 @@
   }
  },
  {
-  "id": "p1d00d6",
-  "sci": "Sicus ferrugineus",
-  "family": "Conopidae",
-  "order": "Diptera",
-  "genus": "Sicus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p426705",
   "sci": "Sidalcea pedata",
   "family": "Malvaceae",
@@ -96192,21 +93102,6 @@
   "common": {
    "fr": "",
    "en": "Starry Campion"
-  }
- },
- {
-  "id": "p80757b",
-  "sci": "Siphona collini",
-  "family": "",
-  "order": "",
-  "genus": "Siphona",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -96630,21 +93525,6 @@
   }
  },
  {
-  "id": "pf7af66",
-  "sci": "Stelis signata",
-  "family": "Megachilidae",
-  "order": "Hymenoptera",
-  "genus": "Stelis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p387a62",
   "sci": "Stellaria apetala",
   "family": "Caryophyllaceae",
@@ -96845,21 +93725,6 @@
   "family": "Amaranthaceae",
   "order": "Caryophyllales",
   "genus": "Suaeda",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p806c4c",
-  "sci": "Subclytia rotundiventris",
-  "family": "",
-  "order": "",
-  "genus": "Subclytia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -97125,21 +93990,6 @@
   }
  },
  {
-  "id": "p07283f",
-  "sci": "Tenebrio molitor",
-  "family": "Tenebrionidae",
-  "order": "Coleoptera",
-  "genus": "Tenebrio",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Ténébrion meunier, Ténébrion à neuf stries lisses",
-   "en": "Hardback Beetle"
-  }
- },
- {
   "id": "p49f1bd",
   "sci": "Teramnus labialis",
   "family": "Fabaceae",
@@ -97200,21 +94050,6 @@
   }
  },
  {
-  "id": "p43da8f",
-  "sci": "Thelaira nigripes",
-  "family": "",
-  "order": "",
-  "genus": "Thelaira",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p7ffe53",
   "sci": "Thelesperma filifolium",
   "family": "Asteraceae",
@@ -97257,36 +94092,6 @@
   "common": {
    "fr": "Suzanne aux yeux noirs",
    "en": "Black Eyed Susan"
-  }
- },
- {
-  "id": "pff300e",
-  "sci": "Thyreus histrionicus",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Thyreus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Crocise comédienne",
-   "en": ""
-  }
- },
- {
-  "id": "p69ba1a",
-  "sci": "Thyreus orbatus",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Thyreus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Crocise ravisseuse",
-   "en": ""
   }
  },
  {
@@ -97632,21 +94437,6 @@
   "common": {
    "fr": "",
    "en": "Sickle-fruited Fenugreek"
-  }
- },
- {
-  "id": "p679219",
-  "sci": "Trioxys betulae",
-  "family": "",
-  "order": "",
-  "genus": "Trioxys",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -98130,6 +94920,21 @@
   }
  },
  {
+  "id": "p9b1294",
+  "sci": "Vespa crabro",
+  "family": "Vespidae",
+  "order": "Hymenoptera",
+  "genus": "Vespa",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "Frelon européen",
+   "en": "European hornet"
+  }
+ },
+ {
   "id": "p9832c0",
   "sci": "Vespula pensylvanica",
   "family": "Vespidae",
@@ -98607,21 +95412,6 @@
   "common": {
    "fr": "",
    "en": "Prickly ash"
-  }
- },
- {
-  "id": "p69f9bf",
-  "sci": "Zelus leucogrammus",
-  "family": "",
-  "order": "",
-  "genus": "Zelus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -99597,21 +96387,6 @@
   "common": {
    "fr": "",
    "en": "Jejudo bugbane"
-  }
- },
- {
-  "id": "p3ec6b5",
-  "sci": "Actia infantula",
-  "family": "",
-  "order": "",
-  "genus": "Actia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -101940,21 +98715,6 @@
   }
  },
  {
-  "id": "pa09518",
-  "sci": "Amblyteles armatorius",
-  "family": "Ichneumonidae",
-  "order": "Hymenoptera",
-  "genus": "Amblyteles",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p5a132b",
   "sci": "Amblytylus nasutus",
   "family": "Miridae",
@@ -102080,21 +98840,6 @@
   "family": "Scarabaeidae",
   "order": "Coleoptera",
   "genus": "Amidorus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p6cbbb2",
-  "sci": "Ammobates punctatus",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Ammobates",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -103155,21 +99900,6 @@
   }
  },
  {
-  "id": "p5dd0f2",
-  "sci": "Anergates atratulus",
-  "family": "",
-  "order": "",
-  "genus": "Anergates",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p43c9ff",
   "sci": "Angadenia berteroi",
   "family": "Apocynaceae",
@@ -103920,21 +100650,6 @@
   }
  },
  {
-  "id": "p7990e8",
-  "sci": "Anthomyiopsis nigrisquamata",
-  "family": "",
-  "order": "",
-  "genus": "Anthomyiopsis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p673de8",
   "sci": "Anthophora aestivalis",
   "family": "Apidae",
@@ -104250,21 +100965,6 @@
   }
  },
  {
-  "id": "p23cf1c",
-  "sci": "Apanteles nephoptericis",
-  "family": "",
-  "order": "",
-  "genus": "Apanteles",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p82e36e",
   "sci": "Apatura ilia",
   "family": "Nymphalidae",
@@ -104295,21 +100995,6 @@
   }
  },
  {
-  "id": "p57470b",
-  "sci": "Aphanomerus pusillus",
-  "family": "",
-  "order": "",
-  "genus": "Aphanomerus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p212c5e",
   "sci": "Aphelocheirus aestivalis",
   "family": "Aphelocheiridae",
@@ -104337,36 +101022,6 @@
   "common": {
    "fr": "coccinelle brune",
    "en": "Ladybird beetle"
-  }
- },
- {
-  "id": "p6d7a73",
-  "sci": "Aphidius ervi",
-  "family": "",
-  "order": "",
-  "genus": "Aphidius",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p6f4ed9",
-  "sci": "Aphidoletes aphidimyza",
-  "family": "",
-  "order": "",
-  "genus": "Aphidoletes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -105267,21 +101922,6 @@
   "common": {
    "fr": "Barracudine Longue Quille",
    "en": "Barracudina"
-  }
- },
- {
-  "id": "p8561d0",
-  "sci": "Ardeicola robusta",
-  "family": "",
-  "order": "",
-  "genus": "Ardeicola",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -108045,21 +104685,6 @@
   }
  },
  {
-  "id": "p4e1074",
-  "sci": "Austromenopon nigropleurum",
-  "family": "",
-  "order": "",
-  "genus": "Austromenopon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pdd73d6",
   "sci": "Austropotamobius pallipes",
   "family": "Astacidae",
@@ -108345,21 +104970,6 @@
   }
  },
  {
-  "id": "p6f8d24",
-  "sci": "Bactrocera oleae",
-  "family": "Tephritidae",
-  "order": "Diptera",
-  "genus": "Bactrocera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Mouche de l’olive, Mouche de l’olivier",
-   "en": "Olive fruit fly"
-  }
- },
- {
   "id": "p800009",
   "sci": "Badula insularis",
   "family": "Primulaceae",
@@ -108530,21 +105140,6 @@
   "family": "Baetidae",
   "order": "Ephemeroptera",
   "genus": "Baetis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pf42045",
-  "sci": "Bagous lutosus",
-  "family": "",
-  "order": "",
-  "genus": "Bagous",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -109130,21 +105725,6 @@
   "family": "Rubiaceae",
   "order": "Gentianales",
   "genus": "Bertiera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p639b3c",
-  "sci": "Berytinus clavipes",
-  "family": "Berytidae",
-  "order": "Hemiptera",
-  "genus": "Berytinus",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -110130,51 +106710,6 @@
   }
  },
  {
-  "id": "pe1aaf6",
-  "sci": "Bracon caudatus",
-  "family": "",
-  "order": "",
-  "genus": "Bracon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pc408f6",
-  "sci": "Bracon hebetor",
-  "family": "",
-  "order": "",
-  "genus": "Bracon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p68019f",
-  "sci": "Bracon ratzeburgii",
-  "family": "",
-  "order": "",
-  "genus": "Bracon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p79493e",
   "sci": "Branta canadensis",
   "family": "Anatidae",
@@ -110412,21 +106947,6 @@
   "common": {
    "fr": "Broussonnétie à papier, Mûrier de chine, Mûrier à papier",
    "en": "Paper Mulberry"
-  }
- },
- {
-  "id": "p8fd49b",
-  "sci": "Bruchophagus gibbus",
-  "family": "",
-  "order": "",
-  "genus": "Bruchophagus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -110735,36 +107255,6 @@
   "family": "Psyllidae",
   "order": "Hemiptera",
   "genus": "Cacopsylla",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p81de8f",
-  "sci": "Cadurciella tritaeniata",
-  "family": "",
-  "order": "",
-  "genus": "Cadurciella",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pfda533",
-  "sci": "Caenacis lauta",
-  "family": "",
-  "order": "",
-  "genus": "Caenacis",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -111540,21 +108030,6 @@
   }
  },
  {
-  "id": "p30fe11",
-  "sci": "Camponotus lateralis",
-  "family": "Formicidae",
-  "order": "Hymenoptera",
-  "genus": "Camponotus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Fourmi bicolor",
-   "en": ""
-  }
- },
- {
   "id": "pb53f08",
   "sci": "Campsis grandiflora",
   "family": "Bignoniaceae",
@@ -112077,51 +108552,6 @@
   "common": {
    "fr": "Carangue comade",
    "en": "Bar Jack"
-  }
- },
- {
-  "id": "p16a40a",
-  "sci": "Carcelia laxifrons",
-  "family": "",
-  "order": "",
-  "genus": "Carcelia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pff94ca",
-  "sci": "Carcelia puberula",
-  "family": "",
-  "order": "",
-  "genus": "Carcelia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p8d6201",
-  "sci": "Carcelia rasa",
-  "family": "",
-  "order": "",
-  "genus": "Carcelia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -112782,21 +109212,6 @@
   "common": {
    "fr": "Casse de Roxburgh",
    "en": "Roxburgh's Cassia"
-  }
- },
- {
-  "id": "pdc6712",
-  "sci": "Cassida flaveola",
-  "family": "Chrysomelidae",
-  "order": "Coleoptera",
-  "genus": "Cassida",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Pale Tortoise Beetle"
   }
  },
  {
@@ -113865,21 +110280,6 @@
   }
  },
  {
-  "id": "pc60a77",
-  "sci": "Cerceris arenaria",
-  "family": "Crabronidae",
-  "order": "Hymenoptera",
-  "genus": "Cerceris",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Sand Tailed Digger Wasp"
-  }
- },
- {
   "id": "pc29ba5",
   "sci": "Cercis occidentalis",
   "family": "Fabaceae",
@@ -114416,21 +110816,6 @@
   "n_interactions": 1,
   "common": {
    "fr": "Gnophos bigarrée",
-   "en": ""
-  }
- },
- {
-  "id": "p587133",
-  "sci": "Cheiloneurus lineascapus",
-  "family": "",
-  "order": "",
-  "genus": "Cheiloneurus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -115005,21 +111390,6 @@
   }
  },
  {
-  "id": "pf3d421",
-  "sci": "Chlorocytus planus",
-  "family": "",
-  "order": "",
-  "genus": "Chlorocytus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p72f73d",
   "sci": "Chlorogalum pomeridianum",
   "family": "Asparagaceae",
@@ -115335,21 +111705,6 @@
   }
  },
  {
-  "id": "p35f399",
-  "sci": "Chrysocharis gemma",
-  "family": "",
-  "order": "",
-  "genus": "Chrysocharis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p5bbc71",
   "sci": "Chrysolaena obovata",
   "family": "Asteraceae",
@@ -115647,21 +112002,6 @@
   "common": {
    "fr": "Cicindèle hybride",
    "en": "Northern Dune Tiger Beetle"
-  }
- },
- {
-  "id": "p447f41",
-  "sci": "Ciconiphilus decimfasciatus",
-  "family": "",
-  "order": "",
-  "genus": "Ciconiphilus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -116145,21 +112485,6 @@
   }
  },
  {
-  "id": "p12704e",
-  "sci": "Clemelis pullata",
-  "family": "",
-  "order": "",
-  "genus": "Clemelis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p98d5cd",
   "sci": "Clemnius decoratus",
   "family": "Dytiscidae",
@@ -116201,36 +112526,6 @@
   "n_interactions": 1,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pad6cb8",
-  "sci": "Cleopomiarus graminis",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Cleopomiarus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p13b387",
-  "sci": "Cleopomiarus plantarum",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Cleopomiarus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Charançon noir strié",
    "en": ""
   }
  },
@@ -116505,21 +112800,6 @@
   }
  },
  {
-  "id": "p21eae8",
-  "sci": "Closterocerus trifasciatus",
-  "family": "",
-  "order": "",
-  "genus": "Closterocerus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pc00cf2",
   "sci": "Clusia fructiangusta",
   "family": "Clusiaceae",
@@ -116772,21 +113052,6 @@
   "common": {
    "fr": "",
    "en": "Deodeok (Lance Asiabell, Bonnet bellflower)"
-  }
- },
- {
-  "id": "pd824ab",
-  "sci": "Coelioxys echinatus",
-  "family": "Megachilidae",
-  "order": "Hymenoptera",
-  "genus": "Coelioxys",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -118740,6 +115005,21 @@
   }
  },
  {
+  "id": "p83263c",
+  "sci": "Cotesia glomerata",
+  "family": "Braconidae",
+  "order": "Hymenoptera",
+  "genus": "Cotesia",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Parasitoid wasp"
+  }
+ },
+ {
   "id": "p50d27b",
   "sci": "Cotinis mutabilis",
   "family": "Scarabaeidae",
@@ -119715,66 +115995,6 @@
   }
  },
  {
-  "id": "p8681da",
-  "sci": "Ctenophthalmus acuminatus",
-  "family": "",
-  "order": "",
-  "genus": "Ctenophthalmus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pbfdf35",
-  "sci": "Ctenophthalmus agyrtes",
-  "family": "",
-  "order": "",
-  "genus": "Ctenophthalmus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p93f44a",
-  "sci": "Ctenophthalmus assimilis",
-  "family": "",
-  "order": "",
-  "genus": "Ctenophthalmus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pbccf68",
-  "sci": "Ctenophthalmus congener",
-  "family": "",
-  "order": "",
-  "genus": "Ctenophthalmus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p6b4fb2",
   "sci": "Ctenucha virginica",
   "family": "Erebidae",
@@ -120345,21 +116565,6 @@
   }
  },
  {
-  "id": "pb5049b",
-  "sci": "Cydia amplana",
-  "family": "Tortricidae",
-  "order": "Lepidoptera",
-  "genus": "Cydia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Rusty Acorn Piercer"
-  }
- },
- {
   "id": "pfe632a",
   "sci": "Cydia pomonella",
   "family": "Tortricidae",
@@ -120372,6 +116577,21 @@
   "common": {
    "fr": "Carpocapse des châtaignes",
    "en": "Codling Moth"
+  }
+ },
+ {
+  "id": "p3eac78",
+  "sci": "Cydia succedana",
+  "family": "",
+  "order": "",
+  "genus": "Cydia",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -120852,21 +117072,6 @@
   "common": {
    "fr": "",
    "en": "pinkglobe prairie clover"
-  }
- },
- {
-  "id": "p90d5bc",
-  "sci": "Damalinia forficula",
-  "family": "",
-  "order": "",
-  "genus": "Damalinia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -121905,21 +118110,6 @@
   }
  },
  {
-  "id": "p195837",
-  "sci": "Diaeretiella rapae",
-  "family": "",
-  "order": "",
-  "genus": "Diaeretiella",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p0cfb7a",
   "sci": "Dianthus chinensis",
   "family": "Caryophyllaceae",
@@ -122090,6 +118280,21 @@
   "family": "Phalangiidae",
   "order": "Opiliones",
   "genus": "Dicranopalpus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "p2df6c7",
+  "sci": "Dicranotropis hamata",
+  "family": "Delphacidae",
+  "order": "Hemiptera",
+  "genus": "Dicranotropis",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -122345,21 +118550,6 @@
   "family": "Perlidae",
   "order": "Plecoptera",
   "genus": "Dinocras",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p715f3f",
-  "sci": "Dionaea aurifrons",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Dionaea",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -122670,21 +118860,6 @@
   }
  },
  {
-  "id": "pe80db5",
-  "sci": "Dolichovespula omissa",
-  "family": "Vespidae",
-  "order": "Hymenoptera",
-  "genus": "Dolichovespula",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p208952",
   "sci": "Dombeya torrida",
   "family": "Malvaceae",
@@ -122727,21 +118902,6 @@
   "common": {
    "fr": "",
    "en": "Canary sassafras"
-  }
- },
- {
-  "id": "p783568",
-  "sci": "Dorytomus taeniatus",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Dorytomus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -124020,21 +120180,6 @@
   }
  },
  {
-  "id": "p36bcbf",
-  "sci": "Echthromorpha intricatoria",
-  "family": "",
-  "order": "",
-  "genus": "Echthromorpha",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pbfacdd",
   "sci": "Eclipta alba",
   "family": "Asteraceae",
@@ -124845,36 +120990,6 @@
   }
  },
  {
-  "id": "p2eacf0",
-  "sci": "Empis livida",
-  "family": "Empididae",
-  "order": "Diptera",
-  "genus": "Empis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p4b2d73",
-  "sci": "Empis tessellata",
-  "family": "Empididae",
-  "order": "Diptera",
-  "genus": "Empis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Empis marqueté",
-   "en": ""
-  }
- },
- {
   "id": "p64deac",
   "sci": "Empoasca fabae",
   "family": "Cicadellidae",
@@ -125382,21 +121497,6 @@
   "common": {
    "fr": "Aeschne Majestueuse",
    "en": "Swamp Darner"
-  }
- },
- {
-  "id": "p1c8c25",
-  "sci": "Epicampocera succincta",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Epicampocera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -126030,21 +122130,6 @@
   }
  },
  {
-  "id": "p2530a3",
-  "sci": "Eriogaster lanestris",
-  "family": "Lasiocampidae",
-  "order": "Lepidoptera",
-  "genus": "Eriogaster",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Laineuse du Cerisier",
-   "en": "Small Eggar"
-  }
- },
- {
   "id": "pbe1e77",
   "sci": "Eriogonum batemanii",
   "family": "Polygonaceae",
@@ -126510,21 +122595,6 @@
   }
  },
  {
-  "id": "p53a996",
-  "sci": "Erynnia ocypterata",
-  "family": "",
-  "order": "",
-  "genus": "Erynnia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pc15cf9",
   "sci": "Erysimum bicolor",
   "family": "Brassicaceae",
@@ -126832,21 +122902,6 @@
   "genus": "Esenbeckia",
   "status": "",
   "growthForm": "tree",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p2f53c9",
-  "sci": "Estheria cristata",
-  "family": "",
-  "order": "",
-  "genus": "Estheria",
-  "status": "",
-  "growthForm": "herb",
   "threat": "",
   "n_interactions": 1,
   "common": {
@@ -127722,21 +123777,6 @@
   "common": {
    "fr": "",
    "en": "Upland Boneset"
-  }
- },
- {
-  "id": "pdf3cf7",
-  "sci": "Eupelmus antipoda",
-  "family": "",
-  "order": "",
-  "genus": "Eupelmus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -129330,26 +125370,11 @@
   }
  },
  {
-  "id": "p471786",
-  "sci": "Eurytoma castor",
-  "family": "",
-  "order": "",
-  "genus": "Eurytoma",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pcf3e36",
-  "sci": "Eurytoma flavimana",
-  "family": "",
-  "order": "",
-  "genus": "Eurytoma",
+  "id": "pd4f012",
+  "sci": "Eurysthaea scutellaris",
+  "family": "Tachinidae",
+  "order": "Diptera",
+  "genus": "Eurysthaea",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -129440,21 +125465,6 @@
   "family": "",
   "order": "",
   "genus": "Euthystira",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p152c5e",
-  "sci": "Eutrapela clemataria",
-  "family": "",
-  "order": "",
-  "genus": "Eutrapela",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -129765,21 +125775,6 @@
   }
  },
  {
-  "id": "pa93efb",
-  "sci": "Fausta nemorum",
-  "family": "",
-  "order": "",
-  "genus": "Fausta",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pe0cb1e",
   "sci": "Feijoa sellowiana",
   "family": "Myrtaceae",
@@ -129814,21 +125809,6 @@
   "sci": "Ferdinandea cuprea",
   "family": "Syrphidae",
   "order": "Diptera",
-  "genus": "Ferdinandea",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p79bd19",
-  "sci": "Ferdinandea ruficornis",
-  "family": "",
-  "order": "",
   "genus": "Ferdinandea",
   "status": "",
   "growthForm": "herb",
@@ -131550,21 +127530,6 @@
   }
  },
  {
-  "id": "p432315",
-  "sci": "Gastrolepta anthracina",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Gastrolepta",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p2205c1",
   "sci": "Gaultheria humifusa",
   "family": "Ericaceae",
@@ -132635,21 +128600,6 @@
   "family": "",
   "order": "",
   "genus": "Gongrosira",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p33f915",
-  "sci": "Gonia divisa",
-  "family": "",
-  "order": "",
-  "genus": "Gonia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -134012,6 +129962,21 @@
  {
   "id": "p1295f6",
   "sci": "Hebata decipiens",
+  "family": "Cicadellidae",
+  "order": "Hemiptera",
+  "genus": "Hebata",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "pdbdc7c",
+  "sci": "Hebata vitis",
   "family": "Cicadellidae",
   "order": "Hemiptera",
   "genus": "Hebata",
@@ -136020,21 +131985,6 @@
   }
  },
  {
-  "id": "pd9822f",
-  "sci": "Homoporus fulviventris",
-  "family": "",
-  "order": "",
-  "genus": "Homoporus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p778959",
   "sci": "Homotoma ficus",
   "family": "Homotomidae",
@@ -136647,6 +132597,21 @@
   "common": {
    "fr": "Larentie arrosée",
    "en": "May Highflyer"
+  }
+ },
+ {
+  "id": "pf9871a",
+  "sci": "Hydriomena ruberata",
+  "family": "Geometridae",
+  "order": "Lepidoptera",
+  "genus": "Hydriomena",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Larentie rubescente",
+   "en": "Ruddy Highflyer"
   }
  },
  {
@@ -139470,21 +135435,6 @@
   }
  },
  {
-  "id": "p6d5a26",
-  "sci": "Istocheta aldrichi",
-  "family": "",
-  "order": "",
-  "genus": "Istocheta",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "peaec29",
   "sci": "Isturgia famula",
   "family": "Geometridae",
@@ -140850,21 +136800,6 @@
   }
  },
  {
-  "id": "pe928c9",
-  "sci": "Larinus sturnus",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Larinus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Larin étourneau",
-   "en": ""
-  }
- },
- {
   "id": "pdec3be",
   "sci": "Larrea divaricata",
   "family": "Zygophyllaceae",
@@ -141107,6 +137042,21 @@
  {
   "id": "pcc559c",
   "sci": "Lasius jensi",
+  "family": "Formicidae",
+  "order": "Hymenoptera",
+  "genus": "Lasius",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "pb822a2",
+  "sci": "Lasius meridionalis",
   "family": "Formicidae",
   "order": "Hymenoptera",
   "genus": "Lasius",
@@ -143160,36 +139110,6 @@
   }
  },
  {
-  "id": "pd475ce",
-  "sci": "Linnaemya rossica",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Linnaemya",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p44a433",
-  "sci": "Linnaemya tessellans",
-  "family": "",
-  "order": "",
-  "genus": "Linnaemya",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pcb9b74",
   "sci": "Linnaemya vulpina",
   "family": "Tachinidae",
@@ -143700,21 +139620,6 @@
   }
  },
  {
-  "id": "paddb0b",
-  "sci": "Loboptera decipiens",
-  "family": "Ectobiidae",
-  "order": "Blattodea",
-  "genus": "Loboptera",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "lobe-winged cockroach"
-  }
- },
- {
   "id": "p09ab96",
   "sci": "Lolliguncula brevis",
   "family": "Loliginidae",
@@ -143990,21 +139895,6 @@
   "family": "Asteraceae",
   "order": "Asterales",
   "genus": "Lophiolepis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p3e5b90",
-  "sci": "Lophosia fasciata",
-  "family": "",
-  "order": "",
-  "genus": "Lophosia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -144825,21 +140715,6 @@
   }
  },
  {
-  "id": "p3e0103",
-  "sci": "Lynchia americana",
-  "family": "",
-  "order": "",
-  "genus": "Lynchia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pd5e1ab",
   "sci": "Lyonia ligustrina",
   "family": "Ericaceae",
@@ -144987,21 +140862,6 @@
   "common": {
    "fr": "",
    "en": "Bog Loosestrife"
-  }
- },
- {
-  "id": "p95cc0f",
-  "sci": "Lysiphlebus hirticornis",
-  "family": "",
-  "order": "",
-  "genus": "Lysiphlebus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -145242,21 +141102,6 @@
   "common": {
    "fr": "Bois-d'arc",
    "en": "Osage-Orange"
-  }
- },
- {
-  "id": "pdbc694",
-  "sci": "Macquartia praefica",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Macquartia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -147105,21 +142950,6 @@
   }
  },
  {
-  "id": "p0cf241",
-  "sci": "Mellinus arvensis",
-  "family": "Crabronidae",
-  "order": "Hymenoptera",
-  "genus": "Mellinus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Field Digger Wasp"
-  }
- },
- {
   "id": "p7d4e4f",
   "sci": "Melodorum fruticosum",
   "family": "Annonaceae",
@@ -147882,21 +143712,6 @@
   "common": {
    "fr": "",
    "en": "Mount White-lime"
-  }
- },
- {
-  "id": "p2e3208",
-  "sci": "Microdon devius",
-  "family": "",
-  "order": "",
-  "genus": "Microdon",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -150930,36 +146745,6 @@
   }
  },
  {
-  "id": "p98b825",
-  "sci": "Nomada facilis",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Nomada",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Hawk's-beard Nomad Bee"
-  }
- },
- {
-  "id": "pd2ce01",
-  "sci": "Nomada nobilis",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Nomada",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p5d0a40",
   "sci": "Nomophila noctuella",
   "family": "Crambidae",
@@ -151245,21 +147030,6 @@
   }
  },
  {
-  "id": "pd2c8bb",
-  "sci": "Obrium cantharinum",
-  "family": "Cerambycidae",
-  "order": "Coleoptera",
-  "genus": "Obrium",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pe07080",
   "sci": "Ochetophila trinervis",
   "family": "Rhamnaceae",
@@ -151422,21 +147192,6 @@
   "common": {
    "fr": "Gnophos des buissons",
    "en": "Irish Annulet"
-  }
- },
- {
-  "id": "p07c7d7",
-  "sci": "Odontomachus monticola",
-  "family": "",
-  "order": "",
-  "genus": "Odontomachus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -152130,21 +147885,6 @@
   }
  },
  {
-  "id": "p6c0c7f",
-  "sci": "Ooencyrtus alboantennatus",
-  "family": "",
-  "order": "",
-  "genus": "Ooencyrtus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pcd565a",
   "sci": "Operophtera brumata",
   "family": "Geometridae",
@@ -152705,21 +148445,6 @@
   "family": "Scarabaeidae",
   "order": "Coleoptera",
   "genus": "Oromus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pebcc1c",
-  "sci": "Oropsylla labis",
-  "family": "",
-  "order": "",
-  "genus": "Oropsylla",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -153477,6 +149202,81 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "p128890",
+  "sci": "Otiorhynchus ligustici",
+  "family": "Curculionidae",
+  "order": "Coleoptera",
+  "genus": "Otiorhynchus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Charançon gris à étuis réunis & chagrinés",
+   "en": "Weevil"
+  }
+ },
+ {
+  "id": "pa27623",
+  "sci": "Otiorhynchus ovatus",
+  "family": "Curculionidae",
+  "order": "Coleoptera",
+  "genus": "Otiorhynchus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Strawberry Root Weevil"
+  }
+ },
+ {
+  "id": "pf78657",
+  "sci": "Otiorhynchus raucus",
+  "family": "Curculionidae",
+  "order": "Coleoptera",
+  "genus": "Otiorhynchus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Otiorhynque à crête",
+   "en": "Weevil"
+  }
+ },
+ {
+  "id": "p044e6b",
+  "sci": "Otiorhynchus singularis",
+  "family": "Curculionidae",
+  "order": "Coleoptera",
+  "genus": "Otiorhynchus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Raspberry Weevil"
+  }
+ },
+ {
+  "id": "pd25738",
+  "sci": "Otiorhynchus sulcatus",
+  "family": "Curculionidae",
+  "order": "Coleoptera",
+  "genus": "Otiorhynchus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Charançon à corselet sillonné",
+   "en": "Black Vine Weevil"
   }
  },
  {
@@ -154290,21 +150090,6 @@
   }
  },
  {
-  "id": "pddb637",
-  "sci": "Panzeria rudis",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Panzeria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pda311a",
   "sci": "Papaver laestadianum",
   "family": "Papaveraceae",
@@ -154920,21 +150705,6 @@
   }
  },
  {
-  "id": "pb7ac51",
-  "sci": "Pasites maculatus",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Pasites",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pfdff49",
   "sci": "Passer domesticus",
   "family": "Passeridae",
@@ -155017,21 +150787,6 @@
   "genus": "Patrinia",
   "status": "",
   "growthForm": "shrub",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p7a6bd6",
-  "sci": "Pauesia unilachni",
-  "family": "",
-  "order": "",
-  "genus": "Pauesia",
-  "status": "",
-  "growthForm": "herb",
   "threat": "",
   "n_interactions": 1,
   "common": {
@@ -156765,21 +152520,6 @@
   }
  },
  {
-  "id": "p8539e2",
-  "sci": "Phania funesta",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Phania",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p25a9d7",
   "sci": "Phaonia pallida",
   "family": "Muscidae",
@@ -156890,21 +152630,6 @@
   "family": "Tachinidae",
   "order": "Diptera",
   "genus": "Phasia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pd1afd3",
-  "sci": "Phebellia villica",
-  "family": "",
-  "order": "",
-  "genus": "Phebellia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -157117,21 +152842,6 @@
   "genus": "Philotheca",
   "status": "",
   "growthForm": "tree",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p1c78fb",
-  "sci": "Phloeosinus thujae",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Phloeosinus",
-  "status": "",
-  "growthForm": "herb",
   "threat": "",
   "n_interactions": 1,
   "common": {
@@ -158955,21 +154665,6 @@
   }
  },
  {
-  "id": "p99cafc",
-  "sci": "Placochilus seladonicus",
-  "family": "Miridae",
-  "order": "Hemiptera",
-  "genus": "Placochilus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p6ef3c5",
   "sci": "Plagiobothrys nothofulvus",
   "family": "Boraginaceae",
@@ -159645,6 +155340,21 @@
   }
  },
  {
+  "id": "pefe9b2",
+  "sci": "Polistes dorsalis",
+  "family": "Eumenidae",
+  "order": "Hymenoptera",
+  "genus": "Polistes",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Hunter's Little Paper Wasp"
+  }
+ },
+ {
   "id": "p72a9bd",
   "sci": "Polistes metricus",
   "family": "Eumenidae",
@@ -159840,6 +155550,21 @@
   }
  },
  {
+  "id": "p61e052",
+  "sci": "Polycentropus flavomaculatus",
+  "family": "Polycentropodidae",
+  "order": "Trichoptera",
+  "genus": "Polycentropus",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "p4b0816",
   "sci": "Polycentropus kingi",
   "family": "Polycentropodidae",
@@ -159875,21 +155600,6 @@
   "family": "Polycentropodidae",
   "order": "Trichoptera",
   "genus": "Polycentropus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pe1657d",
-  "sci": "Polydrusus marginatus",
-  "family": "Curculionidae",
-  "order": "Coleoptera",
-  "genus": "Polydrusus",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -160152,21 +155862,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "p6ec2b4",
-  "sci": "Polymerus unifasciatus",
-  "family": "Miridae",
-  "order": "Hemiptera",
-  "genus": "Polymerus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Plant Bug"
   }
  },
  {
@@ -162065,21 +157760,6 @@
   "family": "Fabaceae",
   "order": "Fabales",
   "genus": "Pterolobium",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pdd843b",
-  "sci": "Pteromalus sequester",
-  "family": "",
-  "order": "",
-  "genus": "Pteromalus",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -167325,6 +163005,21 @@
   }
  },
  {
+  "id": "p8b9204",
+  "sci": "Scathophaga furcata",
+  "family": "Scathophagidae",
+  "order": "Diptera",
+  "genus": "Scathophaga",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "p1bafb0",
   "sci": "Scathophaga inquinata",
   "family": "Scathophagidae",
@@ -169605,36 +165300,6 @@
   }
  },
  {
-  "id": "p566416",
-  "sci": "Siphona geniculata",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Siphona",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p17c3f5",
-  "sci": "Siphona setosa",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Siphona",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p4c620e",
   "sci": "Siphonoperla montana",
   "family": "Chloroperlidae",
@@ -170307,21 +165972,6 @@
   "common": {
    "fr": "verge d'or à feuilles d'orme",
    "en": "Elm-leaf Goldenrod"
-  }
- },
- {
-  "id": "p34c735",
-  "sci": "Solieria inanis",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Solieria",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -171015,36 +166665,6 @@
   }
  },
  {
-  "id": "p3cd9fe",
-  "sci": "Sphecodes persimilis",
-  "family": "",
-  "order": "",
-  "genus": "Sphecodes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p0bf488",
-  "sci": "Sphecodes rufiventris",
-  "family": "Halictidae",
-  "order": "Hymenoptera",
-  "genus": "Sphecodes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Sphécode à ventre fauve",
-   "en": ""
-  }
- },
- {
   "id": "pfe5114",
   "sci": "Sphedamnocarpus pruriens",
   "family": "Malpighiaceae",
@@ -171162,21 +166782,6 @@
   "common": {
    "fr": "Créosote",
    "en": "Pigeoncoop"
-  }
- },
- {
-  "id": "pb9dc60",
-  "sci": "Spilostethus saxatilis",
-  "family": "Lygaeidae",
-  "order": "Hemiptera",
-  "genus": "Spilostethus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Punaise à damier",
-   "en": "Harlequin bug"
   }
  },
  {
@@ -171570,11 +167175,11 @@
   }
  },
  {
-  "id": "pc0ab7d",
-  "sci": "Stelis minuta",
-  "family": "",
-  "order": "",
-  "genus": "",
+  "id": "pf7af66",
+  "sci": "Stelis signata",
+  "family": "Megachilidae",
+  "order": "Hymenoptera",
+  "genus": "Stelis",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -171792,6 +167397,21 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "p6eb1d1",
+  "sci": "Stomorhina lunata",
+  "family": "Calliphoridae",
+  "order": "Diptera",
+  "genus": "Stomorhina",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Locust Blowfly"
   }
  },
  {
@@ -172905,21 +168525,6 @@
   }
  },
  {
-  "id": "p8447b2",
-  "sci": "Teleas lamellatus",
-  "family": "",
-  "order": "",
-  "genus": "Teleas",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p653107",
   "sci": "Telephium imperati",
   "family": "Caryophyllaceae",
@@ -172962,6 +168567,21 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "p07283f",
+  "sci": "Tenebrio molitor",
+  "family": "Tenebrionidae",
+  "order": "Coleoptera",
+  "genus": "Tenebrio",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Ténébrion meunier, Ténébrion à neuf stries lisses",
+   "en": "Hardback Beetle"
   }
  },
  {
@@ -173345,21 +168965,6 @@
   "family": "Apiaceae",
   "order": "Apiales",
   "genus": "Thapsia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pf9e0b1",
-  "sci": "Thelaira leucozona",
-  "family": "",
-  "order": "",
-  "genus": "Thelaira",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -173955,21 +169560,6 @@
   }
  },
  {
-  "id": "p9f5abb",
-  "sci": "Thyreus ramosus",
-  "family": "Apidae",
-  "order": "Hymenoptera",
-  "genus": "Thyreus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Crocise rameuse",
-   "en": ""
-  }
- },
- {
   "id": "p7dd9df",
   "sci": "Thysanocarpus curvipes",
   "family": "Brassicaceae",
@@ -174255,21 +169845,6 @@
   }
  },
  {
-  "id": "p003f55",
-  "sci": "Tlephusa cincinna",
-  "family": "",
-  "order": "",
-  "genus": "Tlephusa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pef91cc",
   "sci": "Tomostima cuneifolia",
   "family": "Brassicaceae",
@@ -174300,41 +169875,11 @@
   }
  },
  {
-  "id": "p36bae0",
-  "sci": "Torymus acrophilae",
-  "family": "",
-  "order": "",
-  "genus": "Torymus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "pe5d69f",
   "sci": "Tournefortiopsis crispiflora",
   "family": "Rubiaceae",
   "order": "Gentianales",
   "genus": "Tournefortiopsis",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p370ee3",
-  "sci": "Townsendiellomyia nidicola",
-  "family": "",
-  "order": "",
-  "genus": "Townsendiellomyia",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -174515,21 +170060,6 @@
   "family": "Leptoceridae",
   "order": "Trichoptera",
   "genus": "Triaenodes",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p4ad265",
-  "sci": "Triarthria setipennis",
-  "family": "",
-  "order": "",
-  "genus": "Triarthria",
   "status": "",
   "growthForm": "herb",
   "threat": "",
@@ -174975,36 +170505,6 @@
   }
  },
  {
-  "id": "p101da0",
-  "sci": "Trimorus caraborum",
-  "family": "",
-  "order": "",
-  "genus": "Trimorus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "pa5beed",
-  "sci": "Trimorus fulvimanus",
-  "family": "",
-  "order": "",
-  "genus": "Trimorus",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p0553fd",
   "sci": "Triphora trianthophoros",
   "family": "Orchidaceae",
@@ -175107,21 +170607,6 @@
   "common": {
    "fr": "Châtaigne, fausse bardane à petits fruits",
    "en": "Chinese burr"
-  }
- },
- {
-  "id": "pf52c4a",
-  "sci": "Trixa conspersa",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Trixa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -176520,21 +172005,6 @@
   }
  },
  {
-  "id": "p8cc794",
-  "sci": "Vespa mandarinia",
-  "family": "Vespidae",
-  "order": "Hymenoptera",
-  "genus": "Vespa",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Frelon géant",
-   "en": "Asian Giant Hornet"
-  }
- },
- {
   "id": "pf2c423",
   "sci": "Vespa orientalis",
   "family": "Vespidae",
@@ -176562,6 +172032,21 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "pafea1f",
+  "sci": "Vespa tropica",
+  "family": "Vespidae",
+  "order": "Hymenoptera",
+  "genus": "Vespa",
+  "status": "",
+  "growthForm": "herb",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Greater Banded Hornet"
   }
  },
  {
@@ -177210,21 +172695,6 @@
   }
  },
  {
-  "id": "pc8a556",
-  "sci": "Winthemia cruentata",
-  "family": "",
-  "order": "",
-  "genus": "Winthemia",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p309436",
   "sci": "Wormaldia copiosa",
   "family": "Philopotamidae",
@@ -177525,21 +172995,6 @@
   }
  },
  {
-  "id": "pfded23",
-  "sci": "Xenos pecki",
-  "family": "",
-  "order": "",
-  "genus": "Xenos",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p79071b",
   "sci": "Xenos vesparum",
   "family": "Xenidae",
@@ -177705,21 +173160,6 @@
   }
  },
  {
-  "id": "p94b5b1",
-  "sci": "Xylotachina diluta",
-  "family": "",
-  "order": "",
-  "genus": "Xylotachina",
-  "status": "",
-  "growthForm": "herb",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "p226662",
   "sci": "Xyris savanensis",
   "family": "Xyridaceae",
@@ -177802,21 +173242,6 @@
   "genus": "Yushania",
   "status": "",
   "growthForm": "grass",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p39990d",
-  "sci": "Zaira cinerea",
-  "family": "Tachinidae",
-  "order": "Diptera",
-  "genus": "Zaira",
-  "status": "",
-  "growthForm": "herb",
   "threat": "",
   "n_interactions": 1,
   "common": {
@@ -177952,21 +173377,6 @@
   "genus": "Ziziphus",
   "status": "",
   "growthForm": "shrub",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "p591385",
-  "sci": "Zodion intermedium",
-  "family": "",
-  "order": "",
-  "genus": "Zodion",
-  "status": "",
-  "growthForm": "herb",
   "threat": "",
   "n_interactions": 1,
   "common": {
