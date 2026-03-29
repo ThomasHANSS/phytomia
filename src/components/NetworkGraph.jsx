@@ -29,10 +29,9 @@ function OverviewPanel(props) {
                   </div>
                 </div>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
-                <span style={{ fontSize: 11, color: "var(--text3)" }}>{pct}%</span>
-                <span style={{ fontSize: 14, color: col }}>\u203a</span>
-              </div>
+              <span style={{ fontSize: 11, color: col, fontWeight: 500 }}>
+                {lang === "fr" ? "Explorer \u203a" : "Explore \u203a"}
+              </span>
             </div>
             <div style={{ height: 4, borderRadius: 2, background: col + "15", marginBottom: 8 }}>
               <div style={{ height: 4, borderRadius: 2, background: col, width: pct + "%", minWidth: 4 }} />
