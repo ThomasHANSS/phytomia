@@ -1,18 +1,5 @@
 [
  {
-  "id": "i4ec2c8",
-  "sci": "Harmonia axyridis",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Harmonia",
-  "threat": "",
-  "n_interactions": 1539,
-  "common": {
-   "fr": "Coccinelle asiatique",
-   "en": "Harlequin Ladybird"
-  }
- },
- {
   "id": "i27e12b",
   "sci": "Apis mellifera",
   "order": "Hymenoptera",
@@ -39,29 +26,29 @@
   }
  },
  {
-  "id": "ib9b9dc",
-  "sci": "Vanessa cardui",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Vanessa",
-  "threat": "",
-  "n_interactions": 1222,
-  "common": {
-   "fr": "Belle Dame",
-   "en": "Painted Lady"
-  }
- },
- {
   "id": "i22247a",
   "sci": "Pieris rapae",
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Pieris",
   "threat": "",
-  "n_interactions": 1208,
+  "n_interactions": 1203,
   "common": {
    "fr": "Piéride de la rave",
    "en": "Small white"
+  }
+ },
+ {
+  "id": "ib9b9dc",
+  "sci": "Vanessa cardui",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Vanessa",
+  "threat": "",
+  "n_interactions": 1175,
+  "common": {
+   "fr": "Belle Dame",
+   "en": "Painted Lady"
   }
  },
  {
@@ -149,23 +136,10 @@
   "family": "Syrphidae",
   "genus": "Eristalis",
   "threat": "",
-  "n_interactions": 956,
+  "n_interactions": 929,
   "common": {
    "fr": "Eristale gluante, Mouche pourceau",
    "en": "Drone Fly"
-  }
- },
- {
-  "id": "i890e25",
-  "sci": "Coccinella septempunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 805,
-  "common": {
-   "fr": "Coccinelle à sept points",
-   "en": "Seven-spot ladybird"
   }
  },
  {
@@ -195,16 +169,16 @@
   }
  },
  {
-  "id": "i71f4f1",
-  "sci": "Chrysoperla carnea",
-  "order": "Neuroptera",
-  "family": "Chrysopidae",
-  "genus": "Chrysoperla",
+  "id": "i4ec2c8",
+  "sci": "Harmonia axyridis",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Harmonia",
   "threat": "",
-  "n_interactions": 643,
+  "n_interactions": 646,
   "common": {
-   "fr": "",
-   "en": "Common green lacewing"
+   "fr": "Coccinelle asiatique",
+   "en": "Harlequin Ladybird"
   }
  },
  {
@@ -214,36 +188,10 @@
   "family": "Pieridae",
   "genus": "Pieris",
   "threat": "",
-  "n_interactions": 628,
+  "n_interactions": 625,
   "common": {
    "fr": "Piéride du chou",
    "en": "Large white"
-  }
- },
- {
-  "id": "ibe9924",
-  "sci": "Tinca tinca",
-  "order": "Cypriniformes",
-  "family": "Cyprinidae",
-  "genus": "Tinca",
-  "threat": "",
-  "n_interactions": 623,
-  "common": {
-   "fr": "Aiguillons",
-   "en": "Doctor Fish"
-  }
- },
- {
-  "id": "ia8833f",
-  "sci": "Vespa velutina",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 614,
-  "common": {
-   "fr": "Frelon asiatique",
-   "en": "Asian Hornet"
   }
  },
  {
@@ -253,7 +201,7 @@
   "family": "Pieridae",
   "genus": "Pieris",
   "threat": "",
-  "n_interactions": 577,
+  "n_interactions": 575,
   "common": {
    "fr": "",
    "en": "Green-veined White"
@@ -266,7 +214,7 @@
   "family": "Nymphalidae",
   "genus": "Vanessa",
   "threat": "",
-  "n_interactions": 575,
+  "n_interactions": 572,
   "common": {
    "fr": "Vulcain",
    "en": "Red admiral"
@@ -286,16 +234,16 @@
   }
  },
  {
-  "id": "i61e160",
-  "sci": "Maniola jurtina",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Maniola",
+  "id": "i71f4f1",
+  "sci": "Chrysoperla carnea",
+  "order": "Neuroptera",
+  "family": "Chrysopidae",
+  "genus": "Chrysoperla",
   "threat": "",
-  "n_interactions": 540,
+  "n_interactions": 556,
   "common": {
-   "fr": "Myrtil",
-   "en": "Meadow brown"
+   "fr": "",
+   "en": "Common green lacewing"
   }
  },
  {
@@ -312,29 +260,29 @@
   }
  },
  {
+  "id": "i61e160",
+  "sci": "Maniola jurtina",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Maniola",
+  "threat": "",
+  "n_interactions": 538,
+  "common": {
+   "fr": "Myrtil",
+   "en": "Meadow brown"
+  }
+ },
+ {
   "id": "ifec010",
   "sci": "Aglais io",
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Aglais",
   "threat": "",
-  "n_interactions": 494,
+  "n_interactions": 492,
   "common": {
    "fr": "Paon du jour",
    "en": "Peacock butterfly"
-  }
- },
- {
-  "id": "idedf4f",
-  "sci": "Polistes dominula",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 486,
-  "common": {
-   "fr": "Guêpe poliste",
-   "en": "Paper Wasp"
   }
  },
  {
@@ -344,10 +292,23 @@
   "family": "Syrphidae",
   "genus": "Eristalis",
   "threat": "",
-  "n_interactions": 480,
+  "n_interactions": 478,
   "common": {
    "fr": "",
    "en": "Hover Fly"
+  }
+ },
+ {
+  "id": "idedf4f",
+  "sci": "Polistes dominula",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 458,
+  "common": {
+   "fr": "Guêpe poliste",
+   "en": "Paper Wasp"
   }
  },
  {
@@ -357,23 +318,10 @@
   "family": "Lycaenidae",
   "genus": "Polyommatus",
   "threat": "",
-  "n_interactions": 460,
+  "n_interactions": 457,
   "common": {
    "fr": "Azuré commun",
    "en": "Common blue"
-  }
- },
- {
-  "id": "i88f965",
-  "sci": "Adalia bipunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Adalia",
-  "threat": "",
-  "n_interactions": 432,
-  "common": {
-   "fr": "Coccinelle rouge à deux points noirs",
-   "en": "2-spot Ladybird"
   }
  },
  {
@@ -383,7 +331,7 @@
   "family": "Lycaenidae",
   "genus": "Lycaena",
   "threat": "",
-  "n_interactions": 430,
+  "n_interactions": 428,
   "common": {
    "fr": "Cuivré commun",
    "en": "American Copper"
@@ -403,26 +351,13 @@
   }
  },
  {
-  "id": "i0c4ba4",
-  "sci": "Coccinella trifasciata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 414,
-  "common": {
-   "fr": "",
-   "en": "Three-banded Lady Beetle"
-  }
- },
- {
   "id": "i9ae652",
   "sci": "Gonepteryx rhamni",
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Gonepteryx",
   "threat": "",
-  "n_interactions": 413,
+  "n_interactions": 410,
   "common": {
    "fr": "Citron",
    "en": "Brimstone"
@@ -435,36 +370,10 @@
   "family": "Syrphidae",
   "genus": "Myathropa",
   "threat": "",
-  "n_interactions": 413,
+  "n_interactions": 410,
   "common": {
    "fr": "eristale des fleurs",
    "en": ""
-  }
- },
- {
-  "id": "ie5ac62",
-  "sci": "Harmonia quadripunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Harmonia",
-  "threat": "",
-  "n_interactions": 411,
-  "common": {
-   "fr": "Coccinelle à quatre points",
-   "en": "Cream-Streaked Ladybird"
-  }
- },
- {
-  "id": "i33276c",
-  "sci": "Heriades truncorum",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Heriades",
-  "threat": "",
-  "n_interactions": 409,
-  "common": {
-   "fr": "",
-   "en": "Large-headed Resin Bee"
   }
  },
  {
@@ -481,29 +390,29 @@
   }
  },
  {
+  "id": "i33276c",
+  "sci": "Heriades truncorum",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Heriades",
+  "threat": "",
+  "n_interactions": 408,
+  "common": {
+   "fr": "",
+   "en": "Large-headed Resin Bee"
+  }
+ },
+ {
   "id": "i0a6d8f",
   "sci": "Aglais urticae",
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Aglais",
   "threat": "",
-  "n_interactions": 403,
+  "n_interactions": 402,
   "common": {
    "fr": "Petite tortue",
    "en": "Small tortoiseshell"
-  }
- },
- {
-  "id": "i59a404",
-  "sci": "Coccinella magnifica",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 401,
-  "common": {
-   "fr": "Coccinelle éclatante",
-   "en": "Scarce 7-spot Ladybird"
   }
  },
  {
@@ -539,7 +448,7 @@
   "family": "Melittidae",
   "genus": "Dasypoda",
   "threat": "",
-  "n_interactions": 396,
+  "n_interactions": 395,
   "common": {
    "fr": "",
    "en": "Hairy Legged Mining Bee"
@@ -556,19 +465,6 @@
   "common": {
    "fr": "",
    "en": "Davies' Colletes"
-  }
- },
- {
-  "id": "ic4dd95",
-  "sci": "Nomada integra",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 386,
-  "common": {
-   "fr": "",
-   "en": "Cat's-ear Nomad Bee"
   }
  },
  {
@@ -598,13 +494,26 @@
   }
  },
  {
+  "id": "ic4dd95",
+  "sci": "Nomada integra",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 381,
+  "common": {
+   "fr": "",
+   "en": "Cat's-ear Nomad Bee"
+  }
+ },
+ {
   "id": "ic85295",
   "sci": "Papilio machaon",
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
   "threat": "",
-  "n_interactions": 381,
+  "n_interactions": 380,
   "common": {
    "fr": "Machaon",
    "en": "Swallowtail"
@@ -617,23 +526,10 @@
   "family": "Megachilidae",
   "genus": "Heriades",
   "threat": "",
-  "n_interactions": 379,
-  "common": {
-   "fr": "",
-   "en": "Small-headed Resin Bee"
-  }
- },
- {
-  "id": "i98b825",
-  "sci": "Nomada facilis",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
   "n_interactions": 378,
   "common": {
    "fr": "",
-   "en": "Hawk's-beard Nomad Bee"
+   "en": "Small-headed Resin Bee"
   }
  },
  {
@@ -650,8 +546,8 @@
   }
  },
  {
-  "id": "ia653bb",
-  "sci": "Nomada signata",
+  "id": "i98b825",
+  "sci": "Nomada facilis",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -659,7 +555,7 @@
   "n_interactions": 375,
   "common": {
    "fr": "",
-   "en": "Broad-banded Nomad Bee"
+   "en": "Hawk's-beard Nomad Bee"
   }
  },
  {
@@ -676,16 +572,16 @@
   }
  },
  {
-  "id": "if0a469",
-  "sci": "Aphantopus hyperantus",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Aphantopus",
+  "id": "ia653bb",
+  "sci": "Nomada signata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
   "threat": "",
-  "n_interactions": 370,
+  "n_interactions": 372,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Broad-banded Nomad Bee"
   }
  },
  {
@@ -699,6 +595,19 @@
   "common": {
    "fr": "",
    "en": "Maidstone Mining Bee"
+  }
+ },
+ {
+  "id": "if0a469",
+  "sci": "Aphantopus hyperantus",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Aphantopus",
+  "threat": "",
+  "n_interactions": 369,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -728,6 +637,19 @@
   }
  },
  {
+  "id": "i890e25",
+  "sci": "Coccinella septempunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 356,
+  "common": {
+   "fr": "Coccinelle à sept points",
+   "en": "Seven-spot ladybird"
+  }
+ },
+ {
   "id": "if1831f",
   "sci": "Liparus tenebriodes",
   "order": "Coleoptera",
@@ -754,19 +676,6 @@
   }
  },
  {
-  "id": "i0f75be",
-  "sci": "Syrphus vitripennis",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Syrphus",
-  "threat": "",
-  "n_interactions": 349,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i225f99",
   "sci": "Megachile genalis",
   "order": "Hymenoptera",
@@ -786,7 +695,7 @@
   "family": "Syrphidae",
   "genus": "Helophilus",
   "threat": "",
-  "n_interactions": 344,
+  "n_interactions": 342,
   "common": {
    "fr": "",
    "en": ""
@@ -799,7 +708,7 @@
   "family": "Nymphalidae",
   "genus": "Pyronia",
   "threat": "",
-  "n_interactions": 333,
+  "n_interactions": 332,
   "common": {
    "fr": "Amaryllis",
    "en": "Gatekeeper"
@@ -825,7 +734,7 @@
   "family": "Apidae",
   "genus": "Nomada",
   "threat": "",
-  "n_interactions": 294,
+  "n_interactions": 292,
   "common": {
    "fr": "",
    "en": ""
@@ -845,26 +754,13 @@
   }
  },
  {
-  "id": "i1bba9a",
-  "sci": "Vespula germanica",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 280,
-  "common": {
-   "fr": "Guêpe germanique",
-   "en": "German wasp"
-  }
- },
- {
   "id": "i3aaf74",
   "sci": "Thymelicus sylvestris",
   "order": "Lepidoptera",
   "family": "Hesperiidae",
   "genus": "Thymelicus",
   "threat": "",
-  "n_interactions": 275,
+  "n_interactions": 274,
   "common": {
    "fr": "Hespérie de la Houque, Thaumas, Bande noire",
    "en": "Hesperiid moth"
@@ -897,28 +793,28 @@
   }
  },
  {
-  "id": "i416025",
-  "sci": "Eristalis pertinax",
+  "id": "i0f75be",
+  "sci": "Syrphus vitripennis",
   "order": "Diptera",
   "family": "Syrphidae",
-  "genus": "Eristalis",
+  "genus": "Syrphus",
   "threat": "",
-  "n_interactions": 262,
+  "n_interactions": 263,
   "common": {
    "fr": "",
    "en": ""
   }
  },
  {
-  "id": "i3758fe",
-  "sci": "Volucella pellucens",
+  "id": "i416025",
+  "sci": "Eristalis pertinax",
   "order": "Diptera",
   "family": "Syrphidae",
-  "genus": "Volucella",
+  "genus": "Eristalis",
   "threat": "",
-  "n_interactions": 256,
+  "n_interactions": 261,
   "common": {
-   "fr": "Volucelle à ventre blanc en devant",
+   "fr": "",
    "en": ""
   }
  },
@@ -932,6 +828,19 @@
   "n_interactions": 253,
   "common": {
    "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i3758fe",
+  "sci": "Volucella pellucens",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Volucella",
+  "threat": "",
+  "n_interactions": 252,
+  "common": {
+   "fr": "Volucelle à ventre blanc en devant",
    "en": ""
   }
  },
@@ -955,7 +864,7 @@
   "family": "Apidae",
   "genus": "Anthophora",
   "threat": "",
-  "n_interactions": 247,
+  "n_interactions": 246,
   "common": {
    "fr": "Anthophore à tarses gonflés",
    "en": ""
@@ -981,7 +890,7 @@
   "family": "Sphingidae",
   "genus": "Macroglossum",
   "threat": "",
-  "n_interactions": 243,
+  "n_interactions": 242,
   "common": {
    "fr": "Moro-sphinx",
    "en": "Hummingbird hawk-moth"
@@ -1046,7 +955,7 @@
   "family": "Nymphalidae",
   "genus": "Melanargia",
   "threat": "",
-  "n_interactions": 232,
+  "n_interactions": 229,
   "common": {
    "fr": "Demi-deuil",
    "en": "Marbled white"
@@ -1089,6 +998,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i1bba9a",
+  "sci": "Vespula germanica",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 223,
+  "common": {
+   "fr": "Guêpe germanique",
+   "en": "German wasp"
   }
  },
  {
@@ -1150,7 +1072,7 @@
   "family": "Cerambycidae",
   "genus": "Strangalia",
   "threat": "",
-  "n_interactions": 206,
+  "n_interactions": 205,
   "common": {
    "fr": "Lepture à étuis étranglés",
    "en": ""
@@ -1167,19 +1089,6 @@
   "common": {
    "fr": "",
    "en": "Lobe-spurred Furrow Bee"
-  }
- },
- {
-  "id": "i9b1294",
-  "sci": "Vespa crabro",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 197,
-  "common": {
-   "fr": "Frelon européen",
-   "en": "European hornet"
   }
  },
  {
@@ -1222,19 +1131,6 @@
   }
  },
  {
-  "id": "i29f87b",
-  "sci": "Papilio zelicaon",
-  "order": "Lepidoptera",
-  "family": "Papilionidae",
-  "genus": "Papilio",
-  "threat": "",
-  "n_interactions": 189,
-  "common": {
-   "fr": "",
-   "en": "Anise Swallowtail"
-  }
- },
- {
   "id": "ic0076d",
   "sci": "Andrena suerinensis",
   "order": "Hymenoptera",
@@ -1245,6 +1141,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i29f87b",
+  "sci": "Papilio zelicaon",
+  "order": "Lepidoptera",
+  "family": "Papilionidae",
+  "genus": "Papilio",
+  "threat": "",
+  "n_interactions": 188,
+  "common": {
+   "fr": "",
+   "en": "Anise Swallowtail"
   }
  },
  {
@@ -1261,42 +1170,16 @@
   }
  },
  {
-  "id": "i8423df",
-  "sci": "Nomada stigma",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 183,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "id25738",
   "sci": "Otiorhynchus sulcatus",
   "order": "Coleoptera",
   "family": "Curculionidae",
   "genus": "Otiorhynchus",
   "threat": "",
-  "n_interactions": 183,
+  "n_interactions": 182,
   "common": {
    "fr": "Charançon à corselet sillonné",
    "en": "Black Vine Weevil"
-  }
- },
- {
-  "id": "i84cdf4",
-  "sci": "Volucella bombylans",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Volucella",
-  "threat": "",
-  "n_interactions": 183,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -1306,7 +1189,7 @@
   "family": "Apidae",
   "genus": "Nomada",
   "threat": "",
-  "n_interactions": 182,
+  "n_interactions": 181,
   "common": {
    "fr": "",
    "en": ""
@@ -1352,13 +1235,26 @@
   }
  },
  {
+  "id": "i8423df",
+  "sci": "Nomada stigma",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 178,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "iedc90a",
   "sci": "Bombus inexspectatus",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
   "threat": "",
-  "n_interactions": 178,
+  "n_interactions": 177,
   "common": {
    "fr": "Bourdon inattendu",
    "en": "Unexpected Bumblebee"
@@ -1423,7 +1319,7 @@
   "family": "Apidae",
   "genus": "Nomada",
   "threat": "",
-  "n_interactions": 173,
+  "n_interactions": 172,
   "common": {
    "fr": "",
    "en": ""
@@ -1475,7 +1371,7 @@
   "family": "Curculionidae",
   "genus": "Otiorhynchus",
   "threat": "",
-  "n_interactions": 168,
+  "n_interactions": 167,
   "common": {
    "fr": "",
    "en": "Strawberry Root Weevil"
@@ -1540,49 +1436,10 @@
   "family": "Papilionidae",
   "genus": "Papilio",
   "threat": "",
-  "n_interactions": 158,
+  "n_interactions": 157,
   "common": {
    "fr": "",
    "en": "American Black Swallowtail"
-  }
- },
- {
-  "id": "i18206a",
-  "sci": "Thymelicus acteon",
-  "order": "Lepidoptera",
-  "family": "Hesperiidae",
-  "genus": "Thymelicus",
-  "threat": "",
-  "n_interactions": 158,
-  "common": {
-   "fr": "Hespérie du Chiendent, Hespérie Actéon, Actéon",
-   "en": "Lulworth Skipper"
-  }
- },
- {
-  "id": "i62fe0e",
-  "sci": "Anthophora plumipes",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Anthophora",
-  "threat": "",
-  "n_interactions": 157,
-  "common": {
-   "fr": "Anthophore commune, Anthophore plumeuse, Anthophore à pattes plumeuses",
-   "en": "Hairy Footed Flower Bee"
-  }
- },
- {
-  "id": "i9f1adf",
-  "sci": "Volucella zonaria",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Volucella",
-  "threat": "",
-  "n_interactions": 157,
-  "common": {
-   "fr": "Volucelle zonée",
-   "en": "Hornet Hoverfly"
   }
  },
  {
@@ -1612,55 +1469,42 @@
   }
  },
  {
+  "id": "i18206a",
+  "sci": "Thymelicus acteon",
+  "order": "Lepidoptera",
+  "family": "Hesperiidae",
+  "genus": "Thymelicus",
+  "threat": "",
+  "n_interactions": 156,
+  "common": {
+   "fr": "Hespérie du Chiendent, Hespérie Actéon, Actéon",
+   "en": "Lulworth Skipper"
+  }
+ },
+ {
+  "id": "i62fe0e",
+  "sci": "Anthophora plumipes",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Anthophora",
+  "threat": "",
+  "n_interactions": 155,
+  "common": {
+   "fr": "Anthophore commune, Anthophore plumeuse, Anthophore à pattes plumeuses",
+   "en": "Hairy Footed Flower Bee"
+  }
+ },
+ {
   "id": "ifa7335",
   "sci": "Phyllobius pyri",
   "order": "Coleoptera",
   "family": "Curculionidae",
   "genus": "Phyllobius",
   "threat": "",
-  "n_interactions": 155,
+  "n_interactions": 154,
   "common": {
    "fr": "",
    "en": "Common Leaf Weevil"
-  }
- },
- {
-  "id": "ie241ea",
-  "sci": "Chrysotoxum festivum",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Chrysotoxum",
-  "threat": "",
-  "n_interactions": 154,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "id3b48f",
-  "sci": "Nomada flavoguttata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 154,
-  "common": {
-   "fr": "",
-   "en": "Little Nomad Bee"
-  }
- },
- {
-  "id": "id41415",
-  "sci": "Vespula vulgaris",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 153,
-  "common": {
-   "fr": "Guêpe commune",
-   "en": "Common European Wasp"
   }
  },
  {
@@ -1677,13 +1521,26 @@
   }
  },
  {
+  "id": "i9f1adf",
+  "sci": "Volucella zonaria",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Volucella",
+  "threat": "",
+  "n_interactions": 151,
+  "common": {
+   "fr": "Volucelle zonée",
+   "en": "Hornet Hoverfly"
+  }
+ },
+ {
   "id": "i128890",
   "sci": "Otiorhynchus ligustici",
   "order": "Coleoptera",
   "family": "Curculionidae",
   "genus": "Otiorhynchus",
   "threat": "",
-  "n_interactions": 151,
+  "n_interactions": 150,
   "common": {
    "fr": "Charançon gris à étuis réunis & chagrinés",
    "en": "Weevil"
@@ -1696,23 +1553,10 @@
   "family": "Nymphalidae",
   "genus": "Vanessa",
   "threat": "",
-  "n_interactions": 151,
-  "common": {
-   "fr": "",
-   "en": "America Painted Lady"
-  }
- },
- {
-  "id": "i83ac3b",
-  "sci": "Vespa sexmaculata",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
   "n_interactions": 150,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "America Painted Lady"
   }
  },
  {
@@ -1813,10 +1657,23 @@
   "family": "Papilionidae",
   "genus": "Papilio",
   "threat": "",
-  "n_interactions": 138,
+  "n_interactions": 137,
   "common": {
    "fr": "",
    "en": "Eastern Tiger Swallowtail"
+  }
+ },
+ {
+  "id": "i84cdf4",
+  "sci": "Volucella bombylans",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Volucella",
+  "threat": "",
+  "n_interactions": 137,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -1830,19 +1687,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ib104a3",
-  "sci": "Lysandra bellargus",
-  "order": "Lepidoptera",
-  "family": "Lycaenidae",
-  "genus": "Lysandra",
-  "threat": "",
-  "n_interactions": 135,
-  "common": {
-   "fr": "Argus bleu céleste",
-   "en": "Adonis Blue"
   }
  },
  {
@@ -1872,6 +1716,45 @@
   }
  },
  {
+  "id": "ie241ea",
+  "sci": "Chrysotoxum festivum",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Chrysotoxum",
+  "threat": "",
+  "n_interactions": 134,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "ib104a3",
+  "sci": "Lysandra bellargus",
+  "order": "Lepidoptera",
+  "family": "Lycaenidae",
+  "genus": "Lysandra",
+  "threat": "",
+  "n_interactions": 134,
+  "common": {
+   "fr": "Argus bleu céleste",
+   "en": "Adonis Blue"
+  }
+ },
+ {
+  "id": "id41415",
+  "sci": "Vespula vulgaris",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 133,
+  "common": {
+   "fr": "Guêpe commune",
+   "en": "Common European Wasp"
+  }
+ },
+ {
   "id": "ib59336",
   "sci": "Anthophora furcata",
   "order": "Hymenoptera",
@@ -1895,19 +1778,6 @@
   "common": {
    "fr": "Bourdon grisé",
    "en": "Knapweed Carder Bee"
-  }
- },
- {
-  "id": "i77ab00",
-  "sci": "Nomada fabriciana",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 130,
-  "common": {
-   "fr": "Nomade de Fabricius",
-   "en": "Fabricius' Nomad Bee"
   }
  },
  {
@@ -1937,19 +1807,6 @@
   }
  },
  {
-  "id": "i1cddaf",
-  "sci": "Nomada flava",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 127,
-  "common": {
-   "fr": "",
-   "en": "Flavous Nomad Bee"
-  }
- },
- {
   "id": "i7f3f68",
   "sci": "Otiorhynchus indefinitus",
   "order": "Coleoptera",
@@ -1960,19 +1817,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ib5720c",
-  "sci": "Papilio rutulus",
-  "order": "Lepidoptera",
-  "family": "Papilionidae",
-  "genus": "Papilio",
-  "threat": "",
-  "n_interactions": 127,
-  "common": {
-   "fr": "",
-   "en": "Western Tiger Swallowtail"
   }
  },
  {
@@ -1989,29 +1833,16 @@
   }
  },
  {
-  "id": "i15cb1f",
-  "sci": "Nomada goodeniana",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
+  "id": "ib5720c",
+  "sci": "Papilio rutulus",
+  "order": "Lepidoptera",
+  "family": "Papilionidae",
+  "genus": "Papilio",
   "threat": "",
   "n_interactions": 126,
   "common": {
    "fr": "",
-   "en": "Gooden's Nomad Bee"
-  }
- },
- {
-  "id": "i2fe55a",
-  "sci": "Nomada panzeri",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 126,
-  "common": {
-   "fr": "",
-   "en": "Panzer's Nomad Bee"
+   "en": "Western Tiger Swallowtail"
   }
  },
  {
@@ -2025,58 +1856,6 @@
   "common": {
    "fr": "",
    "en": "Oblong Wool Carder Bee"
-  }
- },
- {
-  "id": "i03f9fc",
-  "sci": "Lysandra coridon",
-  "order": "Lepidoptera",
-  "family": "Lycaenidae",
-  "genus": "Lysandra",
-  "threat": "",
-  "n_interactions": 124,
-  "common": {
-   "fr": "Argus bleu-nacré",
-   "en": "Chalk Hill Blue"
-  }
- },
- {
-  "id": "ia093ee",
-  "sci": "Nomada castellana",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 124,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i3d1f87",
-  "sci": "Nomada marshamella",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 124,
-  "common": {
-   "fr": "",
-   "en": "Marsham's Nomad Bee"
-  }
- },
- {
-  "id": "i727885",
-  "sci": "Nomada rufipes",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 123,
-  "common": {
-   "fr": "",
-   "en": "Black-horned Nomad Bee"
   }
  },
  {
@@ -2103,6 +1882,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i03f9fc",
+  "sci": "Lysandra coridon",
+  "order": "Lepidoptera",
+  "family": "Lycaenidae",
+  "genus": "Lysandra",
+  "threat": "",
+  "n_interactions": 122,
+  "common": {
+   "fr": "Argus bleu-nacré",
+   "en": "Chalk Hill Blue"
   }
  },
  {
@@ -2158,6 +1950,19 @@
   }
  },
  {
+  "id": "ia8833f",
+  "sci": "Vespa velutina",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 116,
+  "common": {
+   "fr": "Frelon asiatique",
+   "en": "Asian Hornet"
+  }
+ },
+ {
   "id": "i0eba33",
   "sci": "Ceratina dupla",
   "order": "Hymenoptera",
@@ -2171,19 +1976,6 @@
   }
  },
  {
-  "id": "icedf5d",
-  "sci": "Nomada conjungens",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 112,
-  "common": {
-   "fr": "",
-   "en": "Fringeless Nomad Bee"
-  }
- },
- {
   "id": "icb3c94",
   "sci": "Platycheirus albimanus",
   "order": "Diptera",
@@ -2194,19 +1986,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "iae5213",
-  "sci": "Adalia decempunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Adalia",
-  "threat": "",
-  "n_interactions": 111,
-  "common": {
-   "fr": "Coccinelle à dix points",
-   "en": "10-spot Ladybird"
   }
  },
  {
@@ -2233,6 +2012,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "icedf5d",
+  "sci": "Nomada conjungens",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 109,
+  "common": {
+   "fr": "",
+   "en": "Fringeless Nomad Bee"
   }
  },
  {
@@ -2320,7 +2112,7 @@
   "family": "Apidae",
   "genus": "Ceratina",
   "threat": "",
-  "n_interactions": 105,
+  "n_interactions": 104,
   "common": {
    "fr": "Ceratine commune",
    "en": ""
@@ -2340,29 +2132,16 @@
   }
  },
  {
-  "id": "i9832c0",
-  "sci": "Vespula pensylvanica",
+  "id": "i9b1294",
+  "sci": "Vespa crabro",
   "order": "Hymenoptera",
   "family": "Vespidae",
-  "genus": "Vespula",
+  "genus": "Vespa",
   "threat": "",
-  "n_interactions": 102,
+  "n_interactions": 101,
   "common": {
-   "fr": "guêpe de l'ouest",
-   "en": "Western Yellowjacket"
-  }
- },
- {
-  "id": "i9967a1",
-  "sci": "Zygaena lonicerae",
-  "order": "Lepidoptera",
-  "family": "Zygaenidae",
-  "genus": "Zygaena",
-  "threat": "",
-  "n_interactions": 100,
-  "common": {
-   "fr": "Zygaena lonicerae, Zygène du chèvrefeuille, La Zygène des bois",
-   "en": "Narrow-Bordered Five-Spot Burnet"
+   "fr": "Frelon européen",
+   "en": "European hornet"
   }
  },
  {
@@ -2392,16 +2171,16 @@
   }
  },
  {
-  "id": "i3dd951",
-  "sci": "Sphyrna lewini",
-  "order": "Carcharhiniformes",
-  "family": "Sphyrnidae",
-  "genus": "Sphyrna",
+  "id": "i9967a1",
+  "sci": "Zygaena lonicerae",
+  "order": "Lepidoptera",
+  "family": "Zygaenidae",
+  "genus": "Zygaena",
   "threat": "",
-  "n_interactions": 97,
+  "n_interactions": 99,
   "common": {
-   "fr": "Requin marteau à festons",
-   "en": "Bronze hammerhead shark"
+   "fr": "Zygaena lonicerae, Zygène du chèvrefeuille, La Zygène des bois",
+   "en": "Narrow-Bordered Five-Spot Burnet"
   }
  },
  {
@@ -2470,19 +2249,6 @@
   }
  },
  {
-  "id": "iddf7de",
-  "sci": "Papilio eurymedon",
-  "order": "Lepidoptera",
-  "family": "Papilionidae",
-  "genus": "Papilio",
-  "threat": "",
-  "n_interactions": 93,
-  "common": {
-   "fr": "",
-   "en": "Pale Swallowtail"
-  }
- },
- {
   "id": "iff4690",
   "sci": "Oulema gallaeciana",
   "order": "Coleoptera",
@@ -2496,16 +2262,16 @@
   }
  },
  {
-  "id": "ie94cb4",
-  "sci": "Polistes fuscatus",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
+  "id": "iddf7de",
+  "sci": "Papilio eurymedon",
+  "order": "Lepidoptera",
+  "family": "Papilionidae",
+  "genus": "Papilio",
   "threat": "",
   "n_interactions": 92,
   "common": {
-   "fr": "Guêpe svelte du Nord",
-   "en": "Common Paper Wasp"
+   "fr": "",
+   "en": "Pale Swallowtail"
   }
  },
  {
@@ -2558,19 +2324,6 @@
   "common": {
    "fr": "Syrphe du poirier, Syrphe pyrastre",
    "en": ""
-  }
- },
- {
-  "id": "if77f30",
-  "sci": "Vespula maculifrons",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 91,
-  "common": {
-   "fr": "guêpe de l'est",
-   "en": "Eastern Yellowjacket"
   }
  },
  {
@@ -2808,13 +2561,26 @@
   }
  },
  {
+  "id": "ie94cb4",
+  "sci": "Polistes fuscatus",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 83,
+  "common": {
+   "fr": "Guêpe svelte du Nord",
+   "en": "Common Paper Wasp"
+  }
+ },
+ {
   "id": "i1390fb",
   "sci": "Syrphus opinator",
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Syrphus",
   "threat": "",
-  "n_interactions": 84,
+  "n_interactions": 83,
   "common": {
    "fr": "",
    "en": ""
@@ -2964,32 +2730,6 @@
   }
  },
  {
-  "id": "i494895",
-  "sci": "Lasius niger",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 78,
-  "common": {
-   "fr": "Fourmi noire des jardins",
-   "en": "Small Black Ant"
-  }
- },
- {
-  "id": "i0472cf",
-  "sci": "Nomada sheppardana",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 78,
-  "common": {
-   "fr": "",
-   "en": "Dark Nomad Bee"
-  }
- },
- {
   "id": "ia25723",
   "sci": "Cyaniris semiargus",
   "order": "Lepidoptera",
@@ -3003,16 +2743,16 @@
   }
  },
  {
-  "id": "i028c36",
-  "sci": "Phyllobius betulinus",
-  "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Phyllobius",
+  "id": "i494895",
+  "sci": "Lasius niger",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Lasius",
   "threat": "",
   "n_interactions": 77,
   "common": {
-   "fr": "",
-   "en": ""
+   "fr": "Fourmi noire des jardins",
+   "en": "Small Black Ant"
   }
  },
  {
@@ -3055,11 +2795,11 @@
   }
  },
  {
-  "id": "ic3bf6e",
-  "sci": "Nomada posthuma",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
+  "id": "i230271",
+  "sci": "Otiorhynchus morio",
+  "order": "Coleoptera",
+  "family": "Curculionidae",
+  "genus": "Otiorhynchus",
   "threat": "",
   "n_interactions": 76,
   "common": {
@@ -3068,11 +2808,11 @@
   }
  },
  {
-  "id": "i230271",
-  "sci": "Otiorhynchus morio",
+  "id": "i028c36",
+  "sci": "Phyllobius betulinus",
   "order": "Coleoptera",
   "family": "Curculionidae",
-  "genus": "Otiorhynchus",
+  "genus": "Phyllobius",
   "threat": "",
   "n_interactions": 76,
   "common": {
@@ -3107,19 +2847,6 @@
   }
  },
  {
-  "id": "ib221e7",
-  "sci": "Papilio troilus",
-  "order": "Lepidoptera",
-  "family": "Papilionidae",
-  "genus": "Papilio",
-  "threat": "",
-  "n_interactions": 75,
-  "common": {
-   "fr": "",
-   "en": "Spicebush Swallowtail"
-  }
- },
- {
   "id": "idea67a",
   "sci": "Plagiosterna aenea",
   "order": "Coleoptera",
@@ -3146,16 +2873,16 @@
   }
  },
  {
-  "id": "ia0b7c2",
-  "sci": "Lasius fuliginosus",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
+  "id": "ib221e7",
+  "sci": "Papilio troilus",
+  "order": "Lepidoptera",
+  "family": "Papilionidae",
+  "genus": "Papilio",
   "threat": "",
   "n_interactions": 73,
   "common": {
-   "fr": "Fourmi fuligineuse",
-   "en": "Jet Ant"
+   "fr": "",
+   "en": "Spicebush Swallowtail"
   }
  },
  {
@@ -3169,19 +2896,6 @@
   "common": {
    "fr": "",
    "en": "Turnip Flea Beetle"
-  }
- },
- {
-  "id": "i35c166",
-  "sci": "Eristalis hirta",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Eristalis",
-  "threat": "",
-  "n_interactions": 72,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -3237,6 +2951,19 @@
   }
  },
  {
+  "id": "i35c166",
+  "sci": "Eristalis hirta",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Eristalis",
+  "threat": "",
+  "n_interactions": 71,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "icbd8e9",
   "sci": "Halictus confusus",
   "order": "Hymenoptera",
@@ -3247,32 +2974,6 @@
   "common": {
    "fr": "",
    "en": "Southern Bronze Furrow Bee"
-  }
- },
- {
-  "id": "i1ac9cd",
-  "sci": "Lycaena alciphron",
-  "order": "Lepidoptera",
-  "family": "Lycaenidae",
-  "genus": "Lycaena",
-  "threat": "",
-  "n_interactions": 70,
-  "common": {
-   "fr": "Cuivré flamboyant",
-   "en": "Purple-shot Copper"
-  }
- },
- {
-  "id": "ia7b196",
-  "sci": "Myrrha octodecimguttata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Myrrha",
-  "threat": "",
-  "n_interactions": 70,
-  "common": {
-   "fr": "Coccinelle des pins",
-   "en": "18-Spot Ladybird"
   }
  },
  {
@@ -3302,42 +3003,16 @@
   }
  },
  {
-  "id": "i6557cb",
-  "sci": "Lasius brunneus",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 69,
-  "common": {
-   "fr": "",
-   "en": "Brown Ant"
-  }
- },
- {
-  "id": "ic1f917",
-  "sci": "Zygaena carniolica",
+  "id": "i1ac9cd",
+  "sci": "Lycaena alciphron",
   "order": "Lepidoptera",
-  "family": "Zygaenidae",
-  "genus": "Zygaena",
+  "family": "Lycaenidae",
+  "genus": "Lycaena",
   "threat": "",
   "n_interactions": 69,
   "common": {
-   "fr": "Zygène de Carniole",
-   "en": "Crepuscular Burnet"
-  }
- },
- {
-  "id": "i9ec4f3",
-  "sci": "Zygaena viciae",
-  "order": "Lepidoptera",
-  "family": "Zygaenidae",
-  "genus": "Zygaena",
-  "threat": "",
-  "n_interactions": 69,
-  "common": {
-   "fr": "Zygène des Thérésiens",
-   "en": "New Forest Burnet"
+   "fr": "Cuivré flamboyant",
+   "en": "Purple-shot Copper"
   }
  },
  {
@@ -3351,19 +3026,6 @@
   "common": {
    "fr": "",
    "en": "Hawthorn Jewel Beetle"
-  }
- },
- {
-  "id": "i36c74c",
-  "sci": "Anthaxia umbellatarum",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
-  "threat": "",
-  "n_interactions": 68,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -3428,6 +3090,45 @@
   "n_interactions": 68,
   "common": {
    "fr": "Lepture dantesque",
+   "en": ""
+  }
+ },
+ {
+  "id": "ic1f917",
+  "sci": "Zygaena carniolica",
+  "order": "Lepidoptera",
+  "family": "Zygaenidae",
+  "genus": "Zygaena",
+  "threat": "",
+  "n_interactions": 68,
+  "common": {
+   "fr": "Zygène de Carniole",
+   "en": "Crepuscular Burnet"
+  }
+ },
+ {
+  "id": "i9ec4f3",
+  "sci": "Zygaena viciae",
+  "order": "Lepidoptera",
+  "family": "Zygaenidae",
+  "genus": "Zygaena",
+  "threat": "",
+  "n_interactions": 68,
+  "common": {
+   "fr": "Zygène des Thérésiens",
+   "en": "New Forest Burnet"
+  }
+ },
+ {
+  "id": "i36c74c",
+  "sci": "Anthaxia umbellatarum",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Anthaxia",
+  "threat": "",
+  "n_interactions": 67,
+  "common": {
+   "fr": "",
    "en": ""
   }
  },
@@ -3562,6 +3263,19 @@
   }
  },
  {
+  "id": "i9832c0",
+  "sci": "Vespula pensylvanica",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 66,
+  "common": {
+   "fr": "guêpe de l'ouest",
+   "en": "Western Yellowjacket"
+  }
+ },
+ {
   "id": "i02cbaf",
   "sci": "Altica oleracea",
   "order": "Coleoptera",
@@ -3575,24 +3289,24 @@
   }
  },
  {
-  "id": "ibfb447",
-  "sci": "Galeruca pomonae",
+  "id": "i1d3ab9",
+  "sci": "Anthaxia millefolii",
   "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Galeruca",
+  "family": "Buprestidae",
+  "genus": "Anthaxia",
   "threat": "",
-  "n_interactions": 65,
+  "n_interactions": 64,
   "common": {
    "fr": "",
    "en": ""
   }
  },
  {
-  "id": "i1d3ab9",
-  "sci": "Anthaxia millefolii",
+  "id": "ibfb447",
+  "sci": "Galeruca pomonae",
   "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
+  "family": "Chrysomelidae",
+  "genus": "Galeruca",
   "threat": "",
   "n_interactions": 64,
   "common": {
@@ -3627,19 +3341,6 @@
   }
  },
  {
-  "id": "i0580ff",
-  "sci": "Bombus quadricolor",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Bombus",
-  "threat": "",
-  "n_interactions": 63,
-  "common": {
-   "fr": "Psithyre quadricolore",
-   "en": ""
-  }
- },
- {
   "id": "i4bb3b4",
   "sci": "Gnorimus nobilis",
   "order": "Coleoptera",
@@ -3663,19 +3364,6 @@
   "common": {
    "fr": "",
    "en": "Weevil"
-  }
- },
- {
-  "id": "if07547",
-  "sci": "Pieris japonica",
-  "order": "Ericales",
-  "family": "Ericaceae",
-  "genus": "Pieris",
-  "threat": "",
-  "n_interactions": 63,
-  "common": {
-   "fr": "Piéris du Japon, Andromède du Japon",
-   "en": "Heath"
   }
  },
  {
@@ -3757,19 +3445,6 @@
   }
  },
  {
-  "id": "i904ccb",
-  "sci": "Formica fusca",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 61,
-  "common": {
-   "fr": "Fourmi flavipède",
-   "en": "Dusky Ant"
-  }
- },
- {
   "id": "i129d96",
   "sci": "Lasioglossum fulvicorne",
   "order": "Hymenoptera",
@@ -3796,6 +3471,19 @@
   }
  },
  {
+  "id": "i0580ff",
+  "sci": "Bombus quadricolor",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Bombus",
+  "threat": "",
+  "n_interactions": 60,
+  "common": {
+   "fr": "Psithyre quadricolore",
+   "en": ""
+  }
+ },
+ {
   "id": "ie6844f",
   "sci": "Papilio helenus",
   "order": "Lepidoptera",
@@ -3806,19 +3494,6 @@
   "common": {
    "fr": "",
    "en": "Red Helen"
-  }
- },
- {
-  "id": "i2f5c3e",
-  "sci": "Eristalis transversa",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Eristalis",
-  "threat": "",
-  "n_interactions": 59,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -3874,16 +3549,29 @@
   }
  },
  {
-  "id": "ied5ba8",
-  "sci": "Anthaxia nitidula",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
+  "id": "i2f5c3e",
+  "sci": "Eristalis transversa",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Eristalis",
   "threat": "",
   "n_interactions": 58,
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i904ccb",
+  "sci": "Formica fusca",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 58,
+  "common": {
+   "fr": "Fourmi flavipède",
+   "en": "Dusky Ant"
   }
  },
  {
@@ -3991,6 +3679,19 @@
   }
  },
  {
+  "id": "ied5ba8",
+  "sci": "Anthaxia nitidula",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Anthaxia",
+  "threat": "",
+  "n_interactions": 57,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i545279",
   "sci": "Bombus veteranus",
   "order": "Hymenoptera",
@@ -4001,19 +3702,6 @@
   "common": {
    "fr": "Bourdon des sables, Bourdon vétéran",
    "en": ""
-  }
- },
- {
-  "id": "ib23059",
-  "sci": "Gonepteryx cleopatra",
-  "order": "Lepidoptera",
-  "family": "Pieridae",
-  "genus": "Gonepteryx",
-  "threat": "",
-  "n_interactions": 57,
-  "common": {
-   "fr": "Citron de Provence",
-   "en": "Cleopatra"
   }
  },
  {
@@ -4056,19 +3744,6 @@
   }
  },
  {
-  "id": "i8fd166",
-  "sci": "Chrysotoxum intermedium",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Chrysotoxum",
-  "threat": "",
-  "n_interactions": 55,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "if2dec3",
   "sci": "Colletes floralis",
   "order": "Hymenoptera",
@@ -4105,6 +3780,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "ib23059",
+  "sci": "Gonepteryx cleopatra",
+  "order": "Lepidoptera",
+  "family": "Pieridae",
+  "genus": "Gonepteryx",
+  "threat": "",
+  "n_interactions": 55,
+  "common": {
+   "fr": "Citron de Provence",
+   "en": "Cleopatra"
   }
  },
  {
@@ -4160,16 +3848,16 @@
   }
  },
  {
-  "id": "ia1efde",
-  "sci": "Polistes gallicus",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
+  "id": "i8fd166",
+  "sci": "Chrysotoxum intermedium",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Chrysotoxum",
   "threat": "",
-  "n_interactions": 55,
+  "n_interactions": 54,
   "common": {
-   "fr": "Poliste français",
-   "en": "French Paper Wasp"
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -4225,16 +3913,16 @@
   }
  },
  {
-  "id": "ie52aa5",
-  "sci": "Helophilus fasciatus",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Helophilus",
+  "id": "ia1efde",
+  "sci": "Polistes gallicus",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
   "threat": "",
   "n_interactions": 53,
   "common": {
-   "fr": "",
-   "en": "Narrow-headed Marsh Fly"
+   "fr": "Poliste français",
+   "en": "French Paper Wasp"
   }
  },
  {
@@ -4274,6 +3962,19 @@
   "common": {
    "fr": "",
    "en": "Red Barbed Ant"
+  }
+ },
+ {
+  "id": "ie52aa5",
+  "sci": "Helophilus fasciatus",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Helophilus",
+  "threat": "",
+  "n_interactions": 52,
+  "common": {
+   "fr": "",
+   "en": "Narrow-headed Marsh Fly"
   }
  },
  {
@@ -4342,19 +4043,6 @@
   }
  },
  {
-  "id": "i8720ce",
-  "sci": "Phyllotreta astrachanica",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Phyllotreta",
-  "threat": "",
-  "n_interactions": 51,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i174ce4",
   "sci": "Pieris melete",
   "order": "Lepidoptera",
@@ -4420,16 +4108,16 @@
   }
  },
  {
-  "id": "if78657",
-  "sci": "Otiorhynchus raucus",
+  "id": "i8720ce",
+  "sci": "Phyllotreta astrachanica",
   "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Otiorhynchus",
+  "family": "Chrysomelidae",
+  "genus": "Phyllotreta",
   "threat": "",
   "n_interactions": 50,
   "common": {
-   "fr": "Otiorhynque à crête",
-   "en": "Weevil"
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -4446,16 +4134,16 @@
   }
  },
  {
-  "id": "i9a2cc3",
-  "sci": "Stictoleptura rubra",
-  "order": "Coleoptera",
-  "family": "Cerambycidae",
-  "genus": "Stictoleptura",
+  "id": "if77f30",
+  "sci": "Vespula maculifrons",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
   "threat": "",
   "n_interactions": 50,
   "common": {
-   "fr": "Lepture cardinale (femelle), Lepture papale (mÃ¢le), Lepture rouge",
-   "en": ""
+   "fr": "guêpe de l'est",
+   "en": "Eastern Yellowjacket"
   }
  },
  {
@@ -4485,29 +4173,29 @@
   }
  },
  {
-  "id": "ia6e9ff",
-  "sci": "Pieris canidia",
-  "order": "Lepidoptera",
-  "family": "Pieridae",
-  "genus": "Pieris",
+  "id": "if78657",
+  "sci": "Otiorhynchus raucus",
+  "order": "Coleoptera",
+  "family": "Curculionidae",
+  "genus": "Otiorhynchus",
   "threat": "",
   "n_interactions": 49,
   "common": {
-   "fr": "",
-   "en": "Indian Cabbage White"
+   "fr": "Otiorhynque à crête",
+   "en": "Weevil"
   }
  },
  {
-  "id": "i7e4b14",
-  "sci": "Zygaena trifolii",
-  "order": "Lepidoptera",
-  "family": "Zygaenidae",
-  "genus": "Zygaena",
+  "id": "i9a2cc3",
+  "sci": "Stictoleptura rubra",
+  "order": "Coleoptera",
+  "family": "Cerambycidae",
+  "genus": "Stictoleptura",
   "threat": "",
   "n_interactions": 49,
   "common": {
-   "fr": "Zygène des prés, Zygène des Cornettes",
-   "en": "Five-spot Burnet"
+   "fr": "Lepture cardinale (femelle), Lepture papale (mÃ¢le), Lepture rouge",
+   "en": ""
   }
  },
  {
@@ -4563,16 +4251,29 @@
   }
  },
  {
-  "id": "i27b244",
-  "sci": "Volucella inanis",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Volucella",
+  "id": "ia6e9ff",
+  "sci": "Pieris canidia",
+  "order": "Lepidoptera",
+  "family": "Pieridae",
+  "genus": "Pieris",
   "threat": "",
   "n_interactions": 48,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Indian Cabbage White"
+  }
+ },
+ {
+  "id": "i7e4b14",
+  "sci": "Zygaena trifolii",
+  "order": "Lepidoptera",
+  "family": "Zygaenidae",
+  "genus": "Zygaena",
+  "threat": "",
+  "n_interactions": 48,
+  "common": {
+   "fr": "Zygène des prés, Zygène des Cornettes",
+   "en": "Five-spot Burnet"
   }
  },
  {
@@ -4602,32 +4303,6 @@
   }
  },
  {
-  "id": "i356e39",
-  "sci": "Phyllobius pomaceus",
-  "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Phyllobius",
-  "threat": "",
-  "n_interactions": 47,
-  "common": {
-   "fr": "Charançon de l'Ortie",
-   "en": "Nettle weevil"
-  }
- },
- {
-  "id": "i72a9bd",
-  "sci": "Polistes metricus",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 47,
-  "common": {
-   "fr": "",
-   "en": "Metric Paper Wasp"
-  }
- },
- {
   "id": "i7e8f6d",
   "sci": "Polyommatus eros",
   "order": "Lepidoptera",
@@ -4638,19 +4313,6 @@
   "common": {
    "fr": "Azuré de l'Oxytropide, Azuré d'Éros, Argus bleu acier",
    "en": "Eros Blue"
-  }
- },
- {
-  "id": "ibd1901",
-  "sci": "Vanessa indica",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Vanessa",
-  "threat": "",
-  "n_interactions": 47,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -4719,37 +4381,24 @@
   }
  },
  {
-  "id": "i6ece9c",
-  "sci": "Nomada moeschleri",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
+  "id": "i356e39",
+  "sci": "Phyllobius pomaceus",
+  "order": "Coleoptera",
+  "family": "Curculionidae",
+  "genus": "Phyllobius",
   "threat": "",
   "n_interactions": 46,
   "common": {
-   "fr": "",
-   "en": ""
+   "fr": "Charançon de l'Ortie",
+   "en": "Nettle weevil"
   }
  },
  {
-  "id": "i3b69cb",
-  "sci": "Phyllotreta vittula",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Phyllotreta",
-  "threat": "",
-  "n_interactions": 46,
-  "common": {
-   "fr": "",
-   "en": "Barley Flea Beetle"
-  }
- },
- {
-  "id": "iebc0d2",
-  "sci": "Psylliodes chalcomera",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Psylliodes",
+  "id": "ibd1901",
+  "sci": "Vanessa indica",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Vanessa",
   "threat": "",
   "n_interactions": 46,
   "common": {
@@ -4767,19 +4416,6 @@
   "n_interactions": 45,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ieae6d7",
-  "sci": "Anthaxia hungarica",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
-  "threat": "",
-  "n_interactions": 45,
-  "common": {
-   "fr": "Bupreste hongrois",
    "en": ""
   }
  },
@@ -4810,19 +4446,6 @@
   }
  },
  {
-  "id": "i72dc48",
-  "sci": "Chrysomela populi",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Chrysomela",
-  "threat": "",
-  "n_interactions": 45,
-  "common": {
-   "fr": "Chrysomèle populaire, Chrysomèle du peuplier",
-   "en": "Red Poplar Leaf Beetle"
-  }
- },
- {
   "id": "ic1af57",
   "sci": "Colias eurytheme",
   "order": "Lepidoptera",
@@ -4849,16 +4472,29 @@
   }
  },
  {
-  "id": "i044e6b",
-  "sci": "Otiorhynchus singularis",
+  "id": "i3b69cb",
+  "sci": "Phyllotreta vittula",
   "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Otiorhynchus",
+  "family": "Chrysomelidae",
+  "genus": "Phyllotreta",
   "threat": "",
   "n_interactions": 45,
   "common": {
    "fr": "",
-   "en": "Raspberry Weevil"
+   "en": "Barley Flea Beetle"
+  }
+ },
+ {
+  "id": "iebc0d2",
+  "sci": "Psylliodes chalcomera",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Psylliodes",
+  "threat": "",
+  "n_interactions": 45,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -4901,6 +4537,19 @@
   }
  },
  {
+  "id": "ieae6d7",
+  "sci": "Anthaxia hungarica",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Anthaxia",
+  "threat": "",
+  "n_interactions": 44,
+  "common": {
+   "fr": "Bupreste hongrois",
+   "en": ""
+  }
+ },
+ {
   "id": "i6aa0c0",
   "sci": "Ceratina megastigmata",
   "order": "Hymenoptera",
@@ -4914,16 +4563,16 @@
   }
  },
  {
-  "id": "iacd8be",
-  "sci": "Galeruca tanaceti",
+  "id": "i72dc48",
+  "sci": "Chrysomela populi",
   "order": "Coleoptera",
   "family": "Chrysomelidae",
-  "genus": "Galeruca",
+  "genus": "Chrysomela",
   "threat": "",
   "n_interactions": 44,
   "common": {
-   "fr": "Galéruque de la tanaisie, Galeruque brunette",
-   "en": ""
+   "fr": "Chrysomèle populaire, Chrysomèle du peuplier",
+   "en": "Red Poplar Leaf Beetle"
   }
  },
  {
@@ -4940,16 +4589,16 @@
   }
  },
  {
-  "id": "i06ffd0",
-  "sci": "Nomada errans",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
+  "id": "i044e6b",
+  "sci": "Otiorhynchus singularis",
+  "order": "Coleoptera",
+  "family": "Curculionidae",
+  "genus": "Otiorhynchus",
   "threat": "",
   "n_interactions": 44,
   "common": {
    "fr": "",
-   "en": "Purbeck Nomad Bee"
+   "en": "Raspberry Weevil"
   }
  },
  {
@@ -4997,6 +4646,19 @@
   "order": "Diptera",
   "family": "Muscidae",
   "genus": "Thricops",
+  "threat": "",
+  "n_interactions": 44,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i27b244",
+  "sci": "Volucella inanis",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Volucella",
   "threat": "",
   "n_interactions": 44,
   "common": {
@@ -5067,6 +4729,19 @@
   "common": {
    "fr": "Collète du lierre",
    "en": "Ivy Bee"
+  }
+ },
+ {
+  "id": "iacd8be",
+  "sci": "Galeruca tanaceti",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Galeruca",
+  "threat": "",
+  "n_interactions": 43,
+  "common": {
+   "fr": "Galéruque de la tanaisie, Galeruque brunette",
+   "en": ""
   }
  },
  {
@@ -5187,6 +4862,19 @@
   }
  },
  {
+  "id": "i6ece9c",
+  "sci": "Nomada moeschleri",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 42,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i98b027",
   "sci": "Osmia aurulenta",
   "order": "Hymenoptera",
@@ -5226,19 +4914,6 @@
   }
  },
  {
-  "id": "i9e7244",
-  "sci": "Anthophora bimaculata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Anthophora",
-  "threat": "",
-  "n_interactions": 41,
-  "common": {
-   "fr": "Héliophile commune",
-   "en": "Green-eyed Flower Bee"
-  }
- },
- {
   "id": "i19866d",
   "sci": "Anthophora retusa",
   "order": "Hymenoptera",
@@ -5265,8 +4940,8 @@
   }
  },
  {
-  "id": "icef43f",
-  "sci": "Nomada obtusifrons",
+  "id": "i06ffd0",
+  "sci": "Nomada errans",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -5274,7 +4949,7 @@
   "n_interactions": 41,
   "common": {
    "fr": "",
-   "en": "Flat-ridged Nomad Bee"
+   "en": "Purbeck Nomad Bee"
   }
  },
  {
@@ -5288,6 +4963,19 @@
   "common": {
    "fr": "",
    "en": "Spined Mason Bee"
+  }
+ },
+ {
+  "id": "i72a9bd",
+  "sci": "Polistes metricus",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 41,
+  "common": {
+   "fr": "",
+   "en": "Metric Paper Wasp"
   }
  },
  {
@@ -5327,6 +5015,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i9e7244",
+  "sci": "Anthophora bimaculata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Anthophora",
+  "threat": "",
+  "n_interactions": 40,
+  "common": {
+   "fr": "Héliophile commune",
+   "en": "Green-eyed Flower Bee"
   }
  },
  {
@@ -5460,19 +5161,6 @@
   }
  },
  {
-  "id": "ia83b99",
-  "sci": "Chrysomela saliceti",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Chrysomela",
-  "threat": "",
-  "n_interactions": 39,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ia88ec8",
   "sci": "Halictus compressus",
   "order": "Hymenoptera",
@@ -5483,6 +5171,19 @@
   "common": {
    "fr": "",
    "en": "Downland Furrow Bee"
+  }
+ },
+ {
+  "id": "icef43f",
+  "sci": "Nomada obtusifrons",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 39,
+  "common": {
+   "fr": "",
+   "en": "Flat-ridged Nomad Bee"
   }
  },
  {
@@ -5577,6 +5278,19 @@
   }
  },
  {
+  "id": "ia83b99",
+  "sci": "Chrysomela saliceti",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Chrysomela",
+  "threat": "",
+  "n_interactions": 38,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i87c834",
   "sci": "Megachile mendica",
   "order": "Hymenoptera",
@@ -5642,19 +5356,6 @@
   }
  },
  {
-  "id": "ic56dbf",
-  "sci": "Sphyrna zygaena",
-  "order": "Carcharhiniformes",
-  "family": "Sphyrnidae",
-  "genus": "Sphyrna",
-  "threat": "",
-  "n_interactions": 38,
-  "common": {
-   "fr": "Cagnole",
-   "en": "Common Hammerhead"
-  }
- },
- {
   "id": "i35bf5f",
   "sci": "Xylosandrus germanus",
   "order": "Coleoptera",
@@ -5691,19 +5392,6 @@
   "common": {
    "fr": "",
    "en": "Northern Mining Bee"
-  }
- },
- {
-  "id": "if0b1c7",
-  "sci": "Anthophora californica",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Anthophora",
-  "threat": "",
-  "n_interactions": 37,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -5798,19 +5486,6 @@
   }
  },
  {
-  "id": "i3809ab",
-  "sci": "Longitarsus luridus",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Longitarsus",
-  "threat": "",
-  "n_interactions": 37,
-  "common": {
-   "fr": "",
-   "en": "Leaf beetle"
-  }
- },
- {
   "id": "i9d6c16",
   "sci": "Phyllotreta ochripes",
   "order": "Coleoptera",
@@ -5824,11 +5499,37 @@
   }
  },
  {
+  "id": "i88f965",
+  "sci": "Adalia bipunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Adalia",
+  "threat": "",
+  "n_interactions": 36,
+  "common": {
+   "fr": "Coccinelle rouge à deux points noirs",
+   "en": "2-spot Ladybird"
+  }
+ },
+ {
   "id": "ifd94c0",
   "sci": "Agrilus delphinensis",
   "order": "Coleoptera",
   "family": "Buprestidae",
   "genus": "Agrilus",
+  "threat": "",
+  "n_interactions": 36,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "if0b1c7",
+  "sci": "Anthophora californica",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Anthophora",
   "threat": "",
   "n_interactions": 36,
   "common": {
@@ -5902,6 +5603,19 @@
   }
  },
  {
+  "id": "i3809ab",
+  "sci": "Longitarsus luridus",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Longitarsus",
+  "threat": "",
+  "n_interactions": 36,
+  "common": {
+   "fr": "",
+   "en": "Leaf beetle"
+  }
+ },
+ {
   "id": "i2f971d",
   "sci": "Papilio demodocus",
   "order": "Lepidoptera",
@@ -5925,19 +5639,6 @@
   "common": {
    "fr": "Azuré de l'Ajonc, Argus bleu-violet, Argus satiné, Argus, Argus bleu",
    "en": "Silver-studded Blue"
-  }
- },
- {
-  "id": "i12a607",
-  "sci": "Polistes aurifer",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 36,
-  "common": {
-   "fr": "",
-   "en": "Gold-bearing Paper Wasp"
   }
  },
  {
@@ -6006,19 +5707,6 @@
   }
  },
  {
-  "id": "ia7b1c6",
-  "sci": "Papilio aegeus",
-  "order": "Lepidoptera",
-  "family": "Papilionidae",
-  "genus": "Papilio",
-  "threat": "",
-  "n_interactions": 35,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ib730dd",
   "sci": "Phenacoccus aceris",
   "order": "Hemiptera",
@@ -6029,19 +5717,6 @@
   "common": {
    "fr": "",
    "en": "Apple mealybug"
-  }
- },
- {
-  "id": "i61922a",
-  "sci": "Philanthus gibbosus",
-  "order": "Hymenoptera",
-  "family": "Crabronidae",
-  "genus": "Philanthus",
-  "threat": "",
-  "n_interactions": 35,
-  "common": {
-   "fr": "",
-   "en": "Humped Beewolf"
   }
  },
  {
@@ -6068,32 +5743,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ied6b2c",
-  "sci": "Stelis phaeoptera",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Stelis",
-  "threat": "",
-  "n_interactions": 35,
-  "common": {
-   "fr": "",
-   "en": "Plain Dark Bee"
-  }
- },
- {
-  "id": "i986892",
-  "sci": "Vespula alascensis",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 35,
-  "common": {
-   "fr": "",
-   "en": "Alaska Yellowjacket"
   }
  },
  {
@@ -6227,16 +5876,42 @@
   }
  },
  {
-  "id": "ifcd578",
-  "sci": "Psylliodes napi",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Psylliodes",
+  "id": "ia7b1c6",
+  "sci": "Papilio aegeus",
+  "order": "Lepidoptera",
+  "family": "Papilionidae",
+  "genus": "Papilio",
   "threat": "",
   "n_interactions": 34,
   "common": {
    "fr": "",
-   "en": "Leaf beetle"
+   "en": ""
+  }
+ },
+ {
+  "id": "i61922a",
+  "sci": "Philanthus gibbosus",
+  "order": "Hymenoptera",
+  "family": "Crabronidae",
+  "genus": "Philanthus",
+  "threat": "",
+  "n_interactions": 34,
+  "common": {
+   "fr": "",
+   "en": "Humped Beewolf"
+  }
+ },
+ {
+  "id": "i12a607",
+  "sci": "Polistes aurifer",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 34,
+  "common": {
+   "fr": "",
+   "en": "Gold-bearing Paper Wasp"
   }
  },
  {
@@ -6383,6 +6058,19 @@
   }
  },
  {
+  "id": "id3b48f",
+  "sci": "Nomada flavoguttata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 33,
+  "common": {
+   "fr": "",
+   "en": "Little Nomad Bee"
+  }
+ },
+ {
   "id": "ifc7b02",
   "sci": "Oberea oculata",
   "order": "Coleoptera",
@@ -6461,16 +6149,16 @@
   }
  },
  {
-  "id": "i4c3457",
-  "sci": "Zygaena fausta",
-  "order": "Lepidoptera",
-  "family": "Zygaenidae",
-  "genus": "Zygaena",
+  "id": "ifcd578",
+  "sci": "Psylliodes napi",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Psylliodes",
   "threat": "",
   "n_interactions": 33,
   "common": {
-   "fr": "Zygène de la Petite coronille",
-   "en": "Chalk Burnet"
+   "fr": "",
+   "en": "Leaf beetle"
   }
  },
  {
@@ -6497,19 +6185,6 @@
   "common": {
    "fr": "",
    "en": "Three-spot Grass Yellow"
-  }
- },
- {
-  "id": "ib3ddab",
-  "sci": "Galeruca melanocephala",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Galeruca",
-  "threat": "",
-  "n_interactions": 32,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -6565,19 +6240,6 @@
   }
  },
  {
-  "id": "iefe9b2",
-  "sci": "Polistes dorsalis",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 32,
-  "common": {
-   "fr": "",
-   "en": "Hunter's Little Paper Wasp"
-  }
- },
- {
   "id": "i698096",
   "sci": "Pontia protodice",
   "order": "Lepidoptera",
@@ -6614,6 +6276,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i4c3457",
+  "sci": "Zygaena fausta",
+  "order": "Lepidoptera",
+  "family": "Zygaenidae",
+  "genus": "Zygaena",
+  "threat": "",
+  "n_interactions": 32,
+  "common": {
+   "fr": "Zygène de la Petite coronille",
+   "en": "Chalk Burnet"
   }
  },
  {
@@ -6669,16 +6344,16 @@
   }
  },
  {
-  "id": "i0957f2",
-  "sci": "Formica sanguinea",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
+  "id": "ib3ddab",
+  "sci": "Galeruca melanocephala",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Galeruca",
   "threat": "",
   "n_interactions": 31,
   "common": {
    "fr": "",
-   "en": "Blood-Red Ant"
+   "en": ""
   }
  },
  {
@@ -6692,19 +6367,6 @@
   "common": {
    "fr": "Mélitée des mélampyres",
    "en": "Heath Fritillary"
-  }
- },
- {
-  "id": "i8b7111",
-  "sci": "Nomada emarginata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 31,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -6731,19 +6393,6 @@
   "common": {
    "fr": "",
    "en": "Laurel Swallowtail"
-  }
- },
- {
-  "id": "i15161a",
-  "sci": "Philanthus triangulum",
-  "order": "Hymenoptera",
-  "family": "Crabronidae",
-  "genus": "Philanthus",
-  "threat": "",
-  "n_interactions": 31,
-  "common": {
-   "fr": "",
-   "en": "Bee Wolf"
   }
  },
  {
@@ -6877,6 +6526,19 @@
   }
  },
  {
+  "id": "i8b7111",
+  "sci": "Nomada emarginata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 30,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i853501",
   "sci": "Oedemera barbara",
   "order": "Coleoptera",
@@ -6890,42 +6552,16 @@
   }
  },
  {
-  "id": "i6ba168",
-  "sci": "Phyllotreta tetrastigma",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Phyllotreta",
-  "threat": "",
-  "n_interactions": 30,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ice2355",
-  "sci": "Polistes nimpha",
+  "id": "iefe9b2",
+  "sci": "Polistes dorsalis",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
   "threat": "",
   "n_interactions": 30,
   "common": {
-   "fr": "Poliste nymphe",
-   "en": ""
-  }
- },
- {
-  "id": "i1d00d6",
-  "sci": "Sicus ferrugineus",
-  "order": "Diptera",
-  "family": "Conopidae",
-  "genus": "Sicus",
-  "threat": "",
-  "n_interactions": 30,
-  "common": {
    "fr": "",
-   "en": ""
+   "en": "Hunter's Little Paper Wasp"
   }
  },
  {
@@ -7046,24 +6682,24 @@
   }
  },
  {
-  "id": "ife632a",
-  "sci": "Cydia pomonella",
-  "order": "Lepidoptera",
-  "family": "Tortricidae",
-  "genus": "Cydia",
-  "threat": "",
-  "n_interactions": 29,
-  "common": {
-   "fr": "Carpocapse des châtaignes",
-   "en": "Codling Moth"
-  }
- },
- {
   "id": "i5e0768",
   "sci": "Ectropis excellens",
   "order": "Lepidoptera",
   "family": "Geometridae",
   "genus": "Ectropis",
+  "threat": "",
+  "n_interactions": 29,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i6ba168",
+  "sci": "Phyllotreta tetrastigma",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Phyllotreta",
   "threat": "",
   "n_interactions": 29,
   "common": {
@@ -7082,19 +6718,6 @@
   "common": {
    "fr": "Mouche de la cerise, Mouche du cerisier",
    "en": "Cherry fruit fly, European cherry fruit fly"
-  }
- },
- {
-  "id": "if89dd3",
-  "sci": "Vespa simillima",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 29,
-  "common": {
-   "fr": "",
-   "en": "Vespid wasp"
   }
  },
  {
@@ -7202,6 +6825,19 @@
   }
  },
  {
+  "id": "ife632a",
+  "sci": "Cydia pomonella",
+  "order": "Lepidoptera",
+  "family": "Tortricidae",
+  "genus": "Cydia",
+  "threat": "",
+  "n_interactions": 28,
+  "common": {
+   "fr": "Carpocapse des châtaignes",
+   "en": "Codling Moth"
+  }
+ },
+ {
   "id": "i075210",
   "sci": "Eumeta variegatus",
   "order": "Lepidoptera",
@@ -7293,6 +6929,19 @@
   }
  },
  {
+  "id": "ice2355",
+  "sci": "Polistes nimpha",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 28,
+  "common": {
+   "fr": "Poliste nymphe",
+   "en": ""
+  }
+ },
+ {
   "id": "i575ea5",
   "sci": "Polistes olivaceus",
   "order": "Hymenoptera",
@@ -7303,6 +6952,19 @@
   "common": {
    "fr": "Guêpe jaune",
    "en": "Macao Paper Wasp"
+  }
+ },
+ {
+  "id": "i1d00d6",
+  "sci": "Sicus ferrugineus",
+  "order": "Diptera",
+  "family": "Conopidae",
+  "genus": "Sicus",
+  "threat": "",
+  "n_interactions": 28,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -7329,6 +6991,32 @@
   "common": {
    "fr": "",
    "en": "Gladiolus thrips"
+  }
+ },
+ {
+  "id": "if89dd3",
+  "sci": "Vespa simillima",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 28,
+  "common": {
+   "fr": "",
+   "en": "Vespid wasp"
+  }
+ },
+ {
+  "id": "i986892",
+  "sci": "Vespula alascensis",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 28,
+  "common": {
+   "fr": "",
+   "en": "Alaska Yellowjacket"
   }
  },
  {
@@ -7410,19 +7098,6 @@
   }
  },
  {
-  "id": "ieebee4",
-  "sci": "Coelioxys rufescens",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 27,
-  "common": {
-   "fr": "",
-   "en": "Rufescent Sharp-tail Bee"
-  }
- },
- {
   "id": "ibb861b",
   "sci": "Eristalis dimidiata",
   "order": "Diptera",
@@ -7475,19 +7150,6 @@
   }
  },
  {
-  "id": "i557ad3",
-  "sci": "Myrmica rubra",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Myrmica",
-  "threat": "",
-  "n_interactions": 27,
-  "common": {
-   "fr": "Fourmi rouge",
-   "en": "European Fire Ant"
-  }
- },
- {
   "id": "icd565a",
   "sci": "Operophtera brumata",
   "order": "Lepidoptera",
@@ -7501,19 +7163,6 @@
   }
  },
  {
-  "id": "icf1ed3",
-  "sci": "Pales pavida",
-  "order": "",
-  "family": "",
-  "genus": "Pales",
-  "threat": "",
-  "n_interactions": 27,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i8d8af8",
   "sci": "Pegoplata aestiva",
   "order": "Diptera",
@@ -7524,6 +7173,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i15161a",
+  "sci": "Philanthus triangulum",
+  "order": "Hymenoptera",
+  "family": "Crabronidae",
+  "genus": "Philanthus",
+  "threat": "",
+  "n_interactions": 27,
+  "common": {
+   "fr": "",
+   "en": "Bee Wolf"
   }
  },
  {
@@ -7943,19 +7605,6 @@
   }
  },
  {
-  "id": "i4d8592",
-  "sci": "Papilio canadensis",
-  "order": "Lepidoptera",
-  "family": "Papilionidae",
-  "genus": "Papilio",
-  "threat": "",
-  "n_interactions": 25,
-  "common": {
-   "fr": "",
-   "en": "Canadian Tiger Swallowtail"
-  }
- },
- {
   "id": "i900bb5",
   "sci": "Phlogophora meticulosa",
   "order": "Lepidoptera",
@@ -7992,19 +7641,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ibfd7a9",
-  "sci": "Pyronia cecilia",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Pyronia",
-  "threat": "",
-  "n_interactions": 25,
-  "common": {
-   "fr": "Ocellé de la Canche",
-   "en": "Southern Gatekeeper"
   }
  },
  {
@@ -8073,6 +7709,19 @@
   }
  },
  {
+  "id": "i0c4ba4",
+  "sci": "Coccinella trifasciata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 24,
+  "common": {
+   "fr": "",
+   "en": "Three-banded Lady Beetle"
+  }
+ },
+ {
   "id": "i293a80",
   "sci": "Ematurga atomaria",
   "order": "Lepidoptera",
@@ -8083,19 +7732,6 @@
   "common": {
    "fr": "Phalène picotée",
    "en": "Common Heath"
-  }
- },
- {
-  "id": "ic64c57",
-  "sci": "Hemilepidotus papilio",
-  "order": "Scorpaeniformes",
-  "family": "Cottidae",
-  "genus": "Hemilepidotus",
-  "threat": "",
-  "n_interactions": 24,
-  "common": {
-   "fr": "",
-   "en": "butterfly sculpin"
   }
  },
  {
@@ -8164,6 +7800,32 @@
   }
  },
  {
+  "id": "i557ad3",
+  "sci": "Myrmica rubra",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Myrmica",
+  "threat": "",
+  "n_interactions": 24,
+  "common": {
+   "fr": "Fourmi rouge",
+   "en": "European Fire Ant"
+  }
+ },
+ {
+  "id": "i4d8592",
+  "sci": "Papilio canadensis",
+  "order": "Lepidoptera",
+  "family": "Papilionidae",
+  "genus": "Papilio",
+  "threat": "",
+  "n_interactions": 24,
+  "common": {
+   "fr": "",
+   "en": "Canadian Tiger Swallowtail"
+  }
+ },
+ {
   "id": "i14452a",
   "sci": "Polistes sp.",
   "order": "",
@@ -8187,6 +7849,19 @@
   "common": {
    "fr": "",
    "en": "Black-bellied Clusterfly"
+  }
+ },
+ {
+  "id": "ibfd7a9",
+  "sci": "Pyronia cecilia",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Pyronia",
+  "threat": "",
+  "n_interactions": 24,
+  "common": {
+   "fr": "Ocellé de la Canche",
+   "en": "Southern Gatekeeper"
   }
  },
  {
@@ -8338,19 +8013,6 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Colletes",
-  "threat": "",
-  "n_interactions": 23,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "if12db0",
-  "sci": "Eriothrix rufomaculatus",
-  "order": "Diptera",
-  "family": "Tachinidae",
-  "genus": "Eriothrix",
   "threat": "",
   "n_interactions": 23,
   "common": {
@@ -8645,6 +8307,19 @@
   }
  },
  {
+  "id": "ie5ac62",
+  "sci": "Harmonia quadripunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Harmonia",
+  "threat": "",
+  "n_interactions": 22,
+  "common": {
+   "fr": "Coccinelle à quatre points",
+   "en": "Cream-Streaked Ladybird"
+  }
+ },
+ {
   "id": "i478c24",
   "sci": "Hylaeus annularis",
   "order": "Hymenoptera",
@@ -8749,19 +8424,6 @@
   }
  },
  {
-  "id": "iaa4c53",
-  "sci": "Polyommatus celina",
-  "order": "Lepidoptera",
-  "family": "Lycaenidae",
-  "genus": "Polyommatus",
-  "threat": "",
-  "n_interactions": 22,
-  "common": {
-   "fr": "Azuré d´Escher",
-   "en": "Austaut's Blue"
-  }
- },
- {
   "id": "i9c5855",
   "sci": "Rhodanthidium sticticum",
   "order": "Hymenoptera",
@@ -8827,45 +8489,6 @@
   }
  },
  {
-  "id": "i8d7c4e",
-  "sci": "Vanessa carye",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Vanessa",
-  "threat": "",
-  "n_interactions": 22,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "id1dc94",
-  "sci": "Vespula vidua",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 22,
-  "common": {
-   "fr": "",
-   "en": "Northeastern Yellowjacket"
-  }
- },
- {
-  "id": "i64f6cb",
-  "sci": "Volucella inflata",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Volucella",
-  "threat": "",
-  "n_interactions": 22,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "id15a9d",
   "sci": "Zygaena osterodensis",
   "order": "Lepidoptera",
@@ -8889,6 +8512,19 @@
   "common": {
    "fr": "Zygène de la Gesse, Zygène des Vesces",
    "en": "Reticent Burnet"
+  }
+ },
+ {
+  "id": "iae5213",
+  "sci": "Adalia decempunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Adalia",
+  "threat": "",
+  "n_interactions": 21,
+  "common": {
+   "fr": "Coccinelle à dix points",
+   "en": "10-spot Ladybird"
   }
  },
  {
@@ -8936,6 +8572,19 @@
   "order": "Lepidoptera",
   "family": "Geometridae",
   "genus": "Ectropis",
+  "threat": "",
+  "n_interactions": 21,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "if12db0",
+  "sci": "Eriothrix rufomaculatus",
+  "order": "Diptera",
+  "family": "Tachinidae",
+  "genus": "Eriothrix",
   "threat": "",
   "n_interactions": 21,
   "common": {
@@ -9113,6 +8762,32 @@
   }
  },
  {
+  "id": "i8d7c4e",
+  "sci": "Vanessa carye",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Vanessa",
+  "threat": "",
+  "n_interactions": 21,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i64f6cb",
+  "sci": "Volucella inflata",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Volucella",
+  "threat": "",
+  "n_interactions": 21,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i1af174",
   "sci": "Xylocopa caffra",
   "order": "Hymenoptera",
@@ -9162,19 +8837,6 @@
   "common": {
    "fr": "cochenille dartreuse du saule",
    "en": "Willow scale"
-  }
- },
- {
-  "id": "i7e191c",
-  "sci": "Coccinella californica",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 20,
-  "common": {
-   "fr": "",
-   "en": "Lady beetle"
   }
  },
  {
@@ -9334,19 +8996,6 @@
   }
  },
  {
-  "id": "ia67756",
-  "sci": "Nomada fucata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 20,
-  "common": {
-   "fr": "",
-   "en": "Painted Nomad Bee"
-  }
- },
- {
   "id": "i09a9e1",
   "sci": "Palpada meigenii",
   "order": "Diptera",
@@ -9386,6 +9035,19 @@
   }
  },
  {
+  "id": "iaa4c53",
+  "sci": "Polyommatus celina",
+  "order": "Lepidoptera",
+  "family": "Lycaenidae",
+  "genus": "Polyommatus",
+  "threat": "",
+  "n_interactions": 20,
+  "common": {
+   "fr": "Azuré d´Escher",
+   "en": "Austaut's Blue"
+  }
+ },
+ {
   "id": "ib23d52",
   "sci": "Saturnia pavonia",
   "order": "Lepidoptera",
@@ -9409,19 +9071,6 @@
   "common": {
    "fr": "Grand Nacré",
    "en": "Dark Green Fritillary"
-  }
- },
- {
-  "id": "i72dce1",
-  "sci": "Stelis punctulatissima",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Stelis",
-  "threat": "",
-  "n_interactions": 20,
-  "common": {
-   "fr": "",
-   "en": "Banded Dark Bee"
   }
  },
  {
@@ -9474,6 +9123,19 @@
   "common": {
    "fr": "",
    "en": "Velvet long horned beetle"
+  }
+ },
+ {
+  "id": "id1dc94",
+  "sci": "Vespula vidua",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 20,
+  "common": {
+   "fr": "",
+   "en": "Northeastern Yellowjacket"
   }
  },
  {
@@ -9607,6 +9269,19 @@
   }
  },
  {
+  "id": "i7e191c",
+  "sci": "Coccinella californica",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 19,
+  "common": {
+   "fr": "",
+   "en": "Lady beetle"
+  }
+ },
+ {
   "id": "i9a29d3",
   "sci": "Coelioxys modestus",
   "order": "Hymenoptera",
@@ -9695,6 +9370,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "ia67756",
+  "sci": "Nomada fucata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 19,
+  "common": {
+   "fr": "",
+   "en": "Painted Nomad Bee"
   }
  },
  {
@@ -9815,16 +9503,16 @@
   }
  },
  {
-  "id": "i6df0bb",
-  "sci": "Agrilus planipennis",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Agrilus",
+  "id": "i72dce1",
+  "sci": "Stelis punctulatissima",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Stelis",
   "threat": "",
-  "n_interactions": 18,
+  "n_interactions": 19,
   "common": {
    "fr": "",
-   "en": "Emerald Ash Borer"
+   "en": "Banded Dark Bee"
   }
  },
  {
@@ -9863,19 +9551,6 @@
   "n_interactions": 18,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i1537c6",
-  "sci": "Anthophora atroalba",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Anthophora",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "Anthophore blanche et noire",
    "en": ""
   }
  },
@@ -10010,19 +9685,6 @@
   }
  },
  {
-  "id": "i89db90",
-  "sci": "Coelioxys inermis",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": "Shiny-vented Sharp-tail Bee"
-  }
- },
- {
   "id": "ic55540",
   "sci": "Epirrita dilutata",
   "order": "Lepidoptera",
@@ -10080,19 +9742,6 @@
   "order": "Diptera",
   "family": "Bombyliidae",
   "genus": "Exoprosopa",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i3d37bb",
-  "sci": "Formica japonica",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
   "threat": "",
   "n_interactions": 18,
   "common": {
@@ -10257,32 +9906,6 @@
   }
  },
  {
-  "id": "iad5570",
-  "sci": "Pieris oleracea",
-  "order": "Lepidoptera",
-  "family": "Pieridae",
-  "genus": "Pieris",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": "Mustard White"
-  }
- },
- {
-  "id": "icd7867",
-  "sci": "Polistes chinensis",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": "Asian Paper Wasp"
-  }
- },
- {
   "id": "idda46d",
   "sci": "Stelis louisae",
   "order": "Hymenoptera",
@@ -10306,32 +9929,6 @@
   "common": {
    "fr": "Calleux Cycliste, Sténoptère roux",
    "en": ""
-  }
- },
- {
-  "id": "i8114f0",
-  "sci": "Vanessa itea",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Vanessa",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i1fa19c",
-  "sci": "Vespula flavopilosa",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 18,
-  "common": {
-   "fr": "",
-   "en": "Downy Yellowjacket"
   }
  },
  {
@@ -10371,6 +9968,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i6df0bb",
+  "sci": "Agrilus planipennis",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Agrilus",
+  "threat": "",
+  "n_interactions": 17,
+  "common": {
+   "fr": "",
+   "en": "Emerald Ash Borer"
   }
  },
  {
@@ -10452,6 +10062,19 @@
   }
  },
  {
+  "id": "i1537c6",
+  "sci": "Anthophora atroalba",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Anthophora",
+  "threat": "",
+  "n_interactions": 17,
+  "common": {
+   "fr": "Anthophore blanche et noire",
+   "en": ""
+  }
+ },
+ {
   "id": "i2e9994",
   "sci": "Anthophora pacifica",
   "order": "Hymenoptera",
@@ -10475,19 +10098,6 @@
   "common": {
    "fr": "Anthophore rusée",
    "en": "Four-banded Flower Bee"
-  }
- },
- {
-  "id": "ie3f937",
-  "sci": "Balanus crenatus",
-  "order": "Sessilia",
-  "family": "Balanidae",
-  "genus": "Balanus",
-  "threat": "",
-  "n_interactions": 17,
-  "common": {
-   "fr": "Balane crénelée",
-   "en": "an acorn barnacle"
   }
  },
  {
@@ -10712,6 +10322,19 @@
   }
  },
  {
+  "id": "iad5570",
+  "sci": "Pieris oleracea",
+  "order": "Lepidoptera",
+  "family": "Pieridae",
+  "genus": "Pieris",
+  "threat": "",
+  "n_interactions": 17,
+  "common": {
+   "fr": "",
+   "en": "Mustard White"
+  }
+ },
+ {
   "id": "ie36e84",
   "sci": "Rhopalosiphum nymphaeae",
   "order": "Hemiptera",
@@ -10878,19 +10501,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i7d4d1c",
-  "sci": "Coelioxys afra",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 16,
-  "common": {
-   "fr": "",
-   "en": "Short Sharp-tail Bee"
   }
  },
  {
@@ -11203,32 +10813,6 @@
   "common": {
    "fr": "Pissode du pin",
    "en": "Banded Pine Weevil"
-  }
- },
- {
-  "id": "ic8226c",
-  "sci": "Psylliodes affinis",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Psylliodes",
-  "threat": "",
-  "n_interactions": 16,
-  "common": {
-   "fr": "Altise de la pomme de terre",
-   "en": "Potato Flea Beetle"
-  }
- },
- {
-  "id": "if6bd02",
-  "sci": "Sphyrna mokarran",
-  "order": "Carcharhiniformes",
-  "family": "Sphyrnidae",
-  "genus": "Sphyrna",
-  "threat": "",
-  "n_interactions": 16,
-  "common": {
-   "fr": "Grand requin marteau",
-   "en": "Great Hammerhead Shark"
   }
  },
  {
@@ -11557,19 +11141,6 @@
   }
  },
  {
-  "id": "i56c62f",
-  "sci": "Galeruca laticollis",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Galeruca",
-  "threat": "",
-  "n_interactions": 15,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i699e30",
   "sci": "Lasioglossum anellum",
   "order": "Hymenoptera",
@@ -11778,19 +11349,6 @@
   }
  },
  {
-  "id": "ie01223",
-  "sci": "Philanthus bilunatus",
-  "order": "Hymenoptera",
-  "family": "Crabronidae",
-  "genus": "Philanthus",
-  "threat": "",
-  "n_interactions": 15,
-  "common": {
-   "fr": "",
-   "en": "Two Moons Beewolf"
-  }
- },
- {
   "id": "id55d47",
   "sci": "Pieris dulcinea",
   "order": "Lepidoptera",
@@ -11804,19 +11362,6 @@
   }
  },
  {
-  "id": "if35019",
-  "sci": "Polistes bellicosus",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 15,
-  "common": {
-   "fr": "",
-   "en": "Belligerent Paper Wasp"
-  }
- },
- {
   "id": "i68711d",
   "sci": "Pollenia rudis",
   "order": "Diptera",
@@ -11827,6 +11372,19 @@
   "common": {
    "fr": "Mouche des greniers",
    "en": "Awkward Clusterfly"
+  }
+ },
+ {
+  "id": "ic8226c",
+  "sci": "Psylliodes affinis",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Psylliodes",
+  "threat": "",
+  "n_interactions": 15,
+  "common": {
+   "fr": "Altise de la pomme de terre",
+   "en": "Potato Flea Beetle"
   }
  },
  {
@@ -11892,6 +11450,19 @@
   "common": {
    "fr": "la Tordeuse du chêne, Tordeuse verte du chêne",
    "en": "Green Oak Tortrix"
+  }
+ },
+ {
+  "id": "i8114f0",
+  "sci": "Vanessa itea",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Vanessa",
+  "threat": "",
+  "n_interactions": 15,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -11970,19 +11541,6 @@
   "common": {
    "fr": "Pyramide",
    "en": "Copper Underwing"
-  }
- },
- {
-  "id": "if4c985",
-  "sci": "Anthaxia dimidiata",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
-  "threat": "",
-  "n_interactions": 14,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -12259,6 +11817,19 @@
   }
  },
  {
+  "id": "i56c62f",
+  "sci": "Galeruca laticollis",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Galeruca",
+  "threat": "",
+  "n_interactions": 14,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i75036e",
   "sci": "Hebomoia glaucippe",
   "order": "Lepidoptera",
@@ -12389,19 +11960,6 @@
   }
  },
  {
-  "id": "iac57e9",
-  "sci": "Lycaena hyllus",
-  "order": "Lepidoptera",
-  "family": "Sesiidae",
-  "genus": "Sesia",
-  "threat": "",
-  "n_interactions": 14,
-  "common": {
-   "fr": "",
-   "en": "Bronze Copper"
-  }
- },
- {
   "id": "ib69713",
   "sci": "Macrothylacia rubi",
   "order": "Lepidoptera",
@@ -12519,6 +12077,19 @@
   }
  },
  {
+  "id": "ie01223",
+  "sci": "Philanthus bilunatus",
+  "order": "Hymenoptera",
+  "family": "Crabronidae",
+  "genus": "Philanthus",
+  "threat": "",
+  "n_interactions": 14,
+  "common": {
+   "fr": "",
+   "en": "Two Moons Beewolf"
+  }
+ },
+ {
   "id": "i7553e3",
   "sci": "Poecilocampa populi",
   "order": "Lepidoptera",
@@ -12558,19 +12129,6 @@
   }
  },
  {
-  "id": "i8b9204",
-  "sci": "Scathophaga furcata",
-  "order": "Diptera",
-  "family": "Scathophagidae",
-  "genus": "Scathophaga",
-  "threat": "",
-  "n_interactions": 14,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ia2e9dc",
   "sci": "Sipha (Sipha)",
   "order": "Hemiptera",
@@ -12594,32 +12152,6 @@
   "common": {
    "fr": "Ecureuil, Staurope du Hêtre, Bombyx du Hêtre",
    "en": "Lobster Moth"
-  }
- },
- {
-  "id": "iad3276",
-  "sci": "Tachina fera",
-  "order": "Diptera",
-  "family": "Tachinidae",
-  "genus": "Tachina",
-  "threat": "",
-  "n_interactions": 14,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i4e0e94",
-  "sci": "Tachina grossa",
-  "order": "Diptera",
-  "family": "Tachinidae",
-  "genus": "Tachina",
-  "threat": "",
-  "n_interactions": 14,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -12698,19 +12230,6 @@
   "common": {
    "fr": "",
    "en": "Yellow-vented Hornet"
-  }
- },
- {
-  "id": "if3d018",
-  "sci": "Vespula squamosa",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 14,
-  "common": {
-   "fr": "",
-   "en": "Southern Yellowjacket"
   }
  },
  {
@@ -12844,6 +12363,19 @@
   }
  },
  {
+  "id": "if4c985",
+  "sci": "Anthaxia dimidiata",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Anthaxia",
+  "threat": "",
+  "n_interactions": 13,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i83e0ed",
   "sci": "Anthaxia helvetica",
   "order": "Coleoptera",
@@ -12935,8 +12467,8 @@
   }
  },
  {
-  "id": "i770f4f",
-  "sci": "Coelioxys conoideus",
+  "id": "i89db90",
+  "sci": "Coelioxys inermis",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Coelioxys",
@@ -12944,7 +12476,7 @@
   "n_interactions": 13,
   "common": {
    "fr": "",
-   "en": "Large Sharp-tail Bee"
+   "en": "Shiny-vented Sharp-tail Bee"
   }
  },
  {
@@ -13091,6 +12623,19 @@
   }
  },
  {
+  "id": "i3d37bb",
+  "sci": "Formica japonica",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 13,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i1867c8",
   "sci": "Halictus langobardicus",
   "order": "Hymenoptera",
@@ -13218,6 +12763,19 @@
   "common": {
    "fr": "",
    "en": "Japanese Luehdorfia"
+  }
+ },
+ {
+  "id": "iac57e9",
+  "sci": "Lycaena hyllus",
+  "order": "Lepidoptera",
+  "family": "Sesiidae",
+  "genus": "Sesia",
+  "threat": "",
+  "n_interactions": 13,
+  "common": {
+   "fr": "",
+   "en": "Bronze Copper"
   }
  },
  {
@@ -13416,6 +12974,19 @@
   }
  },
  {
+  "id": "i3dd951",
+  "sci": "Sphyrna lewini",
+  "order": "Carcharhiniformes",
+  "family": "Sphyrnidae",
+  "genus": "Sphyrna",
+  "threat": "",
+  "n_interactions": 13,
+  "common": {
+   "fr": "Requin marteau à festons",
+   "en": "Bronze hammerhead shark"
+  }
+ },
+ {
   "id": "icb3f51",
   "sci": "Stenurella melanura",
   "order": "Coleoptera",
@@ -13442,16 +13013,16 @@
   }
  },
  {
-  "id": "i79a0fd",
-  "sci": "Vespa basalis",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
+  "id": "ibe9924",
+  "sci": "Tinca tinca",
+  "order": "Cypriniformes",
+  "family": "Cyprinidae",
+  "genus": "Tinca",
   "threat": "",
   "n_interactions": 13,
   "common": {
-   "fr": "",
-   "en": "Black-bellied Hornet"
+   "fr": "Aiguillons",
+   "en": "Doctor Fish"
   }
  },
  {
@@ -13806,19 +13377,6 @@
   }
  },
  {
-  "id": "i3a9f2e",
-  "sci": "Coelioxys elongatus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": "Dull-vented Sharp-tail Bee"
-  }
- },
- {
   "id": "ic079a4",
   "sci": "Coelioxys germanus",
   "order": "Hymenoptera",
@@ -13829,6 +13387,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "ieebee4",
+  "sci": "Coelioxys rufescens",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 12,
+  "common": {
+   "fr": "",
+   "en": "Rufescent Sharp-tail Bee"
   }
  },
  {
@@ -14313,19 +13884,6 @@
   }
  },
  {
-  "id": "i4aba55",
-  "sci": "Nomada succincta",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": "Yellow-legged Nomad Bee"
-  }
- },
- {
   "id": "i6cb960",
   "sci": "Orthosia incerta",
   "order": "Lepidoptera",
@@ -14430,32 +13988,6 @@
   }
  },
  {
-  "id": "ibe9330",
-  "sci": "Polistes exclamans",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": "Common Paper Wasp"
-  }
- },
- {
-  "id": "if2e3ea",
-  "sci": "Polistes major",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "Polistes grande",
-   "en": "Horse Paper Wasp"
-  }
- },
- {
   "id": "i1fc824",
   "sci": "Pontia daplidice",
   "order": "Lepidoptera",
@@ -14513,6 +14045,19 @@
   "order": "Diptera",
   "family": "Sepsidae",
   "genus": "Saltella",
+  "threat": "",
+  "n_interactions": 12,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i8b9204",
+  "sci": "Scathophaga furcata",
+  "order": "Diptera",
+  "family": "Scathophagidae",
+  "genus": "Scathophaga",
   "threat": "",
   "n_interactions": 12,
   "common": {
@@ -14586,24 +14131,24 @@
   }
  },
  {
-  "id": "i8470ef",
-  "sci": "Stelis breviuscula",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Stelis",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": "Little Dark Bee"
-  }
- },
- {
   "id": "i6fb45d",
   "sci": "Stereocorynes truncorum",
   "order": "Coleoptera",
   "family": "Curculionidae",
   "genus": "Stereocorynes",
+  "threat": "",
+  "n_interactions": 12,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "iad3276",
+  "sci": "Tachina fera",
+  "order": "Diptera",
+  "family": "Tachinidae",
+  "genus": "Tachina",
   "threat": "",
   "n_interactions": 12,
   "common": {
@@ -14661,19 +14206,6 @@
   "common": {
    "fr": "",
    "en": "Golden Birdwing"
-  }
- },
- {
-  "id": "iafea1f",
-  "sci": "Vespa tropica",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 12,
-  "common": {
-   "fr": "",
-   "en": "Greater Banded Hornet"
   }
  },
  {
@@ -14924,19 +14456,6 @@
   }
  },
  {
-  "id": "i5cb3f1",
-  "sci": "Baryscapus adalia",
-  "order": "Hymenoptera",
-  "family": "Eulophidae",
-  "genus": "Baryscapus",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i523a17",
   "sci": "Battus polydamas",
   "order": "Lepidoptera",
@@ -15064,6 +14583,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i59a404",
+  "sci": "Coccinella magnifica",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 11,
+  "common": {
+   "fr": "Coccinelle éclatante",
+   "en": "Scarce 7-spot Ladybird"
   }
  },
  {
@@ -15470,32 +15002,6 @@
   }
  },
  {
-  "id": "ib27f02",
-  "sci": "Nomada bifasciata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i624e74",
-  "sci": "Nomada flavopicta",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "",
-   "en": "Blunthorn Nomad Bee"
-  }
- },
- {
   "id": "id7baad",
   "sci": "Oedemera crassipes",
   "order": "Coleoptera",
@@ -15717,6 +15223,32 @@
   }
  },
  {
+  "id": "if35019",
+  "sci": "Polistes bellicosus",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 11,
+  "common": {
+   "fr": "",
+   "en": "Belligerent Paper Wasp"
+  }
+ },
+ {
+  "id": "icd7867",
+  "sci": "Polistes chinensis",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 11,
+  "common": {
+   "fr": "",
+   "en": "Asian Paper Wasp"
+  }
+ },
+ {
   "id": "i2c748d",
   "sci": "Polymixis flavicincta",
   "order": "Lepidoptera",
@@ -15782,19 +15314,6 @@
   }
  },
  {
-  "id": "i566416",
-  "sci": "Siphona geniculata",
-  "order": "Diptera",
-  "family": "Tachinidae",
-  "genus": "Siphona",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i09b44d",
   "sci": "Stomoxys calcitrans",
   "order": "Diptera",
@@ -15857,19 +15376,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ia1252b",
-  "sci": "Vespa ducalis",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 11,
-  "common": {
-   "fr": "",
-   "en": "Black-tailed Hornet"
   }
  },
  {
@@ -15982,19 +15488,6 @@
   "order": "Hemiptera",
   "family": "Cicadellidae",
   "genus": "Alebra",
-  "threat": "",
-  "n_interactions": 10,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i2769ad",
-  "sci": "Altica helianthemi",
-  "order": "Coleoptera",
-  "family": "Chrysomelidae",
-  "genus": "Altica",
   "threat": "",
   "n_interactions": 10,
   "common": {
@@ -16351,6 +15844,19 @@
   "common": {
    "fr": "Charançon noir strié",
    "en": ""
+  }
+ },
+ {
+  "id": "i7d4d1c",
+  "sci": "Coelioxys afra",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 10,
+  "common": {
+   "fr": "",
+   "en": "Short Sharp-tail Bee"
   }
  },
  {
@@ -16913,6 +16419,19 @@
   }
  },
  {
+  "id": "ib27f02",
+  "sci": "Nomada bifasciata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 10,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "ifab7ff",
   "sci": "Nomada sayi",
   "order": "Hymenoptera",
@@ -16926,8 +16445,8 @@
   }
  },
  {
-  "id": "ia2fdc0",
-  "sci": "Nomada zonata",
+  "id": "i4aba55",
+  "sci": "Nomada succincta",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -16935,7 +16454,7 @@
   "n_interactions": 10,
   "common": {
    "fr": "",
-   "en": "Variable Nomad Bee"
+   "en": "Yellow-legged Nomad Bee"
   }
  },
  {
@@ -17108,8 +16627,8 @@
   }
  },
  {
-  "id": "idff48b",
-  "sci": "Polistes annularis",
+  "id": "ibe9330",
+  "sci": "Polistes exclamans",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -17117,7 +16636,20 @@
   "n_interactions": 10,
   "common": {
    "fr": "",
-   "en": "Jack Spaniard Paper Wasp"
+   "en": "Common Paper Wasp"
+  }
+ },
+ {
+  "id": "if2e3ea",
+  "sci": "Polistes major",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 10,
+  "common": {
+   "fr": "Polistes grande",
+   "en": "Horse Paper Wasp"
   }
  },
  {
@@ -17212,19 +16744,6 @@
   }
  },
  {
-  "id": "if7af66",
-  "sci": "Stelis signata",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Stelis",
-  "threat": "",
-  "n_interactions": 10,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ie4632b",
   "sci": "Stomaphis quercus",
   "order": "Hemiptera",
@@ -17290,8 +16809,8 @@
   }
  },
  {
-  "id": "i04c359",
-  "sci": "Vespa bicolor",
+  "id": "i79a0fd",
+  "sci": "Vespa basalis",
   "order": "Hymenoptera",
   "family": "Vespidae",
   "genus": "Vespa",
@@ -17299,7 +16818,7 @@
   "n_interactions": 10,
   "common": {
    "fr": "",
-   "en": "Black Shield Hornet"
+   "en": "Black-bellied Hornet"
   }
  },
  {
@@ -17521,6 +17040,19 @@
   "common": {
    "fr": "Porte-Flèches",
    "en": "Archer's Dart"
+  }
+ },
+ {
+  "id": "i2769ad",
+  "sci": "Altica helianthemi",
+  "order": "Coleoptera",
+  "family": "Chrysomelidae",
+  "genus": "Altica",
+  "threat": "",
+  "n_interactions": 9,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -17927,6 +17459,19 @@
   }
  },
  {
+  "id": "i770f4f",
+  "sci": "Coelioxys conoideus",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 9,
+  "common": {
+   "fr": "",
+   "en": "Large Sharp-tail Bee"
+  }
+ },
+ {
   "id": "ied0463",
   "sci": "Coenosia obscuricula",
   "order": "Diptera",
@@ -18200,32 +17745,6 @@
   }
  },
  {
-  "id": "i988c23",
-  "sci": "Formica pratensis",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "Fourmi des prés",
-   "en": "Black-backed Meadow Ant"
-  }
- },
- {
-  "id": "i61968b",
-  "sci": "Formica rufa",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "Fourmi rousse",
-   "en": "Red wood ant"
-  }
- },
- {
   "id": "iaaaaa0",
   "sci": "Gastropacha quercifolia",
   "order": "Lepidoptera",
@@ -18275,6 +17794,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "ic64c57",
+  "sci": "Hemilepidotus papilio",
+  "order": "Scorpaeniformes",
+  "family": "Cottidae",
+  "genus": "Hemilepidotus",
+  "threat": "",
+  "n_interactions": 9,
+  "common": {
+   "fr": "",
+   "en": "butterfly sculpin"
   }
  },
  {
@@ -18496,19 +18028,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i3ef789",
-  "sci": "Melanargia occitanica",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Melanargia",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "l'Echiquier d'Occitanie",
-   "en": "Western Marbled White"
   }
  },
  {
@@ -18798,19 +18317,6 @@
   }
  },
  {
-  "id": "i1250a2",
-  "sci": "Phyllobius arborator",
-  "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Phyllobius",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i60a5b3",
   "sci": "Phyllotreta variipennis",
   "order": "Coleoptera",
@@ -18915,19 +18421,6 @@
   }
  },
  {
-  "id": "i60a745",
-  "sci": "Polistes rothneyi",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
-   "en": "Rothney's Paper Wasp"
-  }
- },
- {
   "id": "i51a677",
   "sci": "Protemphytus",
   "order": "Hymenoptera",
@@ -19006,6 +18499,19 @@
   }
  },
  {
+  "id": "i566416",
+  "sci": "Siphona geniculata",
+  "order": "Diptera",
+  "family": "Tachinidae",
+  "genus": "Siphona",
+  "threat": "",
+  "n_interactions": 9,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "ib677c0",
   "sci": "Sphecodes albilabris",
   "order": "Hymenoptera",
@@ -19015,19 +18521,6 @@
   "n_interactions": 9,
   "common": {
    "fr": "Sphécode de Latreille",
-   "en": ""
-  }
- },
- {
-  "id": "i39fdb2",
-  "sci": "Sphecodes schenckii",
-  "order": "Hymenoptera",
-  "family": "Halictidae",
-  "genus": "Sphecodes",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -19045,21 +18538,8 @@
   }
  },
  {
-  "id": "ic0ab7d",
-  "sci": "Stelis minuta",
-  "order": "",
-  "family": "",
-  "genus": "",
-  "threat": "",
-  "n_interactions": 9,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i9c526b",
-  "sci": "Stelis ornatula",
+  "id": "i8470ef",
+  "sci": "Stelis breviuscula",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Stelis",
@@ -19067,7 +18547,7 @@
   "n_interactions": 9,
   "common": {
    "fr": "",
-   "en": "Spotted Dark Bee"
+   "en": "Little Dark Bee"
   }
  },
  {
@@ -19115,6 +18595,19 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Syrphus",
+  "threat": "",
+  "n_interactions": 9,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i4e0e94",
+  "sci": "Tachina grossa",
+  "order": "Diptera",
+  "family": "Tachinidae",
+  "genus": "Tachina",
   "threat": "",
   "n_interactions": 9,
   "common": {
@@ -19185,6 +18678,19 @@
   "common": {
    "fr": "Coccinelle à 16 points",
    "en": "16 spot ladybird"
+  }
+ },
+ {
+  "id": "i1fa19c",
+  "sci": "Vespula flavopilosa",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 9,
+  "common": {
+   "fr": "",
+   "en": "Downy Yellowjacket"
   }
  },
  {
@@ -19500,19 +19006,6 @@
   }
  },
  {
-  "id": "ia7c23b",
-  "sci": "Anthaxia nigritula",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ic0b2ef",
   "sci": "Anthophora crinipes",
   "order": "Hymenoptera",
@@ -19718,32 +19211,6 @@
   "common": {
    "fr": "",
    "en": "Plant bug"
-  }
- },
- {
-  "id": "id207a1",
-  "sci": "Coelioxys aurolimbatus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "id824ab",
-  "sci": "Coelioxys echinatus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -20631,16 +20098,16 @@
   }
  },
  {
-  "id": "i75688f",
-  "sci": "Melanargia lachesis",
+  "id": "i3ef789",
+  "sci": "Melanargia occitanica",
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Melanargia",
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "Echiquier ibérique, Échiquier d'Ibérie",
-   "en": "Iberian Marbled White"
+   "fr": "l'Echiquier d'Occitanie",
+   "en": "Western Marbled White"
   }
  },
  {
@@ -20722,29 +20189,16 @@
   }
  },
  {
-  "id": "i4315a2",
-  "sci": "Nomada fulvicornis",
+  "id": "i77ab00",
+  "sci": "Nomada fabriciana",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
-   "en": "6-Banded Nomad Bee"
-  }
- },
- {
-  "id": "ia2d8d6",
-  "sci": "Nomada mutica",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "",
-   "en": ""
+   "fr": "Nomade de Fabricius",
+   "en": "Fabricius' Nomad Bee"
   }
  },
  {
@@ -20953,6 +20407,32 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i1250a2",
+  "sci": "Phyllobius arborator",
+  "order": "Coleoptera",
+  "family": "Curculionidae",
+  "genus": "Phyllobius",
+  "threat": "",
+  "n_interactions": 8,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "idff48b",
+  "sci": "Polistes annularis",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 8,
+  "common": {
+   "fr": "",
+   "en": "Jack Spaniard Paper Wasp"
   }
  },
  {
@@ -21255,19 +20735,6 @@
   }
  },
  {
-  "id": "if2c423",
-  "sci": "Vespa orientalis",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespa",
-  "threat": "",
-  "n_interactions": 8,
-  "common": {
-   "fr": "Frelon oriental",
-   "en": "Oriental Hornet"
-  }
- },
- {
   "id": "i673949",
   "sci": "Vespula atropilosa",
   "order": "Hymenoptera",
@@ -21278,6 +20745,19 @@
   "common": {
    "fr": "",
    "en": "Prairie Yellowjacket"
+  }
+ },
+ {
+  "id": "if3d018",
+  "sci": "Vespula squamosa",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 8,
+  "common": {
+   "fr": "",
+   "en": "Southern Yellowjacket"
   }
  },
  {
@@ -21606,32 +21086,6 @@
   }
  },
  {
-  "id": "i8bfbff",
-  "sci": "Agrilus mendax",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Agrilus",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i81a619",
-  "sci": "Agrilus obsoletoguttatus",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Agrilus",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i7ef828",
   "sci": "Agrochola litura",
   "order": "Lepidoptera",
@@ -21746,6 +21200,19 @@
   "common": {
    "fr": "",
    "en": "Red-backed Mining Bee"
+  }
+ },
+ {
+  "id": "ia7c23b",
+  "sci": "Anthaxia nigritula",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Anthaxia",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -22009,19 +21476,6 @@
   }
  },
  {
-  "id": "i7750a8",
-  "sci": "Ceratina smaragdula",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Ceratina",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": "Small Carpenter Bee"
-  }
- },
- {
   "id": "id9f541",
   "sci": "Ceratina tejonensis",
   "order": "Hymenoptera",
@@ -22149,19 +21603,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i55989b",
-  "sci": "Coelioxys mandibularis",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": "Square-jawed Sharp-tail Bee"
   }
  },
  {
@@ -22763,6 +22204,19 @@
   }
  },
  {
+  "id": "i988c23",
+  "sci": "Formica pratensis",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "Fourmi des prés",
+   "en": "Black-backed Meadow Ant"
+  }
+ },
+ {
   "id": "iefddd9",
   "sci": "Galerucella lineola",
   "order": "Coleoptera",
@@ -23231,6 +22685,19 @@
   }
  },
  {
+  "id": "i75688f",
+  "sci": "Melanargia lachesis",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Melanargia",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "Echiquier ibérique, Échiquier d'Ibérie",
+   "en": "Iberian Marbled White"
+  }
+ },
+ {
   "id": "ice71d5",
   "sci": "Melecta albifrons",
   "order": "Hymenoptera",
@@ -23348,19 +22815,6 @@
   }
  },
  {
-  "id": "i6bf2af",
-  "sci": "Nomada agrestis",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i9207cf",
   "sci": "Nomada distinguenda",
   "order": "Hymenoptera",
@@ -23384,6 +22838,32 @@
   "common": {
    "fr": "",
    "en": "Black-and-yellow Nomad"
+  }
+ },
+ {
+  "id": "ia2d8d6",
+  "sci": "Nomada mutica",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "ia2fdc0",
+  "sci": "Nomada zonata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "",
+   "en": "Variable Nomad Bee"
   }
  },
  {
@@ -23777,8 +23257,8 @@
   }
  },
  {
-  "id": "if6d20b",
-  "sci": "Polistes canadensis",
+  "id": "i60a745",
+  "sci": "Polistes rothneyi",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -23786,7 +23266,7 @@
   "n_interactions": 7,
   "common": {
    "fr": "",
-   "en": "Neotropical Red Paper Wasp"
+   "en": "Rothney's Paper Wasp"
   }
  },
  {
@@ -24024,19 +23504,6 @@
   }
  },
  {
-  "id": "ifaa420",
-  "sci": "Spathius polonicus",
-  "order": "",
-  "family": "",
-  "genus": "Spathius",
-  "threat": "",
-  "n_interactions": 7,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ic87649",
   "sci": "Spermophagus sericeus",
   "order": "Coleoptera",
@@ -24055,6 +23522,19 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Sphaerophoria",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i39fdb2",
+  "sci": "Sphecodes schenckii",
+  "order": "Hymenoptera",
+  "family": "Halictidae",
+  "genus": "Sphecodes",
   "threat": "",
   "n_interactions": 7,
   "common": {
@@ -24099,6 +23579,19 @@
   "common": {
    "fr": "Agrotide lucernaire",
    "en": "Northern Rustic"
+  }
+ },
+ {
+  "id": "if7af66",
+  "sci": "Stelis signata",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Stelis",
+  "threat": "",
+  "n_interactions": 7,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -24206,8 +23699,8 @@
   }
  },
  {
-  "id": "i213b3b",
-  "sci": "Vespa soror",
+  "id": "iafea1f",
+  "sci": "Vespa tropica",
   "order": "Hymenoptera",
   "family": "Vespidae",
   "genus": "Vespa",
@@ -24215,7 +23708,7 @@
   "n_interactions": 7,
   "common": {
    "fr": "",
-   "en": "Southern Giant Hornet"
+   "en": "Greater Banded Hornet"
   }
  },
  {
@@ -24442,6 +23935,32 @@
  {
   "id": "i4becac",
   "sci": "Agrilus lecontei",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Agrilus",
+  "threat": "",
+  "n_interactions": 6,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i8bfbff",
+  "sci": "Agrilus mendax",
+  "order": "Coleoptera",
+  "family": "Buprestidae",
+  "genus": "Agrilus",
+  "threat": "",
+  "n_interactions": 6,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i81a619",
+  "sci": "Agrilus obsoletoguttatus",
   "order": "Coleoptera",
   "family": "Buprestidae",
   "genus": "Agrilus",
@@ -25103,16 +24622,16 @@
   }
  },
  {
-  "id": "i42c8d9",
-  "sci": "Ceratina parvula",
+  "id": "i7750a8",
+  "sci": "Ceratina smaragdula",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Ceratina",
   "threat": "",
   "n_interactions": 6,
   "common": {
-   "fr": "Ceratine naine",
-   "en": ""
+   "fr": "",
+   "en": "Small Carpenter Bee"
   }
  },
  {
@@ -25350,19 +24869,6 @@
   }
  },
  {
-  "id": "ic3e81c",
-  "sci": "Chrysoperla rufilabris",
-  "order": "Neuroptera",
-  "family": "Chrysopidae",
-  "genus": "Chrysoperla",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": "Red-lipped Green Lacewing"
-  }
- },
- {
   "id": "ida70ff",
   "sci": "Chrysotoxum fasciolatum",
   "order": "Diptera",
@@ -25412,6 +24918,32 @@
   "common": {
    "fr": "",
    "en": "Cyclamen Tortrix"
+  }
+ },
+ {
+  "id": "id207a1",
+  "sci": "Coelioxys aurolimbatus",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 6,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "id824ab",
+  "sci": "Coelioxys echinatus",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 6,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -25563,19 +25095,6 @@
   "order": "Diptera",
   "family": "Bombyliidae",
   "genus": "Conophorus",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i7ad9f6",
-  "sci": "Conops flavipes",
-  "order": "Diptera",
-  "family": "Conopidae",
-  "genus": "Conops",
   "threat": "",
   "n_interactions": 6,
   "common": {
@@ -25797,32 +25316,6 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Didea",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i41b7ab",
-  "sci": "Dinocampus coccinellae",
-  "order": "",
-  "family": "",
-  "genus": "Dinocampus",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i74cfc5",
-  "sci": "Dioxys cinctus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Dioxys",
   "threat": "",
   "n_interactions": 6,
   "common": {
@@ -26348,19 +25841,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i9d4854",
-  "sci": "Formica subsericea",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": "Silky Field Ant"
   }
  },
  {
@@ -27144,8 +26624,8 @@
   }
  },
  {
-  "id": "i5d1cc3",
-  "sci": "Nomada furva",
+  "id": "i1cddaf",
+  "sci": "Nomada flava",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -27153,33 +26633,7 @@
   "n_interactions": 6,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i3792ea",
-  "sci": "Nomada lathburiana",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": "Lathbury's Nomad Bee"
-  }
- },
- {
-  "id": "ia8df28",
-  "sci": "Nomada melathoracica",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
+   "en": "Flavous Nomad Bee"
   }
  },
  {
@@ -27193,45 +26647,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i3f27b8",
-  "sci": "Nomada ruficornis",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": "Fork-jawed Nomad Bee"
-  }
- },
- {
-  "id": "i14297d",
-  "sci": "Nomada sexfasciata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": "Six-banded Nomad Bee"
-  }
- },
- {
-  "id": "i83a7c7",
-  "sci": "Nomada striata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": "Blunt-jawed Nomad Bee"
   }
  },
  {
@@ -27495,19 +26910,6 @@
   }
  },
  {
-  "id": "iac5ccf",
-  "sci": "Phoreiobothrium lasium",
-  "order": "Onchoproteocephalidea",
-  "family": "Onchobothriidae",
-  "genus": "Phoreiobothrium",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ifb9cb7",
   "sci": "Phyllonorycter crataegella",
   "order": "Lepidoptera",
@@ -27573,6 +26975,19 @@
   }
  },
  {
+  "id": "if07547",
+  "sci": "Pieris japonica",
+  "order": "Ericales",
+  "family": "Ericaceae",
+  "genus": "Pieris",
+  "threat": "",
+  "n_interactions": 6,
+  "common": {
+   "fr": "Piéris du Japon, Andromède du Japon",
+   "en": "Heath"
+  }
+ },
+ {
   "id": "idd86e0",
   "sci": "Pineus orientalis",
   "order": "Hemiptera",
@@ -27625,6 +27040,19 @@
   }
  },
  {
+  "id": "if6d20b",
+  "sci": "Polistes canadensis",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 6,
+  "common": {
+   "fr": "",
+   "en": "Neotropical Red Paper Wasp"
+  }
+ },
+ {
   "id": "i10d21b",
   "sci": "Polistes carolina",
   "order": "Hymenoptera",
@@ -27635,19 +27063,6 @@
   "common": {
    "fr": "",
    "en": "Fine-backed Mahogany Paper Wasp"
-  }
- },
- {
-  "id": "i8a9062",
-  "sci": "Polistes japonicus",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -27817,19 +27232,6 @@
   "common": {
    "fr": "",
    "en": "Hydrangea Scale Insect"
-  }
- },
- {
-  "id": "if60ec2",
-  "sci": "Pyronia bathseba",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Pyronia",
-  "threat": "",
-  "n_interactions": 6,
-  "common": {
-   "fr": "Ocellé rubané, Tityre, Titire",
-   "en": "Spanish Gatekeeper"
   }
  },
  {
@@ -28093,8 +27495,8 @@
   }
  },
  {
-  "id": "i8dba0a",
-  "sci": "Stelis nasuta",
+  "id": "ied6b2c",
+  "sci": "Stelis phaeoptera",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Stelis",
@@ -28102,7 +27504,7 @@
   "n_interactions": 6,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Plain Dark Bee"
   }
  },
  {
@@ -28327,16 +27729,16 @@
   }
  },
  {
-  "id": "i8cc794",
-  "sci": "Vespa mandarinia",
+  "id": "ia1252b",
+  "sci": "Vespa ducalis",
   "order": "Hymenoptera",
   "family": "Vespidae",
   "genus": "Vespa",
   "threat": "",
   "n_interactions": 6,
   "common": {
-   "fr": "Frelon géant",
-   "en": "Asian Giant Hornet"
+   "fr": "",
+   "en": "Black-tailed Hornet"
   }
  },
  {
@@ -29445,6 +28847,19 @@
   }
  },
  {
+  "id": "i42c8d9",
+  "sci": "Ceratina parvula",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Ceratina",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "Ceratine naine",
+   "en": ""
+  }
+ },
+ {
   "id": "i2399df",
   "sci": "Ceratina stuckenbergi",
   "order": "Hymenoptera",
@@ -29783,32 +29198,6 @@
   }
  },
  {
-  "id": "i1a2595",
-  "sci": "Coccinella novemnotata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": "Nine-spotted Lady Beetle"
-  }
- },
- {
-  "id": "if3b014",
-  "sci": "Coelioxys brevis",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": "Red-legged Sharp-tail Bee"
-  }
- },
- {
   "id": "icf4af3",
   "sci": "Coleophora caespititiella",
   "order": "Lepidoptera",
@@ -29923,6 +29312,19 @@
   "common": {
    "fr": "Orrhodie tigrée",
    "en": "Dotted Chestnut"
+  }
+ },
+ {
+  "id": "i7ad9f6",
+  "sci": "Conops flavipes",
+  "order": "Diptera",
+  "family": "Conopidae",
+  "genus": "Conops",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -30459,19 +29861,6 @@
   }
  },
  {
-  "id": "i469c89",
-  "sci": "Eristalis bogotensis",
-  "order": "Diptera",
-  "family": "Syrphidae",
-  "genus": "Eristalis",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i30bcbc",
   "sci": "Eucera curvitarsis",
   "order": "Hymenoptera",
@@ -30664,6 +30053,19 @@
   "common": {
    "fr": "",
    "en": "Uncertain Field Ant"
+  }
+ },
+ {
+  "id": "i61968b",
+  "sci": "Formica rufa",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "Fourmi rousse",
+   "en": "Red wood ant"
   }
  },
  {
@@ -31720,6 +31122,58 @@
   }
  },
  {
+  "id": "i6bf2af",
+  "sci": "Nomada agrestis",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i624e74",
+  "sci": "Nomada flavopicta",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "",
+   "en": "Blunthorn Nomad Bee"
+  }
+ },
+ {
+  "id": "i15cb1f",
+  "sci": "Nomada goodeniana",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "",
+   "en": "Gooden's Nomad Bee"
+  }
+ },
+ {
+  "id": "i2fe55a",
+  "sci": "Nomada panzeri",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "",
+   "en": "Panzer's Nomad Bee"
+  }
+ },
+ {
   "id": "i37161e",
   "sci": "Nomada pygmaea",
   "order": "Hymenoptera",
@@ -31730,6 +31184,19 @@
   "common": {
    "fr": "",
    "en": "Pygmy Cuckoo Nomad Bee"
+  }
+ },
+ {
+  "id": "i3f27b8",
+  "sci": "Nomada ruficornis",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "",
+   "en": "Fork-jawed Nomad Bee"
   }
  },
  {
@@ -32214,19 +31681,6 @@
   }
  },
  {
-  "id": "i025916",
-  "sci": "Philanthus politus",
-  "order": "Hymenoptera",
-  "family": "Crabronidae",
-  "genus": "Philanthus",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i77179b",
   "sci": "Phycita roborella",
   "order": "Lepidoptera",
@@ -32370,8 +31824,8 @@
   }
  },
  {
-  "id": "i561906",
-  "sci": "Polistes lanio",
+  "id": "i8a9062",
+  "sci": "Polistes japonicus",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -32383,8 +31837,8 @@
   }
  },
  {
-  "id": "if63691",
-  "sci": "Polistes semenowi",
+  "id": "i561906",
+  "sci": "Polistes lanio",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -32562,6 +32016,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "if60ec2",
+  "sci": "Pyronia bathseba",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Pyronia",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "Ocellé rubané, Tityre, Titire",
+   "en": "Spanish Gatekeeper"
   }
  },
  {
@@ -32890,19 +32357,6 @@
   }
  },
  {
-  "id": "i0bf488",
-  "sci": "Sphecodes rufiventris",
-  "order": "Hymenoptera",
-  "family": "Halictidae",
-  "genus": "Sphecodes",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "Sphécode à ventre fauve",
-   "en": ""
-  }
- },
- {
   "id": "i9accf9",
   "sci": "Sphecodes scabricollis",
   "order": "Hymenoptera",
@@ -33202,19 +32656,6 @@
   }
  },
  {
-  "id": "i9f5abb",
-  "sci": "Thyreus ramosus",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Thyreus",
-  "threat": "",
-  "n_interactions": 5,
-  "common": {
-   "fr": "Crocise rameuse",
-   "en": ""
-  }
- },
- {
   "id": "ia9bc9a",
   "sci": "Tiliacea aurago",
   "order": "Lepidoptera",
@@ -33342,6 +32783,19 @@
   "common": {
    "fr": "",
    "en": "Fruit Fly"
+  }
+ },
+ {
+  "id": "i83ac3b",
+  "sci": "Vespa sexmaculata",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 5,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -34026,19 +33480,6 @@
   "order": "Hymenoptera",
   "family": "Tenthredinidae",
   "genus": "Ametastegia",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i8cb919",
-  "sci": "Ammobates muticus",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Ammobates",
   "threat": "",
   "n_interactions": 4,
   "common": {
@@ -35581,32 +35022,6 @@
   }
  },
  {
-  "id": "i1e2810",
-  "sci": "Coccinella undecimpunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "Coccinelle à 11 points",
-   "en": "11-Spot Ladybird"
-  }
- },
- {
-  "id": "id6b651",
-  "sci": "Coelioxys conicus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": "Large Sharp-tail Bee"
-  }
- },
- {
   "id": "i442f15",
   "sci": "Coelioxys dolichos",
   "order": "Hymenoptera",
@@ -36764,6 +36179,19 @@
   }
  },
  {
+  "id": "i469c89",
+  "sci": "Eristalis bogotensis",
+  "order": "Diptera",
+  "family": "Syrphidae",
+  "genus": "Eristalis",
+  "threat": "",
+  "n_interactions": 4,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i135fee",
   "sci": "Eristalis cryptarum",
   "order": "Diptera",
@@ -37180,8 +36608,8 @@
   }
  },
  {
-  "id": "i9c41de",
-  "sci": "Formica pallidefulva",
+  "id": "i0957f2",
+  "sci": "Formica sanguinea",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
@@ -37189,7 +36617,7 @@
   "n_interactions": 4,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Blood-Red Ant"
   }
  },
  {
@@ -37541,19 +36969,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i74cdcc",
-  "sci": "Harmonia conformis",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Harmonia",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": "Common spotted ladybird beetle"
   }
  },
  {
@@ -38740,6 +38155,19 @@
   }
  },
  {
+  "id": "ia7b196",
+  "sci": "Myrrha octodecimguttata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Myrrha",
+  "threat": "",
+  "n_interactions": 4,
+  "common": {
+   "fr": "Coccinelle des pins",
+   "en": "18-Spot Ladybird"
+  }
+ },
+ {
   "id": "i452772",
   "sci": "Mythimna pallens",
   "order": "Lepidoptera",
@@ -38818,32 +38246,6 @@
   }
  },
  {
-  "id": "ia72c3b",
-  "sci": "Nomada armata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": "Armed Nomad Bee"
-  }
- },
- {
-  "id": "i415ebf",
-  "sci": "Nomada guttulata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": "Short-spined Nomad Bee"
-  }
- },
- {
   "id": "i4c83c9",
   "sci": "Nomada maculata",
   "order": "Hymenoptera",
@@ -38857,8 +38259,8 @@
   }
  },
  {
-  "id": "i131854",
-  "sci": "Nomada roberjeotiana",
+  "id": "ia8df28",
+  "sci": "Nomada melathoracica",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -38866,7 +38268,20 @@
   "n_interactions": 4,
   "common": {
    "fr": "",
-   "en": "Tormentil Nomad Bee"
+   "en": ""
+  }
+ },
+ {
+  "id": "i14297d",
+  "sci": "Nomada sexfasciata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 4,
+  "common": {
+   "fr": "",
+   "en": "Six-banded Nomad Bee"
   }
  },
  {
@@ -39174,19 +38589,6 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Parasyrphus",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i517734",
-  "sci": "Paravespula vulgaris",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Paravespula",
   "threat": "",
   "n_interactions": 4,
   "common": {
@@ -39634,19 +39036,6 @@
   "common": {
    "fr": "Etrangère",
    "en": "Pale Shining Brown"
-  }
- },
- {
-  "id": "i27d66b",
-  "sci": "Polistes biglumis",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "Guêpe à anneaux bordés de jaune, & deux taches jaunes",
-   "en": ""
   }
  },
  {
@@ -40287,6 +39676,19 @@
   }
  },
  {
+  "id": "ifaa420",
+  "sci": "Spathius polonicus",
+  "order": "",
+  "family": "",
+  "genus": "Spathius",
+  "threat": "",
+  "n_interactions": 4,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i2d27c0",
   "sci": "Sphecodes niger",
   "order": "Hymenoptera",
@@ -40297,6 +39699,19 @@
   "common": {
    "fr": "",
    "en": "Dark Blood Bee"
+  }
+ },
+ {
+  "id": "i0bf488",
+  "sci": "Sphecodes rufiventris",
+  "order": "Hymenoptera",
+  "family": "Halictidae",
+  "genus": "Sphecodes",
+  "threat": "",
+  "n_interactions": 4,
+  "common": {
+   "fr": "Sphécode à ventre fauve",
+   "en": ""
   }
  },
  {
@@ -40609,19 +40024,6 @@
   "common": {
    "fr": "",
    "en": "Thrips"
-  }
- },
- {
-  "id": "i69ba1a",
-  "sci": "Thyreus orbatus",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Thyreus",
-  "threat": "",
-  "n_interactions": 4,
-  "common": {
-   "fr": "Crocise ravisseuse",
-   "en": ""
   }
  },
  {
@@ -42562,19 +41964,6 @@
   }
  },
  {
-  "id": "id6e0ab",
-  "sci": "Archarius salicivorus",
-  "order": "Coleoptera",
-  "family": "Curculionidae",
-  "genus": "Archarius",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Weevil"
-  }
- },
- {
   "id": "ic35b9c",
   "sci": "Archiearis parthenias",
   "order": "Lepidoptera",
@@ -42806,6 +42195,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "ie3f937",
+  "sci": "Balanus crenatus",
+  "order": "Sessilia",
+  "family": "Balanidae",
+  "genus": "Balanus",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "Balane crénelée",
+   "en": "an acorn barnacle"
   }
  },
  {
@@ -44161,29 +43563,16 @@
   }
  },
  {
-  "id": "id17255",
-  "sci": "Coccinella hieroglyphica",
+  "id": "i1a2595",
+  "sci": "Coccinella novemnotata",
   "order": "Coleoptera",
   "family": "Coccinellidae",
   "genus": "Coccinella",
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "coccinelle à hiéroglyphes",
-   "en": "Hieroglyphic Ladybird"
-  }
- },
- {
-  "id": "iac9df4",
-  "sci": "Coccinella quinquepunctata",
-  "order": "Coleoptera",
-  "family": "Coccinellidae",
-  "genus": "Coccinella",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "coccinelle à cinq points",
-   "en": "5-spot Ladybird"
+   "fr": "",
+   "en": "Nine-spotted Lady Beetle"
   }
  },
  {
@@ -44236,6 +43625,19 @@
   "common": {
    "fr": "",
    "en": "Red-tailed Cuckoo-leaf-cutter Bee"
+  }
+ },
+ {
+  "id": "i3a9f2e",
+  "sci": "Coelioxys elongatus",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "",
+   "en": "Dull-vented Sharp-tail Bee"
   }
  },
  {
@@ -46488,45 +45890,6 @@
   }
  },
  {
-  "id": "idaf058",
-  "sci": "Formica exsecta",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Narrow headed ant"
-  }
- },
- {
-  "id": "i4e8d54",
-  "sci": "Formica lasioides",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i97410d",
-  "sci": "Formica obscuripes",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "western thatching ant"
-  }
- },
- {
   "id": "ib1db0b",
   "sci": "Formica planipilis",
   "order": "Hymenoptera",
@@ -46537,6 +45900,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i9d4854",
+  "sci": "Formica subsericea",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "",
+   "en": "Silky Field Ant"
   }
  },
  {
@@ -46628,19 +46004,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i0bf0c9",
-  "sci": "Gladiolus papilio",
-  "order": "Asparagales",
-  "family": "Iridaceae",
-  "genus": "Gladiolus",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Goldblotch gladiolus"
   }
  },
  {
@@ -46940,6 +46303,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i74cdcc",
+  "sci": "Harmonia conformis",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Harmonia",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "",
+   "en": "Common spotted ladybird beetle"
   }
  },
  {
@@ -47593,6 +46969,32 @@
   }
  },
  {
+  "id": "i6557cb",
+  "sci": "Lasius brunneus",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Lasius",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "",
+   "en": "Brown Ant"
+  }
+ },
+ {
+  "id": "ia0b7c2",
+  "sci": "Lasius fuliginosus",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Lasius",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "Fourmi fuligineuse",
+   "en": "Jet Ant"
+  }
+ },
+ {
   "id": "i6ad9c7",
   "sci": "Lasius psammophilus",
   "order": "Hymenoptera",
@@ -47902,19 +47304,6 @@
   "common": {
    "fr": "",
    "en": "woodrush soft scale"
-  }
- },
- {
-  "id": "ib18250",
-  "sci": "Lycaena arionides",
-  "order": "Lepidoptera",
-  "family": "Lycaenidae",
-  "genus": "Lycaena",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -48984,8 +48373,8 @@
   }
  },
  {
-  "id": "i91c601",
-  "sci": "Nomada alboguttata",
+  "id": "ia72c3b",
+  "sci": "Nomada armata",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -48993,20 +48382,7 @@
   "n_interactions": 3,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i3e2cf9",
-  "sci": "Nomada braunsiana",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
+   "en": "Armed Nomad Bee"
   }
  },
  {
@@ -49023,19 +48399,6 @@
   }
  },
  {
-  "id": "ib6b776",
-  "sci": "Nomada leucophthalma",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Early Nomad Bee"
-  }
- },
- {
   "id": "i8c4ba0",
   "sci": "Nomada luteola",
   "order": "Hymenoptera",
@@ -49049,8 +48412,8 @@
   }
  },
  {
-  "id": "ie4d5a0",
-  "sci": "Nomada tridentirostris",
+  "id": "i3d1f87",
+  "sci": "Nomada marshamella",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -49058,7 +48421,7 @@
   "n_interactions": 3,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Marsham's Nomad Bee"
   }
  },
  {
@@ -50167,6 +49530,19 @@
   }
  },
  {
+  "id": "i025916",
+  "sci": "Philanthus politus",
+  "order": "Hymenoptera",
+  "family": "Crabronidae",
+  "genus": "Philanthus",
+  "threat": "",
+  "n_interactions": 3,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "if0c1f1",
   "sci": "Philedonides lunana",
   "order": "Lepidoptera",
@@ -50986,32 +50362,6 @@
   }
  },
  {
-  "id": "icf84e6",
-  "sci": "Polistes associus",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ic37727",
-  "sci": "Polistes bischoffi",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "idf54a1",
   "sci": "Polistes buyssoni",
   "order": "Hymenoptera",
@@ -51022,32 +50372,6 @@
   "common": {
    "fr": "",
    "en": "Buysson's Paper Wasp"
-  }
- },
- {
-  "id": "iefbfa4",
-  "sci": "Polistes carnifex",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Executioner Paper Wasp"
-  }
- },
- {
-  "id": "i7dae8c",
-  "sci": "Polistes ferreri",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -52143,19 +51467,6 @@
   }
  },
  {
-  "id": "i4684cf",
-  "sci": "Sphecodes majalis",
-  "order": "Hymenoptera",
-  "family": "Halictidae",
-  "genus": "Sphecodes",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i87eb11",
   "sci": "Sphrageidus similis",
   "order": "Lepidoptera",
@@ -52204,19 +51515,6 @@
   "n_interactions": 3,
   "common": {
    "fr": "Faux meunier, Spondyle bupreste",
-   "en": ""
-  }
- },
- {
-  "id": "i8b6cec",
-  "sci": "Stelis minima",
-  "order": "",
-  "family": "",
-  "genus": "",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
    "en": ""
   }
  },
@@ -53157,42 +52455,16 @@
   }
  },
  {
-  "id": "iec367f",
-  "sci": "Vespula arisana",
+  "id": "i8cc794",
+  "sci": "Vespa mandarinia",
   "order": "Hymenoptera",
   "family": "Vespidae",
-  "genus": "Vespula",
+  "genus": "Vespa",
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
-   "en": "Taiwan Yellowjacket"
-  }
- },
- {
-  "id": "id76ee9",
-  "sci": "Vespula austriaca",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "Guêpe autrichienne",
-   "en": "Boreal Yellowjacket"
-  }
- },
- {
-  "id": "i5f8e0c",
-  "sci": "Vespula koreensis",
-  "order": "Hymenoptera",
-  "family": "Vespidae",
-  "genus": "Vespula",
-  "threat": "",
-  "n_interactions": 3,
-  "common": {
-   "fr": "",
-   "en": "Korea Yellowjacket"
+   "fr": "Frelon géant",
+   "en": "Asian Giant Hornet"
   }
  },
  {
@@ -55536,19 +54808,6 @@
   }
  },
  {
-  "id": "i6cbbb2",
-  "sci": "Ammobates punctatus",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Ammobates",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i87fc71",
   "sci": "Ammophila sabulosa",
   "order": "Hymenoptera",
@@ -57821,19 +57080,6 @@
   "common": {
    "fr": "",
    "en": "Black Saw Bush-cricket"
-  }
- },
- {
-  "id": "i3e68ce",
-  "sci": "Bassaris itea",
-  "order": "Carnivora",
-  "family": "Procyonidae",
-  "genus": "Bassariscus",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -60398,16 +59644,16 @@
   }
  },
  {
-  "id": "i592e84",
-  "sci": "Coccinella transversoguttata",
+  "id": "iac9df4",
+  "sci": "Coccinella quinquepunctata",
   "order": "Coleoptera",
   "family": "Coccinellidae",
   "genus": "Coccinella",
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
-   "en": "Transverse Lady Beetle"
+   "fr": "coccinelle à cinq points",
+   "en": "5-spot Ladybird"
   }
  },
  {
@@ -60515,6 +59761,19 @@
   }
  },
  {
+  "id": "if3b014",
+  "sci": "Coelioxys brevis",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": "Red-legged Sharp-tail Bee"
+  }
+ },
+ {
   "id": "i430dde",
   "sci": "Coelioxys ducalis",
   "order": "Hymenoptera",
@@ -60541,8 +59800,8 @@
   }
  },
  {
-  "id": "i88ee18",
-  "sci": "Coelioxys haemorrhoa",
+  "id": "i55989b",
+  "sci": "Coelioxys mandibularis",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Coelioxys",
@@ -60550,33 +59809,7 @@
   "n_interactions": 2,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i931cbf",
-  "sci": "Coelioxys lanceolatus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "icee96b",
-  "sci": "Coelioxys polycentris",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
+   "en": "Square-jawed Sharp-tail Bee"
   }
  },
  {
@@ -60595,19 +59828,6 @@
  {
   "id": "ife2b0f",
   "sci": "Coelioxys smithii",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i9889d1",
-  "sci": "Coelioxys torridus",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Coelioxys",
@@ -62730,6 +61950,19 @@
   "order": "Hymenoptera",
   "family": "Tenthredinidae",
   "genus": "Dineura",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i74cfc5",
+  "sci": "Dioxys cinctus",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Dioxys",
   "threat": "",
   "n_interactions": 2,
   "common": {
@@ -65000,8 +64233,8 @@
   }
  },
  {
-  "id": "ie4864d",
-  "sci": "Formica aserva",
+  "id": "i97410d",
+  "sci": "Formica obscuripes",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
@@ -65009,72 +64242,7 @@
   "n_interactions": 2,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i319612",
-  "sci": "Formica cinerea",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i53a655",
-  "sci": "Formica lugubris",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Hairy Wood Ant"
-  }
- },
- {
-  "id": "i029b0a",
-  "sci": "Formica neogagates",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "New World Black Ant"
-  }
- },
- {
-  "id": "i5a457b",
-  "sci": "Formica neorufibarbis",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i32c6a5",
-  "sci": "Formica perpilosa",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
+   "en": "western thatching ant"
   }
  },
  {
@@ -66872,19 +66040,6 @@
   }
  },
  {
-  "id": "i450836",
-  "sci": "Kathlania leptura",
-  "order": "Rhabditida",
-  "family": "Kathlaniidae",
-  "genus": "Kathlania",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "iaf36c8",
   "sci": "Kelidocoris",
   "order": "Hemiptera",
@@ -67220,19 +66375,6 @@
   "common": {
    "fr": "",
    "en": "Fringed Furrow Bee"
-  }
- },
- {
-  "id": "ib8c740",
-  "sci": "Lasius americanus",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -67969,6 +67111,19 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Lycaeides",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "ib18250",
+  "sci": "Lycaena arionides",
+  "order": "Lepidoptera",
+  "family": "Lycaenidae",
+  "genus": "Lycaena",
   "threat": "",
   "n_interactions": 2,
   "common": {
@@ -68757,19 +67912,6 @@
   }
  },
  {
-  "id": "iba6e8f",
-  "sci": "Melanargia ines",
-  "order": "Lepidoptera",
-  "family": "Nymphalidae",
-  "genus": "Melanargia",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Echiqier des Almoravides",
-   "en": "Spanish Marbled White"
-  }
- },
- {
   "id": "i9363a7",
   "sci": "Melanargia japygia",
   "order": "Lepidoptera",
@@ -68805,19 +67947,6 @@
   "n_interactions": 2,
   "common": {
    "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i894df9",
-  "sci": "Melecta duodecimmaculata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Melecta",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Mélècte à douze taches",
    "en": ""
   }
  },
@@ -69329,19 +68458,6 @@
   }
  },
  {
-  "id": "ide1155",
-  "sci": "Myrmica americana",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Myrmica",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i28e307",
   "sci": "Myrmus miriformis",
   "order": "Hemiptera",
@@ -69771,32 +68887,6 @@
   }
  },
  {
-  "id": "i016105",
-  "sci": "Nomada argentata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Silver-sided Nomad Bee"
-  }
- },
- {
-  "id": "if5fda4",
-  "sci": "Nomada atroscutellaris",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i2f7f44",
   "sci": "Nomada basalis",
   "order": "Hymenoptera",
@@ -69810,34 +68900,8 @@
   }
  },
  {
-  "id": "i7d2756",
-  "sci": "Nomada bluethgeni",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Nomade de Blüthgen",
-   "en": ""
-  }
- },
- {
-  "id": "ic2b502",
-  "sci": "Nomada concolor",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Nomade concolore",
-   "en": ""
-  }
- },
- {
-  "id": "i3db773",
-  "sci": "Nomada discedens",
+  "id": "ia093ee",
+  "sci": "Nomada castellana",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -69846,19 +68910,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i9080ee",
-  "sci": "Nomada ferruginata",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Yellow-shouldered Nomad Bee"
   }
  },
  {
@@ -69875,8 +68926,8 @@
   }
  },
  {
-  "id": "i2a6552",
-  "sci": "Nomada furvoides",
+  "id": "i5d1cc3",
+  "sci": "Nomada furva",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -69885,19 +68936,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i53ec80",
-  "sci": "Nomada fuscicornis",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Small Guernsey Nomad Bee"
   }
  },
  {
@@ -69940,8 +68978,8 @@
   }
  },
  {
-  "id": "ieef73d",
-  "sci": "Nomada linsenmaieri",
+  "id": "i3792ea",
+  "sci": "Nomada lathburiana",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -69949,7 +68987,7 @@
   "n_interactions": 2,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Lathbury's Nomad Bee"
   }
  },
  {
@@ -69979,8 +69017,8 @@
   }
  },
  {
-  "id": "ic4aec8",
-  "sci": "Nomada numida",
+  "id": "i727885",
+  "sci": "Nomada rufipes",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -69988,7 +69026,20 @@
   "n_interactions": 2,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Black-horned Nomad Bee"
+  }
+ },
+ {
+  "id": "i0472cf",
+  "sci": "Nomada sheppardana",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": "Dark Nomad Bee"
   }
  },
  {
@@ -70007,6 +69058,19 @@
  {
   "id": "i4ca710",
   "sci": "Nomada texana",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "ie4d5a0",
+  "sci": "Nomada tridentirostris",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -71276,19 +70340,6 @@
   "common": {
    "fr": "",
    "en": "elongate soft scale"
-  }
- },
- {
-  "id": "ic64365",
-  "sci": "Paragnathia formica",
-  "order": "Isopoda",
-  "family": "Gnathiidae",
-  "genus": "Paragnathia",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -72891,19 +71942,6 @@
   }
  },
  {
-  "id": "i845202",
-  "sci": "Pieris floribunda",
-  "order": "Ericales",
-  "family": "Ericaceae",
-  "genus": "Pieris",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": "Flutterbush"
-  }
- },
- {
   "id": "idfc984",
   "sci": "Pilophorus cinnamopterus",
   "order": "Hemiptera",
@@ -73255,8 +72293,8 @@
   }
  },
  {
-  "id": "i9c41b3",
-  "sci": "Polistes atrimandibularis",
+  "id": "icf84e6",
+  "sci": "Polistes associus",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -73268,21 +72306,21 @@
   }
  },
  {
-  "id": "i576402",
-  "sci": "Polistes bahamensis",
+  "id": "i27d66b",
+  "sci": "Polistes biglumis",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
-   "en": "Bahamian Paper Wasp"
+   "fr": "Guêpe à anneaux bordés de jaune, & deux taches jaunes",
+   "en": ""
   }
  },
  {
-  "id": "i9defcc",
-  "sci": "Polistes instabilis",
+  "id": "ic37727",
+  "sci": "Polistes bischoffi",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -73290,7 +72328,33 @@
   "n_interactions": 2,
   "common": {
    "fr": "",
-   "en": "Guitarrilla Paper Wasp"
+   "en": ""
+  }
+ },
+ {
+  "id": "iefbfa4",
+  "sci": "Polistes carnifex",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": "Executioner Paper Wasp"
+  }
+ },
+ {
+  "id": "i7dae8c",
+  "sci": "Polistes ferreri",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -73307,8 +72371,8 @@
   }
  },
  {
-  "id": "idc70a0",
-  "sci": "Polistes sagittarius",
+  "id": "if63691",
+  "sci": "Polistes semenowi",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -73316,7 +72380,7 @@
   "n_interactions": 2,
   "common": {
    "fr": "",
-   "en": "Banded Paper Wasp"
+   "en": ""
   }
  },
  {
@@ -74646,19 +73710,6 @@
   }
  },
  {
-  "id": "i048cb3",
-  "sci": "Saccopteryx leptura",
-  "order": "Chiroptera",
-  "family": "Emballonuridae",
-  "genus": "Saccopteryx",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "Saccoptère commun",
-   "en": "Brown White-lined Bat"
-  }
- },
- {
   "id": "ie665e7",
   "sci": "Salicicola kermanensis",
   "order": "Hemiptera",
@@ -75335,6 +74386,19 @@
   }
  },
  {
+  "id": "i4684cf",
+  "sci": "Sphecodes majalis",
+  "order": "Hymenoptera",
+  "family": "Halictidae",
+  "genus": "Sphecodes",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i22fad7",
   "sci": "Sphecodes rubicundus",
   "order": "Hymenoptera",
@@ -75413,19 +74477,6 @@
   }
  },
  {
-  "id": "i18c7f3",
-  "sci": "Stelis annulata",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Stelis",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i24fd94",
   "sci": "Stelis costalis",
   "order": "Hymenoptera",
@@ -75439,34 +74490,8 @@
   }
  },
  {
-  "id": "ib49b8a",
-  "sci": "Stelis franconica",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Stelis",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i637f01",
-  "sci": "Stelis odontopyga",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Stelis",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i2dd8e1",
-  "sci": "Stelis simillima",
+  "id": "i8dba0a",
+  "sci": "Stelis nasuta",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Stelis",
@@ -76414,15 +75439,15 @@
   }
  },
  {
-  "id": "iff300e",
-  "sci": "Thyreus histrionicus",
+  "id": "i9f5abb",
+  "sci": "Thyreus ramosus",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Thyreus",
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "Crocise comédienne",
+   "fr": "Crocise rameuse",
    "en": ""
   }
  },
@@ -76986,6 +76011,45 @@
   }
  },
  {
+  "id": "i04c359",
+  "sci": "Vespa bicolor",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": "Black Shield Hornet"
+  }
+ },
+ {
+  "id": "if2c423",
+  "sci": "Vespa orientalis",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "Frelon oriental",
+   "en": "Oriental Hornet"
+  }
+ },
+ {
+  "id": "i213b3b",
+  "sci": "Vespa soror",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespa",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "",
+   "en": "Southern Giant Hornet"
+  }
+ },
+ {
   "id": "i01d0fa",
   "sci": "Vespula acadica",
   "order": "Hymenoptera",
@@ -76996,6 +76060,19 @@
   "common": {
    "fr": "",
    "en": "Forest Yellowjacket"
+  }
+ },
+ {
+  "id": "id76ee9",
+  "sci": "Vespula austriaca",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 2,
+  "common": {
+   "fr": "Guêpe autrichienne",
+   "en": "Boreal Yellowjacket"
   }
  },
  {
@@ -77459,19 +76536,6 @@
   "order": "Diptera",
   "family": "Tachinidae",
   "genus": "Zeuxia",
-  "threat": "",
-  "n_interactions": 2,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i56cfae",
-  "sci": "Zoogonus lasius",
-  "order": "Plagiorchiida",
-  "family": "Zoogonidae",
-  "genus": "Zoogonus",
   "threat": "",
   "n_interactions": 2,
   "common": {
@@ -80665,19 +79729,6 @@
   }
  },
  {
-  "id": "i24325a",
-  "sci": "Agrilus meliboeformis",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Agrilus",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "iaf39c7",
   "sci": "Agrilus mixtus",
   "order": "Coleoptera",
@@ -81273,19 +80324,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "i89ab94",
-  "sci": "Agrilus smaragdifrons",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Agrilus",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "East asian buprestid"
   }
  },
  {
@@ -82555,6 +81593,32 @@
   "order": "Diptera",
   "family": "Cecidomyiidae",
   "genus": "Ametrodiplosis",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i8cb919",
+  "sci": "Ammobates muticus",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Ammobates",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i6cbbb2",
+  "sci": "Ammobates punctatus",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Ammobates",
   "threat": "",
   "n_interactions": 1,
   "common": {
@@ -83839,19 +82903,6 @@
  {
   "id": "iea1254",
   "sci": "Anthaxia brevis",
-  "order": "Coleoptera",
-  "family": "Buprestidae",
-  "genus": "Anthaxia",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i6cb7aa",
-  "sci": "Anthaxia confusa",
   "order": "Coleoptera",
   "family": "Buprestidae",
   "genus": "Anthaxia",
@@ -85228,19 +84279,6 @@
   }
  },
  {
-  "id": "ie26449",
-  "sci": "Aprostocetus clavicornis",
-  "order": "Hymenoptera",
-  "family": "Eulophidae",
-  "genus": "Aprostocetus",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i80b766",
   "sci": "Apus unicolor",
   "order": "Apodiformes",
@@ -86138,19 +85176,6 @@
   }
  },
  {
-  "id": "id59557",
-  "sci": "Atanycolus nigriventris",
-  "order": "",
-  "family": "",
-  "genus": "Atanycolus",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i6f50e8",
   "sci": "Atemelia torquatella",
   "order": "Lepidoptera",
@@ -86762,6 +85787,19 @@
   }
  },
  {
+  "id": "i5cb3f1",
+  "sci": "Baryscapus adalia",
+  "order": "Hymenoptera",
+  "family": "Eulophidae",
+  "genus": "Baryscapus",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "id8ffe4",
   "sci": "Basicladus celibata",
   "order": "Lepidoptera",
@@ -86780,6 +85818,19 @@
   "order": "Lepidoptera",
   "family": "Psychidae",
   "genus": "Basicladus",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i3e68ce",
+  "sci": "Bassaris itea",
+  "order": "Carnivora",
+  "family": "Procyonidae",
+  "genus": "Bassariscus",
   "threat": "",
   "n_interactions": 1,
   "common": {
@@ -89648,19 +88699,6 @@
   }
  },
  {
-  "id": "id231e0",
-  "sci": "Cerophagus heriades",
-  "order": "Sarcoptiformes",
-  "family": "Gaudiellidae",
-  "genus": "Cerophagus",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ifb67b0",
   "sci": "Cerostegia rusci",
   "order": "Hemiptera",
@@ -91481,6 +90519,19 @@
   }
  },
  {
+  "id": "id17255",
+  "sci": "Coccinella hieroglyphica",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "coccinelle à hiéroglyphes",
+   "en": "Hieroglyphic Ladybird"
+  }
+ },
+ {
   "id": "i023a92",
   "sci": "Coccinella sp.",
   "order": "Coleoptera",
@@ -91504,6 +90555,19 @@
   "common": {
    "fr": "",
    "en": "Transverse Ladybird"
+  }
+ },
+ {
+  "id": "i1e2810",
+  "sci": "Coccinella undecimpunctata",
+  "order": "Coleoptera",
+  "family": "Coccinellidae",
+  "genus": "Coccinella",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Coccinelle à 11 points",
+   "en": "11-Spot Ladybird"
   }
  },
  {
@@ -91598,73 +90662,21 @@
   }
  },
  {
-  "id": "i87f491",
-  "sci": "Coelioxys alatus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i678e8d",
-  "sci": "Coelioxys argenteus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ifa0ae5",
-  "sci": "Coelioxys capensis",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "id2a53d",
-  "sci": "Coelioxys cherenensis",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i1c9952",
-  "sci": "Coelioxys emarginatus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "iedeff9",
   "sci": "Coelioxys gonaspis",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Coelioxys",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i88ee18",
+  "sci": "Coelioxys haemorrhoa",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Coelioxys",
@@ -91702,32 +90714,6 @@
   }
  },
  {
-  "id": "ib1eaa9",
-  "sci": "Coelioxys junodi",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i56232c",
-  "sci": "Coelioxys madagascariensis",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i2d7f02",
   "sci": "Coelioxys mesae",
   "order": "Hymenoptera",
@@ -91743,32 +90729,6 @@
  {
   "id": "i38da72",
   "sci": "Coelioxys novomexicanus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i7acd97",
-  "sci": "Coelioxys obtusus",
-  "order": "Hymenoptera",
-  "family": "Megachilidae",
-  "genus": "Coelioxys",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i8cc399",
-  "sci": "Coelioxys scioensis",
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Coelioxys",
@@ -93467,19 +92427,6 @@
   "common": {
    "fr": "",
    "en": "Hedge Cosmet"
-  }
- },
- {
-  "id": "id1f737",
-  "sci": "Cotesia sessilis",
-  "order": "",
-  "family": "",
-  "genus": "Cotesia",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -98787,19 +97734,6 @@
   }
  },
  {
-  "id": "ifd7fa9",
-  "sci": "Epidemia dorcas",
-  "order": "Lepidoptera",
-  "family": "Lycaenidae",
-  "genus": "Epidemia",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i74774b",
   "sci": "Epidemia helloides",
   "order": "Lepidoptera",
@@ -101205,8 +100139,8 @@
   }
  },
  {
-  "id": "i4152af",
-  "sci": "Formica curiosa",
+  "id": "ie4864d",
+  "sci": "Formica aserva",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
@@ -101218,8 +100152,8 @@
   }
  },
  {
-  "id": "i710fbe",
-  "sci": "Formica difficilis",
+  "id": "i319612",
+  "sci": "Formica cinerea",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
@@ -101228,11 +100162,37 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "idaf058",
+  "sci": "Formica exsecta",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Narrow headed ant"
   }
  },
  {
   "id": "i346e63",
   "sci": "Formica gnava",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i4e8d54",
+  "sci": "Formica lasioides",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
@@ -101270,8 +100230,21 @@
   }
  },
  {
-  "id": "ib14842",
-  "sci": "Formica montana",
+  "id": "i029b0a",
+  "sci": "Formica neogagates",
+  "order": "Hymenoptera",
+  "family": "Formicidae",
+  "genus": "Formica",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "New World Black Ant"
+  }
+ },
+ {
+  "id": "i5a457b",
+  "sci": "Formica neorufibarbis",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
@@ -101283,8 +100256,8 @@
   }
  },
  {
-  "id": "i55cbf4",
-  "sci": "Formica polyctena",
+  "id": "i32c6a5",
+  "sci": "Formica perpilosa",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
@@ -101292,7 +100265,7 @@
   "n_interactions": 1,
   "common": {
    "fr": "",
-   "en": "European Red Wood Ant"
+   "en": ""
   }
  },
  {
@@ -101306,32 +100279,6 @@
   "common": {
    "fr": "",
    "en": "Wood Ant"
-  }
- },
- {
-  "id": "i1e3c4d",
-  "sci": "Formica talbotae",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ibb987a",
-  "sci": "Formica wheeleri",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Formica",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -103100,19 +102047,6 @@
   "common": {
    "fr": "",
    "en": "Horsetail Flea Beetle"
-  }
- },
- {
-  "id": "i39e34a",
-  "sci": "Histiostoma heriades",
-  "order": "Sarcoptiformes",
-  "family": "Histiostomatidae",
-  "genus": "Histiostoma",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
   }
  },
  {
@@ -105248,8 +104182,8 @@
   }
  },
  {
-  "id": "iea6443",
-  "sci": "Lasius aphidicola",
+  "id": "ib8c740",
+  "sci": "Lasius americanus",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Lasius",
@@ -105271,58 +104205,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ib822a2",
-  "sci": "Lasius meridionalis",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i49deea",
-  "sci": "Lasius mixtus",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i301230",
-  "sci": "Lasius neglectus",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Invasive garden ant"
-  }
- },
- {
-  "id": "id9d983",
-  "sci": "Lasius neoniger",
-  "order": "Hymenoptera",
-  "family": "Formicidae",
-  "genus": "Lasius",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": "Turfgrass Ant"
   }
  },
  {
@@ -108108,6 +106990,19 @@
   }
  },
  {
+  "id": "iba6e8f",
+  "sci": "Melanargia ines",
+  "order": "Lepidoptera",
+  "family": "Nymphalidae",
+  "genus": "Melanargia",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Echiqier des Almoravides",
+   "en": "Spanish Marbled White"
+  }
+ },
+ {
   "id": "i1d2469",
   "sci": "Melandrya caraboides",
   "order": "Coleoptera",
@@ -108234,6 +107129,19 @@
   "n_interactions": 1,
   "common": {
    "fr": "Eucnème masqué",
+   "en": ""
+  }
+ },
+ {
+  "id": "i894df9",
+  "sci": "Melecta duodecimmaculata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Melecta",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Mélècte à douze taches",
    "en": ""
   }
  },
@@ -109772,8 +108680,8 @@
   }
  },
  {
-  "id": "i377a91",
-  "sci": "Myrmica karavajevi",
+  "id": "ide1155",
+  "sci": "Myrmica americana",
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Myrmica",
@@ -110708,6 +109616,19 @@
   }
  },
  {
+  "id": "i91c601",
+  "sci": "Nomada alboguttata",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Nomada",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "i93ee26",
   "sci": "Nomada articulata",
   "order": "Hymenoptera",
@@ -110721,16 +109642,16 @@
   }
  },
  {
-  "id": "i37fc63",
-  "sci": "Nomada baccata",
+  "id": "if5fda4",
+  "sci": "Nomada atroscutellaris",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "Nomade des baies",
-   "en": "Bear-clawed Nomad Bee"
+   "fr": "",
+   "en": ""
   }
  },
  {
@@ -110760,19 +109681,6 @@
   }
  },
  {
-  "id": "i04705c",
-  "sci": "Nomada bispinosa",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i073139",
   "sci": "Nomada ceanothi",
   "order": "Hymenoptera",
@@ -110786,21 +109694,21 @@
   }
  },
  {
-  "id": "i23a0f8",
-  "sci": "Nomada connectens",
+  "id": "ic2b502",
+  "sci": "Nomada concolor",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Nomade concolore",
    "en": ""
   }
  },
  {
-  "id": "i6c75c1",
-  "sci": "Nomada duplex",
+  "id": "i3db773",
+  "sci": "Nomada discedens",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -110838,8 +109746,8 @@
   }
  },
  {
-  "id": "i54baa5",
-  "sci": "Nomada flavilabris",
+  "id": "i9080ee",
+  "sci": "Nomada ferruginata",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -110847,25 +109755,12 @@
   "n_interactions": 1,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Yellow-shouldered Nomad Bee"
   }
  },
  {
-  "id": "ib9a0a5",
-  "sci": "Nomada gransassoi",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Nomade du Gran Sasso",
-   "en": ""
-  }
- },
- {
-  "id": "id62e69",
-  "sci": "Nomada hirtipes",
+  "id": "i4315a2",
+  "sci": "Nomada fulvicornis",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -110873,7 +109768,7 @@
   "n_interactions": 1,
   "common": {
    "fr": "",
-   "en": "Long-horned Nomad Bee"
+   "en": "6-Banded Nomad Bee"
   }
  },
  {
@@ -110903,32 +109798,6 @@
   }
  },
  {
-  "id": "i649293",
-  "sci": "Nomada italica",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i3094c4",
-  "sci": "Nomada kohli",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "ia25eb0",
   "sci": "Nomada lepida",
   "order": "Hymenoptera",
@@ -110955,73 +109824,8 @@
   }
  },
  {
-  "id": "i02c8b6",
-  "sci": "Nomada minuscula",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i1a2fd9",
   "sci": "Nomada moravitzii",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ic17362",
-  "sci": "Nomada obscura",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i893f11",
-  "sci": "Nomada opaca",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ibd8026",
-  "sci": "Nomada panurgina",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i1dd147",
-  "sci": "Nomada piccioliana",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -111046,8 +109850,8 @@
   }
  },
  {
-  "id": "i3908d7",
-  "sci": "Nomada similis",
+  "id": "i83a7c7",
+  "sci": "Nomada striata",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -111055,77 +109859,12 @@
   "n_interactions": 1,
   "common": {
    "fr": "",
-   "en": "Guernsey Nomad Bee"
-  }
- },
- {
-  "id": "i7193f2",
-  "sci": "Nomada suavis",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
+   "en": "Blunt-jawed Nomad Bee"
   }
  },
  {
   "id": "i293e6b",
   "sci": "Nomada superba",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i7afb82",
-  "sci": "Nomada symphyti",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ia1fc41",
-  "sci": "Nomada tormentillae",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "i4549a9",
-  "sci": "Nomada trapeziformis",
-  "order": "Hymenoptera",
-  "family": "Apidae",
-  "genus": "Nomada",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
-  "id": "ib7f338",
-  "sci": "Nomada villosa",
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
@@ -115271,19 +114010,6 @@
   }
  },
  {
-  "id": "i30d0fc",
-  "sci": "Philanthus basalis",
-  "order": "Hymenoptera",
-  "family": "Crabronidae",
-  "genus": "Philanthus",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "i0bf629",
   "sci": "Philanthus pulcher",
   "order": "Hymenoptera",
@@ -115684,32 +114410,6 @@
   "common": {
    "fr": "",
    "en": ""
-  }
- },
- {
-  "id": "ib55512",
-  "sci": "Phyllobius fuscus",
-  "order": "",
-  "family": "",
-  "genus": "",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Animaux",
-   "en": "Animals"
-  }
- },
- {
-  "id": "i83b609",
-  "sci": "Phyllobius lucifugus",
-  "order": "",
-  "family": "",
-  "genus": "",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Animaux",
-   "en": "Animals"
   }
  },
  {
@@ -118183,8 +116883,8 @@
   }
  },
  {
-  "id": "i9c4e9e",
-  "sci": "Polistes austroccidentalis",
+  "id": "i9c41b3",
+  "sci": "Polistes atrimandibularis",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -118206,6 +116906,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i576402",
+  "sci": "Polistes bahamensis",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Bahamian Paper Wasp"
   }
  },
  {
@@ -118248,19 +116961,6 @@
   }
  },
  {
-  "id": "ibf1a20",
-  "sci": "Polistes gigas",
-  "order": "Hymenoptera",
-  "family": "Eumenidae",
-  "genus": "Polistes",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "Poliste brun",
-   "en": "Emperor Paper Wasp"
-  }
- },
- {
   "id": "ieeb96c",
   "sci": "Polistes humilis",
   "order": "Hymenoptera",
@@ -118287,8 +116987,8 @@
   }
  },
  {
-  "id": "i398eb7",
-  "sci": "Polistes marginalis",
+  "id": "i9defcc",
+  "sci": "Polistes instabilis",
   "order": "Hymenoptera",
   "family": "Eumenidae",
   "genus": "Polistes",
@@ -118296,7 +116996,7 @@
   "n_interactions": 1,
   "common": {
    "fr": "",
-   "en": ""
+   "en": "Guitarrilla Paper Wasp"
   }
  },
  {
@@ -118349,6 +117049,19 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "idc70a0",
+  "sci": "Polistes sagittarius",
+  "order": "Hymenoptera",
+  "family": "Eumenidae",
+  "genus": "Polistes",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Banded Paper Wasp"
   }
  },
  {
@@ -121264,6 +119977,19 @@
   }
  },
  {
+  "id": "i048cb3",
+  "sci": "Saccopteryx leptura",
+  "order": "Chiroptera",
+  "family": "Emballonuridae",
+  "genus": "Saccopteryx",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Saccoptère commun",
+   "en": "Brown White-lined Bat"
+  }
+ },
+ {
   "id": "i535009",
   "sci": "Sackenomyia reaumurii",
   "order": "Diptera",
@@ -122369,19 +121095,6 @@
   }
  },
  {
-  "id": "i918a68",
-  "sci": "Spathius galinae",
-  "order": "",
-  "family": "",
-  "genus": "Spathius",
-  "threat": "",
-  "n_interactions": 1,
-  "common": {
-   "fr": "",
-   "en": ""
-  }
- },
- {
   "id": "id6649b",
   "sci": "Spathocera dalmanii",
   "order": "Hemiptera",
@@ -122525,6 +121238,19 @@
   }
  },
  {
+  "id": "if6bd02",
+  "sci": "Sphyrna mokarran",
+  "order": "Carcharhiniformes",
+  "family": "Sphyrnidae",
+  "genus": "Sphyrna",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Grand requin marteau",
+   "en": "Great Hammerhead Shark"
+  }
+ },
+ {
   "id": "i1e4870",
   "sci": "Spilonota laricana",
   "order": "Lepidoptera",
@@ -122655,6 +121381,19 @@
   }
  },
  {
+  "id": "ic0ab7d",
+  "sci": "Stelis minuta",
+  "order": "",
+  "family": "",
+  "genus": "",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
   "id": "iaa5cff",
   "sci": "Stelis monticola",
   "order": "Hymenoptera",
@@ -122665,6 +121404,32 @@
   "common": {
    "fr": "",
    "en": ""
+  }
+ },
+ {
+  "id": "i637f01",
+  "sci": "Stelis odontopyga",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Stelis",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": ""
+  }
+ },
+ {
+  "id": "i9c526b",
+  "sci": "Stelis ornatula",
+  "order": "Hymenoptera",
+  "family": "Megachilidae",
+  "genus": "Stelis",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Spotted Dark Bee"
   }
  },
  {
@@ -124891,6 +123656,32 @@
   }
  },
  {
+  "id": "iff300e",
+  "sci": "Thyreus histrionicus",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Thyreus",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Crocise comédienne",
+   "en": ""
+  }
+ },
+ {
+  "id": "i69ba1a",
+  "sci": "Thyreus orbatus",
+  "order": "Hymenoptera",
+  "family": "Apidae",
+  "genus": "Thyreus",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "Crocise ravisseuse",
+   "en": ""
+  }
+ },
+ {
   "id": "i38073e",
   "sci": "Thyreus picaron",
   "order": "Hymenoptera",
@@ -126110,6 +124901,32 @@
   "common": {
    "fr": "Frelon",
    "en": "Hornets"
+  }
+ },
+ {
+  "id": "iec367f",
+  "sci": "Vespula arisana",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Taiwan Yellowjacket"
+  }
+ },
+ {
+  "id": "i5f8e0c",
+  "sci": "Vespula koreensis",
+  "order": "Hymenoptera",
+  "family": "Vespidae",
+  "genus": "Vespula",
+  "threat": "",
+  "n_interactions": 1,
+  "common": {
+   "fr": "",
+   "en": "Korea Yellowjacket"
   }
  },
  {
