@@ -106,7 +106,6 @@ export default function App() {
       )}
 
       {selected && (
-        {selected && (
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8, fontSize: 12, color: "var(--text2)", flexWrap: "wrap" }}>
             <span onClick={function() { setHistory([]); setSelectedId(null); }} style={{ cursor: "pointer", color: "var(--text3)" }}>{lang === "fr" ? "Accueil" : "Home"}</span>
             {history.map(function(hid, idx) {
