@@ -52,7 +52,7 @@ export default function SpeciesDetail(props) {
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10, flexWrap: 'wrap', gap: 6 }}>
         <div className="chips">
-          {FILTER_GROUPS.map(function (fg) {
+          {FILTER_GROUPS.filter(function (fg) { return fg.key === 'all' || rels.some(function (x) { var tp = TYPES[x.tp]; return tp && tp.fam === fg.key; }); }).map(function (fg) {
             var col = fg.key === 'all' ? '#555' : (FAMILIES[fg.key] ? FAMILIES[fg.key].color : '#555');
             var active = fi === fg.key;
             return (<button key={fg.key} className={'chip' + (active ? ' active' : '')} style={active ? { borderColor: col, background: col + '14', color: col } : {}} onClick={function () { sFi(fg.key); }}>{fg[lang]}</button>);
