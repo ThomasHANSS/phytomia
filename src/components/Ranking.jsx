@@ -15,7 +15,9 @@ var L = {
 };
 
 function dominantFam(id, isPlant, interactions) {
-  var ixs = interactions.filter(function (x) { return isPlant ? x.pI === id : x.iI === id; });
+  var ixByP = (typeof props !== "undefined" && props.ixByPlant) || {};
+  var ixByI = (typeof props !== "undefined" && props.ixByInsect) || {};
+  var ixs = isPlant ? (ixByP[id] || interactions.filter(function (x) { return x.pI === id; })) : (ixByI[id] || interactions.filter(function (x) { return x.iI === id; }));
   var counts = {};
   ixs.forEach(function (x) { var tp = TYPES[x.tp]; if (tp) counts[tp.fam] = (counts[tp.fam] || 0) + 1; });
   var best = null, max = 0;
@@ -34,11 +36,11 @@ export default function Ranking(props) {
   var _si = useState(20), showIn = _si[0], sShowIn = _si[1];
 
   var allP = useMemo(function () {
-    return plants.map(function (p) { return Object.assign({}, p, { count: interactions.filter(function (x) { return x.pI === p.id; }).length }); }).filter(function (p) { return p.count > 0; }).sort(function (a, b) { return b.count - a.count; });
+    return plants.filter(function (p) { return p.n_interactions > 0; }).map(function (p) { return Object.assign({}, p, { count: p.n_interactions }); }).sort(function (a, b) { return b.count - a.count; });
   }, [plants, interactions]);
 
   var allI = useMemo(function () {
-    return insects.map(function (ins) { return Object.assign({}, ins, { count: interactions.filter(function (x) { return x.iI === ins.id; }).length, domFam: dominantFam(ins.id, false, interactions) }); }).filter(function (i) { return i.count > 0; }).sort(function (a, b) { return b.count - a.count; });
+    return insects.filter(function (ins) { return ins.n_interactions > 0; }).map(function (ins) { return Object.assign({}, ins, { count: ins.n_interactions, domFam: dominantFam(ins.id, false, interactions) }); }).sort(function (a, b) { return b.count - a.count; });
   }, [insects, interactions]);
 
   var pRanks = useMemo(function () {
