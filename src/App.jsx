@@ -105,7 +105,7 @@ export default function App() {
         </div>
       )}
 
-      {selected && (
+      {selected && (<div>
           <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 8, fontSize: 12, color: "var(--text2)", flexWrap: "wrap" }}>
             <span onClick={function() { setHistory([]); setSelectedId(null); }} style={{ cursor: "pointer", color: "var(--text3)" }}>{lang === "fr" ? "Accueil" : "Home"}</span>
             {history.map(function(hid, idx) {
@@ -116,7 +116,6 @@ export default function App() {
             <span style={{ margin: "0 4px", color: "var(--text3)" }}> › </span>
             <span style={{ fontWeight: 500, fontStyle: "italic", color: "var(--text)" }}>{selected.sci}</span>
           </div>
-        )}
         <SpeciesDetail
           species={selected}
           isPlant={isPlant}
@@ -127,7 +126,7 @@ export default function App() {
           onSelect={go}
           onBack={back}
         />
-      )}
+      </div>)}
     </div>
   );
 }
