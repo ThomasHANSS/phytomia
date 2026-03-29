@@ -122,6 +122,10 @@ export default function App() {
           plants={data.plants}
           insects={data.insects}
           interactions={data.interactions}
+          plantMap={data.plantMap}
+          insectMap={data.insectMap}
+          ixByPlant={data.ixByPlant}
+          ixByInsect={data.ixByInsect}
           lang={lang}
           onSelect={go}
           onBack={back}

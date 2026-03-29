@@ -20,12 +20,14 @@ export default function SpeciesDetail(props) {
   var dm = isPlant ? 'plant' : 'insect';
 
   var rels = useMemo(function () {
-    var r = isPlant ? interactions.filter(function (x) { return x.pI === species.id; }) : interactions.filter(function (x) { return x.iI === species.id; });
+    var ixByPlant = props.ixByPlant || {}; var ixByInsect = props.ixByInsect || {};
+    var r = isPlant ? (ixByPlant[species.id] || []) : (ixByInsect[species.id] || []);
     if (fi !== 'all') { r = r.filter(function (x) { var tp = TYPES[x.tp]; return tp && tp.fam === fi; }); }
     return r;
   }, [species.id, isPlant, fi, interactions]);
 
-  var getPartner = function (ix) { return isPlant ? insects.find(function (i) { return i.id === ix.iI; }) : plants.find(function (p) { return p.id === ix.pI; }); };
+  var plantMap = props.plantMap || {}; var insectMap = props.insectMap || {};
+  var getPartner = function (ix) { return isPlant ? insectMap[ix.iI] : plantMap[ix.pI]; };
   var partners = useMemo(function () { return rels.map(getPartner).filter(Boolean); }, [rels]);
   var tObs = rels.reduce(function (s, x) { return s + x.src.reduce(function (a, sr) { return a + (sr.n || 0); }, 0); }, 0);
   var uS = Array.from(new Set(rels.flatMap(function (x) { return x.src.map(function (s) { return s.db; }); })));
