@@ -1,10 +1,10 @@
 import { TYPES, FAMILIES } from '../utils/types';
 
-var TREE_GENERA = ["Quercus","Fagus","Betula","Picea","Pinus","Abies","Larix","Acer","Fraxinus","Tilia","Ulmus","Alnus","Carpinus","Castanea","Populus","Salix","Platanus","Juglans","Cedrus","Taxus","Cupressus","Eucalyptus","Prunus","Malus","Pyrus","Sorbus","Olea","Robinia","Gleditsia","Magnolia","Morus","Ilex"];
+var TREE_GENERA = ["Quercus","Fagus","Betula","Picea","Pinus","Abies","Larix","Acer","Fraxinus","Tilia","Ulmus","Alnus","Carpinus","Castanea","Populus","Salix","Platanus","Juglans","Cedrus","Taxus","Cupressus","Eucalyptus","Prunus","Malus","Pyrus","Sorbus","Olea","Robinia","Gleditsia","Magnolia","Morus","Ilex","Aesculus","Ailanthus","Catalpa","Liriodendron","Paulownia","Corylus","Celtis","Cercis","Citrus","Liquidambar","Ginkgo","Thuja","Juniperus","Arbutus","Zelkova","Carya","Diospyros","Ficus","Ceratonia"];
 var SHRUB_GENERA = ["Rosa","Rubus","Buddleja","Sambucus","Cornus","Viburnum","Ligustrum","Lonicera","Ribes","Berberis","Cotoneaster","Crataegus","Rhamnus","Euonymus","Buxus","Lavandula","Rosmarinus","Cistus","Erica","Calluna","Rhododendron","Syringa","Philadelphus","Hydrangea","Spiraea","Deutzia"];
 var CLIMBER_GENERA = ["Hedera","Clematis","Wisteria","Vitis","Humulus","Parthenocissus","Passiflora","Jasminum"];
 var GRASS_FAMILIES = ["Poaceae","Cyperaceae","Juncaceae"];
-var TREE_FAMILIES = ["Fagaceae","Betulaceae","Pinaceae","Cupressaceae","Taxaceae","Juglandaceae","Ulmaceae","Platanaceae","Oleaceae"];
+var TREE_FAMILIES = ["Fagaceae","Betulaceae","Pinaceae","Cupressaceae","Taxaceae","Juglandaceae","Ulmaceae","Platanaceae","Oleaceae","Sapindaceae","Hippocastanaceae","Altingiaceae","Ginkgoaceae","Moraceae","Aquifoliaceae","Araucariaceae"];
 var SHRUB_FAMILIES = ["Ericaceae","Caprifoliaceae","Grossulariaceae","Berberidaceae","Buxaceae","Cistaceae"];
 
 function getLifeForm(item) {

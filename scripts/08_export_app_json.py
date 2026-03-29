@@ -43,24 +43,39 @@ def load_taxonomy():
 
 
 def detect_plant_status(name, family):
-    """Heuristique pour le statut des plantes (à améliorer avec EPPO/Euro+Med)."""
-    # Pour la v1, on marque tout comme "native" sauf cas évidents
-    # TODO: Croiser avec la checklist Euro+Med PlantBase
-    neophytes = {"Buddleja", "Robinia", "Ailanthus", "Reynoutria", "Impatiens"}
-    cultivated = {"Malus", "Prunus domestica", "Pyrus", "Brassica", "Vitis",
-                  "Olea", "Citrus", "Triticum", "Zea", "Solanum tuberosum"}
-    horticultural = {"Dahlia", "Zinnia", "Cosmos", "Rosa", "Lavandula",
-                     "Salvia officinalis", "Buddleja davidii"}
-    
+    """Heuristique pour le statut des plantes. Retourne vide si incertain."""
+    # Sans base de reference fiable (Euro+Med PlantBase, EPPO),
+    # on ne marque que les cas evidents. Le reste reste vide.
+    neophytes = {"Buddleja", "Robinia", "Ailanthus", "Reynoutria", "Impatiens",
+                 "Acer negundo", "Prunus serotina", "Solidago canadensis",
+                 "Heracleum mantegazzianum", "Fallopia japonica",
+                 "Rhododendron ponticum", "Senecio inaequidens",
+                 "Ambrosia artemisiifolia", "Oxalis pes-caprae"}
+    cultivated = {"Malus domestica", "Prunus domestica", "Pyrus communis",
+                  "Brassica napus", "Brassica oleracea", "Vitis vinifera",
+                  "Olea europaea", "Citrus sinensis", "Citrus limon",
+                  "Triticum aestivum", "Zea mays", "Solanum tuberosum",
+                  "Solanum lycopersicum", "Helianthus annuus", "Beta vulgaris",
+                  "Pisum sativum", "Phaseolus vulgaris", "Hordeum vulgare",
+                  "Avena sativa", "Secale cereale", "Cannabis sativa",
+                  "Linum usitatissimum", "Nicotiana tabacum"}
+    cultivated_genera = {"Triticum", "Zea", "Hordeum", "Avena", "Secale",
+                         "Citrus", "Nicotiana"}
+    horticultural = {"Dahlia", "Zinnia", "Cosmos", "Petunia", "Tagetes",
+                     "Pelargonium", "Begonia", "Impatiens walleriana",
+                     "Fuchsia", "Surfinia", "Calibrachoa"}
+
     genus = name.split()[0] if name else ""
-    
-    if name in horticultural or genus in {"Dahlia", "Zinnia", "Cosmos"}:
+
+    if name in horticultural or genus in {"Dahlia", "Zinnia", "Cosmos",
+            "Petunia", "Tagetes", "Pelargonium", "Begonia", "Fuchsia"}:
         return "horticultural"
-    if name in cultivated or genus in cultivated:
+    if name in cultivated or genus in cultivated_genera:
         return "cultivated"
-    if genus in neophytes:
+    if name in neophytes or genus in {"Buddleja", "Ailanthus", "Reynoutria",
+            "Fallopia", "Ambrosia"}:
         return "neophyte"
-    return "native"  # Default — sera affiné plus tard
+    return ""  # Inconnu — pas de statut affiche
 
 
 def load_threat_status():
