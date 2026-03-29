@@ -101,7 +101,7 @@ export default function Ranking(props) {
     return (
       <div className="rank-item" onClick={function () { onSelect(item.id); }}>
         <span className="rank-num">{i + 1}</span>
-        <Thumb name={item.sci} sz={30} />
+        <Thumb name={item.sci} sz={30} item={item} isPlant={isP} />
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 4, flexWrap: 'wrap' }}>
             <span style={{ fontSize: 12, fontWeight: 500, fontStyle: 'italic', color: 'var(--text)' }}>{item.sci}</span>

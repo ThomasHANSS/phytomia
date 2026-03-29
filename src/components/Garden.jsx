@@ -67,7 +67,7 @@ export default function Garden(props) {
               return (
                 <div key={p.id} onClick={function () { if (garden.indexOf(p.id) === -1) setGarden(garden.concat([p.id])); sGq(''); sGdrop(false); }}
                   className="search-item">
-                  <Thumb name={p.sci} sz={28} />
+                  <Thumb name={p.sci} sz={28} item={p} isPlant={true} />
                   <span style={{ flex: 1, fontSize: 13, fontStyle: 'italic', color: 'var(--text)' }}>
                     {p.sci} <span style={{ fontStyle: 'normal', fontSize: 11, color: 'var(--text2)' }}>{name(p)}</span>
                   </span>
@@ -92,7 +92,7 @@ export default function Garden(props) {
               if (!p) return null;
               return (
                 <div key={pid} className="garden-chip">
-                  <Thumb name={p.sci} sz={24} />
+                  <Thumb name={p.sci} sz={24} item={p} isPlant={true} />
                   <span style={{ fontSize: 12, fontWeight: 500, fontStyle: 'italic', color: 'var(--text)' }}>{name(p)}</span>
                   <button onClick={function () { setGarden(garden.filter(function (g) { return g !== pid; })); }}
                     style={{ fontSize: 14, color: 'var(--text3)', background: 'none', border: 'none', cursor: 'pointer', lineHeight: 1 }}>×</button>

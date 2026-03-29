@@ -79,7 +79,7 @@ export default function SearchBar(props) {
               <div key={s.item.id} onClick={function () { go(s.item.id); }}
                 onMouseEnter={function () { sHi(idx); }}
                 className={'search-item' + (isH ? ' active' : '')}>
-                <Thumb name={s.item.sci} sz={36} />
+                <Thumb name={s.item.sci} sz={36} item={s.item} isPlant={s.isPlant} />
                 <span className="badge-type" style={{ background: tyC + '14', color: tyC }}>{s.isPlant ? t.plant : t.insect}</span>
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <span style={{ fontSize: 14, fontWeight: 500, fontStyle: 'italic', color: 'var(--text)' }}>

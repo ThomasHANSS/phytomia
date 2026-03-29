@@ -46,7 +46,7 @@ function OverviewPanel(props) {
                       cursor: "pointer", flexShrink: 0 }}
                     onMouseEnter={function (e) { e.currentTarget.style.background = col + "10"; }}
                     onMouseLeave={function (e) { e.currentTarget.style.background = "var(--bg2)"; }}>
-                    <Thumb name={sp.sci} sz={22} />
+                    <Thumb name={sp.sci} sz={22} item={sp} isPlant={!isP} />
                     <div style={{ minWidth: 0 }}>
                       <div style={{ fontSize: 10, fontWeight: 500, fontStyle: "italic", color: "var(--text)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: 120 }}>{sp.sci}</div>
                       <div style={{ fontSize: 8, color: "var(--text3)", whiteSpace: "nowrap" }}>{sp.obs} obs</div>
@@ -125,7 +125,7 @@ function FamilyDetail(props) {
               onMouseEnter={function (e) { e.currentTarget.style.background = "var(--bg2)"; }}
               onMouseLeave={function (e) { e.currentTarget.style.background = "transparent"; }}>
               <span style={{ fontSize: 10, color: "var(--text3)", minWidth: 16, textAlign: "right" }}>{i + 1}</span>
-              <Thumb name={sp.sci} sz={28} />
+              <Thumb name={sp.sci} sz={28} item={sp} isPlant={!isP} />
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
                   <span style={{ fontSize: 12, fontWeight: 500, fontStyle: "italic", color: "var(--text)",
@@ -178,7 +178,7 @@ function FamilyDetail(props) {
                               cursor: "pointer", borderRadius: 6 }}
                             onMouseEnter={function (e) { e.currentTarget.style.background = "var(--bg2)"; }}
                             onMouseLeave={function (e) { e.currentTarget.style.background = "transparent"; }}>
-                            <Thumb name={sp.sci} sz={20} />
+                            <Thumb name={sp.sci} sz={20} item={sp} isPlant={!isP} />
                             <div style={{ flex: 1, minWidth: 0 }}>
                               <div style={{ fontSize: 11, fontStyle: "italic", color: "var(--text)",
                                 whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{sp.sci}</div>

@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import Thumb from './Thumb';
+import Thumb, { SpeciesLink } from './Thumb';
 import ThreatBadge from './ThreatBadge';
 import NetworkGraph from './NetworkGraph';
 import { TYPES, FAMILIES, FILTER_GROUPS, STATUS_COLORS } from '../utils/types';
@@ -35,14 +35,14 @@ export default function SpeciesDetail(props) {
   return (
     <div>
       <div className="detail-header">
-        <Thumb name={species.sci} sz={80} />
+        <Thumb name={species.sci} sz={80} item={species} isPlant={isPlant} />
         <div style={{ flex: 1 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 4 }}>
             <span className="badge-type" style={{ background: (isPlant ? '#2d7d46' : '#b8860b') + '14', color: isPlant ? '#2d7d46' : '#b8860b' }}>{isPlant ? t.plant : t.insect}</span>
             {species.status && (<span className="badge" style={{ background: STATUS_COLORS[species.status] + '20', color: STATUS_COLORS[species.status] }}>{t[species.status]}</span>)}
             {species.threat && <ThreatBadge cat={species.threat} lang={lang} size="lg" />}
           </div>
-          <h2 className="detail-sci">{species.sci}</h2>
+          <h2 className="detail-sci">{species.sci} <SpeciesLink name={species.sci} lang={lang} /></h2>
           <p className="detail-common">{name(species)} — {species.family || species.order}</p>
           {rels.length > 0 && (<p style={{ fontSize: 13, color: 'var(--text2)', margin: '8px 0 0' }}>{rels.length} {t.int} · {uS.length} {t.src}{tObs > 0 ? ' · ' + tObs + ' obs.' : ''}</p>)}
         </div>
@@ -75,7 +75,7 @@ export default function SpeciesDetail(props) {
             var tp = TYPES[ix.tp] || TYPES.folivorie; var fam = FAMILIES[tp.fam]; var col = fam.color;
             return (
               <div key={idx} className="ix-card" style={{ borderLeftColor: col }}>
-                <Thumb name={p2.sci} sz={44} />
+                <Thumb name={p2.sci} sz={44} item={p2} isPlant={!isPlant} />
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 6 }}>
                     <div style={{ cursor: 'pointer' }} onClick={function () { onSelect(p2.id); }}>
