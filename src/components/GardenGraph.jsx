@@ -1,4 +1,3 @@
-import { NodeImg } from './Thumb';
 import { TYPES, FAMILIES } from '../utils/types';
 
 export default function GardenGraph(props) {
@@ -23,10 +22,10 @@ export default function GardenGraph(props) {
           return (<path key={idx} d={'M' + (pn.x + 22) + ',' + pn.y + ' C' + cpx + ',' + pn.y + ' ' + cpx + ',' + inode.y + ' ' + (inode.x - 22) + ',' + inode.y} fill="none" stroke={col} strokeWidth={tp.w * 0.8} strokeDasharray={tp.dash} opacity={op} strokeLinecap="round" />);
         })}
         {pNodes.map(function (nd) { var cid = 'gp-' + nd.id;
-          return (<g key={nd.id} style={{ cursor: 'pointer' }} onClick={function () { onSel(nd.id); }}><circle cx={nd.x} cy={nd.y} r={22} fill="var(--bg)" stroke="#2d7d46" strokeWidth={2} /><clipPath id={cid}><circle cx={nd.x} cy={nd.y} r={19} /></clipPath><NodeImg name={nd.sci} x={nd.x} y={nd.y} r={19} clipId={cid} /><text x={nd.x + 28} y={nd.y - 3} style={{ fontSize: 10, fontWeight: 600, fontStyle: 'italic', fill: 'var(--text)' }}>{nd.sci}</text><text x={nd.x + 28} y={nd.y + 9} style={{ fontSize: 9, fill: 'var(--text2)' }}>{name(nd)}</text></g>);
+          return (<g key={nd.id} style={{ cursor: 'pointer' }} onClick={function () { onSel(nd.id); }}><circle cx={nd.x} cy={nd.y} r={22} fill="var(--bg)" stroke="#2d7d46" strokeWidth={2} /><clipPath id={cid}><circle cx={nd.x} cy={nd.y} r={19} /></clipPath><circle cx={nd.x} cy={nd.y} r={19} fill="var(--bg3)" clipPath={"url(#" + cid + ")"} /><text x={nd.x + 28} y={nd.y - 3} style={{ fontSize: 10, fontWeight: 600, fontStyle: 'italic', fill: 'var(--text)' }}>{nd.sci}</text><text x={nd.x + 28} y={nd.y + 9} style={{ fontSize: 9, fill: 'var(--text2)' }}>{name(nd)}</text></g>);
         })}
         {iNodes.map(function (nd) { var cid = 'gi-' + nd.id; var sh = sharedIds.indexOf(nd.id) !== -1; var r = sh ? 19 : 16;
-          return (<g key={nd.id} style={{ cursor: 'pointer' }} onClick={function () { onSel(nd.id); }}>{sh && (<circle cx={nd.x} cy={nd.y} r={r + 4} fill="#b8860b" opacity={0.12} />)}<circle cx={nd.x} cy={nd.y} r={r} fill="var(--bg)" stroke={sh ? '#b8860b' : '#b8860b88'} strokeWidth={sh ? 2 : 1.2} /><clipPath id={cid}><circle cx={nd.x} cy={nd.y} r={r - 3} /></clipPath><NodeImg name={nd.sci} x={nd.x} y={nd.y} r={r - 3} clipId={cid} /><text x={nd.x - 28} y={nd.y - 3} textAnchor="end" style={{ fontSize: 10, fontWeight: sh ? 600 : 400, fontStyle: 'italic', fill: 'var(--text)' }}>{shortSci(nd.sci)}</text><text x={nd.x - 28} y={nd.y + 9} textAnchor="end" style={{ fontSize: 9, fill: sh ? '#b8860b' : 'var(--text2)' }}>{name(nd)}{sh ? ' ★' : ''}</text></g>);
+          return (<g key={nd.id} style={{ cursor: 'pointer' }} onClick={function () { onSel(nd.id); }}>{sh && (<circle cx={nd.x} cy={nd.y} r={r + 4} fill="#b8860b" opacity={0.12} />)}<circle cx={nd.x} cy={nd.y} r={r} fill="var(--bg)" stroke={sh ? '#b8860b' : '#b8860b88'} strokeWidth={sh ? 2 : 1.2} /><clipPath id={cid}><circle cx={nd.x} cy={nd.y} r={r - 3} /></clipPath><circle cx={nd.x} cy={nd.y} r={r - 3} fill="var(--bg3)" clipPath={"url(#" + cid + ")"} /><text x={nd.x - 28} y={nd.y - 3} textAnchor="end" style={{ fontSize: 10, fontWeight: sh ? 600 : 400, fontStyle: 'italic', fill: 'var(--text)' }}>{shortSci(nd.sci)}</text><text x={nd.x - 28} y={nd.y + 9} textAnchor="end" style={{ fontSize: 9, fill: sh ? '#b8860b' : 'var(--text2)' }}>{name(nd)}{sh ? ' ★' : ''}</text></g>);
         })}
       </svg>
       <div className="graph-legend">
