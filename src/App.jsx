@@ -75,7 +75,7 @@ export default function App() {
         onSelect={go}
       />
 
-      {!selectedId && (
+      <div style={{ display: selectedId ? "none" : "block" }}>
         <div>
           <Tabs viewMode={viewMode} setViewMode={setViewMode} gardenCount={garden.length} lang={lang} />
 
