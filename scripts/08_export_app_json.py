@@ -54,7 +54,7 @@ def load_vernacular_names():
 
 TREE_GENERA = {"Quercus","Fagus","Betula","Picea","Pinus","Abies","Larix","Acer","Fraxinus","Tilia","Ulmus","Alnus","Carpinus","Castanea","Populus","Salix","Platanus","Juglans","Cedrus","Taxus","Cupressus","Eucalyptus","Prunus","Malus","Pyrus","Sorbus","Olea","Robinia","Gleditsia","Magnolia","Morus","Ilex","Aesculus","Ailanthus","Catalpa","Liriodendron","Paulownia","Corylus","Celtis","Cercis","Citrus","Liquidambar","Ginkgo","Thuja","Juniperus","Arbutus","Zelkova","Carya","Diospyros","Koelreuteria","Sapindus","Ficus","Ceratonia","Amelanchier","Eriobotrya","Mespilus"}
 SHRUB_GENERA = {"Rosa","Rubus","Buddleja","Sambucus","Cornus","Viburnum","Ligustrum","Lonicera","Ribes","Berberis","Cotoneaster","Crataegus","Rhamnus","Euonymus","Buxus","Lavandula","Rosmarinus","Cistus","Erica","Calluna","Rhododendron","Syringa","Philadelphus","Hydrangea","Spiraea","Deutzia","Potentilla","Hippophae","Myrica","Ceanothus","Daphne","Genista","Cytisus","Ulex","Elaeagnus","Tamarix","Myrtus","Laurus","Nerium","Colutea","Paliurus","Pistacia"}
-CLIMBER_GENERA = {"Hedera","Clematis","Wisteria","Vitis","Humulus","Parthenocissus","Passiflora","Jasminum","Lonicera","Campsis","Fallopia","Calystegia","Convolvulus","Ipomoea","Bryonia"}
+CLIMBER_GENERA = {"Hedera","Clematis","Wisteria","Vitis","Parthenocissus","Passiflora","Jasminum","Lonicera","Campsis","Fallopia","Calystegia","Convolvulus","Ipomoea","Bryonia"}
 GRASS_FAMILIES = {"Poaceae","Cyperaceae","Juncaceae"}
 TREE_FAMILIES = {"Fagaceae","Betulaceae","Pinaceae","Cupressaceae","Taxaceae","Juglandaceae","Ulmaceae","Platanaceae","Oleaceae","Sapindaceae","Hippocastanaceae","Altingiaceae","Ginkgoaceae","Moraceae","Aquifoliaceae","Araucariaceae","Lauraceae","Myrtaceae","Rutaceae","Meliaceae","Anacardiaceae","Combretaceae","Arecaceae"}
 SHRUB_FAMILIES = {"Ericaceae","Caprifoliaceae","Grossulariaceae","Berberidaceae","Buxaceae","Cistaceae","Thymelaeaceae","Elaeagnaceae","Myricaceae","Rhamnaceae"}
@@ -68,7 +68,7 @@ CULTIVATED_EU_GENERA = {
     "Citrus","Persea","Actinidia","Diospyros","Ficus","Morus",
     "Camellia","Rhododendron","Hydrangea","Wisteria","Buddleja",
     "Forsythia","Mahonia","Aucuba","Fatsia","Nandina","Skimmia",
-    "Hibiscus","Lagerstroemia","Coffea","Nicotiana","Cannabis","Humulus",
+    "Hibiscus","Lagerstroemia","Coffea","Nicotiana","Cannabis",
     "Dahlia","Zinnia","Cosmos","Tagetes","Pelargonium","Begonia",
     "Fuchsia","Petunia","Passiflora","Agave","Yucca","Opuntia",
     "Musa","Canna","Mangifera","Litchi","Psidium",

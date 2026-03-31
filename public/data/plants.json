@@ -6342,8 +6342,8 @@
   "order": "Rosales",
   "genus": "Humulus",
   "status": "",
-  "growthForm": "climber",
-  "region": "non-native",
+  "growthForm": "herb",
+  "region": "",
   "threat": "",
   "n_interactions": 53,
   "common": {
@@ -79446,8 +79446,8 @@
   "order": "Rosales",
   "genus": "Humulus",
   "status": "",
-  "growthForm": "climber",
-  "region": "non-native",
+  "growthForm": "herb",
+  "region": "",
   "threat": "",
   "n_interactions": 2,
   "common": {
@@ -79462,8 +79462,8 @@
   "order": "Rosales",
   "genus": "Humulus",
   "status": "",
-  "growthForm": "climber",
-  "region": "non-native",
+  "growthForm": "herb",
+  "region": "",
   "threat": "",
   "n_interactions": 2,
   "common": {
