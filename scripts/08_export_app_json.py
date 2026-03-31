@@ -281,19 +281,54 @@ def export():
     plants_list = sorted(plants.values(), key=lambda x: -x["n_interactions"])
     insects_list = sorted(insects.values(), key=lambda x: -x["n_interactions"])
     
-    # Écriture JSON
+    # Slim export - short keys, no empty fields
+    def slim_plant(p):
+        s = {"id": p["id"], "sci": p["sci"], "n": p["n_interactions"]}
+        if p.get("family"): s["f"] = p["family"]
+        if p.get("order"): s["o"] = p["order"]
+        if p.get("genus"): s["g"] = p["genus"]
+        if p.get("threat"): s["t"] = p["threat"]
+        if p.get("growthForm") and p["growthForm"] != "herb": s["gf"] = p["growthForm"]
+        if p.get("region"): s["r"] = p["region"]
+        if p.get("status"): s["st"] = p["status"]
+        if p.get("common", {}).get("fr"): s["cfr"] = p["common"]["fr"]
+        if p.get("common", {}).get("en"): s["cen"] = p["common"]["en"]
+        return s
+
+    def slim_insect(i):
+        s = {"id": i["id"], "sci": i["sci"], "n": i["n_interactions"]}
+        if i.get("family"): s["f"] = i["family"]
+        if i.get("order"): s["o"] = i["order"]
+        if i.get("genus"): s["g"] = i["genus"]
+        if i.get("threat"): s["t"] = i["threat"]
+        if i.get("common", {}).get("fr"): s["cfr"] = i["common"]["fr"]
+        if i.get("common", {}).get("en"): s["cen"] = i["common"]["en"]
+        return s
+
+    def slim_ix(x):
+        s = {"p": x["pI"], "i": x["iI"], "t": x["tp"]}
+        n = x.get("n") or 0
+        if n > 1: s["n"] = n
+        if len(x.get("src") or []) > 1: s["m"] = 1
+        return s
+
+    slim_p = [slim_plant(p) for p in plants_list]
+    slim_i = [slim_insect(i) for i in insects_list]
+    slim_x = [slim_ix(x) for x in interactions]
+
+    # Écriture JSON compact
     with open(OUTPUT / "plants.json", "w", encoding="utf-8") as f:
-        json.dump(plants_list, f, ensure_ascii=False, indent=1)
-    
+        json.dump(slim_p, f, ensure_ascii=False, separators=(",", ":"))
+
     with open(OUTPUT / "insects.json", "w", encoding="utf-8") as f:
-        json.dump(insects_list, f, ensure_ascii=False, indent=1)
-    
+        json.dump(slim_i, f, ensure_ascii=False, separators=(",", ":"))
+
     with open(OUTPUT / "interactions.json", "w", encoding="utf-8") as f:
-        json.dump(interactions, f, ensure_ascii=False, indent=1)
-    
+        json.dump(slim_x, f, ensure_ascii=False, separators=(",", ":"))
+
     # Stats
-    total_obs = sum(ix["n"] or 0 for ix in interactions)
-    multi_src = sum(1 for ix in interactions if len(ix["src"]) > 1)
+    total_obs = sum(ix.get("n") or 0 for ix in interactions)
+    multi_src = sum(1 for ix in interactions if len(ix.get("src") or []) > 1)
     
     print(f"\n  ✓ {len(plants_list)} plantes → output/plants.json")
     print(f"  ✓ {len(insects_list)} insectes → output/insects.json")
