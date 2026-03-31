@@ -6,11 +6,11 @@ import IUCNLegend from './IUCNLegend';
 
 var L = {
   fr: { title: 'Assemblage de plantes', sub: 'Ajoutez des plantes pour visualiser le réseau d\'interactions',
-    add: 'Ajouter une plante…', empty: 'Ajoutez au moins 2 plantes pour voir le graphe.',
+    add: 'Rechercher par nom latin, français ou anglais…', empty: 'Ajoutez au moins 2 plantes pour voir le graphe.',
     clear: 'Vider', stats: 'insectes attirés', shared: 'partagés', types: 'types', plants: 'plantes', threatened_stat: 'menacées attirées',
     reco: 'Planter pour les menacées', recoSub: 'Plantes soutenant le plus d\'espèces menacées (CR/EN/VU)', recoNone: 'Aucune donnée de menace disponible.', threatened: 'menacées', recoAdd: 'Ajouter' },
   en: { title: 'Plant assemblage', sub: 'Add plants to visualize the interaction network',
-    add: 'Add a plant…', empty: 'Add at least 2 plants to see the graph.',
+    add: 'Search by Latin, French or English name…', empty: 'Add at least 2 plants to see the graph.',
     clear: 'Clear', stats: 'insects attracted', shared: 'shared', types: 'types', plants: 'plants', threatened_stat: 'threatened attracted',
     reco: 'Plant for threatened species', recoSub: 'Plants supporting the most threatened species (CR/EN/VU)', recoNone: 'No threat data available.', threatened: 'threatened', recoAdd: 'Add' },
 };
@@ -96,7 +96,7 @@ export default function Garden(props) {
           onFocus={function () { if (gq.length >= 1) sGdrop(true); }}
           placeholder={t.add}
           style={{ width: '100%', boxSizing: 'border-box', padding: '10px 14px 10px 36px', fontSize: 14, border: '1px solid var(--border)', borderRadius: gdrop && gardenSg.length > 0 ? '8px 8px 0 0' : '8px', background: 'var(--bg)', color: 'var(--text)', outline: 'none' }} />
-        <svg style={{ position: 'absolute', left: 11, top: 12, opacity: 0.3 }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+        <svg style={{ position: 'absolute', left: 11, top: 12, opacity: 0.3 }} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><circle cx="11" cy="11" r="7" /><line x1="16.5" y1="16.5" x2="21" y2="21" /></svg>
         {gdrop && gq.length >= 1 && gardenSg.length > 0 && (
           <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, zIndex: 10, border: '1px solid #bbb', borderTop: '1px solid var(--border)', borderRadius: '0 0 8px 8px', background: 'var(--bg)', maxHeight: 300, overflowY: 'auto', boxShadow: '0 4px 12px rgba(0,0,0,0.06)' }}>
             {gardenSg.map(function (p, idx) {
