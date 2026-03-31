@@ -242,7 +242,7 @@
   "threat": "",
   "n_interactions": 555,
   "common": {
-   "fr": "",
+   "fr": "Chrysope verte",
    "en": "Common green lacewing"
   }
  },
@@ -489,7 +489,7 @@
   "threat": "",
   "n_interactions": 382,
   "common": {
-   "fr": "",
+   "fr": "Collète fouisseur",
    "en": "Hairy-saddled Colletes"
   }
  },
@@ -567,7 +567,7 @@
   "threat": "",
   "n_interactions": 375,
   "common": {
-   "fr": "",
+   "fr": "Syrphe porte-plume",
    "en": ""
   }
  },
@@ -593,7 +593,7 @@
   "threat": "",
   "n_interactions": 369,
   "common": {
-   "fr": "",
+   "fr": "Tristan",
    "en": ""
   }
  },
@@ -1360,7 +1360,7 @@
   "threat": "",
   "n_interactions": 168,
   "common": {
-   "fr": "",
+   "fr": "Syrphe des corolles",
    "en": ""
   }
  },
@@ -1438,7 +1438,7 @@
   "threat": "",
   "n_interactions": 157,
   "common": {
-   "fr": "",
+   "fr": "Papillon du céleri",
    "en": "American Black Swallowtail"
   }
  },
@@ -1555,7 +1555,7 @@
   "threat": "",
   "n_interactions": 150,
   "common": {
-   "fr": "",
+   "fr": "Vanesse des perlières",
    "en": "America Painted Lady"
   }
  },
@@ -1659,7 +1659,7 @@
   "threat": "",
   "n_interactions": 137,
   "common": {
-   "fr": "",
+   "fr": "Papillon glauque",
    "en": "Eastern Tiger Swallowtail"
   }
  },
@@ -1841,7 +1841,7 @@
   "threat": "",
   "n_interactions": 126,
   "common": {
-   "fr": "",
+   "fr": "Ouest",
    "en": "Western Tiger Swallowtail"
   }
  },
@@ -2985,7 +2985,7 @@
   "threat": "",
   "n_interactions": 70,
   "common": {
-   "fr": "",
+   "fr": "Cétoine grise",
    "en": ""
   }
  },
@@ -3141,7 +3141,7 @@
   "threat": "",
   "n_interactions": 67,
   "common": {
-   "fr": "",
+   "fr": "Tordeuse orientale du pêcher",
    "en": "Moth"
   }
  },
@@ -3193,7 +3193,7 @@
   "threat": "",
   "n_interactions": 66,
   "common": {
-   "fr": "",
+   "fr": "Tordeuse du pois",
    "en": "Pea Moth"
   }
  },
@@ -3219,7 +3219,7 @@
   "threat": "",
   "n_interactions": 66,
   "common": {
-   "fr": "",
+   "fr": "Mégachile géante",
    "en": "Sculptured Resin Bee"
   }
  },
@@ -3284,7 +3284,7 @@
   "threat": "",
   "n_interactions": 65,
   "common": {
-   "fr": "",
+   "fr": "Altise commune",
    "en": ""
   }
  },
@@ -3713,7 +3713,7 @@
   "threat": "",
   "n_interactions": 57,
   "common": {
-   "fr": "",
+   "fr": "Asie",
    "en": "Asian Swallowtail"
   }
  },
@@ -4688,7 +4688,7 @@
   "threat": "",
   "n_interactions": 43,
   "common": {
-   "fr": "",
+   "fr": "Andrène barbue",
    "en": "Sandpit Mining Bee"
   }
  },
@@ -5104,7 +5104,7 @@
   "threat": "",
   "n_interactions": 39,
   "common": {
-   "fr": "",
+   "fr": "Andrène de Clark",
    "en": "Clarke's Mining Bee"
   }
  },
@@ -5312,7 +5312,7 @@
   "threat": "",
   "n_interactions": 38,
   "common": {
-   "fr": "",
+   "fr": "Osmie bicolore",
    "en": "Red-tailed Mason Bee"
   }
  },
@@ -5338,7 +5338,7 @@
   "threat": "",
   "n_interactions": 38,
   "common": {
-   "fr": "",
+   "fr": "Mormon bleu",
    "en": "Blue Mormon"
   }
  },
@@ -6209,7 +6209,7 @@
   "threat": "",
   "n_interactions": 32,
   "common": {
-   "fr": "",
+   "fr": "Otiorhynque de l'olivier",
    "en": "Weevil"
   }
  },
@@ -6235,7 +6235,7 @@
   "threat": "",
   "n_interactions": 32,
   "common": {
-   "fr": "",
+   "fr": "Piéride damier",
    "en": "Checkered White"
   }
  },
@@ -7808,7 +7808,7 @@
   "threat": "",
   "n_interactions": 24,
   "common": {
-   "fr": "",
+   "fr": "Papillon tigré du Canada",
    "en": "Canadian Tiger Swallowtail"
   }
  },
@@ -9056,7 +9056,7 @@
   "threat": "",
   "n_interactions": 20,
   "common": {
-   "fr": "",
+   "fr": "Complexe taxonomique de Tapinoma nigerrimum",
    "en": ""
   }
  },
@@ -9147,7 +9147,7 @@
   "threat": "",
   "n_interactions": 19,
   "common": {
-   "fr": "",
+   "fr": "Andrène à poils dorés",
    "en": ""
   }
  },
@@ -9407,7 +9407,7 @@
   "threat": "",
   "n_interactions": 19,
   "common": {
-   "fr": "",
+   "fr": "Voilier géant",
    "en": "King Swallowtail"
   }
  },
@@ -9758,7 +9758,7 @@
   "threat": "",
   "n_interactions": 18,
   "common": {
-   "fr": "",
+   "fr": "Bostryche typographe",
    "en": "Engraver Beetle"
   }
  },
@@ -9849,7 +9849,7 @@
   "threat": "",
   "n_interactions": 18,
   "common": {
-   "fr": "",
+   "fr": "Afrique subsaharienne",
    "en": "Green-banded Swallowtail"
   }
  },
@@ -9862,7 +9862,7 @@
   "threat": "",
   "n_interactions": 18,
   "common": {
-   "fr": "",
+   "fr": "Apollon",
    "en": "Apollo"
   }
  },
@@ -9953,7 +9953,7 @@
   "threat": "",
   "n_interactions": 17,
   "common": {
-   "fr": "",
+   "fr": "Agrile du frêne",
    "en": "Emerald Ash Borer"
   }
  },
@@ -10200,7 +10200,7 @@
   "threat": "",
   "n_interactions": 17,
   "common": {
-   "fr": "",
+   "fr": "Sténographe",
    "en": ""
   }
  },
@@ -10317,7 +10317,7 @@
   "threat": "",
   "n_interactions": 17,
   "common": {
-   "fr": "",
+   "fr": "Piéride des crucifères",
    "en": "Mustard White"
   }
  },
@@ -10408,7 +10408,7 @@
   "threat": "",
   "n_interactions": 16,
   "common": {
-   "fr": "",
+   "fr": "Andrène à ventre rouge",
    "en": "Red-tailed Miner"
   }
  },
@@ -10863,7 +10863,7 @@
   "threat": "",
   "n_interactions": 15,
   "common": {
-   "fr": "",
+   "fr": "Agrile du Bouleau",
    "en": "Bronze Birch Borer"
   }
  },
@@ -10954,7 +10954,7 @@
   "threat": "",
   "n_interactions": 15,
   "common": {
-   "fr": "",
+   "fr": "Abeille naine",
    "en": ""
   }
  },
@@ -11500,7 +11500,7 @@
   "threat": "",
   "n_interactions": 14,
   "common": {
-   "fr": "",
+   "fr": "Petite vanesse",
    "en": "Milbert's Tortoiseshell"
   }
  },
@@ -12761,7 +12761,7 @@
   "threat": "",
   "n_interactions": 13,
   "common": {
-   "fr": "",
+   "fr": "Papilionidae",
    "en": "Japanese Luehdorfia"
   }
  },
@@ -12774,7 +12774,7 @@
   "threat": "",
   "n_interactions": 13,
   "common": {
-   "fr": "",
+   "fr": "Bronzé d'Amérique",
    "en": "Bronze Copper"
   }
  },
@@ -13099,7 +13099,7 @@
   "threat": "",
   "n_interactions": 12,
   "common": {
-   "fr": "",
+   "fr": "Aleurode du chèvrefeuille",
    "en": "Honeysuckle Whitefly"
   }
  },
@@ -13203,7 +13203,7 @@
   "threat": "",
   "n_interactions": 12,
   "common": {
-   "fr": "",
+   "fr": "Tabac d'Espagne",
    "en": "Silver-washed Fritillary"
   }
  },
@@ -14113,7 +14113,7 @@
   "threat": "",
   "n_interactions": 12,
   "common": {
-   "fr": "",
+   "fr": "Tachinaire sauvage",
    "en": ""
   }
  },
@@ -14555,7 +14555,7 @@
   "threat": "",
   "n_interactions": 11,
   "common": {
-   "fr": "",
+   "fr": "Citrin",
    "en": "Eastern Pale Clouded Yellow"
   }
  },
@@ -14776,7 +14776,7 @@
   "threat": "",
   "n_interactions": 11,
   "common": {
-   "fr": "",
+   "fr": "Gymnosome arrondi",
    "en": ""
   }
  },
@@ -15088,7 +15088,7 @@
   "threat": "",
   "n_interactions": 11,
   "common": {
-   "fr": "",
+   "fr": "Physocephale à bandes",
    "en": ""
   }
  },
@@ -15244,7 +15244,7 @@
   "threat": "",
   "n_interactions": 11,
   "common": {
-   "fr": "",
+   "fr": "Ptiline pectinicorne",
    "en": "Fan-Bearing Wood-Borer"
   }
  },
@@ -16271,7 +16271,7 @@
   "threat": "",
   "n_interactions": 10,
   "common": {
-   "fr": "",
+   "fr": "Échiquier des Balkans",
    "en": "Balkan Marbled White"
   }
  },
@@ -16947,7 +16947,7 @@
   "threat": "",
   "n_interactions": 9,
   "common": {
-   "fr": "",
+   "fr": "Mineuse des céréales",
    "en": ""
   }
  },
@@ -17259,7 +17259,7 @@
   "threat": "",
   "n_interactions": 9,
   "common": {
-   "fr": "",
+   "fr": "Bupreste à huit taches",
    "en": ""
   }
  },
@@ -18403,7 +18403,7 @@
   "threat": "",
   "n_interactions": 9,
   "common": {
-   "fr": "",
+   "fr": "Psyché lustrée",
    "en": "Common Sweep"
   }
  },
@@ -18689,7 +18689,7 @@
   "threat": "",
   "n_interactions": 9,
   "common": {
-   "fr": "",
+   "fr": "Hyponomeute du cerisier",
    "en": "Ermine Moth"
   }
  },
@@ -19222,7 +19222,7 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
+   "fr": "Soufré",
    "en": ""
   }
  },
@@ -19235,7 +19235,7 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
+   "fr": "Coliade verdâtre",
    "en": "Labrador Sulphur"
   }
  },
@@ -19313,7 +19313,7 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
+   "fr": "Punaise du bouleau",
    "en": "Juniper Shieldbug"
   }
  },
@@ -19521,7 +19521,7 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
+   "fr": "Point-de-Hongrie",
    "en": "Dingy Skipper"
   }
  },
@@ -19560,7 +19560,7 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
+   "fr": "Olympe",
    "en": "Olympia"
   }
  },
@@ -20639,7 +20639,7 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
+   "fr": "Thécophore atre",
    "en": ""
   }
  },
@@ -20756,7 +20756,7 @@
   "threat": "",
   "n_interactions": 8,
   "common": {
-   "fr": "",
+   "fr": "Xylébore disparate",
    "en": ""
   }
  },
@@ -21172,7 +21172,7 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
+   "fr": "France",
    "en": ""
   }
  },
@@ -21198,7 +21198,7 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
+   "fr": "Anthomyie pluviale",
    "en": ""
   }
  },
@@ -21562,7 +21562,7 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
+   "fr": "Ambré",
    "en": "Arctic Orange"
   }
  },
@@ -21601,7 +21601,7 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
+   "fr": "Conops à quatre bandes",
    "en": ""
   }
  },
@@ -21731,7 +21731,7 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
+   "fr": "Carpocapse des glands",
    "en": "Rusty Acorn Piercer"
   }
  },
@@ -21900,7 +21900,7 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
+   "fr": "Chimabache automnale",
    "en": "November Tubic"
   }
  },
@@ -22121,7 +22121,7 @@
   "threat": "",
   "n_interactions": 7,
   "common": {
-   "fr": "",
+   "fr": "Petit coliade",
    "en": "Little Yellow"
   }
  },
@@ -24344,7 +24344,7 @@
   "threat": "",
   "n_interactions": 6,
   "common": {
-   "fr": "",
+   "fr": "Mouche orientale des fruits",
    "en": "Oriental fruit fly"
   }
  },
@@ -24825,7 +24825,7 @@
   "threat": "",
   "n_interactions": 6,
   "common": {
-   "fr": "",
+   "fr": "Fasta fastuosa",
    "en": "Dead-Nettle Leaf Beetle"
   }
  },
@@ -25891,7 +25891,7 @@
   "threat": "",
   "n_interactions": 6,
   "common": {
-   "fr": "",
+   "fr": "Carpocapse des prunes",
    "en": "Plum Fruit Moth"
   }
  },
@@ -26099,7 +26099,7 @@
   "threat": "",
   "n_interactions": 6,
   "common": {
-   "fr": "",
+   "fr": "Sphinx orangé",
    "en": "White-lined Hawk-moth"
   }
  },
@@ -27854,7 +27854,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Tordeuse chagrinée",
    "en": "Garden Rose Button"
   }
  },
@@ -28387,7 +28387,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Faux Apollon",
    "en": "False Apollo"
   }
  },
@@ -28517,7 +28517,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Petit collier argenté",
    "en": ""
   }
  },
@@ -31351,7 +31351,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Cuivré écarlate",
    "en": ""
   }
  },
@@ -31949,7 +31949,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Psylle de l'aulne",
    "en": ""
   }
  },
@@ -32105,7 +32105,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Tenthrède verte",
    "en": ""
   }
  },
@@ -32417,7 +32417,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Europe",
    "en": "Brassy Pigmy"
   }
  },
@@ -32430,7 +32430,7 @@
   "threat": "",
   "n_interactions": 5,
   "common": {
-   "fr": "",
+   "fr": "Nepticule dorée",
    "en": "Golden Pigmy"
   }
  },
@@ -33483,7 +33483,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Petite mineuse du pêcher",
    "en": "Peach Twig Borer"
   }
  },
@@ -33587,7 +33587,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Andrène des claytonies",
    "en": "Spring Beauty Miner"
   }
  },
@@ -33938,7 +33938,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Ouest",
    "en": "Timothy Tortrix"
   }
  },
@@ -34042,7 +34042,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Teigne des pommes",
    "en": "Apple Fruit Moth"
   }
  },
@@ -34055,7 +34055,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Capricorne rouillé du pin",
    "en": "Rust Pine Borer"
   }
  },
@@ -34926,7 +34926,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Grand collier argenté",
    "en": ""
   }
  },
@@ -35017,7 +35017,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Satyrion",
    "en": "Ringlets"
   }
  },
@@ -35888,7 +35888,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Empis",
    "en": ""
   }
  },
@@ -36044,7 +36044,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Épinotie subséquente",
    "en": "Dark Spruce Bell"
   }
  },
@@ -37682,7 +37682,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Papilionidae",
    "en": ""
   }
  },
@@ -38488,7 +38488,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Himalaya",
    "en": ""
   }
  },
@@ -38501,7 +38501,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Machaon émeraude",
    "en": "Banded Peacock"
   }
  },
@@ -38514,7 +38514,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Inde",
    "en": ""
   }
  },
@@ -38852,7 +38852,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Piéride de Virginie",
    "en": "West Virginia White"
   }
  },
@@ -39086,7 +39086,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Euura proxima",
    "en": "Common sawfly"
   }
  },
@@ -39138,7 +39138,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Pseudococcus",
    "en": "Citrus Mealybug"
   }
  },
@@ -39866,7 +39866,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Thècle du bouleau",
    "en": "Brown Hairstreak"
   }
  },
@@ -40087,7 +40087,7 @@
   "threat": "",
   "n_interactions": 4,
   "common": {
-   "fr": "",
+   "fr": "Azuré de la canneberge",
    "en": "Cranberry Blue"
   }
  },
@@ -41075,7 +41075,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Mouche mineuse du bouillon blanc",
    "en": ""
   }
  },
@@ -41998,7 +41998,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Arhopalus",
    "en": ""
   }
  },
@@ -42453,7 +42453,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Bruche de la fève",
    "en": "Bean Beetle"
   }
  },
@@ -44351,7 +44351,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Mouche grise des céréales",
    "en": "Anthomyiid fly"
   }
  },
@@ -44689,7 +44689,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Donacie du nénuphar",
    "en": "Water-Lily Reed Beetle"
   }
  },
@@ -44702,7 +44702,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Donacie commune",
    "en": ""
   }
  },
@@ -45365,7 +45365,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Marbré oriental",
    "en": "Dappled White"
   }
  },
@@ -45612,7 +45612,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Cochylis",
    "en": "Vine Moth"
   }
  },
@@ -46067,7 +46067,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Graphosome rayé",
    "en": ""
   }
  },
@@ -46457,7 +46457,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Hoplocampe commun du prunier",
    "en": ""
   }
  },
@@ -46561,7 +46561,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Hylésine du frêne",
    "en": "Ash Bark Beetle"
   }
  },
@@ -46847,7 +46847,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Est",
    "en": ""
   }
  },
@@ -48459,7 +48459,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Tordeuse du framboisier",
    "en": "Raspberry Leafroller Moth"
   }
  },
@@ -48992,7 +48992,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Chine",
    "en": ""
   }
  },
@@ -50188,7 +50188,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Donacie soyeuse",
    "en": ""
   }
  },
@@ -50812,7 +50812,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Chrysomèle de la viorne",
    "en": "Guelder-Rose Leaf Beetle"
   }
  },
@@ -51020,7 +51020,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Rhynchite rouge du pommier",
    "en": ""
   }
  },
@@ -51280,7 +51280,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Sésie apiforme",
    "en": "Clear-winged moth"
   }
  },
@@ -52047,7 +52047,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Teigne déprimée",
    "en": "Oak Carl"
   }
  },
@@ -52216,7 +52216,7 @@
   "threat": "",
   "n_interactions": 3,
   "common": {
-   "fr": "",
+   "fr": "Armoise",
    "en": ""
   }
  },
@@ -53009,7 +53009,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Phytopte du frêne",
    "en": ""
   }
  },
@@ -53620,7 +53620,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Tordeuse de la pelure Capua",
    "en": "Summer Fruit Tortrix"
   }
  },
@@ -54725,7 +54725,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Europe",
    "en": "Red Banded Sand Wasp"
   }
  },
@@ -55063,7 +55063,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Andrène bleu brillant",
    "en": ""
   }
  },
@@ -60081,7 +60081,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Solitaire",
    "en": "Arctic Sulfur"
   }
  },
@@ -63227,7 +63227,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Stenacis triradiatus",
    "en": ""
   }
  },
@@ -64436,7 +64436,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Farineuse",
    "en": "Powdered Brimstone"
   }
  },
@@ -64618,7 +64618,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Tachinaire coccinelle",
    "en": ""
   }
  },
@@ -65333,7 +65333,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Hoplocampe noir du prunier",
    "en": ""
   }
  },
@@ -66568,7 +66568,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Mouche mineuse des feuilles de tomate",
    "en": ""
   }
  },
@@ -66984,7 +66984,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Papilionidae",
    "en": "Chinese Luehdorfia"
   }
  },
@@ -67426,7 +67426,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Mahasena",
    "en": ""
   }
  },
@@ -67972,7 +67972,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Melitaea aurelia",
    "en": ""
   }
  },
@@ -69155,7 +69155,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Odontosie de Sievers",
    "en": ""
   }
  },
@@ -70104,7 +70104,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Punaise des chatons",
    "en": ""
   }
  },
@@ -71313,7 +71313,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Teigne de la pomme de terre",
    "en": "Kartoffelmè¸l"
   }
  },
@@ -72626,7 +72626,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Apion du trèfle",
    "en": "Clover Seed Weevil"
   }
  },
@@ -73783,7 +73783,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Pélopée maçonne",
    "en": "Mud Dauber"
   }
  },
@@ -74368,7 +74368,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Sphex gryllivore",
    "en": ""
   }
  },
@@ -74888,7 +74888,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Sésie du groseillier",
    "en": "Currant Borer"
   }
  },
@@ -75057,7 +75057,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "If commun",
    "en": ""
   }
  },
@@ -75330,7 +75330,7 @@
   "threat": "",
   "n_interactions": 2,
   "common": {
-   "fr": "",
+   "fr": "Thrips du lin et des céréales",
    "en": ""
   }
  },
@@ -76591,7 +76591,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Callyntrote porc-épic",
    "en": "Grain rust mite"
   }
  },
@@ -81570,7 +81570,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Ampedus cinnaberinus",
    "en": ""
   }
  },
@@ -81960,7 +81960,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Andrène à face jaune",
    "en": ""
   }
  },
@@ -83702,7 +83702,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Ancien monde",
    "en": ""
   }
  },
@@ -84339,7 +84339,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Tordeuse de l'aubépine",
    "en": "Brown Oak Tortrix"
   }
  },
@@ -84612,7 +84612,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Teigne des fleurs du pommier",
    "en": "Brindled Argent"
   }
  },
@@ -85977,7 +85977,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Aleurode du tabac",
    "en": "Cotton whitefly, Sweet potato whitefly, Tobacco Whitefly"
   }
  },
@@ -90384,7 +90384,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Ptérophore rhododactyle",
    "en": "Rose Plume"
   }
  },
@@ -91398,7 +91398,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Coliade commun du Nord",
    "en": "Blueberry Sulphur"
   }
  },
@@ -91853,7 +91853,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Conops vésiculaire",
    "en": ""
   }
  },
@@ -93439,7 +93439,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Monarque",
    "en": "Milkweed"
   }
  },
@@ -94466,7 +94466,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Miride rouge",
    "en": "Plant bug"
   }
  },
@@ -96871,7 +96871,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Punaise du bouleau",
    "en": "Birch Shieldbug"
   }
  },
@@ -97690,7 +97690,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Lycaena helloides",
    "en": ""
   }
  },
@@ -98015,7 +98015,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Moiré noirâtre",
    "en": "Black Ringlet"
   }
  },
@@ -102162,7 +102162,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Hoplocampe du poirier",
    "en": "Common sawfly"
   }
  },
@@ -104099,7 +104099,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Ronce commune",
    "en": ""
   }
  },
@@ -104255,7 +104255,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Piéride de la gesse",
    "en": "Fenton's Wood White"
   }
  },
@@ -104502,7 +104502,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Petit sylvain",
    "en": "Admirals"
   }
  },
@@ -105542,7 +105542,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Lycte brun",
    "en": "Brown Powder-Post Beetle"
   }
  },
@@ -107739,7 +107739,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Islande",
    "en": "Carline Neb"
   }
  },
@@ -108571,7 +108571,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Myope jouflue",
    "en": ""
   }
  },
@@ -112042,7 +112042,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Est",
    "en": "Desmond's Green-Banded Swallowtail"
   }
  },
@@ -112237,7 +112237,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Porte-queue érémicole",
    "en": "Desert Swallowtail"
   }
  },
@@ -116007,7 +116007,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Ériophyide du noisetier",
    "en": ""
   }
  },
@@ -116618,7 +116618,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Ptérophore du tussilage",
    "en": "Triangle Plume"
   }
  },
@@ -116696,7 +116696,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Mouche de l'asperge",
    "en": ""
   }
  },
@@ -117268,7 +117268,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Marbré du désert",
    "en": "Desert Bath White"
   }
  },
@@ -118880,7 +118880,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Pygère timon",
    "en": ""
   }
  },
@@ -119062,7 +119062,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Rose des saules",
    "en": "Willow Rose Gall Midge"
   }
  },
@@ -120622,7 +120622,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Puceron de la carotte",
    "en": "Waxy carrot aphid"
   }
  },
@@ -120947,7 +120947,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Scandinavie",
    "en": ""
   }
  },
@@ -122910,7 +122910,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Marguerite",
    "en": ""
   }
  },
@@ -124860,7 +124860,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Dolichovespula maculata",
    "en": ""
   }
  },
@@ -125133,7 +125133,7 @@
   "threat": "",
   "n_interactions": 1,
   "common": {
-   "fr": "",
+   "fr": "Xanthocastnia",
    "en": ""
   }
  },
