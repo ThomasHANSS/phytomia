@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import Thumb from './Thumb';
+import ThreatBadge from './ThreatBadge';
 import { TYPES, FAMILIES } from '../utils/types';
 
 function getName(item, lang) { return item.common ? item.common[lang] || item.sci : item.sci; }
@@ -50,6 +51,7 @@ function OverviewPanel(props) {
                       <div style={{ fontSize: 10, fontWeight: 500, fontStyle: "italic", color: "var(--text)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: 120 }}>{sp.sci}</div>
                       <div style={{ fontSize: 8, color: "var(--text3)", whiteSpace: "nowrap" }}>{sp.obs} obs</div>
                     </div>
+                    {sp.threat && <ThreatBadge cat={sp.threat} lang={lang} size="sm" />}
                   </div>
                 );
               })}
@@ -138,6 +140,7 @@ function FamilyDetail(props) {
                   <span style={{ fontSize: 9, fontWeight: 600, color: "var(--text2)", minWidth: 36 }}>{sp.obs} obs</span>
                 </div>
               </div>
+              {sp.threat && <ThreatBadge cat={sp.threat} lang={lang} size="sm" />}
               <span style={{ fontSize: 9, color: "var(--text3)", minWidth: 60, textAlign: "right" }}>
                 {sp.order || sp.family || ""}
               </span>
