@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 101 655 interactions entre 8 320 espèces végétales et 9 686 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 101 514 interactions entre 8 247 espèces végétales et 9 684 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
@@ -15,12 +15,14 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 | Indicateur | Volume |
 |---|---|
-| Interactions documentées | **101 655** paires plante × insecte |
-| Espèces végétales | **8 320** (arbres, arbustes, herbacées, graminées, grimpantes) |
-| Espèces d'insectes | **9 686** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
+| Interactions documentées | **101 514** paires plante × insecte |
+| Espèces végétales | **8 247** (arbres, arbustes, herbacées, graminées, grimpantes) |
+| Espèces d'insectes | **9 684** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
 | Bases de données intégrées | **6** sources scientifiques open-access |
 | Interactions multi-sources | **7 494** paires confirmées par au moins 2 bases indépendantes |
-| Types d'interactions | **8** catégories écologiques actives (12 définies) |
+| Types d'interactions | **8** types actifs : pollinisation, folivorie, hôte larvaire, prédateur, parasitoïde, suceur de sève, xylophage, gallicole |
+| Espèces avec statut IUCN | **2 792** (dont 117 menacées CR/EN/VU) |
+| Noms vernaculaires | **7 082** FR, **10 223** EN |
 | Pays couverts | **23+** pays européens |
 | Harmonisation taxonomique | **96 %** des espèces alignées via GBIF |
 
@@ -43,6 +45,12 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 **Noms vernaculaires** — 5 324 plantes et 1 807 insectes avec nom commun en français, 10 223 en anglais (source : GBIF).
 
 **Bilingue** — Interface français / anglais, commutable en un clic.
+
+**Export graphe** — Export du graphe jardin en PNG haute résolution (×2) ou SVG vectoriel.
+
+**Planter pour les menacées** — Recommandation des plantes soutenant le plus d'espèces menacées (CR/EN/VU) dans le mode Jardin.
+
+**Marquage régional** — Les espèces non-natives cultivées en Europe et les espèces extra-européennes sont identifiées.
 
 **Fil d'Ariane** — Navigation hiérarchique avec historique : revenez à n'importe quelle espèce visitée en un clic.
 
@@ -226,7 +234,7 @@ phytomia/
 │   └── data/                     ← JSON générés par le pipeline
 │       ├── plants.json           (8 320 espèces, ~2,2 MB)
 │       ├── insects.json          (9 686 espèces, ~2,1 MB)
-│       ├── interactions.json     (101 655 paires, ~14 MB)
+│       ├── interactions.json     (101 514 paires, ~14 MB)
 │       └── last_updated.txt
 ├── src/
 │   ├── components/               ← 11 composants React
