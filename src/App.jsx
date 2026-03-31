@@ -94,12 +94,10 @@ export default function App() {
       <Header lang={lang} setLang={setLang} onLogoClick={back} />
 
       <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 4 }}>
-        <button onClick={function () { setEuOnly(!euOnly); }}
-          style={{ fontSize: 10, padding: "3px 8px", color: euOnly ? "#2d7d46" : "#888", background: euOnly ? "#2d7d4610" : "transparent", border: "1px solid " + (euOnly ? "#2d7d4630" : "#88888830"), borderRadius: 5, cursor: "pointer" }}>
-          {euOnly
-            ? (lang === "fr" ? "🇪🇺 Europe uniquement" : "🇪🇺 Europe only")
-            : (lang === "fr" ? "🌍 Toutes les espèces" : "🌍 All species")}
-        </button>
+        <div className="view-toggle">
+          <button className={euOnly ? "active" : ""} onClick={function () { setEuOnly(true); }}>Europe</button>
+          <button className={!euOnly ? "active" : ""} onClick={function () { setEuOnly(false); }}>{lang === "fr" ? "Monde" : "World"}</button>
+        </div>
       </div>
       {viewMode !== 'garden' && <SearchBar
         plants={fData.plants}
