@@ -40,14 +40,13 @@ export default function App() {
     }
   }
 
-  // Filter extra-EU species
-  var fData = useMemo(function () {
-    if (!euOnly || data.loading) return data;
+  // Pre-compute EU-only version once at load
+  var euData = useMemo(function () {
+    if (data.loading || !data.plants.length) return null;
     var fp = data.plants.filter(function (p) { return !p.region || p.region !== 'extra-EU'; });
     var fpIds = {};
     fp.forEach(function (p) { fpIds[p.id] = true; });
     var fi = data.interactions.filter(function (x) { return fpIds[x.pI]; });
-    // Rebuild indexes
     var plantMap = {};
     fp.forEach(function (p) { plantMap[p.id] = p; });
     var insectMap = {};
@@ -61,7 +60,10 @@ export default function App() {
       ixByInsect[ix.iI].push(ix);
     });
     return Object.assign({}, data, { plants: fp, interactions: fi, plantMap: plantMap, insectMap: insectMap, ixByPlant: ixByPlant, ixByInsect: ixByInsect });
-  }, [data, euOnly]);
+  }, [data]);
+
+  // Toggle just picks pre-computed version — instant
+  var fData = euOnly && euData ? euData : data;
 
   if (data.loading) {
     return (
