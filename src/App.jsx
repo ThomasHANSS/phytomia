@@ -40,6 +40,29 @@ export default function App() {
     }
   }
 
+  // Filter extra-EU species
+  var fData = useMemo(function () {
+    if (!euOnly || data.loading) return data;
+    var fp = data.plants.filter(function (p) { return !p.region || p.region !== 'extra-EU'; });
+    var fpIds = {};
+    fp.forEach(function (p) { fpIds[p.id] = true; });
+    var fi = data.interactions.filter(function (x) { return fpIds[x.pI]; });
+    // Rebuild indexes
+    var plantMap = {};
+    fp.forEach(function (p) { plantMap[p.id] = p; });
+    var insectMap = {};
+    data.insects.forEach(function (i) { insectMap[i.id] = i; });
+    var ixByPlant = {};
+    var ixByInsect = {};
+    fi.forEach(function (ix) {
+      if (!ixByPlant[ix.pI]) ixByPlant[ix.pI] = [];
+      ixByPlant[ix.pI].push(ix);
+      if (!ixByInsect[ix.iI]) ixByInsect[ix.iI] = [];
+      ixByInsect[ix.iI].push(ix);
+    });
+    return Object.assign({}, data, { plants: fp, interactions: fi, plantMap: plantMap, insectMap: insectMap, ixByPlant: ixByPlant, ixByInsect: ixByInsect });
+  }, [data, euOnly]);
+
   if (data.loading) {
     return (
       <div className="app" style={{ textAlign: 'center', paddingTop: 80 }}>
@@ -77,9 +100,9 @@ export default function App() {
         </button>
       </div>
       {viewMode !== 'garden' && <SearchBar
-        plants={data.plants}
-        insects={data.insects}
-        interactions={data.interactions}
+        plants={fData.plants}
+        insects={fData.insects}
+        interactions={fData.interactions}
         lang={lang}
         onSelect={go}
       />}
@@ -90,9 +113,9 @@ export default function App() {
 
           {viewMode === 'ranking' && (
             <Ranking
-              plants={data.plants}
-              insects={data.insects}
-              interactions={data.interactions}
+              plants={fData.plants}
+              insects={fData.insects}
+              interactions={fData.interactions}
               lang={lang}
               onSelect={go}
             />
@@ -100,9 +123,9 @@ export default function App() {
 
           {viewMode === 'garden' && (
             <Garden
-              plants={data.plants}
-              insects={data.insects}
-              interactions={data.interactions}
+              plants={fData.plants}
+              insects={fData.insects}
+              interactions={fData.interactions}
               garden={garden}
               setGarden={setGarden}
               lang={lang}
@@ -110,7 +133,7 @@ export default function App() {
             />
           )}
 
-          <Footer lang={lang} lastUpdated={data.lastUpdated} />
+          <Footer lang={lang} lastUpdated={fData.lastUpdated} />
         </div>
       </div>
 
@@ -128,13 +151,13 @@ export default function App() {
         <SpeciesDetail
           species={selected}
           isPlant={isPlant}
-          plants={data.plants}
-          insects={data.insects}
-          interactions={data.interactions}
-          plantMap={data.plantMap}
-          insectMap={data.insectMap}
-          ixByPlant={data.ixByPlant}
-          ixByInsect={data.ixByInsect}
+          plants={fData.plants}
+          insects={fData.insects}
+          interactions={fData.interactions}
+          plantMap={fData.plantMap}
+          insectMap={fData.insectMap}
+          ixByPlant={fData.ixByPlant}
+          ixByInsect={fData.ixByInsect}
           lang={lang}
           onSelect={go}
           onBack={back}
