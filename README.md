@@ -159,9 +159,7 @@ Base compilée à partir de la littérature scientifique et de jeux de données 
 
 ### Bases non encore intégrées
 
-| Base | Contenu | Statut |
-|---|---|---|
-| **DoPI** (Univ. Sussex) | 101K records, 17K paires pollinisation GB, CC-BY | CSV disponible dans Supporting Information de Balfour et al. 2022, Ecology |
+Aucune base identifiée en attente d'intégration. Contributions bienvenues pour de nouvelles sources open-access.
 
 ---
 
