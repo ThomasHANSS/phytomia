@@ -6,11 +6,11 @@ import ThreatBadge from './ThreatBadge';
 var L = {
   fr: { title: 'Assemblage de plantes', sub: 'Ajoutez des plantes pour visualiser le réseau d\'interactions',
     add: 'Ajouter une plante…', empty: 'Ajoutez au moins 2 plantes pour voir le graphe.',
-    clear: 'Vider', stats: 'insectes attirés', shared: 'partagés', types: 'types', plants: 'plantes',
+    clear: 'Vider', stats: 'insectes attirés', shared: 'partagés', types: 'types', plants: 'plantes', threatened_stat: 'menacées attirées',
     reco: 'Planter pour les menacées', recoSub: 'Plantes soutenant le plus d\'espèces menacées (CR/EN/VU)', recoNone: 'Aucune donnée de menace disponible.', threatened: 'menacées', recoAdd: 'Ajouter' },
   en: { title: 'Plant assemblage', sub: 'Add plants to visualize the interaction network',
     add: 'Add a plant…', empty: 'Add at least 2 plants to see the graph.',
-    clear: 'Clear', stats: 'insects attracted', shared: 'shared', types: 'types', plants: 'plants',
+    clear: 'Clear', stats: 'insects attracted', shared: 'shared', types: 'types', plants: 'plants', threatened_stat: 'threatened attracted',
     reco: 'Plant for threatened species', recoSub: 'Plants supporting the most threatened species (CR/EN/VU)', recoNone: 'No threat data available.', threatened: 'threatened', recoAdd: 'Add' },
 };
 
@@ -77,7 +77,8 @@ export default function Garden(props) {
       return Array.from(new Set(lp)).length > 1;
     });
     var tps = Array.from(new Set(gixs.map(function (x) { return x.tp; })));
-    return { ixs: gixs, insects: ins, shared: sh, types: tps };
+    var thr = ins.filter(function (i) { return i.threat && ['CR','EN','VU','NT'].indexOf(i.threat) !== -1; });
+    return { ixs: gixs, insects: ins, shared: sh, types: tps, threatened: thr };
   }, [garden, interactions, insects]);
 
   return (
@@ -141,7 +142,7 @@ export default function Garden(props) {
       {garden.length >= 2 && gardenData.insects.length > 0 && (
         <div>
           <div className="garden-stats">
-            {[[gardenData.insects.length, t.stats, '#b8860b'], [gardenData.shared.length, t.shared, '#e67e22'], [gardenData.types.length, t.types, '#2874a6']].map(function (s, i) {
+            {[[gardenData.insects.length, t.stats, '#b8860b'], [gardenData.shared.length, t.shared, '#e67e22'], [gardenData.threatened.length, t.threatened_stat, '#cc3333']].map(function (s, i) {
               return (
                 <div key={i} className="garden-stat" style={{ background: s[2] + '0a', border: '1px solid ' + s[2] + '22' }}>
                   <div style={{ fontSize: 22, fontWeight: 700, color: s[2] }}>{s[0]}</div>
