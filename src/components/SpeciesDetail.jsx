@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import Thumb, { SpeciesLink } from './Thumb';
 import ThreatBadge from './ThreatBadge';
 import NetworkGraph from './NetworkGraph';
+import IUCNLegend from './IUCNLegend';
 import { TYPES, FAMILIES, FILTER_GROUPS, STATUS_COLORS } from '../utils/types';
 
 var GEO = { FR: 'France', DE: 'Germany', IT: 'Italy', ES: 'Spain', UK: 'UK', SE: 'Sweden', CH: 'Switzerland', AT: 'Austria', NL: 'Netherlands', BE: 'Belgium', PL: 'Poland', CZ: 'Czechia', PT: 'Portugal', GR: 'Greece', DK: 'Denmark' };
@@ -171,6 +172,7 @@ export default function SpeciesDetail(props) {
         </div>
       )}
 
+      <IUCNLegend lang={lang} />
       <button className="back-btn" onClick={onBack}>{t.back}</button>
     </div>
   );

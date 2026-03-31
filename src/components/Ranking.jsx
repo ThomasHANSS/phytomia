@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import Thumb from './Thumb';
+import IUCNLegend from './IUCNLegend';
 import ThreatBadge from './ThreatBadge';
 import { TYPES, FAMILIES, STATUS_COLORS, THREATENED_CATS } from '../utils/types';
 
@@ -159,6 +160,7 @@ export default function Ranking(props) {
         </div>
       </div>
       <p style={{ fontSize: 11, color: 'var(--text3)', textAlign: 'center', marginTop: 12, fontStyle: 'italic' }}>{t.note}</p>
+      <IUCNLegend lang={lang} />
     </div>
   );
 }

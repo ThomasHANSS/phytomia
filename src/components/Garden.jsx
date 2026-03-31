@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import Thumb from './Thumb';
 import GardenGraph from './GardenGraph';
 import ThreatBadge from './ThreatBadge';
+import IUCNLegend from './IUCNLegend';
 
 var L = {
   fr: { title: 'Assemblage de plantes', sub: 'Ajoutez des plantes pour visualiser le réseau d\'interactions',
@@ -162,6 +163,7 @@ export default function Garden(props) {
         </div>
       )}
 
+      <IUCNLegend lang={lang} />
       {/* Recommendation section */}
       <div style={{ marginTop: 16, borderTop: '1px solid var(--border)', paddingTop: 12 }}>
         <button onClick={function () { setShowReco(!showReco); }}
