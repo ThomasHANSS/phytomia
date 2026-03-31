@@ -129,13 +129,27 @@ Base historique britannique documentant les insectes phytophages et leurs plante
 
 Base du Natural History Museum de Londres couvrant les plantes hôtes de tous les lépidoptères du monde. Accès via API CKAN (limité à ~9 000 enregistrements par session). Filtré pour les familles de lépidoptères présentes en Europe (Nymphalidae, Pieridae, Geometridae, Noctuidae, etc.).
 
+### Statuts de menace IUCN
+
+Les statuts de conservation sont récupérés via l'**API GBIF** (`/v1/species/{key}/iucnRedListCategory`), qui redistribue les évaluations de la Red List IUCN. Cette méthode ne nécessite pas de clé API IUCN et couvre plantes et insectes.
+
+| Indicateur | Volume |
+|---|---|
+| Espèces évaluées | **2 792** |
+| Préoccupation mineure (LC) | 2 396 |
+| Quasi menacées (NT) | 93 |
+| Vulnérables (VU) | 83 |
+| En danger (EN) | 60 |
+| En danger critique (CR) | 17 |
+
+Les badges IUCN sont affichés dans toutes les vues : fiches espèces, classements, graphe d'interactions, et graphe jardin.
+
 ### Bases non encore intégrées
 
 | Base | Contenu | Statut |
 |---|---|---|
 | **DoPI** (Univ. Sussex) | 101K interactions pollinisation, GB | En attente de téléchargement |
-| **European Red List** (EEA) | Statuts de menace UICN, ~10 000 espèces | Script prêt, téléchargement manuel requis |
-| **IUCN Red List API v4** | 172 600+ espèces mondiales | Script prêt, clé API gratuite requise |
+| **Baseflor** (Tela Botanica) | Formes de croissance fiables pour la flore française | Téléchargement complexe (multiples fichiers) |
 
 ---
 
@@ -335,18 +349,15 @@ Le workflow GitHub Actions se déclenche automatiquement à chaque push sur `mai
 
 ---
 
-## Statuts de menace UICN
+## Statuts de menace IUCN
 
-Phytomia affiche le statut de conservation de chaque espèce quand il est connu. Les données proviennent de deux sources complémentaires :
+Phytomia affiche le statut de conservation de chaque espèce via des badges colorés. Les données proviennent de l'**API GBIF** qui redistribue les évaluations de la Red List IUCN — aucune clé API IUCN n'est nécessaire.
 
-| Source | Couverture | Accès |
-|---|---|---|
-| **European Red List (EEA)** | ~10 000 espèces EU (papillons, abeilles, libellules, coléoptères, plantes) | CSV libre |
-| **IUCN Red List API v4** | 172 600+ espèces mondiales | Clé API gratuite (inscription sur api.iucnredlist.org) |
+**2 792 espèces évaluées** dont 17 CR, 60 EN, 83 VU, 93 NT, 2 396 LC.
 
-Les catégories affichées suivent la nomenclature UICN : CR (en danger critique), EN (en danger), VU (vulnérable), NT (quasi menacé), LC (préoccupation mineure), DD (données insuffisantes).
+Les catégories affichées suivent la nomenclature IUCN : CR (en danger critique), EN (en danger), VU (vulnérable), NT (quasi menacé), LC (préoccupation mineure), DD (données insuffisantes).
 
-Pour activer les statuts IUCN mondiaux, ajouter le secret `IUCN_API_KEY` dans les paramètres du repo GitHub.
+Les badges apparaissent dans toutes les vues : fiches espèces, classements, graphe d'interactions (overview et détail), et graphe jardin (points colorés sur les espèces menacées).
 
 ---
 
