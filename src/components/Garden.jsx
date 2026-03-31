@@ -1,14 +1,17 @@
 import { useState, useMemo } from 'react';
 import Thumb from './Thumb';
 import GardenGraph from './GardenGraph';
+import ThreatBadge from './ThreatBadge';
 
 var L = {
   fr: { title: 'Assemblage de plantes', sub: 'Ajoutez des plantes pour visualiser le réseau d\'interactions',
     add: 'Ajouter une plante…', empty: 'Ajoutez au moins 2 plantes pour voir le graphe.',
-    clear: 'Vider', stats: 'insectes attirés', shared: 'partagés', types: 'types', plants: 'plantes' },
+    clear: 'Vider', stats: 'insectes attirés', shared: 'partagés', types: 'types', plants: 'plantes',
+    reco: 'Planter pour les menacées', recoSub: 'Plantes soutenant le plus d\'espèces menacées (CR/EN/VU)', recoNone: 'Aucune donnée de menace disponible.', threatened: 'menacées', recoAdd: 'Ajouter' },
   en: { title: 'Plant assemblage', sub: 'Add plants to visualize the interaction network',
     add: 'Add a plant…', empty: 'Add at least 2 plants to see the graph.',
-    clear: 'Clear', stats: 'insects attracted', shared: 'shared', types: 'types', plants: 'plants' },
+    clear: 'Clear', stats: 'insects attracted', shared: 'shared', types: 'types', plants: 'plants',
+    reco: 'Plant for threatened species', recoSub: 'Plants supporting the most threatened species (CR/EN/VU)', recoNone: 'No threat data available.', threatened: 'threatened', recoAdd: 'Add' },
 };
 
 export default function Garden(props) {
@@ -16,6 +19,37 @@ export default function Garden(props) {
   var garden = props.garden, setGarden = props.setGarden, lang = props.lang, onSelect = props.onSelect;
   var t = L[lang] || L.fr;
   var _q = useState(''), gq = _q[0], sGq = _q[1];
+  var _showReco = useState(false), showReco = _showReco[0], setShowReco = _showReco[1];
+
+  // Compute plants that support most threatened insects
+  var recoPlants = useMemo(function () {
+    var threatenedInsects = {};
+    insects.forEach(function (ins) {
+      if (ins.threat && ['CR','EN','VU'].indexOf(ins.threat) !== -1) {
+        threatenedInsects[ins.id] = ins;
+      }
+    });
+    if (Object.keys(threatenedInsects).length === 0) return [];
+
+    var plantScores = {};
+    interactions.forEach(function (ix) {
+      if (threatenedInsects[ix.iI]) {
+        if (!plantScores[ix.pI]) plantScores[ix.pI] = { threatened: new Set(), total: 0 };
+        plantScores[ix.pI].threatened.add(ix.iI);
+        plantScores[ix.pI].total += 1;
+      }
+    });
+
+    return Object.keys(plantScores)
+      .map(function (pid) {
+        var p = plants.find(function (pl) { return pl.id === pid; });
+        if (!p) return null;
+        return Object.assign({}, p, { threatCount: plantScores[pid].threatened.size });
+      })
+      .filter(Boolean)
+      .sort(function (a, b) { return b.threatCount - a.threatCount; })
+      .slice(0, 20);
+  }, [plants, insects, interactions]);
   var _d = useState(false), gdrop = _d[0], sGdrop = _d[1];
 
   var name = function (item) { return item.common ? item.common[lang] || item.common.fr || '' : ''; };
@@ -127,6 +161,37 @@ export default function Garden(props) {
         </div>
       )}
 
+      {/* Recommendation section */}
+      <div style={{ marginTop: 16, borderTop: '1px solid var(--border)', paddingTop: 12 }}>
+        <button onClick={function () { setShowReco(!showReco); }}
+          style={{ width: '100%', padding: '10px 14px', fontSize: 13, fontWeight: 600, color: '#cc3333', background: '#cc333308', border: '1px solid #cc333322', borderRadius: 8, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+          <span style={{ fontSize: 16 }}>{showReco ? '▲' : '▼'}</span> {t.reco}
+        </button>
+        {showReco && (
+          <div style={{ marginTop: 8 }}>
+            <p style={{ fontSize: 12, color: 'var(--text2)', margin: '0 0 8px', textAlign: 'center' }}>{t.recoSub}</p>
+            {recoPlants.length === 0 && (<p style={{ fontSize: 13, color: 'var(--text3)', textAlign: 'center' }}>{t.recoNone}</p>)}
+            {recoPlants.map(function (p) {
+              var inGarden = garden.indexOf(p.id) !== -1;
+              return (
+                <div key={p.id} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 8px', borderBottom: '1px solid var(--border)' }}>
+                  <Thumb name={p.sci} sz={28} item={p} isPlant={true} />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: 12, fontWeight: 500, fontStyle: 'italic', color: 'var(--text)' }}>{p.sci}</div>
+                    <div style={{ fontSize: 11, color: 'var(--text2)' }}>{name(p)} — {p.threatCount} {t.threatened}</div>
+                  </div>
+                  {p.threat && <ThreatBadge cat={p.threat} lang={lang} size="sm" />}
+                  {!inGarden && (
+                    <button onClick={function () { setGarden(garden.concat([p.id])); }}
+                      style={{ fontSize: 11, padding: '3px 8px', color: '#2d7d46', background: '#2d7d4610', border: '1px solid #2d7d4630', borderRadius: 6, cursor: 'pointer' }}>{t.recoAdd}</button>
+                  )}
+                  {inGarden && (<span style={{ fontSize: 11, color: '#2d7d46' }}>✓</span>)}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
       {garden.length < 2 && (
         <div style={{ textAlign: 'center', padding: '30px 20px', color: 'var(--text2)' }}>
           <p style={{ fontSize: 14, margin: 0 }}>{t.empty}</p>
