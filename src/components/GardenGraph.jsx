@@ -1,3 +1,4 @@
+import { useState, useRef, useCallback } from 'react';
 import { TYPES, FAMILIES } from '../utils/types';
 
 export default function GardenGraph(props) {
@@ -11,9 +12,83 @@ export default function GardenGraph(props) {
   var name = function (item) { return item.common ? item.common[lang] || item.sci : item.sci; };
   var shortSci = function (s) { return s.length > 20 ? s.split(' ')[0][0] + '. ' + s.split(' ').slice(1).join(' ') : s; };
 
+  var svgRef = useRef(null);
+
+  var exportGraph = useCallback(function (format) {
+    var svgEl = svgRef.current;
+    if (!svgEl) return;
+
+    // Clone SVG and resolve CSS variables
+    var clone = svgEl.cloneNode(true);
+    var cs = getComputedStyle(document.documentElement);
+    var cssVars = { '--bg': '#ffffff', '--bg3': '#f5f5f5', '--text': '#1a1a1a', '--text2': '#666666', '--text3': '#999999' };
+    Object.keys(cssVars).forEach(function (v) {
+      var val = cs.getPropertyValue(v).trim() || cssVars[v];
+      cssVars[v] = val;
+    });
+
+    // Replace CSS variables in all elements
+    var allEls = clone.querySelectorAll('*');
+    allEls.forEach(function (el) {
+      ['fill', 'stroke'].forEach(function (attr) {
+        var val = el.getAttribute(attr);
+        if (val && val.indexOf('var(') !== -1) {
+          var resolved = val.replace(/var\(([^)]+)\)/g, function (m, v) { return cssVars[v.trim()] || '#000'; });
+          el.setAttribute(attr, resolved);
+        }
+      });
+      if (el.style) {
+        var style = el.getAttribute('style') || '';
+        if (style.indexOf('var(') !== -1) {
+          var newStyle = style.replace(/var\(([^)]+)\)/g, function (m, v) { return cssVars[v.trim()] || '#000'; });
+          el.setAttribute('style', newStyle);
+        }
+        if (el.style.fill && el.style.fill.indexOf('var(') !== -1) {
+          el.style.fill = el.style.fill.replace(/var\(([^)]+)\)/g, function (m, v) { return cssVars[v.trim()] || '#000'; });
+        }
+      }
+    });
+
+    // Add white background
+    var vb = clone.getAttribute('viewBox').split(' ');
+    var bgRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    bgRect.setAttribute('width', vb[2]);
+    bgRect.setAttribute('height', vb[3]);
+    bgRect.setAttribute('fill', '#ffffff');
+    clone.insertBefore(bgRect, clone.firstChild);
+
+    var svgData = new XMLSerializer().serializeToString(clone);
+
+    if (format === 'svg') {
+      var blob = new Blob([svgData], { type: 'image/svg+xml' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = 'phytomia-jardin.svg';
+      a.click(); URL.revokeObjectURL(url);
+      return;
+    }
+
+    // PNG export at 2x
+    var scale = 2;
+    var w = parseInt(vb[2]) * scale;
+    var h = parseInt(vb[3]) * scale;
+    var canvas = document.createElement('canvas');
+    canvas.width = w; canvas.height = h;
+    var ctx = canvas.getContext('2d');
+    var img = new Image();
+    img.onload = function () {
+      ctx.drawImage(img, 0, 0, w, h);
+      var a = document.createElement('a');
+      a.href = canvas.toDataURL('image/png');
+      a.download = 'phytomia-jardin.png';
+      a.click();
+    };
+    img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+  }, []);
+
   return (
     <div style={{ margin: '8px 0' }}>
-      <svg viewBox={'0 0 ' + W + ' ' + H} width="100%" style={{ display: 'block' }}>
+      <svg ref={svgRef} viewBox={'0 0 ' + W + ' ' + H} width="100%" style={{ display: 'block' }}>
         {ixs.map(function (ix, idx) {
           var pn = pNodes.find(function (n) { return n.id === ix.pI; }); var inode = iNodes.find(function (n) { return n.id === ix.iI; });
           if (!pn || !inode) return null; var tp = TYPES[ix.tp] || TYPES.folivorie; var col = FAMILIES[tp.fam].color;
@@ -33,6 +108,18 @@ export default function GardenGraph(props) {
           return (<div key={e[0]} style={{ display: 'flex', alignItems: 'center', gap: 3 }}><svg width="20" height="8"><line x1="0" y1="4" x2="14" y2="4" stroke={fam.color} strokeWidth={tp.w * 0.7} strokeDasharray={tp.dash} strokeLinecap="round" /></svg><span style={{ fontSize: 9, color: fam.color, fontWeight: 500 }}>{tp[lang]}</span></div>);
         })}
         <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}><span style={{ fontSize: 10, color: '#b8860b', fontWeight: 600 }}>★</span><span style={{ fontSize: 9, color: '#b8860b' }}>{lang === 'fr' ? 'Partagé' : 'Shared'}</span></div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: 8, margin: '8px 0' }}>
+        <button onClick={function () { exportGraph('png'); }}
+          style={{ fontSize: 11, padding: '5px 12px', color: '#2d7d46', background: '#2d7d4610', border: '1px solid #2d7d4630', borderRadius: 6, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          PNG (x2)
+        </button>
+        <button onClick={function () { exportGraph('svg'); }}
+          style={{ fontSize: 11, padding: '5px 12px', color: '#555', background: '#55555510', border: '1px solid #55555530', borderRadius: 6, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          SVG
+        </button>
       </div>
       <p style={{ fontSize: 9, color: 'var(--text3)', textAlign: 'center', margin: 2 }}>
         {lang === 'fr' ? 'Les insectes reliés à plusieurs plantes sont marqués ★' : 'Insects linked to multiple plants are marked ★'}
