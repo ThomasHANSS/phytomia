@@ -19799,7 +19799,7 @@
   "genus": "Cercis",
   "status": "",
   "growthForm": "tree",
-  "region": "non-native",
+  "region": "",
   "threat": "LC",
   "n_interactions": 22,
   "common": {
@@ -21399,7 +21399,7 @@
   "genus": "Rhododendron",
   "status": "",
   "growthForm": "shrub",
-  "region": "non-native",
+  "region": "",
   "threat": "LC",
   "n_interactions": 21,
   "common": {
@@ -29063,7 +29063,7 @@
   "genus": "Ficus",
   "status": "",
   "growthForm": "tree",
-  "region": "non-native",
+  "region": "",
   "threat": "LC",
   "n_interactions": 13,
   "common": {
@@ -32503,7 +32503,7 @@
   "genus": "Rhododendron",
   "status": "",
   "growthForm": "shrub",
-  "region": "non-native",
+  "region": "",
   "threat": "LC",
   "n_interactions": 11,
   "common": {
@@ -58391,7 +58391,7 @@
   "genus": "Rhododendron",
   "status": "",
   "growthForm": "shrub",
-  "region": "non-native",
+  "region": "",
   "threat": "",
   "n_interactions": 4,
   "common": {
@@ -68855,7 +68855,7 @@
   "genus": "Rhododendron",
   "status": "neophyte",
   "growthForm": "shrub",
-  "region": "non-native",
+  "region": "",
   "threat": "",
   "n_interactions": 3,
   "common": {

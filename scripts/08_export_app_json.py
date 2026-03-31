@@ -88,7 +88,15 @@ MOSTLY_EXOTIC_FAMILIES = {
     "Melastomataceae","Proteaceae","Zingiberaceae","Combretaceae","Loranthaceae",
 }
 
+NATIVE_EU_SPECIES = {
+    "Cercis siliquastrum","Ficus carica",
+    "Rhododendron ferrugineum","Rhododendron hirsutum",
+    "Rhododendron ponticum","Rhododendron palustre",
+}
+
 def detect_region(name, family):
+    if name in NATIVE_EU_SPECIES:
+        return ""
     genus = name.split()[0] if name else ""
     if genus in CULTIVATED_EU_GENERA:
         return "non-native"
