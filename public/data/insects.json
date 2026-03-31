@@ -44,7 +44,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Vanessa",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1174,
   "common": {
    "fr": "Belle Dame",
@@ -213,7 +213,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Vanessa",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 571,
   "common": {
    "fr": "Vulcain",
@@ -577,7 +577,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 372,
   "common": {
    "fr": "",
@@ -1136,7 +1136,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 188,
   "common": {
    "fr": "",
@@ -1149,7 +1149,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 188,
   "common": {
    "fr": "",
@@ -1253,7 +1253,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 177,
   "common": {
    "fr": "Bourdon inattendu",
@@ -1435,7 +1435,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 157,
   "common": {
    "fr": "Papillon du céleri",
@@ -1552,7 +1552,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Vanessa",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 150,
   "common": {
    "fr": "Vanesse des perlières",
@@ -1630,7 +1630,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 139,
   "common": {
    "fr": "",
@@ -1825,7 +1825,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 126,
   "common": {
    "fr": "",
@@ -1890,7 +1890,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Lysandra",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 122,
   "common": {
    "fr": "Argus bleu-nacré",
@@ -2163,7 +2163,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 99,
   "common": {
    "fr": "",
@@ -2345,7 +2345,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Eurema",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 90,
   "common": {
    "fr": "",
@@ -2501,7 +2501,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Vanessa",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 86,
   "common": {
    "fr": "",
@@ -2722,7 +2722,7 @@
   "order": "Coleoptera",
   "family": "Cerambycidae",
   "genus": "Cerambyx",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 78,
   "common": {
    "fr": "Grand Capricorne",
@@ -2995,7 +2995,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 69,
   "common": {
    "fr": "Bourdon des landes",
@@ -3073,7 +3073,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Lycaena",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 68,
   "common": {
    "fr": "Cuivré des marais",
@@ -3086,7 +3086,7 @@
   "order": "Coleoptera",
   "family": "Cerambycidae",
   "genus": "Pedostrangalia",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 68,
   "common": {
    "fr": "Lepture dantesque",
@@ -3424,7 +3424,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 61,
   "common": {
    "fr": "Psithyre bohémien",
@@ -3476,7 +3476,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 60,
   "common": {
    "fr": "",
@@ -4217,7 +4217,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 48,
   "common": {
    "fr": "",
@@ -4438,7 +4438,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 45,
   "common": {
    "fr": "",
@@ -4451,7 +4451,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colias",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 45,
   "common": {
    "fr": "coliade de la luzerne",
@@ -4607,7 +4607,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 44,
   "common": {
    "fr": "",
@@ -4620,7 +4620,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 44,
   "common": {
    "fr": "",
@@ -4724,7 +4724,7 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Colletes",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 43,
   "common": {
    "fr": "Collète du lierre",
@@ -4750,7 +4750,7 @@
   "order": "Hymenoptera",
   "family": "Melittidae",
   "genus": "Macropis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 43,
   "common": {
    "fr": "Macropède commune",
@@ -4932,7 +4932,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 41,
   "common": {
    "fr": "Bourdon pyrénéen",
@@ -4945,7 +4945,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 41,
   "common": {
    "fr": "",
@@ -5036,7 +5036,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 40,
   "common": {
    "fr": "",
@@ -5062,7 +5062,7 @@
   "order": "Passeriformes",
   "family": "Pycnonotidae",
   "genus": "Iole",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 40,
   "common": {
    "fr": "Bulbul aux yeux gris",
@@ -5400,7 +5400,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 37,
   "common": {
    "fr": "",
@@ -5452,7 +5452,7 @@
   "order": "Passeriformes",
   "family": "Pycnonotidae",
   "genus": "Hemixos",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 37,
   "common": {
    "fr": "Bulbul à ailes vertes",
@@ -5517,7 +5517,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 36,
   "common": {
    "fr": "Bourdon doré",
@@ -5608,7 +5608,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 36,
   "common": {
    "fr": "",
@@ -6648,7 +6648,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 29,
   "common": {
    "fr": "",
@@ -6661,7 +6661,7 @@
   "order": "Coleoptera",
   "family": "Cerambycidae",
   "genus": "Clytus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 29,
   "common": {
    "fr": "Clyte fâché",
@@ -7064,7 +7064,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 27,
   "common": {
    "fr": "",
@@ -7077,7 +7077,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 27,
   "common": {
    "fr": "",
@@ -7233,7 +7233,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 26,
   "common": {
    "fr": "",
@@ -7558,7 +7558,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 25,
   "common": {
    "fr": "Abeille maçonne à poils roux",
@@ -7935,7 +7935,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Anthophora",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 23,
   "common": {
    "fr": "Anthophore dalmate",
@@ -7948,7 +7948,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 23,
   "common": {
    "fr": "Bourdon cryptique",
@@ -7961,7 +7961,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 23,
   "common": {
    "fr": "Bourdon moisi",
@@ -8169,7 +8169,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 22,
   "common": {
    "fr": "Bourdon distingué",
@@ -8182,7 +8182,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 22,
   "common": {
    "fr": "Bourdon menteur",
@@ -9209,7 +9209,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 19,
   "common": {
    "fr": "",
@@ -9222,7 +9222,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 19,
   "common": {
    "fr": "",
@@ -9846,7 +9846,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 18,
   "common": {
    "fr": "Afrique subsaharienne",
@@ -9859,7 +9859,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parnassius",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 18,
   "common": {
    "fr": "Apollon",
@@ -9872,7 +9872,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Phoebis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 18,
   "common": {
    "fr": "",
@@ -10080,7 +10080,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Battus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 17,
   "common": {
    "fr": "",
@@ -10106,7 +10106,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Chelostoma",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 17,
   "common": {
    "fr": "Chélostome des scabieuses",
@@ -10275,7 +10275,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Merodon",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 17,
   "common": {
    "fr": "",
@@ -10496,7 +10496,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colias",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 16,
   "common": {
    "fr": "",
@@ -11627,7 +11627,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 14,
   "common": {
    "fr": "",
@@ -12407,7 +12407,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Anthophora",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 13,
   "common": {
    "fr": "Anthophore d'Alluaud",
@@ -12641,7 +12641,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Halictus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 13,
   "common": {
    "fr": "",
@@ -12758,7 +12758,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Luehdorfia",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 13,
   "common": {
    "fr": "Papilionidae",
@@ -12849,7 +12849,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipizella",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 13,
   "common": {
    "fr": "",
@@ -13226,7 +13226,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 12,
   "common": {
    "fr": "",
@@ -13512,7 +13512,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Erebia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 12,
   "common": {
    "fr": "Moiré des Fétuques",
@@ -13616,7 +13616,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Hipparchia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 12,
   "common": {
    "fr": "Agreste",
@@ -13967,7 +13967,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Pontia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 12,
   "common": {
    "fr": "Marbré-de-vert",
@@ -14162,7 +14162,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 12,
   "common": {
    "fr": "",
@@ -14422,7 +14422,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Battus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 11,
   "common": {
    "fr": "Papillon trèfle caraïbe",
@@ -14539,7 +14539,7 @@
   "order": "Coleoptera",
   "family": "Cerambycidae",
   "genus": "Clytus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 11,
   "common": {
    "fr": "",
@@ -14734,7 +14734,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Eurema",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 11,
   "common": {
    "fr": "",
@@ -15033,7 +15033,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 11,
   "common": {
    "fr": "",
@@ -15462,7 +15462,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 10,
   "common": {
    "fr": "Andrène fauve",
@@ -15488,7 +15488,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 10,
   "common": {
    "fr": "Andrène fulvette",
@@ -15670,7 +15670,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Belenois",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 10,
   "common": {
    "fr": "",
@@ -17763,7 +17763,7 @@
   "order": "Scorpaeniformes",
   "family": "Cottidae",
   "genus": "Hemilepidotus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 9,
   "common": {
    "fr": "",
@@ -17971,7 +17971,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 9,
   "common": {
    "fr": "Mégachile à pattes laineuses",
@@ -18140,7 +18140,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Panurginus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 9,
   "common": {
    "fr": "",
@@ -18322,7 +18322,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipiza",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 9,
   "common": {
    "fr": "",
@@ -19661,7 +19661,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 8,
   "common": {
    "fr": "",
@@ -19674,7 +19674,7 @@
   "order": "Lepidoptera",
   "family": "Noctuidae",
   "genus": "Hadena",
-  "threat": "",
+  "threat": "CR",
   "n_interactions": 8,
   "common": {
    "fr": "Noctuelle capsulaire",
@@ -19687,7 +19687,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Halictus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 8,
   "common": {
    "fr": "",
@@ -19973,7 +19973,7 @@
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Linepithema",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 8,
   "common": {
    "fr": "Fourmi d'Argentine",
@@ -20142,7 +20142,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 8,
   "common": {
    "fr": "Nomade de Fabricius",
@@ -20272,7 +20272,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 8,
   "common": {
    "fr": "",
@@ -20831,7 +20831,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Zerene",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 8,
   "common": {
    "fr": "",
@@ -21117,7 +21117,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 7,
   "common": {
    "fr": "Micrandrène demi-lisse",
@@ -21221,7 +21221,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Anthophora",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -21338,7 +21338,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -21390,7 +21390,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Catopsilia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "Piéride du Cassier",
@@ -22157,7 +22157,7 @@
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 7,
   "common": {
    "fr": "Fourmi des prés",
@@ -22222,7 +22222,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Halictus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -22391,7 +22391,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Lampides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "Azuré porte-queue",
@@ -22638,7 +22638,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Melanargia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "Echiquier ibérique, Échiquier d'Ibérie",
@@ -22664,7 +22664,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Merodon",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -22820,7 +22820,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Nymphalis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "Morio",
@@ -22963,7 +22963,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -22989,7 +22989,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -23028,7 +23028,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parnassius",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -23197,7 +23197,7 @@
   "order": "",
   "family": "Lacertidae",
   "genus": "Podarcis",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 7,
   "common": {
    "fr": "Lézard De Lilford",
@@ -23483,7 +23483,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Sphaerophoria",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -23691,7 +23691,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Volucella",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 7,
   "common": {
    "fr": "",
@@ -24757,7 +24757,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 6,
   "common": {
    "fr": "",
@@ -24835,7 +24835,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Chrysotoxum",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 6,
   "common": {
    "fr": "",
@@ -25225,7 +25225,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Dasysyrphus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 6,
   "common": {
    "fr": "",
@@ -25680,7 +25680,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Eurema",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 6,
   "common": {
    "fr": "",
@@ -26590,7 +26590,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 6,
   "common": {
    "fr": "",
@@ -26746,7 +26746,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 6,
   "common": {
    "fr": "",
@@ -28384,7 +28384,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Archon",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 5,
   "common": {
    "fr": "Faux Apollon",
@@ -29216,7 +29216,7 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Colletes",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 5,
   "common": {
    "fr": "Collète de l'Odontite",
@@ -29931,7 +29931,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Eurema",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -30009,7 +30009,7 @@
   "order": "Hymenoptera",
   "family": "Formicidae",
   "genus": "Formica",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 5,
   "common": {
    "fr": "Fourmi rousse",
@@ -30113,7 +30113,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -30126,7 +30126,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -30282,7 +30282,7 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Hylaeus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -30724,7 +30724,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 5,
   "common": {
    "fr": "Mégachile alpine",
@@ -30737,7 +30737,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -31491,7 +31491,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parnassius",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -31673,7 +31673,7 @@
   "order": "Ericales",
   "family": "Ericaceae",
   "genus": "Pieris",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "Piéris du Japon, Andromède du Japon",
@@ -31712,7 +31712,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipiza",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -31725,7 +31725,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Platycheirus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -32726,7 +32726,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 5,
   "common": {
    "fr": "",
@@ -34754,7 +34754,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -36080,7 +36080,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Erebia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "Moiré aveuglé",
@@ -36743,7 +36743,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -36873,7 +36873,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Halictus",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -36912,7 +36912,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Halictus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -37510,7 +37510,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Leptotes",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "Azuré de Lang, Le petit Azuré porte-queue, l'Azuré de la Luzerne",
@@ -37887,7 +37887,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -37978,7 +37978,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Merodon",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -38108,7 +38108,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Mylothris",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -38212,7 +38212,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -39096,7 +39096,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Pontia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -39161,7 +39161,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Pseudophilotes",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "Azuré de la sarriette",
@@ -39577,7 +39577,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Sericomyia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 4,
   "common": {
    "fr": "",
@@ -41644,7 +41644,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Anthophora",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 3,
   "common": {
    "fr": "Anthophore des Baléares",
@@ -42281,7 +42281,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -42294,7 +42294,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -42307,7 +42307,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "Bourdon à large collier",
@@ -42320,7 +42320,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "CR",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -43100,7 +43100,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -43126,7 +43126,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -43139,7 +43139,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -43945,7 +43945,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Cressida",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -44309,7 +44309,7 @@
   "order": "Hymenoptera",
   "family": "Melittidae",
   "genus": "Dasypoda",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -45141,7 +45141,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Erebia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "Moiré de la Canche, Moiré alpestre",
@@ -45154,7 +45154,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Erebia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "Moiré des Luzules, Moiré, Moiré châtain",
@@ -46896,7 +46896,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Lasioglossum",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -47286,7 +47286,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Lysandra",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "Azuré commun",
@@ -47572,7 +47572,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -47637,7 +47637,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -47650,7 +47650,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -48079,7 +48079,7 @@
   "order": "Coleoptera",
   "family": "Cerambycidae",
   "genus": "Monochamus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -48300,7 +48300,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -48924,7 +48924,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Panurgus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "Panurge pattes-dentées",
@@ -48950,7 +48950,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -48963,7 +48963,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -49145,7 +49145,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -49171,7 +49171,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -49262,7 +49262,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parnassius",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "Semi-apollon",
@@ -50094,7 +50094,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipiza",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -50107,7 +50107,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipizella",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -50549,7 +50549,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Protosmia",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -52200,7 +52200,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 3,
   "common": {
    "fr": "",
@@ -56022,7 +56022,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Anthophora",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 2,
   "common": {
    "fr": "Anthophore du Romarin",
@@ -56984,7 +56984,7 @@
   "order": "Orthoptera",
   "family": "Tettigoniidae",
   "genus": "Barbitistes",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -56997,7 +56997,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Battus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -57686,7 +57686,7 @@
   "order": "Coleoptera",
   "family": "Buprestidae",
   "genus": "Buprestis",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 2,
   "common": {
    "fr": "Bupreste splendide",
@@ -58869,7 +58869,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -58882,7 +58882,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -58895,7 +58895,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -58908,7 +58908,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -58921,7 +58921,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -59155,7 +59155,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Chrysogaster",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -60117,7 +60117,7 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Colletes",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -60286,7 +60286,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colotis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "Aurore érémicole",
@@ -61469,7 +61469,7 @@
   "order": "Hymenoptera",
   "family": "Melittidae",
   "genus": "Dasypoda",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -62106,7 +62106,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Dufourea",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -62730,7 +62730,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Epeolus",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -63185,7 +63185,7 @@
   "order": "Lepidoptera",
   "family": "Lasiocampidae",
   "genus": "Eriogaster",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 2,
   "common": {
    "fr": "Bombyx Evérie Laineuse du Prunellier",
@@ -63380,7 +63380,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Eucera",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -63588,7 +63588,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Euphydryas",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 2,
   "common": {
    "fr": "Damier du Frêne, Mélitée du Frêne, Petit Damier à taches fauves, Maturne",
@@ -63822,7 +63822,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Euryades",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -63848,7 +63848,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Eurytides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -64108,7 +64108,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Flavipanurgus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -64498,7 +64498,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -64511,7 +64511,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -64537,7 +64537,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -65525,7 +65525,7 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Hylaeus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -66266,7 +66266,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Lasioglossum",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -66981,7 +66981,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Luehdorfia",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 2,
   "common": {
    "fr": "Papilionidae",
@@ -67384,7 +67384,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Maculinea",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "Azuré du Serpolet, Azuré d'Arion, Argus à bandes brunes, Arion, Argus Arion",
@@ -67982,7 +67982,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Merodon",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -68762,7 +68762,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Nepheronia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -68931,7 +68931,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -69880,7 +69880,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Pachliopta",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -70192,7 +70192,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -70205,7 +70205,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -70218,7 +70218,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -70400,7 +70400,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -70426,7 +70426,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -70491,7 +70491,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parnassius",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -71401,7 +71401,7 @@
   "order": "Lepidoptera",
   "family": "Lasiocampidae",
   "genus": "Phyllodesma",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 2,
   "common": {
    "fr": "Feuille-Morte de l'Yeuse",
@@ -71986,7 +71986,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipiza",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -74287,7 +74287,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Sphaerophoria",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -75392,7 +75392,7 @@
   "order": "Cypriniformes",
   "family": "Cyprinidae",
   "genus": "Tinca",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "Aiguillons",
@@ -75769,7 +75769,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -75782,7 +75782,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 2,
   "common": {
    "fr": "",
@@ -82074,7 +82074,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -82451,7 +82451,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -82503,7 +82503,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -82529,7 +82529,7 @@
   "order": "Hymenoptera",
   "family": "Andrenidae",
   "genus": "Andrena",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -85142,7 +85142,7 @@
   "order": "Coleoptera",
   "family": "Scarabaeidae",
   "genus": "Ateuchus",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -85727,7 +85727,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Baronia",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -85844,7 +85844,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Battus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -85857,7 +85857,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Battus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -85870,7 +85870,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Battus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -85896,7 +85896,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Belenois",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -86013,7 +86013,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Bhutanitis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -86195,7 +86195,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -86208,7 +86208,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Bombus",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -86533,7 +86533,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Brachypalpus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -87014,7 +87014,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Cacyreus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Brun des pélargoniums",
@@ -88223,7 +88223,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Ceratina",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Cératine gravide",
@@ -88301,7 +88301,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Ceratina",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89094,7 +89094,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89107,7 +89107,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89120,7 +89120,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89146,7 +89146,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89172,7 +89172,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89185,7 +89185,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Cheilosia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89211,7 +89211,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Chelostoma",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -89770,7 +89770,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Chrysotoxum",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -91408,7 +91408,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colias",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 1,
   "common": {
    "fr": "Candide",
@@ -91512,7 +91512,7 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Colletes",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 1,
   "common": {
    "fr": "Collète des prés salés",
@@ -91668,7 +91668,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colotis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -91681,7 +91681,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colotis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -91694,7 +91694,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colotis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -91733,7 +91733,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Colotis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -93436,7 +93436,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Danaus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Monarque",
@@ -94112,7 +94112,7 @@
   "order": "Hymenoptera",
   "family": "Melittidae",
   "genus": "Dasypoda",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -95477,7 +95477,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Dixeia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -96010,7 +96010,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Dufourea",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -98012,7 +98012,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Erebia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Moiré noirâtre",
@@ -98038,7 +98038,7 @@
   "order": "Lepidoptera",
   "family": "Nymphalidae",
   "genus": "Erebia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Moiré printanier",
@@ -98428,7 +98428,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Eronia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -99078,7 +99078,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Eumerus",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -99156,7 +99156,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Eupeodes",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -99468,7 +99468,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Eurema",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -100794,7 +100794,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -100807,7 +100807,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -100833,7 +100833,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Graphium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -102107,7 +102107,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Hoplitis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Osmie maçonne",
@@ -102120,7 +102120,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Hoplitis",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Osmie velue",
@@ -102575,7 +102575,7 @@
   "order": "Hymenoptera",
   "family": "Colletidae",
   "genus": "Hylaeus",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -102653,7 +102653,7 @@
   "order": "Lepidoptera",
   "family": "Sphingidae",
   "genus": "Hyles",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "Sphinx de l'Argousier",
@@ -103056,7 +103056,7 @@
   "order": "Odonata",
   "family": "Coenagrionidae",
   "genus": "Ischnura",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Agrion élégant",
@@ -103836,7 +103836,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Lasioglossum",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -103888,7 +103888,7 @@
   "order": "Hymenoptera",
   "family": "Halictidae",
   "genus": "Lasioglossum",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -105461,7 +105461,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Lycaena",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -106514,7 +106514,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "Mégachile hongroise",
@@ -106618,7 +106618,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Megachile",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "Mégachile à brosse blanche et noire",
@@ -107437,7 +107437,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Merodon",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -107476,7 +107476,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Merodon",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -108542,7 +108542,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Mylothris",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -109465,7 +109465,7 @@
   "order": "Lepidoptera",
   "family": "Pieridae",
   "genus": "Nepheronia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -109608,7 +109608,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -109660,7 +109660,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Nomade concolore",
@@ -109673,7 +109673,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -109712,7 +109712,7 @@
   "order": "Hymenoptera",
   "family": "Apidae",
   "genus": "Nomada",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -110999,7 +110999,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Osmia",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -111974,7 +111974,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112000,7 +112000,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112039,7 +112039,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Est",
@@ -112078,7 +112078,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Porte-Queue de Corse, Grand Férulier",
@@ -112182,7 +112182,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112195,7 +112195,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Papilio",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112611,7 +112611,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112624,7 +112624,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "VU",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112702,7 +112702,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112715,7 +112715,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112767,7 +112767,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112780,7 +112780,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112806,7 +112806,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -112819,7 +112819,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Parides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -113729,7 +113729,7 @@
   "order": "Orthoptera",
   "family": "Tettigoniidae",
   "genus": "Phaneroptera",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Phanéroptère méridional",
@@ -113950,7 +113950,7 @@
   "order": "Lepidoptera",
   "family": "Lycaenidae",
   "genus": "Phengaris",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 1,
   "common": {
    "fr": "Azuré de la Sanguisorbe, Argus strié, Télégone",
@@ -116199,7 +116199,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipiza",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -116212,7 +116212,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Pipizella",
-  "threat": "",
+  "threat": "EN",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -116537,7 +116537,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Platycheirus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -117291,7 +117291,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Portevinia",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -117928,7 +117928,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Protographium",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -117954,7 +117954,7 @@
   "order": "Hymenoptera",
   "family": "Megachilidae",
   "genus": "Protosmia",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "Protosmie naine",
@@ -118344,7 +118344,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Psilota",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -118487,7 +118487,7 @@
   "order": "Coleoptera",
   "family": "Chrysomelidae",
   "genus": "Psylliodes",
-  "threat": "",
+  "threat": "CR",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -118812,7 +118812,7 @@
   "order": "Coleoptera",
   "family": "Cerambycidae",
   "genus": "Purpuricenus",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -119943,7 +119943,7 @@
   "order": "Chiroptera",
   "family": "Emballonuridae",
   "genus": "Saccopteryx",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "Saccoptère commun",
@@ -121126,7 +121126,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Sphaerophoria",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -121165,7 +121165,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Sphegina",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -121204,7 +121204,7 @@
   "order": "Carcharhiniformes",
   "family": "Sphyrnidae",
   "genus": "Sphyrna",
-  "threat": "",
+  "threat": "CR",
   "n_interactions": 1,
   "common": {
    "fr": "Requin marteau à festons",
@@ -121217,7 +121217,7 @@
   "order": "Carcharhiniformes",
   "family": "Sphyrnidae",
   "genus": "Sphyrna",
-  "threat": "",
+  "threat": "CR",
   "n_interactions": 1,
   "common": {
    "fr": "Grand requin marteau",
@@ -122400,7 +122400,7 @@
   "order": "Diptera",
   "family": "Syrphidae",
   "genus": "Syrphus",
-  "threat": "",
+  "threat": "DD",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -122595,7 +122595,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Teinopalpus",
-  "threat": "",
+  "threat": "NT",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -124337,7 +124337,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -124363,7 +124363,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -124376,7 +124376,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -124389,7 +124389,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",
@@ -124402,7 +124402,7 @@
   "order": "Lepidoptera",
   "family": "Papilionidae",
   "genus": "Troides",
-  "threat": "",
+  "threat": "LC",
   "n_interactions": 1,
   "common": {
    "fr": "",

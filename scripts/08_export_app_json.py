@@ -121,8 +121,8 @@ def load_threat_status():
         return threat
     with open(threat_file, encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            name = row.get("scientific_name", "")
-            cat = row.get("iucn_category", "")
+            name = row.get("species", "") or row.get("scientific_name", "")
+            cat = row.get("category", "") or row.get("iucn_category", "")
             if name and cat:
                 threat[name] = {
                     "cat": cat,
