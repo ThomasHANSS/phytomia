@@ -15,10 +15,8 @@ var L = {
     threatened: 'Threatened', nearThreatened: 'Near Threatened' },
 };
 
-function dominantFam(id, isPlant, interactions) {
-  var ixByP = (typeof props !== "undefined" && props.ixByPlant) || {};
-  var ixByI = (typeof props !== "undefined" && props.ixByInsect) || {};
-  var ixs = isPlant ? (ixByP[id] || interactions.filter(function (x) { return x.pI === id; })) : (ixByI[id] || interactions.filter(function (x) { return x.iI === id; }));
+function dominantFam(id, ixByInsect) {
+  var ixs = (ixByInsect && ixByInsect[id]) || [];
   var counts = {};
   ixs.forEach(function (x) { var tp = TYPES[x.tp]; if (tp) counts[tp.fam] = (counts[tp.fam] || 0) + 1; });
   var best = null, max = 0;
@@ -41,7 +39,7 @@ export default function Ranking(props) {
   }, [plants, interactions]);
 
   var allI = useMemo(function () {
-    return insects.filter(function (ins) { return ins.n_interactions > 0; }).map(function (ins) { return Object.assign({}, ins, { count: ins.n_interactions, domFam: dominantFam(ins.id, false, interactions) }); }).sort(function (a, b) { return b.count - a.count; });
+    return insects.filter(function (ins) { return ins.n_interactions > 0; }).map(function (ins) { return Object.assign({}, ins, { count: ins.n_interactions, domFam: dominantFam(ins.id, props.ixByInsect) }); }).sort(function (a, b) { return b.count - a.count; });
   }, [insects, interactions]);
 
   var pRanks = useMemo(function () {
