@@ -123,6 +123,7 @@ export default function SpeciesDetail(props) {
           <button className={dv === 'graph' ? 'active' : ''} onClick={function () { sDv('graph'); }}>{t.graph}</button>
           <button className={dv === 'list' ? 'active' : ''} onClick={function () { sDv('list'); }}>{t.list}</button>
         </div>
+        </div>
       </div>
 
       {dv === 'graph' && rels.length > 0 && (
