@@ -13,6 +13,7 @@ export default function App() {
   var data = usePhytomiaData();
   var _l = useState('fr'), lang = _l[0], setLang = _l[1];
   var _v = useState('ranking'), viewMode = _v[0], setViewMode = _v[1];
+  var _eu = useState(true), euOnly = _eu[0], setEuOnly = _eu[1];
   var _s = useState(null), selectedId = _s[0], setSelectedId = _s[1];
   var _h = useState([]), history = _h[0], setHistory = _h[1];
   var _g = useState([]), garden = _g[0], setGarden = _g[1];
@@ -67,6 +68,14 @@ export default function App() {
     <div className="app">
       <Header lang={lang} setLang={setLang} onLogoClick={back} />
 
+      <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 4 }}>
+        <button onClick={function () { setEuOnly(!euOnly); }}
+          style={{ fontSize: 10, padding: "3px 8px", color: euOnly ? "#2d7d46" : "#888", background: euOnly ? "#2d7d4610" : "transparent", border: "1px solid " + (euOnly ? "#2d7d4630" : "#88888830"), borderRadius: 5, cursor: "pointer" }}>
+          {euOnly
+            ? (lang === "fr" ? "🇪🇺 Europe uniquement" : "🇪🇺 Europe only")
+            : (lang === "fr" ? "🌍 Toutes les espèces" : "🌍 All species")}
+        </button>
+      </div>
       {viewMode !== 'garden' && <SearchBar
         plants={data.plants}
         insects={data.insects}
