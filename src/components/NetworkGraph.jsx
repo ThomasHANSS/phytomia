@@ -49,7 +49,7 @@ function OverviewPanel(props) {
                     <Thumb name={sp.sci} sz={22} item={sp} isPlant={!isP} />
                     <div style={{ minWidth: 0 }}>
                       <div style={{ fontSize: 10, fontWeight: 500, fontStyle: "italic", color: "var(--text)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: 120 }}>{sp.sci}</div>
-                      <div style={{ fontSize: 8, color: "var(--text3)", whiteSpace: "nowrap" }}>{sp.obs} obs</div>
+                      <div style={{ fontSize: 8, color: "var(--text3)", whiteSpace: "nowrap" }}>{sp.multi ? "✓ multi" : ""}</div>
                     </div>
                     {sp.threat && <ThreatBadge cat={sp.threat} lang={lang} size="sm" />}
                   </div>
@@ -137,7 +137,7 @@ function FamilyDetail(props) {
                   <div style={{ height: 6, borderRadius: 3, background: col + "20", flex: 1, maxWidth: 160 }}>
                     <div style={{ height: 6, borderRadius: 3, background: col, width: barW + "%" }} />
                   </div>
-                  <span style={{ fontSize: 9, fontWeight: 600, color: "var(--text2)", minWidth: 36 }}>{sp.obs} obs</span>
+                  <span style={{ fontSize: 9, fontWeight: 600, color: "var(--text2)", minWidth: 36 }}>{sp.multi ? "✓ multi" : ""}</span>
                 </div>
               </div>
               {sp.threat && <ThreatBadge cat={sp.threat} lang={lang} size="sm" />}

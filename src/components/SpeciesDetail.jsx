@@ -72,7 +72,7 @@ export default function SpeciesDetail(props) {
     Object.keys(grouped).forEach(function (key) {
       var g = grouped[key];
       h += "<div class='sec' style='border-color:" + g.color + ";color:" + g.color + "'>" + key + " (" + g.items.length + ")</div>";
-      h += "<table><tr><th>#</th><th>" + thSp + "</th><th>" + thCn + "</th><th>" + thFam + "</th><th>IUCN</th><th>Obs</th></tr>";
+      h += "<table><tr><th>#</th><th>" + thSp + "</th><th>" + thCn + "</th><th>" + thFam + "</th><th>IUCN</th><th>"+(lang==="fr"?"Interactions":"Interactions")+"</th></tr>";
       g.items.forEach(function (item, idx) {
         h += "<tr><td>" + (idx + 1) + "</td><td><em>" + item.sci + "</em></td><td>" + item.common + "</td><td>" + item.family + "</td><td>";
         if (item.threat) { var c2 = tc[item.threat] || "#999"; h += "<span class='badge' style='background:" + c2 + "20;color:" + c2 + "'>" + item.threat + "</span>"; }
@@ -105,7 +105,7 @@ export default function SpeciesDetail(props) {
           </div>
           <h2 className="detail-sci">{species.sci} <SpeciesLink name={species.sci} lang={lang} /></h2>
           <p className="detail-common">{name(species)} — {species.family || species.order}</p>
-          {rels.length > 0 && (<p style={{ fontSize: 13, color: 'var(--text2)', margin: '8px 0 0' }}>{rels.length} {t.int} · {uS.length} {t.src}{tObs > 0 ? ' · ' + tObs + ' obs.' : ''}</p>)}
+          {rels.length > 0 && (<p style={{ fontSize: 13, color: 'var(--text2)', margin: '8px 0 0' }}>{rels.length} {t.int} · {uS.length} {t.src}{''  // obs count removed - unreliable}</p>)}
         </div>
       </div>
 
