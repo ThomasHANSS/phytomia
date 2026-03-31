@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 101 514 interactions entre 8 247 espèces végétales et 9 684 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 110 966 interactions entre 8 390 espèces végétales et 10 402 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
@@ -15,9 +15,9 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 | Indicateur | Volume |
 |---|---|
-| Interactions documentées | **101 514** paires plante × insecte |
-| Espèces végétales | **8 247** (arbres, arbustes, herbacées, graminées, grimpantes) |
-| Espèces d'insectes | **9 684** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
+| Interactions documentées | **110 966** paires plante × insecte |
+| Espèces végétales | **8 390** (arbres, arbustes, herbacées, graminées, grimpantes) |
+| Espèces d'insectes | **10 402** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
 | Bases de données intégrées | **6** sources scientifiques open-access |
 | Interactions multi-sources | **7 494** paires confirmées par au moins 2 bases indépendantes |
 | Types d'interactions | **8** types actifs : pollinisation, folivorie, hôte larvaire, prédateur, parasitoïde, suceur de sève, xylophage, gallicole |
@@ -143,6 +143,19 @@ Les statuts de conservation sont récupérés via l'**API GBIF** (`/v1/species/{
 | En danger critique (CR) | 17 |
 
 Les badges IUCN sont affichés dans toutes les vues : fiches espèces, classements, graphe d'interactions, et graphe jardin.
+
+### DoPI — Database of Pollinator Interactions
+
+| Attribut | Valeur |
+|---|---|
+| **Interactions chargées** | 13 069 paires uniques (101 539 records) |
+| **Couverture** | Grande-Bretagne |
+| **Type** | Pollinisation |
+| **Licence** | CC-BY |
+| **DOI** | [10.1002/ecy.3801](https://doi.org/10.1002/ecy.3801) |
+| **Citation** | Balfour et al. (2022). DoPI: The Database of Pollinator Interactions. *Ecology*, 103, e3801. |
+
+Base compilée à partir de la littérature scientifique et de jeux de données soumis par des chercheurs, couvrant les interactions pollinisateur-plante en Grande-Bretagne.
 
 ### Bases non encore intégrées
 
