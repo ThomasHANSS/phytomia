@@ -121,7 +121,7 @@ export default function GardenGraph(props) {
           return (<g key={nd.id} style={{ cursor: 'pointer' }} onClick={function () { onSel(nd.id); }}>{sh && (<circle cx={nd.x} cy={nd.y} r={r + 4} fill="#b8860b" opacity={0.12} />)}<circle cx={nd.x} cy={nd.y} r={r} fill="var(--bg)" stroke={sh ? '#b8860b' : '#b8860b88'} strokeWidth={sh ? 2 : 1.2} /><clipPath id={cid}><circle cx={nd.x} cy={nd.y} r={r - 3} /></clipPath><circle cx={nd.x} cy={nd.y} r={r - 3} fill="var(--bg3)" clipPath={"url(#" + cid + ")"} /><text x={nd.x - 28} y={nd.y - 3} textAnchor="end" style={{ fontSize: 9, fontWeight: sh ? 600 : 400, fontStyle: 'italic', fill: 'var(--text)' }}>{shortSci(nd.sci)}</text><text x={nd.x - 28} y={nd.y + 9} textAnchor="end" style={{ fontSize: 9, fill: sh ? '#b8860b' : 'var(--text2)' }}>{name(nd)}{sh ? ' ★' : ''}</text></g>);
         })}
       </svg>
-      {hiddenCount > 0 && (
+      {(hiddenCount > 0 || showAll) && insects.length > MAX_INSECTS && (
         <div style={{ textAlign: 'center', margin: '6px 0' }}>
           <button onClick={function () { setShowAll(!showAll); }}
             style={{ fontSize: 11, padding: '4px 12px', color: '#b8860b', background: '#b8860b10', border: '1px solid #b8860b30', borderRadius: 6, cursor: 'pointer' }}>
