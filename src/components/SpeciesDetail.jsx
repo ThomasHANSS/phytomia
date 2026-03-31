@@ -103,6 +103,7 @@ export default function SpeciesDetail(props) {
             <span className="badge-type" style={{ background: (isPlant ? '#2d7d46' : '#b8860b') + '14', color: isPlant ? '#2d7d46' : '#b8860b' }}>{isPlant ? t.plant : t.insect}</span>
             {species.status && (<span className="badge" style={{ background: STATUS_COLORS[species.status] + '20', color: STATUS_COLORS[species.status] }}>{t[species.status]}</span>)}
             {species.threat && <ThreatBadge cat={species.threat} lang={lang} size="lg" />}
+            {species.region && (<span className="badge" style={{ background: '#88888815', color: '#888' }}>{species.region === "non-native" ? (lang === "fr" ? "Non-indigène" : "Non-native") : (lang === "fr" ? "Extra-européen" : "Extra-European")}</span>)}
           </div>
           <h2 className="detail-sci">{species.sci} <SpeciesLink name={species.sci} lang={lang} /></h2>
           <p className="detail-common">{name(species)} — {species.family || species.order}</p>
