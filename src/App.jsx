@@ -103,7 +103,7 @@ export default function App() {
 
           <Footer lang={lang} lastUpdated={data.lastUpdated} />
         </div>
-      )}
+      </div>
 
       {selected && (<div>
           <div style={{ display: "flex", alignItems: "center", gap: 4, padding: "8px 12px", fontSize: 12, color: "var(--text2)", flexWrap: "wrap", position: "sticky", top: 0, background: "var(--bg)", zIndex: 10, borderBottom: "1px solid var(--border)" }}>
