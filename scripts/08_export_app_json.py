@@ -59,6 +59,45 @@ GRASS_FAMILIES = {"Poaceae","Cyperaceae","Juncaceae"}
 TREE_FAMILIES = {"Fagaceae","Betulaceae","Pinaceae","Cupressaceae","Taxaceae","Juglandaceae","Ulmaceae","Platanaceae","Oleaceae","Sapindaceae","Hippocastanaceae","Altingiaceae","Ginkgoaceae","Moraceae","Aquifoliaceae","Araucariaceae","Lauraceae","Myrtaceae","Rutaceae","Meliaceae","Anacardiaceae","Combretaceae","Arecaceae"}
 SHRUB_FAMILIES = {"Ericaceae","Caprifoliaceae","Grossulariaceae","Berberidaceae","Buxaceae","Cistaceae","Thymelaeaceae","Elaeagnaceae","Myricaceae","Rhamnaceae"}
 
+
+# Species commonly cultivated in European gardens/parks even if non-native
+CULTIVATED_EU_GENERA = {
+    "Ginkgo","Aesculus","Catalpa","Liriodendron","Paulownia","Ailanthus",
+    "Cedrus","Sequoia","Sequoiadendron","Metasequoia","Cryptomeria",
+    "Eucalyptus","Magnolia","Cercis","Robinia","Gleditsia",
+    "Citrus","Persea","Actinidia","Diospyros","Ficus","Morus",
+    "Camellia","Rhododendron","Hydrangea","Wisteria","Buddleja",
+    "Forsythia","Mahonia","Aucuba","Fatsia","Nandina","Skimmia",
+    "Hibiscus","Lagerstroemia","Coffea","Nicotiana","Cannabis","Humulus",
+    "Dahlia","Zinnia","Cosmos","Tagetes","Pelargonium","Begonia",
+    "Fuchsia","Petunia","Passiflora","Agave","Yucca","Opuntia",
+    "Musa","Canna","Mangifera","Litchi","Psidium",
+}
+TRULY_EXOTIC_FAMILIES = {
+    "Dipterocarpaceae","Rhizophoraceae","Lecythidaceae","Pandanaceae",
+    "Heliconiaceae","Strelitziaceae","Marantaceae",
+}
+TRULY_EXOTIC_GENERA = {
+    "Durio","Artocarpus","Averrhoa","Erythroxylum","Cinchona",
+    "Shorea","Parashorea","Anthoshorea",
+    "Bruguiera","Kandelia","Nypa",
+    "Phoenicophorium","Nephrosperma","Deckenia","Sabal","Serenoa",
+}
+MOSTLY_EXOTIC_FAMILIES = {
+    "Arecaceae","Bromeliaceae","Sapotaceae","Annonaceae",
+    "Melastomataceae","Proteaceae","Zingiberaceae","Combretaceae","Loranthaceae",
+}
+
+def detect_region(name, family):
+    genus = name.split()[0] if name else ""
+    if genus in CULTIVATED_EU_GENERA:
+        return "non-native"
+    if family in TRULY_EXOTIC_FAMILIES or genus in TRULY_EXOTIC_GENERA:
+        return "extra-EU"
+    if family in MOSTLY_EXOTIC_FAMILIES:
+        return "extra-EU"
+    return ""
+
 def detect_growth_form(name, family):
     genus = name.split()[0] if name else ""
     if genus in CLIMBER_GENERA:
@@ -175,6 +214,7 @@ def export():
             "genus": t.get("genus", name.split()[0] if name else ""),
             "status": detect_plant_status(name, t.get("family", "")),
             "growthForm": detect_growth_form(name, t.get("family", "")),
+            "region": detect_region(name, t.get("family", "")),
             "threat": threat.get(name, {}).get("cat", ""),
             "n_interactions": 0,
             "common": {"fr": vern.get(name, {}).get("fr", ""), "en": vern.get(name, {}).get("en", "")},
