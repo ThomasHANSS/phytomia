@@ -148,8 +148,7 @@ Les badges IUCN sont affichés dans toutes les vues : fiches espèces, classemen
 
 | Base | Contenu | Statut |
 |---|---|---|
-| **DoPI** (Univ. Sussex) | 101K interactions pollinisation, GB | En attente de téléchargement |
-| **Baseflor** (Tela Botanica) | Formes de croissance fiables pour la flore française | Téléchargement complexe (multiples fichiers) |
+| **DoPI** (Univ. Sussex) | 101K records, 17K paires pollinisation GB, CC-BY | CSV disponible dans Supporting Information de Balfour et al. 2022, Ecology |
 
 ---
 
