@@ -68,7 +68,7 @@ CULTIVATED_EU_GENERA = {
     "Citrus","Persea","Actinidia","Diospyros","Ficus","Morus",
     "Camellia","Rhododendron","Hydrangea","Wisteria","Buddleja",
     "Forsythia","Mahonia","Aucuba","Fatsia","Nandina","Skimmia",
-    "Hibiscus","Lagerstroemia","Coffea","Nicotiana","Cannabis",
+    "Hibiscus","Lagerstroemia","Nicotiana","Cannabis",
     "Dahlia","Zinnia","Cosmos","Tagetes","Pelargonium","Begonia",
     "Fuchsia","Petunia","Passiflora","Agave","Yucca","Opuntia",
     "Musa","Canna","Mangifera","Litchi","Psidium",
@@ -78,7 +78,7 @@ TRULY_EXOTIC_FAMILIES = {
     "Heliconiaceae","Strelitziaceae","Marantaceae",
 }
 TRULY_EXOTIC_GENERA = {
-    "Durio","Artocarpus","Averrhoa","Erythroxylum","Cinchona",
+    "Durio","Artocarpus","Averrhoa","Erythroxylum","Cinchona","Coffea",
     "Shorea","Parashorea","Anthoshorea",
     "Bruguiera","Kandelia","Nypa",
     "Phoenicophorium","Nephrosperma","Deckenia","Sabal","Serenoa",
