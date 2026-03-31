@@ -67,13 +67,13 @@ export default function App() {
     <div className="app">
       <Header lang={lang} setLang={setLang} onLogoClick={back} />
 
-      <SearchBar
+      {viewMode !== 'garden' && <SearchBar
         plants={data.plants}
         insects={data.insects}
         interactions={data.interactions}
         lang={lang}
         onSelect={go}
-      />
+      />}
 
       <div style={{ display: selectedId ? "none" : "block" }}>
         <div>
