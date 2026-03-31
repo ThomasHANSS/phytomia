@@ -32,6 +32,65 @@ export default function SpeciesDetail(props) {
   var tObs = rels.reduce(function (s, x) { return s + x.src.reduce(function (a, sr) { return a + (sr.n || 0); }, 0); }, 0);
   var uS = Array.from(new Set(rels.flatMap(function (x) { return x.src.map(function (s) { return s.db; }); })));
   var name = function (item) { return item.common ? (item.common.fr || '') + ' · ' + (item.common.en || '') : ''; };
+
+  function exportPDF() {
+    var grouped = {};
+    rels.forEach(function (ix) {
+      var tp = TYPES[ix.tp];
+      var fam = tp ? tp.fam : "other";
+      var famLabel = FAMILIES[fam] ? FAMILIES[fam][lang] : fam;
+      var tpLabel = tp ? tp[lang] : ix.tp;
+      var key = famLabel + " \u2014 " + tpLabel;
+      if (!grouped[key]) grouped[key] = { color: FAMILIES[fam] ? FAMILIES[fam].color : "#888", items: [] };
+      var partner = getPartner(ix);
+      if (partner) {
+        var pName = partner.common ? partner.common[lang] || "" : "";
+        grouped[key].items.push({ sci: partner.sci, common: pName, family: partner.family || "", order: partner.order || "", threat: partner.threat || "", obs: ix.n || 1 });
+      }
+    });
+    Object.values(grouped).forEach(function (g) { g.items.sort(function (a, b) { return b.obs - a.obs; }); });
+
+    var tc = { CR: "#cc3333", EN: "#e67e22", VU: "#f39c12", NT: "#6b8e23", LC: "#27ae60", DD: "#999" };
+    var tl = lang === "fr" ? { CR: "En danger critique", EN: "En danger", VU: "Vuln\u00e9rable", NT: "Quasi menac\u00e9", LC: "Pr\u00e9occupation mineure", DD: "Donn\u00e9es insuffisantes" } : { CR: "Critically Endangered", EN: "Endangered", VU: "Vulnerable", NT: "Near Threatened", LC: "Least Concern", DD: "Data Deficient" };
+    var gfL = { tree: lang === "fr" ? "Arbre" : "Tree", shrub: lang === "fr" ? "Arbuste" : "Shrub", climber: lang === "fr" ? "Grimpante" : "Climber", herb: lang === "fr" ? "Herbac\u00e9e" : "Herb", grass: lang === "fr" ? "Gramin\u00e9e" : "Grass" };
+
+    var cn = species.common ? species.common[lang] || "" : "";
+    var h = "<!DOCTYPE html><html><head><meta charset='utf-8'><title>" + species.sci + " \u2014 Phytomia</title>";
+    h += "<style>body{font-family:Georgia,serif;margin:40px;color:#1a1a1a;max-width:800px}h1{font-size:22px;color:#2d7d46;margin:0 0 4px}h1 em{font-weight:normal}.sub{font-size:14px;color:#666;margin:0 0 16px}.meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;padding:12px 16px;background:#f8f8f8;border-radius:8px;font-size:13px}.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}.sec{margin:24px 0 8px;padding:8px 0 4px;border-bottom:2px solid;font-size:16px;font-weight:600}table{width:100%;border-collapse:collapse;margin:8px 0 16px;font-size:12px}th{text-align:left;padding:6px 8px;background:#f5f5f5;border-bottom:1px solid #ddd;font-size:11px;color:#666}td{padding:5px 8px;border-bottom:1px solid #eee}td em{font-weight:500}.foot{margin-top:30px;padding-top:12px;border-top:1px solid #ddd;font-size:10px;color:#999}@media print{body{margin:20px}}</style></head><body>";
+    h += "<h1><em>" + species.sci + "</em></h1>";
+    h += "<p class='sub'>" + cn + (species.family ? " \u2014 " + species.family : "") + (species.order ? " (" + species.order + ")" : "") + "</p>";
+    h += "<div class='meta'>";
+    h += "<span>" + (isPlant ? t.plant : t.insect) + "</span>";
+    if (species.threat) { var c1 = tc[species.threat] || "#999"; h += " <span class='badge' style='background:" + c1 + "20;color:" + c1 + "'>" + species.threat + " \u2014 " + (tl[species.threat] || "") + "</span>"; }
+    if (species.growthForm && isPlant) h += " <span class='badge' style='background:#2d7d4615;color:#2d7d46'>" + (gfL[species.growthForm] || species.growthForm) + "</span>";
+    if (species.region) h += " <span class='badge' style='background:#88888815;color:#888'>" + (species.region === "non-native" ? (lang === "fr" ? "Non-indig\u00e8ne" : "Non-native") : "Extra-EU") + "</span>";
+    h += "<span>" + rels.length + " " + t.int + "</span>";
+    h += "</div>";
+    var thSp = lang === "fr" ? "Esp\u00e8ce" : "Species";
+    var thCn = lang === "fr" ? "Nom commun" : "Common name";
+    var thFam = lang === "fr" ? "Famille" : "Family";
+    Object.keys(grouped).forEach(function (key) {
+      var g = grouped[key];
+      h += "<div class='sec' style='border-color:" + g.color + ";color:" + g.color + "'>" + key + " (" + g.items.length + ")</div>";
+      h += "<table><tr><th>#</th><th>" + thSp + "</th><th>" + thCn + "</th><th>" + thFam + "</th><th>IUCN</th><th>Obs</th></tr>";
+      g.items.forEach(function (item, idx) {
+        h += "<tr><td>" + (idx + 1) + "</td><td><em>" + item.sci + "</em></td><td>" + item.common + "</td><td>" + item.family + "</td><td>";
+        if (item.threat) { var c2 = tc[item.threat] || "#999"; h += "<span class='badge' style='background:" + c2 + "20;color:" + c2 + "'>" + item.threat + "</span>"; }
+        h += "</td><td>" + item.obs + "</td></tr>";
+      });
+      h += "</table>";
+    });
+    h += "<div class='foot'><p><strong>Phytomia</strong> \u2014 " + (lang === "fr" ? "Explorateur d\u2019interactions plantes \u00d7 insectes en Europe" : "Plant \u00d7 insect interaction explorer for Europe") + "</p>";
+    h += "<p>" + (lang === "fr" ? "Donn\u00e9es : " : "Data: ") + "EuPPollNet, EuropeanHostData, GloBI, DBIF, HOSTS NHM</p>";
+    h += "<p>" + (lang === "fr" ? "Licence : CC BY-SA 4.0 \u2014 Auteur : Thomas Hanss" : "License: CC BY-SA 4.0 \u2014 Author: Thomas Hanss") + "</p>";
+    h += "<p>" + (lang === "fr" ? "G\u00e9n\u00e9r\u00e9 le " : "Generated on ") + new Date().toLocaleDateString() + "</p>";
+    h += "</div></body></html>";
+    var w = window.open("", "_blank");
+    w.document.write(h);
+    w.document.close();
+    w.setTimeout(function () { w.print(); }, 500);
+  }
+
   var shortName = function (item) { return item.common ? item.common[lang] || '' : ''; };
 
   return (
@@ -58,6 +117,8 @@ export default function SpeciesDetail(props) {
             return (<button key={fg.key} className={'chip' + (active ? ' active' : '')} style={active ? { borderColor: col, background: col + '14', color: col } : {}} onClick={function () { sFi(fg.key); }}>{fg[lang]}</button>);
           })}
         </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <button onClick={exportPDF} style={{ fontSize: 11, padding: "5px 10px", color: "#555", background: "#55555508", border: "1px solid #55555525", borderRadius: 6, cursor: "pointer", display: "flex", alignItems: "center", gap: 4 }}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>PDF</button>
         <div className="view-toggle">
           <button className={dv === 'graph' ? 'active' : ''} onClick={function () { sDv('graph'); }}>{t.graph}</button>
           <button className={dv === 'list' ? 'active' : ''} onClick={function () { sDv('list'); }}>{t.list}</button>
