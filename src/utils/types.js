@@ -7,12 +7,12 @@
  */
 
 export var FAMILIES = {
-  mutualisme:   { color: '#2d7d46', fr: 'Mutualisme',              en: 'Mutualism' },
-  phyto_fol:    { color: '#b8860b', fr: 'Phytophagie foliaire',    en: 'Leaf phytophagy' },
-  phyto_struct: { color: '#6d4c2a', fr: 'Phytophagie structurelle',en: 'Structural phytophagy' },
-  phyto_repro:  { color: '#c0392b', fr: 'Phytophagie reproductive',en: 'Reproductive phytophagy' },
+  mutualisme:   { color: '#2d7d46', fr: 'Pollinisateurs & hôtes',  en: 'Pollinators & hosts' },
+  phyto_fol:    { color: '#b8860b', fr: 'Mangeurs de feuilles',    en: 'Leaf feeders' },
+  phyto_struct: { color: '#6d4c2a', fr: 'Mangeurs de bois',       en: 'Wood feeders' },
+  phyto_repro:  { color: '#c0392b', fr: 'Mangeurs de fruits/fleurs', en: 'Fruit/flower feeders' },
   suceur:       { color: '#7d3c98', fr: 'Suceurs de sève',         en: 'Sap feeders' },
-  auxiliaire:   { color: '#2874a6', fr: 'Auxiliaires',              en: 'Auxiliaries' },
+  auxiliaire:   { color: '#2874a6', fr: 'Prédateurs & parasitoïdes', en: 'Predators & parasitoids' },
 };
 
 export var TYPES = {
