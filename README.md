@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 110 966 interactions entre 8 390 espèces végétales et 10 402 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 172 081 interactions entre 16 456 espèces végétales et 26 315 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
@@ -15,9 +15,9 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 | Indicateur | Volume |
 |---|---|
-| Interactions documentées | **110 966** paires plante × insecte |
-| Espèces végétales | **8 390** (arbres, arbustes, herbacées, graminées, grimpantes) |
-| Espèces d'insectes | **10 402** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
+| Interactions documentées | **172 081** paires plante × insecte |
+| Espèces végétales | **16 456** (arbres, arbustes, herbacées, graminées, grimpantes) |
+| Espèces d'insectes | **26 315** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
 | Bases de données intégrées | **6** sources scientifiques open-access |
 | Interactions multi-sources | **7 494** paires confirmées par au moins 2 bases indépendantes |
 | Types d'interactions | **8** types actifs : pollinisation, folivorie, hôte larvaire, prédateur, parasitoïde, suceur de sève, xylophage, gallicole |
@@ -120,7 +120,7 @@ Base historique britannique documentant les insectes phytophages et leurs plante
 
 | Attribut | Valeur |
 |---|---|
-| **Interactions chargées** | 3 891 paires uniques (9 000 records sur 140 485 disponibles) |
+| **Interactions chargées** | 65 101 paires uniques (9 000 records sur 140 485 disponibles) |
 | **Couverture** | Mondial (filtré familles européennes) |
 | **Type** | Plante hôte larvaire (lépidoptères) |
 | **Licence** | Open |
