@@ -5,7 +5,7 @@ var BASE = (typeof import.meta !== 'undefined' ? import.meta.env.BASE_URL : '/')
 function expandPlant(p) {
   return {
     id: p.id, sci: p.sci, n_interactions: p.n || 0,
-    family: p.f || '', order: p.o || '', genus: p.g || p.sci.split(' ')[0] || '',
+    family: p.f || '', order: p.o || '', genus: p.sci.split(' ')[0] || '',
     threat: p.t || '', growthForm: p.gf || 'herb', region: p.r || '', status: p.st || '',
     common: { fr: p.cfr || '', en: p.cen || '' },
   };
@@ -14,7 +14,7 @@ function expandPlant(p) {
 function expandInsect(i) {
   return {
     id: i.id, sci: i.sci, n_interactions: i.n || 0,
-    family: i.f || '', order: i.o || '', genus: i.g || i.sci.split(' ')[0] || '',
+    family: i.f || '', order: i.o || '', genus: i.sci.split(' ')[0] || '',
     threat: i.t || '',
     common: { fr: i.cfr || '', en: i.cen || '' },
   };
@@ -24,7 +24,7 @@ function expandIx(x) {
   return {
     pI: x.p, iI: x.i, tp: x.t,
     n: x.n || 1,
-    src: x.s ? x.s.split(",") : (x.m ? ["multi"] : ["legacy"]),
+    src: x.s ? x.s.split(",") : ["legacy"],
   };
 }
 
