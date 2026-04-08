@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de six bases scientifiques en accès libre, couvrant 172 081 interactions entre 16 456 espèces végétales et 26 315 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de neuf bases scientifiques en accès libre, couvrant 182 854 interactions entre 17 168 espèces végétales et 27 744 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
@@ -15,9 +15,9 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 | Indicateur | Volume |
 |---|---|
-| Interactions documentées | **172 081** paires plante × insecte |
-| Espèces végétales | **16 456** (arbres, arbustes, herbacées, graminées, grimpantes) |
-| Espèces d'insectes | **26 315** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
+| Interactions documentées | **182 854** paires plante × insecte |
+| Espèces végétales | **17 168** (arbres, arbustes, herbacées, graminées, grimpantes) |
+| Espèces d'insectes | **27 744** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
 | Bases de données intégrées | **6** sources scientifiques open-access |
 | Interactions multi-sources | **7 494** paires confirmées par au moins 2 bases indépendantes |
 | Types d'interactions | **8** types actifs : pollinisation, folivorie, hôte larvaire, prédateur, parasitoïde, suceur de sève, xylophage, gallicole |
@@ -103,7 +103,7 @@ Base compilée à partir de la littérature couvrant les interactions entre arbr
 
 Méta-agrégateur mondial indexant les interactions biotiques depuis des centaines de bases et publications. Interrogé via API REST pour les types `pollinates`, `eats`, `flowersVisitedBy`, `preysOn`, `parasiteOf` et `parasitoidOf`, avec requêtes ciblées par genre pour les pollinisateurs clés (Apis, Bombus, Andrena, Osmia, Pieris, Vanessa, Coccinella, etc.).
 
-### DBIF v2 — Database of Insects and their Food Plants
+### DBIF — Database of Insects and their Food Plants
 
 | Attribut | Valeur |
 |---|---|
@@ -156,6 +156,27 @@ Les badges IUCN sont affichés dans toutes les vues : fiches espèces, classemen
 | **Citation** | Balfour et al. (2022). DoPI: The Database of Pollinator Interactions. *Ecology*, 103, e3801. |
 
 Base compilée à partir de la littérature scientifique et de jeux de données soumis par des chercheurs, couvrant les interactions pollinisateur-plante en Grande-Bretagne.
+
+### Mangal — Ecological Interactions Database
+
+| Attribut | Valeur |
+|---|---|
+| **Interactions chargées** | 35 739 paires (845 réseaux européens) |
+| **Couverture** | Europe (filtré par coordonnées géographiques) |
+| **Type** | Pollinisation, herbivorie |
+| **Licence** | CC-BY |
+| **URL** | [mangal.io](https://mangal.io) |
+| **Citation** | Vissault et al. (2019). Mangal: An open infrastructure for ecological interactions. BISS, 3, e37037. |
+
+### Web of Life — Ecological Networks Database
+
+| Attribut | Valeur |
+|---|---|
+| **Interactions chargées** | 26 798 paires (réseaux plante-pollinisateur) |
+| **Couverture** | Mondiale |
+| **Type** | Pollinisation |
+| **Licence** | Open access |
+| **URL** | [web-of-life.es](https://www.web-of-life.es) |
 
 ### Bases non encore intégrées
 
@@ -258,7 +279,7 @@ phytomia/
 │   └── data/                     ← JSON générés par le pipeline
 │       ├── plants.json           (8 320 espèces, ~2,2 MB)
 │       ├── insects.json          (9 686 espèces, ~2,1 MB)
-│       ├── interactions.json     (101 514 paires, ~14 MB)
+│       ├── interactions.json     (182 854 paires, ~9 MB)
 │       └── last_updated.txt
 ├── src/
 │   ├── components/               ← 11 composants React
