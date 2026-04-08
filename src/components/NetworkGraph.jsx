@@ -31,7 +31,7 @@ function OverviewPanel(props) {
                 </div>
               </div>
               <span style={{ fontSize: 11, color: col, fontWeight: 500 }}>
-                {lang === "fr" ? "Explorer \u203a" : "Explore \u203a"}
+                {g.nLinks} {lang === "fr" ? "liens \u203a" : "links \u203a"}
               </span>
             </div>
             <div style={{ height: 4, borderRadius: 2, background: col + "15", marginBottom: 8 }}>
@@ -213,8 +213,9 @@ export default function NetworkGraph(props) {
     ixs.forEach(function (ix) {
       var tp = TYPES[ix.tp]; if (!tp) return;
       var fam = tp.fam;
-      if (!map[fam]) map[fam] = { key: fam, count: 0, pids: new Set(), totalObs: 0, types: new Set(), partners: {} };
+      if (!map[fam]) map[fam] = { key: fam, count: 0, nLinks: 0, pids: new Set(), totalObs: 0, types: new Set(), partners: {} };
       map[fam].pids.add(isP ? ix.iI : ix.pI);
+      map[fam].nLinks += 1;
       map[fam].totalObs += obsCount(ix);
       map[fam].types.add(ix.tp);
       var pid = isP ? ix.iI : ix.pI;
