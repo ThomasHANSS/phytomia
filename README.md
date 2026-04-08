@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de neuf bases scientifiques en accès libre, couvrant 182 854 interactions entre 17 168 espèces végétales et 27 744 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de neuf bases scientifiques en accès libre, couvrant 182 435 interactions entre 17 168 espèces végétales et 27 494 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
@@ -15,9 +15,9 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 | Indicateur | Volume |
 |---|---|
-| Interactions documentées | **182 854** paires plante × insecte |
+| Interactions documentées | **182 435** paires plante × insecte |
 | Espèces végétales | **17 168** (arbres, arbustes, herbacées, graminées, grimpantes) |
-| Espèces d'insectes | **27 744** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
+| Espèces d'insectes | **27 494** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
 | Bases de données intégrées | **6** sources scientifiques open-access |
 | Interactions multi-sources | **7 494** paires confirmées par au moins 2 bases indépendantes |
 | Types d'interactions | **8** types actifs : pollinisation, folivorie, hôte larvaire, prédateur, parasitoïde, suceur de sève, xylophage, gallicole |
@@ -279,7 +279,7 @@ phytomia/
 │   └── data/                     ← JSON générés par le pipeline
 │       ├── plants.json           (8 320 espèces, ~2,2 MB)
 │       ├── insects.json          (9 686 espèces, ~2,1 MB)
-│       ├── interactions.json     (182 854 paires, ~9 MB)
+│       ├── interactions.json     (182 435 paires, ~9 MB)
 │       └── last_updated.txt
 ├── src/
 │   ├── components/               ← 11 composants React
