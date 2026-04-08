@@ -54,6 +54,7 @@ export default function Ranking(props) {
     if (filtIn === 'all') return allI;
     if (filtIn === 'threatened') return allI.filter(function (ins) { return isThreatened(ins.threat); });
     if (filtIn === 'NT') return allI.filter(function (ins) { return ins.threat === 'NT'; });
+    if (filtIn.indexOf('ord_') === 0) { var ordKey = filtIn.slice(4); return allI.filter(function (ins) { return ins.order === ordKey; }); }
     return allI.filter(function (ins) { return ins.domFam === filtIn; });
   }, [filtIn, allI]);
 
@@ -79,8 +80,15 @@ export default function Ranking(props) {
   }, [allP, t, lang]);
 
   var insectFilters = useMemo(function () {
+    var opts = [];
+    // Ecological role filters (domFam)
     var s = {}; allI.forEach(function (ins) { if (ins.domFam) s[ins.domFam] = (s[ins.domFam] || 0) + 1; });
-    var opts = Object.keys(s).map(function (k) { var fam = FAMILIES[k]; return { key: k, label: fam ? fam[lang] : k, count: s[k], color: fam ? fam.color : '#888' }; });
+    Object.keys(s).forEach(function (k) { var fam = FAMILIES[k]; if (fam) opts.push({ key: k, label: fam[lang] || k, count: s[k], color: fam.color || '#888' }); });
+    // Order filters
+    var ORDER_INFO = { Hymenoptera: { fr: 'Hymenopteres', en: 'Hymenoptera', color: '#b8860b' }, Lepidoptera: { fr: 'Lepidopteres', en: 'Lepidoptera', color: '#8b5cf6' }, Diptera: { fr: 'Dipteres', en: 'Diptera', color: '#6b8e23' }, Coleoptera: { fr: 'Coleopteres', en: 'Coleoptera', color: '#a0522d' }, Hemiptera: { fr: 'Hemipteres', en: 'Hemiptera', color: '#2874a6' } };
+    var ords = {}; allI.forEach(function (ins) { var o = ins.order || ''; if (o) ords[o] = (ords[o] || 0) + 1; });
+    Object.keys(ords).sort(function (a, b) { return ords[b] - ords[a]; }).forEach(function (o) { if (ords[o] >= 10) { var info = ORDER_INFO[o] || {}; opts.push({ key: 'ord_' + o, label: info[lang] || o, count: ords[o], color: info.color || '#888' }); } });
+    // Threat filters
     var nThreat = allI.filter(function (ins) { return isThreatened(ins.threat); }).length;
     var nNT = allI.filter(function (ins) { return ins.threat === 'NT'; }).length;
     if (nThreat > 0) opts.push({ key: 'threatened', label: t.threatened, count: nThreat, color: '#cc3333' });
