@@ -24,7 +24,7 @@ function expandIx(x) {
   return {
     pI: x.p, iI: x.i, tp: x.t,
     n: x.n || 1,
-    src: x.m ? [{db:"multi"}] : [{db:""}],
+    src: x.s ? x.s.split(",") : (x.m ? ["multi"] : ["legacy"]),
   };
 }
 

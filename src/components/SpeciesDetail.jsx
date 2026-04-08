@@ -82,7 +82,7 @@ export default function SpeciesDetail(props) {
       h += "</table>";
     });
     h += "<div class='foot'><p><strong>Phytomia</strong> \u2014 " + (lang === "fr" ? "Explorateur d\u2019interactions plantes \u00d7 insectes en Europe" : "Plant \u00d7 insect interaction explorer for Europe") + "</p>";
-    h += "<p>" + (lang === "fr" ? "Donn\u00e9es : " : "Data: ") + "EuPPollNet, EuropeanHostData, GloBI, DBIF, HOSTS NHM</p>";
+    h += "<p>" + (lang === "fr" ? "Donn\u00e9es : " : "Data: ") + "EuPPollNet, GloBI, DoPI, DBIF, EuropeanHostData, HOSTS NHM, Mangal, Web of Life, GBIF</p>";
     h += "<p>" + (lang === "fr" ? "Licence : CC BY-SA 4.0 \u2014 Auteur : Thomas Hanss" : "License: CC BY-SA 4.0 \u2014 Author: Thomas Hanss") + "</p>";
     h += "<p>" + (lang === "fr" ? "G\u00e9n\u00e9r\u00e9 le " : "Generated on ") + new Date().toLocaleDateString() + "</p>";
     h += "</div></body></html>";
