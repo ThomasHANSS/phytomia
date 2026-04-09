@@ -37,12 +37,12 @@ export default function Ranking(props) {
   var allP = useMemo(function () {
     var ixBP = props.ixByPlant || {};
     return plants.filter(function (p) { return (ixBP[p.id] || []).length > 0; }).map(function (p) { return Object.assign({}, p, { count: (ixBP[p.id] || []).length }); }).sort(function (a, b) { return b.count - a.count; });
-  }, [plants, interactions]);
+  }, [plants, props.ixByPlant]);
 
   var allI = useMemo(function () {
     var ixBI = props.ixByInsect || {};
     return insects.filter(function (ins) { return (ixBI[ins.id] || []).length > 0; }).map(function (ins) { return Object.assign({}, ins, { count: (ixBI[ins.id] || []).length, domFam: dominantFam(ins.id, ixBI) }); }).sort(function (a, b) { return b.count - a.count; });
-  }, [insects, interactions]);
+  }, [insects, props.ixByInsect]);
 
   var pRanks = useMemo(function () {
     if (filtPl === 'all') return allP;
