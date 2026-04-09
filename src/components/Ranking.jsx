@@ -35,11 +35,13 @@ export default function Ranking(props) {
   var _si = useState(20), showIn = _si[0], sShowIn = _si[1];
 
   var allP = useMemo(function () {
-    return plants.filter(function (p) { return p.n_interactions > 0; }).map(function (p) { return Object.assign({}, p, { count: p.n_interactions }); }).sort(function (a, b) { return b.count - a.count; });
+    var ixBP = props.ixByPlant || {};
+    return plants.filter(function (p) { return (ixBP[p.id] || []).length > 0; }).map(function (p) { return Object.assign({}, p, { count: (ixBP[p.id] || []).length }); }).sort(function (a, b) { return b.count - a.count; });
   }, [plants, interactions]);
 
   var allI = useMemo(function () {
-    return insects.filter(function (ins) { return ins.n_interactions > 0; }).map(function (ins) { return Object.assign({}, ins, { count: ins.n_interactions, domFam: dominantFam(ins.id, props.ixByInsect) }); }).sort(function (a, b) { return b.count - a.count; });
+    var ixBI = props.ixByInsect || {};
+    return insects.filter(function (ins) { return (ixBI[ins.id] || []).length > 0; }).map(function (ins) { return Object.assign({}, ins, { count: (ixBI[ins.id] || []).length, domFam: dominantFam(ins.id, ixBI) }); }).sort(function (a, b) { return b.count - a.count; });
   }, [insects, interactions]);
 
   var pRanks = useMemo(function () {
