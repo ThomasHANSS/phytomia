@@ -116,6 +116,8 @@ export default function App() {
               plants={fData.plants}
               insects={fData.insects}
               interactions={fData.interactions}
+              ixByPlant={fData.ixByPlant}
+              ixByInsect={fData.ixByInsect}
               lang={lang}
               onSelect={go}
             />
