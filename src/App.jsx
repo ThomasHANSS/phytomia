@@ -64,6 +64,7 @@ export default function App() {
 
   // Toggle just picks pre-computed version — instant
   var fData = euOnly && euData ? euData : data;
+  console.log('EU filter:', euOnly, 'plants:', fData.plants ? fData.plants.length : 0, 'ix:', fData.interactions ? fData.interactions.length : 0);
 
   if (data.loading) {
     return (
