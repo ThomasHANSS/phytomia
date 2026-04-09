@@ -22,7 +22,7 @@ function searchAll(plants, insects, q) {
   plants.forEach(function (p) { score(p, true); });
   insects.forEach(function (i) { score(i, false); });
   results.sort(function (a, b) { return a.pr - b.pr; });
-  return results.slice(0, 12);
+  return results.slice(0, 25);
 }
 
 function hl(text, q) {
@@ -70,7 +70,7 @@ export default function SearchBar(props) {
       {q.length > 0 && (<button className="search-clear" onClick={function () { sQ(''); sDrop(false); }}>×</button>)}
 
       {drop && q.length >= 1 && (
-        <div ref={dRef} className="search-drop">
+        <div ref={dRef} className="search-drop" style={{ maxHeight: 400, overflowY: "auto" }}>
           {sg.length === 0 && q.length >= 2 && (<div style={{ padding: 16, fontSize: 14, color: 'var(--text2)' }}>{t.noR}</div>)}
           {sg.map(function (s, idx) {
             var isH = idx === hi;
