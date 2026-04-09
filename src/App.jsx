@@ -64,7 +64,6 @@ export default function App() {
 
   // Toggle just picks pre-computed version — instant
   var fData = euOnly && euData ? euData : data;
-  console.log('EU filter:', euOnly, 'plants:', fData.plants ? fData.plants.length : 0, 'ix:', fData.interactions ? fData.interactions.length : 0);
 
   if (data.loading) {
     return (
@@ -113,7 +112,7 @@ export default function App() {
           <Tabs viewMode={viewMode} setViewMode={setViewMode} gardenCount={garden.length} lang={lang} />
 
           {viewMode === 'ranking' && (
-            <Ranking
+            <Ranking key={euOnly ? 'eu' : 'world'}
               plants={fData.plants}
               insects={fData.insects}
               interactions={fData.interactions}
