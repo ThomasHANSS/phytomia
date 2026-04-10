@@ -19,6 +19,7 @@ export default function SpeciesDetail(props) {
   var t = L[lang] || L.fr;
   var _f = useState('all'), fi = _f[0], sFi = _f[1];
   var _v = useState('graph'), dv = _v[0], sDv = _v[1];
+  var _sf = useState(false), showForce = _sf[0], setShowForce = _sf[1];
   var dm = isPlant ? 'plant' : 'insect';
 
   var rels = useMemo(function () {
@@ -127,7 +128,7 @@ export default function SpeciesDetail(props) {
           <button onClick={exportPDF} style={{ fontSize: 11, padding: "5px 10px", color: "#555", background: "#55555508", border: "1px solid #55555525", borderRadius: 6, cursor: "pointer", display: "flex", alignItems: "center", gap: 4 }}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>PDF</button>
         <div className="view-toggle">
           <button className={dv === 'graph' ? 'active' : ''} onClick={function () { sDv('graph'); }}>{t.graph}</button>
-          <button className={dv === 'force' ? 'active' : ''} onClick={function () { sDv('force'); }}>{lang === 'fr' ? 'Réseau' : 'Network'}</button>
+          <button onClick={function () { setShowForce(true); }} style={{ background: '#2d7d4612', color: '#2d7d46', border: '1px solid #2d7d4630', fontWeight: 500 }}>{lang === 'fr' ? '⬡ Réseau' : '⬡ Network'}</button>
           <button className={dv === 'list' ? 'active' : ''} onClick={function () { sDv('list'); }}>{t.list}</button>
         </div>
         </div>
@@ -137,8 +138,11 @@ export default function SpeciesDetail(props) {
         <NetworkGraph center={species} partners={partners} ixs={rels} lang={lang} onSel={onSelect} plants={plants} />
       )}
 
-      {dv === 'force' && rels.length > 0 && (
-        <ForceGraph species={species} partners={partners} ixs={rels} lang={lang} onNavigate={function(id) { sDv('force'); onSelect(id); }} isPlant={isPlant} />
+      {showForce && rels.length > 0 && (
+        <ForceGraph species={species} partners={partners} ixs={rels} lang={lang}
+          onNavigate={function(id) { setShowForce(false); onSelect(id); setTimeout(function() { setShowForce(true); }, 100); }}
+          onClose={function () { setShowForce(false); }}
+          isPlant={isPlant} />
       )}
       {dv === 'list' && (
         <div>
