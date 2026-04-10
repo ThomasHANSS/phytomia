@@ -28,6 +28,8 @@ export default function ForceGraph(props) {
   var species = props.species, partners = props.partners, ixs = props.ixs;
   var lang = props.lang, onNavigate = props.onNavigate, isPlant = props.isPlant;
   var onClose = props.onClose;
+  var history = props.history || [];
+  var allSpecies = props.allSpecies || [];
 
   var canvasRef = useRef(null);
   var animRef = useRef(null);
@@ -463,6 +465,20 @@ export default function ForceGraph(props) {
           <span style={{ width: 14, height: 14, borderRadius: 7, background: isPlant ? '#2d7d46' : '#b8860b', flexShrink: 0 }} />
           <span style={{ fontSize: 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{species.sci}</span>
           {cn && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
+          {history.length > 0 && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 11, color: '#aaa' }}>
+              <span style={{ color: '#bbb' }}>←</span>
+              {history.slice(-3).map(function (hid, idx) {
+                var sp = allSpecies.find(function (s) { return s.id === hid; });
+                if (!sp) return null;
+                return (<span key={idx} onClick={function () { onNavigate(hid); }}
+                  style={{ cursor: 'pointer', fontStyle: 'italic', color: '#888', borderBottom: '1px dashed #ccc' }}>
+                  {sp.sci.split(' ')[0][0] + '. ' + (sp.sci.split(' ')[1] || '')}
+                </span>);
+              })}
+              <span style={{ color: '#bbb' }}>›</span>
+            </div>
+          )}
           <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
         </div>
         <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>

@@ -142,6 +142,7 @@ export default function SpeciesDetail(props) {
         <ForceGraph species={species} partners={partners} ixs={rels} lang={lang}
           onNavigate={function(id) { setShowForce(false); onSelect(id); setTimeout(function() { setShowForce(true); }, 100); }}
           onClose={function () { setShowForce(false); }}
+          history={props.history || []} allSpecies={props.plants.concat(props.insects)}
           isPlant={isPlant} />
       )}
       {dv === 'list' && (
