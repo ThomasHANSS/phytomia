@@ -484,10 +484,6 @@ export default function ForceGraph(props) {
           <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
         </div>
         <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
-          <button onClick={function () { setShowPanel(function (s) { return !s; }); }}
-            style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: showPanel ? '#555' : '#fff', color: showPanel ? '#fff' : '#666', fontWeight: 500 }}>
-            {tt.panel}
-          </button>
           <button onClick={function () { panRef.current = { x: 0, y: 0, scale: 1 }; }}
             style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: '#fff', color: '#666' }}>
             {tt.reset}
