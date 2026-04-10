@@ -127,14 +127,14 @@ export default function Ranking(props) {
           </div>
           <div style={{ marginTop: 2, display: 'flex', alignItems: 'center', gap: 6 }}>
             <div className="rank-bar" style={{ background: col + '22' }}><div className="rank-bar-fill" style={{ background: col, width: Math.max(8, item.count / mx * 100) + '%' }} /></div>
-            <span className="rank-count">{item.count}</span>
+            <span className="rank-count">{item.count} {lang === "fr" ? "esp." : "sp."}</span>
           </div>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 2, flexShrink: 0 }}>
           {item.threat && <ThreatBadge cat={item.threat} lang={lang} size="sm" />}
           {isP && item.status && (<span className="badge" style={{ background: STATUS_COLORS[item.status] + '18', color: STATUS_COLORS[item.status] }}>{t[item.status]}</span>)}
           {isP && (<span style={{ fontSize: 8, color: 'var(--text3)' }}>{item.family}</span>)}
-          {!isP && showRole && dfam && (<span className="badge" style={{ background: dfam.color + '18', color: dfam.color }}>{dfam[lang]}</span>)}
+          
           {!isP && (<span style={{ fontSize: 8, color: 'var(--text3)' }}>{item.order}</span>)}
         </div>
       </div>

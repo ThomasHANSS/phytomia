@@ -129,7 +129,7 @@ export default function Garden(props) {
               return (
                 <div key={pid} className="garden-chip">
                   <Thumb name={p.sci} sz={24} item={p} isPlant={true} />
-                  <span style={{ fontSize: 12, fontWeight: 500, fontStyle: 'italic', color: 'var(--text)' }}>{name(p)}</span>
+                  <span style={{ fontSize: 12, fontWeight: 500, fontStyle: 'italic', color: 'var(--text)' }}>{name(p) || p.sci}</span>
                   <button onClick={function () { setGarden(garden.filter(function (g) { return g !== pid; })); }}
                     style={{ fontSize: 14, color: 'var(--text3)', background: 'none', border: 'none', cursor: 'pointer', lineHeight: 1 }}>×</button>
                 </div>
