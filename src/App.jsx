@@ -164,6 +164,7 @@ export default function App() {
             </div>
           </div>
         <SpeciesDetail
+          history={history}
           species={selected}
           isPlant={isPlant}
           plants={fData.plants}

@@ -123,7 +123,9 @@ export default function ForceGraph(props) {
     var angle = -Math.PI / 2, step = sorted.length > 0 ? (Math.PI * 2) / sorted.length : 0;
     sorted.forEach(function (p) {
       var obs = partnerObs[p.id] || { types: {}, count: 1 };
-      var r = Math.max(8, Math.min(24, 6 + Math.sqrt(obs.count) * 3));
+      var maxCount = sorted[0] ? (partnerObs[sorted[0].id] || {count:1}).count : 1;
+      var ratio = obs.count / maxCount;
+      var r = Math.max(8, Math.min(28, 8 + ratio * 20));
       var dist = 180 + Math.random() * 60;
       var ec = isPlant ? (ORDER_COLORS[p.order || ''] || '#88888870') : (GF_COLORS[p.growthForm || 'herb'] || '#7da83270');
       nodes.push({
