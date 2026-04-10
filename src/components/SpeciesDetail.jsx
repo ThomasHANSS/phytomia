@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import Thumb, { SpeciesLink } from './Thumb';
 import ThreatBadge from './ThreatBadge';
 import NetworkGraph from './NetworkGraph';
+import ForceGraph from './ForceGraph';
 import IUCNLegend from './IUCNLegend';
 import { TYPES, FAMILIES, FILTER_GROUPS, STATUS_COLORS } from '../utils/types';
 
@@ -126,6 +127,7 @@ export default function SpeciesDetail(props) {
           <button onClick={exportPDF} style={{ fontSize: 11, padding: "5px 10px", color: "#555", background: "#55555508", border: "1px solid #55555525", borderRadius: 6, cursor: "pointer", display: "flex", alignItems: "center", gap: 4 }}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>PDF</button>
         <div className="view-toggle">
           <button className={dv === 'graph' ? 'active' : ''} onClick={function () { sDv('graph'); }}>{t.graph}</button>
+          <button className={dv === 'force' ? 'active' : ''} onClick={function () { sDv('force'); }}>{lang === 'fr' ? 'Réseau' : 'Network'}</button>
           <button className={dv === 'list' ? 'active' : ''} onClick={function () { sDv('list'); }}>{t.list}</button>
         </div>
         </div>
@@ -135,6 +137,9 @@ export default function SpeciesDetail(props) {
         <NetworkGraph center={species} partners={partners} ixs={rels} lang={lang} onSel={onSelect} plants={plants} />
       )}
 
+      {dv === 'force' && rels.length > 0 && (
+        <ForceGraph species={species} partners={partners} ixs={rels} lang={lang} onNavigate={onSelect} isPlant={isPlant} />
+      )}
       {dv === 'list' && (
         <div>
           <h3 style={{ fontSize: 15, fontWeight: 600, color: 'var(--text)', margin: '0 0 8px' }}>{isPlant ? t.assocI : t.assocP}</h3>
