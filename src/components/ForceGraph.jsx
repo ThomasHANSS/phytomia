@@ -12,12 +12,17 @@ Object.keys(TYPES).forEach(function (k) {
 });
 
 var ORDER_COLORS = {
-  Lepidoptera: '#8b5cf6', Hymenoptera: '#b8860b', Diptera: '#6b8e23',
-  Coleoptera: '#a0522d', Hemiptera: '#2874a6', Thysanoptera: '#888',
-  Trichoptera: '#5f9ea0', Orthoptera: '#c0392b', Neuroptera: '#27ae60'
+  Lepidoptera: '#8b5cf6', Hymenoptera: '#d4a017', Diptera: '#5a9e3f',
+  Coleoptera: '#b87333', Hemiptera: '#3a8fc2', Thysanoptera: '#999',
+  Trichoptera: '#5f9ea0', Orthoptera: '#d35f5f', Neuroptera: '#2ecc71'
 };
+var GF_COLORS = { tree: '#2d7d46', shrub: '#4a8c3f', climber: '#3a7d44', herb: '#7da832', grass: '#a4bf6a' };
 
-var GF_COLORS = { tree: '#2d7d46', shrub: '#4a8c3f', climber: '#3a7d44', herb: '#6b8e23', grass: '#8fae5e' };
+function hexToRgb(hex) {
+  hex = hex.replace('#', '');
+  if (hex.length === 3) hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+  return { r: parseInt(hex.substring(0,2),16), g: parseInt(hex.substring(2,4),16), b: parseInt(hex.substring(4,6),16) };
+}
 
 export default function ForceGraph(props) {
   var species = props.species, partners = props.partners, ixs = props.ixs;
@@ -47,56 +52,35 @@ export default function ForceGraph(props) {
     Neuroptera: lang === 'fr' ? 'Névroptères' : 'Neuroptera',
   };
   var GF_LABELS = {
-    tree: lang === 'fr' ? 'Arbres' : 'Trees',
-    shrub: lang === 'fr' ? 'Arbustes' : 'Shrubs',
-    climber: lang === 'fr' ? 'Grimpantes' : 'Climbers',
-    herb: lang === 'fr' ? 'Herbacées' : 'Herbs',
+    tree: lang === 'fr' ? 'Arbres' : 'Trees', shrub: lang === 'fr' ? 'Arbustes' : 'Shrubs',
+    climber: lang === 'fr' ? 'Grimpantes' : 'Climbers', herb: lang === 'fr' ? 'Herbacées' : 'Herbs',
     grass: lang === 'fr' ? 'Graminées' : 'Grasses',
   };
 
-  // Available entity + type filters
   var filterOptions = useMemo(function () {
-    var entities = {};
-    var types = {};
+    var entities = {}, types = {};
     partners.forEach(function (p) {
-      if (isPlant) {
-        var o = p.order || '';
-        if (o && ORDER_COLORS[o]) entities[o] = (entities[o] || 0) + 1;
-      } else {
-        var gf = p.growthForm || 'herb';
-        entities[gf] = (entities[gf] || 0) + 1;
-      }
+      if (isPlant) { var o = p.order || ''; if (o && ORDER_COLORS[o]) entities[o] = (entities[o] || 0) + 1; }
+      else { var gf = p.growthForm || 'herb'; entities[gf] = (entities[gf] || 0) + 1; }
     });
-    ixs.forEach(function (ix) {
-      var tp = TYPES[ix.tp];
-      if (tp) types[ix.tp] = (types[ix.tp] || 0) + 1;
-    });
+    ixs.forEach(function (ix) { var tp = TYPES[ix.tp]; if (tp) types[ix.tp] = (types[ix.tp] || 0) + 1; });
     return { entities: entities, types: types };
   }, [partners, ixs, isPlant]);
 
   var hasAnyFilter = useMemo(function () {
     if (filters.threatened) return true;
-    var ek = Object.keys(filters.entities);
-    for (var i = 0; i < ek.length; i++) { if (filters.entities[ek[i]]) return true; }
-    var tk = Object.keys(filters.types);
-    for (var j = 0; j < tk.length; j++) { if (filters.types[tk[j]]) return true; }
+    for (var k in filters.entities) { if (filters.entities[k]) return true; }
+    for (var j in filters.types) { if (filters.types[j]) return true; }
     return false;
   }, [filters]);
 
-  // Build graph
   var graph = useMemo(function () {
-    var nodes = [];
-    var links = [];
+    var nodes = [], links = [];
     var activeEntities = Object.keys(filters.entities).filter(function (k) { return filters.entities[k]; });
     var activeTypes = Object.keys(filters.types).filter(function (k) { return filters.types[k]; });
-    var hasEntityFilter = activeEntities.length > 0;
-    var hasTypeFilter = activeTypes.length > 0;
+    var hasEF = activeEntities.length > 0, hasTF = activeTypes.length > 0;
 
-    var filteredIxs = ixs.filter(function (ix) {
-      if (hasTypeFilter && activeTypes.indexOf(ix.tp) === -1) return false;
-      return true;
-    });
-
+    var filteredIxs = ixs.filter(function (ix) { return !hasTF || activeTypes.indexOf(ix.tp) !== -1; });
     var partnerObs = {};
     filteredIxs.forEach(function (ix) {
       var pid = isPlant ? ix.iI : ix.pI;
@@ -107,47 +91,39 @@ export default function ForceGraph(props) {
 
     var filteredPartners = partners.filter(function (p) {
       if (!partnerObs[p.id]) return false;
-      if (hasEntityFilter) {
-        if (isPlant) {
-          if (activeEntities.indexOf(p.order || '') === -1) return false;
-        } else {
-          if (activeEntities.indexOf(p.growthForm || 'herb') === -1) return false;
-        }
+      if (hasEF) {
+        var key = isPlant ? (p.order || '') : (p.growthForm || 'herb');
+        if (activeEntities.indexOf(key) === -1) return false;
       }
       if (filters.threatened && !(p.threat === 'CR' || p.threat === 'EN' || p.threat === 'VU')) return false;
       return true;
     });
 
-    // Center
     nodes.push({
       id: species.id, sci: species.sci, label: getName(species, lang) || species.sci,
       isCenter: true, isPlant: isPlant, threat: species.threat, order: species.order || '',
-      growthForm: species.growthForm || 'herb',
-      x: 0, y: 0, vx: 0, vy: 0, r: 30
+      growthForm: species.growthForm || 'herb', x: 0, y: 0, vx: 0, vy: 0, r: 32
     });
 
     var sorted = filteredPartners.sort(function (a, b) {
       return (partnerObs[b.id] || { count: 0 }).count - (partnerObs[a.id] || { count: 0 }).count;
     }).slice(0, 80);
 
-    var angle = 0, step = sorted.length > 0 ? (Math.PI * 2) / sorted.length : 0;
+    var angle = -Math.PI / 2, step = sorted.length > 0 ? (Math.PI * 2) / sorted.length : 0;
     sorted.forEach(function (p) {
       var obs = partnerObs[p.id] || { types: {}, count: 1 };
-      var r = Math.max(8, Math.min(22, 6 + Math.sqrt(obs.count) * 3));
-      var dist = 160 + Math.random() * 100;
-      var entityColor = isPlant
-        ? (ORDER_COLORS[p.order || ''] || '#88888870')
-        : (GF_COLORS[p.growthForm || 'herb'] || '#6b8e2370');
+      var r = Math.max(8, Math.min(24, 6 + Math.sqrt(obs.count) * 3));
+      var dist = 180 + Math.random() * 60;
+      var ec = isPlant ? (ORDER_COLORS[p.order || ''] || '#88888870') : (GF_COLORS[p.growthForm || 'herb'] || '#7da83270');
       nodes.push({
         id: p.id, sci: p.sci, label: getName(p, lang) || p.sci,
         isCenter: false, isPlant: !isPlant, threat: p.threat, order: p.order || '',
         growthForm: p.growthForm || 'herb',
         x: Math.cos(angle) * dist, y: Math.sin(angle) * dist,
-        vx: 0, vy: 0, r: r, count: obs.count, entityColor: entityColor
+        vx: 0, vy: 0, r: r, count: obs.count, entityColor: ec
       });
       angle += step;
 
-      // Create separate links per type (not overlapping)
       var typeKeys = Object.keys(obs.types);
       var nTypes = typeKeys.length;
       typeKeys.forEach(function (tp, ti) {
@@ -156,7 +132,7 @@ export default function ForceGraph(props) {
           source: species.id, target: p.id,
           color: TYPE_COLORS[tp] || '#888',
           dash: type.dash, width: Math.min(type.w || 1.5, 3), tp: tp,
-          offset: nTypes > 1 ? (ti - (nTypes - 1) / 2) * 8 : 0
+          curveIndex: ti, curveTotal: nTypes
         });
       });
     });
@@ -164,7 +140,6 @@ export default function ForceGraph(props) {
     return { nodes: nodes, links: links };
   }, [species.id, partners, ixs, isPlant, lang, filters]);
 
-  // Simulation
   useEffect(function () {
     var nodes = graph.nodes.map(function (n) { return Object.assign({}, n); });
     var links = graph.links;
@@ -176,17 +151,13 @@ export default function ForceGraph(props) {
 
     function tick() {
       nodes.forEach(function (n) {
-        if (n.isCenter) { n.x *= 0.95; n.y *= 0.95; return; }
+        if (n.isCenter) { n.x *= 0.92; n.y *= 0.92; return; }
         if (dragRef.current && dragRef.current.id === n.id) return;
         nodes.forEach(function (m) {
           if (n.id === m.id) return;
           var dx = n.x - m.x, dy = n.y - m.y;
           var dist = Math.sqrt(dx * dx + dy * dy) || 1;
-          if (dist < 250) {
-            var force = 900 / (dist * dist);
-            n.vx += (dx / dist) * force;
-            n.vy += (dy / dist) * force;
-          }
+          if (dist < 300) { var f = 1200 / (dist * dist); n.vx += (dx / dist) * f; n.vy += (dy / dist) * f; }
         });
         links.forEach(function (l) {
           if (l.target !== n.id && l.source !== n.id) return;
@@ -194,16 +165,14 @@ export default function ForceGraph(props) {
           if (!other) return;
           var dx = other.x - n.x, dy = other.y - n.y;
           var dist = Math.sqrt(dx * dx + dy * dy) || 1;
-          var ideal = 130 + n.r + other.r;
-          n.vx += (dx / dist) * (dist - ideal) * 0.007;
-          n.vy += (dy / dist) * (dist - ideal) * 0.007;
+          var ideal = 160 + n.r + other.r;
+          n.vx += (dx / dist) * (dist - ideal) * 0.006;
+          n.vy += (dy / dist) * (dist - ideal) * 0.006;
         });
-        n.vx -= n.x * 0.0008;
-        n.vy -= n.y * 0.0008;
-        n.vx *= 0.87;
-        n.vy *= 0.87;
-        n.x += n.vx;
-        n.y += n.vy;
+        n.vx -= n.x * 0.0006;
+        n.vy -= n.y * 0.0006;
+        n.vx *= 0.88; n.vy *= 0.88;
+        n.x += n.vx; n.y += n.vy;
       });
     }
 
@@ -215,91 +184,173 @@ export default function ForceGraph(props) {
       var W = canvas.width, H = canvas.height;
       var pan = panRef.current;
       ctx.clearRect(0, 0, W, H);
+
+      // Background subtle gradient
+      var bg = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, W/2);
+      bg.addColorStop(0, '#fafbfc');
+      bg.addColorStop(1, '#f0f2f5');
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+
       ctx.save();
       ctx.translate(W / 2 + pan.x * dpr, H / 2 + pan.y * dpr);
       ctx.scale(pan.scale, pan.scale);
       var sc = dpr;
 
-      // Links with offset for multi-type
+      // Draw links as bezier curves
       links.forEach(function (l) {
         var s = nodeMap[l.source], t = nodeMap[l.target];
         if (!s || !t) return;
         var isHl = hoverRef.current && (l.source === hoverRef.current || l.target === hoverRef.current);
+
         var dx = t.x - s.x, dy = t.y - s.y;
         var len = Math.sqrt(dx * dx + dy * dy) || 1;
         var nx = -dy / len, ny = dx / len;
-        var off = (l.offset || 0) * sc;
+
+        // Curve offset: spread multi-links from same origin point
+        var curveStrength = 0;
+        if (l.curveTotal > 1) {
+          curveStrength = (l.curveIndex - (l.curveTotal - 1) / 2) * 35;
+        }
+        var cpx = ((s.x + t.x) / 2 + nx * curveStrength) * sc;
+        var cpy = ((s.y + t.y) / 2 + ny * curveStrength) * sc;
+
         ctx.beginPath();
-        ctx.moveTo((s.x + nx * off) * sc, (s.y + ny * off) * sc);
-        ctx.lineTo((t.x + nx * off) * sc, (t.y + ny * off) * sc);
-        ctx.strokeStyle = isHl ? l.color : l.color + '35';
-        ctx.lineWidth = (isHl ? l.width + 1.5 : l.width * 0.8) * sc / pan.scale;
+        ctx.moveTo(s.x * sc, s.y * sc);
+        ctx.quadraticCurveTo(cpx, cpy, t.x * sc, t.y * sc);
+
+        var alpha = isHl ? 0.85 : 0.18;
+        var rgb = hexToRgb(l.color);
+        ctx.strokeStyle = 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',' + alpha + ')';
+        ctx.lineWidth = (isHl ? l.width * 1.8 : l.width * 0.7) * sc / pan.scale;
         if (l.dash && l.dash !== 'none') {
-          ctx.setLineDash(l.dash.split(' ').map(function (v) { return Number(v) * sc; }));
+          ctx.setLineDash(l.dash.split(' ').map(function (v) { return Number(v) * sc / pan.scale; }));
         } else { ctx.setLineDash([]); }
         ctx.stroke();
         ctx.setLineDash([]);
 
-        // Type label on highlighted links
-        if (isHl && l.offset !== undefined) {
-          var mx = ((s.x + t.x) / 2 + nx * off) * sc;
-          var my = ((s.y + t.y) / 2 + ny * off) * sc;
+        // Type label on hover
+        if (isHl) {
           var tp = TYPES[l.tp];
           if (tp) {
-            var fs = Math.round(8 * sc / pan.scale);
-            ctx.font = fs + 'px system-ui';
+            // Position label at curve midpoint
+            var lx = (s.x * 0.25 + cpx / sc * 0.5 + t.x * 0.25) * sc;
+            var ly = (s.y * 0.25 + cpy / sc * 0.5 + t.y * 0.25) * sc;
+            var fs = Math.round(9 * sc / pan.scale);
+            ctx.font = '500 ' + fs + 'px system-ui, -apple-system, sans-serif';
             var txt = tp[lang] || l.tp;
             var met = ctx.measureText(txt);
-            ctx.fillStyle = 'rgba(255,255,255,0.9)';
-            ctx.fillRect(mx - met.width / 2 - 2 * sc, my - fs / 2 - 1 * sc, met.width + 4 * sc, fs + 2 * sc);
+            // Pill background
+            var px = 5 * sc / pan.scale, py = 3 * sc / pan.scale;
+            var rr = (fs + py * 2) / 2;
+            ctx.fillStyle = 'rgba(255,255,255,0.95)';
+            ctx.beginPath();
+            ctx.roundRect(lx - met.width / 2 - px, ly - fs / 2 - py, met.width + px * 2, fs + py * 2, rr);
+            ctx.fill();
+            ctx.strokeStyle = 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.3)';
+            ctx.lineWidth = 1 * sc / pan.scale;
+            ctx.stroke();
             ctx.fillStyle = l.color;
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillText(txt, mx, my);
+            ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+            ctx.fillText(txt, lx, ly);
           }
         }
       });
 
-      // Nodes
+      // Draw nodes
       nodes.forEach(function (n) {
         var hover = hoverRef.current === n.id;
         var r = n.r * sc;
-        if (n.isCenter) {
-          ctx.shadowColor = 'rgba(0,0,0,0.15)';
-          ctx.shadowBlur = 12 * sc;
+        var x = n.x * sc, y = n.y * sc;
+
+        // Glow for hovered
+        if (hover && !n.isCenter) {
+          ctx.beginPath();
+          ctx.arc(x, y, r + 8 * sc, 0, Math.PI * 2);
+          var glow = ctx.createRadialGradient(x, y, r, x, y, r + 8 * sc);
+          glow.addColorStop(0, 'rgba(0,0,0,0.08)');
+          glow.addColorStop(1, 'rgba(0,0,0,0)');
+          ctx.fillStyle = glow;
+          ctx.fill();
         }
+
+        // Shadow for center
+        if (n.isCenter) {
+          ctx.shadowColor = 'rgba(0,0,0,0.2)';
+          ctx.shadowBlur = 16 * sc;
+          ctx.shadowOffsetY = 3 * sc;
+        }
+
+        // Node circle
         ctx.beginPath();
-        ctx.arc(n.x * sc, n.y * sc, r + (hover ? 4 * sc : 0), 0, Math.PI * 2);
+        ctx.arc(x, y, r, 0, Math.PI * 2);
+        var baseColor;
         if (n.isCenter) {
-          ctx.fillStyle = n.isPlant ? '#2d7d46' : '#b8860b';
-        } else if (n.threat === 'CR') {
-          ctx.fillStyle = '#cc3333';
-        } else if (n.threat === 'EN') {
-          ctx.fillStyle = '#e74c3c';
-        } else if (n.threat === 'VU') {
-          ctx.fillStyle = '#e67e22';
+          baseColor = n.isPlant ? '#2d7d46' : '#b8860b';
+        } else if (n.threat === 'CR') { baseColor = '#cc3333'; }
+        else if (n.threat === 'EN') { baseColor = '#e74c3c'; }
+        else if (n.threat === 'VU') { baseColor = '#e67e22'; }
+        else { baseColor = n.entityColor || '#88888860'; }
+
+        // Gradient fill
+        var grad = ctx.createRadialGradient(x - r * 0.3, y - r * 0.3, r * 0.1, x, y, r);
+        var bc = hexToRgb(baseColor.replace(/[^0-9a-fA-F#]/g, '').substring(0, 7));
+        if (n.isCenter || n.threat) {
+          grad.addColorStop(0, 'rgba(' + Math.min(bc.r + 40, 255) + ',' + Math.min(bc.g + 40, 255) + ',' + Math.min(bc.b + 40, 255) + ',1)');
+          grad.addColorStop(1, baseColor.substring(0, 7));
         } else {
-          ctx.fillStyle = n.entityColor || '#88888860';
+          grad.addColorStop(0, 'rgba(' + bc.r + ',' + bc.g + ',' + bc.b + ',0.7)');
+          grad.addColorStop(1, 'rgba(' + bc.r + ',' + bc.g + ',' + bc.b + ',0.45)');
         }
+        ctx.fillStyle = grad;
         ctx.fill();
-        ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0;
+        ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
+
+        // Border
         if (n.isCenter) {
-          ctx.strokeStyle = '#fff'; ctx.lineWidth = 3 * sc / pan.scale; ctx.stroke();
+          ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+          ctx.lineWidth = 3 * sc / pan.scale;
+          ctx.stroke();
         } else if (hover) {
-          ctx.strokeStyle = '#333'; ctx.lineWidth = 2 * sc / pan.scale; ctx.stroke();
+          ctx.strokeStyle = 'rgba(50,50,50,0.6)';
+          ctx.lineWidth = 2 * sc / pan.scale;
+          ctx.stroke();
+        } else {
+          ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+          ctx.lineWidth = 1.5 * sc / pan.scale;
+          ctx.stroke();
         }
 
         // Label
-        if (n.isCenter || hover || n.r >= 14) {
-          var fs2 = Math.round((n.isCenter ? 12 : 10) * sc / pan.scale);
-          ctx.font = (n.isCenter ? 'bold italic ' : 'italic ') + fs2 + 'px system-ui';
-          var txt2 = n.sci.length > 22 ? n.sci.split(' ')[0][0] + '. ' + (n.sci.split(' ')[1] || '') : n.sci;
+        var showLabel = n.isCenter || hover || n.r >= 15;
+        if (showLabel) {
+          var fs2 = Math.round((n.isCenter ? 13 : 10) * sc / pan.scale);
+          ctx.font = (n.isCenter ? '600 italic ' : 'italic ') + fs2 + 'px system-ui, -apple-system, sans-serif';
+          var sci = n.sci;
+          var txt2 = sci.length > 24 ? sci.split(' ')[0][0] + '. ' + (sci.split(' ')[1] || '') : sci;
           var met2 = ctx.measureText(txt2);
-          ctx.fillStyle = 'rgba(255,255,255,0.88)';
-          ctx.fillRect(n.x * sc - met2.width / 2 - 3 * sc, (n.y + n.r + 3) * sc, met2.width + 6 * sc, fs2 + 4 * sc);
-          ctx.fillStyle = '#333';
+          var lx2 = x, ly2 = y + r + 6 * sc;
+          // Pill label background
+          var px2 = 6 * sc / pan.scale, py2 = 3 * sc / pan.scale;
+          ctx.fillStyle = 'rgba(255,255,255,0.92)';
+          ctx.beginPath();
+          var rr2 = (fs2 + py2 * 2) / 2;
+          ctx.roundRect(lx2 - met2.width / 2 - px2, ly2 - py2, met2.width + px2 * 2, fs2 + py2 * 2, rr2);
+          ctx.fill();
+          ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+          ctx.lineWidth = 1 * sc / pan.scale;
+          ctx.stroke();
+          ctx.fillStyle = n.isCenter ? '#1a1a1a' : '#444';
           ctx.textAlign = 'center'; ctx.textBaseline = 'top';
-          ctx.fillText(txt2, n.x * sc, (n.y + n.r + 4) * sc);
+          ctx.fillText(txt2, lx2, ly2);
+
+          // Common name below
+          if (n.isCenter && n.label && n.label !== n.sci) {
+            var fs3 = Math.round(10 * sc / pan.scale);
+            ctx.font = '400 ' + fs3 + 'px system-ui';
+            ctx.fillStyle = '#777';
+            ctx.fillText(n.label, lx2, ly2 + fs2 + py2 * 2 + 2 * sc);
+          }
         }
       });
 
@@ -312,20 +363,18 @@ export default function ForceGraph(props) {
     return function () { running = false; if (animRef.current) cancelAnimationFrame(animRef.current); };
   }, [graph]);
 
-  // Resize
   useEffect(function () {
     var canvas = canvasRef.current; if (!canvas) return;
     function resize() {
       var dpr = window.devicePixelRatio || 1;
       var rect = canvas.parentElement.getBoundingClientRect();
-      canvas.width = rect.width * dpr; canvas.height = 650 * dpr;
-      canvas.style.width = rect.width + 'px'; canvas.style.height = '650px';
+      canvas.width = rect.width * dpr; canvas.height = 700 * dpr;
+      canvas.style.width = rect.width + 'px'; canvas.style.height = '700px';
     }
     resize(); window.addEventListener('resize', resize);
     return function () { window.removeEventListener('resize', resize); };
   }, []);
 
-  // Hit test
   var getNodeAt = useCallback(function (cx, cy) {
     var canvas = canvasRef.current; if (!canvas) return null;
     var dpr = window.devicePixelRatio || 1;
@@ -362,121 +411,108 @@ export default function ForceGraph(props) {
     var n = getNodeAt(e.clientX - rect.left, e.clientY - rect.top);
     if (n) { dragRef.current = n; lastMouseRef.current = { x: e.clientX, y: e.clientY }; }
   }, [getNodeAt]);
-
   var onMouseUp = useCallback(function (e) {
     if (dragRef.current && lastMouseRef.current) {
       var dx = e.clientX - lastMouseRef.current.x, dy = e.clientY - lastMouseRef.current.y;
-      if (Math.abs(dx) < 4 && Math.abs(dy) < 4 && !dragRef.current.isCenter) {
+      if (Math.abs(dx) < 5 && Math.abs(dy) < 5 && !dragRef.current.isCenter) {
         onNavigate(dragRef.current.id);
       }
     }
     dragRef.current = null; lastMouseRef.current = null;
   }, [onNavigate]);
-
   var onWheel = useCallback(function (e) {
     e.preventDefault();
-    panRef.current.scale = Math.max(0.3, Math.min(3, panRef.current.scale * (e.deltaY > 0 ? 0.9 : 1.1)));
+    panRef.current.scale = Math.max(0.3, Math.min(3, panRef.current.scale * (e.deltaY > 0 ? 0.92 : 1.08)));
   }, []);
 
-  function toggleFilter(category, key) {
+  function toggleFilter(cat, key) {
     setFilters(function (f) {
-      var copy = JSON.parse(JSON.stringify(f));
-      if (category === 'threatened') { copy.threatened = !copy.threatened; }
-      else { copy[category][key] = !copy[category][key]; }
-      return copy;
+      var c = JSON.parse(JSON.stringify(f));
+      if (cat === 'threatened') c.threatened = !c.threatened;
+      else c[cat][key] = !c[cat][key];
+      return c;
     });
   }
-
-  function resetFilters() {
-    setFilters({ entities: {}, types: {}, threatened: false });
-  }
+  function resetFilters() { setFilters({ entities: {}, types: {}, threatened: false }); }
 
   var tt = lang === 'fr'
-    ? { sp: 'espèces', lk: 'liens', reset: 'Recentrer', legend: 'Légende', all: 'Tous',
-        entityLabel: isPlant ? 'Ordres d\'insectes' : 'Types de végétaux',
-        typeLabel: 'Types d\'interaction', threatened: 'Menacées', click: 'Cliquer pour explorer',
-        size: 'Taille proportionnelle au nombre d\'interactions', nodes: 'Nœuds', linksL: 'Liens' }
-    : { sp: 'species', lk: 'links', reset: 'Reset', legend: 'Legend', all: 'All',
-        entityLabel: isPlant ? 'Insect orders' : 'Plant types',
-        typeLabel: 'Interaction types', threatened: 'Threatened', click: 'Click to explore',
-        size: 'Size proportional to interaction count', nodes: 'Nodes', linksL: 'Links' };
-
+    ? { sp: 'espèces', lk: 'liens', reset: 'Recentrer', legend: 'Légende', all: 'Réinitialiser',
+        entityLabel: isPlant ? 'Ordres' : 'Formes', typeLabel: 'Interactions', threatened: 'Menacées',
+        click: 'Cliquer pour explorer', size: 'Taille proportionnelle au nombre d\'interactions',
+        nodes: 'Nœuds', linksL: 'Liens' }
+    : { sp: 'species', lk: 'links', reset: 'Reset', legend: 'Legend', all: 'Reset filters',
+        entityLabel: isPlant ? 'Orders' : 'Forms', typeLabel: 'Interactions', threatened: 'Threatened',
+        click: 'Click to explore', size: 'Size proportional to interaction count',
+        nodes: 'Nodes', linksL: 'Links' };
   var entityLabels = isPlant ? ORDER_LABELS : GF_LABELS;
   var entityColors = isPlant ? ORDER_COLORS : GF_COLORS;
 
   return (
-    <div>
-      {/* Entity filters */}
-      <div style={{ marginBottom: 6 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 4 }}>
-          <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--text2)', minWidth: 'fit-content' }}>{tt.entityLabel} :</span>
-          <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
-            {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).map(function (k) {
-              var col = entityColors[k] || '#888';
-              var active = filters.entities[k];
-              return (<button key={k} onClick={function () { toggleFilter('entities', k); }}
-                style={{ fontSize: 10, padding: '2px 8px', borderRadius: 10, cursor: 'pointer',
-                  border: '1px solid ' + col + (active ? '' : '40'),
-                  background: active ? col + '20' : 'transparent',
-                  color: active ? col : 'var(--text3)', fontWeight: active ? 600 : 400 }}>
-                {entityLabels[k] || k} <span style={{ opacity: 0.5 }}>{filterOptions.entities[k]}</span>
-              </button>);
-            })}
-          </div>
+    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      {/* Filters */}
+      <div style={{ background: '#f8f9fa', borderRadius: 10, padding: '10px 14px', marginBottom: 10, border: '1px solid #e9ecef' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6, flexWrap: 'wrap' }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: '#555', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{tt.entityLabel}</span>
+          {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).map(function (k) {
+            var col = entityColors[k] || '#888'; var active = filters.entities[k]; var rgb = hexToRgb(col);
+            return (<button key={k} onClick={function () { toggleFilter('entities', k); }}
+              style={{ fontSize: 11, padding: '3px 10px', borderRadius: 14, cursor: 'pointer', transition: 'all 0.15s',
+                border: active ? '1.5px solid ' + col : '1.5px solid #ddd',
+                background: active ? 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.12)' : '#fff',
+                color: active ? col : '#888', fontWeight: active ? 600 : 400 }}>
+              <span style={{ display: 'inline-block', width: 7, height: 7, borderRadius: 4, background: col, marginRight: 4, verticalAlign: 'middle', opacity: active ? 1 : 0.4 }} />
+              {entityLabels[k] || k} <span style={{ opacity: 0.5, fontSize: 10 }}>{filterOptions.entities[k]}</span>
+            </button>);
+          })}
         </div>
-
-        {/* Type filters */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 4 }}>
-          <span style={{ fontSize: 11, fontWeight: 600, color: 'var(--text2)', minWidth: 'fit-content' }}>{tt.typeLabel} :</span>
-          <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
-            {Object.keys(filterOptions.types).sort(function (a, b) { return filterOptions.types[b] - filterOptions.types[a]; }).map(function (tp) {
-              var type = TYPES[tp]; if (!type) return null;
-              var col = TYPE_COLORS[tp] || '#888';
-              var active = filters.types[tp];
-              return (<button key={tp} onClick={function () { toggleFilter('types', tp); }}
-                style={{ fontSize: 10, padding: '2px 8px', borderRadius: 10, cursor: 'pointer',
-                  border: '1px solid ' + col + (active ? '' : '40'),
-                  background: active ? col + '20' : 'transparent',
-                  color: active ? col : 'var(--text3)', fontWeight: active ? 600 : 400 }}>
-                <svg width="14" height="6" style={{ verticalAlign: 'middle', marginRight: 3 }}><line x1="0" y1="3" x2="14" y2="3" stroke={col} strokeWidth={type.w || 1.5} strokeDasharray={type.dash === 'none' ? '' : type.dash} /></svg>
-                {type[lang]} <span style={{ opacity: 0.5 }}>{filterOptions.types[tp]}</span>
-              </button>);
-            })}
-          </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6, flexWrap: 'wrap' }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: '#555', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{tt.typeLabel}</span>
+          {Object.keys(filterOptions.types).sort(function (a, b) { return filterOptions.types[b] - filterOptions.types[a]; }).map(function (tp) {
+            var type = TYPES[tp]; if (!type) return null;
+            var col = TYPE_COLORS[tp] || '#888'; var active = filters.types[tp]; var rgb = hexToRgb(col);
+            return (<button key={tp} onClick={function () { toggleFilter('types', tp); }}
+              style={{ fontSize: 11, padding: '3px 10px', borderRadius: 14, cursor: 'pointer', transition: 'all 0.15s',
+                border: active ? '1.5px solid ' + col : '1.5px solid #ddd',
+                background: active ? 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.12)' : '#fff',
+                color: active ? col : '#888', fontWeight: active ? 600 : 400 }}>
+              <svg width="16" height="6" style={{ verticalAlign: 'middle', marginRight: 3 }}>
+                <line x1="0" y1="3" x2="16" y2="3" stroke={col} strokeWidth={active ? 2 : 1.5} strokeDasharray={type.dash === 'none' ? '' : type.dash} strokeOpacity={active ? 1 : 0.4} />
+              </svg>
+              {type[lang]} <span style={{ opacity: 0.5, fontSize: 10 }}>{filterOptions.types[tp]}</span>
+            </button>);
+          })}
         </div>
-
-        {/* Threatened + reset */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <button onClick={function () { toggleFilter('threatened'); }}
-            style={{ fontSize: 10, padding: '2px 8px', borderRadius: 10, cursor: 'pointer',
-              border: '1px solid ' + (filters.threatened ? '#cc3333' : '#cc333340'),
-              background: filters.threatened ? '#cc333320' : 'transparent',
-              color: filters.threatened ? '#cc3333' : 'var(--text3)', fontWeight: filters.threatened ? 600 : 400 }}>
-            {tt.threatened}
+            style={{ fontSize: 11, padding: '3px 10px', borderRadius: 14, cursor: 'pointer', transition: 'all 0.15s',
+              border: filters.threatened ? '1.5px solid #cc3333' : '1.5px solid #ddd',
+              background: filters.threatened ? '#cc333312' : '#fff',
+              color: filters.threatened ? '#cc3333' : '#888', fontWeight: filters.threatened ? 600 : 400 }}>
+            ⚠ {tt.threatened}
           </button>
           {hasAnyFilter && (
             <button onClick={resetFilters}
-              style={{ fontSize: 10, padding: '2px 8px', borderRadius: 10, cursor: 'pointer',
-                border: '1px solid var(--border)', background: '#55555510', color: 'var(--text2)', fontWeight: 500 }}>
+              style={{ fontSize: 11, padding: '3px 10px', borderRadius: 14, cursor: 'pointer',
+                border: '1.5px solid #ddd', background: '#fff', color: '#888' }}>
               ✕ {tt.all}
             </button>
           )}
         </div>
       </div>
 
-      {/* Stats + controls */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
-        <span style={{ fontSize: 12, color: 'var(--text2)' }}>
+      {/* Toolbar */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+        <span style={{ fontSize: 13, color: '#666', fontWeight: 500 }}>
           {graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}
           {graph.nodes.length >= 81 ? ' (top 80)' : ''}
         </span>
         <div style={{ display: 'flex', gap: 6 }}>
           <button onClick={function () { setShowLegend(function (s) { return !s; }); }}
-            style={{ fontSize: 11, padding: '3px 8px', cursor: 'pointer', border: '1px solid var(--border)', borderRadius: 4, background: showLegend ? 'var(--text3)' : 'var(--bg)', color: showLegend ? '#fff' : 'var(--text2)' }}>
+            style={{ fontSize: 11, padding: '4px 10px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: showLegend ? '#555' : '#fff', color: showLegend ? '#fff' : '#888', transition: 'all 0.15s' }}>
             {tt.legend}
           </button>
           <button onClick={function () { panRef.current = { x: 0, y: 0, scale: 1 }; }}
-            style={{ fontSize: 11, padding: '3px 8px', cursor: 'pointer', border: '1px solid var(--border)', borderRadius: 4, background: 'var(--bg)', color: 'var(--text2)' }}>
+            style={{ fontSize: 11, padding: '4px 10px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: '#fff', color: '#888' }}>
             {tt.reset}
           </button>
         </div>
@@ -484,65 +520,65 @@ export default function ForceGraph(props) {
 
       {/* Legend */}
       {showLegend && (
-        <div style={{ display: 'flex', gap: 20, padding: '10px 14px', marginBottom: 8, background: 'var(--bg2)', borderRadius: 8, border: '1px solid var(--border)', fontSize: 11, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 24, padding: '12px 16px', marginBottom: 10, background: '#fff', borderRadius: 10, border: '1px solid #e9ecef', fontSize: 11, flexWrap: 'wrap', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
           <div>
-            <div style={{ fontWeight: 600, marginBottom: 5, color: 'var(--text)' }}>{tt.nodes}</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-              <span><span style={{ display: 'inline-block', width: 12, height: 12, borderRadius: 6, background: isPlant ? '#2d7d46' : '#b8860b', border: '2px solid #fff', marginRight: 5, verticalAlign: 'middle' }} />{species.sci}</span>
+            <div style={{ fontWeight: 700, marginBottom: 6, color: '#333', textTransform: 'uppercase', fontSize: 10, letterSpacing: '0.5px' }}>{tt.nodes}</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span><span style={{ display: 'inline-block', width: 12, height: 12, borderRadius: 6, background: isPlant ? '#2d7d46' : '#b8860b', border: '2px solid #fff', boxShadow: '0 1px 3px rgba(0,0,0,0.2)', marginRight: 6, verticalAlign: 'middle' }} />{species.sci}</span>
               {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).map(function (k) {
                 var col = entityColors[k] || '#888';
-                return (<span key={k}><span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 5, background: col + '90', marginRight: 5, verticalAlign: 'middle' }} />{entityLabels[k] || k}</span>);
+                return (<span key={k}><span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 5, background: col + '90', border: '1px solid rgba(255,255,255,0.5)', marginRight: 6, verticalAlign: 'middle' }} />{entityLabels[k] || k}</span>);
               })}
-              <span><span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 5, background: '#cc3333', marginRight: 5, verticalAlign: 'middle' }} />{lang === 'fr' ? 'En danger critique / En danger' : 'CR / EN'}</span>
-              <span><span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 5, background: '#e67e22', marginRight: 5, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Vulnérable' : 'Vulnerable'}</span>
+              <span><span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 5, background: '#cc3333', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'En danger' : 'Endangered'}</span>
+              <span><span style={{ display: 'inline-block', width: 9, height: 9, borderRadius: 5, background: '#e67e22', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Vulnérable' : 'Vulnerable'}</span>
             </div>
           </div>
           <div>
-            <div style={{ fontWeight: 600, marginBottom: 5, color: 'var(--text)' }}>{tt.linksL}</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+            <div style={{ fontWeight: 700, marginBottom: 6, color: '#333', textTransform: 'uppercase', fontSize: 10, letterSpacing: '0.5px' }}>{tt.linksL}</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
               {Object.keys(filterOptions.types).sort(function (a, b) { return filterOptions.types[b] - filterOptions.types[a]; }).map(function (tp) {
                 var type = TYPES[tp]; if (!type) return null;
                 var col = TYPE_COLORS[tp] || '#888';
-                return (<span key={tp} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                  <svg width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke={col} strokeWidth={type.w || 1.5} strokeDasharray={type.dash === 'none' ? '' : type.dash} /></svg>
+                return (<span key={tp} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <svg width="28" height="8"><path d={type.dash === 'none' ? 'M0 4 Q14 0 28 4' : 'M0 4 Q14 0 28 4'} fill="none" stroke={col} strokeWidth={type.w || 1.5} strokeDasharray={type.dash === 'none' ? '' : type.dash} /></svg>
                   {type[lang]}
                 </span>);
               })}
             </div>
           </div>
           <div>
-            <div style={{ fontWeight: 600, marginBottom: 5, color: 'var(--text)' }}>{lang === 'fr' ? 'Taille' : 'Size'}</div>
-            <div style={{ color: 'var(--text2)' }}>{tt.size}</div>
+            <div style={{ fontWeight: 700, marginBottom: 6, color: '#333', textTransform: 'uppercase', fontSize: 10, letterSpacing: '0.5px' }}>{lang === 'fr' ? 'Taille' : 'Size'}</div>
+            <div style={{ color: '#888', lineHeight: 1.4 }}>{tt.size}</div>
           </div>
         </div>
       )}
 
       {/* Canvas */}
-      <div style={{ position: 'relative' }}>
+      <div style={{ position: 'relative', borderRadius: 12, overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
         <canvas ref={canvasRef}
           onMouseMove={onMouseMove} onMouseDown={onMouseDown} onMouseUp={onMouseUp}
           onMouseLeave={function () { dragRef.current = null; setTooltip(null); hoverRef.current = null; }}
           onWheel={onWheel}
-          style={{ width: '100%', height: 650, borderRadius: 10, border: '1px solid var(--border)', background: 'var(--bg)', touchAction: 'none' }}
+          style={{ width: '100%', height: 700, display: 'block', touchAction: 'none' }}
         />
         {tooltip && (
           <div style={{
-            position: 'absolute', left: Math.min(tooltip.x + 12, 260), top: Math.max(tooltip.y - 70, 10),
-            background: '#ffffffee', border: '1px solid var(--border)',
-            borderRadius: 8, padding: '8px 12px', pointerEvents: 'none',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)', maxWidth: 240, zIndex: 5
+            position: 'absolute', left: Math.min(tooltip.x + 14, 280), top: Math.max(tooltip.y - 80, 12),
+            background: '#fff', border: '1px solid #e0e0e0',
+            borderRadius: 10, padding: '10px 14px', pointerEvents: 'none',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.12)', maxWidth: 250, zIndex: 5
           }}>
-            <div style={{ fontSize: 14, fontWeight: 600, fontStyle: 'italic', color: 'var(--text)' }}>{tooltip.sci}</div>
+            <div style={{ fontSize: 15, fontWeight: 600, fontStyle: 'italic', color: '#222', lineHeight: 1.3 }}>{tooltip.sci}</div>
             {tooltip.label && tooltip.label !== tooltip.sci && (
-              <div style={{ fontSize: 12, color: 'var(--text2)' }}>{tooltip.label}</div>
+              <div style={{ fontSize: 12, color: '#888', marginTop: 2 }}>{tooltip.label}</div>
             )}
-            {tooltip.order && (<div style={{ fontSize: 10, color: ORDER_COLORS[tooltip.order] || '#888' }}>{ORDER_LABELS[tooltip.order] || tooltip.order}</div>)}
-            {tooltip.growthForm && !tooltip.order && (<div style={{ fontSize: 10, color: GF_COLORS[tooltip.growthForm] || '#888' }}>{GF_LABELS[tooltip.growthForm] || tooltip.growthForm}</div>)}
-            <div style={{ fontSize: 12, color: 'var(--text2)', marginTop: 3 }}>
+            {tooltip.order && (<div style={{ fontSize: 10, color: ORDER_COLORS[tooltip.order] || '#888', fontWeight: 500, marginTop: 2 }}>{ORDER_LABELS[tooltip.order] || tooltip.order}</div>)}
+            {tooltip.growthForm && !tooltip.order && (<div style={{ fontSize: 10, color: GF_COLORS[tooltip.growthForm] || '#888', fontWeight: 500, marginTop: 2 }}>{GF_LABELS[tooltip.growthForm] || tooltip.growthForm}</div>)}
+            <div style={{ fontSize: 12, color: '#666', marginTop: 4 }}>
               {tooltip.count} interactions
-              {tooltip.threat && (<span style={{ marginLeft: 6, fontSize: 10, fontWeight: 600, padding: '1px 5px', borderRadius: 3, background: '#cc333318', color: '#cc3333' }}>{tooltip.threat}</span>)}
+              {tooltip.threat && (<span style={{ marginLeft: 6, fontSize: 10, fontWeight: 600, padding: '2px 6px', borderRadius: 4, background: '#cc333310', color: '#cc3333' }}>{tooltip.threat}</span>)}
             </div>
-            <div style={{ fontSize: 10, color: tooltip.isPlant ? '#2d7d46' : '#b8860b', marginTop: 4, fontWeight: 500 }}>{tt.click} →</div>
+            <div style={{ fontSize: 10, color: tooltip.isPlant ? '#2d7d46' : '#b8860b', marginTop: 5, fontWeight: 600 }}>{tt.click} →</div>
           </div>
         )}
       </div>
