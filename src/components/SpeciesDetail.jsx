@@ -29,9 +29,9 @@ export default function SpeciesDetail(props) {
 
   var plantMap = props.plantMap || {}; var insectMap = props.insectMap || {};
   var getPartner = function (ix) { return isPlant ? insectMap[ix.iI] : plantMap[ix.pI]; };
-  var partners = useMemo(function () { return rels.map(getPartner).filter(Boolean); }, [rels]);
+  var partners = useMemo(function () { var seen = {}; return rels.map(getPartner).filter(function (p) { if (!p || seen[p.id]) return false; seen[p.id] = true; return true; }); }, [rels]);
   var tObs = rels.reduce(function (s, x) { return s + x.src.reduce(function (a, sr) { return a + (sr.n || 0); }, 0); }, 0);
-  var uS = Array.from(new Set(rels.flatMap(function (x) { return x.src.map(function (s) { return s.db; }); })));
+  var uS = Array.from(new Set(rels.flatMap(function (x) { return x.src; }))).filter(function (s) { return s && s !== "legacy"; });
   var name = function (item) { return item.common ? (item.common.fr || '') + ' · ' + (item.common.en || '') : ''; };
 
   function exportPDF() {
