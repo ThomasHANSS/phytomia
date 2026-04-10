@@ -368,8 +368,9 @@ export default function ForceGraph(props) {
     function resize() {
       var dpr = window.devicePixelRatio || 1;
       var rect = canvas.parentElement.getBoundingClientRect();
-      canvas.width = rect.width * dpr; canvas.height = 700 * dpr;
-      canvas.style.width = rect.width + 'px'; canvas.style.height = '700px';
+      var h = canvas.parentElement.getBoundingClientRect().height || 500;
+      canvas.width = rect.width * dpr; canvas.height = h * dpr;
+      canvas.style.width = rect.width + 'px'; canvas.style.height = h + 'px';
     }
     resize(); window.addEventListener('resize', resize);
     return function () { window.removeEventListener('resize', resize); };
@@ -448,9 +449,9 @@ export default function ForceGraph(props) {
   var entityColors = isPlant ? ORDER_COLORS : GF_COLORS;
 
   return (
-    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', display: 'flex', flexDirection: 'column', height: 'calc(100vh - 180px)', minHeight: 500 }}>
       {/* Filters */}
-      <div style={{ background: '#f8f9fa', borderRadius: 10, padding: '10px 14px', marginBottom: 10, border: '1px solid #e9ecef' }}>
+      <div style={{ background: '#f8f9fa', borderRadius: 10, padding: '8px 12px', marginBottom: 8, border: '1px solid #e9ecef', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6, flexWrap: 'wrap' }}>
           <span style={{ fontSize: 11, fontWeight: 700, color: '#555', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{tt.entityLabel}</span>
           {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).map(function (k) {
@@ -501,7 +502,7 @@ export default function ForceGraph(props) {
       </div>
 
       {/* Toolbar */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6, flexShrink: 0 }}>
         <span style={{ fontSize: 13, color: '#666', fontWeight: 500 }}>
           {graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}
           {graph.nodes.length >= 81 ? ' (top 80)' : ''}
@@ -520,7 +521,7 @@ export default function ForceGraph(props) {
 
       {/* Legend */}
       {showLegend && (
-        <div style={{ display: 'flex', gap: 24, padding: '12px 16px', marginBottom: 10, background: '#fff', borderRadius: 10, border: '1px solid #e9ecef', fontSize: 11, flexWrap: 'wrap', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
+        <div style={{ display: 'flex', gap: 24, padding: '10px 14px', marginBottom: 8, background: '#fff', borderRadius: 10, border: '1px solid #e9ecef', fontSize: 11, flexWrap: 'wrap', boxShadow: '0 1px 3px rgba(0,0,0,0.04)', flexShrink: 0, maxHeight: 200, overflowY: 'auto' }}>
           <div>
             <div style={{ fontWeight: 700, marginBottom: 6, color: '#333', textTransform: 'uppercase', fontSize: 10, letterSpacing: '0.5px' }}>{tt.nodes}</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
@@ -554,12 +555,12 @@ export default function ForceGraph(props) {
       )}
 
       {/* Canvas */}
-      <div style={{ position: 'relative', borderRadius: 12, overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+      <div style={{ position: 'relative', borderRadius: 12, overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.06)', flex: 1, minHeight: 300 }}>
         <canvas ref={canvasRef}
           onMouseMove={onMouseMove} onMouseDown={onMouseDown} onMouseUp={onMouseUp}
           onMouseLeave={function () { dragRef.current = null; setTooltip(null); hoverRef.current = null; }}
           onWheel={onWheel}
-          style={{ width: '100%', height: 700, display: 'block', touchAction: 'none' }}
+          style={{ width: '100%', height: '100%', display: 'block', touchAction: 'none' }}
         />
         {tooltip && (
           <div style={{
