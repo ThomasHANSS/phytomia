@@ -34,5 +34,33 @@
     "file": "vernacular_cache.json",
     "date": "2026-04-10",
     "size": 1920519
+  },
+  "euppollnet": {
+    "file": "euppollnet.csv",
+    "date": "2026-04-10",
+    "rows": 21593,
+    "md5": "755adde24223f4046983712802ecc3c7",
+    "size": 1560984
+  },
+  "dbif": {
+    "file": "dbif.csv",
+    "date": "2026-04-10",
+    "rows": 10021,
+    "md5": "6bfcd9c4349064c18f407f2e4fff6d20",
+    "size": 590125
+  },
+  "dopi": {
+    "file": "dopi.csv",
+    "date": "2026-04-10",
+    "rows": 13069,
+    "md5": "e0aecbe787702f60b0605f855408b2e8",
+    "size": 795490
+  },
+  "european_host_data": {
+    "file": "european_host_data.csv",
+    "date": "2026-04-10",
+    "rows": 8077,
+    "md5": "3fcba357130bf82e13989675ab4628b1",
+    "size": 456620
   }
 }
