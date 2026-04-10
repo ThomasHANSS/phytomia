@@ -8,7 +8,7 @@ import { THREAT_CATS, THREATENED_CATS } from '../utils/types';
  */
 export default function ThreatBadge(props) {
   var cat = props.cat, lang = props.lang || 'fr', size = props.size || 'sm';
-  if (!cat || cat === 'NE' || cat === 'NA') return null;
+  if (!cat || cat === 'NE' || cat === 'NA' || cat === 'DD') return null;
 
   var info = THREAT_CATS[cat];
   if (!info) return null;
@@ -47,11 +47,11 @@ export default function ThreatBadge(props) {
   // sm (default) — compact badge
   return (
     <span title={title} style={{
-      fontSize: 8, fontWeight: 700, padding: '1px 4px',
-      borderRadius: 3, background: col + '20', color: col,
-      letterSpacing: '0.3px',
+      fontSize: 9, fontWeight: 600, padding: '2px 6px',
+      borderRadius: 4, background: col + '18', color: col,
+      whiteSpace: 'nowrap',
     }}>
-      {label}
+      {title}
     </span>
   );
 }
