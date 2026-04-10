@@ -6,14 +6,14 @@
     "size": 1932548,
     "rows": 29712
   },
-  "hosts_nhm": {
+  "hosts_nhm_full": {
     "file": "hosts_nhm_full.csv",
     "date": "2026-04-10",
     "md5": "4fa03e88444133ad3753bd451bd7b0aa",
     "size": 4507297,
     "rows": 64338
   },
-  "mangal": {
+  "mangal_eu": {
     "file": "mangal_eu.csv",
     "date": "2026-04-10",
     "md5": "12ca58fd5836ac6abaa7c1c7983d694d",
