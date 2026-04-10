@@ -125,7 +125,7 @@ export default function ForceGraph(props) {
       var obs = partnerObs[p.id] || { types: {}, count: 1 };
       var maxCount = sorted[0] ? (partnerObs[sorted[0].id] || {count:1}).count : 1;
       var ratio = obs.count / maxCount;
-      var r = Math.max(8, Math.min(28, 8 + ratio * 20));
+      var r = Math.max(5, Math.min(16, 5 + ratio * 11));
       var dist = 180 + Math.random() * 60;
       var ec = isPlant ? (ORDER_COLORS[p.order || ''] || '#88888870') : (GF_COLORS[p.growthForm || 'herb'] || '#7da83270');
       nodes.push({
@@ -468,9 +468,8 @@ export default function ForceGraph(props) {
           <span style={{ fontSize: 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{species.sci}</span>
           {cn && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
           {history.length > 0 && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 11, color: '#aaa' }}>
-              <span style={{ color: '#bbb' }}>←</span>
-              {history.slice(-3).map(function (hid, idx) {
+            <div style={{ display: 'flex', alignItems: 'center', gap: 3, fontSize: 12, color: '#888', overflowX: 'auto', maxWidth: 400 }}>
+              {history.map(function (hid, idx) {
                 var sp = allSpecies.find(function (s) { return s.id === hid; });
                 if (!sp) return null;
                 return (<span key={idx} onClick={function () { onNavigate(hid); }}
@@ -478,7 +477,8 @@ export default function ForceGraph(props) {
                   {sp.sci.split(' ')[0][0] + '. ' + (sp.sci.split(' ')[1] || '')}
                 </span>);
               })}
-              <span style={{ color: '#bbb' }}>›</span>
+              <span style={{ color: '#bbb', fontSize: 11 }}>›</span>
+              <span style={{ fontStyle: 'italic', fontWeight: 600, color: '#555', whiteSpace: 'nowrap' }}>{species.sci.split(' ')[0][0] + '. ' + (species.sci.split(' ')[1] || '')}</span>
             </div>
           )}
           <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
