@@ -138,7 +138,7 @@ export default function SpeciesDetail(props) {
       )}
 
       {dv === 'force' && rels.length > 0 && (
-        <ForceGraph species={species} partners={partners} ixs={rels} lang={lang} onNavigate={onSelect} isPlant={isPlant} />
+        <ForceGraph species={species} partners={partners} ixs={rels} lang={lang} onNavigate={function(id) { sDv('force'); onSelect(id); }} isPlant={isPlant} />
       )}
       {dv === 'list' && (
         <div>
