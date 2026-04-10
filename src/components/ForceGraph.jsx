@@ -463,7 +463,7 @@ export default function ForceGraph(props) {
           <span style={{ width: 14, height: 14, borderRadius: 7, background: isPlant ? '#2d7d46' : '#b8860b', flexShrink: 0 }} />
           <span style={{ fontSize: 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{species.sci}</span>
           {cn && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
-          <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} \u00b7 {graph.links.length} {tt.lk}</span>
+          <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
         </div>
         <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
           <button onClick={function () { setShowPanel(function (s) { return !s; }); }}
@@ -476,7 +476,7 @@ export default function ForceGraph(props) {
           </button>
           <button onClick={onClose}
             style={{ fontSize: 16, padding: '4px 10px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: '#fff', color: '#999', fontWeight: 700, lineHeight: 1 }}>
-            \u2715
+            ✕
           </button>
         </div>
       </div>
@@ -524,20 +524,20 @@ export default function ForceGraph(props) {
                   border: filters.threatened ? '1.5px solid #cc3333' : '1.5px solid #eee',
                   background: filters.threatened ? '#cc333308' : '#fafafa',
                   color: filters.threatened ? '#cc3333' : '#666', fontWeight: filters.threatened ? 600 : 400 }}>
-                <span>\u26a0</span><span style={{ flex: 1 }}>{tt.threatened}</span>
+                <span>⚠</span><span style={{ flex: 1 }}>{tt.threatened}</span>
               </button>
               {hasAnyFilter && (
                 <button onClick={resetFilters}
                   style={{ fontSize: 12, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', textAlign: 'center',
                     border: '1.5px solid #ddd', background: '#f5f5f5', color: '#888' }}>
-                  \u2715 {tt.all}
+                  ✕ {tt.all}
                 </button>
               )}
             </div>
             <div style={{ borderTop: '1px solid #eee', paddingTop: 12 }}>
               <button onClick={function () { setShowLegend(function (s) { return !s; }); }}
                 style={{ fontSize: 11, width: '100%', padding: 6, cursor: 'pointer', border: '1px solid #eee', borderRadius: 6, background: '#fafafa', color: '#888' }}>
-                {tt.legend} {showLegend ? '\u25b2' : '\u25bc'}
+                {tt.legend} {showLegend ? '▲' : '▼'}
               </button>
               {showLegend && (
                 <div style={{ marginTop: 10, fontSize: 11 }}>
@@ -547,7 +547,7 @@ export default function ForceGraph(props) {
                     {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).slice(0, 6).map(function (k) {
                       return (<span key={k}><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: (entityColors[k] || '#888') + '90', marginRight: 6, verticalAlign: 'middle' }} />{entityLabels[k] || k}</span>);
                     })}
-                    <span><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: '#cc3333', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Menac\u00e9' : 'Threatened'}</span>
+                    <span><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: '#cc3333', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Menacé' : 'Threatened'}</span>
                   </div>
                   <div style={{ fontWeight: 600, color: '#555', marginBottom: 5 }}>{tt.linksL}</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -589,14 +589,14 @@ export default function ForceGraph(props) {
                 {tooltip.count} interactions
                 {tooltip.threat && (<span style={{ marginLeft: 6, fontSize: 10, fontWeight: 600, padding: '2px 6px', borderRadius: 4, background: '#cc333310', color: '#cc3333' }}>{tooltip.threat}</span>)}
               </div>
-              <div style={{ fontSize: 10, color: tooltip.isPlant ? '#2d7d46' : '#b8860b', marginTop: 5, fontWeight: 600 }}>{tt.click} \u2192</div>
+              <div style={{ fontSize: 10, color: tooltip.isPlant ? '#2d7d46' : '#b8860b', marginTop: 5, fontWeight: 600 }}>{tt.click} →</div>
             </div>
           )}
         </div>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '6px 16px', background: '#fff', borderTop: '1px solid #e0e0e0', flexShrink: 0 }}>
         <span style={{ fontSize: 11, color: '#aaa' }}>
-          {lang === 'fr' ? 'Molette : zoom \u00b7 Clic : explorer \u00b7 Glisser : d\u00e9placer \u00b7 \u00c9chap : fermer' : 'Scroll: zoom \u00b7 Click: explore \u00b7 Drag: move \u00b7 Esc: close'}
+          {lang === 'fr' ? 'Molette : zoom · Clic : explorer · Glisser : déplacer · Échap : fermer' : 'Scroll: zoom · Click: explore · Drag: move · Esc: close'}
         </span>
       </div>
     </div>
