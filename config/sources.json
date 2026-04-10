@@ -8,7 +8,13 @@
       "download_url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.3n5tb2rrx/download",
       "auto_download": true,
       "licence": "CC0",
-      "interaction_types": ["folivorie", "gallicole", "suceur_seve", "xylophage", "frugivore"],
+      "interaction_types": [
+        "folivorie",
+        "gallicole",
+        "suceur_seve",
+        "xylophage",
+        "frugivore"
+      ],
       "geo_scope": "EU",
       "citation": "Trombik et al. (2024). Native and non-native insect herbivores associated with native and non-native European trees. Dryad."
     },
@@ -21,7 +27,9 @@
       "auto_download": false,
       "access_note": "Fichiers restreints sur Zenodo — demander accès via le formulaire ou cloner le repo GitHub et exécuter le script R pour générer les CSV.",
       "licence": "CC-BY 4.0",
-      "interaction_types": ["pollination"],
+      "interaction_types": [
+        "pollination"
+      ],
       "geo_scope": "EU-23",
       "citation": "Lanuza et al. (2025). EuPPollNet: A European Database of Plant-Pollinator Networks. Global Ecology and Biogeography."
     },
@@ -31,7 +39,15 @@
       "url": "https://api.globalbioticinteractions.org",
       "auto_download": true,
       "licence": "CC0",
-      "interaction_types": ["pollination", "folivorie", "suceur_seve", "xylophage", "frugivore", "parasitoide", "predateur"],
+      "interaction_types": [
+        "pollination",
+        "folivorie",
+        "suceur_seve",
+        "xylophage",
+        "frugivore",
+        "parasitoide",
+        "predateur"
+      ],
       "geo_scope": "mondial, filtrable EU",
       "citation": "Poelen, Simons & Mungall (2014). Global Biotic Interactions."
     },
@@ -43,7 +59,12 @@
       "auto_download": false,
       "access_note": "Téléchargement via le portail EIDC (inscription gratuite requise). Télécharger le ZIP et décompresser dans data/raw/dbif/",
       "licence": "Open Government Licence",
-      "interaction_types": ["folivorie", "mineuse", "gallicole", "suceur_seve"],
+      "interaction_types": [
+        "folivorie",
+        "mineuse",
+        "gallicole",
+        "suceur_seve"
+      ],
       "geo_scope": "GB",
       "citation": "Ward (2021). Database of Insects and their Food Plants, v2. NERC EIDC."
     },
@@ -56,7 +77,10 @@
       "ckan_api": "https://data.nhm.ac.uk/api/3/action/datastore_search",
       "auto_download": true,
       "licence": "Open",
-      "interaction_types": ["hote_larvaire", "folivorie"],
+      "interaction_types": [
+        "hote_larvaire",
+        "folivorie"
+      ],
       "geo_scope": "mondial, filtrable EU",
       "citation": "Robinson et al. Natural History Museum, London. HOSTS database."
     },
@@ -67,7 +91,9 @@
       "auto_download": false,
       "access_note": "Base accessible via le site de l'Université de Sussex. Contacter les auteurs ou télécharger via l'interface web. Placer les CSV dans data/raw/dopi/",
       "licence": "CC-BY",
-      "interaction_types": ["pollination"],
+      "interaction_types": [
+        "pollination"
+      ],
       "geo_scope": "GB",
       "citation": "Balfour et al. University of Sussex. Database of Pollinator Interactions."
     },
@@ -91,8 +117,36 @@
       "licence": "Non-commercial use only",
       "type": "threat_status",
       "content": "172 600+ espèces mondiales, toutes catégories",
-      "note": "Nécessite IUCN_API_KEY (gratuite). Sans clé, seule la European Red List est utilisée.",
+      "note": "Actuellement récupéré via GBIF API (/v1/species/{key}/iucnRedListCategory) — pas besoin de clé API IUCN.",
       "citation": "IUCN (2025). IUCN Red List of Threatened Species. Version 2025-1."
+    },
+    {
+      "id": "mangal",
+      "name": "Mangal",
+      "url": "https://mangal.io/api/v2/",
+      "auto_download": true,
+      "licence": "CC-BY",
+      "interaction_types": [
+        "pollination",
+        "folivorie",
+        "predateur",
+        "parasitoide"
+      ],
+      "geo_scope": "mondial, filtré EU par coordonnées",
+      "citation": "Vissault et al. (2019). Mangal: An open infrastructure for ecological interactions. BISS, 3, e37037."
+    },
+    {
+      "id": "weboflife",
+      "name": "Web of Life",
+      "url": "https://www.web-of-life.es",
+      "api_url": "https://www.web-of-life.es/get_networks.php",
+      "auto_download": true,
+      "licence": "Open access",
+      "interaction_types": [
+        "pollination"
+      ],
+      "geo_scope": "mondial",
+      "citation": "Fortuna et al. Web of Life ecological networks database."
     }
   ],
   "interaction_type_mapping": {

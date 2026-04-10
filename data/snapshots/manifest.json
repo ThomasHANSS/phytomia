@@ -1,1 +1,38 @@
-{}
+{
+  "weboflife": {
+    "file": "weboflife.csv",
+    "date": "2026-04-10",
+    "md5": "dbea994ff5bb4d3b48b1c5c559497b6e",
+    "size": 1932548,
+    "rows": 29712
+  },
+  "hosts_nhm": {
+    "file": "hosts_nhm_full.csv",
+    "date": "2026-04-10",
+    "md5": "4fa03e88444133ad3753bd451bd7b0aa",
+    "size": 4507297,
+    "rows": 64338
+  },
+  "mangal": {
+    "file": "mangal_eu.csv",
+    "date": "2026-04-10",
+    "md5": "12ca58fd5836ac6abaa7c1c7983d694d",
+    "size": 2238532,
+    "rows": 35739
+  },
+  "taxonomy_species_map": {
+    "file": "species_map.csv",
+    "date": "2026-04-10",
+    "rows": 50225
+  },
+  "taxonomy_threat_status": {
+    "file": "threat_status.csv",
+    "date": "2026-04-10",
+    "rows": 2794
+  },
+  "vernacular_cache": {
+    "file": "vernacular_cache.json",
+    "date": "2026-04-10",
+    "size": 1920519
+  }
+}
