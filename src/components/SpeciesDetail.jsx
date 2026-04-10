@@ -168,16 +168,11 @@ export default function SpeciesDetail(props) {
                     </div>
                   </div>
                   <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid var(--border)' }}>
-                    {ix.src.map(function (s, si) {
-                      return (
-                        <div key={si} style={{ fontSize: 11, color: 'var(--text2)', marginBottom: 2, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                          <span style={{ fontWeight: 600, minWidth: 100 }}>{s.db}</span>
-                          <span>{s.n != null ? s.n + ' obs.' : '—'}</span>
-                          <span>{(s.geo || []).map(function (g) { return GEO[g] || g; }).join(', ')}</span>
-                          <span>{s.yr}</span>
-                        </div>
-                      );
-                    })}
+                    <div style={{ fontSize: 11, color: 'var(--text2)', display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+                      {ix.src.filter(function (s) { return s && s !== '?'; }).map(function (s, si) {
+                        return (<span key={si} className="badge" style={{ background: '#55555510', color: '#666', fontWeight: 500, fontSize: 10 }}>{s}</span>);
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>
