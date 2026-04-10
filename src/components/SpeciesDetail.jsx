@@ -31,7 +31,10 @@ export default function SpeciesDetail(props) {
   var getPartner = function (ix) { return isPlant ? insectMap[ix.iI] : plantMap[ix.pI]; };
   var partners = useMemo(function () { var seen = {}; return rels.map(getPartner).filter(function (p) { if (!p || seen[p.id]) return false; seen[p.id] = true; return true; }); }, [rels]);
   var tObs = rels.reduce(function (s, x) { return s + x.src.reduce(function (a, sr) { return a + (sr.n || 0); }, 0); }, 0);
-  var uS = Array.from(new Set(rels.flatMap(function (x) { return x.src; }))).filter(function (s) { return s && s !== "legacy"; });
+  var uSraw = Array.from(new Set(rels.flatMap(function (x) { return x.src; }))).filter(Boolean);
+  var hasLegacy = uSraw.indexOf("legacy") !== -1;
+  var uS = uSraw.filter(function (s) { return s !== "legacy"; });
+  if (hasLegacy) uS.push("EuPPollNet/GloBI/DBIF/DoPI");
   var name = function (item) { return item.common ? (item.common.fr || '') + ' · ' + (item.common.en || '') : ''; };
 
   function exportPDF() {
