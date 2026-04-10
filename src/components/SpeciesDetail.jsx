@@ -164,7 +164,7 @@ export default function SpeciesDetail(props) {
                     <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
                       <svg width="22" height="10"><line x1="0" y1="5" x2="14" y2="5" stroke={col} strokeWidth={tp.w} strokeDasharray={tp.dash} strokeLinecap="round" /><g transform="translate(18,5) scale(0.5)"><path d={tp.icon} fill="none" stroke={col} strokeWidth={1.5} strokeLinecap="round" /></g></svg>
                       <span className="badge" style={{ fontWeight: 600, background: col + '18', color: col }}>{tp[lang]}</span>
-                      <span className="badge" style={{ background: ix.st === 'eco' ? '#2d7d4612' : '#c0392b12', color: ix.st === 'eco' ? '#2d7d46' : '#c0392b' }}>{ix.st === 'eco' ? t.eco : t.phy}</span>
+
                     </div>
                   </div>
                   <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px solid var(--border)' }}>
