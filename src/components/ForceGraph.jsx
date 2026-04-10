@@ -27,6 +27,7 @@ function hexToRgb(hex) {
 export default function ForceGraph(props) {
   var species = props.species, partners = props.partners, ixs = props.ixs;
   var lang = props.lang, onNavigate = props.onNavigate, isPlant = props.isPlant;
+  var onClose = props.onClose;
 
   var canvasRef = useRef(null);
   var animRef = useRef(null);
@@ -37,8 +38,16 @@ export default function ForceGraph(props) {
   var dragRef = useRef(null);
   var lastMouseRef = useRef(null);
   var [tooltip, setTooltip] = useState(null);
+  var [showPanel, setShowPanel] = useState(window.innerWidth > 700);
   var [filters, setFilters] = useState({ entities: {}, types: {}, threatened: false });
   var [showLegend, setShowLegend] = useState(false);
+
+  useEffect(function () {
+    function onKey(e) { if (e.key === 'Escape' && onClose) onClose(); }
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return function () { document.removeEventListener('keydown', onKey); document.body.style.overflow = ''; };
+  }, [onClose]);
 
   var ORDER_LABELS = {
     Lepidoptera: lang === 'fr' ? 'Lépidoptères' : 'Lepidoptera',
@@ -368,9 +377,7 @@ export default function ForceGraph(props) {
     function resize() {
       var dpr = window.devicePixelRatio || 1;
       var rect = canvas.parentElement.getBoundingClientRect();
-      var h = canvas.parentElement.getBoundingClientRect().height || 500;
-      canvas.width = rect.width * dpr; canvas.height = h * dpr;
-      canvas.style.width = rect.width + 'px'; canvas.style.height = h + 'px';
+      canvas.width = rect.width * dpr; canvas.height = rect.height * dpr;
     }
     resize(); window.addEventListener('resize', resize);
     return function () { window.removeEventListener('resize', resize); };
@@ -403,7 +410,7 @@ export default function ForceGraph(props) {
     hoverRef.current = n ? n.id : null;
     canvasRef.current.style.cursor = n && !n.isCenter ? 'pointer' : (n ? 'grab' : 'default');
     if (n && !n.isCenter) {
-      setTooltip({ x: mx, y: my, sci: n.sci, label: n.label, threat: n.threat, count: n.count || 0, isPlant: n.isPlant, order: n.order, growthForm: n.growthForm });
+      setTooltip({ x: e.clientX, y: e.clientY, sci: n.sci, label: n.label, threat: n.threat, count: n.count || 0, isPlant: n.isPlant, order: n.order, growthForm: n.growthForm });
     } else { setTooltip(null); }
   }, [getNodeAt]);
 
@@ -444,8 +451,9 @@ export default function ForceGraph(props) {
     : { sp: 'species', lk: 'links', reset: 'Reset', legend: 'Legend', all: 'Reset filters',
         entityLabel: isPlant ? 'Orders' : 'Forms', typeLabel: 'Interactions', threatened: 'Threatened',
         click: 'Click to explore', size: 'Size proportional to interaction count',
-        nodes: 'Nodes', linksL: 'Links' };
+        nodes: 'Nodes', linksL: 'Links', close: 'Close', panel: 'Filters' };
   var entityLabels = isPlant ? ORDER_LABELS : GF_LABELS;
+  var cn = getName(species, lang);
   var entityColors = isPlant ? ORDER_COLORS : GF_COLORS;
 
   return (
@@ -540,48 +548,148 @@ export default function ForceGraph(props) {
               {Object.keys(filterOptions.types).sort(function (a, b) { return filterOptions.types[b] - filterOptions.types[a]; }).map(function (tp) {
                 var type = TYPES[tp]; if (!type) return null;
                 var col = TYPE_COLORS[tp] || '#888';
-                return (<span key={tp} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <svg width="28" height="8"><path d={type.dash === 'none' ? 'M0 4 Q14 0 28 4' : 'M0 4 Q14 0 28 4'} fill="none" stroke={col} strokeWidth={type.w || 1.5} strokeDasharray={type.dash === 'none' ? '' : type.dash} /></svg>
-                  {type[lang]}
-                </span>);
-              })}
-            </div>
-          </div>
-          <div>
-            <div style={{ fontWeight: 700, marginBottom: 6, color: '#333', textTransform: 'uppercase', fontSize: 10, letterSpacing: '0.5px' }}>{lang === 'fr' ? 'Taille' : 'Size'}</div>
-            <div style={{ color: '#888', lineHeight: 1.4 }}>{tt.size}</div>
-          </div>
+                return (
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 1000, display: 'flex', flexDirection: 'column', background: '#f0f2f5', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 16px', background: '#fff', borderBottom: '1px solid #e0e0e0', flexShrink: 0, gap: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0, overflow: 'hidden' }}>
+          <span style={{ width: 14, height: 14, borderRadius: 7, background: isPlant ? '#2d7d46' : '#b8860b', flexShrink: 0 }} />
+          <span style={{ fontSize: 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{species.sci}</span>
+          {cn && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
+          <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} \u00b7 {graph.links.length} {tt.lk}</span>
         </div>
-      )}
-
-      {/* Canvas */}
-      <div style={{ position: 'relative', borderRadius: 12, overflow: 'hidden', boxShadow: '0 2px 12px rgba(0,0,0,0.06)', flex: 1, minHeight: 300 }}>
-        <canvas ref={canvasRef}
-          onMouseMove={onMouseMove} onMouseDown={onMouseDown} onMouseUp={onMouseUp}
-          onMouseLeave={function () { dragRef.current = null; setTooltip(null); hoverRef.current = null; }}
-          onWheel={onWheel}
-          style={{ width: '100%', height: '100%', display: 'block', touchAction: 'none' }}
-        />
-        {tooltip && (
-          <div style={{
-            position: 'absolute', left: Math.min(tooltip.x + 14, 280), top: Math.max(tooltip.y - 80, 12),
-            background: '#fff', border: '1px solid #e0e0e0',
-            borderRadius: 10, padding: '10px 14px', pointerEvents: 'none',
-            boxShadow: '0 8px 24px rgba(0,0,0,0.12)', maxWidth: 250, zIndex: 5
-          }}>
-            <div style={{ fontSize: 15, fontWeight: 600, fontStyle: 'italic', color: '#222', lineHeight: 1.3 }}>{tooltip.sci}</div>
-            {tooltip.label && tooltip.label !== tooltip.sci && (
-              <div style={{ fontSize: 12, color: '#888', marginTop: 2 }}>{tooltip.label}</div>
-            )}
-            {tooltip.order && (<div style={{ fontSize: 10, color: ORDER_COLORS[tooltip.order] || '#888', fontWeight: 500, marginTop: 2 }}>{ORDER_LABELS[tooltip.order] || tooltip.order}</div>)}
-            {tooltip.growthForm && !tooltip.order && (<div style={{ fontSize: 10, color: GF_COLORS[tooltip.growthForm] || '#888', fontWeight: 500, marginTop: 2 }}>{GF_LABELS[tooltip.growthForm] || tooltip.growthForm}</div>)}
-            <div style={{ fontSize: 12, color: '#666', marginTop: 4 }}>
-              {tooltip.count} interactions
-              {tooltip.threat && (<span style={{ marginLeft: 6, fontSize: 10, fontWeight: 600, padding: '2px 6px', borderRadius: 4, background: '#cc333310', color: '#cc3333' }}>{tooltip.threat}</span>)}
+        <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+          <button onClick={function () { setShowPanel(function (s) { return !s; }); }}
+            style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: showPanel ? '#555' : '#fff', color: showPanel ? '#fff' : '#666', fontWeight: 500 }}>
+            {tt.panel}
+          </button>
+          <button onClick={function () { panRef.current = { x: 0, y: 0, scale: 1 }; }}
+            style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: '#fff', color: '#666' }}>
+            {tt.reset}
+          </button>
+          <button onClick={onClose}
+            style={{ fontSize: 16, padding: '4px 10px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: '#fff', color: '#999', fontWeight: 700, lineHeight: 1 }}>
+            \u2715
+          </button>
+        </div>
+      </div>
+      <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+        {showPanel && (
+          <div style={{ width: 260, flexShrink: 0, background: '#fff', borderRight: '1px solid #e0e0e0', padding: 14, overflowY: 'auto' }}>
+            <div style={{ marginBottom: 16 }}>
+              <div style={{ fontSize: 10, fontWeight: 700, color: '#999', textTransform: 'uppercase', letterSpacing: '0.8px', marginBottom: 8 }}>{tt.entityLabel}</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).map(function (k) {
+                  var col = entityColors[k] || '#888'; var active = filters.entities[k]; var rgb = hexToRgb(col);
+                  return (<button key={k} onClick={function () { toggleFilter('entities', k); }}
+                    style={{ fontSize: 12, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', textAlign: 'left', display: 'flex', alignItems: 'center', gap: 6,
+                      border: active ? '1.5px solid ' + col : '1.5px solid #eee',
+                      background: active ? 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.08)' : '#fafafa',
+                      color: active ? col : '#666', fontWeight: active ? 600 : 400 }}>
+                    <span style={{ width: 8, height: 8, borderRadius: 4, background: col, opacity: active ? 1 : 0.35 }} />
+                    <span style={{ flex: 1 }}>{entityLabels[k] || k}</span>
+                    <span style={{ fontSize: 10, color: '#bbb' }}>{filterOptions.entities[k]}</span>
+                  </button>);
+                })}
+              </div>
             </div>
-            <div style={{ fontSize: 10, color: tooltip.isPlant ? '#2d7d46' : '#b8860b', marginTop: 5, fontWeight: 600 }}>{tt.click} →</div>
+            <div style={{ marginBottom: 16 }}>
+              <div style={{ fontSize: 10, fontWeight: 700, color: '#999', textTransform: 'uppercase', letterSpacing: '0.8px', marginBottom: 8 }}>{tt.typeLabel}</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                {Object.keys(filterOptions.types).sort(function (a, b) { return filterOptions.types[b] - filterOptions.types[a]; }).map(function (tp) {
+                  var type = TYPES[tp]; if (!type) return null;
+                  var col = TYPE_COLORS[tp] || '#888'; var active = filters.types[tp]; var rgb = hexToRgb(col);
+                  return (<button key={tp} onClick={function () { toggleFilter('types', tp); }}
+                    style={{ fontSize: 12, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', textAlign: 'left', display: 'flex', alignItems: 'center', gap: 6,
+                      border: active ? '1.5px solid ' + col : '1.5px solid #eee',
+                      background: active ? 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.08)' : '#fafafa',
+                      color: active ? col : '#666', fontWeight: active ? 600 : 400 }}>
+                    <svg width="18" height="6" style={{ flexShrink: 0 }}><path d="M0 3 Q9 0 18 3" fill="none" stroke={col} strokeWidth={active ? 2 : 1.5} strokeOpacity={active ? 1 : 0.35} strokeDasharray={type.dash === 'none' ? '' : type.dash} /></svg>
+                    <span style={{ flex: 1 }}>{type[lang]}</span>
+                    <span style={{ fontSize: 10, color: '#bbb' }}>{filterOptions.types[tp]}</span>
+                  </button>);
+                })}
+              </div>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginBottom: 16 }}>
+              <button onClick={function () { toggleFilter('threatened'); }}
+                style={{ fontSize: 12, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', textAlign: 'left', display: 'flex', alignItems: 'center', gap: 6,
+                  border: filters.threatened ? '1.5px solid #cc3333' : '1.5px solid #eee',
+                  background: filters.threatened ? '#cc333308' : '#fafafa',
+                  color: filters.threatened ? '#cc3333' : '#666', fontWeight: filters.threatened ? 600 : 400 }}>
+                <span>\u26a0</span><span style={{ flex: 1 }}>{tt.threatened}</span>
+              </button>
+              {hasAnyFilter && (
+                <button onClick={resetFilters}
+                  style={{ fontSize: 12, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', textAlign: 'center',
+                    border: '1.5px solid #ddd', background: '#f5f5f5', color: '#888' }}>
+                  \u2715 {tt.all}
+                </button>
+              )}
+            </div>
+            <div style={{ borderTop: '1px solid #eee', paddingTop: 12 }}>
+              <button onClick={function () { setShowLegend(function (s) { return !s; }); }}
+                style={{ fontSize: 11, width: '100%', padding: 6, cursor: 'pointer', border: '1px solid #eee', borderRadius: 6, background: '#fafafa', color: '#888' }}>
+                {tt.legend} {showLegend ? '\u25b2' : '\u25bc'}
+              </button>
+              {showLegend && (
+                <div style={{ marginTop: 10, fontSize: 11 }}>
+                  <div style={{ fontWeight: 600, color: '#555', marginBottom: 5 }}>{tt.nodes}</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginBottom: 10 }}>
+                    <span><span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 5, background: isPlant ? '#2d7d46' : '#b8860b', border: '2px solid #fff', boxShadow: '0 0 2px rgba(0,0,0,0.2)', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Centre' : 'Center'}</span>
+                    {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).slice(0, 6).map(function (k) {
+                      return (<span key={k}><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: (entityColors[k] || '#888') + '90', marginRight: 6, verticalAlign: 'middle' }} />{entityLabels[k] || k}</span>);
+                    })}
+                    <span><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: '#cc3333', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Menac\u00e9' : 'Threatened'}</span>
+                  </div>
+                  <div style={{ fontWeight: 600, color: '#555', marginBottom: 5 }}>{tt.linksL}</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                    {Object.keys(filterOptions.types).sort(function (a, b) { return filterOptions.types[b] - filterOptions.types[a]; }).map(function (tp) {
+                      var type = TYPES[tp]; if (!type) return null;
+                      return (<span key={tp} style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                        <svg width="22" height="8"><path d="M0 4 Q11 0 22 4" fill="none" stroke={TYPE_COLORS[tp] || '#888'} strokeWidth={type.w || 1.5} strokeDasharray={type.dash === 'none' ? '' : type.dash} /></svg>
+                        {type[lang]}
+                      </span>);
+                    })}
+                  </div>
+                  <div style={{ color: '#aaa', fontSize: 10, fontStyle: 'italic', marginTop: 8 }}>{tt.size}</div>
+                </div>
+              )}
+            </div>
           </div>
         )}
+        <div style={{ flex: 1, position: 'relative' }}>
+          <canvas ref={canvasRef}
+            onMouseMove={onMouseMove} onMouseDown={onMouseDown} onMouseUp={onMouseUp}
+            onMouseLeave={function () { dragRef.current = null; setTooltip(null); hoverRef.current = null; }}
+            onWheel={onWheel}
+            style={{ width: '100%', height: '100%', display: 'block', touchAction: 'none' }}
+          />
+          {tooltip && (
+            <div style={{
+              position: 'fixed', left: Math.min(tooltip.x + 14, window.innerWidth - 270), top: Math.max(tooltip.y - 80, 60),
+              background: '#fff', border: '1px solid #e0e0e0',
+              borderRadius: 10, padding: '10px 14px', pointerEvents: 'none',
+              boxShadow: '0 8px 24px rgba(0,0,0,0.12)', maxWidth: 250, zIndex: 1001
+            }}>
+              <div style={{ fontSize: 15, fontWeight: 600, fontStyle: 'italic', color: '#222' }}>{tooltip.sci}</div>
+              {tooltip.label && tooltip.label !== tooltip.sci && (
+                <div style={{ fontSize: 12, color: '#888', marginTop: 2 }}>{tooltip.label}</div>
+              )}
+              {tooltip.order && (<div style={{ fontSize: 10, color: ORDER_COLORS[tooltip.order] || '#888', fontWeight: 500, marginTop: 2 }}>{ORDER_LABELS[tooltip.order] || tooltip.order}</div>)}
+              {tooltip.growthForm && !tooltip.order && (<div style={{ fontSize: 10, color: GF_COLORS[tooltip.growthForm] || '#888', fontWeight: 500, marginTop: 2 }}>{GF_LABELS[tooltip.growthForm] || tooltip.growthForm}</div>)}
+              <div style={{ fontSize: 12, color: '#666', marginTop: 4 }}>
+                {tooltip.count} interactions
+                {tooltip.threat && (<span style={{ marginLeft: 6, fontSize: 10, fontWeight: 600, padding: '2px 6px', borderRadius: 4, background: '#cc333310', color: '#cc3333' }}>{tooltip.threat}</span>)}
+              </div>
+              <div style={{ fontSize: 10, color: tooltip.isPlant ? '#2d7d46' : '#b8860b', marginTop: 5, fontWeight: 600 }}>{tt.click} \u2192</div>
+            </div>
+          )}
+        </div>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '6px 16px', background: '#fff', borderTop: '1px solid #e0e0e0', flexShrink: 0 }}>
+        <span style={{ fontSize: 11, color: '#aaa' }}>
+          {lang === 'fr' ? 'Molette : zoom \u00b7 Clic : explorer \u00b7 Glisser : d\u00e9placer \u00b7 \u00c9chap : fermer' : 'Scroll: zoom \u00b7 Click: explore \u00b7 Drag: move \u00b7 Esc: close'}
+        </span>
       </div>
     </div>
   );
