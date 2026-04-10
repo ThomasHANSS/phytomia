@@ -107,7 +107,7 @@ export default function SpeciesDetail(props) {
           </div>
           <h2 className="detail-sci">{species.sci} <SpeciesLink name={species.sci} lang={lang} /></h2>
           <p className="detail-common">{name(species)} — {species.family || species.order}</p>
-          {rels.length > 0 && (<p style={{ fontSize: 13, color: 'var(--text2)', margin: '8px 0 0' }}>{rels.length} {t.int} · {uS.length} {t.src}</p>)}
+          {rels.length > 0 && (<p style={{ fontSize: 13, color: 'var(--text2)', margin: '8px 0 0' }}>{rels.length} {t.int} · {partners.length} {lang === "fr" ? "espèces" : "species"}{uS.length > 0 ? " · " + uS.join(", ") : ""}</p>)}
         </div>
       </div>
 
