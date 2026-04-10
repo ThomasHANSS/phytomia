@@ -2,12 +2,12 @@
 /* Mobile-first: base = mobile, breakpoints up */
 
 :root {
-  --green: #2d7d46;
-  --gold: #b8860b;
-  --brown: #6d4c2a;
-  --coral: #c0392b;
-  --purple: #7d3c98;
-  --blue: #2874a6;
+  --green: #10b981;
+  --gold: #f59e0b;
+  --brown: #92400e;
+  --coral: #f43f5e;
+  --purple: #a855f7;
+  --blue: #0ea5e9;
   --bg: var(--color-background-primary, #fff);
   --bg2: var(--color-background-secondary, #f7f7f5);
   --bg3: var(--color-background-tertiary, #f0efe9);

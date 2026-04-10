@@ -7,12 +7,12 @@
  */
 
 export var FAMILIES = {
-  mutualisme:   { color: '#2d7d46', fr: 'Pollinisateurs & hôtes',  en: 'Pollinators & hosts' },
-  phyto_fol:    { color: '#b8860b', fr: 'Mangeurs de feuilles',    en: 'Leaf feeders' },
-  phyto_struct: { color: '#6d4c2a', fr: 'Mangeurs de bois',       en: 'Wood feeders' },
-  phyto_repro:  { color: '#c0392b', fr: 'Mangeurs de fruits/fleurs', en: 'Fruit/flower feeders' },
-  suceur:       { color: '#7d3c98', fr: 'Suceurs de sève',         en: 'Sap feeders' },
-  auxiliaire:   { color: '#2874a6', fr: 'Prédateurs & parasitoïdes', en: 'Predators & parasitoids' },
+  mutualisme:   { color: '#10b981', fr: 'Pollinisateurs & hôtes',  en: 'Pollinators & hosts' },
+  phyto_fol:    { color: '#eab308', fr: 'Mangeurs de feuilles',    en: 'Leaf feeders' },
+  phyto_struct: { color: '#92400e', fr: 'Mangeurs de bois',       en: 'Wood feeders' },
+  phyto_repro:  { color: '#f43f5e', fr: 'Mangeurs de fruits/fleurs', en: 'Fruit/flower feeders' },
+  suceur:       { color: '#a855f7', fr: 'Suceurs de sève',         en: 'Sap feeders' },
+  auxiliaire:   { color: '#0ea5e9', fr: 'Prédateurs & parasitoïdes', en: 'Predators & parasitoids' },
 };
 
 export var TYPES = {
@@ -41,9 +41,9 @@ export var FILTER_GROUPS = [
 ];
 
 export var STATUS_COLORS = {
-  native: '#2d7d46',
-  archaeophyte: '#7d6608',
-  neophyte: '#c0392b',
+  native: '#10b981',
+  archaeophyte: '#ca8a04',
+  neophyte: '#f43f5e',
   horticultural: '#8e44ad',
   cultivated: '#2874a6',
 };
@@ -55,18 +55,18 @@ export var THREAT_CATS = {
   EX:  { color: '#000000', fr: 'Éteint',              en: 'Extinct',              icon: '✝' },
   EW:  { color: '#3d1466', fr: 'Éteint à l\'état sauvage', en: 'Extinct in the Wild', icon: '✝' },
   RE:  { color: '#5a189a', fr: 'Rég. éteint',         en: 'Regionally Extinct',   icon: '✝' },
-  CR:  { color: '#cc3333', fr: 'En danger critique',   en: 'Critically Endangered',icon: '!!' },
+  CR:  { color: '#ef4444', fr: 'En danger critique',   en: 'Critically Endangered',icon: '!!' },
   EN:  { color: '#e06000', fr: 'En danger',            en: 'Endangered',           icon: '!' },
   VU:  { color: '#cc9900', fr: 'Vulnérable',           en: 'Vulnerable',           icon: '▲' },
-  NT:  { color: '#6b8e23', fr: 'Quasi menacé',         en: 'Near Threatened',      icon: '~' },
-  LC:  { color: '#2d7d46', fr: 'Préoccupation mineure',en: 'Least Concern',        icon: '✓' },
+  NT:  { color: '#84cc16', fr: 'Quasi menacé',         en: 'Near Threatened',      icon: '~' },
+  LC:  { color: '#10b981', fr: 'Préoccupation mineure',en: 'Least Concern',        icon: '✓' },
   DD:  { color: '#888888', fr: 'Données insuffisantes',en: 'Data Deficient',       icon: '?' },
 };
 
 export var THREATENED_CATS = ['CR', 'EN', 'VU'];
 
 export var THREAT_FILTER_OPTIONS = [
-  { key: 'threatened', fr: 'Menacées (CR/EN/VU)', en: 'Threatened (CR/EN/VU)', color: '#cc3333' },
+  { key: 'threatened', fr: 'Menacées (CR/EN/VU)', en: 'Threatened (CR/EN/VU)', color: '#ef4444' },
   { key: 'NT',         fr: 'Quasi menacées',      en: 'Near Threatened',       color: '#6b8e23' },
-  { key: 'LC',         fr: 'Non menacées',         en: 'Least Concern',         color: '#2d7d46' },
+  { key: 'LC',         fr: 'Non menacées',         en: 'Least Concern',         color: '#10b981' },
 ];

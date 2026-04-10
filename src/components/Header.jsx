@@ -6,8 +6,8 @@ export default function Header(props) {
     <div className="header">
       <div className="header-logo" onClick={onLogoClick}>
         <h1 className="header-title">
-          <span style={{ color: '#2d7d46' }}>Phyto</span>
-          <span style={{ color: '#b8860b' }}>mia</span>
+          <span style={{ color: '#10b981' }}>Phyto</span>
+          <span style={{ color: '#f59e0b' }}>mia</span>
         </h1>
         <p className="header-sub">{SUB[lang]}</p>
       </div>

@@ -59,7 +59,7 @@ function DefaultPlantIcon(p) {
   return (<g><line x1="20" y1="18" x2="20" y2="40" stroke={p.c} strokeWidth="1.8" opacity="0.5" strokeLinecap="round"/><path d="M20 18Q10 18 8 12Q6 6 12 4Q16 2 20 6Q24 2 28 4Q34 6 32 12Q30 18 20 18z" fill={p.c} opacity="0.6"/></g>);
 }
 
-var COLORS = { tree: "#2d7d46", shrub: "#4a8c3f", climber: "#3a7d44", herb: "#6b8e23", grass: "#8fae5e", default_plant: "#2d7d46", Hymenoptera: "#b8860b", Lepidoptera: "#e67e22", Coleoptera: "#c0392b", Diptera: "#7d3c98", Hemiptera: "#6b4c80", default_insect: "#b8860b" };
+var COLORS = { tree: "#10b981", shrub: "#4a8c3f", climber: "#3a7d44", herb: "#84cc16", grass: "#8fae5e", default_plant: "#10b981", Hymenoptera: "#f59e0b", Lepidoptera: "#fb923c", Coleoptera: "#f43f5e", Diptera: "#a855f7", Hemiptera: "#6b4c80", default_insect: "#f59e0b" };
 
 var ICON_COMPONENTS = { tree: TreeIcon, shrub: ShrubIcon, climber: ClimberIcon, herb: HerbIcon, grass: GrassIcon, default_plant: DefaultPlantIcon, Hymenoptera: HymenopteraIcon, Lepidoptera: LepidopteraIcon, Coleoptera: ColeopteraIcon, Diptera: DipteraIcon, Hemiptera: HemipteraIcon, default_insect: DefaultInsectIcon };
 

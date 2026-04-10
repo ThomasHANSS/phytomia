@@ -69,8 +69,8 @@ export default function App() {
     return (
       <div className="app" style={{ textAlign: 'center', paddingTop: 80 }}>
         <h1 style={{ fontSize: 28, fontWeight: 700 }}>
-          <span style={{ color: '#2d7d46' }}>Phyto</span>
-          <span style={{ color: '#b8860b' }}>mia</span>
+          <span style={{ color: '#10b981' }}>Phyto</span>
+          <span style={{ color: '#f59e0b' }}>mia</span>
         </h1>
         <p style={{ color: '#888', marginTop: 12 }}>Chargement des données…</p>
       </div>
@@ -81,10 +81,10 @@ export default function App() {
     return (
       <div className="app" style={{ textAlign: 'center', paddingTop: 80 }}>
         <h1 style={{ fontSize: 28, fontWeight: 700 }}>
-          <span style={{ color: '#2d7d46' }}>Phyto</span>
-          <span style={{ color: '#b8860b' }}>mia</span>
+          <span style={{ color: '#10b981' }}>Phyto</span>
+          <span style={{ color: '#f59e0b' }}>mia</span>
         </h1>
-        <p style={{ color: '#c0392b', marginTop: 12 }}>Erreur : {data.error}</p>
+        <p style={{ color: '#f43f5e', marginTop: 12 }}>Erreur : {data.error}</p>
       </div>
     );
   }

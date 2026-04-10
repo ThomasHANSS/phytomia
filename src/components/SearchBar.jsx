@@ -74,7 +74,7 @@ export default function SearchBar(props) {
           {sg.length === 0 && q.length >= 2 && (<div style={{ padding: 16, fontSize: 14, color: 'var(--text2)' }}>{t.noR}</div>)}
           {sg.map(function (s, idx) {
             var isH = idx === hi;
-            var tyC = s.isPlant ? '#2d7d46' : '#b8860b';
+            var tyC = s.isPlant ? '#10b981' : '#f59e0b';
             return (
               <div key={s.item.id} onClick={function () { go(s.item.id); }}
                 onMouseEnter={function () { sHi(idx); }}

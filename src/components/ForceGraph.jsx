@@ -12,11 +12,11 @@ Object.keys(TYPES).forEach(function (k) {
 });
 
 var ORDER_COLORS = {
-  Lepidoptera: '#8b5cf6', Hymenoptera: '#d4a017', Diptera: '#5a9e3f',
-  Coleoptera: '#b87333', Hemiptera: '#3a8fc2', Thysanoptera: '#999',
-  Trichoptera: '#5f9ea0', Orthoptera: '#d35f5f', Neuroptera: '#2ecc71'
+  Lepidoptera: '#8b5cf6', Hymenoptera: '#f59e0b', Diptera: '#22c55e',
+  Coleoptera: '#ea580c', Hemiptera: '#06b6d4', Thysanoptera: '#999',
+  Trichoptera: '#14b8a6', Orthoptera: '#f43f5e', Neuroptera: '#34d399'
 };
-var GF_COLORS = { tree: '#2d7d46', shrub: '#4a8c3f', climber: '#3a7d44', herb: '#7da832', grass: '#a4bf6a' };
+var GF_COLORS = { tree: '#10b981', shrub: '#22c55e', climber: '#14b8a6', herb: '#84cc16', grass: '#a3e635' };
 
 function hexToRgb(hex) {
   hex = hex.replace('#', '');
@@ -299,10 +299,10 @@ export default function ForceGraph(props) {
         ctx.arc(x, y, r, 0, Math.PI * 2);
         var baseColor;
         if (n.isCenter) {
-          baseColor = n.isPlant ? '#2d7d46' : '#b8860b';
-        } else if (n.threat === 'CR') { baseColor = '#cc3333'; }
-        else if (n.threat === 'EN') { baseColor = '#e74c3c'; }
-        else if (n.threat === 'VU') { baseColor = '#e67e22'; }
+          baseColor = n.isPlant ? '#10b981' : '#f59e0b';
+        } else if (n.threat === 'CR') { baseColor = '#ef4444'; }
+        else if (n.threat === 'EN') { baseColor = '#f87171'; }
+        else if (n.threat === 'VU') { baseColor = '#fb923c'; }
         else { baseColor = n.entityColor || '#88888860'; }
 
         // Gradient fill
@@ -464,7 +464,7 @@ export default function ForceGraph(props) {
     <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 1000, display: 'flex', flexDirection: 'column', background: '#f0f2f5', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 16px', background: '#fff', borderBottom: '1px solid #e0e0e0', flexShrink: 0, gap: 12 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0, overflow: 'hidden' }}>
-          <span style={{ width: 14, height: 14, borderRadius: 7, background: isPlant ? '#2d7d46' : '#b8860b', flexShrink: 0 }} />
+          <span style={{ width: 14, height: 14, borderRadius: 7, background: isPlant ? '#10b981' : '#f59e0b', flexShrink: 0 }} />
           <span style={{ fontSize: 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{species.sci}</span>
           {cn && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
           {history.length > 0 && (
@@ -537,7 +537,7 @@ export default function ForceGraph(props) {
                 style={{ fontSize: 12, padding: '6px 10px', borderRadius: 6, cursor: 'pointer', textAlign: 'left', display: 'flex', alignItems: 'center', gap: 6,
                   border: filters.threatened ? '1.5px solid #cc3333' : '1.5px solid #eee',
                   background: filters.threatened ? '#cc333308' : '#fafafa',
-                  color: filters.threatened ? '#cc3333' : '#666', fontWeight: filters.threatened ? 600 : 400 }}>
+                  color: filters.threatened ? '#ef4444' : '#666', fontWeight: filters.threatened ? 600 : 400 }}>
                 <span>⚠</span><span style={{ flex: 1 }}>{tt.threatened}</span>
               </button>
               {hasAnyFilter && (
@@ -557,11 +557,11 @@ export default function ForceGraph(props) {
                 <div style={{ marginTop: 10, fontSize: 11 }}>
                   <div style={{ fontWeight: 600, color: '#555', marginBottom: 5 }}>{tt.nodes}</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 3, marginBottom: 10 }}>
-                    <span><span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 5, background: isPlant ? '#2d7d46' : '#b8860b', border: '2px solid #fff', boxShadow: '0 0 2px rgba(0,0,0,0.2)', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Centre' : 'Center'}</span>
+                    <span><span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 5, background: isPlant ? '#10b981' : '#f59e0b', border: '2px solid #fff', boxShadow: '0 0 2px rgba(0,0,0,0.2)', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Centre' : 'Center'}</span>
                     {Object.keys(filterOptions.entities).sort(function (a, b) { return filterOptions.entities[b] - filterOptions.entities[a]; }).slice(0, 6).map(function (k) {
                       return (<span key={k}><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: (entityColors[k] || '#888') + '90', marginRight: 6, verticalAlign: 'middle' }} />{entityLabels[k] || k}</span>);
                     })}
-                    <span><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: '#cc3333', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Menacé' : 'Threatened'}</span>
+                    <span><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 4, background: '#ef4444', marginRight: 6, verticalAlign: 'middle' }} />{lang === 'fr' ? 'Menacé' : 'Threatened'}</span>
                   </div>
                   <div style={{ fontWeight: 600, color: '#555', marginBottom: 5 }}>{tt.linksL}</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -601,9 +601,9 @@ export default function ForceGraph(props) {
               {tooltip.growthForm && !tooltip.order && (<div style={{ fontSize: 10, color: GF_COLORS[tooltip.growthForm] || '#888', fontWeight: 500, marginTop: 2 }}>{GF_LABELS[tooltip.growthForm] || tooltip.growthForm}</div>)}
               <div style={{ fontSize: 12, color: '#666', marginTop: 4 }}>
                 {tooltip.count} interactions
-                {tooltip.threat && (<span style={{ marginLeft: 6, fontSize: 10, fontWeight: 600, padding: '2px 6px', borderRadius: 4, background: '#cc333310', color: '#cc3333' }}>{tooltip.threat}</span>)}
+                {tooltip.threat && (<span style={{ marginLeft: 6, fontSize: 10, fontWeight: 600, padding: '2px 6px', borderRadius: 4, background: '#cc333310', color: '#ef4444' }}>{tooltip.threat}</span>)}
               </div>
-              <div style={{ fontSize: 10, color: tooltip.isPlant ? '#2d7d46' : '#b8860b', marginTop: 5, fontWeight: 600 }}>{tt.click} →</div>
+              <div style={{ fontSize: 10, color: tooltip.isPlant ? '#10b981' : '#f59e0b', marginTop: 5, fontWeight: 600 }}>{tt.click} →</div>
             </div>
           )}
         </div>

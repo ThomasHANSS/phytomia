@@ -56,19 +56,19 @@ export default function SpeciesDetail(props) {
     });
     Object.values(grouped).forEach(function (g) { g.items.sort(function (a, b) { return b.obs - a.obs; }); });
 
-    var tc = { CR: "#cc3333", EN: "#e67e22", VU: "#f39c12", NT: "#6b8e23", LC: "#27ae60", DD: "#999" };
+    var tc = { CR: "#ef4444", EN: "#fb923c", VU: "#f39c12", NT: "#84cc16", LC: "#27ae60", DD: "#999" };
     var tl = lang === "fr" ? { CR: "En danger critique", EN: "En danger", VU: "Vuln\u00e9rable", NT: "Quasi menac\u00e9", LC: "Pr\u00e9occupation mineure", DD: "Donn\u00e9es insuffisantes" } : { CR: "Critically Endangered", EN: "Endangered", VU: "Vulnerable", NT: "Near Threatened", LC: "Least Concern", DD: "Data Deficient" };
     var gfL = { tree: lang === "fr" ? "Arbre" : "Tree", shrub: lang === "fr" ? "Arbuste" : "Shrub", climber: lang === "fr" ? "Grimpante" : "Climber", herb: lang === "fr" ? "Herbac\u00e9e" : "Herb", grass: lang === "fr" ? "Gramin\u00e9e" : "Grass" };
 
     var cn = species.common ? species.common[lang] || "" : "";
     var h = "<!DOCTYPE html><html><head><meta charset='utf-8'><title>" + species.sci + " \u2014 Phytomia</title>";
-    h += "<style>body{font-family:Georgia,serif;margin:40px;color:#1a1a1a;max-width:800px}h1{font-size:22px;color:#2d7d46;margin:0 0 4px}h1 em{font-weight:normal}.sub{font-size:14px;color:#666;margin:0 0 16px}.meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;padding:12px 16px;background:#f8f8f8;border-radius:8px;font-size:13px}.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}.sec{margin:24px 0 8px;padding:8px 0 4px;border-bottom:2px solid;font-size:16px;font-weight:600}table{width:100%;border-collapse:collapse;margin:8px 0 16px;font-size:12px}th{text-align:left;padding:6px 8px;background:#f5f5f5;border-bottom:1px solid #ddd;font-size:11px;color:#666}td{padding:5px 8px;border-bottom:1px solid #eee}td em{font-weight:500}.foot{margin-top:30px;padding-top:12px;border-top:1px solid #ddd;font-size:10px;color:#999}@media print{body{margin:20px}}</style></head><body>";
+    h += "<style>body{font-family:Georgia,serif;margin:40px;color:#1a1a1a;max-width:800px}h1{font-size:22px;color:#10b981;margin:0 0 4px}h1 em{font-weight:normal}.sub{font-size:14px;color:#666;margin:0 0 16px}.meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;padding:12px 16px;background:#f8f8f8;border-radius:8px;font-size:13px}.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}.sec{margin:24px 0 8px;padding:8px 0 4px;border-bottom:2px solid;font-size:16px;font-weight:600}table{width:100%;border-collapse:collapse;margin:8px 0 16px;font-size:12px}th{text-align:left;padding:6px 8px;background:#f5f5f5;border-bottom:1px solid #ddd;font-size:11px;color:#666}td{padding:5px 8px;border-bottom:1px solid #eee}td em{font-weight:500}.foot{margin-top:30px;padding-top:12px;border-top:1px solid #ddd;font-size:10px;color:#999}@media print{body{margin:20px}}</style></head><body>";
     h += "<h1><em>" + species.sci + "</em></h1>";
     h += "<p class='sub'>" + cn + (species.family ? " \u2014 " + species.family : "") + (species.order ? " (" + species.order + ")" : "") + "</p>";
     h += "<div class='meta'>";
     h += "<span>" + (isPlant ? t.plant : t.insect) + "</span>";
     if (species.threat) { var c1 = tc[species.threat] || "#999"; h += " <span class='badge' style='background:" + c1 + "20;color:" + c1 + "'>" + species.threat + " \u2014 " + (tl[species.threat] || "") + "</span>"; }
-    if (species.growthForm && isPlant) h += " <span class='badge' style='background:#2d7d4615;color:#2d7d46'>" + (gfL[species.growthForm] || species.growthForm) + "</span>";
+    if (species.growthForm && isPlant) h += " <span class='badge' style='background:#10b98115;color:#10b981'>" + (gfL[species.growthForm] || species.growthForm) + "</span>";
     if (species.region) h += " <span class='badge' style='background:#88888815;color:#888'>" + (species.region === "non-native" ? (lang === "fr" ? "Non-indig\u00e8ne" : "Non-native") : "Extra-EU") + "</span>";
     h += "<span>" + rels.length + " " + t.int + "</span>";
     h += "</div>";
@@ -105,7 +105,7 @@ export default function SpeciesDetail(props) {
         <Thumb name={species.sci} sz={80} item={species} isPlant={isPlant} />
         <div style={{ flex: 1 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 4 }}>
-            <span className="badge-type" style={{ background: (isPlant ? '#2d7d46' : '#b8860b') + '14', color: isPlant ? '#2d7d46' : '#b8860b' }}>{isPlant ? t.plant : t.insect}</span>
+            <span className="badge-type" style={{ background: (isPlant ? '#10b981' : '#f59e0b') + '14', color: isPlant ? '#10b981' : '#f59e0b' }}>{isPlant ? t.plant : t.insect}</span>
             {species.status && (<span className="badge" style={{ background: STATUS_COLORS[species.status] + '20', color: STATUS_COLORS[species.status] }}>{t[species.status]}</span>)}
             {species.threat && <ThreatBadge cat={species.threat} lang={lang} size="lg" />}
             {species.region && (<span className="badge" style={{ background: '#88888815', color: '#888' }}>{species.region === "non-native" ? (lang === "fr" ? "Non-indigène" : "Non-native") : (lang === "fr" ? "Extra-européen" : "Extra-European")}</span>)}
@@ -128,7 +128,7 @@ export default function SpeciesDetail(props) {
           <button onClick={exportPDF} style={{ fontSize: 11, padding: "5px 10px", color: "#555", background: "#55555508", border: "1px solid #55555525", borderRadius: 6, cursor: "pointer", display: "flex", alignItems: "center", gap: 4 }}><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>PDF</button>
         <div className="view-toggle">
           <button className={dv === 'graph' ? 'active' : ''} onClick={function () { sDv('graph'); }}>{t.graph}</button>
-          <button onClick={function () { setShowForce(true); }} style={{ background: '#2d7d4612', color: '#2d7d46', border: '1px solid #2d7d4630', fontWeight: 500 }}>{lang === 'fr' ? '⬡ Réseau' : '⬡ Network'}</button>
+          <button onClick={function () { setShowForce(true); }} style={{ background: '#10b98112', color: '#10b981', border: '1px solid #10b98130', fontWeight: 500 }}>{lang === 'fr' ? '⬡ Réseau' : '⬡ Network'}</button>
           <button className={dv === 'list' ? 'active' : ''} onClick={function () { sDv('list'); }}>{t.list}</button>
         </div>
         </div>

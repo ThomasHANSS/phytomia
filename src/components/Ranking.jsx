@@ -68,7 +68,7 @@ export default function Ranking(props) {
     var opts = [];
     // Growth form filters
     var GF_LABELS = { tree: { fr: "Arbres", en: "Trees" }, shrub: { fr: "Arbustes", en: "Shrubs" }, climber: { fr: "Grimpantes", en: "Climbers" }, herb: { fr: "Herbac\u00e9es", en: "Herbs" }, grass: { fr: "Gramin\u00e9es", en: "Grasses" } };
-    var GF_COLORS = { tree: "#2d7d46", shrub: "#4a8c3f", climber: "#3a7d44", herb: "#6b8e23", grass: "#8fae5e" };
+    var GF_COLORS = { tree: "#10b981", shrub: "#4a8c3f", climber: "#3a7d44", herb: "#84cc16", grass: "#8fae5e" };
     var gf = {}; allP.forEach(function (p) { var g = p.growthForm || "herb"; gf[g] = (gf[g] || 0) + 1; });
     ["tree","shrub","climber","herb","grass"].forEach(function (k) {
       if (gf[k]) opts.push({ key: "gf_" + k, label: (GF_LABELS[k] || {})[lang] || k, count: gf[k], color: GF_COLORS[k] || "#888" });
@@ -76,8 +76,8 @@ export default function Ranking(props) {
     // Threat filters
     var nThreat = allP.filter(function (p) { return isThreatened(p.threat); }).length;
     var nNT = allP.filter(function (p) { return p.threat === "NT"; }).length;
-    if (nThreat > 0) opts.push({ key: "threatened", label: t.threatened, count: nThreat, color: "#cc3333" });
-    if (nNT > 0) opts.push({ key: "NT", label: t.nearThreatened, count: nNT, color: "#6b8e23" });
+    if (nThreat > 0) opts.push({ key: "threatened", label: t.threatened, count: nThreat, color: "#ef4444" });
+    if (nNT > 0) opts.push({ key: "NT", label: t.nearThreatened, count: nNT, color: "#84cc16" });
     return opts;
   }, [allP, t, lang]);
 
@@ -87,14 +87,14 @@ export default function Ranking(props) {
     var s = {}; allI.forEach(function (ins) { if (ins.domFam) s[ins.domFam] = (s[ins.domFam] || 0) + 1; });
     Object.keys(s).forEach(function (k) { var fam = FAMILIES[k]; if (fam) opts.push({ key: k, label: fam[lang] || k, count: s[k], color: fam.color || '#888' }); });
     // Order filters
-    var ORDER_INFO = { Lepidoptera: { fr: 'L\u00e9pidopt\u00e8res', en: 'Lepidoptera', color: '#8b5cf6' }, Hymenoptera: { fr: 'Hym\u00e9nopt\u00e8res', en: 'Hymenoptera', color: '#b8860b' }, Diptera: { fr: 'Dipt\u00e8res', en: 'Diptera', color: '#6b8e23' }, Coleoptera: { fr: 'Col\u00e9opt\u00e8res', en: 'Coleoptera', color: '#a0522d' }, Hemiptera: { fr: 'H\u00e9mipt\u00e8res', en: 'Hemiptera', color: '#2874a6' }, Thysanoptera: { fr: 'Thysanopt\u00e8res', en: 'Thysanoptera', color: '#888' }, Trichoptera: { fr: 'Trichopt\u00e8res', en: 'Trichoptera', color: '#5f9ea0' }, Orthoptera: { fr: 'Orthopt\u00e8res', en: 'Orthoptera', color: '#c0392b' }, Neuroptera: { fr: 'N\u00e9vropt\u00e8res', en: 'Neuroptera', color: '#27ae60' }, Psocoptera: { fr: 'Psocopt\u00e8res', en: 'Psocoptera', color: '#888' }, Siphonaptera: { fr: 'Siphonopt\u00e8res', en: 'Siphonaptera', color: '#888' }, Dermaptera: { fr: 'Dermopt\u00e8res', en: 'Dermaptera', color: '#888' }, Ephemeroptera: { fr: 'Eph\u00e9m\u00e9ropt\u00e8res', en: 'Ephemeroptera', color: '#888' }, Odonata: { fr: 'Odonates', en: 'Odonata', color: '#1abc9c' }, Mecoptera: { fr: 'M\u00e9copt\u00e8res', en: 'Mecoptera', color: '#888' }, Raphidioptera: { fr: 'Raphidiopt\u00e8res', en: 'Raphidioptera', color: '#888' }, Plecoptera: { fr: 'Pl\u00e9copt\u00e8res', en: 'Plecoptera', color: '#888' } };
+    var ORDER_INFO = { Lepidoptera: { fr: 'L\u00e9pidopt\u00e8res', en: 'Lepidoptera', color: '#8b5cf6' }, Hymenoptera: { fr: 'Hym\u00e9nopt\u00e8res', en: 'Hymenoptera', color: '#f59e0b' }, Diptera: { fr: 'Dipt\u00e8res', en: 'Diptera', color: '#84cc16' }, Coleoptera: { fr: 'Col\u00e9opt\u00e8res', en: 'Coleoptera', color: '#a0522d' }, Hemiptera: { fr: 'H\u00e9mipt\u00e8res', en: 'Hemiptera', color: '#0ea5e9' }, Thysanoptera: { fr: 'Thysanopt\u00e8res', en: 'Thysanoptera', color: '#888' }, Trichoptera: { fr: 'Trichopt\u00e8res', en: 'Trichoptera', color: '#5f9ea0' }, Orthoptera: { fr: 'Orthopt\u00e8res', en: 'Orthoptera', color: '#f43f5e' }, Neuroptera: { fr: 'N\u00e9vropt\u00e8res', en: 'Neuroptera', color: '#27ae60' }, Psocoptera: { fr: 'Psocopt\u00e8res', en: 'Psocoptera', color: '#888' }, Siphonaptera: { fr: 'Siphonopt\u00e8res', en: 'Siphonaptera', color: '#888' }, Dermaptera: { fr: 'Dermopt\u00e8res', en: 'Dermaptera', color: '#888' }, Ephemeroptera: { fr: 'Eph\u00e9m\u00e9ropt\u00e8res', en: 'Ephemeroptera', color: '#888' }, Odonata: { fr: 'Odonates', en: 'Odonata', color: '#1abc9c' }, Mecoptera: { fr: 'M\u00e9copt\u00e8res', en: 'Mecoptera', color: '#888' }, Raphidioptera: { fr: 'Raphidiopt\u00e8res', en: 'Raphidioptera', color: '#888' }, Plecoptera: { fr: 'Pl\u00e9copt\u00e8res', en: 'Plecoptera', color: '#888' } };
     var ords = {}; allI.forEach(function (ins) { var o = ins.order || ''; if (o) ords[o] = (ords[o] || 0) + 1; });
     Object.keys(ords).sort(function (a, b) { return ords[b] - ords[a]; }).forEach(function (o) { if (ords[o] >= 10 && ORDER_INFO[o]) { var info = ORDER_INFO[o]; opts.push({ key: 'ord_' + o, label: info[lang] || o, count: ords[o], color: info.color || '#888' }); } });
     // Threat filters
     var nThreat = allI.filter(function (ins) { return isThreatened(ins.threat); }).length;
     var nNT = allI.filter(function (ins) { return ins.threat === 'NT'; }).length;
-    if (nThreat > 0) opts.push({ key: 'threatened', label: t.threatened, count: nThreat, color: '#cc3333' });
-    if (nNT > 0) opts.push({ key: 'NT', label: t.nearThreatened, count: nNT, color: '#6b8e23' });
+    if (nThreat > 0) opts.push({ key: 'threatened', label: t.threatened, count: nThreat, color: '#ef4444' });
+    if (nNT > 0) opts.push({ key: 'NT', label: t.nearThreatened, count: nNT, color: '#84cc16' });
     return opts;
   }, [allI, lang, t]);
 
@@ -145,26 +145,26 @@ export default function Ranking(props) {
     <div>
       <div className="ranking-grid">
         <div className="ranking-col">
-          <div className="ranking-header" style={{ background: '#2d7d4610' }}>
-            <h3 style={{ color: '#2d7d46' }}>{t.plants}</h3>
+          <div className="ranking-header" style={{ background: '#10b98110' }}>
+            <h3 style={{ color: '#10b981' }}>{t.plants}</h3>
           </div>
           <FilterChips current={filtPl} set={sFiltPl} allLabel={t.all} options={plantFilters} />
           <div style={{ padding: '4px 0' }}>
-            {pRanks.slice(0, showPl).map(function (item, i) { return (<RankItem key={item.id} item={item} i={i} col="#2d7d46" mx={maxPC} isP={true} />); })}
+            {pRanks.slice(0, showPl).map(function (item, i) { return (<RankItem key={item.id} item={item} i={i} col="#10b981" mx={maxPC} isP={true} />); })}
             {pRanks.length === 0 && (<div style={{ padding: 16, fontSize: 13, color: 'var(--text2)', textAlign: 'center' }}>{lang === 'fr' ? 'Aucune espèce dans cette catégorie' : 'No species in this category'}</div>)}
           </div>
-          {pRanks.length > showPl && (<div style={{ padding: '6px 14px', borderTop: '1px solid var(--border)', textAlign: 'center' }}><button onClick={function () { sShowPl(showPl + 20); }} style={{ fontSize: 12, fontWeight: 500, color: '#2d7d46', background: 'none', border: 'none', cursor: 'pointer' }}>{t.seeMore} ({showPl}/{pRanks.length}) ↓</button></div>)}
+          {pRanks.length > showPl && (<div style={{ padding: '6px 14px', borderTop: '1px solid var(--border)', textAlign: 'center' }}><button onClick={function () { sShowPl(showPl + 20); }} style={{ fontSize: 12, fontWeight: 500, color: '#10b981', background: 'none', border: 'none', cursor: 'pointer' }}>{t.seeMore} ({showPl}/{pRanks.length}) ↓</button></div>)}
         </div>
         <div className="ranking-col">
-          <div className="ranking-header" style={{ background: '#b8860b10' }}>
-            <h3 style={{ color: '#b8860b' }}>{t.insects}</h3>
+          <div className="ranking-header" style={{ background: '#f59e0b10' }}>
+            <h3 style={{ color: '#f59e0b' }}>{t.insects}</h3>
           </div>
           <FilterChips current={filtIn} set={sFiltIn} allLabel={t.allM} options={insectFilters} />
           <div style={{ padding: '4px 0' }}>
-            {iRanks.slice(0, showIn).map(function (item, i) { return (<RankItem key={item.id} item={item} i={i} col="#b8860b" mx={maxIC} isP={false} showRole={filtIn !== 'all' && filtIn !== 'threatened' && filtIn !== 'NT'} />); })}
+            {iRanks.slice(0, showIn).map(function (item, i) { return (<RankItem key={item.id} item={item} i={i} col="#f59e0b" mx={maxIC} isP={false} showRole={filtIn !== 'all' && filtIn !== 'threatened' && filtIn !== 'NT'} />); })}
             {iRanks.length === 0 && (<div style={{ padding: 16, fontSize: 13, color: 'var(--text2)', textAlign: 'center' }}>{lang === 'fr' ? 'Aucune espèce dans cette catégorie' : 'No species in this category'}</div>)}
           </div>
-          {iRanks.length > showIn && (<div style={{ padding: '6px 14px', borderTop: '1px solid var(--border)', textAlign: 'center' }}><button onClick={function () { sShowIn(showIn + 20); }} style={{ fontSize: 12, fontWeight: 500, color: '#b8860b', background: 'none', border: 'none', cursor: 'pointer' }}>{t.seeMore} ({showIn}/{iRanks.length}) ↓</button></div>)}
+          {iRanks.length > showIn && (<div style={{ padding: '6px 14px', borderTop: '1px solid var(--border)', textAlign: 'center' }}><button onClick={function () { sShowIn(showIn + 20); }} style={{ fontSize: 12, fontWeight: 500, color: '#f59e0b', background: 'none', border: 'none', cursor: 'pointer' }}>{t.seeMore} ({showIn}/{iRanks.length}) ↓</button></div>)}
         </div>
       </div>
       <p style={{ fontSize: 11, color: 'var(--text3)', textAlign: 'center', marginTop: 12, fontStyle: 'italic' }}>{t.note}</p>

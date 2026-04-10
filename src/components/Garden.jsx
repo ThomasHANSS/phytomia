@@ -107,7 +107,7 @@ export default function Garden(props) {
                   <span style={{ flex: 1, fontSize: 13, fontStyle: 'italic', color: 'var(--text)' }}>
                     {p.sci} <span style={{ fontStyle: 'normal', fontSize: 11, color: 'var(--text2)' }}>{name(p)}</span>
                   </span>
-                  <span style={{ fontSize: 16, color: '#2d7d46', fontWeight: 700 }}>+</span>
+                  <span style={{ fontSize: 16, color: '#10b981', fontWeight: 700 }}>+</span>
                 </div>
               );
             })}
@@ -143,7 +143,7 @@ export default function Garden(props) {
       {garden.length >= 2 && gardenData.insects.length > 0 && (
         <div>
           <div className="garden-stats">
-            {[[gardenData.insects.length, t.stats, '#b8860b'], [gardenData.shared.length, t.shared, '#e67e22'], [gardenData.threatened.length, t.threatened_stat, '#cc3333']].map(function (s, i) {
+            {[[gardenData.insects.length, t.stats, '#f59e0b'], [gardenData.shared.length, t.shared, '#fb923c'], [gardenData.threatened.length, t.threatened_stat, '#ef4444']].map(function (s, i) {
               return (
                 <div key={i} className="garden-stat" style={{ background: s[2] + '0a', border: '1px solid ' + s[2] + '22' }}>
                   <div style={{ fontSize: 22, fontWeight: 700, color: s[2] }}>{s[0]}</div>
@@ -167,7 +167,7 @@ export default function Garden(props) {
       {/* Recommendation section */}
       <div style={{ marginTop: 16, borderTop: '1px solid var(--border)', paddingTop: 12 }}>
         <button onClick={function () { setShowReco(!showReco); }}
-          style={{ width: '100%', padding: '10px 14px', fontSize: 13, fontWeight: 600, color: '#cc3333', background: '#cc333308', border: '1px solid #cc333322', borderRadius: 8, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+          style={{ width: '100%', padding: '10px 14px', fontSize: 13, fontWeight: 600, color: '#ef4444', background: '#ef444408', border: '1px solid #ef444422', borderRadius: 8, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
           <span style={{ fontSize: 16 }}>{showReco ? '▲' : '▼'}</span> {t.reco}
         </button>
         {showReco && (
@@ -186,9 +186,9 @@ export default function Garden(props) {
                   {p.threat && <ThreatBadge cat={p.threat} lang={lang} size="sm" />}
                   {!inGarden && (
                     <button onClick={function () { setGarden(garden.concat([p.id])); }}
-                      style={{ fontSize: 11, padding: '3px 8px', color: '#2d7d46', background: '#2d7d4610', border: '1px solid #2d7d4630', borderRadius: 6, cursor: 'pointer' }}>{t.recoAdd}</button>
+                      style={{ fontSize: 11, padding: '3px 8px', color: '#10b981', background: '#10b98110', border: '1px solid #10b98130', borderRadius: 6, cursor: 'pointer' }}>{t.recoAdd}</button>
                   )}
-                  {inGarden && (<span style={{ fontSize: 11, color: '#2d7d46' }}>✓</span>)}
+                  {inGarden && (<span style={{ fontSize: 11, color: '#10b981' }}>✓</span>)}
                 </div>
               );
             })}
