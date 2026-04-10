@@ -127,7 +127,7 @@ export default function Ranking(props) {
           </div>
           <div style={{ marginTop: 2, display: 'flex', alignItems: 'center', gap: 6 }}>
             <div className="rank-bar" style={{ background: col + '22' }}><div className="rank-bar-fill" style={{ background: col, width: Math.max(8, item.count / mx * 100) + '%' }} /></div>
-            <span className="rank-count">{item.count} {lang === "fr" ? "esp." : "sp."}</span>
+            <span className="rank-count">{item.count} {lang === "fr" ? "interactions" : "interactions"}</span>
           </div>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 2, flexShrink: 0 }}>
