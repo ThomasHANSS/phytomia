@@ -41,6 +41,7 @@ export default function ForceGraph(props) {
   var lastMouseRef = useRef(null);
   var [tooltip, setTooltip] = useState(null);
   var [showPanel, setShowPanel] = useState(window.innerWidth > 700);
+  var isMobile = window.innerWidth <= 700;
   var [filters, setFilters] = useState({ entities: {}, types: {}, threatened: false });
   var [showLegend, setShowLegend] = useState(false);
 
@@ -437,6 +438,57 @@ export default function ForceGraph(props) {
     panRef.current.scale = Math.max(0.3, Math.min(3, panRef.current.scale * (e.deltaY > 0 ? 0.92 : 1.08)));
   }, []);
 
+
+  // Touch support for mobile
+  var touchRef = useRef({ start: null, startDist: null, startScale: null });
+  
+  var onTouchStart = useCallback(function (e) {
+    if (e.touches.length === 1) {
+      var t = e.touches[0];
+      var rect = canvasRef.current.getBoundingClientRect();
+      var n = getNodeAt(t.clientX - rect.left, t.clientY - rect.top);
+      if (n) { dragRef.current = n; }
+      touchRef.current.start = { x: t.clientX, y: t.clientY, time: Date.now() };
+    } else if (e.touches.length === 2) {
+      var dx = e.touches[0].clientX - e.touches[1].clientX;
+      var dy = e.touches[0].clientY - e.touches[1].clientY;
+      touchRef.current.startDist = Math.sqrt(dx * dx + dy * dy);
+      touchRef.current.startScale = panRef.current.scale;
+    }
+  }, [getNodeAt]);
+
+  var onTouchMove = useCallback(function (e) {
+    e.preventDefault();
+    if (e.touches.length === 1 && dragRef.current) {
+      var t = e.touches[0];
+      var prev = touchRef.current.start;
+      if (prev) {
+        dragRef.current.x += (t.clientX - prev.x) / panRef.current.scale;
+        dragRef.current.y += (t.clientY - prev.y) / panRef.current.scale;
+        dragRef.current.vx = 0; dragRef.current.vy = 0;
+        touchRef.current.start = { x: t.clientX, y: t.clientY, time: touchRef.current.start.time };
+      }
+    } else if (e.touches.length === 2 && touchRef.current.startDist) {
+      var dx = e.touches[0].clientX - e.touches[1].clientX;
+      var dy = e.touches[0].clientY - e.touches[1].clientY;
+      var dist = Math.sqrt(dx * dx + dy * dy);
+      var ratio = dist / touchRef.current.startDist;
+      panRef.current.scale = Math.max(0.2, Math.min(4, touchRef.current.startScale * ratio));
+    }
+  }, []);
+
+  var onTouchEnd = useCallback(function (e) {
+    if (dragRef.current && touchRef.current.start) {
+      var elapsed = Date.now() - touchRef.current.start.time;
+      if (elapsed < 300 && !dragRef.current.isCenter) {
+        onNavigate(dragRef.current.id);
+      }
+    }
+    dragRef.current = null;
+    touchRef.current = { start: null, startDist: null, startScale: null };
+    setTooltip(null);
+  }, [onNavigate]);
+
   function toggleFilter(cat, key) {
     setFilters(function (f) {
       var c = JSON.parse(JSON.stringify(f));
@@ -462,11 +514,11 @@ export default function ForceGraph(props) {
 
                 return (
     <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 1000, display: 'flex', flexDirection: 'column', background: '#f0f2f5', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 16px', background: '#fff', borderBottom: '1px solid #e0e0e0', flexShrink: 0, gap: 12 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0, overflow: 'hidden' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '6px 10px', background: '#fff', borderBottom: '1px solid #e0e0e0', flexShrink: 0, gap: 8, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, minWidth: 0, overflow: 'hidden', flex: 1 }}>
           <span style={{ width: 14, height: 14, borderRadius: 7, background: isPlant ? '#10b981' : '#f59e0b', flexShrink: 0 }} />
-          <span style={{ fontSize: 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{species.sci}</span>
-          {cn && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
+          <span style={{ fontSize: isMobile ? 13 : 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{isMobile ? species.sci.split(' ')[0][0] + '. ' + (species.sci.split(' ')[1] || '') : species.sci}</span>
+          {cn && !isMobile && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
           {history.length > 0 && (
             <div style={{ display: 'flex', alignItems: 'center', gap: 3, fontSize: 12, color: '#888', overflowX: 'auto', maxWidth: 400 }}>
               {history.map(function (hid, idx) {
@@ -484,6 +536,10 @@ export default function ForceGraph(props) {
           <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
         </div>
         <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+          <button onClick={function () { setShowPanel(function(s) { return !s; }); }}
+            style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: showPanel ? '#555' : '#fff', color: showPanel ? '#fff' : '#666' }}>
+            ☰
+          </button>
           <button onClick={function () { panRef.current = { x: 0, y: 0, scale: 1 }; }}
             style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: '#fff', color: '#666' }}>
             {tt.reset}
@@ -496,7 +552,7 @@ export default function ForceGraph(props) {
       </div>
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
         {showPanel && (
-          <div style={{ width: 260, flexShrink: 0, background: '#fff', borderRight: '1px solid #e0e0e0', padding: 14, overflowY: 'auto' }}>
+          <div style={{ width: isMobile ? '100%' : 260, flexShrink: 0, background: '#fff', borderRight: isMobile ? 'none' : '1px solid #e0e0e0', padding: 14, overflowY: 'auto', position: isMobile ? 'absolute' : 'relative', top: 0, left: 0, bottom: 0, zIndex: isMobile ? 10 : 1, boxShadow: isMobile ? '4px 0 12px rgba(0,0,0,0.1)' : 'none' }}>
             <div style={{ marginBottom: 16 }}>
               <div style={{ fontSize: 10, fontWeight: 700, color: '#999', textTransform: 'uppercase', letterSpacing: '0.8px', marginBottom: 8 }}>{tt.entityLabel}</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -583,6 +639,7 @@ export default function ForceGraph(props) {
           <canvas ref={canvasRef}
             onMouseMove={onMouseMove} onMouseDown={onMouseDown} onMouseUp={onMouseUp}
             onMouseLeave={function () { dragRef.current = null; setTooltip(null); hoverRef.current = null; }}
+            onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
             onWheel={onWheel}
             style={{ width: '100%', height: '100%', display: 'block', touchAction: 'none' }}
           />
