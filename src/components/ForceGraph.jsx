@@ -673,7 +673,7 @@ export default function ForceGraph(props) {
       </div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '6px 16px', background: '#fff', borderTop: '1px solid #e0e0e0', flexShrink: 0 }}>
         <span style={{ fontSize: 11, color: '#aaa' }}>
-          {lang === 'fr' ? (isMobile ? 'Toucher : explorer · Pincer : zoom' : 'Molette : zoom · Clic : explorer · Glisser : déplacer · Échap : fermer') : (isMobile ? 'Tap: explore · Pinch: zoom' : 'Scroll: zoom · Click: explore · Drag: move · Esc: close')
+          {lang === 'fr' ? (isMobile ? 'Toucher : explorer · Pincer : zoom' : 'Molette : zoom · Clic : explorer · Glisser : déplacer · Échap : fermer') : (isMobile ? 'Tap: explore · Pinch: zoom' : 'Scroll: zoom · Click: explore · Drag: move · Esc: close')}
         </span>
       </div>
     </div>
