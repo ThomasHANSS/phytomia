@@ -489,6 +489,7 @@ export default function ForceGraph(props) {
     setTooltip(null);
   }, [onNavigate]);
 
+  function closeOnMobile() { if (isMobile) setShowPanel(false); }
   function toggleFilter(cat, key) {
     setFilters(function (f) {
       var c = JSON.parse(JSON.stringify(f));
@@ -496,6 +497,7 @@ export default function ForceGraph(props) {
       else c[cat][key] = !c[cat][key];
       return c;
     });
+    closeOnMobile();
   }
   function resetFilters() { setFilters({ entities: {}, types: {}, threatened: false }); }
 
@@ -520,7 +522,7 @@ export default function ForceGraph(props) {
           <span style={{ fontSize: isMobile ? 13 : 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{isMobile ? species.sci.split(' ')[0][0] + '. ' + (species.sci.split(' ')[1] || '') : species.sci}</span>
           {cn && !isMobile && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
           {history.length > 0 && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 3, fontSize: 12, color: '#888', overflowX: 'auto', maxWidth: 400 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 3, fontSize: isMobile ? 10 : 12, color: '#888', overflowX: 'auto', maxWidth: isMobile ? 180 : 400, flexShrink: 1 }}>
               {history.map(function (hid, idx) {
                 var sp = allSpecies.find(function (s) { return s.id === hid; });
                 if (!sp) return null;
@@ -533,7 +535,7 @@ export default function ForceGraph(props) {
               <span style={{ fontStyle: 'italic', fontWeight: 600, color: '#555', whiteSpace: 'nowrap' }}>{species.sci.split(' ')[0][0] + '. ' + (species.sci.split(' ')[1] || '')}</span>
             </div>
           )}
-          <span style={{ fontSize: 12, color: '#888' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
+          <span style={{ fontSize: isMobile ? 10 : 12, color: '#888', whiteSpace: 'nowrap' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
         </div>
         <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
           <button onClick={function () { setShowPanel(function(s) { return !s; }); }}
@@ -552,7 +554,11 @@ export default function ForceGraph(props) {
       </div>
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
         {showPanel && (
-          <div style={{ width: isMobile ? '100%' : 260, flexShrink: 0, background: '#fff', borderRight: isMobile ? 'none' : '1px solid #e0e0e0', padding: 14, overflowY: 'auto', position: isMobile ? 'absolute' : 'relative', top: 0, left: 0, bottom: 0, zIndex: isMobile ? 10 : 1, boxShadow: isMobile ? '4px 0 12px rgba(0,0,0,0.1)' : 'none' }}>
+          <div style={{ width: isMobile ? '85%' : 260, maxWidth: isMobile ? 300 : 260, flexShrink: 0, background: '#fff', borderRight: isMobile ? 'none' : '1px solid #e0e0e0', padding: 14, overflowY: 'auto', position: isMobile ? 'absolute' : 'relative', top: 0, left: 0, bottom: 0, zIndex: isMobile ? 10 : 1, boxShadow: isMobile ? '4px 0 12px rgba(0,0,0,0.1)' : 'none' }}>
+            {isMobile && <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, paddingBottom: 8, borderBottom: '1px solid #eee' }}>
+              <span style={{ fontSize: 13, fontWeight: 600, color: '#333' }}>{tt.panel || 'Filtres'}</span>
+              <button onClick={function () { setShowPanel(false); }} style={{ fontSize: 16, padding: '2px 8px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 4, background: '#fff', color: '#999', fontWeight: 700 }}>✕</button>
+            </div>}
             <div style={{ marginBottom: 16 }}>
               <div style={{ fontSize: 10, fontWeight: 700, color: '#999', textTransform: 'uppercase', letterSpacing: '0.8px', marginBottom: 8 }}>{tt.entityLabel}</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -667,7 +673,7 @@ export default function ForceGraph(props) {
       </div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '6px 16px', background: '#fff', borderTop: '1px solid #e0e0e0', flexShrink: 0 }}>
         <span style={{ fontSize: 11, color: '#aaa' }}>
-          {lang === 'fr' ? 'Molette : zoom · Clic : explorer · Glisser : déplacer · Échap : fermer' : 'Scroll: zoom · Click: explore · Drag: move · Esc: close'}
+          {lang === 'fr' ? (isMobile ? 'Toucher : explorer · Pincer : zoom' : 'Molette : zoom · Clic : explorer · Glisser : déplacer · Échap : fermer') : (isMobile ? 'Tap: explore · Pinch: zoom' : 'Scroll: zoom · Click: explore · Drag: move · Esc: close')
         </span>
       </div>
     </div>
