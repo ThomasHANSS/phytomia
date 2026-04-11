@@ -46,6 +46,8 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 **Bilingue** — Interface français / anglais, commutable en un clic.
 
+**Graphe réseau interactif** — Vue plein écran avec simulation de forces : nœuds déplaçables, zoom molette/pinch, liens courbes par type d'interaction, filtres par ordre taxonomique et type d'interaction, légende, navigation entre espèces par clic. Support mobile tactile.
+
 **Export graphe** — Export du graphe jardin en PNG haute résolution (×2) ou SVG vectoriel.
 
 **Planter pour les menacées** — Recommandation des plantes soutenant le plus d'espèces menacées (CR/EN/VU) dans le mode Jardin.
