@@ -48,6 +48,7 @@ export default function Ranking(props) {
     if (filtPl === 'all') return allP;
     if (filtPl === 'threatened') return allP.filter(function (p) { return isThreatened(p.threat); });
     if (filtPl === 'NT') return allP.filter(function (p) { return p.threat === 'NT'; });
+    if (filtPl === 'rhs') return allP.filter(function (p) { return p.rhs; });
     if (filtPl.indexOf('gf_') === 0) { var gfKey = filtPl.slice(3); return allP.filter(function (p) { return (p.growthForm || 'herb') === gfKey; }); }
     return allP.filter(function (p) { return p.status === filtPl; });
   }, [filtPl, allP]);
@@ -73,6 +74,9 @@ export default function Ranking(props) {
     ["tree","shrub","climber","herb","grass"].forEach(function (k) {
       if (gf[k]) opts.push({ key: "gf_" + k, label: (GF_LABELS[k] || {})[lang] || k, count: gf[k], color: GF_COLORS[k] || "#888" });
     });
+    // RHS Pollinators filter
+    var nRhs = allP.filter(function (p) { return p.rhs; }).length;
+    if (nRhs > 0) opts.push({ key: 'rhs', label: lang === 'fr' ? 'Plantes pour pollinisateurs (RHS)' : 'Plants for Pollinators (RHS)', count: nRhs, color: '#10b981' });
     // Threat filters
     var nThreat = allP.filter(function (p) { return isThreatened(p.threat); }).length;
     var nNT = allP.filter(function (p) { return p.threat === "NT"; }).length;

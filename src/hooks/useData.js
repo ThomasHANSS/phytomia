@@ -6,7 +6,7 @@ function expandPlant(p) {
   return {
     id: p.id, sci: p.sci, n_interactions: p.n || 0,
     family: p.f || '', order: p.o || '', genus: p.sci.split(' ')[0] || '',
-    threat: p.t || '', growthForm: p.gf || 'herb', region: p.r || '', status: p.st || '',
+    threat: p.t || '', growthForm: p.gf || 'herb', region: p.r || '', status: p.st || '', rhs: p.rhs || 0,
     common: { fr: p.cfr || '', en: p.cen || '' },
   };
 }
