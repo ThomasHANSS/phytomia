@@ -147,6 +147,22 @@
       ],
       "geo_scope": "mondial",
       "citation": "Fortuna et al. Web of Life ecological networks database."
+    },
+    {
+      "id": "redhead_ukceh",
+      "name": "UKCEH Plant-Pollinator Networks",
+      "ref": "Redhead et al. (2018)",
+      "url": "https://doi.org/10.5285/6d8d5cb5-bd54-4da7-903a-15bd4bbd531b",
+      "license": "OGL",
+      "records": 9208
+    },
+    {
+      "id": "croppol",
+      "name": "CropPol",
+      "ref": "Allen-Perkins et al. (2022)",
+      "url": "https://github.com/ibartomeus/OBservData",
+      "license": "CC BY-NC-SA",
+      "records": 624
     }
   ],
   "interaction_type_mapping": {
