@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de treize bases scientifiques en accès libre, couvrant 270 496 interactions entre 17 168 espèces végétales et 27 494 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de treize bases scientifiques en accès libre, couvrant 270496 interactions entre 17168 espèces végétales et 27494 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
