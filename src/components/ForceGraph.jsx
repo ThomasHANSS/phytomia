@@ -52,7 +52,6 @@ export default function ForceGraph(props) {
       fetchPhoto(sp.sci, function(data) {
         if (data && data.photo) {
           var img = new Image();
-          img.crossOrigin = 'anonymous';
           img.onload = function() { imgCacheRef.current[sp.sci] = img; };
           img.onerror = function() { imgCacheRef.current[sp.sci] = 'error'; };
           img.src = data.photo.sq;
@@ -343,7 +342,7 @@ export default function ForceGraph(props) {
         var nodeImg = imgCacheRef.current[n.sci];
         if (nodeImg && nodeImg instanceof Image) {
           ctx.save(); ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.clip();
-          ctx.drawImage(nodeImg, x - r, y - r, r * 2, r * 2);
+          try { ctx.drawImage(nodeImg, x - r, y - r, r * 2, r * 2); } catch(e) { /* tainted */ }
           ctx.restore();
         } else {
           ctx.fillStyle = grad; ctx.fill();
