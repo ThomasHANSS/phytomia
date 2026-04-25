@@ -111,52 +111,38 @@ export function fetchPhoto(sci, cb) {
 }
 
 function _doFetch(sci) {
-  function resolve(info) {
-    _photoCache[sci] = info;
+  function done(info) {
+    _photoCache[sci] = info || { photo: null, inatId: null };
     var cbs = _pendingFetches[sci] || [];
     delete _pendingFetches[sci];
-    cbs.forEach(function(c) { c(info); });
+    cbs.forEach(function(c) { c(_photoCache[sci]); });
   }
-  function tryWiki() {
-    fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(sci.replace(/ /g, '_')))
-      .then(function(r) { if (!r.ok) throw new Error('404'); return r.json(); })
-      .then(function(wiki) {
-        var info = { photo: null, inatId: null };
-        if (wiki.thumbnail && wiki.thumbnail.source) {
-          var wikiImg = wiki.thumbnail.source.replace(/\/\d+px-/, '/200px-');
-          info.photo = { sq: wikiImg, md: wiki.originalimage ? wiki.originalimage.source : wikiImg, attr: 'Wikimedia Commons' };
-        }
-        resolve(info);
-      })
-      .catch(function() { resolve({ photo: null, inatId: null }); });
-  }
-  fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=5')
+  fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=3')
     .then(function(r) { return r.json(); })
     .then(function(data) {
       var results = data.results || [];
-      var info = { photo: null, inatId: null };
       var res = null;
-      for (var ri = 0; ri < results.length; ri++) {
-        if (results[ri].name === sci) { res = results[ri]; break; }
+      for (var i = 0; i < results.length; i++) {
+        if (results[i].name === sci) { res = results[i]; break; }
       }
       if (!res && results.length > 0) {
-        var genus = sci.split(' ')[0];
-        for (var rj = 0; rj < results.length; rj++) {
-          if (results[rj].name && results[rj].name.indexOf(genus) === 0) { res = results[rj]; break; }
+        var g = sci.split(' ')[0];
+        for (var j = 0; j < results.length; j++) {
+          if (results[j].name && results[j].name.indexOf(g) === 0) { res = results[j]; break; }
         }
       }
       if (res) {
-        info.inatId = res.id;
         var p = res.default_photo;
+        var info = { inatId: res.id, photo: null };
         if (p && p.square_url) {
           info.photo = { sq: p.square_url, md: p.medium_url || p.square_url, attr: p.attribution || '' };
         }
+        done(info);
+      } else {
+        done(null);
       }
-      if (info.photo) { resolve(info); }
-      else if (info.inatId) { resolve(info); }
-      else { tryWiki(); }
     })
-    .catch(function() { tryWiki(); });
+    .catch(function() { done(null); });
 }
 
 export default function Thumb(props) {

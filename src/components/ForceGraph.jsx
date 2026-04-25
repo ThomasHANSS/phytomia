@@ -44,7 +44,7 @@ export default function ForceGraph(props) {
   var [tooltip, setTooltip] = useState(null);
 
 
-  var [nodePhotos, setNodePhotos] = useState({});
+  var nodePhotosRef = useRef({});
   var [showPanel, setShowPanel] = useState(window.innerWidth > 700);
   var isMobile = window.innerWidth <= 700;
   var [filters, setFilters] = useState({ entities: {}, types: {}, threatened: false });
@@ -52,22 +52,14 @@ export default function ForceGraph(props) {
 
   // Load photos for visible nodes
   useEffect(function() {
-    var loaded = {};
     graph.nodes.forEach(function(n) {
+      if (nodePhotosRef.current[n.id]) return;
       fetchPhoto(n.sci, function(data) {
         if (data && data.photo) {
-          loaded[n.id] = { url: data.photo.sq, inatId: data.inatId };
-          // Batch update every 500ms
+          nodePhotosRef.current[n.id] = { url: data.photo.sq };
         }
       });
     });
-    var interval = setInterval(function() {
-      if (Object.keys(loaded).length > 0) {
-        setNodePhotos(function(prev) { return Object.assign({}, prev, loaded); });
-        loaded = {};
-      }
-    }, 500);
-    return function() { clearInterval(interval); };
   }, [graph]);
 
   useEffect(function () {
@@ -411,7 +403,7 @@ export default function ForceGraph(props) {
           existingEls[ov.children[ci2].dataset.nid] = ov.children[ci2];
         }
         nodes.forEach(function(n) {
-          var photo = nodePhotos[n.id];
+          var photo = nodePhotosRef.current[n.id];
           if (!photo || !photo.url) return;
           var screenX = (W / 2 + pan.x * dpr + n.x * sc * pan.scale) / dpr;
           var screenY = (H / 2 + pan.y * dpr + n.y * sc * pan.scale) / dpr;
