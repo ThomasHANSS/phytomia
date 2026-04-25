@@ -9,9 +9,33 @@ export default function GardenGraph(props) {
   // Limit insects shown: shared first, then top by connection count, max 40
   var MAX_INSECTS = 40;
   var _showAll = useState(false), showAll = _showAll[0], setShowAll = _showAll[1];
+  var _filterType = useState('all'), filterType = _filterType[0], setFilterType = _filterType[1];
+  var _filterOrder = useState('all'), filterOrder = _filterOrder[0], setFilterOrder = _filterOrder[1];
+  // Collect available types and orders
+  var availTypes = {};
+  var availOrders = {};
+  ixs.forEach(function(ix) {
+    if (ix.tp) availTypes[ix.tp] = (availTypes[ix.tp] || 0) + 1;
+  });
+  insects.forEach(function(ins) {
+    if (ins.order) availOrders[ins.order] = (availOrders[ins.order] || 0) + 1;
+  });
+
+  // Filter interactions and insects
+  var filteredIxs = ixs.filter(function(ix) {
+    if (filterType !== 'all' && ix.tp !== filterType) return false;
+    return true;
+  });
+  var filteredInsectIds = new Set(filteredIxs.map(function(ix) { return ix.iI; }));
+  var filteredInsects = insects.filter(function(ins) {
+    if (!filteredInsectIds.has(ins.id)) return false;
+    if (filterOrder !== 'all' && ins.order !== filterOrder) return false;
+    return true;
+  });
+
   var ixCountMap = {};
-  ixs.forEach(function (ix) { ixCountMap[ix.iI] = (ixCountMap[ix.iI] || 0) + 1; });
-  var sortedInsects = insects.slice().sort(function (a, b) {
+  filteredIxs.forEach(function (ix) { ixCountMap[ix.iI] = (ixCountMap[ix.iI] || 0) + 1; });
+  var sortedInsects = filteredInsects.slice().sort(function (a, b) {
     var aShared = sharedIds.indexOf(a.id) !== -1 ? 1 : 0;
     var bShared = sharedIds.indexOf(b.id) !== -1 ? 1 : 0;
     if (aShared !== bShared) return bShared - aShared;
@@ -19,7 +43,7 @@ export default function GardenGraph(props) {
   });
   var visibleInsects = showAll ? sortedInsects : sortedInsects.slice(0, MAX_INSECTS);
   var visibleIds = new Set(visibleInsects.map(function (i) { return i.id; }));
-  var hiddenCount = insects.length - visibleInsects.length;
+  var hiddenCount = filteredInsects.length - visibleInsects.length;
 
   var nP = plants.length, nI = visibleInsects.length;
   var spacing = Math.max(24, Math.min(36, 800 / nI));
@@ -104,9 +128,30 @@ export default function GardenGraph(props) {
     img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
   }, []);
 
+  var TYPE_LABELS = { pollinisation: 'Pollinisation', folivorie: 'Folivorie', parasitisme: 'Parasitisme', 'plante hôte': 'Plante hôte', predation: 'Prédation', all: 'Tous' };
+  var ORDER_LABELS = { Hymenoptera: 'Hyménoptères', Lepidoptera: 'Lépidoptères', Diptera: 'Diptères', Coleoptera: 'Coléoptères', Hemiptera: 'Hémiptères', all: 'Tous' };
+
   return (
     <div style={{ margin: '8px 0' }}>
-      <svg ref={svgRef} viewBox={'0 0 ' + W + ' ' + H} width="100%" style={{ display: 'block' }}>
+      <div style={{ display: 'flex', gap: 8, padding: '8px 12px', flexWrap: 'wrap', alignItems: 'center', fontSize: 11 }}>
+        <span style={{ fontWeight: 600, color: '#666' }}>Filtres :</span>
+        <select value={filterType} onChange={function(e) { setFilterType(e.target.value); }}
+          style={{ fontSize: 11, padding: '3px 6px', borderRadius: 4, border: '1px solid #ddd' }}>
+          <option value="all">Toutes interactions</option>
+          {Object.keys(availTypes).sort().map(function(t) {
+            return <option key={t} value={t}>{TYPE_LABELS[t] || t} ({availTypes[t]})</option>;
+          })}
+        </select>
+        <select value={filterOrder} onChange={function(e) { setFilterOrder(e.target.value); }}
+          style={{ fontSize: 11, padding: '3px 6px', borderRadius: 4, border: '1px solid #ddd' }}>
+          <option value="all">Tous ordres</option>
+          {Object.keys(availOrders).sort().map(function(o) {
+            return <option key={o} value={o}>{ORDER_LABELS[o] || o} ({availOrders[o]})</option>;
+          })}
+        </select>
+        <span style={{ color: '#999', fontSize: 10 }}>{filteredInsects.length} insectes, {filteredIxs.length} interactions</span>
+      </div>
+    <svg ref={svgRef} viewBox={'0 0 ' + W + ' ' + H} width="100%" style={{ display: 'block' }}>
         {ixs.filter(function (ix) { return visibleIds.has(ix.iI); }).map(function (ix, idx) {
           var pn = pNodes.find(function (n) { return n.id === ix.pI; }); var inode = iNodes.find(function (n) { return n.id === ix.iI; });
           if (!pn || !inode) return null; var tp = TYPES[ix.tp] || TYPES.folivorie; var col = FAMILIES[tp.fam].color;

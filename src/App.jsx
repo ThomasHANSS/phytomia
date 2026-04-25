@@ -13,7 +13,12 @@ import { TYPES, FAMILIES } from './utils/types';
 export default function App() {
   var data = usePhytomiaData();
   var _l = useState('fr'), lang = _l[0], setLang = _l[1];
-  var _v = useState('ranking'), viewMode = _v[0], setViewMode = _v[1];
+  var _v = useState('ranking'), viewMode = _v[0], _setViewMode = _v[1];
+  function setViewMode(m) {
+    _setViewMode(m);
+    if (m === 'garden') { window.location.hash = 'mon_jardin'; }
+    else { window.history.replaceState(null, '', window.location.pathname); }
+  }
   var _eu = useState(true), euOnly = _eu[0], setEuOnly = _eu[1];
   var _s = useState(null), selectedId = _s[0], setSelectedId = _s[1];
   var _h = useState([]), history = _h[0], setHistory = _h[1];
@@ -27,7 +32,10 @@ export default function App() {
   // Hash routing - only on initial load
   useEffect(function() {
     var h = decodeURIComponent(window.location.hash.slice(1)).replace(/_/g, ' ');
-    if (h && data && data.plants) {
+    if (!h || !data || !data.plants) return;
+    if (h === 'mon jardin' || h === 'my garden' || h === 'garden') {
+      setViewMode('garden');
+    } else {
       var sp = data.plants.find(function(p){return p.sci===h;}) || data.insects.find(function(i){return i.sci===h;});
       if (sp) { setSelectedId(sp.id); }
     }
