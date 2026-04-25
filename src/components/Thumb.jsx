@@ -96,11 +96,23 @@ export function fetchPhoto(sci, cb) {
   if (_photoCache[sci] !== undefined) { cb(_photoCache[sci]); return; }
   if (_pendingFetches[sci]) { _pendingFetches[sci].push(cb); return; }
   _pendingFetches[sci] = [cb];
-  fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=1')
+  fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=5')
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      var res = (data.results || [])[0];
+      var results = data.results || [];
       var info = { photo: null, inatId: null };
+      // Find exact name match first
+      var res = null;
+      for (var ri = 0; ri < results.length; ri++) {
+        if (results[ri].name === sci) { res = results[ri]; break; }
+      }
+      // Fallback: first result with matching genus
+      if (!res && results.length > 0) {
+        var genus = sci.split(' ')[0];
+        for (var rj = 0; rj < results.length; rj++) {
+          if (results[rj].name && results[rj].name.indexOf(genus) === 0) { res = results[rj]; break; }
+        }
+      }
       if (res) {
         info.inatId = res.id;
         var p = res.default_photo;
