@@ -180,7 +180,7 @@ export default function App() {
           onBack={back}
         />
       </div>)}
-    </div>
       <Lightbox />
+    </div>
   );
 }
