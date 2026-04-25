@@ -150,9 +150,8 @@ export default function ForceGraph(props) {
       var r = Math.max(5, Math.min(16, 5 + ratio * 11));
       var dist = 180 + Math.random() * 60;
       var ec = isPlant ? (ORDER_COLORS[p.order || ''] || '#88888870') : (GF_COLORS[p.growthForm || 'herb'] || '#7da83270');
-      var typeColors = typeKeys.map(function(tp) { return TYPE_COLORS[tp] || '#888'; });
       nodes.push({
-        id: p.id, sci: p.sci, label: getName(p, lang) || p.sci, typeColors: typeColors,
+        id: p.id, sci: p.sci, label: getName(p, lang) || p.sci,
         isCenter: false, isPlant: !isPlant, threat: p.threat, order: p.order || '',
         growthForm: p.growthForm || 'herb',
         x: Math.cos(angle) * dist, y: Math.sin(angle) * dist,
@@ -162,6 +161,8 @@ export default function ForceGraph(props) {
 
       var typeKeys = Object.keys(obs.types);
       var nTypes = typeKeys.length;
+      // Add typeColors to the node we just pushed
+      nodes[nodes.length - 1].typeColors = typeKeys.map(function(tp) { return TYPE_COLORS[tp] || '#888'; });
       typeKeys.forEach(function (tp, ti) {
         var type = TYPES[tp]; if (!type) return;
         links.push({
