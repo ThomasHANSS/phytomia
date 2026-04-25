@@ -687,7 +687,7 @@ export default function ForceGraph(props) {
           />
           {tooltip && (
             <div style={{
-              position: 'fixed', left: Math.min(tooltip.x + 14, window.innerWidth - 270), top: Math.max(tooltip.y - 80, 60),
+              position: 'fixed', left: Math.min(tooltip.x + 60, window.innerWidth - 270), top: Math.max(tooltip.y - 40, 60),
               background: '#fff', border: '1px solid #e0e0e0',
               borderRadius: 10, padding: '10px 14px', pointerEvents: 'none',
               boxShadow: '0 8px 24px rgba(0,0,0,0.12)', maxWidth: 250, zIndex: 1001
