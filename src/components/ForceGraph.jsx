@@ -151,8 +151,9 @@ export default function ForceGraph(props) {
       var r = Math.max(5, Math.min(16, 5 + ratio * 11));
       var dist = 180 + Math.random() * 60;
       var ec = isPlant ? (ORDER_COLORS[p.order || ''] || '#88888870') : (GF_COLORS[p.growthForm || 'herb'] || '#7da83270');
+      var typeColors = typeKeys.map(function(tp) { return TYPE_COLORS[tp] || '#888'; });
       nodes.push({
-        id: p.id, sci: p.sci, label: getName(p, lang) || p.sci,
+        id: p.id, sci: p.sci, label: getName(p, lang) || p.sci, typeColors: typeColors,
         isCenter: false, isPlant: !isPlant, threat: p.threat, order: p.order || '',
         growthForm: p.growthForm || 'herb',
         x: Math.cos(angle) * dist, y: Math.sin(angle) * dist,
