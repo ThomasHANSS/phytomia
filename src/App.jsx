@@ -101,6 +101,20 @@ export default function App() {
     );
   }
 
+
+  // Hash routing
+  useEffect(function() {
+    function onHash() {
+      var h = decodeURIComponent(window.location.hash.slice(1)).replace(/_/g, ' ');
+      if (!h || !data) return;
+      var sp = data.plants.find(function(p){return p.sci===h;}) || data.insects.find(function(i){return i.sci===h;});
+      if (sp) { setSelectedId(sp.id); }
+    }
+    onHash();
+    window.addEventListener('hashchange', onHash);
+    return function() { window.removeEventListener('hashchange', onHash); };
+  }, [data]);
+
   return (
     <div className="app">
       <Header lang={lang} setLang={setLang} onLogoClick={back} />
