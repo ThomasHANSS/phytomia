@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { TYPES, FAMILIES } from '../utils/types';
 
 var TREE_GENERA = ["Quercus","Fagus","Betula","Picea","Pinus","Abies","Larix","Acer","Fraxinus","Tilia","Ulmus","Alnus","Carpinus","Castanea","Populus","Salix","Platanus","Juglans","Cedrus","Taxus","Cupressus","Eucalyptus","Prunus","Malus","Pyrus","Sorbus","Olea","Robinia","Gleditsia","Magnolia","Morus","Ilex","Aesculus","Ailanthus","Catalpa","Liriodendron","Paulownia","Corylus","Celtis","Cercis","Citrus","Liquidambar","Ginkgo","Thuja","Juniperus","Arbutus","Zelkova","Carya","Diospyros","Koelreuteria","Sapindus","Koelreuteria","Sapindus","Ficus","Ceratonia","Amelanchier","Eriobotrya","Mespilus","Amelanchier","Eriobotrya","Mespilus"];
@@ -68,14 +69,54 @@ function getKey(item, isPlant) {
   return getLifeForm(item);
 }
 
+
+var _photoCache = {};
+var _pendingFetches = {};
+function fetchPhoto(sci, cb) {
+  if (_photoCache[sci] !== undefined) { cb(_photoCache[sci]); return; }
+  if (_pendingFetches[sci]) { _pendingFetches[sci].push(cb); return; }
+  _pendingFetches[sci] = [cb];
+  fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=1')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var res = (data.results || [])[0];
+      var info = { photo: null, inatId: null };
+      if (res) {
+        info.inatId = res.id;
+        var p = res.default_photo;
+        if (p && p.square_url) info.photo = { sq: p.square_url, md: p.medium_url || p.square_url, attr: p.attribution || '' };
+      }
+      _photoCache[sci] = info;
+      (_pendingFetches[sci] || []).forEach(function(c) { c(info); });
+      delete _pendingFetches[sci];
+    })
+    .catch(function() {
+      _photoCache[sci] = { photo: null, inatId: null };
+      (_pendingFetches[sci] || []).forEach(function(c) { c(_photoCache[sci]); });
+      delete _pendingFetches[sci];
+    });
+}
+
 export default function Thumb(props) {
   var sz = props.sz || 40, item = props.item, name = props.name, isPlant = props.isPlant;
   var key = getKey(item, isPlant);
-  var col = COLORS[key] || "#888";
+  var col = COLORS[key] || '#888';
   var IconComp = ICON_COMPONENTS[key] || DefaultPlantIcon;
   var icoSz = Math.max(14, sz * 0.7);
+  var sci = (item && item.sci) || name || '';
+  var _s = useState(null), pd = _s[0], setPd = _s[1];
+  var _e = useState(false), err = _e[0], setErr = _e[1];
+  useEffect(function() { if (sci && sz >= 32) fetchPhoto(sci, setPd); }, [sci]);
+  var hasPhoto = pd && pd.photo && !err;
+  if (hasPhoto) {
+    return (
+      <div style={{ width: sz, height: sz, borderRadius: sz > 48 ? 10 : 6, overflow: 'hidden', flexShrink: 0, background: col + '12', border: '1px solid ' + col + '25' }} title={pd.photo.attr || sci}>
+        <img src={sz > 60 ? pd.photo.md : pd.photo.sq} alt={sci} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} onError={function() { setErr(true); }} />
+      </div>
+    );
+  }
   return (
-    <div style={{ width: sz, height: sz, borderRadius: sz > 48 ? 10 : 6, background: col + "12", border: "1px solid " + col + "25", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }} title={name || (item ? item.sci : "")}>
+    <div style={{ width: sz, height: sz, borderRadius: sz > 48 ? 10 : 6, background: col + '12', border: '1px solid ' + col + '25', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }} title={sci}>
       <svg width={icoSz} height={icoSz} viewBox="0 0 40 48"><IconComp c={col} /></svg>
     </div>
   );
@@ -83,11 +124,21 @@ export default function Thumb(props) {
 
 export function SpeciesLink(props) {
   var name = props.name, lang = props.lang;
+  var _s = useState(null), inatId = _s[0], setId = _s[1];
+  useEffect(function() { fetchPhoto(name, function(d) { if (d && d.inatId) setId(d.inatId); }); }, [name]);
   return (
-    <a href={wikiUrl(name)} target="_blank" rel="noopener noreferrer" onClick={function (e) { e.stopPropagation(); }} title={lang === "fr" ? "Voir sur Wikipedia" : "View on Wikipedia"} style={{ display: "inline-flex", alignItems: "center", gap: 3, fontSize: 10, color: "var(--text3)", textDecoration: "none", padding: "1px 6px", borderRadius: 4, border: "1px solid var(--border)", background: "var(--bg2)", flexShrink: 0 }}>
-      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-      Wiki
-    </a>
+    <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+      <a href={'https://en.wikipedia.org/wiki/' + encodeURIComponent(name.replace(/ /g, '_'))} target="_blank" rel="noopener noreferrer" onClick={function(e) { e.stopPropagation(); }} style={{ display: 'inline-flex', alignItems: 'center', gap: 3, fontSize: 10, color: 'var(--text3)', textDecoration: 'none', padding: '1px 6px', borderRadius: 4, border: '1px solid var(--border)', background: 'var(--bg2)', flexShrink: 0 }}>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        Wiki
+      </a>
+      {inatId && (
+        <a href={'https://www.inaturalist.org/taxa/' + inatId} target="_blank" rel="noopener noreferrer" onClick={function(e) { e.stopPropagation(); }} style={{ display: 'inline-flex', alignItems: 'center', gap: 3, fontSize: 10, color: '#74ac00', textDecoration: 'none', padding: '1px 6px', borderRadius: 4, border: '1px solid #74ac0030', background: '#74ac0008', flexShrink: 0 }}>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#74ac00" strokeWidth="2.5" strokeLinecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          iNat
+        </a>
+      )}
+    </div>
   );
 }
 
