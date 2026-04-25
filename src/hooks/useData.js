@@ -40,6 +40,7 @@ export function usePhytomiaData() {
       fetch(BASE + 'interactions.json').then(function (r) { return r.ok ? r.json() : []; }),
       fetch(BASE + 'last_updated.txt').then(function (r) { return r.ok ? r.text() : null; }).catch(function () { return null; }),
     ]).then(function (results) {
+      var inatCache = results.shift();
       if (cancelled) return;
       var plants = results[0].map(expandPlant);
       var insects = results[1].map(expandInsect);

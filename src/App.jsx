@@ -1,4 +1,4 @@
-import { Lightbox } from './components/Thumb';
+import { Lightbox, seedPhotoCache } from './components/Thumb';
 import { useState, useMemo, useEffect } from 'react';
 import { usePhytomiaData } from './hooks/useData';
 import Header from './components/Header';
@@ -18,6 +18,11 @@ export default function App() {
   var _s = useState(null), selectedId = _s[0], setSelectedId = _s[1];
   var _h = useState([]), history = _h[0], setHistory = _h[1];
   var _g = useState([]), garden = _g[0], setGarden = _g[1];
+
+  // Seed photo cache from pre-built data
+  useEffect(function() {
+    if (data && data.inatCache) seedPhotoCache(data.inatCache);
+  }, [data]);
 
   // Hash routing - only on initial load
   useEffect(function() {
