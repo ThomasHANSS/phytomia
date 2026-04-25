@@ -55,11 +55,12 @@ export default function App() {
     var sp = data.plants.find(function(p){ return p.sci === h.sci; })
           || data.insects.find(function(i){ return i.sci === h.sci; });
     if (!sp) return;
+    // Set species first, then view after component mounts
+    setSpeciesView(h.view || 'fiche');
     setSelectedId(sp.id);
-    if (h.view && h.view !== 'fiche') {
-      setSpeciesView(h.view);
-      setTimeout(function() { setSpeciesView(h.view); }, 300);
-    }
+    // Force view after mount
+    setTimeout(function() { setSpeciesView(h.view || 'fiche'); }, 50);
+    setTimeout(function() { setSpeciesView(h.view || 'fiche'); }, 300);
   }, [data.plants.length]);
 
 
