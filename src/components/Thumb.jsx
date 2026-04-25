@@ -111,38 +111,11 @@ export function fetchPhoto(sci, cb) {
 }
 
 function _doFetch(sci) {
-  function done(info) {
-    _photoCache[sci] = info || { photo: null, inatId: null };
-    var cbs = _pendingFetches[sci] || [];
-    delete _pendingFetches[sci];
-    cbs.forEach(function(c) { c(_photoCache[sci]); });
-  }
-  fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=3')
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      var results = data.results || [];
-      var res = null;
-      for (var i = 0; i < results.length; i++) {
-        if (results[i].name === sci) { res = results[i]; break; }
-      }
-      if (!res && results.length > 0) {
-        var g = sci.split(' ')[0];
-        for (var j = 0; j < results.length; j++) {
-          if (results[j].name && results[j].name.indexOf(g) === 0) { res = results[j]; break; }
-        }
-      }
-      if (res) {
-        var p = res.default_photo;
-        var info = { inatId: res.id, photo: null };
-        if (p && p.square_url) {
-          info.photo = { sq: p.square_url, md: p.medium_url || p.square_url, attr: p.attribution || '' };
-        }
-        done(info);
-      } else {
-        done(null);
-      }
-    })
-    .catch(function() { done(null); });
+  // No runtime API calls - use pre-loaded cache only
+  var info = _photoCache[sci] || { photo: null, inatId: null };
+  var cbs = _pendingFetches[sci] || [];
+  delete _pendingFetches[sci];
+  cbs.forEach(function(c) { c(info); });
 }
 
 export default function Thumb(props) {
