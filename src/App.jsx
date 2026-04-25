@@ -19,6 +19,19 @@ export default function App() {
   var _h = useState([]), history = _h[0], setHistory = _h[1];
   var _g = useState([]), garden = _g[0], setGarden = _g[1];
 
+  // Hash routing
+  useEffect(function() {
+    function onHash() {
+      var h = decodeURIComponent(window.location.hash.slice(1)).replace(/_/g, ' ');
+      if (!h || !data || !data.plants) return;
+      var sp = data.plants.find(function(p){return p.sci===h;}) || data.insects.find(function(i){return i.sci===h;});
+      if (sp) { setSelectedId(sp.id); }
+    }
+    onHash();
+    window.addEventListener('hashchange', onHash);
+    return function() { window.removeEventListener('hashchange', onHash); };
+  }, [data]);
+
   var selected = useMemo(function () {
     if (!selectedId) return null;
     return data.plants.find(function (p) { return p.id === selectedId; }) ||
@@ -100,20 +113,6 @@ export default function App() {
       </div>
     );
   }
-
-
-  // Hash routing
-  useEffect(function() {
-    function onHash() {
-      var h = decodeURIComponent(window.location.hash.slice(1)).replace(/_/g, ' ');
-      if (!h || !data) return;
-      var sp = data.plants.find(function(p){return p.sci===h;}) || data.insects.find(function(i){return i.sci===h;});
-      if (sp) { setSelectedId(sp.id); }
-    }
-    onHash();
-    window.addEventListener('hashchange', onHash);
-    return function() { window.removeEventListener('hashchange', onHash); };
-  }, [data]);
 
   return (
     <div className="app">
