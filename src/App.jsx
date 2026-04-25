@@ -57,9 +57,16 @@ export default function App() {
     if (h.page === 'garden') { _setViewMode('garden'); }
     else if (h.page === 'species') {
       var sp = data.plants.find(function(p){return p.sci===h.sci;}) || data.insects.find(function(i){return i.sci===h.sci;});
-      if (sp) { setSelectedId(sp.id); if (h.view === 'reseau') setSpeciesView('reseau'); else setSpeciesView('fiche'); }
+      if (sp) {
+        setSelectedId(sp.id);
+        if (h.view === 'reseau') {
+          setSpeciesView('reseau');
+          // Force a small delay to ensure SpeciesDetail mounts first
+          setTimeout(function() { setSpeciesView('reseau'); }, 50);
+        }
+      }
     }
-  }, [data.plants && data.plants.length]);
+  }, [data.plants.length]);
 
 
 
