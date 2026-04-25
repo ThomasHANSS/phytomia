@@ -297,7 +297,8 @@ export default function ForceGraph(props) {
       // Draw nodes
       nodes.forEach(function (n) {
         var hover = hoverRef.current === n.id;
-        var r = n.r * sc;
+        var baseR = n.r * sc;
+        var r = (hover && !n.isCenter) ? baseR * 2 : baseR;
         var x = n.x * sc, y = n.y * sc;
 
         // Glow for hovered
