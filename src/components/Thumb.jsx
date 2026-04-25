@@ -70,9 +70,29 @@ function getKey(item, isPlant) {
 }
 
 
+
+var _lbListeners = [];
+var _lbState = { open: false, src: '', title: '', attr: '' };
+function openLightbox(src, title, attr) {
+  _lbState = { open: true, src: src, title: title || '', attr: attr || '' };
+  _lbListeners.forEach(function(cb) { cb(_lbState); });
+}
+function closeLightbox() {
+  _lbState = { open: false, src: '', title: '', attr: '' };
+  _lbListeners.forEach(function(cb) { cb(_lbState); });
+}
+function useLightbox() {
+  var _s = useState(_lbState), st = _s[0], setSt = _s[1];
+  useEffect(function() {
+    _lbListeners.push(setSt);
+    return function() { _lbListeners = _lbListeners.filter(function(c) { return c !== setSt; }); };
+  }, []);
+  return st;
+}
+
 var _photoCache = {};
 var _pendingFetches = {};
-function fetchPhoto(sci, cb) {
+export function fetchPhoto(sci, cb) {
   if (_photoCache[sci] !== undefined) { cb(_photoCache[sci]); return; }
   if (_pendingFetches[sci]) { _pendingFetches[sci].push(cb); return; }
   _pendingFetches[sci] = [cb];
@@ -111,7 +131,7 @@ export default function Thumb(props) {
   if (hasPhoto) {
     return (
       <div style={{ width: sz, height: sz, borderRadius: sz > 48 ? 10 : 6, overflow: 'hidden', flexShrink: 0, background: col + '12', border: '1px solid ' + col + '25' }} title={pd.photo.attr || sci}>
-        <img src={sz > 60 ? pd.photo.md : pd.photo.sq} alt={sci} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} onError={function() { setErr(true); }} />
+        <img src={sz > 60 ? pd.photo.md : pd.photo.sq} alt={sci} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', cursor: 'pointer' }} onError={function() { setErr(true); }} onClick={function(e) { e.stopPropagation(); openLightbox(pd.photo.md.replace('/medium.', '/large.'), sci, pd.photo.attr); }} />
       </div>
     );
   }
@@ -138,6 +158,29 @@ export function SpeciesLink(props) {
           iNat
         </a>
       )}
+    </div>
+  );
+}
+
+
+export function Lightbox() {
+  var st = useLightbox();
+  useEffect(function() {
+    function onKey(e) { if (e.key === 'Escape') closeLightbox(); }
+    if (st.open) document.addEventListener('keydown', onKey);
+    return function() { document.removeEventListener('keydown', onKey); };
+  }, [st.open]);
+  if (!st.open) return null;
+  return (
+    <div onClick={closeLightbox} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 2000, background: 'rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', padding: 20 }}>
+      <div onClick={function(e) { e.stopPropagation(); }} style={{ position: 'relative', cursor: 'default' }}>
+        <img src={st.src} alt={st.title} style={{ maxWidth: '90vw', maxHeight: '85vh', objectFit: 'contain', borderRadius: 8, display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }} />
+        <div style={{ textAlign: 'center', marginTop: 12 }}>
+          <span style={{ fontSize: 15, fontStyle: 'italic', color: '#fff', fontWeight: 600 }}>{st.title}</span>
+          {st.attr && <div style={{ fontSize: 10, color: '#aaa', marginTop: 4 }}>{st.attr}</div>}
+        </div>
+        <button onClick={closeLightbox} style={{ position: 'absolute', top: -12, right: -12, width: 32, height: 32, borderRadius: 16, border: 'none', background: '#fff', color: '#333', fontSize: 18, fontWeight: 700, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', lineHeight: 1 }}>{'✕'}</button>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { TYPES, FAMILIES } from '../utils/types';
+import { fetchPhoto } from './Thumb';
 
 function getName(item, lang) {
   return item.common ? item.common[lang] || item.common.fr || '' : '';
@@ -40,6 +41,27 @@ export default function ForceGraph(props) {
   var dragRef = useRef(null);
   var lastMouseRef = useRef(null);
   var [tooltip, setTooltip] = useState(null);
+  var imgCacheRef = useRef({});
+
+  // Preload images for nodes
+  useEffect(function() {
+    var allSpecies = [species].concat(partners.slice(0, 100));
+    allSpecies.forEach(function(sp) {
+      if (imgCacheRef.current[sp.sci]) return;
+      imgCacheRef.current[sp.sci] = 'loading';
+      fetchPhoto(sp.sci, function(data) {
+        if (data && data.photo) {
+          var img = new Image();
+          img.crossOrigin = 'anonymous';
+          img.onload = function() { imgCacheRef.current[sp.sci] = img; };
+          img.onerror = function() { imgCacheRef.current[sp.sci] = 'error'; };
+          img.src = data.photo.sq;
+        } else {
+          imgCacheRef.current[sp.sci] = 'none';
+        }
+      });
+    });
+  }, [species.id, partners]);
   var [showPanel, setShowPanel] = useState(window.innerWidth > 700);
   var isMobile = window.innerWidth <= 700;
   var [filters, setFilters] = useState({ entities: {}, types: {}, threatened: false });

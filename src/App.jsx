@@ -1,3 +1,4 @@
+import { Lightbox } from './components/Thumb';
 import { useState, useMemo } from 'react';
 import { usePhytomiaData } from './hooks/useData';
 import Header from './components/Header';
@@ -180,5 +181,6 @@ export default function App() {
         />
       </div>)}
     </div>
+      <Lightbox />
   );
 }
