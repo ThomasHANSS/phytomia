@@ -45,7 +45,7 @@ export default function ForceGraph(props) {
 
   // Preload images for nodes
   useEffect(function() {
-    var allSpecies = [species].concat(partners.slice(0, 100));
+    var allSpecies = [species].concat(partners.slice(0, 150));
     allSpecies.forEach(function(sp) {
       if (imgCacheRef.current[sp.sci]) return;
       imgCacheRef.current[sp.sci] = 'loading';
@@ -54,7 +54,7 @@ export default function ForceGraph(props) {
           var img = new Image();
           img.onload = function() { imgCacheRef.current[sp.sci] = img; };
           img.onerror = function() { imgCacheRef.current[sp.sci] = 'error'; };
-          img.src = data.photo.sq;
+          img.src = data.photo.sq || data.photo.md;
         } else {
           imgCacheRef.current[sp.sci] = 'none';
         }
