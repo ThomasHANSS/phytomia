@@ -349,22 +349,29 @@ export default function ForceGraph(props) {
           ctx.fillStyle = grad; ctx.fill();
         }
         ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
-
-        // Border
+        ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
+        // Colored concentric borders
         if (n.isCenter) {
+          ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
           ctx.strokeStyle = 'rgba(255,255,255,0.9)';
-          ctx.lineWidth = 3 * sc / pan.scale;
+          ctx.lineWidth = 4 * sc / pan.scale;
           ctx.stroke();
-        } else if (hover) {
-          ctx.strokeStyle = 'rgba(50,50,50,0.6)';
-          ctx.lineWidth = 2 * sc / pan.scale;
-          ctx.stroke();
+        } else if (n.typeColors && n.typeColors.length > 0) {
+          var bw = (hover ? 3.5 : 2.5) * sc / pan.scale;
+          for (var ci = 0; ci < n.typeColors.length; ci++) {
+            var boff = r + bw * 0.5 + ci * bw;
+            ctx.beginPath(); ctx.arc(x, y, boff, 0, Math.PI * 2);
+            var crgb2 = hexToRgb(n.typeColors[ci]);
+            ctx.strokeStyle = 'rgba(' + crgb2.r + ',' + crgb2.g + ',' + crgb2.b + ',' + (hover ? 0.95 : 0.6) + ')';
+            ctx.lineWidth = bw;
+            ctx.stroke();
+          }
         } else {
+          ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
           ctx.strokeStyle = 'rgba(255,255,255,0.5)';
           ctx.lineWidth = 1.5 * sc / pan.scale;
           ctx.stroke();
         }
-
         // Label
         var showLabel = n.isCenter || hover || n.r >= 15;
         if (showLabel) {
