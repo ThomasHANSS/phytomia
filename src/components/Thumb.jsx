@@ -111,17 +111,34 @@ export function fetchPhoto(sci, cb) {
 }
 
 function _doFetch(sci) {
+  function resolve(info) {
+    _photoCache[sci] = info;
+    var cbs = _pendingFetches[sci] || [];
+    delete _pendingFetches[sci];
+    cbs.forEach(function(c) { c(info); });
+  }
+  function tryWiki() {
+    fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(sci.replace(/ /g, '_')))
+      .then(function(r) { if (!r.ok) throw new Error('404'); return r.json(); })
+      .then(function(wiki) {
+        var info = { photo: null, inatId: null };
+        if (wiki.thumbnail && wiki.thumbnail.source) {
+          var wikiImg = wiki.thumbnail.source.replace(/\/\d+px-/, '/200px-');
+          info.photo = { sq: wikiImg, md: wiki.originalimage ? wiki.originalimage.source : wikiImg, attr: 'Wikimedia Commons' };
+        }
+        resolve(info);
+      })
+      .catch(function() { resolve({ photo: null, inatId: null }); });
+  }
   fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=5')
     .then(function(r) { return r.json(); })
     .then(function(data) {
       var results = data.results || [];
       var info = { photo: null, inatId: null };
-      // Find exact name match first
       var res = null;
       for (var ri = 0; ri < results.length; ri++) {
         if (results[ri].name === sci) { res = results[ri]; break; }
       }
-      // Fallback: first result with matching genus
       if (!res && results.length > 0) {
         var genus = sci.split(' ')[0];
         for (var rj = 0; rj < results.length; rj++) {
@@ -131,52 +148,15 @@ function _doFetch(sci) {
       if (res) {
         info.inatId = res.id;
         var p = res.default_photo;
-        if (p && p.square_url) info.photo = { sq: p.square_url, md: p.medium_url || p.square_url, attr: p.attribution || '' };
+        if (p && p.square_url) {
+          info.photo = { sq: p.square_url, md: p.medium_url || p.square_url, attr: p.attribution || '' };
+        }
       }
-      if (info.photo) {
-        _photoCache[sci] = info;
-        (_pendingFetches[sci] || []).forEach(function(c) { c(info); });
-        delete _pendingFetches[sci];
-      } else {
-        // Fallback: try Wikimedia Commons
-        fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(sci.replace(/ /g, '_')))
-          .then(function(r2) { return r2.json(); })
-          .then(function(wiki) {
-            if (wiki.thumbnail && wiki.thumbnail.source) {
-              var wikiImg = wiki.thumbnail.source.replace(/\/\d+px-/, '/200px-');
-              info.photo = { sq: wikiImg, md: wiki.originalimage ? wiki.originalimage.source : wikiImg, attr: 'Wikimedia Commons' };
-            }
-            _photoCache[sci] = info;
-            (_pendingFetches[sci] || []).forEach(function(c) { c(info); });
-            delete _pendingFetches[sci];
-          })
-          .catch(function() {
-            _photoCache[sci] = info;
-            (_pendingFetches[sci] || []).forEach(function(c) { c(info); });
-            delete _pendingFetches[sci];
-          });
-      }
+      if (info.photo) { resolve(info); }
+      else if (info.inatId) { resolve(info); }
+      else { tryWiki(); }
     })
-    .catch(function() {
-      // iNat failed, try Wikimedia
-      fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(sci.replace(/ /g, '_')))
-        .then(function(r2) { return r2.json(); })
-        .then(function(wiki) {
-          var info = { photo: null, inatId: null };
-          if (wiki.thumbnail && wiki.thumbnail.source) {
-            var wikiImg = wiki.thumbnail.source.replace(/\/\d+px-/, '/200px-');
-            info.photo = { sq: wikiImg, md: wiki.originalimage ? wiki.originalimage.source : wikiImg, attr: 'Wikimedia Commons' };
-          }
-          _photoCache[sci] = info;
-          (_pendingFetches[sci] || []).forEach(function(c) { c(info); });
-          delete _pendingFetches[sci];
-        })
-        .catch(function() {
-          _photoCache[sci] = { photo: null, inatId: null };
-          (_pendingFetches[sci] || []).forEach(function(c) { c(_photoCache[sci]); });
-          delete _pendingFetches[sci];
-        });
-    });
+    .catch(function() { tryWiki(); });
 }
 
 export default function Thumb(props) {
