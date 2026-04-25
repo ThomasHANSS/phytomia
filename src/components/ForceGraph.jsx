@@ -557,20 +557,7 @@ export default function ForceGraph(props) {
           <span style={{ width: 14, height: 14, borderRadius: 7, background: isPlant ? '#10b981' : '#f59e0b', flexShrink: 0 }} />
           <span style={{ fontSize: isMobile ? 13 : 16, fontWeight: 600, fontStyle: 'italic', color: '#222', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{isMobile ? species.sci.split(' ')[0][0] + '. ' + (species.sci.split(' ')[1] || '') : species.sci}</span>
           {cn && !isMobile && <span style={{ fontSize: 13, color: '#888', whiteSpace: 'nowrap' }}>{cn}</span>}
-          {history.length > 0 && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 3, fontSize: isMobile ? 10 : 12, color: '#888', overflowX: 'auto', maxWidth: isMobile ? 180 : 400, flexShrink: 1 }}>
-              {history.map(function (hid, idx) {
-                var sp = allSpecies.find(function (s) { return s.id === hid; });
-                if (!sp) return null;
-                return (<span key={idx} onClick={function () { onNavigate(hid); }}
-                  style={{ cursor: 'pointer', fontStyle: 'italic', color: '#888', borderBottom: '1px dashed #ccc' }}>
-                  {sp.sci.split(' ')[0][0] + '. ' + (sp.sci.split(' ')[1] || '')}
-                </span>);
-              })}
-              <span style={{ color: '#bbb', fontSize: 11 }}>›</span>
-              <span style={{ fontStyle: 'italic', fontWeight: 600, color: '#555', whiteSpace: 'nowrap' }}>{species.sci.split(' ')[0][0] + '. ' + (species.sci.split(' ')[1] || '')}</span>
-            </div>
-          )}
+
           <span style={{ fontSize: isMobile ? 10 : 12, color: '#888', whiteSpace: 'nowrap' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
         </div>
         <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
