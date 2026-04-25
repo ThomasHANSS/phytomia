@@ -58,7 +58,7 @@ export default function App() {
     setSelectedId(sp.id);
     if (h.view && h.view !== 'fiche') {
       setSpeciesView(h.view);
-      setTimeout(function() { setSpeciesView(h.view); }, 100);
+      setTimeout(function() { setSpeciesView(h.view); }, 300);
     }
   }, [data.plants.length]);
 

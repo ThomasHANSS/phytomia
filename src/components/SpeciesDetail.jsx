@@ -22,7 +22,7 @@ export default function SpeciesDetail(props) {
   function sDv(v) { _sDv(v); if (onViewChange) onViewChange(v === 'list' ? 'liste' : 'fiche'); }
   var _sf = useState(speciesView === 'reseau'), showForce = _sf[0], _setShowForce = _sf[1];
   function setShowForce(v) { _setShowForce(v); if (onViewChange) onViewChange(v ? 'reseau' : 'fiche'); }
-  useEffect(function() { _setShowForce(speciesView === 'reseau'); if (speciesView === 'liste') _sDv('list'); else if (speciesView === 'fiche') _sDv('graph'); }, [speciesView, species.id]);
+  useEffect(function() { _setShowForce(speciesView === 'reseau'); if (speciesView === 'liste') _sDv('list'); else if (speciesView !== 'reseau') _sDv('graph'); }, [speciesView]);
   var dm = isPlant ? 'plant' : 'insect';
 
   var rels = useMemo(function () {
