@@ -163,6 +163,25 @@
       "url": "https://github.com/ibartomeus/OBservData",
       "license": "CC BY-NC-SA",
       "records": 624
+    },
+    {
+      "id": "globi_bee",
+      "name": "GloBI Bee-Plant Curated",
+      "ref": "Noori et al. (2026)",
+      "url": "https://zenodo.org/records/17715382",
+      "license": "CC0",
+      "scope": "982K bee-plant interactions worldwide",
+      "records": 78229
+    },
+    {
+      "id": "powo",
+      "name": "POWO - Plants of the World Online",
+      "ref": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/",
+      "license": "Open",
+      "scope": "Plant native distributions (TDWG regions)",
+      "records": 4045,
+      "note": "Used for native/non-native/extra-EU classification"
     }
   ],
   "interaction_type_mapping": {

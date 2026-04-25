@@ -15,7 +15,7 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 | Indicateur | Volume |
 |---|---|
-| Interactions documentées | **182 435** paires plante × insecte |
+| Interactions documentées | **270 496** paires plante × insecte |
 | Espèces végétales | **17 168** (arbres, arbustes, herbacées, graminées, grimpantes) |
 | Espèces d'insectes | **27 494** (hyménoptères, lépidoptères, coléoptères, diptères, hémiptères) |
 | Bases de données intégrées | **6** sources scientifiques open-access |
@@ -285,7 +285,7 @@ phytomia/
 │   └── data/                     ← JSON générés par le pipeline
 │       ├── plants.json           (8 320 espèces, ~2,2 MB)
 │       ├── insects.json          (9 686 espèces, ~2,1 MB)
-│       ├── interactions.json     (182 435 paires, ~9 MB)
+│       ├── interactions.json     (270 496 paires, ~9 MB)
 │       └── last_updated.txt
 ├── src/
 │   ├── components/               ← 11 composants React
