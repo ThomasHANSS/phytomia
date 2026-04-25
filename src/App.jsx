@@ -35,13 +35,14 @@ export default function App() {
   }
 
   function writeHash(page, sci, view) {
-    if (page === 'garden') { window.location.hash = 'mon_jardin'; return; }
-    if (page === 'species' && sci) {
+    var url;
+    if (page === 'garden') { url = '#mon_jardin'; }
+    else if (page === 'species' && sci) {
       var h = sci.replace(/ /g, '_');
-      window.location.hash = (view && view !== 'fiche') ? h + '/' + view : h;
-      return;
+      url = '#' + ((view && view !== 'fiche') ? h + '/' + view : h);
     }
-    window.history.replaceState(null, '', window.location.pathname);
+    else { url = window.location.pathname; }
+    window.history.pushState(null, '', url);
   }
 
   // Read hash once data is loaded
@@ -61,6 +62,23 @@ export default function App() {
     // Force view after mount
     setTimeout(function() { setSpeciesView(h.view || 'fiche'); }, 50);
     setTimeout(function() { setSpeciesView(h.view || 'fiche'); }, 300);
+  }, [data.plants.length]);
+
+  // Browser back/forward navigation
+  useEffect(function() {
+    function onPop() {
+      var h = readHash();
+      if (!h || !data || !data.plants.length) {
+        setSelectedId(null); _setViewMode('ranking'); return;
+      }
+      if (h.page === 'garden') { setSelectedId(null); _setViewMode('garden'); return; }
+      if (h.page === 'species') {
+        var sp = data.plants.find(function(p){return p.sci===h.sci;}) || data.insects.find(function(i){return i.sci===h.sci;});
+        if (sp) { setSelectedId(sp.id); setSpeciesView(h.view || 'fiche'); }
+      }
+    }
+    window.addEventListener('popstate', onPop);
+    return function() { window.removeEventListener('popstate', onPop); };
   }, [data.plants.length]);
 
 
