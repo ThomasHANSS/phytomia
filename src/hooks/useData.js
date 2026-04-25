@@ -35,6 +35,7 @@ export function usePhytomiaData() {
   useEffect(function () {
     var cancelled = false;
     Promise.all([
+      fetch(BASE + 'inat_cache.json').then(function(r){return r.ok?r.json():{}}).catch(function(){return {}}),
       fetch(BASE + 'plants.json').then(function (r) { return r.ok ? r.json() : []; }),
       fetch(BASE + 'insects.json').then(function (r) { return r.ok ? r.json() : []; }),
       fetch(BASE + 'interactions.json').then(function (r) { return r.ok ? r.json() : []; }),
@@ -45,7 +46,7 @@ export function usePhytomiaData() {
       var plants = results[0].map(expandPlant);
       var insects = results[1].map(expandInsect);
       var interactions = results[2].map(expandIx);
-      setData({ plants: plants, insects: insects, interactions: interactions,
+      setData({ inatCache: inatCache, plants: plants, insects: insects, interactions: interactions,
         loading: false, error: null, lastUpdated: results[3] ? results[3].trim() : null });
     }).catch(function (err) {
       if (cancelled) return;
