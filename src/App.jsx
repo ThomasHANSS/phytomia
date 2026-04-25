@@ -1,5 +1,5 @@
 import { Lightbox } from './components/Thumb';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { usePhytomiaData } from './hooks/useData';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
