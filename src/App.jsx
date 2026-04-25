@@ -81,6 +81,23 @@ export default function App() {
     return function() { window.removeEventListener('popstate', onPop); };
   }, [data.plants.length]);
 
+  // Browser back/forward navigation
+  useEffect(function() {
+    function onPop() {
+      var h = readHash();
+      if (!h || !data || !data.plants.length) {
+        setSelectedId(null); _setViewMode('ranking'); return;
+      }
+      if (h.page === 'garden') { setSelectedId(null); _setViewMode('garden'); return; }
+      if (h.page === 'species') {
+        var sp = data.plants.find(function(p){return p.sci===h.sci;}) || data.insects.find(function(i){return i.sci===h.sci;});
+        if (sp) { setSelectedId(sp.id); setSpeciesView(h.view || 'fiche'); }
+      }
+    }
+    window.addEventListener('popstate', onPop);
+    return function() { window.removeEventListener('popstate', onPop); };
+  }, [data.plants.length]);
+
 
 
   // Seed photo cache from pre-built data
