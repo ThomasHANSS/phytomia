@@ -338,8 +338,14 @@ export default function ForceGraph(props) {
           grad.addColorStop(0, 'rgba(' + bc.r + ',' + bc.g + ',' + bc.b + ',0.7)');
           grad.addColorStop(1, 'rgba(' + bc.r + ',' + bc.g + ',' + bc.b + ',0.45)');
         }
-        ctx.fillStyle = grad;
-        ctx.fill();
+        var nodeImg = imgCacheRef.current[n.sci];
+        if (nodeImg && nodeImg instanceof Image) {
+          ctx.save(); ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.clip();
+          ctx.drawImage(nodeImg, x - r, y - r, r * 2, r * 2);
+          ctx.restore();
+        } else {
+          ctx.fillStyle = grad; ctx.fill();
+        }
         ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
 
         // Border
