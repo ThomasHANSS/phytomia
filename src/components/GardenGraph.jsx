@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import { TYPES, FAMILIES } from '../utils/types';
+import { fetchPhoto } from './Thumb';
 
 export default function GardenGraph(props) {
   var plants = props.plants, insects = props.insects, ixs = props.ixs, lang = props.lang, onSel = props.onSel, shared = props.shared;
@@ -11,6 +12,21 @@ export default function GardenGraph(props) {
   var _showAll = useState(false), showAll = _showAll[0], setShowAll = _showAll[1];
   var _filterType = useState('all'), filterType = _filterType[0], setFilterType = _filterType[1];
   var _filterOrder = useState('all'), filterOrder = _filterOrder[0], setFilterOrder = _filterOrder[1];
+  var _np = useState({}), nodePhotos = _np[0], setNodePhotos = _np[1];
+  // Load photos
+  useState(function() {
+    plants.concat(insects).forEach(function(sp) {
+      fetchPhoto(sp.sci, function(data) {
+        if (data && data.photo) {
+          setNodePhotos(function(prev) {
+            var next = Object.assign({}, prev);
+            next[sp.id] = data.photo.sq;
+            return next;
+          });
+        }
+      });
+    });
+  });
   // Collect available types and orders
   var availTypes = {};
   var availOrders = {};
