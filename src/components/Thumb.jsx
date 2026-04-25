@@ -157,7 +157,7 @@ export default function Thumb(props) {
 export function SpeciesLink(props) {
   var name = props.name, lang = props.lang;
   var _s = useState(null), inatId = _s[0], setId = _s[1];
-  useEffect(function() { fetchPhoto(name, function(d) { if (d && d.inatId) setId(d.inatId); }); }, [name]);
+  useEffect(function() { setId(null); fetchPhoto(name, function(d) { if (d && d.inatId) setId(d.inatId); }); }, [name]);
   return (
     <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
       <a href={'https://en.wikipedia.org/wiki/' + encodeURIComponent(name.replace(/ /g, '_'))} target="_blank" rel="noopener noreferrer" onClick={function(e) { e.stopPropagation(); }} style={{ display: 'inline-flex', alignItems: 'center', gap: 3, fontSize: 10, color: 'var(--text3)', textDecoration: 'none', padding: '1px 6px', borderRadius: 4, border: '1px solid var(--border)', background: 'var(--bg2)', flexShrink: 0 }}>
