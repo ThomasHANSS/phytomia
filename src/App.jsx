@@ -56,9 +56,9 @@ export default function App() {
           || data.insects.find(function(i){ return i.sci === h.sci; });
     if (!sp) return;
     setSelectedId(sp.id);
-    if (h.view === 'reseau') {
-      setSpeciesView('reseau');
-      setTimeout(function() { setSpeciesView('reseau'); }, 100);
+    if (h.view && h.view !== 'fiche') {
+      setSpeciesView(h.view);
+      setTimeout(function() { setSpeciesView(h.view); }, 100);
     }
   }, [data.plants.length]);
 
