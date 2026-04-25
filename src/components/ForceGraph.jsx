@@ -348,7 +348,6 @@ export default function ForceGraph(props) {
           ctx.fillStyle = grad; ctx.fill();
         }
         ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
-        ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
         // Colored concentric borders
         if (n.isCenter) {
           ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2);
