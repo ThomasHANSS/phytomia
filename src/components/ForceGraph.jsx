@@ -575,6 +575,21 @@ export default function ForceGraph(props) {
           </button>
         </div>
       </div>
+      {history.length > 0 && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '5px 16px', background: '#f8f9fa', borderBottom: '1px solid #e9ecef', flexShrink: 0, overflowX: 'auto', fontSize: 12 }}>
+          {history.map(function (hid, idx) {
+            var sp = allSpecies.find(function (s) { return s.id === hid; });
+            return (<span key={idx} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+              <span onClick={function () { onNavigate(hid); }}
+                style={{ cursor: 'pointer', fontStyle: 'italic', color: '#666', borderBottom: '1px dashed #bbb', whiteSpace: 'nowrap' }}>
+                {sp.sci.length > 20 ? sp.sci.split(' ')[0][0] + '. ' + (sp.sci.split(' ')[1] || '') : sp.sci}
+              </span>
+              <span style={{ color: '#ccc' }}>›</span>
+            </span>);
+          })}
+          <span style={{ fontStyle: 'italic', fontWeight: 600, color: '#333', whiteSpace: 'nowrap' }}>{species.sci}</span>
+        </div>
+      )}
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
         {showPanel && (
           <div style={{ width: isMobile ? '85%' : 260, maxWidth: isMobile ? 300 : 260, flexShrink: 0, background: '#fff', borderRight: isMobile ? 'none' : '1px solid #e0e0e0', padding: 14, overflowY: 'auto', position: isMobile ? 'absolute' : 'relative', top: 0, left: 0, bottom: 0, zIndex: isMobile ? 10 : 1, boxShadow: isMobile ? '4px 0 12px rgba(0,0,0,0.1)' : 'none' }}>
