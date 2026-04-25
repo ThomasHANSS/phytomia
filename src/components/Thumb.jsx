@@ -92,10 +92,25 @@ function useLightbox() {
 
 var _photoCache = {};
 var _pendingFetches = {};
+var _fetchQueue = [];
+var _fetchRunning = false;
+function _processQueue() {
+  if (_fetchRunning || _fetchQueue.length === 0) return;
+  _fetchRunning = true;
+  var item = _fetchQueue.shift();
+  _doFetch(item.sci);
+  setTimeout(function() { _fetchRunning = false; _processQueue(); }, 150);
+}
+
 export function fetchPhoto(sci, cb) {
   if (_photoCache[sci] !== undefined) { cb(_photoCache[sci]); return; }
   if (_pendingFetches[sci]) { _pendingFetches[sci].push(cb); return; }
   _pendingFetches[sci] = [cb];
+  _fetchQueue.push({ sci: sci });
+  _processQueue();
+}
+
+function _doFetch(sci) {
   fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(sci) + '&per_page=5')
     .then(function(r) { return r.json(); })
     .then(function(data) {
