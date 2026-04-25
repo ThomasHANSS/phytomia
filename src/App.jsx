@@ -16,8 +16,8 @@ export default function App() {
   var _v = useState('ranking'), viewMode = _v[0], _setViewMode = _v[1];
   function setViewMode(m) {
     _setViewMode(m);
-    if (m === 'garden') { updateHash('garden'); }
-    else if (!selectedId) { updateHash('home'); }
+    if (m === 'garden') { writeHash('garden'); }
+    else if (!selectedId) { writeHash('home'); }
   }
   var _eu = useState(true), euOnly = _eu[0], setEuOnly = _eu[1];
   var _s = useState(null), selectedId = _s[0], setSelectedId = _s[1];
@@ -26,45 +26,39 @@ export default function App() {
   var _g = useState([]), garden = _g[0], setGarden = _g[1];
 
   // === Hash routing ===
-  var hashReadRef = useRef(false);
-
-  function parseHash() {
+  function readHash() {
     var raw = decodeURIComponent(window.location.hash.slice(1));
-    if (!raw) return { page: 'home' };
+    if (!raw) return null;
     if (raw === 'mon_jardin') return { page: 'garden' };
     var parts = raw.split('/');
-    var sci = parts[0].replace(/_/g, ' ');
-    var view = parts[1] || 'fiche';
-    return { page: 'species', sci: sci, view: view };
+    return { page: 'species', sci: parts[0].replace(/_/g, ' '), view: parts[1] || 'fiche' };
   }
 
-  function updateHash(page, sci, view) {
-    var hash = '';
-    if (page === 'garden') hash = '#mon_jardin';
-    else if (page === 'species' && sci) {
-      hash = '#' + encodeURIComponent(sci.replace(/ /g, '_'));
-      if (view && view !== 'fiche') hash += '/' + view;
+  function writeHash(page, sci, view) {
+    if (page === 'garden') { window.location.hash = 'mon_jardin'; return; }
+    if (page === 'species' && sci) {
+      var h = sci.replace(/ /g, '_');
+      window.location.hash = (view && view !== 'fiche') ? h + '/' + view : h;
+      return;
     }
-    if (hash) window.location.hash = hash;
-    else window.history.replaceState(null, '', window.location.pathname);
+    window.history.replaceState(null, '', window.location.pathname);
   }
 
-  // Read hash on initial data load
+  // Read hash once data is loaded
+  var _hashDone = useRef(false);
   useEffect(function() {
-    if (!data || !data.plants || !data.plants.length || hashReadRef.current) return;
-    hashReadRef.current = true;
-    var h = parseHash();
-    if (h.page === 'garden') { _setViewMode('garden'); }
-    else if (h.page === 'species') {
-      var sp = data.plants.find(function(p){return p.sci===h.sci;}) || data.insects.find(function(i){return i.sci===h.sci;});
-      if (sp) {
-        setSelectedId(sp.id);
-        if (h.view === 'reseau') {
-          setSpeciesView('reseau');
-          // Force a small delay to ensure SpeciesDetail mounts first
-          setTimeout(function() { setSpeciesView('reseau'); }, 50);
-        }
-      }
+    if (_hashDone.current || !data.plants.length) return;
+    _hashDone.current = true;
+    var h = readHash();
+    if (!h) return;
+    if (h.page === 'garden') { _setViewMode('garden'); return; }
+    var sp = data.plants.find(function(p){ return p.sci === h.sci; })
+          || data.insects.find(function(i){ return i.sci === h.sci; });
+    if (!sp) return;
+    setSelectedId(sp.id);
+    if (h.view === 'reseau') {
+      setSpeciesView('reseau');
+      setTimeout(function() { setSpeciesView('reseau'); }, 100);
     }
   }, [data.plants.length]);
 
@@ -104,8 +98,8 @@ export default function App() {
     setSpeciesView('fiche');
     if (id && data) {
       var sp = data.plants.find(function(p){return p.id===id;}) || data.insects.find(function(i){return i.id===id;});
-      if (sp) { updateHash('species', sp.sci); }
-    } else { updateHash('home'); }
+      if (sp) { writeHash('species', sp.sci); }
+    } else { writeHash('home'); }
   }
   function back() {
     if (history.length > 0) {
@@ -114,7 +108,7 @@ export default function App() {
       setSelectedId(prev);
       if (prev && data) {
         var sp = data.plants.find(function(p){return p.id===prev;}) || data.insects.find(function(i){return i.id===prev;});
-        if (sp) { updateHash('species', sp.sci); }
+        if (sp) { writeHash('species', sp.sci); }
       }
     } else {
       setSelectedId(null);
@@ -172,7 +166,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header lang={lang} setLang={setLang} onLogoClick={function() { setHistory([]); setSelectedId(null); _setViewMode("ranking"); updateHash("home"); }} />
+      <Header lang={lang} setLang={setLang} onLogoClick={function() { setHistory([]); setSelectedId(null); _setViewMode("ranking"); writeHash("home"); }} />
 
       <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 4 }}>
         <div className="view-toggle">
@@ -185,7 +179,7 @@ export default function App() {
         insects={fData.insects}
         interactions={fData.interactions}
         lang={lang}
-        onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
+        onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) writeHash('species', sp.sci, v); }}
       />}
 
       <div style={{ display: selectedId ? "none" : "block" }}>
@@ -200,7 +194,7 @@ export default function App() {
               ixByPlant={fData.ixByPlant}
               ixByInsect={fData.ixByInsect}
               lang={lang}
-              onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
+              onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) writeHash('species', sp.sci, v); }}
             />
           )}
 
@@ -212,7 +206,7 @@ export default function App() {
               garden={garden}
               setGarden={setGarden}
               lang={lang}
-              onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
+              onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) writeHash('species', sp.sci, v); }}
             />
           )}
 
@@ -227,13 +221,13 @@ export default function App() {
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="15 18 9 12 15 6"/></svg>
                 {history.length > 0 ? (function() { var prev = data.plants.find(function(p){return p.id===history[history.length-1];}) || data.insects.find(function(i){return i.id===history[history.length-1];}); return prev ? prev.sci : (lang === "fr" ? "Retour" : "Back"); })() : (lang === "fr" ? (viewMode === "garden" ? "Mon jardin" : "Accueil") : (viewMode === "garden" ? "My garden" : "Home"))}
               </button>
-              <button onClick={function() { setHistory([]); setSelectedId(null); _setViewMode("ranking"); updateHash("home"); }} style={{ display: "flex", alignItems: "center", gap: 4, padding: "4px 10px", fontSize: 11, color: "var(--text3)", background: "none", border: "1px solid var(--border)", borderRadius: 6, cursor: "pointer" }}>
+              <button onClick={function() { setHistory([]); setSelectedId(null); _setViewMode("ranking"); writeHash("home"); }} style={{ display: "flex", alignItems: "center", gap: 4, padding: "4px 10px", fontSize: 11, color: "var(--text3)", background: "none", border: "1px solid var(--border)", borderRadius: 6, cursor: "pointer" }}>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                 {viewMode === "garden" ? (lang === "fr" ? "Mon jardin" : "My garden") : (lang === "fr" ? "Accueil" : "Home")}
               </button>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 3, fontSize: 11, color: "var(--text3)", flexWrap: "wrap" }}>
-              <span onClick={function() { setHistory([]); setSelectedId(null); _setViewMode("ranking"); updateHash("home"); }} style={{ cursor: "pointer" }}>{viewMode === "garden" ? (lang === "fr" ? "Mon jardin" : "My garden") : (lang === "fr" ? "Accueil" : "Home")}</span>
+              <span onClick={function() { setHistory([]); setSelectedId(null); _setViewMode("ranking"); writeHash("home"); }} style={{ cursor: "pointer" }}>{viewMode === "garden" ? (lang === "fr" ? "Mon jardin" : "My garden") : (lang === "fr" ? "Accueil" : "Home")}</span>
               {history.map(function(hid, idx) {
                 var sp = data.plants.find(function(p){return p.id===hid;}) || data.insects.find(function(i){return i.id===hid;});
                 if (!sp) return null;
@@ -256,7 +250,7 @@ export default function App() {
           ixByPlant={fData.ixByPlant}
           ixByInsect={fData.ixByInsect}
           lang={lang}
-          onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
+          onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) writeHash('species', sp.sci, v); }}
           onBack={back}
         />
       </div>)}
