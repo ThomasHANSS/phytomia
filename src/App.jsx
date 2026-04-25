@@ -30,12 +30,23 @@ export default function App() {
     return !!data.plants.find(function (p) { return p.id === selectedId; });
   }, [selectedId, data.plants]);
 
-  function go(id) { if (selectedId) { setHistory(function(h) { return h.concat([selectedId]); }); } setSelectedId(id); }
+  function go(id) {
+    if (selectedId) { setHistory(function(h) { return h.concat([selectedId]); }); }
+    setSelectedId(id);
+    if (id && data) {
+      var sp = data.plants.find(function(p){return p.id===id;}) || data.insects.find(function(i){return i.id===id;});
+      if (sp) { window.location.hash = encodeURIComponent(sp.sci.replace(/ /g, '_')); }
+    } else { window.location.hash = ''; }
+  }
   function back() {
     if (history.length > 0) {
       var prev = history[history.length - 1];
       setHistory(function(h) { return h.slice(0, -1); });
       setSelectedId(prev);
+      if (prev && data) {
+        var sp = data.plants.find(function(p){return p.id===prev;}) || data.insects.find(function(i){return i.id===prev;});
+        if (sp) { window.location.hash = encodeURIComponent(sp.sci.replace(/ /g, '_')); }
+      }
     } else {
       setSelectedId(null);
     }
@@ -147,13 +158,13 @@ export default function App() {
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><polyline points="15 18 9 12 15 6"/></svg>
                 {history.length > 0 ? (function() { var prev = data.plants.find(function(p){return p.id===history[history.length-1];}) || data.insects.find(function(i){return i.id===history[history.length-1];}); return prev ? prev.sci : (lang === "fr" ? "Retour" : "Back"); })() : (lang === "fr" ? (viewMode === "garden" ? "Mon jardin" : "Accueil") : (viewMode === "garden" ? "My garden" : "Home"))}
               </button>
-              <button onClick={function() { setHistory([]); setSelectedId(null); }} style={{ display: "flex", alignItems: "center", gap: 4, padding: "4px 10px", fontSize: 11, color: "var(--text3)", background: "none", border: "1px solid var(--border)", borderRadius: 6, cursor: "pointer" }}>
+              <button onClick={function() { setHistory([]); setSelectedId(null); window.location.hash = ''; }} style={{ display: "flex", alignItems: "center", gap: 4, padding: "4px 10px", fontSize: 11, color: "var(--text3)", background: "none", border: "1px solid var(--border)", borderRadius: 6, cursor: "pointer" }}>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                 {viewMode === "garden" ? (lang === "fr" ? "Mon jardin" : "My garden") : (lang === "fr" ? "Accueil" : "Home")}
               </button>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 3, fontSize: 11, color: "var(--text3)", flexWrap: "wrap" }}>
-              <span onClick={function() { setHistory([]); setSelectedId(null); }} style={{ cursor: "pointer" }}>{viewMode === "garden" ? (lang === "fr" ? "Mon jardin" : "My garden") : (lang === "fr" ? "Accueil" : "Home")}</span>
+              <span onClick={function() { setHistory([]); setSelectedId(null); window.location.hash = ''; }} style={{ cursor: "pointer" }}>{viewMode === "garden" ? (lang === "fr" ? "Mon jardin" : "My garden") : (lang === "fr" ? "Accueil" : "Home")}</span>
               {history.map(function(hid, idx) {
                 var sp = data.plants.find(function(p){return p.id===hid;}) || data.insects.find(function(i){return i.id===hid;});
                 if (!sp) return null;
