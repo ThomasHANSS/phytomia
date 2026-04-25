@@ -102,6 +102,20 @@ function _processQueue() {
   setTimeout(function() { _fetchRunning = false; _processQueue(); }, 150);
 }
 
+export function seedPhotoCache(cache) {
+  Object.keys(cache).forEach(function(sci) {
+    if (_photoCache[sci]) return;
+    var entry = cache[sci];
+    if (entry && entry.sq) {
+      _photoCache[sci] = { photo: { sq: entry.sq, md: entry.md || entry.sq, attr: '' }, inatId: entry.id || null };
+    } else if (entry && entry.id) {
+      _photoCache[sci] = { photo: null, inatId: entry.id };
+    } else {
+      _photoCache[sci] = { photo: null, inatId: null };
+    }
+  });
+}
+
 export function fetchPhoto(sci, cb) {
   if (_photoCache[sci] !== undefined) { cb(_photoCache[sci]); return; }
   if (_pendingFetches[sci]) { _pendingFetches[sci].push(cb); return; }
