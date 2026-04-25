@@ -19,18 +19,14 @@ export default function App() {
   var _h = useState([]), history = _h[0], setHistory = _h[1];
   var _g = useState([]), garden = _g[0], setGarden = _g[1];
 
-  // Hash routing
+  // Hash routing - only on initial load
   useEffect(function() {
-    function onHash() {
-      var h = decodeURIComponent(window.location.hash.slice(1)).replace(/_/g, ' ');
-      if (!h || !data || !data.plants) return;
+    var h = decodeURIComponent(window.location.hash.slice(1)).replace(/_/g, ' ');
+    if (h && data && data.plants) {
       var sp = data.plants.find(function(p){return p.sci===h;}) || data.insects.find(function(i){return i.sci===h;});
       if (sp) { setSelectedId(sp.id); }
     }
-    onHash();
-    window.addEventListener('hashchange', onHash);
-    return function() { window.removeEventListener('hashchange', onHash); };
-  }, [data]);
+  }, [!!data]);
 
   var selected = useMemo(function () {
     if (!selectedId) return null;
