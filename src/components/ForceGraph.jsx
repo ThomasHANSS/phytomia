@@ -43,24 +43,7 @@ export default function ForceGraph(props) {
   var overlayRef = useRef(null);
   var [tooltip, setTooltip] = useState(null);
 
-  // Preload images for nodes
-  useEffect(function() {
-    var allSpecies = [species].concat(partners.slice(0, 150));
-    allSpecies.forEach(function(sp) {
-      if (imgCacheRef.current[sp.sci]) return;
-      imgCacheRef.current[sp.sci] = 'loading';
-      fetchPhoto(sp.sci, function(data) {
-        if (data && data.photo) {
-          var img = new Image();
-          img.onload = function() { imgCacheRef.current[sp.sci] = img; };
-          img.onerror = function() { imgCacheRef.current[sp.sci] = 'error'; };
-          img.src = data.photo.sq || data.photo.md;
-        } else {
-          imgCacheRef.current[sp.sci] = 'none';
-        }
-      });
-    });
-  }, [species.id, partners]);
+
   var [nodePhotos, setNodePhotos] = useState({});
   var [showPanel, setShowPanel] = useState(window.innerWidth > 700);
   var isMobile = window.innerWidth <= 700;
@@ -361,14 +344,7 @@ export default function ForceGraph(props) {
           grad.addColorStop(0, 'rgba(' + bc.r + ',' + bc.g + ',' + bc.b + ',0.7)');
           grad.addColorStop(1, 'rgba(' + bc.r + ',' + bc.g + ',' + bc.b + ',0.45)');
         }
-        var nodeImg = imgCacheRef.current[n.sci];
-        if (nodeImg && nodeImg instanceof Image) {
-          ctx.save(); ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.clip();
-          try { ctx.drawImage(nodeImg, x - r, y - r, r * 2, r * 2); } catch(e) { /* tainted */ }
-          ctx.restore();
-        } else {
-          ctx.fillStyle = grad; ctx.fill();
-        }
+        ctx.fillStyle = grad; ctx.fill();
         ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
         // Colored concentric borders
         if (n.isCenter) {
