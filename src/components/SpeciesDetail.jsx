@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Thumb, { SpeciesLink } from './Thumb';
 import ThreatBadge from './ThreatBadge';
 import NetworkGraph from './NetworkGraph';
@@ -15,11 +15,13 @@ var L = {
 };
 
 export default function SpeciesDetail(props) {
-  var species = props.species, isPlant = props.isPlant, plants = props.plants, insects = props.insects, interactions = props.interactions, lang = props.lang, onSelect = props.onSelect, onBack = props.onBack;
+  var species = props.species, isPlant = props.isPlant, plants = props.plants, insects = props.insects, interactions = props.interactions, lang = props.lang, onSelect = props.onSelect, onBack = props.onBack, speciesView = props.speciesView, onViewChange = props.onViewChange;
   var t = L[lang] || L.fr;
   var _f = useState('all'), fi = _f[0], sFi = _f[1];
   var _v = useState('graph'), dv = _v[0], sDv = _v[1];
-  var _sf = useState(false), showForce = _sf[0], setShowForce = _sf[1];
+  var _sf = useState(speciesView === 'reseau'), showForce = _sf[0], _setShowForce = _sf[1];
+  function setShowForce(v) { _setShowForce(v); if (onViewChange) onViewChange(v ? 'reseau' : 'fiche'); }
+  useEffect(function() { _setShowForce(speciesView === 'reseau'); }, [speciesView, species.id]);
   var dm = isPlant ? 'plant' : 'insect';
 
   var rels = useMemo(function () {

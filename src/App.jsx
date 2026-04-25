@@ -21,6 +21,7 @@ export default function App() {
   }
   var _eu = useState(true), euOnly = _eu[0], setEuOnly = _eu[1];
   var _s = useState(null), selectedId = _s[0], setSelectedId = _s[1];
+  var _sv = useState('fiche'), speciesView = _sv[0], setSpeciesView = _sv[1];
   var _h = useState([]), history = _h[0], setHistory = _h[1];
   var _g = useState([]), garden = _g[0], setGarden = _g[1];
 
@@ -56,7 +57,7 @@ export default function App() {
     if (h.page === 'garden') { _setViewMode('garden'); }
     else if (h.page === 'species') {
       var sp = data.plants.find(function(p){return p.sci===h.sci;}) || data.insects.find(function(i){return i.sci===h.sci;});
-      if (sp) { setSelectedId(sp.id); }
+      if (sp) { setSelectedId(sp.id); if (h.view === 'reseau') setSpeciesView('reseau'); else setSpeciesView('fiche'); }
     }
   }, [data.plants && data.plants.length]);
 
@@ -75,7 +76,7 @@ export default function App() {
       setViewMode('garden');
     } else {
       var sp = data.plants.find(function(p){return p.sci===h;}) || data.insects.find(function(i){return i.sci===h;});
-      if (sp) { setSelectedId(sp.id); }
+      if (sp) { setSelectedId(sp.id); if (h.view === 'reseau') setSpeciesView('reseau'); else setSpeciesView('fiche'); }
     }
   }, [!!data]);
 
@@ -93,6 +94,7 @@ export default function App() {
   function go(id) {
     if (selectedId) { setHistory(function(h) { return h.concat([selectedId]); }); }
     setSelectedId(id);
+    setSpeciesView('fiche');
     if (id && data) {
       var sp = data.plants.find(function(p){return p.id===id;}) || data.insects.find(function(i){return i.id===id;});
       if (sp) { updateHash('species', sp.sci); }
@@ -176,7 +178,7 @@ export default function App() {
         insects={fData.insects}
         interactions={fData.interactions}
         lang={lang}
-        onSelect={go}
+        onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
       />}
 
       <div style={{ display: selectedId ? "none" : "block" }}>
@@ -191,7 +193,7 @@ export default function App() {
               ixByPlant={fData.ixByPlant}
               ixByInsect={fData.ixByInsect}
               lang={lang}
-              onSelect={go}
+              onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
             />
           )}
 
@@ -203,7 +205,7 @@ export default function App() {
               garden={garden}
               setGarden={setGarden}
               lang={lang}
-              onSelect={go}
+              onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
             />
           )}
 
@@ -247,7 +249,7 @@ export default function App() {
           ixByPlant={fData.ixByPlant}
           ixByInsect={fData.ixByInsect}
           lang={lang}
-          onSelect={go}
+          onSelect={go} speciesView={speciesView} onViewChange={function(v) { setSpeciesView(v); var sp = data.plants.find(function(p){return p.id===selectedId;}) || data.insects.find(function(i){return i.id===selectedId;}); if (sp) updateHash('species', sp.sci, v); }}
           onBack={back}
         />
       </div>)}
