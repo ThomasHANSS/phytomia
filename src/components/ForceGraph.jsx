@@ -40,8 +40,8 @@ export default function ForceGraph(props) {
   var panRef = useRef({ x: 0, y: 0, scale: 1 });
   var dragRef = useRef(null);
   var lastMouseRef = useRef(null);
+  var overlayRef = useRef(null);
   var [tooltip, setTooltip] = useState(null);
-  var imgCacheRef = useRef({});
 
   // Preload images for nodes
   useEffect(function() {
@@ -61,10 +61,31 @@ export default function ForceGraph(props) {
       });
     });
   }, [species.id, partners]);
+  var [nodePhotos, setNodePhotos] = useState({});
   var [showPanel, setShowPanel] = useState(window.innerWidth > 700);
   var isMobile = window.innerWidth <= 700;
   var [filters, setFilters] = useState({ entities: {}, types: {}, threatened: false });
   var [showLegend, setShowLegend] = useState(false);
+
+  // Load photos for visible nodes
+  useEffect(function() {
+    var loaded = {};
+    graph.nodes.forEach(function(n) {
+      fetchPhoto(n.sci, function(data) {
+        if (data && data.photo) {
+          loaded[n.id] = { url: data.photo.sq, inatId: data.inatId };
+          // Batch update every 500ms
+        }
+      });
+    });
+    var interval = setInterval(function() {
+      if (Object.keys(loaded).length > 0) {
+        setNodePhotos(function(prev) { return Object.assign({}, prev, loaded); });
+        loaded = {};
+      }
+    }, 500);
+    return function() { clearInterval(interval); };
+  }, [graph]);
 
   useEffect(function () {
     function onKey(e) { if (e.key === 'Escape' && onClose) onClose(); }
@@ -405,6 +426,52 @@ export default function ForceGraph(props) {
       });
 
       ctx.restore();
+
+      // Update photo overlay positions
+      var ov = overlayRef.current;
+      if (ov) {
+        var existingEls = {};
+        for (var ci2 = 0; ci2 < ov.children.length; ci2++) {
+          existingEls[ov.children[ci2].dataset.nid] = ov.children[ci2];
+        }
+        nodes.forEach(function(n) {
+          var photo = nodePhotos[n.id];
+          if (!photo || !photo.url) return;
+          var screenX = (W / 2 + pan.x * dpr + n.x * sc * pan.scale) / dpr;
+          var screenY = (H / 2 + pan.y * dpr + n.y * sc * pan.scale) / dpr;
+          var nr = n.r * pan.scale;
+          var hov = hoverRef.current === n.id;
+          var displayR = hov && !n.isCenter ? nr * 2 : nr;
+          var el = existingEls[n.id];
+          if (!el) {
+            el = document.createElement('div');
+            el.dataset.nid = n.id;
+            el.style.position = 'absolute';
+            el.style.borderRadius = '50%';
+            el.style.overflow = 'hidden';
+            el.style.pointerEvents = 'none';
+            var img = document.createElement('img');
+            img.src = photo.url;
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            img.style.display = 'block';
+            el.appendChild(img);
+            ov.appendChild(el);
+          }
+          el.style.left = (screenX - displayR) + 'px';
+          el.style.top = (screenY - displayR) + 'px';
+          el.style.width = (displayR * 2) + 'px';
+          el.style.height = (displayR * 2) + 'px';
+          el.style.border = n.isCenter ? '3px solid rgba(255,255,255,0.9)' : '2px solid rgba(255,255,255,0.6)';
+        });
+        // Remove old elements
+        for (var nid in existingEls) {
+          if (!nodes.find(function(n) { return n.id === nid; })) {
+            ov.removeChild(existingEls[nid]);
+          }
+        }
+      }
     }
 
     var running = true;
@@ -693,6 +760,7 @@ export default function ForceGraph(props) {
             onWheel={onWheel}
             style={{ width: '100%', height: '100%', display: 'block', touchAction: 'none' }}
           />
+          <div ref={overlayRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', overflow: 'hidden' }} />
           {tooltip && (
             <div style={{
               position: 'fixed', left: Math.min(tooltip.x + 60, window.innerWidth - 270), top: Math.max(tooltip.y - 40, 60),
