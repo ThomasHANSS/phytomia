@@ -48,7 +48,7 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 
 **Graphe réseau interactif** — Vue plein écran avec simulation de forces : nœuds déplaçables, zoom molette/pinch, liens courbes par type d'interaction, filtres par ordre taxonomique et type d'interaction, légende, navigation entre espèces par clic. Support mobile tactile.
 
-**Distribution POWO** — Classification scientifique de l'aire d'origine (native/non-native/extra-EU) via Plants of the World Online (Kew Gardens) pour 4 045 espèces vérifiées.
+**Distribution POWO** — Classification scientifique de l'aire d'origine (native/non-native/extra-EU) via Plants of the World Online (Kew Gardens) pour 17 168 espèces classifiées (POWO + WCVP) : 7311 natives EU, 8825 extra-EU, 1032 non-natives.
 
 **UKCEH Redhead** (9 208 paires pollinisation GB), **CropPol** (624 paires cultures), **GloBI Bee-Plant** (78 229 paires abeilles mondial)
 
