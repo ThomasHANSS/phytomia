@@ -116,7 +116,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header lang={lang} setLang={setLang} onLogoClick={back} />
+      <Header lang={lang} setLang={setLang} onLogoClick={function() { setHistory([]); setSelectedId(null); window.location.hash = ""; }} />
 
       <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 4 }}>
         <div className="view-toggle">
