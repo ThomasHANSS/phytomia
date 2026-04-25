@@ -561,6 +561,12 @@ export default function ForceGraph(props) {
           <span style={{ fontSize: isMobile ? 10 : 12, color: '#888', whiteSpace: 'nowrap' }}>{graph.nodes.length - 1} {tt.sp} · {graph.links.length} {tt.lk}</span>
         </div>
         <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+          {history.length > 0 && (
+            <button onClick={function () { onNavigate(history[history.length - 1]); }}
+              style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #10b98140', borderRadius: 6, background: '#10b98108', color: '#10b981', fontWeight: 500, display: 'flex', alignItems: 'center', gap: 4 }}>
+              ← {(function() { var sp = allSpecies.find(function(s) { return s.id === history[history.length - 1]; }); return sp ? (sp.sci.split(' ')[0][0] + '. ' + (sp.sci.split(' ')[1] || '')) : 'Retour'; })()}
+            </button>
+          )}
           <button onClick={function () { setShowPanel(function(s) { return !s; }); }}
             style={{ fontSize: 12, padding: '5px 12px', cursor: 'pointer', border: '1px solid #ddd', borderRadius: 6, background: showPanel ? '#555' : '#fff', color: showPanel ? '#fff' : '#666' }}>
             ☰
