@@ -3,7 +3,7 @@
 **Explorateur d'interactions plantes × insectes en Europe**
 *Plant × insect interaction explorer for Europe*
 
-Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de neuf bases scientifiques en accès libre, couvrant 182 435 interactions entre 17 168 espèces végétales et 27 494 espèces d'insectes.
+Phytomia est une application web open-source qui permet d'explorer les interactions documentées entre plantes et insectes en Europe. Elle agrège, harmonise et met en relation les données issues de neuf bases scientifiques en accès libre, couvrant 270 496 interactions entre 17 168 espèces végétales et 27 494 espèces d'insectes.
 
 **Site** : [https://ThomasHANSS.github.io/phytomia/](https://ThomasHANSS.github.io/phytomia/)
 **Auteur** : Thomas Hanss — [thomas.hanss@vivantes.fr](mailto:thomas.hanss@vivantes.fr)
@@ -47,6 +47,10 @@ Phytomia est une application web open-source qui permet d'explorer les interacti
 **Bilingue** — Interface français / anglais, commutable en un clic.
 
 **Graphe réseau interactif** — Vue plein écran avec simulation de forces : nœuds déplaçables, zoom molette/pinch, liens courbes par type d'interaction, filtres par ordre taxonomique et type d'interaction, légende, navigation entre espèces par clic. Support mobile tactile.
+
+**Distribution POWO** — Classification scientifique de l'aire d'origine (native/non-native/extra-EU) via Plants of the World Online (Kew Gardens) pour 4 045 espèces vérifiées.
+
+**UKCEH Redhead** (9 208 paires pollinisation GB), **CropPol** (624 paires cultures), **GloBI Bee-Plant** (78 229 paires abeilles mondial)
 
 **Export graphe** — Export du graphe jardin en PNG haute résolution (×2) ou SVG vectoriel.
 
