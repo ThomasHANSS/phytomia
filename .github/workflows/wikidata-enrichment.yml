@@ -1,0 +1,63 @@
+name: Wikidata Enrichment Batch
+
+# Declenche manuellement depuis l'onglet Actions du repo
+on:
+  workflow_dispatch:
+    inputs:
+      max_minutes:
+        description: 'Timeout max (defaut 350 min = ~6h, max Actions)'
+        required: false
+        default: '350'
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write  # pour pouvoir committer le cache
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Wikidata enrichment
+        run: |
+          python3 -u data/scripts/enrich_wikidata.py
+
+      - name: Show summary
+        if: always()
+        run: |
+          if [ -f data/wikidata_plants_cache.json ]; then
+            python3 -c "
+          import json
+          c = json.load(open('data/wikidata_plants_cache.json'))
+          matched = [v for v in c.values() if v.get('qid')]
+          print(f'Total cache: {len(c)}')
+          print(f'Avec QID:    {len(matched)} ({len(matched)*100//max(len(c),1)}%)')
+          print(f'Avec usages: {sum(1 for v in matched if v.get(\"uses_fr\") or v.get(\"uses_en\"))}')
+          print(f'Avec hauteur:{sum(1 for v in matched if v.get(\"height_m\"))}')
+          print(f'Avec WP FR:  {sum(1 for v in matched if v.get(\"wp_fr\"))}')
+            "
+          fi
+          if [ -f data/wikidata_batch.log ]; then
+            echo "--- Dernieres lignes du log ---"
+            tail -30 data/wikidata_batch.log
+          fi
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/wikidata_plants_cache.json data/wikidata_batch.log 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Aucun changement a committer"
+          else
+            git commit -m "data: Wikidata enrichment batch update"
+            git push
+          fi
