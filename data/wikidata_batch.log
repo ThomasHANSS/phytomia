@@ -1,0 +1,31 @@
+[2026-05-13 21:06:19] Charge 17168 plantes depuis plants.json
+[2026-05-13 21:06:19] A interroger: 17168 plantes en 215 batches de 80
+[2026-05-13 21:06:21]   [   80/17168] matched 80/80 (cum. 80) -- sleep=1s ETA=5min
+[2026-05-13 21:06:22]   [   80] HTTP 429 throttled -- attente 1000s avant retry meme batch
+[2026-05-13 21:23:03]   [  160/17168] matched 80/80 (cum. 160) -- sleep=1000s ETA=1778min
+[2026-05-13 21:39:44]   [  240/17168] matched 79/80 (cum. 239) -- sleep=1000s ETA=2357min
+[2026-05-13 21:56:25]   [  240] HTTP 429 throttled -- attente 1000s avant retry meme batch
+[2026-05-13 22:13:07]   [  320/17168] matched 76/80 (cum. 315) -- sleep=1000s ETA=3517min
+[2026-05-13 22:29:48]   [  400/17168] matched 77/80 (cum. 392) -- sleep=1000s ETA=3499min
+[2026-05-13 22:46:33]   [  480/17168] matched 77/80 (cum. 469) -- sleep=1000s ETA=3484min
+[2026-05-13 22:46:33]     Recuperation: nouveau sleep = 995s
+[2026-05-13 23:03:10]   [  560/17168] matched 76/80 (cum. 545) -- sleep=995s ETA=3465min
+[2026-05-13 23:19:48]   [  640/17168] matched 77/80 (cum. 622) -- sleep=995s ETA=3447min
+[2026-05-13 23:36:24]   [  720/17168] matched 77/80 (cum. 699) -- sleep=995s ETA=3428min
+[2026-05-13 23:36:24]     Recuperation: nouveau sleep = 990s
+[2026-05-13 23:52:55]   [  800/17168] matched 79/80 (cum. 778) -- sleep=990s ETA=3408min
+[2026-05-14 00:09:26]   [  880/17168] matched 76/80 (cum. 854) -- sleep=990s ETA=3389min
+[2026-05-14 00:25:57]   [  960/17168] matched 79/80 (cum. 933) -- sleep=990s ETA=3370min
+[2026-05-14 00:25:57]     Recuperation: nouveau sleep = 985s
+[2026-05-14 00:42:22]   [ 1040/17168] matched 77/80 (cum. 1010) -- sleep=985s ETA=3350min
+[2026-05-14 00:58:49]   [ 1120/17168] matched 74/80 (cum. 1084) -- sleep=985s ETA=3331min
+[2026-05-14 01:15:15]   [ 1200/17168] matched 76/80 (cum. 1160) -- sleep=985s ETA=3312min
+[2026-05-14 01:15:15]     Recuperation: nouveau sleep = 980s
+[2026-05-14 01:31:36]   [ 1280/17168] matched 79/80 (cum. 1239) -- sleep=980s ETA=3293min
+[2026-05-14 01:47:56]   [ 1360/17168] matched 76/80 (cum. 1315) -- sleep=980s ETA=3273min
+[2026-05-14 02:04:17]   [ 1440/17168] matched 75/80 (cum. 1390) -- sleep=980s ETA=3254min
+[2026-05-14 02:04:17]     Recuperation: nouveau sleep = 975s
+[2026-05-14 02:20:34]   [ 1520/17168] matched 77/80 (cum. 1467) -- sleep=975s ETA=3235min
+[2026-05-14 02:36:50]   [ 1600/17168] matched 78/80 (cum. 1545) -- sleep=975s ETA=3216min
+[2026-05-14 02:53:06]   [ 1680/17168] matched 77/80 (cum. 1622) -- sleep=975s ETA=3197min
+[2026-05-14 02:53:06]     Recuperation: nouveau sleep = 970s
